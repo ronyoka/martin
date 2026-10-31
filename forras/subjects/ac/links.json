@@ -1,0 +1,23 @@
+{
+ "_doc": "Linkek a fejezetek fülén és a Mai küldetésben. drive=Google Drive fájl-id (https://drive.google.com/file/d/<ID>/view); folder=mappa-id (https://drive.google.com/drive/folders/<ID>); kind=pdf|video|solved|worksheet|folder; units=melyik fejezetekhez; global=true: minden fejezetnél látszik.",
+ "items": [
+  {
+   "id": "notes",
+   "kind": "folder",
+   "title": "Notes (folder)",
+   "title_hu": "Jegyzetek (mappa)",
+   "folder": "10uKdaWcbfKhuw3hHotbzfuA53Kb5r9gw",
+   "units": [],
+   "global": true
+  },
+  {
+   "id": "words_mp3",
+   "kind": "folder",
+   "title": "Word MP3s",
+   "title_hu": "Szó-MP3-ok (mappa)",
+   "folder": "1Dw5hV-AiWsLQfGd8yYXTd6hVX8bS5y3f",
+   "units": [],
+   "global": true
+  }
+ ]
+}

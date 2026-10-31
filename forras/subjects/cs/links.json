@@ -1,0 +1,75 @@
+{
+ "_doc": "Linkek a fejezetek fülén és a Mai küldetésben. drive=Google Drive fájl-id (https://drive.google.com/file/d/<ID>/view); folder=mappa-id (https://drive.google.com/drive/folders/<ID>); kind=pdf|video|solved|worksheet|folder; units=melyik fejezetekhez; global=true: minden fejezetnél látszik.",
+ "items": [
+  {
+   "id": "ficha_solved",
+   "kind": "solved",
+   "title": "Ficha de repaso unidad 1 – solved",
+   "title_hu": "Ficha de repaso – megoldott lap",
+   "drive": "1UmEgmM9ASJEqOkiX7ivsC6rmddsl20WJ",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "ficha_pdf",
+   "kind": "pdf",
+   "title": "Ficha de repaso – study guide",
+   "title_hu": "Ficha de repaso felkészítő (PDF)",
+   "drive": "1MTN68WCnrgXEIX7rNCTWb01GI19Fyaje",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "ficha_video",
+   "kind": "video",
+   "title": "Ficha de repaso – vídeo",
+   "title_hu": "Ficha de repaso felkészítő videó",
+   "drive": "1Bq5mlthJK2KtpcdUCHVpckS5pO0dR8GO",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "control_pdf",
+   "kind": "pdf",
+   "title": "Control de Sociales – guía de estudio",
+   "title_hu": "Dolgozat felkészítő (PDF)",
+   "drive": "13dcD8uN2Tr3dD8KEEb7mHZVwbs4oxIPP",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "control_video",
+   "kind": "video",
+   "title": "Control de Sociales – vídeo",
+   "title_hu": "Dolgozat felkészítő videó",
+   "drive": "1iC8ZRONdS4-X5uOKWVtSdsyWTlYyNyW3",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "libro",
+   "kind": "pdf",
+   "title": "Libro de Ciencias Sociales 3",
+   "title_hu": "Tankönyv (PDF)",
+   "drive": "1Lwk-0dfyckDGPtdlEBS0GMdYh5bcVOsu",
+   "units": [
+    "u1"
+   ],
+   "global": true
+  },
+  {
+   "id": "words_mp3",
+   "kind": "folder",
+   "title": "Word MP3s",
+   "title_hu": "Szó-MP3-ok (mappa)",
+   "folder": "1v9zjbtL3mDKpmVKwDNzkvkh0gfubVtpx",
+   "units": [],
+   "global": true
+  }
+ ]
+}

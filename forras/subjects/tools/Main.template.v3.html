@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>__TITLE__</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFBF3;color:#1E2A38;font-family:'Nunito',system-ui,sans-serif}
+a{color:#1F4E79}a:hover{color:#163A5C}
+h1,h2,h3{font-family:'Baloo 2','Nunito',sans-serif;margin:0;line-height:1.1}
+button{font-family:inherit;cursor:pointer}
+.tab{border:2px solid #1F4E79;background:#FFFFFF;color:#1F4E79;border-radius:999px;padding:10px 18px;font-weight:800;font-size:16px;min-height:44px}
+.tab.on{background:#1F4E79;color:#FFFFFF}
+.chip{border:2px solid #C9D3DD;background:#FFFFFF;color:#1E2A38;border-radius:999px;padding:8px 14px;font-weight:700;font-size:15px;min-height:44px}
+.chip.on{border-color:#B85A12;background:#FFF1E4;color:#8A420C}
+.say{display:inline-flex;align-items:center;gap:8px;border:2px solid #1F4E79;background:#FFFFFF;color:#1F4E79;border-radius:12px;padding:8px 14px;font-weight:800;font-size:15px;min-height:44px}
+.say.hu{border-color:#2E7D4F;color:#22603C}
+.say.playing{background:#1F4E79;color:#FFFFFF}
+.say.hu.playing{background:#2E7D4F;color:#FFFFFF}
+.mini{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;border:2px solid #1F4E79;background:#FFFFFF;color:#1F4E79;font-weight:800;font-size:12px;flex-direction:column;gap:0;padding:0}
+.mini.hu{border-color:#2E7D4F;color:#22603C}
+.mini.playing{background:#1F4E79;color:#FFFFFF}
+.mini.hu.playing{background:#2E7D4F;color:#FFFFFF}
+.card{background:#FFFFFF;border-radius:20px;box-shadow:0 2px 0 #E9E1D2;border:2px solid #EFE6D6;overflow:hidden;display:flex;flex-direction:column}
+.card img{display:block;width:100%;height:auto;aspect-ratio:320/220;object-fit:cover}
+.open-btn{border:none;background:#1F4E79;color:#FFFFFF;border-radius:12px;padding:10px 16px;font-weight:800;font-size:16px;min-height:44px}
+.page{display:inline-block;background:#FFF1E4;color:#8A420C;border-radius:8px;padding:3px 9px;font-weight:800;font-size:13px;white-space:nowrap}
+.opt{border:3px solid #C9D3DD;background:#FFFFFF;color:#1E2A38;border-radius:16px;padding:14px 18px;font-weight:800;font-size:20px;text-align:left;min-height:56px}
+.opt:hover{border-color:#1F4E79}
+.opt.correct{border-color:#2E7D4F;background:#E3F4E8;color:#1D5233}
+.opt.wrong{border-color:#C0392B;background:#FBE5E2;color:#8E2A1F}
+.opt.dim{opacity:.55}
+.overlay{position:fixed;inset:0;background:rgba(20,30,45,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow-y:auto;z-index:50}
+.row{display:flex;align-items:center;gap:12px;padding:10px 12px;border-bottom:1px solid #EFE6D6;flex-wrap:wrap}
+.kitty-happy svg{animation:kjump .42s ease-in-out infinite alternate}
+.kitty-sad svg{animation:ksob .5s ease-in-out infinite alternate}
+.kitty-idle .tail{animation:kwag 1.4s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:0% 100%}
+.kitty .tear{animation:kdrip 1s linear infinite}
+.kitty .tear2{animation:kdrip 1s linear .5s infinite}
+@keyframes kjump{0%{transform:translateY(0) rotate(-4deg)}100%{transform:translateY(-22px) rotate(4deg)}}
+@keyframes ksob{0%{transform:translateY(0) scaleY(1)}100%{transform:translateY(3px) scaleY(.97)}}
+@keyframes kwag{0%{transform:rotate(-8deg)}100%{transform:rotate(10deg)}}
+@keyframes kdrip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(26px);opacity:0}}
+@media (prefers-reduced-motion: reduce){.kitty-happy svg,.kitty-sad svg,.kitty-idle .tail,.kitty .tear,.kitty .tear2{animation:none}}
+body{background:#FFF4D6}
+.tab{border:3px solid #6BBF59;background:#FFFFFF;color:#22603C;border-radius:999px;font-weight:900}.tab.on{background:#6BBF59;color:#FFFFFF}
+.card{border:3px solid #F2D9B8;border-radius:22px;box-shadow:none}
+.mini{border-width:3px;border-radius:999px;font-weight:900}.say{border-width:3px;border-radius:999px;font-weight:900}.open-btn{background:#B85A12;border-radius:999px;font-weight:900}
+.ltab{min-height:84px;flex:1 1 120px;padding:10px 8px;border-radius:20px;border:3px solid #F2A65A;background:#FFFFFF;font-weight:900;font-size:17px;color:#7A4A12;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:inherit}
+.ltab.on{background:#F2A65A;color:#FFFFFF;border-color:#B85A12}.ltab svg{width:30px;height:30px}
+.sent{background:#FFFFFF;border:3px solid #F2D9B8;border-radius:22px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.sent .en{font-size:22px;font-weight:900}.sent .huT{font-size:19px;font-weight:800;color:#22603C}
+.bub{max-width:88%;border-radius:22px;padding:12px 16px;display:flex;flex-direction:column;gap:6px}
+.bubL{background:#FFFFFF;border:3px solid #CFEAF7;border-top-left-radius:6px;align-self:flex-start}
+.bubR{background:#E3F4E8;border:3px solid #A9DFBF;border-top-right-radius:6px;align-self:flex-end}
+.wchip{background:#FFF7EC;border:2px solid #F2D9B8;border-radius:12px;padding:2px 9px;margin:2px 3px 2px 0;font:inherit;font-size:21px;font-weight:900;cursor:pointer;min-height:40px;color:#2B2B2B}.wchip:hover,.wchip.on{background:#F7C948;border-color:#B85A12}
+.wnone{background:none;border:none;padding:0;font:inherit;font-size:21px;font-weight:900;color:#2B2B2B}
+.wpop{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:6px 0 2px;padding:8px 12px;background:#FFF1E4;border:2px solid #F2A65A;border-radius:14px;font-size:18px}
+</style>
+</helmet>
+<div style="max-width: 1120px; margin: 0 auto; padding: 20px 16px 48px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+
+<header style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+  <div style="width: 96px; height: 96px; flex: 0 0 96px">
+    <dc-import name="Kitty" mood="{{headMood}}" hint-size="96px,96px"></dc-import>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 4px; flex: 1 1 320px; min-width: 0">
+    <h1 style="font-size: 38px; color: #1F4E79">__TITLE__</h1>
+    <p style="margin: 0; font-size: 16px; color: #4A5562">__SUBTITLE__</p>
+  </div>
+</header>
+
+<nav aria-label="Fejezetek" style="display: flex; gap: 10px; flex-wrap: wrap">
+  <sc-for list="{{tabs}}" as="t" hint-placeholder-count="4">
+    <button class="{{t.cls}}" onClick="{{t.go}}">{{t.label}}</button>
+  </sc-for>
+</nav>
+
+<sc-if value="{{loading}}" hint-placeholder-val="{{ false }}">
+  <div class="card" style="padding: 32px; align-items: center; gap: 8px">
+    <h2 style="font-size: 26px; color: #1F4E79">Töltöm a leckéket…</h2>
+    <p style="margin: 0; color: #4A5562">{{errText}}</p>
+  </div>
+</sc-if>
+
+<sc-if value="{{isUnit}}" hint-placeholder-val="{{ true }}">
+  <section style="display: flex; flex-direction: column; gap: 20px">
+    <div class="card" style="flex-direction: row; flex-wrap: wrap">
+      <img src="{{unit.img}}" alt="{{unit.es}}" style="flex: 1 1 300px; max-width: 420px; width: 100%; aspect-ratio: 320/220; object-fit: cover">
+      <div style="flex: 999 1 320px; min-width: 0; padding: 22px; display: flex; flex-direction: column; gap: 10px">
+        <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap">
+          <span style="font-weight: 800; color: #B85A12; font-size: 15px; letter-spacing: .04em">__UNITWORD__ {{unit.num}} · {{unit.num}}. FEJEZET</span>
+          <span class="page">könyv {{unit.pages}}. old.</span>
+        </div>
+        <h2 style="font-size: 40px; color: #1E2A38">{{unit.es}}</h2>
+        <p style="margin: 0; font-size: 20px; font-weight: 700; color: #22603C">{{unit.hu}}</p>
+        <div style="display: flex; gap: 6px; flex-wrap: wrap"><button class="{{unitT.esCls}}" onClick="{{unitT.es}}" aria-label="Fejezetcím __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{unitT.huCls}}" onClick="{{unitT.hu}}" aria-label="Fejezetcím magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></div>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5">{{unit.intro_es}}</p>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #22603C">{{unit.intro_hu}}</p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+          <button class="{{unitSay.esCls}}" onClick="{{unitSay.es}}" aria-label="Felolvasás __LANGNAME__"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>__LANGLABEL__</button>
+          <button class="{{unitSay.huCls}}" onClick="{{unitSay.hu}}" aria-label="Felolvasás magyarul"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>Magyarul</button>
+        </div>
+        <p style="margin: 0; font-size: 14px; color: #4A5562"><strong>Ismétlés a könyvben:</strong> {{unit.review}}</p>
+      </div>
+    </div>
+
+    <h3 style="font-size: 26px; color: #1F4E79">Leckék és fogalmak</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px">
+      <sc-for list="{{concepts}}" as="c" hint-placeholder-count="8">
+        <article class="card">
+          <img src="{{c.img}}" alt="{{c.es}}">
+          <div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1">
+            <div style="display: flex; justify-content: space-between; gap: 8px; align-items: center">
+              <span style="font-size: 13px; font-weight: 800; color: #4A5562">{{c.kind}}</span>
+              <span class="page">{{c.pages}}. old.</span>
+            </div>
+            <h3 style="font-size: 22px; color: #1E2A38">{{c.es}}</h3>
+            <p style="margin: 0; font-weight: 700; color: #22603C">{{c.hu}}</p>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap"><button class="{{c.t.esCls}}" onClick="{{c.t.es}}" aria-label="Cím __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{c.t.huCls}}" onClick="{{c.t.hu}}" aria-label="Cím magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></div>
+            <div style="flex: 1"></div>
+            <button class="open-btn" onClick="{{c.open}}">Megnézem</button>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{isDict}}" hint-placeholder-val="{{ false }}">
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <div class="card" style="padding: 18px; gap: 12px">
+      <h2 style="font-size: 30px; color: #1F4E79">Szótár A–Z · __VOCAB__</h2>
+      <label for="kereses" style="font-weight: 800">Keresés __LANGNAME__ vagy magyarul</label>
+      <input id="kereses" type="search" value="{{q}}" onChange="{{onSearch}}" placeholder="pl. casa vagy ház" style="font-size: 18px; padding: 12px 14px; border-radius: 12px; border: 2px solid #C9D3DD; font-family: inherit; min-height: 48px; box-sizing: border-box; width: 100%">
+      <div style="display: flex; gap: 8px; flex-wrap: wrap">
+        <sc-for list="{{dictChips}}" as="d" hint-placeholder-count="3">
+          <button class="{{d.cls}}" onClick="{{d.go}}">{{d.label}}</button>
+        </sc-for>
+      </div>
+      <nav aria-label="Betűk" style="display: flex; gap: 6px; flex-wrap: wrap">
+        <sc-for list="{{letters}}" as="l" hint-placeholder-count="12">
+          <a href="#L-{{l}}" style="display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border-radius: 10px; background: #EAF1FB; font-weight: 800; text-decoration: none; color: #1F4E79">{{l}}</a>
+        </sc-for>
+      </nav>
+      <p style="margin: 0; color: #4A5562; font-size: 14px">{{dictCount}} szó · ábécérendben (a névelőt – el, la, los, las – nem számítjuk)</p>
+    </div>
+    <div class="card">
+      <sc-for list="{{groups}}" as="g" hint-placeholder-count="3">
+        <div id="L-{{g.letter}}" style="background: #1F4E79; color: #FFFFFF; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 22px; padding: 4px 14px">{{g.letter}}</div>
+        <sc-for list="{{g.items}}" as="w" hint-placeholder-count="4">
+          <div class="row">
+            <div style="flex: 1 1 200px; min-width: 0">
+              <div style="font-weight: 800; font-size: 19px">{{w.es}}</div>
+              <div style="color: #22603C; font-weight: 700">{{w.hu}}</div>
+            </div>
+            <span class="page">{{w.pageLabel}}</span>
+            <button class="{{w.esCls}}" onClick="{{w.sayEs}}" aria-label="{{w.esAria}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button>
+            <button class="{{w.huCls}}" onClick="{{w.sayHu}}" aria-label="{{w.huAria}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button>
+          </div>
+        </sc-for>
+      </sc-for>
+      <sc-if value="{{dictEmpty}}" hint-placeholder-val="{{ false }}">
+        <p style="margin: 0; padding: 20px; font-weight: 700">Nincs találat. Próbálj másik szót!</p>
+      </sc-if>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{isQuiz}}" hint-placeholder-val="{{ false }}">
+  <section style="display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
+      <span style="font-weight: 800">Melyik fejezetből?</span>
+      <sc-for list="{{quizChips}}" as="d" hint-placeholder-count="3">
+        <button class="{{d.cls}}" onClick="{{d.go}}">{{d.label}}</button>
+      </sc-for>
+    </div>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
+      <div class="card" style="flex: 1 1 220px; max-width: 300px; padding: 16px; align-items: center; gap: 8px">
+        <div style="width: 200px; height: 200px">
+          <dc-import name="Kitty" mood="{{mood}}" hint-size="200px,200px"></dc-import>
+        </div>
+        <p style="margin: 0; font-family: 'Baloo 2', sans-serif; font-size: 22px; font-weight: 800; color: #1F4E79; text-align: center">{{kittyLine}}</p>
+        <p style="margin: 0; font-weight: 800; font-size: 18px">Pont: {{score}} / {{total}}</p>
+      </div>
+
+      <div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <sc-if value="{{quizRunning}}" hint-placeholder-val="{{ true }}">
+          <div class="card" style="padding: 20px; gap: 12px">
+            <div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: center">
+              <span style="font-weight: 800; color: #4A5562">{{progress}}</span>
+              <span class="page">könyv {{cur.page}}. old.</span>
+            </div>
+            <h2 style="font-size: 30px">{{cur.q_es}}</h2>
+            <p style="margin: 0; font-size: 19px; font-weight: 700; color: #22603C">{{cur.q_hu}}</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap">
+              <button class="{{qSay.esCls}}" onClick="{{qSay.es}}" aria-label="Kérdés __LANGNAME__"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGLABEL__</button>
+              <button class="{{qSay.huCls}}" onClick="{{qSay.hu}}" aria-label="Kérdés magyarul"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>Magyarul</button>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px">
+              <sc-for list="{{opts}}" as="o" hint-placeholder-count="3">
+                <button class="{{o.cls}}" onClick="{{o.pick}}">{{o.label}}</button>
+              </sc-for>
+            </div>
+            <sc-if value="{{answered}}" hint-placeholder-val="{{ false }}">
+              <div style="border-radius: 16px; padding: 14px 16px; background: #F4F7FB; display: flex; flex-direction: column; gap: 6px">
+                <p style="margin: 0; font-weight: 800; font-size: 20px; color: {{fbColor}}">{{fbTitle}}</p>
+                <p style="margin: 0; font-size: 17px">{{cur.explain}}</p>
+                <p style="margin: 0; font-size: 14px; color: #4A5562">Nézd meg a könyvben: {{cur.page}}. oldal</p>
+              </div>
+              <button class="open-btn" onClick="{{next}}" style="align-self: flex-start">{{nextLabel}}</button>
+            </sc-if>
+          </div>
+        </sc-if>
+        <sc-if value="{{quizDone}}" hint-placeholder-val="{{ false }}">
+          <div class="card" style="padding: 24px; gap: 12px; align-items: flex-start">
+            <h2 style="font-size: 34px; color: #1F4E79">Vége! · ¡Fin!</h2>
+            <p style="margin: 0; font-size: 22px; font-weight: 800">{{score}} / {{total}} jó válasz</p>
+            <p style="margin: 0; font-size: 18px">{{endText}}</p>
+            <button class="open-btn" onClick="{{restart}}">Újra játszom</button>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{hasOpen}}" hint-placeholder-val="{{ false }}">
+  <div class="overlay" role="dialog" aria-modal="true" aria-label="{{oc.es}}">
+    <div class="card" style="width: 100%; max-width: 900px; margin: auto 0; gap: 0; background: #FFF4D6">
+      <div style="display: flex; gap: 14px; padding: 16px 18px; flex-wrap: wrap; align-items: center; background: #FFFFFF; border-bottom: 3px solid #F2D9B8">
+        <img src="{{oc.img}}" alt="{{oc.es}}" style="width: 150px; aspect-ratio: 320/220; object-fit: cover; border-radius: 14px; border: 3px solid #F2D9B8">
+        <div style="flex: 1 1 280px; min-width: 0">
+          <span style="font-size: 14px; font-weight: 800; color: #4A5562">{{oc.kind}} · </span><span class="page">könyv {{oc.pages}}. old.</span>
+          <h2 style="font-size: 34px; color: #B85A12"><button class="wb" onClick="{{ocT.pairEs}}">{{oc.es}}</button></h2>
+          <p style="margin: 2px 0 0; font-size: 22px; font-weight: 800; color: #22603C; display: flex; gap: 8px; align-items: center; flex-wrap: wrap"><button class="wb" onClick="{{ocT.pairHu}}">{{oc.hu}}</button><button class="{{ocT.esCls}}" onClick="{{ocT.es}}" aria-label="Cím __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{ocT.huCls}}" onClick="{{ocT.hu}}" aria-label="Cím magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></p>
+        </div>
+        <button class="chip" onClick="{{closeOpen}}" aria-label="Bezárás">Bezár ✕</button>
+      </div>
+      <div style="padding: 16px 18px; display: flex; flex-direction: column; gap: 16px">
+        <div role="tablist" style="display: flex; gap: 10px; flex-wrap: wrap"><sc-for list="{{ltabs}}" as="lt" hint-placeholder-count="5"><button class="{{lt.cls}}" onClick="{{lt.go}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{lt.icon}}"></path></svg>{{lt.label}}</button></sc-for></div>
+        <sc-if value="{{ocExplain}}" hint-placeholder-val="{{ true }}">
+          <sc-if value="{{oc.noSent}}" hint-placeholder-val="{{ false }}">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px">
+              <div style="background: #EAF1FB; border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 800; color: #1F4E79">__LANGLABEL__</span><p style="margin: 0; font-size: 18px; line-height: 1.55">{{oc.es_text}}</p><button class="{{ocSay.esCls}}" onClick="{{ocSay.es}}" style="align-self: flex-start" aria-label="Felolvasás __LANGNAME__"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>__LISTEN__</button></div>
+              <div style="background: #E3F4E8; border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 800; color: #22603C">Magyarul</span><p style="margin: 0; font-size: 18px; line-height: 1.55">{{oc.hu_text}}</p><button class="{{ocSay.huCls}}" onClick="{{ocSay.hu}}" style="align-self: flex-start" aria-label="Felolvasás magyarul"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>Meghallgatom magyarul</button></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{oc.hasSent}}" hint-placeholder-val="{{ true }}">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center"><h3 style="font-size: 26px; color: #1F4E79; flex: 1 1 200px">Magyarázat mondatonként</h3><button class="{{ocSeq.sentCls}}" onClick="{{ocSeq.sent}}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>{{ocSeq.sentLabel}}</button></div>
+            <sc-if value="{{ocHasGallery}}" hint-placeholder-val="{{ false }}">
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px"><sc-for list="{{oc.gallery}}" as="gi" hint-placeholder-count="3"><figure style="margin: 0; border-radius: 14px; overflow: hidden; border: 3px solid #F2D9B8; background: #FFFFFF"><img src="{{gi.img}}" alt="{{gi.es}}" style="display: block; width: 100%; aspect-ratio: 320/220; object-fit: cover"><figcaption style="padding: 6px 10px 8px; font-size: 14px"><strong>{{gi.es}}</strong><br><span style="color: #22603C">{{gi.hu}}</span></figcaption></figure></sc-for></div>
+            </sc-if>
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <sc-for list="{{oc.sentences}}" as="sx" hint-placeholder-count="4">
+                <div class="sent"><div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap"><div class="en" style="flex: 1 1 260px"><button class="wb" onClick="{{sx.pairEs}}">{{sx.es}}</button></div><button class="{{sx.esCls}}" onClick="{{sx.sayEs}}" aria-label="Mondat __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button></div><div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap"><div class="huT" style="flex: 1 1 260px"><button class="wb" onClick="{{sx.pairHu}}">{{sx.hu}}</button></div><button class="{{sx.huCls}}" onClick="{{sx.sayHu}}" aria-label="Mondat magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></div></div>
+              </sc-for>
+            </div>
+          </sc-if>
+        </sc-if>
+        <sc-if value="{{ocDialogue}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center"><h3 style="font-size: 26px; color: #1F4E79; flex: 1 1 200px">Párbeszéd · Dialogue</h3><button class="{{ocSeq.dlgCls}}" onClick="{{ocSeq.dlg}}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>{{ocSeq.dlgLabel}}</button><button class="{{ocSeq.dlgEnCls}}" onClick="{{ocSeq.dlgEn}}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>{{ocSeq.dlgEnLabel}}</button></div>
+          <p style="margin: -6px 0 0; font-size: 15px; color: #4A5562">Kattints egy szóra: kimondja __LANGNAME__, majd magyarul, és mutatja a jelentését. A magyar mondatra kattintva az egész sort mondja mindkét nyelven.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px; background: #CFEAF7; border-radius: 26px; padding: 16px">
+            <sc-for list="{{oc.dialogue}}" as="dl" hint-placeholder-count="6">
+              <div class="{{dl.bub}}"><div style="font-size: 13px; font-weight: 900; color: {{dl.color}}">{{dl.who}}</div><div style="line-height: 1.9"><sc-for list="{{dl.words}}" as="w" hint-placeholder-count="8"><span>{{w.pre}}</span><button class="{{w.cls}}" onClick="{{w.pick}}" aria-label="{{w.aria}}">{{w.t}}</button><span>{{w.post}} </span></sc-for></div><sc-if value="{{dl.hasPop}}" hint-placeholder-val="{{ false }}"><div class="wpop"><strong style="font-size: 20px">{{dl.pop.word}}</strong><span>=</span><span style="color: #22603C; font-weight: 800">{{dl.pop.hu}}</span><span style="display: flex; gap: 6px; margin-left: auto"><button class="{{dl.pop.esCls}}" onClick="{{dl.pop.sayEs}}" aria-label="Szó __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{dl.pop.huCls}}" onClick="{{dl.pop.sayHu}}" aria-label="Jelentés magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button><button class="chip" onClick="{{dl.pop.close}}" aria-label="Bezárás">✕</button></span></div></sc-if><div style="display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center"><button class="wb" style="color: #22603C; font-weight: 800; font-size: 18px" onClick="{{dl.pairHu}}">{{dl.hu}}</button><span style="display: flex; gap: 6px; margin-left: auto"><button class="{{dl.esCls}}" onClick="{{dl.sayEs}}" aria-label="Mondat __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{dl.huCls}}" onClick="{{dl.sayHu}}" aria-label="Mondat magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></span></div></div>
+            </sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ocExamples}}" hint-placeholder-val="{{ false }}">
+          <h3 style="font-size: 26px; color: #1F4E79">Példák · __EXAMPLES__</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px">
+            <sc-for list="{{oc.examples}}" as="ex" hint-placeholder-count="4"><div class="sent"><div class="en" style="font-size: 21px"><button class="wb" onClick="{{ex.pairEs}}">{{ex.es}}</button></div><div class="huT" style="font-size: 18px"><button class="wb" onClick="{{ex.pairHu}}">{{ex.hu}}</button></div><div style="display: flex; gap: 6px"><button class="{{ex.esCls}}" onClick="{{ex.sayEs}}" aria-label="Példa __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{ex.huCls}}" onClick="{{ex.sayHu}}" aria-label="Példa magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></div></div></sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ocWords}}" hint-placeholder-val="{{ false }}">
+          <h3 style="font-size: 26px; color: #1F4E79">Szótár · {{ocUnitLabel}}</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px">
+            <sc-for list="{{ocGlossary}}" as="g" hint-placeholder-count="8"><div class="sent" style="flex-direction: row; align-items: center; gap: 10px"><div style="flex: 1 1 120px; min-width: 0"><div class="en" style="font-size: 21px"><button class="wb" onClick="{{g.pairEs}}">{{g.es}}</button></div><div class="huT" style="font-size: 17px"><button class="wb" onClick="{{g.pairHu}}">{{g.hu}}</button></div></div><button class="{{g.esCls}}" onClick="{{g.sayEs}}" aria-label="Szó __LANGNAME__"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>__LANGCODE__</button><button class="{{g.huCls}}" onClick="{{g.sayHu}}" aria-label="Szó magyarul"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path></svg>HU</button></div></sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ocQuiz}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start">
+            <div class="card" style="flex: 0 1 200px; padding: 12px; align-items: center; gap: 6px"><div style="width: 150px; height: 150px"><dc-import name="Kitty" mood="{{mood}}" hint-size="150px,150px"></dc-import></div><p style="margin: 0; font-size: 20px; font-weight: 900; color: #1F4E79; text-align: center">{{kittyLine}}</p><p style="margin: 0; font-weight: 800">Pont: {{score}} / {{total}}</p></div>
+            <div style="flex: 999 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+              <sc-if value="{{quizRunning}}" hint-placeholder-val="{{ true }}">
+                <div class="card" style="padding: 20px; gap: 12px">
+                  <div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; align-items: center"><span style="font-weight: 800; color: #4A5562">{{progress}}</span><span class="page">könyv {{cur.page}}. old.</span></div>
+                  <h2 style="font-size: 28px">{{cur.q_es}}</h2>
+                  <p style="margin: 0; font-size: 19px; font-weight: 700; color: #22603C">{{cur.q_hu}}</p>
+                  <div style="display: flex; gap: 10px; flex-wrap: wrap"><button class="{{qSay.esCls}}" onClick="{{qSay.es}}" aria-label="Kérdés __LANGNAME__"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>__LANGLABEL__</button><button class="{{qSay.huCls}}" onClick="{{qSay.hu}}" aria-label="Kérdés magyarul"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M16 9a4 4 0 0 1 0 6"></path><path d="M18.5 6.5a8 8 0 0 1 0 11"></path></svg>Magyarul</button></div>
+                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px"><sc-for list="{{opts}}" as="o" hint-placeholder-count="3"><button class="{{o.cls}}" onClick="{{o.pick}}">{{o.label}}</button></sc-for></div>
+                  <sc-if value="{{answered}}" hint-placeholder-val="{{ false }}">
+                    <div style="border-radius: 16px; padding: 14px 16px; background: #F4F7FB; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-weight: 800; font-size: 20px; color: {{fbColor}}">{{fbTitle}}</p><p style="margin: 0; font-size: 17px">{{cur.explain}}</p><p style="margin: 0; font-size: 14px; color: #4A5562">Nézd meg a könyvben: {{cur.page}}. oldal</p></div>
+                    <button class="open-btn" onClick="{{next}}" style="align-self: flex-start">{{nextLabel}}</button>
+                  </sc-if>
+                </div>
+              </sc-if>
+              <sc-if value="{{quizDone}}" hint-placeholder-val="{{ false }}">
+                <div class="card" style="padding: 24px; gap: 12px; align-items: flex-start"><h2 style="font-size: 30px; color: #1F4E79">Vége!</h2><p style="margin: 0; font-size: 22px; font-weight: 800">{{score}} / {{total}} jó válasz</p><p style="margin: 0; font-size: 18px">{{endText}}</p><button class="open-btn" onClick="{{restart}}">Újra játszom</button></div>
+              </sc-if>
+            </div>
+          </div>
+        </sc-if>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between"><button class="chip" onClick="{{prevOpen}}">← Előző lecke</button><button class="chip" onClick="{{nextOpen}}">Következő lecke →</button></div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<footer style="font-size: 13px; color: #4A5562">Az oldalszámok a __BOOK__ tankönyv nyomtatott oldalszámai (SB = Saberes básicos füzet). Hangok: Piper (__LANGVOICE__, magyar: anna).</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1700}}'>
+const LANG = '__LANG__';
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { data: null, err: '', view: 'u1', open: null, q: '', dictUnit: 'all', quizUnit: 'all', order: null, qi: 0, picked: null, score: 0, done: false, mood: 'idle', speaking: null };
+    this.buf = {}; this.ctx = null; this.src = null;
+  }
+  componentDidMount() {
+    fetch('__DATA_URL__').then(r => r.json()).then(d => {
+      this.setState({ data: d });
+      this.loadAudio(d);
+    }).catch(e => this.setState({ err: 'Nem sikerült betölteni: ' + e }));
+  }
+  ensureCtx() {
+    try {
+      if (!this.ctx) { const AC = window.AudioContext || window.webkitAudioContext; this.ctx = new AC(); }
+      if (this.ctx.state === 'suspended') this.ctx.resume();
+    } catch (e) {}
+    return this.ctx;
+  }
+  loadAudio(d) {
+    const ctx = this.ensureCtx(); if (!ctx) return;
+    [LANG, 'hu'].forEach(l => {
+      fetch(d.audio[l]).then(r => r.arrayBuffer()).then(ab => new Promise((res, rej) => ctx.decodeAudioData(ab, res, rej))).then(b => { this.buf[l] = b; }).catch(() => {});
+    });
+  }
+  stopVoice() { if (this.src) { try { this.src.stop(); } catch (e) {} this.src = null; } if (window.speechSynthesis) { try { speechSynthesis.cancel(); } catch (e) {} } }
+  speakPair(lang, key, a, b) { const other = lang === 'hu' ? LANG : 'hu'; this.speak(lang, key, a, () => this.speak(other, key, b)); }
+  playSeq(items) { this.stopVoice(); const go = i => { if (i >= items.length) { this.setState({ speaking: null }); return; } const it = items[i]; this.speak(it[0], it[1], it[2], () => go(i + 1)); }; go(0); }
+  seqBtn(items, label) { const playing = items.some(it => this.state.speaking === it[0] + ':' + it[1]); return { fn: () => playing ? (this.stopVoice(), this.setState({ speaking: null })) : this.playSeq(items), cls: 'say' + (playing ? ' playing' : ''), label: playing ? 'Állj ■' : label }; }
+  speak(lang, key, text, then) {
+    const d = this.state.data; const seg = d && d.sprite[lang] && d.sprite[lang][key];
+    const id = lang + ':' + key;
+    this.stopVoice();
+    const ctx = this.ensureCtx();
+    if (ctx && this.buf[lang] && seg) {
+      const s = ctx.createBufferSource(); s.buffer = this.buf[lang]; s.connect(ctx.destination);
+      s.start(0, seg[0], seg[1] + 0.12); this.src = s;
+      this.setState({ speaking: id });
+      s.onended = () => { if (this.state.speaking === id) { if (then) then(); else this.setState({ speaking: null }); } };
+    } else if (window.speechSynthesis && text) {
+      const u = new SpeechSynthesisUtterance(text); u.lang = lang === 'es' ? 'es-ES' : lang === 'en' ? 'en-GB' : 'hu-HU';
+      u.onend = () => { if (this.state.speaking === id) { if (then) then(); else this.setState({ speaking: null }); } };
+      this.setState({ speaking: id }); speechSynthesis.speak(u);
+    }
+  }
+  tone(f, t0, dur, type, vol, f2) {
+    const c = this.ctx; const o = c.createOscillator(); const g = c.createGain();
+    o.type = type; o.frequency.setValueAtTime(f, t0); if (f2) o.frequency.exponentialRampToValueAtTime(f2, t0 + dur);
+    g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(vol, t0 + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g); g.connect(c.destination); o.start(t0); o.stop(t0 + dur + 0.05);
+  }
+  sfxGood() {
+    const c = this.ensureCtx(); if (!c) return; const t = c.currentTime + 0.02;
+    [523, 659, 784, 1047].forEach((f, i) => this.tone(f, t + i * 0.09, 0.16, 'triangle', 0.25));
+    for (let i = 0; i < 5; i++) this.tone(880 + (i % 2) * 220, t + 0.45 + i * 0.08, 0.07, 'sine', 0.18, 1250);
+    this.tone(700, t + 0.9, 0.35, 'triangle', 0.2, 1100);
+  }
+  sfxBad() {
+    const c = this.ensureCtx(); if (!c) return; const t = c.currentTime + 0.02;
+    this.tone(620, t, 0.42, 'sawtooth', 0.09, 330);
+    this.tone(520, t + 0.45, 0.55, 'sawtooth', 0.09, 260);
+    this.tone(900, t + 1.05, 0.5, 'triangle', 0.12, 420);
+  }
+  shuffle(a) { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const x = b[i]; b[i] = b[j]; b[j] = x; } return b; }
+  quizVals(base, d, st) {
+      base.quizChips = [['all', 'Mind']].concat(d.units.map(u => [u.id, u.num + '. fejezet'])).map(x => ({ label: x[1], cls: 'chip' + (st.quizUnit === x[0] ? ' on' : ''), go: () => this.startQuiz(x[0]) }));
+      const order = st.order || []; base.total = order.length;
+      if (st.done) {
+        base.quizDone = true;
+        const r = order.length ? st.score / order.length : 0;
+        base.endText = r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.';
+        base.kittyLine = '¡Muy bien, Martín!';
+      } else if (order.length) {
+        const q = d.quiz[order[st.qi]];
+        base.quizRunning = true; base.cur = q; base.progress = (st.qi + 1) + '. kérdés / ' + order.length;
+        const se = this.sayBtn(LANG, 'q:' + q.i, q.q_es, 'say'); const sh = this.sayBtn('hu', 'q:' + q.i, q.q_hu, 'say');
+        base.qSay = { es: se.fn, esCls: se.cls, hu: sh.fn, huCls: sh.cls };
+        const answered = st.picked !== null; base.answered = answered;
+        base.opts = q.options.map((o, i) => {
+          let cls = 'opt';
+          if (answered) { if (i === q.answer) cls += ' correct'; else if (i === st.picked) cls += ' wrong'; else cls += ' dim'; }
+          return { label: o, cls, pick: () => this.pick(i) };
+        });
+        const ok = answered && st.picked === q.answer;
+        base.fbTitle = ok ? 'Ügyes! ¡Muy bien!' : 'Hoppá! A jó válasz: ' + q.options[q.answer];
+        base.fbColor = ok ? '#1D5233' : '#8E2A1F';
+        base.nextLabel = st.qi + 1 >= order.length ? 'Eredmény' : 'Következő kérdés →';
+        base.kittyLine = !answered ? 'Gondolkodj, Martin!' : ok ? 'Hihihi! Talált!' : 'Buuu… nem talált.';
+      }
+  }
+  startQuiz(unit) {
+    const d = this.state.data; if (!d) return;
+    const order = this.shuffle(d.quiz.filter(q => unit === 'all' || q.unit === unit).map(q => q.i));
+    this.stopVoice();
+    this.setState({ quizUnit: unit, order: order, qi: 0, picked: null, score: 0, done: false, mood: 'idle' });
+  }
+  setView(v) {
+    this.stopVoice();
+    this.setState({ view: v, open: null, speaking: null });
+    if (v === 'quiz' && !this.state.order) this.startQuiz(this.state.quizUnit);
+  }
+  pick(idx) {
+    const st = this.state; if (st.picked !== null || st.done) return;
+    const q = st.data.quiz[st.order[st.qi]]; const ok = idx === q.answer;
+    this.setState({ picked: idx, score: st.score + (ok ? 1 : 0), mood: ok ? 'happy' : 'sad' });
+    if (ok) this.sfxGood(); else this.sfxBad();
+    clearTimeout(this.fbT);
+    this.fbT = setTimeout(() => this.speak('hu', ok ? 'fb:ok' : 'fb:bad'), ok ? 1300 : 1600);
+  }
+  next() {
+    const st = this.state; this.stopVoice(); clearTimeout(this.fbT);
+    if (st.qi + 1 >= st.order.length) {
+      this.setState({ done: true, mood: 'happy', picked: null }); this.sfxGood();
+      this.fbT = setTimeout(() => this.speak('hu', 'fb:end'), 1300);
+    } else this.setState({ qi: st.qi + 1, picked: null, mood: 'idle' });
+  }
+  allConcepts() { const d = this.state.data; const out = []; if (d) d.units.forEach(u => u.concepts.forEach(c => out.push(c))); return out; }
+  move(step) { const all = this.allConcepts(); const i = all.findIndex(c => c.id === this.state.open); if (i < 0) return; const n = all[(i + step + all.length) % all.length]; this.stopVoice(); this.setState({ open: n.id, speaking: null, wordOpen: null, ltab: this.state.ltab === 'quiz' ? 'explain' : this.state.ltab }); }
+  norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  sayBtn(lang, key, text, base) {
+    const playing = this.state.speaking === lang + ':' + key;
+    return { fn: () => this.speak(lang, key, text), cls: base + (lang === 'hu' ? ' hu' : '') + (playing ? ' playing' : '') };
+  }
+  renderVals() {
+    const st = this.state; const d = st.data;
+    const tabDefs = (d ? d.units.map(u => [u.id, u.num + '. ' + u.es]) : [['u1', '1.']]).concat([['dict', 'Szótár A–Z'], ['quiz', 'Kvíz']]);
+    const tabs = tabDefs.map(t => ({ label: t[1], cls: 'tab' + (st.view === t[0] ? ' on' : ''), go: () => this.setView(t[0]) }));
+    const base = { tabs, loading: !d, errText: st.err, headMood: st.mood, isUnit: false, isDict: false, isQuiz: false, hasOpen: false,
+      unit: {}, unitSay: {}, unitT: {}, ocT: {}, concepts: [], q: st.q, dictChips: [], letters: [], groups: [], dictCount: 0, dictEmpty: false,
+      quizChips: [], mood: st.mood, kittyLine: '', score: st.score, total: 0, quizRunning: false, quizDone: false, cur: {}, qSay: {}, opts: [],
+      answered: false, fbColor: '#1E2A38', fbTitle: '', nextLabel: '', endText: '', progress: '',
+      oc: {}, ocSay: {}, ocHasGallery: false, ocNoGallery: true,
+      onSearch: (e) => this.setState({ q: e.target.value }), next: () => this.next(), restart: () => this.startQuiz(st.quizUnit),
+      closeOpen: () => { this.stopVoice(); this.setState({ open: null, speaking: null, wordOpen: null }); }, prevOpen: () => this.move(-1), nextOpen: () => this.move(1) };
+    if (!d) return base;
+    const uview = d.units.find(x => x.id === st.view);
+    if (uview) {
+      const u = uview;
+      const se = this.sayBtn(LANG, 'u:' + u.id, u.intro_es, 'say'); const sh = this.sayBtn('hu', 'u:' + u.id, u.intro_hu, 'say');
+      base.isUnit = true; base.unit = u; base.unitSay = { es: se.fn, esCls: se.cls, hu: sh.fn, huCls: sh.cls };
+      const ute = this.sayBtn(LANG, 'ut:' + u.id, u.es, 'mini'); const uth = this.sayBtn('hu', 'ut:' + u.id, u.hu, 'mini');
+      base.unitT = { es: ute.fn, esCls: ute.cls, hu: uth.fn, huCls: uth.cls };
+      base.concepts = u.concepts.map(c => { const te = this.sayBtn(LANG, 't:' + c.id, c.es, 'mini'); const th = this.sayBtn('hu', 't:' + c.id, c.hu, 'mini');
+        return Object.assign({}, c, { t: { es: te.fn, esCls: te.cls, hu: th.fn, huCls: th.cls }, open: () => { this.stopVoice(); this.setState({ open: c.id, speaking: null, wordOpen: null, ltab: 'explain' }); } }); });
+    }
+    if (st.open) {
+      const c = this.allConcepts().find(x => x.id === st.open);
+      if (c) {
+        const se = this.sayBtn(LANG, 'c:' + c.id, c.es_text, 'say'); const sh = this.sayBtn('hu', 'c:' + c.id, c.hu_text, 'say');
+        const te = this.sayBtn(LANG, 't:' + c.id, c.es, 'mini'); const th = this.sayBtn('hu', 't:' + c.id, c.hu, 'mini');
+        base.ocT = { es: te.fn, esCls: te.cls, hu: th.fn, huCls: th.cls };
+        const exs = c.examples.map((ex, i) => { const ee = this.sayBtn(LANG, 'e:' + c.id + ':' + i, ex.es, 'mini'); const eh = this.sayBtn('hu', 'e:' + c.id + ':' + i, ex.hu, 'mini'); return Object.assign({}, ex, { es: ex.es, hu: ex.hu, esCls: ee.cls, huCls: eh.cls, sayEs: ee.fn, sayHu: eh.fn }); });
+        const sents = (c.sentences || []).map((x, i) => { const k = 's:' + c.id + ':' + i; const ee = this.sayBtn(LANG, k, x.es, 'mini'); const eh = this.sayBtn('hu', k, x.hu, 'mini'); return { es: x.es, hu: x.hu, esCls: ee.cls, huCls: eh.cls, sayEs: ee.fn, sayHu: eh.fn, pairEs: () => this.speakPair(LANG, k, x.es, x.hu), pairHu: () => this.speakPair('hu', k, x.hu, x.es) }; });
+        const PAL = ['#1F4E79', '#B85A12', '#22603C', '#7D3C98', '#C0392B', '#1A7F8E', '#8A5A2B', '#D4AC0D']; const cols = {};
+        const words = d.words || {}; const wo = st.wordOpen;
+        const dlg = (c.dialogue || []).map((x, i) => { const k = 'd:' + c.id + ':' + i; const lid = c.id + ':' + i; const ee = this.sayBtn(LANG, k, x.es, 'mini'); const eh = this.sayBtn('hu', k, x.hu, 'mini');
+          if (!cols[x.who]) cols[x.who] = PAL[Object.keys(cols).length % PAL.length];
+          const ws = x.es.split(/\s+/).map(tok => { const m = tok.match(/^([^\p{L}]*)(\p{L}[\p{L}'’-]*)(.*)$/u); if (!m) return { pre: '', t: tok, post: '', cls: 'wnone', pick: () => {}, aria: tok };
+            const key = m[2].toLowerCase().replace(/’/g, "'"); const hu = words[key]; if (!hu) return { pre: m[1], t: m[2], post: m[3], cls: 'wnone', pick: () => {}, aria: m[2] };
+            const huSay = hu.replace(/\s*\([^)]*\)/g, '').trim() || hu; const on = wo && wo.line === lid && wo.w === key;
+            return { pre: m[1], t: m[2], post: m[3], cls: 'wchip' + (on ? ' on' : ''), aria: m[2] + ' – ' + hu, pick: () => { this.setState({ wordOpen: { line: lid, w: key, word: m[2], hu: hu } }); this.speakPair(LANG, 'w:' + key, m[2], huSay); } }; });
+          let pop = null; if (wo && wo.line === lid) { const huSay = wo.hu.replace(/\s*\([^)]*\)/g, '').trim() || wo.hu; const pe = this.sayBtn(LANG, 'w:' + wo.w, wo.word, 'mini'); const ph = this.sayBtn('hu', 'w:' + wo.w, huSay, 'mini'); pop = { word: wo.word, hu: wo.hu, esCls: pe.cls, huCls: ph.cls, sayEs: pe.fn, sayHu: ph.fn, close: () => this.setState({ wordOpen: null }) }; }
+          return { who: x.who, ini: x.who.slice(0, 2), color: cols[x.who], bub: 'bub ' + (Object.keys(cols).indexOf(x.who) % 2 ? 'bubR' : 'bubL'), words: ws, hasPop: !!pop, pop: pop || {}, hu: x.hu, esCls: ee.cls, huCls: eh.cls, sayEs: ee.fn, sayHu: eh.fn, pairHu: () => this.speakPair('hu', k, x.hu, x.es) }; });
+        const sq = this.seqBtn(sents.flatMap((x, i) => [[LANG, 's:' + c.id + ':' + i, x.es], ['hu', 's:' + c.id + ':' + i, x.hu]]), 'Mind felolvasása (__LANGCODE__ → HU)');
+        const dq = this.seqBtn(dlg.map((x, i) => [[LANG, 'd:' + c.id + ':' + i, (c.dialogue[i] || {}).es], ['hu', 'd:' + c.id + ':' + i, (c.dialogue[i] || {}).hu]]).flat(), 'Párbeszéd lejátszása (__LANGCODE__ → HU)');
+        const dqe = this.seqBtn(dlg.map((x, i) => [LANG, 'd:' + c.id + ':' + i, (c.dialogue[i] || {}).es]), 'Csak __LANGNAME__');
+        base.ocSeq = { sent: sq.fn, sentCls: sq.cls, sentLabel: sq.label, dlg: dq.fn, dlgCls: dq.cls, dlgLabel: dq.label, dlgEn: dqe.fn, dlgEnCls: dqe.cls, dlgEnLabel: dqe.label };
+        base.hasOpen = true; base.oc = Object.assign({}, c, { pageLabel: 'Könyv: ' + c.pages + '. oldal', examples: exs, sentences: sents, dialogue: dlg, hasSent: sents.length > 0, noSent: sents.length === 0, hasDlg: dlg.length > 0 });
+        const unit = d.units.find(x => x.concepts.some(k => k.id === c.id)); const lt = st.ltab || 'explain';
+        const ICON = { explain: 'M4 6h16M4 12h16M4 18h10', dialogue: 'M4 5h16v10H9l-5 4V5z', examples: 'M5 12l4 4L19 6', words: 'M4 4h12l4 4v12H4zM8 12h8M8 16h8', quiz: 'M9 9a3 3 0 1 1 3 3v2M12 18h.01' };
+        base.ltabs = [['explain', 'Magyarázat'], ['dialogue', 'Párbeszéd'], ['examples', 'Példák'], ['words', 'Szótár'], ['quiz', 'Kvíz']].map(x => ({ label: x[1], icon: ICON[x[0]], cls: 'ltab' + (lt === x[0] ? ' on' : ''), go: () => { this.stopVoice(); if (x[0] === 'quiz' && (st.quizUnit !== unit.id || !st.order)) { this.setState({ ltab: 'quiz', wordOpen: null, speaking: null }); this.startQuiz(unit.id); } else this.setState({ ltab: x[0], wordOpen: null, speaking: null }); } }));
+        base.ocExplain = lt === 'explain'; base.ocDialogue = lt === 'dialogue'; base.ocExamples = lt === 'examples'; base.ocWords = lt === 'words'; base.ocQuiz = lt === 'quiz';
+        base.ocUnitLabel = unit.num + '. fejezet';
+        base.ocGlossary = d.glossary.filter(g => g.unit === unit.id).map(g => { const ge = this.sayBtn(LANG, 'g:' + g.i, g.es, 'mini'); const gh = this.sayBtn('hu', 'g:' + g.i, g.hu, 'mini'); return { es: g.es, hu: g.hu, esCls: ge.cls, huCls: gh.cls, sayEs: ge.fn, sayHu: gh.fn, pairEs: () => this.speakPair(LANG, 'g:' + g.i, g.es, g.hu), pairHu: () => this.speakPair('hu', 'g:' + g.i, g.hu, g.es) }; });
+        base.ocT.pairEs = () => this.speakPair(LANG, 't:' + c.id, c.es, c.hu); base.ocT.pairHu = () => this.speakPair('hu', 't:' + c.id, c.hu, c.es);
+        if (base.ocQuiz) this.quizVals(base, d, st);
+        base.ocSay = { es: se.fn, esCls: se.cls, hu: sh.fn, huCls: sh.cls };
+        base.ocHasGallery = c.gallery && c.gallery.length > 0; base.ocNoGallery = !base.ocHasGallery;
+      }
+    }
+    if (st.view === 'dict') {
+      base.isDict = true;
+      const q = this.norm(st.q).trim();
+      const list = d.glossary.filter(g => (st.dictUnit === 'all' || g.unit === st.dictUnit) && (!q || this.norm(g.es + ' ' + g.hu).indexOf(q) >= 0));
+      const groups = []; let last = null;
+      list.forEach(g => {
+        if (!last || last.letter !== g.letter) { last = { letter: g.letter, items: [] }; groups.push(last); }
+        const se = this.sayBtn(LANG, 'g:' + g.i, g.es, 'mini'); const sh = this.sayBtn('hu', 'g:' + g.i, g.hu, 'mini');
+        last.items.push(Object.assign({}, g, { pageLabel: g.page === 'feladatok' ? 'feladatokban' : g.page + '. old.', sayEs: se.fn, esCls: se.cls, sayHu: sh.fn, huCls: sh.cls, esAria: 'Kiejtés __LANGNAME__: ' + g.es, huAria: 'Kiejtés magyarul: ' + g.hu }));
+      });
+      base.groups = groups; base.letters = groups.map(g => g.letter); base.dictCount = list.length; base.dictEmpty = list.length === 0;
+      base.dictChips = [['all', 'Mind']].concat(d.units.map(u => [u.id, u.num + '. fejezet'])).map(x => ({ label: x[1], cls: 'chip' + (st.dictUnit === x[0] ? ' on' : ''), go: () => this.setState({ dictUnit: x[0] }) }));
+    }
+    if (st.view === 'quiz') {
+      base.isQuiz = true; this.quizVals(base, d, st);
+    }
+    return base;
+  }
+}
+</script>
+</body>
+</html>

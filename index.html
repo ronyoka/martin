@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin tanulós oldalai</title>
+<style>
+:root{--bg:#FFFBF3;--ink:#1E2A38;--navy:#1F4E79;--muted:#5B6B7C;--card:#FFFFFF;--line:#EADFCB}
+@media (prefers-color-scheme:dark){:root{--bg:#141A22;--ink:#EEF2F6;--navy:#9CC3EA;--muted:#A6B3C2;--card:#1D2531;--line:#2C3747}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Segoe UI','Nunito',system-ui,sans-serif}
+header{max-width:1040px;margin:0 auto;padding:32px 16px 8px;display:flex;align-items:center;gap:18px}
+h1{font-family:'Segoe UI Black','Arial Black',sans-serif;font-size:clamp(26px,5vw,40px);margin:0;line-height:1.05;color:var(--navy)}
+.sub{color:var(--muted);margin:6px 0 0;font-size:17px}
+.cat{flex:none;width:76px;height:76px}
+main{max-width:1040px;margin:0 auto;padding:16px 16px 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+a.card,div.card{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px;position:relative;overflow:hidden;transition:transform .15s,box-shadow .15s}
+a.card:hover,a.card:focus-visible{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.12);outline:none;border-color:var(--c)}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:var(--c)}
+.ico{width:64px;height:64px;border-radius:18px;background:var(--c);display:grid;place-items:center}
+.ico svg{width:40px;height:40px}
+.name{font-weight:900;font-size:21px;line-height:1.15}
+.hu{color:var(--muted);font-size:15px;margin-top:-6px}
+.meta{font-size:14px;color:var(--muted)}
+.go{margin-top:auto;align-self:flex-start;background:var(--c);color:#fff;font-weight:800;border-radius:999px;padding:8px 16px;font-size:15px}
+.off{opacity:.55}
+.off .go{background:#8A96A3}
+footer{max-width:1040px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<svg class="cat" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 38 L26 10 L42 28 Z M80 38 L74 10 L58 28 Z" fill="#F4A340"/><circle cx="50" cy="56" r="34" fill="#F4A340"/><circle cx="38" cy="52" r="5" fill="#1E2A38"/><circle cx="62" cy="52" r="5" fill="#1E2A38"/><path d="M44 66 Q50 72 56 66" stroke="#1E2A38" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M50 60 l-4 -3 h8 z" fill="#E0566B"/></svg>
+<div><h1>Szia Martin! Mit tanulunk ma?</h1><p class="sub">Válassz tantárgyat – minden fejezet magyarul is el van magyarázva.</p></div>
+</header>
+<main>
+<div class="grid">
+
+<a class="card" href="matematicas/" style="--c:#2E7D5B">
+<div class="ico"><svg viewBox="0 0 40 40"><path d="M8 12h10M13 7v10M23 12h10M8 29h10M23 25l9 9M32 25l-9 9" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg></div>
+<div class="name">Matemáticas 3</div><div class="hu">Matematika</div>
+<div class="meta">9 fejezet · spanyol–magyar</div><span class="go">Megnyitás →</span></a>
+
+<a class="card" href="lengua/" style="--c:#C0392B">
+<div class="ico"><svg viewBox="0 0 40 40"><path d="M6 9h12q2 0 2 3v20q0-2-2-2H6z M34 9H22q-2 0-2 3v20q0-2 2-2h12z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div>
+<div class="name">Lengua 3</div><div class="hu">Spanyol nyelv</div>
+<div class="meta">9 fejezet + diktálás · spanyol–magyar</div><span class="go">Megnyitás →</span></a>
+
+<a class="card" href="english/" style="--c:#6C3FB4">
+<div class="ico"><svg viewBox="0 0 40 40"><path d="M6 8h22a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H16l-7 6v-6H6a0 0 0 0 1 0 0z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><text x="17" y="21" fill="#fff" font-size="11" font-weight="900" text-anchor="middle" font-family="Arial">ABC</text></svg></div>
+<div class="name">English 3 – Kid's Box</div><div class="hu">Angol</div>
+<div class="meta">Hello + 8 unit + spelling · angol–magyar</div><span class="go">Megnyitás →</span></a>
+
+<a class="card" href="sociales/" style="--c:#B9770E">
+<div class="ico"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13" fill="none" stroke="#fff" stroke-width="3"/><path d="M7 20h26M20 7q-8 13 0 26M20 7q8 13 0 26" fill="none" stroke="#fff" stroke-width="2.5"/></svg></div>
+<div class="name">Ciencias Sociales 3</div><div class="hu">Társadalomismeret</div>
+<div class="meta">6 fejezet · spanyol–magyar</div><span class="go">Megnyitás →</span></a>
+
+<a class="card" href="natural/" style="--c:#1E8449">
+<div class="ico"><svg viewBox="0 0 40 40"><path d="M20 34V18M20 22q-10 0-12-12 10 0 12 12zM20 18q8 0 11-10-9 0-11 10z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div>
+<div class="name">Natural Science 3</div><div class="hu">Természetismeret</div>
+<div class="meta">6 unit · angol–magyar</div><span class="go">Megnyitás →</span></a>
+
+<a class="card" href="arts/" style="--c:#D35480">
+<div class="ico"><svg viewBox="0 0 40 40"><path d="M20 6a14 14 0 1 0 0 28c3 0 3-3 1-5s0-5 3-5h4a6 6 0 0 0 6-6C34 11 28 6 20 6z" fill="none" stroke="#fff" stroke-width="3"/><circle cx="13" cy="17" r="2.5" fill="#fff"/><circle cx="20" cy="12" r="2.5" fill="#fff"/><circle cx="27" cy="15" r="2.5" fill="#fff"/></svg></div>
+<div class="name">Arts and Crafts 3</div><div class="hu">Rajz és kézművesség</div>
+<div class="meta">4 fejezet · angol–magyar</div><span class="go">Megnyitás →</span></a>
+
+<div class="card off" style="--c:#7F8C8D" aria-disabled="true">
+<div class="ico"><svg viewBox="0 0 40 40"><path d="M15 29V9l16-3v20" fill="none" stroke="#fff" stroke-width="3"/><circle cx="11" cy="29" r="4.5" fill="#fff"/><circle cx="27" cy="26" r="4.5" fill="#fff"/></svg></div>
+<div class="name">Música y Danza 3</div><div class="hu">Ének-zene és tánc</div>
+<div class="meta">Még nincs kész – hiányzik a könyv.</div><span class="go">Hamarosan</span></div>
+
+</div>
+</main>
+<footer>A hang a gombokra kattintva szól. Az oldal telefonon és tableten is működik.</footer>
+</body>
+</html>

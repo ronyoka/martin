@@ -1,0 +1,40 @@
+{
+ "_doc": "Napi ellenőrzés: közelgő dolgozatok/házik. date=YYYY-MM-DD; type=homework|control|test; units=fejezet-id-k (u1..u9); link_ids=a links.json elemei. Módosítás után: python3 tools/mkplus.py mat (és mkxaudio.py mat) és újrapublikálás.",
+ "events": [
+  {
+   "id": "mat-hw-1103",
+   "date": "2026-11-03",
+   "type": "homework",
+   "title": "Deberes: cuaderno págs. 17–18 (Ficha 1: Multiplicación)",
+   "title_hu": "Házi: munkafüzet 17–18. oldal (Ficha 1 – szorzás)",
+   "units": [
+    "u2"
+   ],
+   "link_ids": [
+    "wb1718_solved",
+    "tablas_pdf",
+    "tablas_video",
+    "mult3941_pdf",
+    "mult3941_video"
+   ]
+  },
+  {
+   "id": "mat-control-1111",
+   "date": "2026-11-11",
+   "type": "control",
+   "title": "Control de Matemáticas (unidades 1 y 2)",
+   "title_hu": "Matek dolgozat (1–2. fejezet)",
+   "units": [
+    "u1",
+    "u2"
+   ],
+   "link_ids": [
+    "control12_pdf",
+    "control12_video",
+    "tablas_pdf",
+    "tablas_video"
+   ]
+  }
+ ],
+ "recurring": []
+}

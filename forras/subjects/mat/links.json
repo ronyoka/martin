@@ -1,0 +1,147 @@
+{
+ "_doc": "Linkek a fejezetek fülén és a Mai küldetésben (lásd en/links.json).",
+ "items": [
+  {
+   "id": "control12_pdf",
+   "kind": "pdf",
+   "title": "Control 1–2 – guía de estudio",
+   "title_hu": "Control 1–2 felkészítő (PDF)",
+   "drive": "1HM-Z9a1Z2GRjv9z2ScPiSVUyqcpDZ5v8",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "control12_video",
+   "kind": "video",
+   "title": "Control 1–2 – vídeo",
+   "title_hu": "Control 1–2 felkészítő videó",
+   "drive": "1C3LashZnGM96r6bGmd5-Isg_SEPdtGUl",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "wb1718_solved",
+   "kind": "solved",
+   "title": "Cuaderno págs. 17–18 – hoja resuelta",
+   "title_hu": "Munkafüzet 17–18. oldal – megoldott lap",
+   "drive": "1BMVUj2cwapuhA-vrIZSeFdjusO2vB8FQ",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "tablas_pdf",
+   "kind": "pdf",
+   "title": "Tablas de multiplicar",
+   "title_hu": "Szorzótáblák felkészítő (PDF)",
+   "drive": "1JLT-gRRs49HhAxWrxpI6YWbE8WODblz4",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "tablas_video",
+   "kind": "video",
+   "title": "Tablas de multiplicar – vídeo",
+   "title_hu": "Szorzótáblák videó",
+   "drive": "1Ijo7iQK-liHgGrJ7xQBzSQED5Nx8zdId",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "hw1316_pdf",
+   "kind": "pdf",
+   "title": "Deberes págs. 13–16",
+   "title_hu": "Házi 13–16. oldal felkészítő (PDF)",
+   "drive": "1Or_Q9_8wo8WAGvicZb9rPl_UHuH740JR",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "hw1316_video",
+   "kind": "video",
+   "title": "Deberes págs. 13–16 – vídeo",
+   "title_hu": "Házi 13–16. oldal videó",
+   "drive": "1JY4_LMv41YZvxGSGdxrPH-mHEjFGsCOu",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "mult3941_pdf",
+   "kind": "pdf",
+   "title": "La multiplicación págs. 39–41",
+   "title_hu": "A szorzás 39–41. oldal felkészítő (PDF)",
+   "drive": "1HW7gaFRixOWQtYVYOpPSIdhroW35wJW9",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "mult3941_video",
+   "kind": "video",
+   "title": "La multiplicación págs. 39–41 – vídeo",
+   "title_hu": "A szorzás 39–41. oldal videó",
+   "drive": "1ndqU_T1X3EWTt19Zt8zctv4Q5MuLQfCK",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "cuaderno912_pdf",
+   "kind": "pdf",
+   "title": "Cuaderno págs. 9–12",
+   "title_hu": "Füzet 9–12. oldal felkészítő (PDF)",
+   "drive": "1yfyBuE1GM4YBDqoHBWBrATWisu_VJw8W",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "cuaderno912_video",
+   "kind": "video",
+   "title": "Cuaderno págs. 9–12 – vídeo",
+   "title_hu": "Füzet 9–12. oldal videó",
+   "drive": "1OzKNHll5CHKZrwoM6ZQr8Nu53zzrvM9S",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "cifras2829_pdf",
+   "kind": "pdf",
+   "title": "Números de 4 cifras págs. 28–29",
+   "title_hu": "Négyjegyű számok 28–29. oldal (PDF)",
+   "drive": "1YjIDz3N2T69fH74o7-xtXvrRuZO-Hd1H",
+   "units": [
+    "u1"
+   ]
+  },
+  {
+   "id": "wb_photos",
+   "kind": "worksheet",
+   "title": "Cuaderno – fotos",
+   "title_hu": "Munkafüzet (fotók)",
+   "drive": "1DU0QFRWqFlnfjUL34QRr7ljIzWdWCKFl",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "words_mp3",
+   "kind": "folder",
+   "title": "Word MP3s",
+   "title_hu": "Szó-MP3-ok (mappa)",
+   "folder": "1G2EHHUHHmt6hA8qmmLT2Nk8B0QRKyg7D",
+   "units": [],
+   "global": true
+  }
+ ]
+}

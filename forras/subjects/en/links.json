@@ -1,0 +1,102 @@
+{
+ "_doc": "Linkek a fejezetek fülén és a Mai küldetésben. drive=Google Drive fájl-id (https://drive.google.com/file/d/<ID>/view); folder=mappa-id; kind=pdf|video|solved|worksheet|folder; units=melyik fejezetekhez; global=true: minden fejezetnél látszik.",
+ "items": [
+  {
+   "id": "control1_pdf",
+   "kind": "pdf",
+   "title": "Control 1 – study guide",
+   "title_hu": "Control 1 felkészítő (PDF)",
+   "drive": "1o8pup_8ODvwnpJWlfFaW2fNtZ8RGLgdO",
+   "units": [
+    "u0",
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "control1_video",
+   "kind": "video",
+   "title": "Control 1 – video",
+   "title_hu": "Control 1 felkészítő videó",
+   "drive": "112VvRv24HQecJ6AlWyr40XGmZQlA3BJk",
+   "units": [
+    "u0",
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "spelling_home_pdf",
+   "kind": "pdf",
+   "title": "Spelling – Home (Unit 2)",
+   "title_hu": "Spelling felkészítő – otthon (PDF)",
+   "drive": "1-Z_o03dxJYuAD0BpcvyGwsnK96iQYP6j",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "spelling_home_video",
+   "kind": "video",
+   "title": "Spelling – Home (Unit 2) video",
+   "title_hu": "Spelling felkészítő videó – otthon",
+   "drive": "1AMpCMAePjlJ2XLN-XZdLN1s2eHT_EWG4",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "hb_solved",
+   "kind": "solved",
+   "title": "Home Booklet pp. 8–10 – solved pages",
+   "title_hu": "Home Booklet 8–10. oldal – megoldott lapok",
+   "drive": "1J9nu70AdtwgFZ79UUszXLBrsdyA7eH2I",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "hb_prep",
+   "kind": "pdf",
+   "title": "Home Booklet pp. 8–10 – study guide",
+   "title_hu": "Home Booklet 8–10. felkészítő (PDF)",
+   "drive": "1uSaxdvvYB5QcDuKF7sTQE05bDKYRpzUA",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "hb_video",
+   "kind": "video",
+   "title": "Home Booklet pp. 8–10 – video",
+   "title_hu": "Home Booklet 8–10. videó",
+   "drive": "1oe9C3j2oQ44cBlp713NpblBNgE4NKVEn",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "worksheet01",
+   "kind": "worksheet",
+   "title": "Worksheet Units 0–1",
+   "title_hu": "Worksheet 0–1. fejezet (PDF)",
+   "drive": "1eond4f5foTs6WF6ZFCHDSTjFlF-MdW-d",
+   "units": [
+    "u0",
+    "u1"
+   ]
+  },
+  {
+   "id": "words_mp3",
+   "kind": "folder",
+   "title": "Word MP3s",
+   "title_hu": "Szó-MP3-ok (mappa)",
+   "folder": "1fqpd_O5bBuQaRItIzfledTOfsYJcsNfx",
+   "units": [],
+   "global": true
+  }
+ ]
+}

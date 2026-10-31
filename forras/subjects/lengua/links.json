@@ -1,0 +1,100 @@
+{
+ "_doc": "Linkek a fejezetek fülén és a Mai küldetésben. drive=Google Drive fájl-id (https://drive.google.com/file/d/<ID>/view); folder=mappa-id (https://drive.google.com/drive/folders/<ID>); kind=pdf|video|solved|worksheet|folder; units=melyik fejezetekhez; global=true: minden fejezetnél látszik.",
+ "items": [
+  {
+   "id": "control_pdf",
+   "kind": "pdf",
+   "title": "Control de Lengua – guía de estudio",
+   "title_hu": "Spanyol dolgozat felkészítő (PDF)",
+   "drive": "1K5JfvNhNejVVesjkv_lsBC-HaVPtDWHE",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "control_video",
+   "kind": "video",
+   "title": "Control de Lengua – vídeo",
+   "title_hu": "Spanyol dolgozat felkészítő videó",
+   "drive": "1tBZZ4FZu3T5FRO_r_yJ_Ost5vgSDfu7U",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "gota_pdf",
+   "kind": "pdf",
+   "title": "Historia de una gota (págs. 36–39)",
+   "title_hu": "„Historia de una gota” 36–39. oldal – házi (PDF)",
+   "drive": "15F00-3owctE-3qMd0xR1Kp6BiREOm2VA",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "aprendido_pdf",
+   "kind": "pdf",
+   "title": "¿Qué hemos aprendido? (págs. 50–52)",
+   "title_hu": "„Mit tanultunk?” 50–52. oldal (PDF)",
+   "drive": "1j2MdnF79OAIR7sMWoykH8KUIvT-B6L2s",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "aprendido_video",
+   "kind": "video",
+   "title": "¿Qué hemos aprendido? – vídeo",
+   "title_hu": "„Mit tanultunk?” 50–52. oldal – videó",
+   "drive": "1LG38zjGty1905jbF3-p5vzxiIUvBw0J_",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "libro",
+   "kind": "pdf",
+   "title": "Libro de Lengua 3",
+   "title_hu": "Tankönyv (PDF)",
+   "drive": "1dGkMzvA0-JyJLL0w5Jz_casNkaNzxVOB",
+   "units": [
+    "u1",
+    "u2"
+   ],
+   "global": true
+  },
+  {
+   "id": "cuaderno",
+   "kind": "worksheet",
+   "title": "Cuaderno (fotos)",
+   "title_hu": "Munkafüzet (fotók)",
+   "drive": "127RTOD5PfgiBWAg2M27Hz8A-oSWnag7E",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "saberes",
+   "kind": "pdf",
+   "title": "Saberes básicos",
+   "title_hu": "Saberes básicos (alapismeretek, PDF)",
+   "drive": "1vG0g0Dp4lWCJ2KEno-sTiVTBQ3nBJFKb",
+   "units": [
+    "u1",
+    "u2"
+   ]
+  },
+  {
+   "id": "words_mp3",
+   "kind": "folder",
+   "title": "Word MP3s",
+   "title_hu": "Szó-MP3-ok (mappa)",
+   "folder": "1zqENDycJyvxq9Iv42KtSrCV_AD5efOiB",
+   "units": [],
+   "global": true
+  }
+ ]
+}

@@ -1,0 +1,1169 @@
+{
+ "_doc": "Dictado-gyakorló külön szólistái (a fejezet szótárának egyszavas elemei automatikusan hozzáadódnak). lists=[{id, unit (u1..u9), title, title_hu, words:[{w: spanyol szó/kifejezés, hu: magyar jelentés}]}]. SOHA nem betűztetünk. Módosítás után: python3 tools/mkplus.py lengua és python3 tools/mkxaudio.py lengua (új szavak hangja), majd újrapublikálás.",
+ "lists": [
+  {
+   "id": "u1",
+   "unit": "u1",
+   "title": "Unidad 1: Soy tu nuevo guía",
+   "title_hu": "1. fejezet – szavak",
+   "words": [
+    {
+     "w": "hola",
+     "hu": "szia"
+    },
+    {
+     "w": "adiós",
+     "hu": "viszlát"
+    },
+    {
+     "w": "buenos días",
+     "hu": "jó reggelt / jó napot"
+    },
+    {
+     "w": "amable",
+     "hu": "kedves"
+    },
+    {
+     "w": "sonreír",
+     "hu": "mosolyogni"
+    },
+    {
+     "w": "casa",
+     "hu": "ház"
+    },
+    {
+     "w": "piso",
+     "hu": "lakás"
+    },
+    {
+     "w": "ciudad",
+     "hu": "város"
+    },
+    {
+     "w": "pueblo",
+     "hu": "falu"
+    },
+    {
+     "w": "madera",
+     "hu": "fa (anyag)"
+    },
+    {
+     "w": "piedra",
+     "hu": "kő"
+    },
+    {
+     "w": "tejado",
+     "hu": "tető"
+    },
+    {
+     "w": "cueva",
+     "hu": "barlang"
+    },
+    {
+     "w": "nieve",
+     "hu": "hó"
+    },
+    {
+     "w": "hielo",
+     "hu": "jég"
+    },
+    {
+     "w": "lago",
+     "hu": "tó"
+    },
+    {
+     "w": "nombre",
+     "hu": "név"
+    },
+    {
+     "w": "oveja",
+     "hu": "bárány, birka"
+    },
+    {
+     "w": "árbol",
+     "hu": "fa (növény)"
+    },
+    {
+     "w": "bosque",
+     "hu": "erdő"
+    },
+    {
+     "w": "harina",
+     "hu": "liszt"
+    },
+    {
+     "w": "letra",
+     "hu": "betű"
+    },
+    {
+     "w": "perro",
+     "hu": "kutya"
+    },
+    {
+     "w": "ratón",
+     "hu": "egér"
+    },
+    {
+     "w": "rosa",
+     "hu": "rózsa"
+    },
+    {
+     "w": "loro",
+     "hu": "papagáj"
+    },
+    {
+     "w": "cuento",
+     "hu": "mese"
+    },
+    {
+     "w": "poema",
+     "hu": "vers"
+    },
+    {
+     "w": "noticia",
+     "hu": "hír"
+    },
+    {
+     "w": "aviso",
+     "hu": "figyelmeztetés"
+    },
+    {
+     "w": "firma",
+     "hu": "aláírás"
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "unit": "u2",
+   "title": "Unidad 2: Ventanas con vistas",
+   "title_hu": "2. fejezet – szavak",
+   "words": [
+    {
+     "w": "ventana",
+     "hu": "ablak"
+    },
+    {
+     "w": "paisaje",
+     "hu": "tájkép"
+    },
+    {
+     "w": "clima",
+     "hu": "éghajlat"
+    },
+    {
+     "w": "montaña",
+     "hu": "hegy"
+    },
+    {
+     "w": "río",
+     "hu": "folyó"
+    },
+    {
+     "w": "mar",
+     "hu": "tenger"
+    },
+    {
+     "w": "nube",
+     "hu": "felhő"
+    },
+    {
+     "w": "lluvia",
+     "hu": "eső"
+    },
+    {
+     "w": "gota",
+     "hu": "csepp"
+    },
+    {
+     "w": "luna",
+     "hu": "hold"
+    },
+    {
+     "w": "libro",
+     "hu": "könyv"
+    },
+    {
+     "w": "cama",
+     "hu": "ágy"
+    },
+    {
+     "w": "taza",
+     "hu": "csésze"
+    },
+    {
+     "w": "pájaro",
+     "hu": "madár"
+    },
+    {
+     "w": "ardilla",
+     "hu": "mókus"
+    },
+    {
+     "w": "paraguas",
+     "hu": "esernyő"
+    },
+    {
+     "w": "burro",
+     "hu": "szamár"
+    },
+    {
+     "w": "caballo",
+     "hu": "ló"
+    },
+    {
+     "w": "oreja",
+     "hu": "fül"
+    },
+    {
+     "w": "pelo",
+     "hu": "haj, szőr"
+    },
+    {
+     "w": "cola",
+     "hu": "farok"
+    },
+    {
+     "w": "koala",
+     "hu": "koala"
+    },
+    {
+     "w": "moneda",
+     "hu": "érme"
+    },
+    {
+     "w": "tranquilo",
+     "hu": "nyugodt"
+    },
+    {
+     "w": "paciente",
+     "hu": "türelmes"
+    },
+    {
+     "w": "inteligente",
+     "hu": "okos"
+    },
+    {
+     "w": "cerca",
+     "hu": "közel"
+    },
+    {
+     "w": "lejos",
+     "hu": "messze"
+    },
+    {
+     "w": "aquí",
+     "hu": "itt"
+    },
+    {
+     "w": "allí",
+     "hu": "ott"
+    },
+    {
+     "w": "describir",
+     "hu": "leírni"
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "unit": "u3",
+   "title": "Unidad 3: Un día en el huerto",
+   "title_hu": "3. fejezet – szavak",
+   "words": [
+    {
+     "w": "huerto",
+     "hu": "veteményeskert"
+    },
+    {
+     "w": "zanahoria",
+     "hu": "sárgarépa"
+    },
+    {
+     "w": "quince",
+     "hu": "tizenöt"
+    },
+    {
+     "w": "ciruelo",
+     "hu": "szilvafa"
+    },
+    {
+     "w": "zueco",
+     "hu": "facipő"
+    },
+    {
+     "w": "cielo",
+     "hu": "ég"
+    },
+    {
+     "w": "cebolla",
+     "hu": "hagyma"
+    },
+    {
+     "w": "lechuga",
+     "hu": "saláta"
+    },
+    {
+     "w": "tomate",
+     "hu": "paradicsom"
+    },
+    {
+     "w": "semilla",
+     "hu": "mag"
+    },
+    {
+     "w": "planta",
+     "hu": "növény"
+    },
+    {
+     "w": "flor",
+     "hu": "virág"
+    },
+    {
+     "w": "regar",
+     "hu": "öntözni"
+    },
+    {
+     "w": "maravilloso",
+     "hu": "csodálatos"
+    },
+    {
+     "w": "sabroso",
+     "hu": "ízletes"
+    },
+    {
+     "w": "pianista",
+     "hu": "zongorista"
+    },
+    {
+     "w": "baloncesto",
+     "hu": "kosárlabda"
+    },
+    {
+     "w": "tristeza",
+     "hu": "szomorúság"
+    },
+    {
+     "w": "niñez",
+     "hu": "gyerekkor"
+    },
+    {
+     "w": "codazo",
+     "hu": "könyökütés"
+    },
+    {
+     "w": "caminar",
+     "hu": "sétálni"
+    },
+    {
+     "w": "andar",
+     "hu": "járni"
+    },
+    {
+     "w": "cima",
+     "hu": "csúcs"
+    },
+    {
+     "w": "postal",
+     "hu": "képeslap"
+    },
+    {
+     "w": "querido",
+     "hu": "kedves"
+    },
+    {
+     "w": "beso",
+     "hu": "puszi"
+    },
+    {
+     "w": "jardín",
+     "hu": "kert"
+    },
+    {
+     "w": "azúcar",
+     "hu": "cukor"
+    },
+    {
+     "w": "hermoso",
+     "hu": "gyönyörű"
+    },
+    {
+     "w": "alegre",
+     "hu": "vidám"
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "unit": "u4",
+   "title": "Unidad 4: Nuestra nueva mascota",
+   "title_hu": "4. fejezet – szavak",
+   "words": [
+    {
+     "w": "mascota",
+     "hu": "kisállat"
+    },
+    {
+     "w": "perro",
+     "hu": "kutya"
+    },
+    {
+     "w": "gato",
+     "hu": "macska"
+    },
+    {
+     "w": "tortuga",
+     "hu": "teknős"
+    },
+    {
+     "w": "poni",
+     "hu": "póni"
+    },
+    {
+     "w": "hielo",
+     "hu": "jég"
+    },
+    {
+     "w": "hueso",
+     "hu": "csont"
+    },
+    {
+     "w": "huevo",
+     "hu": "tojás"
+    },
+    {
+     "w": "hierba",
+     "hu": "fű"
+    },
+    {
+     "w": "huerto",
+     "hu": "veteményeskert"
+    },
+    {
+     "w": "hierro",
+     "hu": "vas"
+    },
+    {
+     "w": "huella",
+     "hu": "nyom"
+    },
+    {
+     "w": "humo",
+     "hu": "füst"
+    },
+    {
+     "w": "hermano",
+     "hu": "testvér, fiútestvér"
+    },
+    {
+     "w": "hormiga",
+     "hu": "hangya"
+    },
+    {
+     "w": "hoja",
+     "hu": "levél"
+    },
+    {
+     "w": "historia",
+     "hu": "történet"
+    },
+    {
+     "w": "hora",
+     "hu": "óra, időpont"
+    },
+    {
+     "w": "hola",
+     "hu": "szia"
+    },
+    {
+     "w": "limpio",
+     "hu": "tiszta"
+    },
+    {
+     "w": "sucio",
+     "hu": "piszkos"
+    },
+    {
+     "w": "barato",
+     "hu": "olcsó"
+    },
+    {
+     "w": "caro",
+     "hu": "drága"
+    },
+    {
+     "w": "fácil",
+     "hu": "könnyű"
+    },
+    {
+     "w": "difícil",
+     "hu": "nehéz"
+    },
+    {
+     "w": "lleno",
+     "hu": "tele"
+    },
+    {
+     "w": "vacío",
+     "hu": "üres"
+    },
+    {
+     "w": "folleto",
+     "hu": "szórólap"
+    },
+    {
+     "w": "juguetón",
+     "hu": "játékos"
+    },
+    {
+     "w": "pelaje",
+     "hu": "bunda"
+    }
+   ]
+  },
+  {
+   "id": "u5",
+   "unit": "u5",
+   "title": "Unidad 5: De paseo por la naturaleza",
+   "title_hu": "5. fejezet – szavak",
+   "words": [
+    {
+     "w": "castor",
+     "hu": "hód"
+    },
+    {
+     "w": "río",
+     "hu": "folyó"
+    },
+    {
+     "w": "lago",
+     "hu": "tó"
+    },
+    {
+     "w": "bosque",
+     "hu": "erdő"
+    },
+    {
+     "w": "sendero",
+     "hu": "ösvény"
+    },
+    {
+     "w": "montaña",
+     "hu": "hegy"
+    },
+    {
+     "w": "agua",
+     "hu": "víz"
+    },
+    {
+     "w": "bebé",
+     "hu": "baba"
+    },
+    {
+     "w": "sillón",
+     "hu": "fotel"
+    },
+    {
+     "w": "autobús",
+     "hu": "autóbusz"
+    },
+    {
+     "w": "reloj",
+     "hu": "óra"
+    },
+    {
+     "w": "caracol",
+     "hu": "csiga"
+    },
+    {
+     "w": "canción",
+     "hu": "dal"
+    },
+    {
+     "w": "camión",
+     "hu": "teherautó"
+    },
+    {
+     "w": "café",
+     "hu": "kávé"
+    },
+    {
+     "w": "jamón",
+     "hu": "sonka"
+    },
+    {
+     "w": "balón",
+     "hu": "labda"
+    },
+    {
+     "w": "corazón",
+     "hu": "szív"
+    },
+    {
+     "w": "además",
+     "hu": "azonkívül"
+    },
+    {
+     "w": "también",
+     "hu": "is, szintén"
+    },
+    {
+     "w": "desordenado",
+     "hu": "rendetlen"
+    },
+    {
+     "w": "desabrochar",
+     "hu": "kigombolni"
+    },
+    {
+     "w": "imposible",
+     "hu": "lehetetlen"
+    },
+    {
+     "w": "incorrecto",
+     "hu": "helytelen"
+    },
+    {
+     "w": "ingrediente",
+     "hu": "hozzávaló"
+    },
+    {
+     "w": "receta",
+     "hu": "recept"
+    },
+    {
+     "w": "pizca",
+     "hu": "csipet"
+    },
+    {
+     "w": "leyenda",
+     "hu": "legenda"
+    },
+    {
+     "w": "instrucciones",
+     "hu": "utasítások"
+    },
+    {
+     "w": "plantar",
+     "hu": "ültetni"
+    },
+    {
+     "w": "crecer",
+     "hu": "nőni"
+    }
+   ]
+  },
+  {
+   "id": "u6",
+   "unit": "u6",
+   "title": "Unidad 6: Vestir a la moda",
+   "title_hu": "6. fejezet – szavak",
+   "words": [
+    {
+     "w": "ropa",
+     "hu": "ruha"
+    },
+    {
+     "w": "camiseta",
+     "hu": "póló"
+    },
+    {
+     "w": "pantalón",
+     "hu": "nadrág"
+    },
+    {
+     "w": "falda",
+     "hu": "szoknya"
+    },
+    {
+     "w": "calcetín",
+     "hu": "zokni"
+    },
+    {
+     "w": "zapato",
+     "hu": "cipő"
+    },
+    {
+     "w": "gafas",
+     "hu": "szemüveg"
+    },
+    {
+     "w": "árbol",
+     "hu": "fa"
+    },
+    {
+     "w": "lápiz",
+     "hu": "ceruza"
+    },
+    {
+     "w": "azúcar",
+     "hu": "cukor"
+    },
+    {
+     "w": "cráter",
+     "hu": "kráter"
+    },
+    {
+     "w": "fácil",
+     "hu": "könnyű"
+    },
+    {
+     "w": "móvil",
+     "hu": "mobiltelefon"
+    },
+    {
+     "w": "útil",
+     "hu": "hasznos"
+    },
+    {
+     "w": "carácter",
+     "hu": "jellem"
+    },
+    {
+     "w": "camino",
+     "hu": "út"
+    },
+    {
+     "w": "libros",
+     "hu": "könyvek"
+    },
+    {
+     "w": "cartero",
+     "hu": "postás"
+    },
+    {
+     "w": "enfermera",
+     "hu": "ápolónő"
+    },
+    {
+     "w": "futbolista",
+     "hu": "focista"
+    },
+    {
+     "w": "panadería",
+     "hu": "pékség"
+    },
+    {
+     "w": "floristería",
+     "hu": "virágbolt"
+    },
+    {
+     "w": "zorro",
+     "hu": "róka"
+    },
+    {
+     "w": "cigüeña",
+     "hu": "gólya"
+    },
+    {
+     "w": "moraleja",
+     "hu": "tanulság"
+    },
+    {
+     "w": "carta",
+     "hu": "levél"
+    },
+    {
+     "w": "sobre",
+     "hu": "boríték"
+    },
+    {
+     "w": "sello",
+     "hu": "bélyeg"
+    },
+    {
+     "w": "metal",
+     "hu": "fém"
+    },
+    {
+     "w": "caballo",
+     "hu": "ló"
+    }
+   ]
+  },
+  {
+   "id": "u7",
+   "unit": "u7",
+   "title": "Unidad 7: Rumbo a las estrellas",
+   "title_hu": "7. fejezet – szavak",
+   "words": [
+    {
+     "w": "estrella",
+     "hu": "csillag"
+    },
+    {
+     "w": "luna",
+     "hu": "hold"
+    },
+    {
+     "w": "planeta",
+     "hu": "bolygó"
+    },
+    {
+     "w": "satélite",
+     "hu": "műhold"
+    },
+    {
+     "w": "música",
+     "hu": "zene"
+    },
+    {
+     "w": "pájaro",
+     "hu": "madár"
+    },
+    {
+     "w": "mágico",
+     "hu": "varázslatos"
+    },
+    {
+     "w": "teléfono",
+     "hu": "telefon"
+    },
+    {
+     "w": "plátano",
+     "hu": "banán"
+    },
+    {
+     "w": "cámara",
+     "hu": "fényképezőgép"
+    },
+    {
+     "w": "médico",
+     "hu": "orvos"
+    },
+    {
+     "w": "sábado",
+     "hu": "szombat"
+    },
+    {
+     "w": "número",
+     "hu": "szám"
+    },
+    {
+     "w": "último",
+     "hu": "utolsó"
+    },
+    {
+     "w": "pálido",
+     "hu": "sápadt"
+    },
+    {
+     "w": "telescopio",
+     "hu": "távcső"
+    },
+    {
+     "w": "astronauta",
+     "hu": "űrhajós"
+    },
+    {
+     "w": "paraguas",
+     "hu": "esernyő"
+    },
+    {
+     "w": "sacapuntas",
+     "hu": "hegyező"
+    },
+    {
+     "w": "abrelatas",
+     "hu": "konzervnyitó"
+    },
+    {
+     "w": "baloncesto",
+     "hu": "kosárlabda"
+    },
+    {
+     "w": "teatro",
+     "hu": "színház"
+    },
+    {
+     "w": "escenario",
+     "hu": "színpad"
+    },
+    {
+     "w": "actor",
+     "hu": "színész"
+    },
+    {
+     "w": "viñeta",
+     "hu": "képkocka"
+    },
+    {
+     "w": "bocadillo",
+     "hu": "szövegbuborék"
+    },
+    {
+     "w": "entrevista",
+     "hu": "interjú"
+    },
+    {
+     "w": "preguntar",
+     "hu": "kérdezni"
+    },
+    {
+     "w": "responder",
+     "hu": "válaszolni"
+    },
+    {
+     "w": "descubrir",
+     "hu": "felfedezni"
+    }
+   ]
+  },
+  {
+   "id": "u8",
+   "unit": "u8",
+   "title": "Unidad 8: De norte a sur",
+   "title_hu": "8. fejezet – szavak",
+   "words": [
+    {
+     "w": "norte",
+     "hu": "észak"
+    },
+    {
+     "w": "sur",
+     "hu": "dél"
+    },
+    {
+     "w": "playa",
+     "hu": "tengerpart"
+    },
+    {
+     "w": "acantilado",
+     "hu": "szikla"
+    },
+    {
+     "w": "pico",
+     "hu": "csúcs"
+    },
+    {
+     "w": "nevado",
+     "hu": "havas"
+    },
+    {
+     "w": "isla",
+     "hu": "sziget"
+    },
+    {
+     "w": "volcán",
+     "hu": "vulkán"
+    },
+    {
+     "w": "océano",
+     "hu": "óceán"
+    },
+    {
+     "w": "noticia",
+     "hu": "hír"
+    },
+    {
+     "w": "periódico",
+     "hu": "újság"
+    },
+    {
+     "w": "titular",
+     "hu": "újságcím"
+    },
+    {
+     "w": "párrafo",
+     "hu": "bekezdés"
+    },
+    {
+     "w": "punto",
+     "hu": "pont"
+    },
+    {
+     "w": "mayúscula",
+     "hu": "nagybetű"
+    },
+    {
+     "w": "verso",
+     "hu": "verssor"
+    },
+    {
+     "w": "rima",
+     "hu": "rím"
+    },
+    {
+     "w": "poema",
+     "hu": "vers"
+    },
+    {
+     "w": "pan",
+     "hu": "kenyér"
+    },
+    {
+     "w": "panadería",
+     "hu": "pékség"
+    },
+    {
+     "w": "panecillo",
+     "hu": "zsemle"
+    },
+    {
+     "w": "juguete",
+     "hu": "játék"
+    },
+    {
+     "w": "juguetería",
+     "hu": "játékbolt"
+    },
+    {
+     "w": "raíz",
+     "hu": "szótő"
+    },
+    {
+     "w": "texto",
+     "hu": "szöveg"
+    },
+    {
+     "w": "tema",
+     "hu": "téma"
+    },
+    {
+     "w": "enunciado",
+     "hu": "mondat"
+    },
+    {
+     "w": "pregunta",
+     "hu": "kérdés"
+    },
+    {
+     "w": "suceder",
+     "hu": "történni"
+    },
+    {
+     "w": "ordenado",
+     "hu": "rendezett"
+    }
+   ]
+  },
+  {
+   "id": "u9",
+   "unit": "u9",
+   "title": "Unidad 9: De dónde venimos",
+   "title_hu": "9. fejezet – szavak",
+   "words": [
+    {
+     "w": "castillo",
+     "hu": "kastély"
+    },
+    {
+     "w": "tesoro",
+     "hu": "kincs"
+    },
+    {
+     "w": "romano",
+     "hu": "római"
+    },
+    {
+     "w": "acueducto",
+     "hu": "vízvezeték"
+    },
+    {
+     "w": "pasado",
+     "hu": "múlt"
+    },
+    {
+     "w": "historia",
+     "hu": "történelem"
+    },
+    {
+     "w": "herramienta",
+     "hu": "eszköz"
+    },
+    {
+     "w": "piedra",
+     "hu": "kő"
+    },
+    {
+     "w": "hueso",
+     "hu": "csont"
+    },
+    {
+     "w": "coma",
+     "hu": "vessző"
+    },
+    {
+     "w": "opinión",
+     "hu": "vélemény"
+    },
+    {
+     "w": "creer",
+     "hu": "hinni, gondolni"
+    },
+    {
+     "w": "acuerdo",
+     "hu": "egyetértés"
+    },
+    {
+     "w": "respeto",
+     "hu": "tisztelet"
+    },
+    {
+     "w": "sujeto",
+     "hu": "alany"
+    },
+    {
+     "w": "predicado",
+     "hu": "állítmány"
+    },
+    {
+     "w": "verbo",
+     "hu": "ige"
+    },
+    {
+     "w": "estrofa",
+     "hu": "versszak"
+    },
+    {
+     "w": "sílaba",
+     "hu": "szótag"
+    },
+    {
+     "w": "mural",
+     "hu": "tabló"
+    },
+    {
+     "w": "título",
+     "hu": "cím"
+    },
+    {
+     "w": "imagen",
+     "hu": "kép"
+    },
+    {
+     "w": "reloj",
+     "hu": "óra"
+    },
+    {
+     "w": "calendario",
+     "hu": "naptár"
+    },
+    {
+     "w": "naranja",
+     "hu": "narancs"
+    },
+    {
+     "w": "manzana",
+     "hu": "alma"
+    },
+    {
+     "w": "araña",
+     "hu": "pók"
+    },
+    {
+     "w": "avispa",
+     "hu": "darázs"
+    },
+    {
+     "w": "trigo",
+     "hu": "búza"
+    },
+    {
+     "w": "maíz",
+     "hu": "kukorica"
+    }
+   ]
+  }
+ ]
+}

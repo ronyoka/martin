@@ -1,0 +1,9 @@
+{
+ "_doc": "Napi ellenőrzés: ide kerülnek a közelgő dolgozatok/házik. date=YYYY-MM-DD; type=control|test|homework; units=a fejezet-id-k; link_ids=a links.json elemei; default_units=ha nincs közelgő esemény, ebből a fejezetből ismétlünk. A 'recurring' szabály minden megadott hétköznapra (1=hétfő..7=vasárnap) virtuális eseményt ad az 'after' dátum után. Módosítás után: python3 tools/mkplus.py <tantárgy> és python3 tools/mkxaudio.py <tantárgy> (új cím hangja miatt), majd újrapublikálás.",
+ "default_units": [
+  "u0",
+  "u1"
+ ],
+ "events": [],
+ "recurring": []
+}

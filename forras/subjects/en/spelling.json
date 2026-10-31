@@ -1,0 +1,152 @@
+{
+ "_doc": "Heti spelling-listák. id=a teszt dátuma (vagy azonosító); test_date=YYYY-MM-DD vagy null; words=[{w: angol szó, hu: magyar jelentés (rövid)}]. Új hét: új elem a 'weeks' végére (a legutolsó a 'jelenlegi' ha a test_date >= ma). Módosítás után: tools/mkplus.py en és tools/mkxaudio.py en.",
+ "weeks": [
+  {
+   "id": "family",
+   "test_date": null,
+   "title": "Family",
+   "title_hu": "Családtagok",
+   "unit": "u1",
+   "words": [
+    {
+     "w": "grandfather",
+     "hu": "nagypapa"
+    },
+    {
+     "w": "uncle",
+     "hu": "nagybácsi"
+    },
+    {
+     "w": "brother",
+     "hu": "fiútestvér"
+    },
+    {
+     "w": "sister",
+     "hu": "lánytestvér"
+    },
+    {
+     "w": "grandmother",
+     "hu": "nagymama"
+    },
+    {
+     "w": "cousin",
+     "hu": "unokatestvér"
+    },
+    {
+     "w": "siblings",
+     "hu": "testvérek"
+    },
+    {
+     "w": "have",
+     "hu": "van neki"
+    },
+    {
+     "w": "daughter",
+     "hu": "lánya"
+    },
+    {
+     "w": "son",
+     "hu": "fia"
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27",
+   "test_date": "2026-10-27",
+   "title": "-ing words",
+   "title_hu": "-ing szavak",
+   "unit": "u0",
+   "words": [
+    {
+     "w": "swimming",
+     "hu": "úszás, úszik"
+    },
+    {
+     "w": "doing",
+     "hu": "csinál"
+    },
+    {
+     "w": "studying",
+     "hu": "tanul"
+    },
+    {
+     "w": "reading",
+     "hu": "olvas"
+    },
+    {
+     "w": "riding",
+     "hu": "lovagol, biciklizik"
+    },
+    {
+     "w": "running",
+     "hu": "fut"
+    },
+    {
+     "w": "sleeping",
+     "hu": "alszik"
+    },
+    {
+     "w": "writing",
+     "hu": "ír"
+    },
+    {
+     "w": "having",
+     "hu": "van neki"
+    },
+    {
+     "w": "listening",
+     "hu": "hallgat"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-03",
+   "test_date": "2026-11-03",
+   "title": "Home sweet home",
+   "title_hu": "Az otthon",
+   "unit": "u2",
+   "words": [
+    {
+     "w": "stairs",
+     "hu": "lépcső"
+    },
+    {
+     "w": "flat",
+     "hu": "lakás"
+    },
+    {
+     "w": "house",
+     "hu": "ház"
+    },
+    {
+     "w": "town",
+     "hu": "város"
+    },
+    {
+     "w": "kitchen",
+     "hu": "konyha"
+    },
+    {
+     "w": "city",
+     "hu": "nagyváros"
+    },
+    {
+     "w": "floor",
+     "hu": "emelet, padló"
+    },
+    {
+     "w": "building",
+     "hu": "épület"
+    },
+    {
+     "w": "wardrobe",
+     "hu": "ruhásszekrény"
+    },
+    {
+     "w": "live",
+     "hu": "lakik"
+    }
+   ]
+  }
+ ]
+}

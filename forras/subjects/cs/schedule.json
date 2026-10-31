@@ -1,0 +1,40 @@
+{
+ "_doc": "Napi ellenőrzés: ide kerülnek a közelgő dolgozatok/házik. date=YYYY-MM-DD; type=control|test|homework; units=a fejezet-id-k; link_ids=a links.json elemei; default_units=ha nincs közelgő esemény, ebből a fejezetből ismétlünk. A 'recurring' szabály minden megadott hétköznapra (1=hétfő..7=vasárnap) virtuális eseményt ad az 'after' dátum után. Módosítás után: python3 tools/mkplus.py <tantárgy> és python3 tools/mkxaudio.py <tantárgy> (új cím hangja miatt), majd újrapublikálás.",
+ "default_units": [
+  "u1"
+ ],
+ "events": [
+  {
+   "id": "cs-hw-1103",
+   "date": "2026-11-03",
+   "type": "homework",
+   "title": "Deberes: Ficha de repaso, unidad 1",
+   "title_hu": "Házi: Ficha de repaso – 1. fejezet (ismétlő lap)",
+   "units": [
+    "u1"
+   ],
+   "link_ids": [
+    "ficha_solved",
+    "ficha_pdf",
+    "ficha_video"
+   ]
+  },
+  {
+   "id": "cs-control-1113",
+   "date": "2026-11-13",
+   "type": "control",
+   "title": "Control de Sociales – unidad 1",
+   "title_hu": "Társadalomismeret dolgozat – 1. fejezet",
+   "units": [
+    "u1"
+   ],
+   "link_ids": [
+    "control_pdf",
+    "control_video",
+    "ficha_solved",
+    "libro"
+   ]
+  }
+ ],
+ "recurring": []
+}

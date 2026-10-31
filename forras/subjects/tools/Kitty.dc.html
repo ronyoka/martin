@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Cica kabala</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div class="{{cls}}" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{isIdle}}" hint-placeholder-val="{{ true }}">
+<svg viewBox="0 0 200 200" width="100%" height="100%" role="img" aria-label="Cica kabala">
+  <path class="tail" d="M146 168 q44 -6 34 -62" stroke="#E8913F" stroke-width="14" fill="none" stroke-linecap="round"></path>
+  <ellipse cx="100" cy="160" rx="52" ry="34" fill="#F2A65A"></ellipse>
+  <ellipse cx="100" cy="170" rx="28" ry="20" fill="#FFE3C2"></ellipse>
+  <ellipse cx="76" cy="190" rx="15" ry="8" fill="#F2A65A"></ellipse>
+  <ellipse cx="124" cy="190" rx="15" ry="8" fill="#F2A65A"></ellipse>
+  <path d="M50 66 L56 16 L94 46 Z" fill="#F2A65A"></path>
+  <path d="M150 66 L144 16 L106 46 Z" fill="#F2A65A"></path>
+  <path d="M60 56 L63 30 L84 46 Z" fill="#F7B7C3"></path>
+  <path d="M140 56 L137 30 L116 46 Z" fill="#F7B7C3"></path>
+  <circle cx="100" cy="94" r="56" fill="#F2A65A"></circle>
+  <path d="M100 40 v14 M86 42 l3 12 M114 42 l-3 12" stroke="#D9822B" stroke-width="4" stroke-linecap="round"></path>
+  <circle cx="64" cy="114" r="9" fill="#F7B7C3" opacity=".7"></circle>
+  <circle cx="136" cy="114" r="9" fill="#F7B7C3" opacity=".7"></circle>
+  <circle cx="78" cy="94" r="10" fill="#2B2B2B"></circle>
+  <circle cx="122" cy="94" r="10" fill="#2B2B2B"></circle>
+  <circle cx="81" cy="90" r="3.5" fill="#FFFFFF"></circle>
+  <circle cx="125" cy="90" r="3.5" fill="#FFFFFF"></circle>
+  <path d="M94 106 h12 l-6 7 z" fill="#E86A7A"></path>
+  <path d="M88 118 q6 7 12 0 q6 7 12 0" stroke="#2B2B2B" stroke-width="3" fill="none" stroke-linecap="round"></path>
+  <path d="M40 104 h24 M40 114 l24 -3 M160 104 h-24 M160 114 l-24 -3" stroke="#8A5A2B" stroke-width="2" stroke-linecap="round"></path>
+</svg>
+</sc-if>
+<sc-if value="{{isHappy}}" hint-placeholder-val="{{ false }}">
+<svg viewBox="0 0 200 200" width="100%" height="100%" role="img" aria-label="A cica nevet és ugrál">
+  <path d="M146 168 q44 -6 34 -62" stroke="#E8913F" stroke-width="14" fill="none" stroke-linecap="round"></path>
+  <ellipse cx="100" cy="160" rx="52" ry="34" fill="#F2A65A"></ellipse>
+  <ellipse cx="100" cy="170" rx="28" ry="20" fill="#FFE3C2"></ellipse>
+  <ellipse cx="60" cy="146" rx="15" ry="8" fill="#F2A65A" transform="rotate(-40 60 146)"></ellipse>
+  <ellipse cx="140" cy="146" rx="15" ry="8" fill="#F2A65A" transform="rotate(40 140 146)"></ellipse>
+  <path d="M50 66 L56 16 L94 46 Z" fill="#F2A65A"></path>
+  <path d="M150 66 L144 16 L106 46 Z" fill="#F2A65A"></path>
+  <path d="M60 56 L63 30 L84 46 Z" fill="#F7B7C3"></path>
+  <path d="M140 56 L137 30 L116 46 Z" fill="#F7B7C3"></path>
+  <circle cx="100" cy="94" r="56" fill="#F2A65A"></circle>
+  <path d="M100 40 v14 M86 42 l3 12 M114 42 l-3 12" stroke="#D9822B" stroke-width="4" stroke-linecap="round"></path>
+  <circle cx="62" cy="112" r="11" fill="#F48FA2" opacity=".85"></circle>
+  <circle cx="138" cy="112" r="11" fill="#F48FA2" opacity=".85"></circle>
+  <path d="M66 98 q12 -16 24 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"></path>
+  <path d="M110 98 q12 -16 24 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"></path>
+  <path d="M94 104 h12 l-6 7 z" fill="#E86A7A"></path>
+  <path d="M80 114 q20 34 40 0 z" fill="#B8304A"></path>
+  <path d="M90 126 q10 10 20 0 q-10 -6 -20 0 z" fill="#F48FA2"></path>
+  <path d="M40 102 h24 M40 112 l24 -3 M160 102 h-24 M160 112 l-24 -3" stroke="#8A5A2B" stroke-width="2" stroke-linecap="round"></path>
+  <path d="M28 40 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#F7C948"></path>
+  <path d="M170 30 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#F7C948"></path>
+  <path d="M176 78 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" fill="#6BBF59"></path>
+</svg>
+</sc-if>
+<sc-if value="{{isSad}}" hint-placeholder-val="{{ false }}">
+<svg viewBox="0 0 200 200" width="100%" height="100%" role="img" aria-label="A cica sír">
+  <path d="M146 172 q30 4 40 -12" stroke="#E8913F" stroke-width="14" fill="none" stroke-linecap="round"></path>
+  <ellipse cx="100" cy="162" rx="52" ry="32" fill="#F2A65A"></ellipse>
+  <ellipse cx="100" cy="172" rx="28" ry="18" fill="#FFE3C2"></ellipse>
+  <ellipse cx="76" cy="190" rx="15" ry="8" fill="#F2A65A"></ellipse>
+  <ellipse cx="124" cy="190" rx="15" ry="8" fill="#F2A65A"></ellipse>
+  <path d="M46 76 L36 34 L84 54 Z" fill="#F2A65A"></path>
+  <path d="M154 76 L164 34 L116 54 Z" fill="#F2A65A"></path>
+  <path d="M54 68 L48 46 L76 56 Z" fill="#F7B7C3"></path>
+  <path d="M146 68 L152 46 L124 56 Z" fill="#F7B7C3"></path>
+  <circle cx="100" cy="98" r="56" fill="#F2A65A"></circle>
+  <path d="M100 44 v14 M86 46 l3 12 M114 46 l-3 12" stroke="#D9822B" stroke-width="4" stroke-linecap="round"></path>
+  <path d="M64 82 l22 8 M136 82 l-22 8" stroke="#8A5A2B" stroke-width="4" stroke-linecap="round"></path>
+  <path d="M68 100 q10 10 20 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"></path>
+  <path d="M112 100 q10 10 20 0" stroke="#2B2B2B" stroke-width="5" fill="none" stroke-linecap="round"></path>
+  <path class="tear" d="M74 108 q-7 11 0 15 q7 -4 0 -15 z" fill="#5DADE2"></path>
+  <path class="tear2" d="M126 108 q-7 11 0 15 q7 -4 0 -15 z" fill="#5DADE2"></path>
+  <path d="M94 110 h12 l-6 7 z" fill="#E86A7A"></path>
+  <path d="M86 134 q14 -12 28 0" stroke="#2B2B2B" stroke-width="3.5" fill="none" stroke-linecap="round"></path>
+  <path d="M40 110 h24 M40 120 l24 -3 M160 110 h-24 M160 120 l-24 -3" stroke="#8A5A2B" stroke-width="2" stroke-linecap="round"></path>
+</svg>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mood":{"editor":"enum","options":["idle","happy","sad"],"default":"idle"},"$preview":{"width":240,"height":240}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const m = this.props.mood ?? 'idle';
+    return { cls: 'kitty kitty-' + m, isIdle: m === 'idle', isHappy: m === 'happy', isSad: m === 'sad' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+ "_doc": "Napi ellenőrzés: ide kerülnek a közelgő dolgozatok/házik. date=YYYY-MM-DD; type=control|test|homework; units=a fejezet-id-k; link_ids=a links.json elemei; default_units=ha nincs közelgő esemény, ebből a fejezetből ismétlünk. A 'recurring' szabály minden megadott hétköznapra (1=hétfő..7=vasárnap) virtuális eseményt ad az 'after' dátum után. Módosítás után: python3 tools/mkplus.py <tantárgy> és python3 tools/mkxaudio.py <tantárgy> (új cím hangja miatt), majd újrapublikálás.",
+ "default_units": [
+  "u1",
+  "u2"
+ ],
+ "events": [
+  {
+   "id": "lengua-control-1106",
+   "date": "2026-11-06",
+   "type": "control",
+   "title": "Control de Lengua – unidades 1 y 2",
+   "title_hu": "Spanyol dolgozat – 1–2. fejezet",
+   "units": [
+    "u1",
+    "u2"
+   ],
+   "link_ids": [
+    "control_pdf",
+    "control_video",
+    "gota_pdf",
+    "aprendido_pdf",
+    "aprendido_video",
+    "libro",
+    "cuaderno",
+    "saberes"
+   ]
+  }
+ ],
+ "recurring": []
+}
