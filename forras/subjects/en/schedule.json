@@ -2,21 +2,6 @@
  "_doc": "Napi ellenőrzés: ide kerülnek a közelgő dolgozatok/házik. date=YYYY-MM-DD; type=spelling|control|test|homework; units=a fejezet-id-k (u0..u8); spelling_week=a spelling.json hetének id-ja; link_ids=a links.json elemei. A 'recurring' szabály minden megadott hétköznapra (1=hétfő..7=vasárnap) virtuális eseményt ad az 'after' dátum után. Módosítás után: python3 tools/mkplus.py en (a hang miatt: python3 tools/mkxaudio.py en) és újrapublikálás.",
  "events": [
   {
-   "id": "en-spelling-1103",
-   "date": "2026-11-03",
-   "type": "spelling",
-   "title": "Spelling test – Unit 2 (Home sweet home)",
-   "title_hu": "Spelling teszt – 2. fejezet (az otthon)",
-   "units": [
-    "u2"
-   ],
-   "spelling_week": "2026-11-03",
-   "link_ids": [
-    "spelling_home_pdf",
-    "spelling_home_video"
-   ]
-  },
-  {
    "id": "en-control1-1104",
    "date": "2026-11-04",
    "type": "control",

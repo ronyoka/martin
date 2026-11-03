@@ -1036,7 +1036,7 @@ let lastPane = null;
 let plusOn = false;
 function render() { if (st.view === 'plus' && plusOn) return; renderAll(); }
 function renderAll() {
-  plusOn = false; if (window.Plus && window.Plus.unmount && st.view !== 'plus') window.Plus.unmount();
+  const wasPlus = plusOn; plusOn = false; if (wasPlus && window.Plus && window.Plus.unmount && st.view !== 'plus') window.Plus.unmount();
   const ovOld = document.querySelector('#overlay .overlay'); const ovTop = ovOld ? ovOld.scrollTop : 0; const winY = window.scrollY;
   for (const k in H) delete H[k]; hid = 0;
   document.getElementById('headKitty').innerHTML = kitty(st.mood);
