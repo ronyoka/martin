@@ -1,0 +1,433 @@
+{
+ "_doc": "Tantárgyi csillagfeladatok: kind=sort|match|tf; q/q_hu; options[{t,hu}]; answer=index. Módosítás után: mkplus.py, mkxaudio.py.",
+ "tasks": [
+  {
+   "unit": "u0",
+   "kind": "match",
+   "q": "What do you use to cut paper?",
+   "q_hu": "Mivel vágod a papírt?",
+   "options": [
+    {
+     "t": "Scissors",
+     "hu": "olló"
+    },
+    {
+     "t": "Glue",
+     "hu": "ragasztó"
+    },
+    {
+     "t": "A rubber",
+     "hu": "radír"
+    }
+   ],
+   "answer": 0,
+   "explain": "We cut with scissors.",
+   "explain_hu": "Ollóval vágunk.",
+   "id": "ac0"
+  },
+  {
+   "unit": "u0",
+   "kind": "match",
+   "q": "What do you use to stick paper?",
+   "q_hu": "Mivel ragasztod a papírt?",
+   "options": [
+    {
+     "t": "Glue",
+     "hu": "ragasztó"
+    },
+    {
+     "t": "A pencil",
+     "hu": "ceruza"
+    },
+    {
+     "t": "Scissors",
+     "hu": "olló"
+    }
+   ],
+   "answer": 0,
+   "explain": "We stick with glue.",
+   "explain_hu": "Ragasztóval ragasztunk.",
+   "id": "ac1"
+  },
+  {
+   "unit": "u0",
+   "kind": "match",
+   "q": "The teacher says: \"Colour the picture.\" What do you do?",
+   "q_hu": "A tanár azt mondja: „Colour the picture.” Mit csinálsz?",
+   "options": [
+    {
+     "t": "I colour it",
+     "hu": "kiszínezem"
+    },
+    {
+     "t": "I cut it",
+     "hu": "kivágom"
+    },
+    {
+     "t": "I fold it",
+     "hu": "összehajtom"
+    }
+   ],
+   "answer": 0,
+   "explain": "Colour = színezd ki.",
+   "explain_hu": "Colour = színezd ki.",
+   "id": "ac2"
+  },
+  {
+   "unit": "u0",
+   "kind": "match",
+   "q": "The teacher says: \"Fold the paper.\" What do you do?",
+   "q_hu": "A tanár azt mondja: „Fold the paper.” Mit csinálsz?",
+   "options": [
+    {
+     "t": "I fold it in half",
+     "hu": "félbehajtom"
+    },
+    {
+     "t": "I paint it",
+     "hu": "kifestem"
+    },
+    {
+     "t": "I throw it",
+     "hu": "eldobom"
+    }
+   ],
+   "answer": 0,
+   "explain": "Fold = hajtsd össze.",
+   "explain_hu": "Fold = hajtsd össze.",
+   "id": "ac3"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Glass",
+   "q_hu": "üveg",
+   "options": [
+    {
+     "t": "Smooth",
+     "hu": "sima"
+    },
+    {
+     "t": "Rough",
+     "hu": "érdes"
+    },
+    {
+     "t": "Soft",
+     "hu": "puha"
+    }
+   ],
+   "answer": 0,
+   "explain": "Glass is smooth.",
+   "explain_hu": "Az üveg sima.",
+   "id": "ac4"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Sandpaper",
+   "q_hu": "csiszolópapír",
+   "options": [
+    {
+     "t": "Smooth",
+     "hu": "sima"
+    },
+    {
+     "t": "Rough",
+     "hu": "érdes"
+    },
+    {
+     "t": "Soft",
+     "hu": "puha"
+    }
+   ],
+   "answer": 1,
+   "explain": "Sandpaper is rough.",
+   "explain_hu": "A csiszolópapír érdes.",
+   "id": "ac5"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Cotton wool",
+   "q_hu": "vatta",
+   "options": [
+    {
+     "t": "Smooth",
+     "hu": "sima"
+    },
+    {
+     "t": "Rough",
+     "hu": "érdes"
+    },
+    {
+     "t": "Soft",
+     "hu": "puha"
+    }
+   ],
+   "answer": 2,
+   "explain": "Cotton wool is soft.",
+   "explain_hu": "A vatta puha.",
+   "id": "ac6"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "Which shape has three sides?",
+   "q_hu": "Melyik alaknak van három oldala?",
+   "options": [
+    {
+     "t": "A triangle",
+     "hu": "háromszög"
+    },
+    {
+     "t": "A square",
+     "hu": "négyzet"
+    },
+    {
+     "t": "A circle",
+     "hu": "kör"
+    }
+   ],
+   "answer": 0,
+   "explain": "A triangle has three sides.",
+   "explain_hu": "A háromszögnek három oldala van.",
+   "id": "ac7"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "Which shape has no corners?",
+   "q_hu": "Melyik alaknak nincs sarka?",
+   "options": [
+    {
+     "t": "A circle",
+     "hu": "kör"
+    },
+    {
+     "t": "A rectangle",
+     "hu": "téglalap"
+    },
+    {
+     "t": "A triangle",
+     "hu": "háromszög"
+    }
+   ],
+   "answer": 0,
+   "explain": "A circle has no corners.",
+   "explain_hu": "A körnek nincs sarka.",
+   "id": "ac8"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "What do many frames one after another make?",
+   "q_hu": "Mit hoz létre sok egymás utáni képkocka?",
+   "options": [
+    {
+     "t": "Motion (animation)",
+     "hu": "mozgást (animációt)"
+    },
+    {
+     "t": "A shadow",
+     "hu": "árnyékot"
+    },
+    {
+     "t": "A texture",
+     "hu": "textúrát"
+    }
+   ],
+   "answer": 0,
+   "explain": "Many frames make animation.",
+   "explain_hu": "Sok képkocka mozgást (animációt) ad.",
+   "id": "ac9"
+  },
+  {
+   "unit": "u2",
+   "kind": "match",
+   "q": "Where is the shadow?",
+   "q_hu": "Hol van az árnyék?",
+   "options": [
+    {
+     "t": "On the side away from the light",
+     "hu": "a fénnyel ellentétes oldalon"
+    },
+    {
+     "t": "On the side of the light",
+     "hu": "a fény felőli oldalon"
+    },
+    {
+     "t": "There is never a shadow",
+     "hu": "sosincs árnyék"
+    }
+   ],
+   "answer": 0,
+   "explain": "The shadow is opposite the light.",
+   "explain_hu": "Az árnyék a fénnyel szemben van.",
+   "id": "ac10"
+  },
+  {
+   "unit": "u2",
+   "kind": "tf",
+   "q": "Light colours look closer to the light.",
+   "q_hu": "A világos színek a fény felőli részen vannak.",
+   "options": [
+    {
+     "t": "True",
+     "hu": "Igaz"
+    },
+    {
+     "t": "False",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Light parts face the light, dark parts are in the shade.",
+   "explain_hu": "A világos részek a fény felé néznek, a sötétek árnyékban vannak.",
+   "id": "ac11"
+  },
+  {
+   "unit": "u2",
+   "kind": "match",
+   "q": "What is an outline?",
+   "q_hu": "Mi a körvonal?",
+   "options": [
+    {
+     "t": "The line around a shape",
+     "hu": "a forma körüli vonal"
+    },
+    {
+     "t": "A colour",
+     "hu": "egy szín"
+    },
+    {
+     "t": "A shadow",
+     "hu": "egy árnyék"
+    }
+   ],
+   "answer": 0,
+   "explain": "An outline is the line around a shape.",
+   "explain_hu": "A körvonal a forma körüli vonal.",
+   "id": "ac12"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "A ruler helps me draw it.",
+   "q_hu": "Vonalzóval rajzolom meg.",
+   "options": [
+    {
+     "t": "Straight line",
+     "hu": "egyenes vonal"
+    },
+    {
+     "t": "Curved line",
+     "hu": "görbe vonal"
+    },
+    {
+     "t": "Zigzag line",
+     "hu": "cikcakk vonal"
+    }
+   ],
+   "answer": 0,
+   "explain": "A ruler makes straight lines.",
+   "explain_hu": "A vonalzóval egyenes vonalat húzunk.",
+   "id": "ac13"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "It looks like a wave.",
+   "q_hu": "Olyan, mint egy hullám.",
+   "options": [
+    {
+     "t": "Straight line",
+     "hu": "egyenes vonal"
+    },
+    {
+     "t": "Curved line",
+     "hu": "görbe vonal"
+    },
+    {
+     "t": "Zigzag line",
+     "hu": "cikcakk vonal"
+    }
+   ],
+   "answer": 1,
+   "explain": "A wave is a curved line.",
+   "explain_hu": "A hullám görbe vonal.",
+   "id": "ac14"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "It goes up and down like lightning.",
+   "q_hu": "Fel-le megy, mint a villám.",
+   "options": [
+    {
+     "t": "Straight line",
+     "hu": "egyenes vonal"
+    },
+    {
+     "t": "Curved line",
+     "hu": "görbe vonal"
+    },
+    {
+     "t": "Zigzag line",
+     "hu": "cikcakk vonal"
+    }
+   ],
+   "answer": 2,
+   "explain": "Lightning is a zigzag line.",
+   "explain_hu": "A villám cikcakk vonal.",
+   "id": "ac15"
+  },
+  {
+   "unit": "u3",
+   "kind": "match",
+   "q": "What is a still life?",
+   "q_hu": "Mi a csendélet?",
+   "options": [
+    {
+     "t": "A picture of objects like fruit and vases",
+     "hu": "tárgyak, pl. gyümölcs és váza képe"
+    },
+    {
+     "t": "A picture of a person running",
+     "hu": "futó ember képe"
+    },
+    {
+     "t": "A comic",
+     "hu": "képregény"
+    }
+   ],
+   "answer": 0,
+   "explain": "A still life shows objects that do not move.",
+   "explain_hu": "A csendélet mozdulatlan tárgyakat ábrázol.",
+   "id": "ac16"
+  },
+  {
+   "unit": "u3",
+   "kind": "match",
+   "q": "Where do the words go in a comic?",
+   "q_hu": "Hová kerülnek a szavak a képregényben?",
+   "options": [
+    {
+     "t": "In speech bubbles",
+     "hu": "szövegbuborékba"
+    },
+    {
+     "t": "Under the table",
+     "hu": "az asztal alá"
+    },
+    {
+     "t": "In the frame border",
+     "hu": "a keret szélére"
+    }
+   ],
+   "answer": 0,
+   "explain": "Characters talk in speech bubbles.",
+   "explain_hu": "A szereplők szövegbuborékban beszélnek.",
+   "id": "ac17"
+  }
+ ]
+}

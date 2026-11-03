@@ -1,0 +1,949 @@
+{
+ "_doc": "Tantárgyi csillagfeladatok: kind=sort|match|tf; q/q_hu; options[{t,hu}]; answer=index. Módosítás után: mkplus.py, mkxaudio.py.",
+ "tasks": [
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "¿Quién dirige el Ayuntamiento?",
+   "q_hu": "Ki vezeti a városházát?",
+   "options": [
+    {
+     "t": "El alcalde",
+     "hu": "a polgármester"
+    },
+    {
+     "t": "El médico",
+     "hu": "az orvos"
+    },
+    {
+     "t": "El maestro",
+     "hu": "a tanár"
+    }
+   ],
+   "answer": 0,
+   "explain": "El alcalde dirige el Ayuntamiento.",
+   "explain_hu": "A polgármester vezeti a városházát.",
+   "id": "cs0"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Limpian las calles y recogen la basura.",
+   "q_hu": "Tisztítják az utcákat és elviszik a szemetet.",
+   "options": [
+    {
+     "t": "El alcalde",
+     "hu": "a polgármester"
+    },
+    {
+     "t": "Los concejales",
+     "hu": "a képviselők"
+    },
+    {
+     "t": "Los trabajadores municipales",
+     "hu": "a városi dolgozók"
+    }
+   ],
+   "answer": 2,
+   "explain": "Lo hacen los trabajadores municipales.",
+   "explain_hu": "Ezt a városi dolgozók végzik.",
+   "id": "cs1"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Ayudan al alcalde a gobernar.",
+   "q_hu": "Segítenek a polgármesternek kormányozni.",
+   "options": [
+    {
+     "t": "El alcalde",
+     "hu": "a polgármester"
+    },
+    {
+     "t": "Los concejales",
+     "hu": "a képviselők"
+    },
+    {
+     "t": "Los trabajadores municipales",
+     "hu": "a városi dolgozók"
+    }
+   ],
+   "answer": 1,
+   "explain": "Los concejales ayudan al alcalde.",
+   "explain_hu": "A képviselők segítenek a polgármesternek.",
+   "id": "cs2"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Señal redonda roja con una barra: no se puede pasar.",
+   "q_hu": "Piros kerek tábla áthúzással: nem szabad bemenni.",
+   "options": [
+    {
+     "t": "Peligro",
+     "hu": "veszély"
+    },
+    {
+     "t": "Prohibición",
+     "hu": "tilalom"
+    },
+    {
+     "t": "Obligación",
+     "hu": "kötelezettség"
+    },
+    {
+     "t": "Información",
+     "hu": "tájékoztatás"
+    }
+   ],
+   "answer": 1,
+   "explain": "Es una señal de prohibición.",
+   "explain_hu": "Ez tiltó tábla.",
+   "id": "cs3"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Señal triangular con borde rojo.",
+   "q_hu": "Háromszög alakú tábla piros szegéllyel.",
+   "options": [
+    {
+     "t": "Peligro",
+     "hu": "veszély"
+    },
+    {
+     "t": "Prohibición",
+     "hu": "tilalom"
+    },
+    {
+     "t": "Obligación",
+     "hu": "kötelezettség"
+    },
+    {
+     "t": "Información",
+     "hu": "tájékoztatás"
+    }
+   ],
+   "answer": 0,
+   "explain": "Las señales triangulares avisan de un peligro.",
+   "explain_hu": "A háromszög alakú táblák veszélyre figyelmeztetnek.",
+   "id": "cs4"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Señal redonda azul con una flecha.",
+   "q_hu": "Kék kerek tábla nyíllal.",
+   "options": [
+    {
+     "t": "Peligro",
+     "hu": "veszély"
+    },
+    {
+     "t": "Prohibición",
+     "hu": "tilalom"
+    },
+    {
+     "t": "Obligación",
+     "hu": "kötelezettség"
+    },
+    {
+     "t": "Información",
+     "hu": "tájékoztatás"
+    }
+   ],
+   "answer": 2,
+   "explain": "Las señales redondas azules indican una obligación.",
+   "explain_hu": "A kék kerek táblák kötelezettséget jeleznek.",
+   "id": "cs5"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Señal cuadrada azul: hospital cerca.",
+   "q_hu": "Kék négyzet alakú tábla: kórház a közelben.",
+   "options": [
+    {
+     "t": "Peligro",
+     "hu": "veszély"
+    },
+    {
+     "t": "Prohibición",
+     "hu": "tilalom"
+    },
+    {
+     "t": "Obligación",
+     "hu": "kötelezettség"
+    },
+    {
+     "t": "Información",
+     "hu": "tájékoztatás"
+    }
+   ],
+   "answer": 3,
+   "explain": "Las señales cuadradas dan información.",
+   "explain_hu": "A négyzet alakú táblák tájékoztatnak.",
+   "id": "cs6"
+  },
+  {
+   "unit": "u1",
+   "kind": "tf",
+   "q": "En un monumento podemos comer y tocar todo.",
+   "q_hu": "Egy műemléknél ehetünk és mindent megfoghatunk.",
+   "options": [
+    {
+     "t": "Verdadero",
+     "hu": "Igaz"
+    },
+    {
+     "t": "Falso",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 1,
+   "explain": "Hay que respetar el patrimonio: no comer ni tocar.",
+   "explain_hu": "A műemlékeket tisztelni kell: nem eszünk és nem nyúlunk hozzájuk.",
+   "id": "cs7"
+  },
+  {
+   "unit": "u1",
+   "kind": "tf",
+   "q": "Para cruzar la calle usamos el paso de peatones.",
+   "q_hu": "Az utcán a gyalogátkelőn megyünk át.",
+   "options": [
+    {
+     "t": "Verdadero",
+     "hu": "Igaz"
+    },
+    {
+     "t": "Falso",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Sí, cruzamos por el paso de peatones.",
+   "explain_hu": "Igen, a zebrán kelünk át.",
+   "id": "cs8"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "¿Qué es un plano?",
+   "q_hu": "Mi az a térkép (alaprajz)?",
+   "options": [
+    {
+     "t": "Un dibujo de un lugar visto desde arriba",
+     "hu": "egy hely felülről nézett rajza"
+    },
+    {
+     "t": "Una foto de una persona",
+     "hu": "egy ember fényképe"
+    },
+    {
+     "t": "Un libro de cuentos",
+     "hu": "egy mesekönyv"
+    }
+   ],
+   "answer": 0,
+   "explain": "Un plano representa un lugar visto desde arriba.",
+   "explain_hu": "Az alaprajz egy helyet felülről ábrázol.",
+   "id": "cs9"
+  },
+  {
+   "unit": "u2",
+   "kind": "match",
+   "q": "¿Cuántos puntos cardinales hay?",
+   "q_hu": "Hány égtáj van?",
+   "options": [
+    {
+     "t": "Cuatro",
+     "hu": "négy"
+    },
+    {
+     "t": "Dos",
+     "hu": "kettő"
+    },
+    {
+     "t": "Seis",
+     "hu": "hat"
+    }
+   ],
+   "answer": 0,
+   "explain": "Norte, sur, este y oeste.",
+   "explain_hu": "Észak, dél, kelet és nyugat.",
+   "id": "cs10"
+  },
+  {
+   "unit": "u2",
+   "kind": "match",
+   "q": "¿Por dónde sale el sol?",
+   "q_hu": "Merre kel fel a nap?",
+   "options": [
+    {
+     "t": "Por el este",
+     "hu": "keleten"
+    },
+    {
+     "t": "Por el oeste",
+     "hu": "nyugaton"
+    },
+    {
+     "t": "Por el norte",
+     "hu": "északon"
+    }
+   ],
+   "answer": 0,
+   "explain": "El sol sale por el este.",
+   "explain_hu": "A nap keleten kel fel.",
+   "id": "cs11"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "Una esfera que representa la Tierra.",
+   "q_hu": "Gömb, amely a Földet ábrázolja.",
+   "options": [
+    {
+     "t": "El globo terráqueo",
+     "hu": "a földgömb"
+    },
+    {
+     "t": "El planisferio",
+     "hu": "a világtérkép"
+    },
+    {
+     "t": "El plano",
+     "hu": "az alaprajz"
+    }
+   ],
+   "answer": 0,
+   "explain": "Es el globo terráqueo.",
+   "explain_hu": "Ez a földgömb.",
+   "id": "cs12"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "Un mapa de toda la Tierra en un papel plano.",
+   "q_hu": "Az egész Föld térképe egy sík lapon.",
+   "options": [
+    {
+     "t": "El globo terráqueo",
+     "hu": "a földgömb"
+    },
+    {
+     "t": "El planisferio",
+     "hu": "a világtérkép"
+    },
+    {
+     "t": "La brújula",
+     "hu": "az iránytű"
+    }
+   ],
+   "answer": 1,
+   "explain": "Es el planisferio.",
+   "explain_hu": "Ez a világtérkép.",
+   "id": "cs13"
+  },
+  {
+   "unit": "u2",
+   "kind": "match",
+   "q": "¿Qué instrumento nos ayuda a orientarnos?",
+   "q_hu": "Melyik eszköz segít tájékozódni?",
+   "options": [
+    {
+     "t": "La brújula",
+     "hu": "az iránytű"
+    },
+    {
+     "t": "El reloj",
+     "hu": "az óra"
+    },
+    {
+     "t": "La regla",
+     "hu": "a vonalzó"
+    }
+   ],
+   "answer": 0,
+   "explain": "La brújula señala el norte.",
+   "explain_hu": "Az iránytű északra mutat.",
+   "id": "cs14"
+  },
+  {
+   "unit": "u2",
+   "kind": "tf",
+   "q": "España está en Europa.",
+   "q_hu": "Spanyolország Európában van.",
+   "options": [
+    {
+     "t": "Verdadero",
+     "hu": "Igaz"
+    },
+    {
+     "t": "Falso",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Sí, España está en el sur de Europa.",
+   "explain_hu": "Igen, Spanyolország Dél-Európában van.",
+   "id": "cs15"
+  },
+  {
+   "unit": "u3",
+   "kind": "match",
+   "q": "¿Qué es el clima?",
+   "q_hu": "Mi az éghajlat?",
+   "options": [
+    {
+     "t": "El tiempo habitual de un lugar durante muchos años",
+     "hu": "egy hely sok éven át jellemző időjárása"
+    },
+    {
+     "t": "El tiempo de hoy",
+     "hu": "a mai időjárás"
+    },
+    {
+     "t": "La temperatura del agua",
+     "hu": "a víz hőmérséklete"
+    }
+   ],
+   "answer": 0,
+   "explain": "El clima es el tiempo habitual de un lugar.",
+   "explain_hu": "Az éghajlat egy hely megszokott időjárása.",
+   "id": "cs16"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "Hoy llueve y hace frío.",
+   "q_hu": "Ma esik az eső és hideg van.",
+   "options": [
+    {
+     "t": "Tiempo atmosférico",
+     "hu": "időjárás"
+    },
+    {
+     "t": "Clima",
+     "hu": "éghajlat"
+    }
+   ],
+   "answer": 0,
+   "explain": "Lo que pasa hoy es el tiempo atmosférico.",
+   "explain_hu": "Ami ma van, az az időjárás.",
+   "id": "cs17"
+  },
+  {
+   "unit": "u3",
+   "kind": "match",
+   "q": "¿Con qué medimos la temperatura?",
+   "q_hu": "Mivel mérjük a hőmérsékletet?",
+   "options": [
+    {
+     "t": "Con el termómetro",
+     "hu": "hőmérővel"
+    },
+    {
+     "t": "Con el pluviómetro",
+     "hu": "csapadékmérővel"
+    },
+    {
+     "t": "Con la veleta",
+     "hu": "szélkakassal"
+    }
+   ],
+   "answer": 0,
+   "explain": "El termómetro mide la temperatura.",
+   "explain_hu": "A hőmérő méri a hőmérsékletet.",
+   "id": "cs18"
+  },
+  {
+   "unit": "u3",
+   "kind": "match",
+   "q": "¿Con qué medimos la lluvia?",
+   "q_hu": "Mivel mérjük az esőt?",
+   "options": [
+    {
+     "t": "Con el pluviómetro",
+     "hu": "csapadékmérővel"
+    },
+    {
+     "t": "Con el termómetro",
+     "hu": "hőmérővel"
+    },
+    {
+     "t": "Con la brújula",
+     "hu": "iránytűvel"
+    }
+   ],
+   "answer": 0,
+   "explain": "El pluviómetro mide la lluvia.",
+   "explain_hu": "A csapadékmérő méri az esőt.",
+   "id": "cs19"
+  },
+  {
+   "unit": "u3",
+   "kind": "tf",
+   "q": "Un río nace en el mar.",
+   "q_hu": "A folyó a tengerben ered.",
+   "options": [
+    {
+     "t": "Verdadero",
+     "hu": "Igaz"
+    },
+    {
+     "t": "Falso",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 1,
+   "explain": "Un río nace en la montaña y desemboca en el mar.",
+   "explain_hu": "A folyó a hegyekben ered, és a tengerbe torkollik.",
+   "id": "cs20"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "Un campo de trigo.",
+   "q_hu": "Búzaföld.",
+   "options": [
+    {
+     "t": "Paisaje natural",
+     "hu": "természetes táj"
+    },
+    {
+     "t": "Paisaje agrario",
+     "hu": "mezőgazdasági táj"
+    },
+    {
+     "t": "Paisaje urbano",
+     "hu": "városi táj"
+    }
+   ],
+   "answer": 1,
+   "explain": "Los campos de cultivo son paisaje agrario.",
+   "explain_hu": "A szántóföld mezőgazdasági táj.",
+   "id": "cs21"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "Una ciudad con edificios y calles.",
+   "q_hu": "Város épületekkel és utcákkal.",
+   "options": [
+    {
+     "t": "Paisaje natural",
+     "hu": "természetes táj"
+    },
+    {
+     "t": "Paisaje agrario",
+     "hu": "mezőgazdasági táj"
+    },
+    {
+     "t": "Paisaje urbano",
+     "hu": "városi táj"
+    }
+   ],
+   "answer": 2,
+   "explain": "Es un paisaje urbano.",
+   "explain_hu": "Ez városi táj.",
+   "id": "cs22"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "Una montaña sin casas ni carreteras.",
+   "q_hu": "Hegy házak és utak nélkül.",
+   "options": [
+    {
+     "t": "Paisaje natural",
+     "hu": "természetes táj"
+    },
+    {
+     "t": "Paisaje agrario",
+     "hu": "mezőgazdasági táj"
+    },
+    {
+     "t": "Paisaje urbano",
+     "hu": "városi táj"
+    }
+   ],
+   "answer": 0,
+   "explain": "Es un paisaje natural.",
+   "explain_hu": "Ez természetes táj.",
+   "id": "cs23"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "Apagar la luz al salir.",
+   "q_hu": "Kilépéskor lekapcsolni a villanyt.",
+   "options": [
+    {
+     "t": "Cuida el medio ambiente",
+     "hu": "védi a környezetet"
+    },
+    {
+     "t": "Daña el medio ambiente",
+     "hu": "károsítja a környezetet"
+    }
+   ],
+   "answer": 0,
+   "explain": "Ahorrar energía cuida el medio ambiente.",
+   "explain_hu": "Az energiatakarékosság védi a környezetet.",
+   "id": "cs24"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "Tirar basura al río.",
+   "q_hu": "Szemetet dobni a folyóba.",
+   "options": [
+    {
+     "t": "Cuida el medio ambiente",
+     "hu": "védi a környezetet"
+    },
+    {
+     "t": "Daña el medio ambiente",
+     "hu": "károsítja a környezetet"
+    }
+   ],
+   "answer": 1,
+   "explain": "Contamina el agua.",
+   "explain_hu": "Szennyezi a vizet.",
+   "id": "cs25"
+  },
+  {
+   "unit": "u4",
+   "kind": "match",
+   "q": "¿Qué significa reciclar?",
+   "q_hu": "Mit jelent újrahasznosítani?",
+   "options": [
+    {
+     "t": "Usar los residuos para hacer cosas nuevas",
+     "hu": "a hulladékból új dolgokat készíteni"
+    },
+    {
+     "t": "Tirar todo a la basura",
+     "hu": "mindent kidobni"
+    },
+    {
+     "t": "Comprar más",
+     "hu": "többet vásárolni"
+    }
+   ],
+   "answer": 0,
+   "explain": "Reciclar es hacer cosas nuevas con residuos.",
+   "explain_hu": "Újrahasznosítás: hulladékból új dolgot készítünk.",
+   "id": "cs26"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "¿Cuántos años tiene un siglo?",
+   "q_hu": "Hány év egy évszázad?",
+   "options": [
+    {
+     "t": "Cien",
+     "hu": "száz"
+    },
+    {
+     "t": "Diez",
+     "hu": "tíz"
+    },
+    {
+     "t": "Mil",
+     "hu": "ezer"
+    }
+   ],
+   "answer": 0,
+   "explain": "Un siglo son 100 años.",
+   "explain_hu": "Egy évszázad 100 év.",
+   "id": "cs27"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "¿Cuántos años tiene una década?",
+   "q_hu": "Hány év egy évtized?",
+   "options": [
+    {
+     "t": "Diez",
+     "hu": "tíz"
+    },
+    {
+     "t": "Cien",
+     "hu": "száz"
+    },
+    {
+     "t": "Cinco",
+     "hu": "öt"
+    }
+   ],
+   "answer": 0,
+   "explain": "Una década son 10 años.",
+   "explain_hu": "Egy évtized 10 év.",
+   "id": "cs28"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "¿Qué número es X en números romanos?",
+   "q_hu": "Melyik szám a római X?",
+   "options": [
+    {
+     "t": "10",
+     "hu": "10"
+    },
+    {
+     "t": "5",
+     "hu": "5"
+    },
+    {
+     "t": "50",
+     "hu": "50"
+    }
+   ],
+   "answer": 0,
+   "explain": "X = 10.",
+   "explain_hu": "A római X = 10.",
+   "id": "cs29"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "¿Qué número es V en números romanos?",
+   "q_hu": "Melyik szám a római V?",
+   "options": [
+    {
+     "t": "5",
+     "hu": "5"
+    },
+    {
+     "t": "1",
+     "hu": "1"
+    },
+    {
+     "t": "10",
+     "hu": "10"
+    }
+   ],
+   "answer": 0,
+   "explain": "V = 5.",
+   "explain_hu": "A római V = 5.",
+   "id": "cs30"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "¿Qué número es XII?",
+   "q_hu": "Melyik szám a XII?",
+   "options": [
+    {
+     "t": "12",
+     "hu": "12"
+    },
+    {
+     "t": "7",
+     "hu": "7"
+    },
+    {
+     "t": "21",
+     "hu": "21"
+    }
+   ],
+   "answer": 0,
+   "explain": "X + I + I = 12.",
+   "explain_hu": "X + I + I = 12.",
+   "id": "cs31"
+  },
+  {
+   "unit": "u5",
+   "kind": "sort",
+   "q": "Una carta antigua escrita por un rey.",
+   "q_hu": "Egy király által írt régi levél.",
+   "options": [
+    {
+     "t": "Fuente escrita",
+     "hu": "írott forrás"
+    },
+    {
+     "t": "Fuente material",
+     "hu": "tárgyi forrás"
+    },
+    {
+     "t": "Fuente oral",
+     "hu": "szóbeli forrás"
+    }
+   ],
+   "answer": 0,
+   "explain": "Es una fuente escrita.",
+   "explain_hu": "Ez írott forrás.",
+   "id": "cs32"
+  },
+  {
+   "unit": "u5",
+   "kind": "sort",
+   "q": "Una vasija de barro antigua.",
+   "q_hu": "Régi agyagedény.",
+   "options": [
+    {
+     "t": "Fuente escrita",
+     "hu": "írott forrás"
+    },
+    {
+     "t": "Fuente material",
+     "hu": "tárgyi forrás"
+    },
+    {
+     "t": "Fuente oral",
+     "hu": "szóbeli forrás"
+    }
+   ],
+   "answer": 1,
+   "explain": "Es una fuente material.",
+   "explain_hu": "Ez tárgyi forrás.",
+   "id": "cs33"
+  },
+  {
+   "unit": "u5",
+   "kind": "sort",
+   "q": "Un abuelo cuenta cómo era su escuela.",
+   "q_hu": "A nagypapa elmeséli, milyen volt az iskolája.",
+   "options": [
+    {
+     "t": "Fuente escrita",
+     "hu": "írott forrás"
+    },
+    {
+     "t": "Fuente material",
+     "hu": "tárgyi forrás"
+    },
+    {
+     "t": "Fuente oral",
+     "hu": "szóbeli forrás"
+    }
+   ],
+   "answer": 2,
+   "explain": "Es una fuente oral.",
+   "explain_hu": "Ez szóbeli forrás.",
+   "id": "cs34"
+  },
+  {
+   "unit": "u6",
+   "kind": "sort",
+   "q": "Vivían en cuevas y eran cazadores y recolectores.",
+   "q_hu": "Barlangokban éltek, vadásztak és gyűjtögettek.",
+   "options": [
+    {
+     "t": "Paleolítico",
+     "hu": "őskőkor"
+    },
+    {
+     "t": "Neolítico",
+     "hu": "újkőkor"
+    },
+    {
+     "t": "Edad de los Metales",
+     "hu": "fémkor"
+    }
+   ],
+   "answer": 0,
+   "explain": "Es el Paleolítico.",
+   "explain_hu": "Ez az őskőkor (paleolitikum).",
+   "id": "cs35"
+  },
+  {
+   "unit": "u6",
+   "kind": "sort",
+   "q": "Aparecen la agricultura y la ganadería.",
+   "q_hu": "Megjelenik a földművelés és az állattartás.",
+   "options": [
+    {
+     "t": "Paleolítico",
+     "hu": "őskőkor"
+    },
+    {
+     "t": "Neolítico",
+     "hu": "újkőkor"
+    },
+    {
+     "t": "Edad de los Metales",
+     "hu": "fémkor"
+    }
+   ],
+   "answer": 1,
+   "explain": "Es el Neolítico.",
+   "explain_hu": "Ez az újkőkor (neolitikum).",
+   "id": "cs36"
+  },
+  {
+   "unit": "u6",
+   "kind": "sort",
+   "q": "Fabrican herramientas de cobre, bronce y hierro.",
+   "q_hu": "Rézből, bronzból és vasból készítenek eszközöket.",
+   "options": [
+    {
+     "t": "Paleolítico",
+     "hu": "őskőkor"
+    },
+    {
+     "t": "Neolítico",
+     "hu": "újkőkor"
+    },
+    {
+     "t": "Edad de los Metales",
+     "hu": "fémkor"
+    }
+   ],
+   "answer": 2,
+   "explain": "Es la Edad de los Metales.",
+   "explain_hu": "Ez a fémkor.",
+   "id": "cs37"
+  },
+  {
+   "unit": "u6",
+   "kind": "match",
+   "q": "¿Quién estudia los restos de las personas del pasado?",
+   "q_hu": "Ki vizsgálja a régi emberek maradványait?",
+   "options": [
+    {
+     "t": "El arqueólogo",
+     "hu": "a régész"
+    },
+    {
+     "t": "El médico",
+     "hu": "az orvos"
+    },
+    {
+     "t": "El cocinero",
+     "hu": "a szakács"
+    }
+   ],
+   "answer": 0,
+   "explain": "El arqueólogo estudia los restos del pasado.",
+   "explain_hu": "A régész vizsgálja a múlt maradványait.",
+   "id": "cs38"
+  },
+  {
+   "unit": "u6",
+   "kind": "tf",
+   "q": "En el Paleolítico pintaban en las paredes de las cuevas.",
+   "q_hu": "Az őskőkorban a barlangok falára festettek.",
+   "options": [
+    {
+     "t": "Verdadero",
+     "hu": "Igaz"
+    },
+    {
+     "t": "Falso",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Sí, es el arte rupestre.",
+   "explain_hu": "Igen, ez a barlangfestészet.",
+   "id": "cs39"
+  }
+ ]
+}

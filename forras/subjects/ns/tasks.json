@@ -1,0 +1,757 @@
+{
+ "_doc": "Tantárgyi csillagfeladatok: kind=sort|match|tf; q/q_hu; options[{t,hu}]; answer=index. Módosítás után: mkplus.py, mkxaudio.py.",
+ "tasks": [
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Eating fruit and vegetables",
+   "q_hu": "gyümölcsöt és zöldséget enni",
+   "options": [
+    {
+     "t": "Healthy habit",
+     "hu": "egészséges szokás"
+    },
+    {
+     "t": "Unhealthy habit",
+     "hu": "egészségtelen szokás"
+    }
+   ],
+   "answer": 0,
+   "explain": "Fruit and vegetables keep us healthy.",
+   "explain_hu": "A gyümölcs és a zöldség egészségesen tart.",
+   "id": "ns0"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Sleeping only four hours",
+   "q_hu": "csak négy órát aludni",
+   "options": [
+    {
+     "t": "Healthy habit",
+     "hu": "egészséges szokás"
+    },
+    {
+     "t": "Unhealthy habit",
+     "hu": "egészségtelen szokás"
+    }
+   ],
+   "answer": 1,
+   "explain": "Children need about ten hours of sleep.",
+   "explain_hu": "A gyerekeknek kb. tíz óra alvás kell.",
+   "id": "ns1"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Washing your hands before eating",
+   "q_hu": "evés előtt kezet mosni",
+   "options": [
+    {
+     "t": "Healthy habit",
+     "hu": "egészséges szokás"
+    },
+    {
+     "t": "Unhealthy habit",
+     "hu": "egészségtelen szokás"
+    }
+   ],
+   "answer": 0,
+   "explain": "Clean hands stop germs.",
+   "explain_hu": "A tiszta kéz megállítja a baktériumokat.",
+   "id": "ns2"
+  },
+  {
+   "unit": "u1",
+   "kind": "sort",
+   "q": "Watching TV all day",
+   "q_hu": "egész nap tévét nézni",
+   "options": [
+    {
+     "t": "Healthy habit",
+     "hu": "egészséges szokás"
+    },
+    {
+     "t": "Unhealthy habit",
+     "hu": "egészségtelen szokás"
+    }
+   ],
+   "answer": 1,
+   "explain": "We need to move and play outside.",
+   "explain_hu": "Mozogni és kint játszani is kell.",
+   "id": "ns3"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "Which organ pumps blood?",
+   "q_hu": "Melyik szerv pumpálja a vért?",
+   "options": [
+    {
+     "t": "The heart",
+     "hu": "a szív"
+    },
+    {
+     "t": "The lungs",
+     "hu": "a tüdő"
+    },
+    {
+     "t": "The stomach",
+     "hu": "a gyomor"
+    }
+   ],
+   "answer": 0,
+   "explain": "The heart pumps blood around the body.",
+   "explain_hu": "A szív pumpálja a vért a testben.",
+   "id": "ns4"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "Which organ do we use to breathe?",
+   "q_hu": "Melyik szervvel lélegzünk?",
+   "options": [
+    {
+     "t": "The lungs",
+     "hu": "a tüdő"
+    },
+    {
+     "t": "The brain",
+     "hu": "az agy"
+    },
+    {
+     "t": "The heart",
+     "hu": "a szív"
+    }
+   ],
+   "answer": 0,
+   "explain": "We breathe with our lungs.",
+   "explain_hu": "A tüdőnkkel lélegzünk.",
+   "id": "ns5"
+  },
+  {
+   "unit": "u1",
+   "kind": "match",
+   "q": "What joins two bones?",
+   "q_hu": "Mi köt össze két csontot?",
+   "options": [
+    {
+     "t": "A joint",
+     "hu": "ízület"
+    },
+    {
+     "t": "A muscle",
+     "hu": "izom"
+    },
+    {
+     "t": "A tooth",
+     "hu": "fog"
+    }
+   ],
+   "answer": 0,
+   "explain": "Joints join bones, like the knee.",
+   "explain_hu": "Az ízület köti össze a csontokat, pl. a térd.",
+   "id": "ns6"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A dog",
+   "q_hu": "kutya",
+   "options": [
+    {
+     "t": "Vertebrate",
+     "hu": "gerinces"
+    },
+    {
+     "t": "Invertebrate",
+     "hu": "gerinctelen"
+    }
+   ],
+   "answer": 0,
+   "explain": "A dog has a backbone.",
+   "explain_hu": "A kutyának van gerince.",
+   "id": "ns7"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A spider",
+   "q_hu": "pók",
+   "options": [
+    {
+     "t": "Vertebrate",
+     "hu": "gerinces"
+    },
+    {
+     "t": "Invertebrate",
+     "hu": "gerinctelen"
+    }
+   ],
+   "answer": 1,
+   "explain": "A spider has no backbone.",
+   "explain_hu": "A póknak nincs gerince.",
+   "id": "ns8"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A snail",
+   "q_hu": "csiga",
+   "options": [
+    {
+     "t": "Vertebrate",
+     "hu": "gerinces"
+    },
+    {
+     "t": "Invertebrate",
+     "hu": "gerinctelen"
+    }
+   ],
+   "answer": 1,
+   "explain": "A snail is a mollusc: no backbone.",
+   "explain_hu": "A csiga puhatestű: nincs gerince.",
+   "id": "ns9"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A fish",
+   "q_hu": "hal",
+   "options": [
+    {
+     "t": "Vertebrate",
+     "hu": "gerinces"
+    },
+    {
+     "t": "Invertebrate",
+     "hu": "gerinctelen"
+    }
+   ],
+   "answer": 0,
+   "explain": "A fish has a backbone.",
+   "explain_hu": "A halnak van gerince.",
+   "id": "ns10"
+  },
+  {
+   "unit": "u2",
+   "kind": "match",
+   "q": "How many legs does an insect have?",
+   "q_hu": "Hány lába van egy rovarnak?",
+   "options": [
+    {
+     "t": "Six",
+     "hu": "hat"
+    },
+    {
+     "t": "Eight",
+     "hu": "nyolc"
+    },
+    {
+     "t": "Four",
+     "hu": "négy"
+    }
+   ],
+   "answer": 0,
+   "explain": "Insects have six legs.",
+   "explain_hu": "A rovaroknak hat lábuk van.",
+   "id": "ns11"
+  },
+  {
+   "unit": "u2",
+   "kind": "tf",
+   "q": "Bees help plants to make fruit.",
+   "q_hu": "A méhek segítik a növényeket, hogy termést hozzanak.",
+   "options": [
+    {
+     "t": "True",
+     "hu": "Igaz"
+    },
+    {
+     "t": "False",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Bees carry pollen from flower to flower.",
+   "explain_hu": "A méhek virágról virágra viszik a virágport.",
+   "id": "ns12"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "A cat: hair, babies drink milk",
+   "q_hu": "macska: szőr, a kicsinyek tejet isznak",
+   "options": [
+    {
+     "t": "Mammal",
+     "hu": "emlős"
+    },
+    {
+     "t": "Bird",
+     "hu": "madár"
+    },
+    {
+     "t": "Reptile",
+     "hu": "hüllő"
+    },
+    {
+     "t": "Amphibian",
+     "hu": "kétéltű"
+    },
+    {
+     "t": "Fish",
+     "hu": "hal"
+    }
+   ],
+   "answer": 0,
+   "explain": "It is a mammal.",
+   "explain_hu": "Ez emlős.",
+   "id": "ns13"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "An eagle: feathers and a beak",
+   "q_hu": "sas: tollak és csőr",
+   "options": [
+    {
+     "t": "Mammal",
+     "hu": "emlős"
+    },
+    {
+     "t": "Bird",
+     "hu": "madár"
+    },
+    {
+     "t": "Reptile",
+     "hu": "hüllő"
+    },
+    {
+     "t": "Amphibian",
+     "hu": "kétéltű"
+    },
+    {
+     "t": "Fish",
+     "hu": "hal"
+    }
+   ],
+   "answer": 1,
+   "explain": "It is a bird.",
+   "explain_hu": "Ez madár.",
+   "id": "ns14"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "A snake: scales, lays eggs on land",
+   "q_hu": "kígyó: pikkely, szárazföldön tojik",
+   "options": [
+    {
+     "t": "Mammal",
+     "hu": "emlős"
+    },
+    {
+     "t": "Bird",
+     "hu": "madár"
+    },
+    {
+     "t": "Reptile",
+     "hu": "hüllő"
+    },
+    {
+     "t": "Amphibian",
+     "hu": "kétéltű"
+    },
+    {
+     "t": "Fish",
+     "hu": "hal"
+    }
+   ],
+   "answer": 2,
+   "explain": "It is a reptile.",
+   "explain_hu": "Ez hüllő.",
+   "id": "ns15"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "A frog: lives in water and on land",
+   "q_hu": "béka: vízben és szárazföldön él",
+   "options": [
+    {
+     "t": "Mammal",
+     "hu": "emlős"
+    },
+    {
+     "t": "Bird",
+     "hu": "madár"
+    },
+    {
+     "t": "Reptile",
+     "hu": "hüllő"
+    },
+    {
+     "t": "Amphibian",
+     "hu": "kétéltű"
+    },
+    {
+     "t": "Fish",
+     "hu": "hal"
+    }
+   ],
+   "answer": 3,
+   "explain": "It is an amphibian.",
+   "explain_hu": "Ez kétéltű.",
+   "id": "ns16"
+  },
+  {
+   "unit": "u3",
+   "kind": "sort",
+   "q": "A shark: fins and gills",
+   "q_hu": "cápa: uszony és kopoltyú",
+   "options": [
+    {
+     "t": "Mammal",
+     "hu": "emlős"
+    },
+    {
+     "t": "Bird",
+     "hu": "madár"
+    },
+    {
+     "t": "Reptile",
+     "hu": "hüllő"
+    },
+    {
+     "t": "Amphibian",
+     "hu": "kétéltű"
+    },
+    {
+     "t": "Fish",
+     "hu": "hal"
+    }
+   ],
+   "answer": 4,
+   "explain": "It is a fish.",
+   "explain_hu": "Ez hal.",
+   "id": "ns17"
+  },
+  {
+   "unit": "u3",
+   "kind": "tf",
+   "q": "Birds are born from eggs.",
+   "q_hu": "A madarak tojásból kelnek ki.",
+   "options": [
+    {
+     "t": "True",
+     "hu": "Igaz"
+    },
+    {
+     "t": "False",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Yes, birds lay eggs.",
+   "explain_hu": "Igen, a madarak tojást raknak.",
+   "id": "ns18"
+  },
+  {
+   "unit": "u4",
+   "kind": "match",
+   "q": "What is a producer?",
+   "q_hu": "Mi a termelő?",
+   "options": [
+    {
+     "t": "A plant that makes its own food",
+     "hu": "növény, amely maga készíti a táplálékát"
+    },
+    {
+     "t": "An animal that eats plants",
+     "hu": "állat, amely növényt eszik"
+    },
+    {
+     "t": "A dead leaf",
+     "hu": "elhalt levél"
+    }
+   ],
+   "answer": 0,
+   "explain": "Plants are producers: they use sunlight.",
+   "explain_hu": "A növények termelők: a napfényt használják.",
+   "id": "ns19"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "A rabbit eats grass.",
+   "q_hu": "A nyúl füvet eszik.",
+   "options": [
+    {
+     "t": "Producer",
+     "hu": "termelő"
+    },
+    {
+     "t": "Herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "Carnivore",
+     "hu": "húsevő"
+    }
+   ],
+   "answer": 1,
+   "explain": "It eats plants: herbivore.",
+   "explain_hu": "Növényt eszik: növényevő.",
+   "id": "ns20"
+  },
+  {
+   "unit": "u4",
+   "kind": "sort",
+   "q": "A fox eats rabbits.",
+   "q_hu": "A róka nyulat eszik.",
+   "options": [
+    {
+     "t": "Producer",
+     "hu": "termelő"
+    },
+    {
+     "t": "Herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "Carnivore",
+     "hu": "húsevő"
+    }
+   ],
+   "answer": 2,
+   "explain": "It eats animals: carnivore.",
+   "explain_hu": "Állatot eszik: húsevő.",
+   "id": "ns21"
+  },
+  {
+   "unit": "u4",
+   "kind": "match",
+   "q": "Which is a food chain?",
+   "q_hu": "Melyik a tápláléklánc?",
+   "options": [
+    {
+     "t": "grass → rabbit → fox",
+     "hu": "fű → nyúl → róka"
+    },
+    {
+     "t": "fox → grass → rabbit",
+     "hu": "róka → fű → nyúl"
+    },
+    {
+     "t": "rabbit → fox → grass",
+     "hu": "nyúl → róka → fű"
+    }
+   ],
+   "answer": 0,
+   "explain": "It starts with the plant.",
+   "explain_hu": "A növénnyel kezdődik.",
+   "id": "ns22"
+  },
+  {
+   "unit": "u5",
+   "kind": "sort",
+   "q": "Ice",
+   "q_hu": "jég",
+   "options": [
+    {
+     "t": "Solid",
+     "hu": "szilárd"
+    },
+    {
+     "t": "Liquid",
+     "hu": "folyékony"
+    },
+    {
+     "t": "Gas",
+     "hu": "légnemű"
+    }
+   ],
+   "answer": 0,
+   "explain": "Ice is solid water.",
+   "explain_hu": "A jég szilárd víz.",
+   "id": "ns23"
+  },
+  {
+   "unit": "u5",
+   "kind": "sort",
+   "q": "Juice",
+   "q_hu": "gyümölcslé",
+   "options": [
+    {
+     "t": "Solid",
+     "hu": "szilárd"
+    },
+    {
+     "t": "Liquid",
+     "hu": "folyékony"
+    },
+    {
+     "t": "Gas",
+     "hu": "légnemű"
+    }
+   ],
+   "answer": 1,
+   "explain": "Juice is a liquid.",
+   "explain_hu": "A gyümölcslé folyadék.",
+   "id": "ns24"
+  },
+  {
+   "unit": "u5",
+   "kind": "sort",
+   "q": "Steam",
+   "q_hu": "gőz",
+   "options": [
+    {
+     "t": "Solid",
+     "hu": "szilárd"
+    },
+    {
+     "t": "Liquid",
+     "hu": "folyékony"
+    },
+    {
+     "t": "Gas",
+     "hu": "légnemű"
+    }
+   ],
+   "answer": 2,
+   "explain": "Steam is a gas.",
+   "explain_hu": "A gőz légnemű.",
+   "id": "ns25"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "What happens to ice when it gets hot?",
+   "q_hu": "Mi történik a jéggel, ha felmelegszik?",
+   "options": [
+    {
+     "t": "It melts",
+     "hu": "megolvad"
+    },
+    {
+     "t": "It freezes",
+     "hu": "megfagy"
+    },
+    {
+     "t": "It grows",
+     "hu": "nő"
+    }
+   ],
+   "answer": 0,
+   "explain": "Heat melts ice into water.",
+   "explain_hu": "A hő vízzé olvasztja a jeget.",
+   "id": "ns26"
+  },
+  {
+   "unit": "u5",
+   "kind": "match",
+   "q": "Which energy comes from the sun?",
+   "q_hu": "Melyik energia jön a Napból?",
+   "options": [
+    {
+     "t": "Solar energy",
+     "hu": "napenergia"
+    },
+    {
+     "t": "Coal",
+     "hu": "szén"
+    },
+    {
+     "t": "Oil",
+     "hu": "olaj"
+    }
+   ],
+   "answer": 0,
+   "explain": "Solar panels use the sun.",
+   "explain_hu": "A napelemek a Napot használják.",
+   "id": "ns27"
+  },
+  {
+   "unit": "u6",
+   "kind": "tf",
+   "q": "You can tell your password to everybody.",
+   "q_hu": "A jelszavadat bárkinek elmondhatod.",
+   "options": [
+    {
+     "t": "True",
+     "hu": "Igaz"
+    },
+    {
+     "t": "False",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 1,
+   "explain": "Keep your password secret.",
+   "explain_hu": "A jelszavadat tartsd titokban.",
+   "id": "ns28"
+  },
+  {
+   "unit": "u6",
+   "kind": "tf",
+   "q": "If something online scares you, tell an adult.",
+   "q_hu": "Ha valami az interneten megijeszt, szólj egy felnőttnek.",
+   "options": [
+    {
+     "t": "True",
+     "hu": "Igaz"
+    },
+    {
+     "t": "False",
+     "hu": "Hamis"
+    }
+   ],
+   "answer": 0,
+   "explain": "Always tell a trusted adult.",
+   "explain_hu": "Mindig szólj egy felnőttnek, akiben megbízol.",
+   "id": "ns29"
+  },
+  {
+   "unit": "u6",
+   "kind": "sort",
+   "q": "The keyboard",
+   "q_hu": "billentyűzet",
+   "options": [
+    {
+     "t": "Input device",
+     "hu": "bemeneti eszköz"
+    },
+    {
+     "t": "Output device",
+     "hu": "kimeneti eszköz"
+    }
+   ],
+   "answer": 0,
+   "explain": "We put information in with the keyboard.",
+   "explain_hu": "A billentyűzettel adunk be adatot.",
+   "id": "ns30"
+  },
+  {
+   "unit": "u6",
+   "kind": "sort",
+   "q": "The screen",
+   "q_hu": "képernyő",
+   "options": [
+    {
+     "t": "Input device",
+     "hu": "bemeneti eszköz"
+    },
+    {
+     "t": "Output device",
+     "hu": "kimeneti eszköz"
+    }
+   ],
+   "answer": 1,
+   "explain": "The screen shows information.",
+   "explain_hu": "A képernyő megjeleníti az adatot.",
+   "id": "ns31"
+  }
+ ]
+}

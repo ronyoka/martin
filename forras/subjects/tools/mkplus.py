@@ -35,7 +35,8 @@ xs = folder + '/out/x_sprite.json'
 kt = open(T + '/Kitty.dc.html', encoding='utf-8').read(); ks = re.findall(r'<svg viewBox="0 0 200 200".*?</svg>', kt, re.S)
 data = dict(kitty=dict(zip(('idle', 'happy', 'sad'), ks)), i18n=i18n, xsprite=json.load(open(xs)) if os.path.exists(xs) else {'hu': {}, L: {}}, icons=icons, acc=acc,
             schedule=json.load(open(folder + '/schedule.json')), links=json.load(open(folder + '/links.json')), spelling=json.load(open(folder + '/spelling.json')) if os.path.exists(folder + '/spelling.json') else {'weeks': []},
-            dictado=json.load(open(folder + '/dictado.json')) if os.path.exists(folder + '/dictado.json') else {'lists': []})
+            dictado=json.load(open(folder + '/dictado.json')) if os.path.exists(folder + '/dictado.json') else {'lists': []},
+            tasks=json.load(open(folder + '/tasks.json')) if os.path.exists(folder + '/tasks.json') else {'tasks': []})
 json.dump(data, open(folder + '/out/plus_data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/plus.js').read())
 open(folder + '/out/plus.css', 'w').write(open(T + '/plus.css').read())

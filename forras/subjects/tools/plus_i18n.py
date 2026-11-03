@@ -66,6 +66,13 @@ T = {
 'm_redondea_D':("","","Redondea a la decena más cercana el número"),'m_kerekits_tizes':("Kerekítsd a legközelebbi tízesre ezt a számot:","",""),
 'm_redondea_C':("","","Redondea a la centena más cercana el número"),'m_kerekits_szazas':("Kerekítsd a legközelebbi százasra ezt a számot:","",""),
 # V4 a maradék 4 tantárgyra: dictado, általános ismétlés
+'t_tasks':("Tantárgyi feladatok","Subject tasks","Tareas de la asignatura"),
+'i_tasks':("Válaszd ki a fejezetet! Csoportosítsd, párosítsd, döntsd el: igaz vagy hamis. Minden jó válaszért csillag jár!","Choose a unit! Sort, match, true or false. Every right answer gets a star!","¡Elige la unidad! Clasifica, relaciona, verdadero o falso. ¡Cada acierto es una estrella!"),
+'i_tasks_run':("Olvasd el, hallgasd meg, és válaszd ki a jó választ!","Read, listen and choose the right answer!","Lee, escucha y elige la respuesta correcta."),
+'tasks_kinds':("Ilyen feladatok várnak:","Tasks:","Tareas:"),
+'q_sort':("Hová tartozik? Csoportosítsd!","Where does it go? Sort it!","¿Dónde va? ¡Clasifica!"),
+'q_tf':("Igaz vagy hamis?","True or false?","¿Verdadero o falso?"),
+'q_pick':("Válaszd ki a jó választ!","Choose the right answer!","¡Elige la respuesta correcta!"),
 't_dictado':("Dictado – írd le!","Dictation","Dictado"),
 'i_dictado':("Válaszd ki a fejezetet, és kezdjük! Hallgasd meg a szót spanyolul, és írd be.","Choose a unit and start! Listen to the word and write it.","Elige la unidad y empieza. Escucha la palabra y escríbela."),
 'i_dictado_run':("Hallgasd meg a szót, és írd be spanyolul. Két próbálkozásod van. Az ékezetes betűket a kis gombokkal is beírhatod.","Listen to the word and write it. You have two tries.","Escucha la palabra y escríbela en español. Tienes dos intentos."),

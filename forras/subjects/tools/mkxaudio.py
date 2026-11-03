@@ -33,6 +33,11 @@ for l in dic.get('lists', []):
     for x in l['words']:
         if ('x:sp:' + x['w']) in [k for k, _ in items[L]]: continue
         items[L].append(('x:sp:' + x['w'], x['w'])); items['hu'].append(('x:sph:' + x['w'], x['hu'].replace('/', ',')))
+# tantárgyi feladatok
+tk = json.load(open(folder + '/tasks.json')) if os.path.exists(folder + '/tasks.json') else {'tasks': []}
+for t in tk.get('tasks', []):
+    items[L].append(('x:tk:' + t['id'], t['q'])); items['hu'].append(('x:tkh:' + t['id'], t['q_hu']))
+    items[L].append(('x:tke:' + t['id'], t['explain'])); items['hu'].append(('x:tkeh:' + t['id'], t['explain_hu']))
 # spelling
 seen = set()
 for w in spell.get('weeks', []):
