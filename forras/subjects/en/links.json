@@ -97,6 +97,26 @@
    "folder": "1fqpd_O5bBuQaRItIzfledTOfsYJcsNfx",
    "units": [],
    "global": true
+  },
+  {
+   "id": "spelling_u3_pdf",
+   "kind": "pdf",
+   "title": "Spelling Unit 3 – study guide",
+   "title_hu": "Spelling 3. fejezet – felkészítő (PDF)",
+   "drive": "1rXT2_Hl4zpzNUqAp7HWp4yzGMNNtlb2_",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "spelling_u3_video",
+   "kind": "video",
+   "title": "Spelling Unit 3 – video",
+   "title_hu": "Spelling 3. fejezet – felkészítő videó",
+   "drive": "17oIIkjb73IwDQDSpKG4l7mYXQrucOETu",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

@@ -147,6 +147,55 @@
      "hu": "lakik"
     }
    ]
+  },
+  {
+   "id": "2026-11-10",
+   "test_date": "2026-11-10",
+   "title": "A day in the life",
+   "title_hu": "Napirend",
+   "unit": "u3",
+   "words": [
+    {
+     "w": "wake up",
+     "hu": "felébred"
+    },
+    {
+     "w": "get dressed",
+     "hu": "felöltözik"
+    },
+    {
+     "w": "catch",
+     "hu": "elkap; eléri"
+    },
+    {
+     "w": "wash",
+     "hu": "mos"
+    },
+    {
+     "w": "have a shower",
+     "hu": "lezuhanyozik"
+    },
+    {
+     "w": "breakfast",
+     "hu": "reggeli"
+    },
+    {
+     "w": "take off",
+     "hu": "levesz"
+    },
+    {
+     "w": "get up",
+     "hu": "felkel"
+    },
+    {
+     "w": "sometimes",
+     "hu": "néha"
+    },
+    {
+     "w": "often",
+     "hu": "gyakran"
+    }
+   ]
   }
  ]
 }

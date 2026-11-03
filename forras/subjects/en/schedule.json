@@ -35,6 +35,21 @@
     "hb_video",
     "worksheet01"
    ]
+  },
+  {
+   "id": "en-spelling-1110",
+   "date": "2026-11-10",
+   "type": "spelling",
+   "title": "Spelling test – Unit 3 (A day in the life)",
+   "title_hu": "Spelling teszt – 3. fejezet (napirend)",
+   "units": [
+    "u3"
+   ],
+   "spelling_week": "2026-11-10",
+   "link_ids": [
+    "spelling_u3_pdf",
+    "spelling_u3_video"
+   ]
   }
  ],
  "recurring": [
@@ -44,9 +59,9 @@
    "type": "spelling",
    "title": "Weekly spelling test",
    "title_hu": "Heti spelling teszt (kedd)",
-   "after": "2026-11-04",
+   "after": "2026-11-10",
    "units": [
-    "u2"
+    "u3"
    ]
   }
  ]
