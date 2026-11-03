@@ -106,7 +106,7 @@ DIALOGUES = {
   ("Profe","Hoy tenemos una compañera nueva. Preséntate, por favor.","Ma új osztálytársunk van. Mutatkozz be, kérlek."),
   ("Lucía","Hola, me llamo Lucía y tengo ocho años.","Sziasztok, Lucíának hívnak, és nyolcéves vagyok."),
   ("Profe","¿De dónde eres?","Honnan jöttél?"),
-  ("Lucía","Soy de Murcia. Ahora vivo en Los Alcázares.","Murciából. Most Los Alcázaresben lakom."),
+  ("Lucía","Soy de Murcia. Ahora vivo cerca del mar.","Murciából. Most a tenger közelében lakom."),
   ("Martín","¿Qué te gusta hacer?","Mit szeretsz csinálni?"),
   ("Lucía","Me gusta nadar y dibujar. Y sé tocar la flauta.","Szeretek úszni és rajzolni. És tudok furulyázni."),
   ("Martín","Yo soy Martín. Me gusta leer cómics. ¡Bienvenida!","Én Martin vagyok. Szeretek képregényt olvasni. Isten hozott!"),

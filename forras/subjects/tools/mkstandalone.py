@@ -99,7 +99,7 @@ body{background:#FFF4D6}
 <nav id="tabs" aria-label="Fejezetek" style="display:flex;gap:10px;flex-wrap:wrap"></nav>
 <main id="main"></main>
 <div id="overlay"></div>
-<footer style="font-size:13px;color:#4A5562">Az oldalszámok a __BOOK__ tankönyv nyomtatott oldalszámai (SB = Saberes básicos füzet). Hangok: Piper (__LANGVOICE__, magyar: anna). Kattints bármelyik szóra vagy mondatra: kimondja, utána a másik nyelven a jelentését is. Offline másolat – az online változat: __ARTIFACT__</footer>
+<footer style="font-size:13px;color:#4A5562">Az oldalszámok a __BOOK__ tankönyv nyomtatott oldalszámai (SB = Saberes básicos füzet). Hangok: Piper (__LANGVOICE__, magyar: anna). A szókártyák képei részben az OpenMoji projektből származnak (openmoji.org, CC BY-SA 4.0). Kattints bármelyik szóra vagy mondatra: kimondja, utána a másik nyelven a jelentését is. Offline másolat – az online változat: __ARTIFACT__</footer>
 </div>
 <script>
 __PLUSJS__
