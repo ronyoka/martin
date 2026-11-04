@@ -3,9 +3,9 @@
    A helyes választ a make() számolja; a tests/test_mathgen.js független újraszámolással ellenőrzi. */
 (function (root) {
   'use strict';
-  const TOPICS = ['mult', 'add', 'factor', 'place', 'compare', 'line', 'round'];
+  const TOPICS = ['mult', 'add', 'factor', 'car', 'place', 'compare', 'line', 'round'];
   const TOPIC_NAME = {
-    mult: ['La tabla de multiplicar', 'Szorzótábla'], add: ['Suma repetida', 'Ismételt összeadás'], factor: ['Factor y producto', 'Tényező és szorzat'],
+    mult: ['La tabla de multiplicar', 'Szorzótábla'], add: ['Suma repetida', 'Ismételt összeadás'], factor: ['Factor y producto', 'Tényező és szorzat'], car: ['Problemas del coche teledirigido', 'Távirányítós autós feladatok'],
     place: ['UM · C · D · U', 'Helyiérték (UM · C · D · U)'], compare: ['Comparar números', 'Számok összehasonlítása'], line: ['La recta numérica', 'Számegyenes'], round: ['Aproximar', 'Kerekítés']
   };
   const rnd = (rng, a, b) => a + Math.floor(rng() * (b - a + 1));
@@ -51,6 +51,26 @@
       text: { es: terms.join(' + ') + ' = ?   (' + a + ' veces ' + b + ')', hu: terms.join(' + ') + ' = ?   (' + a + '-szor ' + b + ')' },
       say, explain: terms.join(' + ') + ' = ' + a + ' × ' + b + ' = ' + p, vis: p <= 60 ? { type: 'groups', n: a, size: b } : null };
     if (kind === 'choice') t.options = uniqueChoices(rng, p, [p + b, p - b, a + b, p + 1, p - 1, p + a, (a - 1) * b], 4);
+    return t;
+  };
+  // ---- távirányítós autós szöveges feladatok (Martin kedvence) ----
+  T.car = function (L, rng) {
+    const kindT = rnd(rng, 0, 2); let a, b, es, hu, say;
+    if (kindT === 0) { a = L <= 2 ? rnd(rng, 2, 5) : rnd(rng, 2, 10); b = L <= 2 ? pick(rng, [2, 5, 10]) : rnd(rng, 2, 10);
+      es = 'El coche teledirigido de Martín da ' + a + ' vueltas. Cada vuelta mide ' + b + ' metros. ¿Cuántos metros recorre en total?';
+      hu = 'Martin távirányítós autója ' + a + ' kört megy. Egy kör ' + b + ' méter. Hány métert megy összesen?';
+      say = { es: ['x:m_car1'].concat(numKeys(a, 'es'), ['x:m_car2'], numKeys(b, 'es'), ['x:m_car3']), hu: ['x:m_car1'].concat(numKeys(a, 'hu'), ['x:m_car2'], numKeys(b, 'hu'), ['x:m_car3']) }; }
+    else if (kindT === 1) { a = L <= 2 ? rnd(rng, 2, 5) : rnd(rng, 2, 10); b = 4;
+      es = 'Martín tiene ' + a + ' coches teledirigidos. Cada coche tiene ' + b + ' ruedas. ¿Cuántas ruedas hay en total?';
+      hu = 'Martinnak ' + a + ' távirányítós autója van. Minden autónak ' + b + ' kereke van. Hány kerék van összesen?';
+      say = { es: ['x:m_car4'].concat(numKeys(a, 'es'), ['x:m_car5'], numKeys(b, 'es'), ['x:m_car6']), hu: ['x:m_car4'].concat(numKeys(a, 'hu'), ['x:m_car5'], numKeys(b, 'hu'), ['x:m_car6']) }; }
+    else { a = L <= 2 ? rnd(rng, 2, 5) : rnd(rng, 2, 9); b = L <= 2 ? pick(rng, [2, 3, 5]) : rnd(rng, 2, 9);
+      es = 'En la carrera hay ' + a + ' coches. Cada coche necesita ' + b + ' pilas. ¿Cuántas pilas hacen falta?';
+      hu = 'A versenyen ' + a + ' autó indul. Minden autóba ' + b + ' elem kell. Hány elem kell összesen?';
+      say = { es: ['x:m_car7'].concat(numKeys(a, 'es'), ['x:m_car8'], numKeys(b, 'es'), ['x:m_car9']), hu: ['x:m_car7'].concat(numKeys(a, 'hu'), ['x:m_car8'], numKeys(b, 'hu'), ['x:m_car9']) }; }
+    const p = a * b; const kind = L <= 3 ? 'choice' : 'num';
+    const t = { topic: 'car', level: L, kind, p: { a, b, k: kindT }, answer: p, text: { es, hu }, say, explain: a + ' × ' + b + ' = ' + p, vis: p <= 60 ? { type: 'groups', n: a, size: b } : null };
+    if (kind === 'choice') t.options = uniqueChoices(rng, p, [p + b, p - b, a + b, p + a, p - a, (a + 1) * b], 4);
     return t;
   };
   // ---- tényező / szorzat ----
@@ -155,6 +175,7 @@
     const p = t.p;
     switch (t.topic) {
       case 'mult': return p.a * p.b;
+      case 'car': return p.a * p.b;
       case 'add': { let s = 0; for (let i = 0; i < p.a; i++) s += p.b; return s; }
       case 'factor': return p.ask === 'product' ? p.a * p.b : (function () { const prod = Number(/=\s*(\d+)\./.exec(t.text.es)[1]); for (let x = 0; x <= 10; x++) if (p.a * x === prod) return x; return NaN; })();
       case 'place': { if (p.ask === 'decomp') { const v = String(p.n).padStart(4, '0').split('').map(Number); return v[0] + ' UM + ' + v[1] + ' C + ' + v[2] + ' D + ' + v[3] + ' U'; } const idx = { UM: 0, C: 1, D: 2, U: 3 }[p.ask]; return Number(String(p.n).padStart(4, '0')[idx]); }
