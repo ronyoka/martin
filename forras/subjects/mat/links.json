@@ -2,6 +2,26 @@
  "_doc": "Linkek a fejezetek fülén és a Mai küldetésben (lásd en/links.json).",
  "items": [
   {
+   "id": "tablas369_video",
+   "kind": "video",
+   "title": "Tablas del 3, 6, 9, 0 y 7 – vídeo",
+   "title_hu": "Szorzótáblák 3, 6, 9, 0, 7 – videó",
+   "drive": "1IWZKbkXOAh6_J0GWg0bck3YfkdZraIT7",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "tablas369_pdf",
+   "kind": "pdf",
+   "title": "Tablas del 3, 6, 9, 0 y 7",
+   "title_hu": "Szorzótáblák 3, 6, 9, 0, 7 – felkészítő (PDF)",
+   "drive": "13WNGmpzLThSaqiJP1Y2IEL55oqYmbq_n",
+   "units": [
+    "u2"
+   ]
+  },
+  {
    "id": "control12_pdf",
    "kind": "pdf",
    "title": "Control 1–2 – guía de estudio",

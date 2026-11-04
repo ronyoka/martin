@@ -3,9 +3,9 @@
    A helyes választ a make() számolja; a tests/test_mathgen.js független újraszámolással ellenőrzi. */
 (function (root) {
   'use strict';
-  const TOPICS = ['mult', 'add', 'factor', 'place', 'compare', 'line', 'round'];
+  const TOPICS = ['mult', 'add', 'factor', 'car', 'place', 'compare', 'line', 'round'];
   const TOPIC_NAME = {
-    mult: ['La tabla de multiplicar', 'Szorzótábla'], add: ['Suma repetida', 'Ismételt összeadás'], factor: ['Factor y producto', 'Tényező és szorzat'],
+    mult: ['La tabla de multiplicar', 'Szorzótábla'], add: ['Suma repetida', 'Ismételt összeadás'], factor: ['Factor y producto', 'Tényező és szorzat'], car: ['Problemas del coche teledirigido', 'Távirányítós autós feladatok'],
     place: ['UM · C · D · U', 'Helyiérték (UM · C · D · U)'], compare: ['Comparar números', 'Számok összehasonlítása'], line: ['La recta numérica', 'Számegyenes'], round: ['Aproximar', 'Kerekítés']
   };
   const rnd = (rng, a, b) => a + Math.floor(rng() * (b - a + 1));
@@ -51,6 +51,26 @@
       text: { es: terms.join(' + ') + ' = ?   (' + a + ' veces ' + b + ')', hu: terms.join(' + ') + ' = ?   (' + a + '-szor ' + b + ')' },
       say, explain: terms.join(' + ') + ' = ' + a + ' × ' + b + ' = ' + p, vis: p <= 60 ? { type: 'groups', n: a, size: b } : null };
     if (kind === 'choice') t.options = uniqueChoices(rng, p, [p + b, p - b, a + b, p + 1, p - 1, p + a, (a - 1) * b], 4);
+    return t;
+  };
+  // ---- távirányítós autós szöveges feladatok (Martin kedvence) ----
+  T.car = function (L, rng) {
+    const kindT = rnd(rng, 0, 2); let a, b, es, hu, say;
+    if (kindT === 0) { a = L <= 2 ? rnd(rng, 2, 5) : rnd(rng, 2, 10); b = L <= 2 ? pick(rng, [2, 5, 10]) : rnd(rng, 2, 10);
+      es = 'El coche teledirigido de Martín da ' + a + ' vueltas. Cada vuelta mide ' + b + ' metros. ¿Cuántos metros recorre en total?';
+      hu = 'Martin távirányítós autója ' + a + ' kört megy. Egy kör ' + b + ' méter. Hány métert megy összesen?';
+      say = { es: ['x:m_car1'].concat(numKeys(a, 'es'), ['x:m_car2'], numKeys(b, 'es'), ['x:m_car3']), hu: ['x:m_car1'].concat(numKeys(a, 'hu'), ['x:m_car2'], numKeys(b, 'hu'), ['x:m_car3']) }; }
+    else if (kindT === 1) { a = L <= 2 ? rnd(rng, 2, 5) : rnd(rng, 2, 10); b = 4;
+      es = 'Martín tiene ' + a + ' coches teledirigidos. Cada coche tiene ' + b + ' ruedas. ¿Cuántas ruedas hay en total?';
+      hu = 'Martinnak ' + a + ' távirányítós autója van. Minden autónak ' + b + ' kereke van. Hány kerék van összesen?';
+      say = { es: ['x:m_car4'].concat(numKeys(a, 'es'), ['x:m_car5'], numKeys(b, 'es'), ['x:m_car6']), hu: ['x:m_car4'].concat(numKeys(a, 'hu'), ['x:m_car5'], numKeys(b, 'hu'), ['x:m_car6']) }; }
+    else { a = L <= 2 ? rnd(rng, 2, 5) : rnd(rng, 2, 9); b = L <= 2 ? pick(rng, [2, 3, 5]) : rnd(rng, 2, 9);
+      es = 'En la carrera hay ' + a + ' coches. Cada coche necesita ' + b + ' pilas. ¿Cuántas pilas hacen falta?';
+      hu = 'A versenyen ' + a + ' autó indul. Minden autóba ' + b + ' elem kell. Hány elem kell összesen?';
+      say = { es: ['x:m_car7'].concat(numKeys(a, 'es'), ['x:m_car8'], numKeys(b, 'es'), ['x:m_car9']), hu: ['x:m_car7'].concat(numKeys(a, 'hu'), ['x:m_car8'], numKeys(b, 'hu'), ['x:m_car9']) }; }
+    const p = a * b; const kind = L <= 3 ? 'choice' : 'num';
+    const t = { topic: 'car', level: L, kind, p: { a, b, k: kindT }, answer: p, text: { es, hu }, say, explain: a + ' × ' + b + ' = ' + p, vis: p <= 60 ? { type: 'groups', n: a, size: b } : null };
+    if (kind === 'choice') t.options = uniqueChoices(rng, p, [p + b, p - b, a + b, p + a, p - a, (a + 1) * b], 4);
     return t;
   };
   // ---- tényező / szorzat ----
@@ -155,6 +175,7 @@
     const p = t.p;
     switch (t.topic) {
       case 'mult': return p.a * p.b;
+      case 'car': return p.a * p.b;
       case 'add': { let s = 0; for (let i = 0; i < p.a; i++) s += p.b; return s; }
       case 'factor': return p.ask === 'product' ? p.a * p.b : (function () { const prod = Number(/=\s*(\d+)\./.exec(t.text.es)[1]); for (let x = 0; x <= 10; x++) if (p.a * x === prod) return x; return NaN; })();
       case 'place': { if (p.ask === 'decomp') { const v = String(p.n).padStart(4, '0').split('').map(Number); return v[0] + ' UM + ' + v[1] + ' C + ' + v[2] + ' D + ' + v[3] + ' U'; } const idx = { UM: 0, C: 1, D: 2, U: 3 }[p.ask]; return Number(String(p.n).padStart(4, '0')[idx]); }
@@ -218,6 +239,67 @@
     push() { if (!Store.db) return; Store.db.set({ p: JSON.stringify(P), u: P.u }).then(() => { Store.mode = 'felhő (artifact adatbázis)'; }).catch(() => { Store.db = null; }); },
     save() { P.u = Date.now(); clearTimeout(saveT); saveT = setTimeout(() => { Store.writeLocal(); Store.push(); }, 600); }
   };
+  // ================= V5: közös (tantárgyakon átívelő) adatok =================
+  const SUBJS = ['en', 'mat', 'lengua', 'cs', 'ns', 'ac'];
+  function allP() { const o = {}; SUBJS.forEach(sj => { if (sj === C.subj) { o[sj] = P; return; } try { const v = root.localStorage.getItem('plus_' + sj); if (v) o[sj] = JSON.parse(v); } catch (e) { } }); if (!o[C.subj]) o[C.subj] = P; return o; }
+  function hubRead() { try { return JSON.parse(root.localStorage.getItem('martin_hub') || '{}') || {}; } catch (e) { return {}; } }
+  function totalStars() { let n = 0; Object.values(allP()).forEach(q => { n += (q && q.stars) || 0; }); const hb = hubRead(); Object.values(hb.bonus || {}).forEach(v => { n += v || 0; }); return n; }
+  function rewardBal() { const hb = hubRead(); return totalStars() - (hb.redeemed || []).reduce((a, r) => a + (r.cost || 0), 0); }
+  function activeDays() { const o = {}; Object.values(allP()).forEach(q => { if (!q) return; Object.keys(q.days || {}).forEach(d => { if ((q.days[d].items || 0) > 0) o[d] = 1; }); Object.keys(q.mission || {}).forEach(d => { o[d] = 1; }); }); return o; }
+  function globalStreak() { // egymást követő aktív napok; hetente 1 kihagyott nap (pihenőnap) nem szakítja meg
+    const a = activeDays(); let d = today(); if (!a[d]) d = addDays(d, -1); let n = 0, lastFree = null, used = false;
+    for (let i = 0; i < 400; i++) { if (a[d]) n++; else if (n > 0 && (lastFree === null || dayDiff(d, lastFree) >= 7) && a[addDays(d, -1)]) { lastFree = d; used = used || dayDiff(d, today()) <= 7; } else break; d = addDays(d, -1); }
+    return { n, rest: used };
+  }
+  function carSvg(col, w) { w = w || 56; return '<svg viewBox="0 0 64 36" width="' + w + '" height="' + Math.round(w * 36 / 64) + '" aria-hidden="true"><path d="M30 8 V2" stroke="#333" stroke-width="2"/><circle cx="30" cy="2" r="2" fill="#E86A7A"/><path d="M5 24 q2 -12 14 -12 h17 q8 0 12 8 l8 2 q4 1 4 6 v3 H5z" fill="' + col + '" stroke="#1E2A38" stroke-width="2" stroke-linejoin="round"/><path d="M22 14 h12 l6 6 H20z" fill="#BFE3F7" stroke="#1E2A38" stroke-width="1.5"/><circle cx="17" cy="29" r="6" fill="#333"/><circle cx="17" cy="29" r="2.5" fill="#ccc"/><circle cx="48" cy="29" r="6" fill="#333"/><circle cx="48" cy="29" r="2.5" fill="#ccc"/></svg>'; }
+  function subjTitle() { return (H && H.D && H.D.title) || (document.title || '').replace(/\s*[–-]\s*Martin.*$/, ''); }
+  // ---- felkészültség (0–100) a következő eseményre: szókártya-dobozok + legjobb próbaverseny
+  function readiness(ev) {
+    const units = ev && ev.units && ev.units.length ? ev.units : fallbackUnits(); const p = poolFor(units);
+    let w = 0; p.forEach(x => { w += Math.min(boxOf(x.id), 3) / 3; }); const wm = p.length ? w / p.length : 0;
+    const ts = P.tests.filter(t => (t.units || [t.unit]).some(u => units.indexOf(u) >= 0)).slice(-6); const tb = ts.length ? Math.max.apply(null, ts.map(t => t.score / (t.total || 1))) : 0;
+    const tk = tasksAll().filter(t => units.indexOf(t.unit) >= 0); let tkm = null; if (tk.length) { let ok = 0; tk.forEach(t => { const m = P.miss['tk:' + t.id]; if (P.tkok && P.tkok[t.id] && !(m && (m.ok || 0) < 1)) ok++; }); tkm = ok / tk.length; }
+    let pct = ts.length ? 0.5 * wm + 0.5 * tb : 0.8 * wm; if (tkm !== null) pct = 0.8 * pct + 0.2 * tkm;
+    return Math.max(0, Math.min(100, Math.round(pct * 100)));
+  }
+  function readyHtml(ev) {
+    const pct = readiness(ev); const k = pct < 40 ? 'ready_low' : pct < 80 ? 'ready_mid' : 'ready_high'; const col = pct < 40 ? '#E86A7A' : pct < 80 ? '#F2A65A' : '#6BBF59';
+    if (ev && (!P.readyNext || P.readyNext.id !== ev.id || P.readyNext.pct !== pct)) { P.readyNext = { id: ev.id, date: ev.date, pct, title_hu: ev.title_hu, type: ev.type }; Store.save(); }
+    return '<div class="px-ready"><div class="px-ready-top"><b>' + esc(hu('ready_title')) + '</b><span class="px-ready-pct">' + pct + '%</span></div><div class="px-meter" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '" aria-label="' + esc(hu('ready_title')) + '"><i style="width:' + pct + '%;background:' + col + '"></i><span class="px-meter-car" style="left:calc(' + pct + '% - ' + Math.round(pct * 0.44) + 'px)">' + carSvg('#3B82C4', 44) + '</span></div><small>' + esc(hu(k)) + '</small></div>';
+  }
+  // ---- valódi jutalmak (a nyitóoldalon a szülő állítja be; itt csak mutatjuk)
+  function rewardHtml() {
+    const hb = hubRead(); const rw = (hb.rewards || []).filter(r => r && r.name && r.cost > 0); if (!rw.length) return '';
+    const bal = rewardBal(); const ready = rw.filter(r => r.cost <= bal); const nx = rw.filter(r => r.cost > bal).sort((a, b) => a.cost - b.cost)[0];
+    let h = '<div class="px-card px-reward">';
+    if (ready.length) h += '<p class="px-reward-ready">' + ICO.star + ' <b>' + esc(hu('reward_ready')) + '</b> ' + ready.map(r => esc(r.name)).join(', ') + '</p>';
+    if (nx) { const pc = Math.round(Math.min(1, bal / nx.cost) * 100); h += '<div class="px-ready-top"><b>' + esc(hu('reward_next')) + ': ' + esc(nx.name) + '</b><span>' + Math.max(0, bal) + ' / ' + nx.cost + ' ' + ICO.star + '</span></div><div class="px-meter"><i style="width:' + pc + '%;background:#F7C948"></i></div><small>' + esc(hu('reward_left')) + ' <b>' + (nx.cost - Math.max(0, bal)) + '</b></small>'; }
+    return h + '</div>';
+  }
+  // ---- matricák (a szókártya 3. dobozától)
+  function stickerPool() { return pool().filter(w => w.icon); }
+  function hasSticker(id) { return boxOf(id) >= 3 || !!(P.stk && P.stk[id]); }
+  function stickerToast(w) { try { const f = document.createElement('div'); f.className = 'px-stk-toast'; f.innerHTML = '<div class="ic">' + w.icon + '</div><b>' + esc(hu('stk_new')) + '</b><span>' + esc(w.es) + '</span>'; (el || document.body).appendChild(f); setTimeout(() => f.remove(), 2600); H.sfxGood && H.sfxGood(); } catch (e) { } }
+  // ---- hibák javítása elöl (a Mai küldetés elején)
+  function qFromMiss(k, m) {
+    const i = k.indexOf(':'); const type = k.slice(0, i), id = k.slice(i + 1);
+    try {
+      if (type === 'w') { const w = pool().find(x => x.id === id); if (w) { const pp = poolFor([w.unit]); return vocabQ(w, 'tr', pp.length > 3 ? pp : pool()); } }
+      if (type === 'q') { const q = H.D.quiz.find(x => 'q' + x.i === id); if (q) return quizQ(q); }
+      if (type === 'sp') { const o = weeks().flatMap(w => w.words.map(y => ({ y, u: w.unit }))).find(o2 => o2.y.w === id); if (o && X.xsprite[C.lang]['x:sp:' + o.y.w]) return spellQ(o.y, o.u); }
+      if (type === 'tk') { const t = tasksAll().find(x => x.id === id); if (t) return taskQ(t); }
+      if (type === 'dc') { for (const u of unitsList()) { const x = dictWords(u).find(y => norm(y.w) === id); if (x) return dictQ(x, u); } }
+      if (type === 'g') { const topic = id.split(':')[0]; if (MG && MG.TOPICS.indexOf(topic) >= 0) return genQ(topic, level(topic)); }
+    } catch (e) { }
+    return null;
+  }
+  function fixQs(n) {
+    const t = today(); const out = [];
+    Object.keys(P.miss).map(k => ({ k, m: P.miss[k] })).filter(o => (o.m.ok || 0) < 2 && o.m.last && dayDiff(o.m.last, t) <= 10)
+      .sort((a, b) => (b.m.last > a.m.last ? 1 : b.m.last < a.m.last ? -1 : 0) || b.m.n - a.m.n)
+      .forEach(o => { if (out.length >= n) return; const q = qFromMiss(o.k, o.m); if (q) { q.fix = true; out.push(q); } });
+    return out;
+  }
   // ================= haladás =================
   let lastAct = 0;
   function touch() { const n = Date.now(); const d = dayRec(); if (lastAct && n - lastAct < 30000) d.sec += Math.round((n - lastAct) / 1000); else d.sec += 3; lastAct = n; }
@@ -282,6 +364,11 @@
     return (_pool = out);
   }
   function unitsList() { return H.D.units.map(u => u.id); }
+  // utolsó tanult fejezet(ek): schedule.default_units, különben az utolsó 2 olyan fejezet, ahol már van párbeszéd
+  function fallbackUnits() { const all = unitsList(); const du = ((X.schedule && X.schedule.default_units) || []).filter(u => all.indexOf(u) >= 0); if (du.length) return du;
+    const st = H.D.units.filter(u => u.concepts.some(c => (c.dialogue || []).length)).map(u => u.id); return st.length ? st.slice(-2) : all.slice(0, 2); }
+  function extraKind() { return C.subj === 'en' ? 'spelling' : C.subj === 'mat' ? 'gen' : C.subj === 'lengua' ? 'dictado' : (['cs', 'ns', 'ac'].indexOf(C.subj) >= 0 && tasksAll().length) ? 'tasks' : null; }
+  function tasksAll() { return (X.tasks && X.tasks.tasks) || []; }
   function events() {
     const sc = X.schedule, out = (sc.events || []).map(e => Object.assign({}, e)); const t = today();
     (sc.recurring || []).forEach(r => { let d = addDays(r.after || t, 1); let n = 0; const wk = x => { const g = parseYmd(x).getDay(); return g === 0 ? 7 : g; };
@@ -299,7 +386,8 @@
   Plus.linksFor = (unit) => { const L = (X.links && X.links.items) || []; return L.filter(l => (l.units || []).indexOf(unit) >= 0 || l.global).map(l => ({ title: l.title, hu: l.title_hu, kind: l.kind, url: l.folder ? 'https://drive.google.com/drive/folders/' + l.folder : 'https://drive.google.com/file/d/' + l.drive + '/view' })); };
   function conceptFor(unit, page) { const u = H.D.units.find(x => x.id === unit); if (!u) return null; const m = /(\d+)/.exec(String(page || '')); const n = m ? +m[1] : null;
     if (n != null) for (const c of u.concepts) { const r = String(c.pages).match(/\d+/g); if (r) { const a = +r[0], b = +r[r.length - 1]; if (n >= a && n <= b) return c; } } return u.concepts[0] || null; }
-  function activeUnits() { if (ST.units && ST.units.length) return ST.units; if (P.unit && P.unit !== 'auto' && P.unit !== 'all') return [P.unit]; if (P.unit === 'all') return unitsList(); const ev = nextEvent(); return ev && ev.units && ev.units.length ? ev.units : unitsList().slice(0, 3); }
+  function activeUnits() { if (ST.units && ST.units.length) return ST.units; if (P.unit && P.unit !== 'auto' && P.unit !== 'all') return [P.unit]; if (P.unit === 'all') return unitsList(); const ev = nextEvent(); return ev && ev.units && ev.units.length ? ev.units : fallbackUnits(); }
+  function dedupIcons(p) { const seen = {}; return shuffle(p).filter(w => { if (!w.icon) return true; if (seen[w.icon]) return false; seen[w.icon] = 1; return true; }); }
   function poolFor(units, needIcon) { let p = pool().filter(w => units.indexOf(w.unit) >= 0); if (needIcon) p = p.filter(w => w.icon); return p; }
   // ================= Leitner =================
   const INTERVAL = [0, 0, 1, 3, 7, 14];
@@ -311,11 +399,13 @@
     if (out.length < n) out = out.concat(shuffle(p.filter(w => out.indexOf(w) < 0)).slice(0, n - out.length));
     return shuffle(out);
   }
-  function gradeCard(id, ok) { const cur = boxOf(id); const b = ok ? Math.min(5, cur + 1) : 1; P.box[id] = { b, due: addDays(today(), INTERVAL[b]) }; Store.save(); }
+  function gradeCard(id, ok) { const cur = boxOf(id); const b = ok ? Math.min(5, cur + 1) : 1; P.box[id] = { b, due: addDays(today(), INTERVAL[b]) };
+    if (ok && b >= 3) { P.stk = P.stk || {}; if (!P.stk[id]) { P.stk[id] = today(); const w = pool().find(x => x.id === id); if (w && w.icon) setTimeout(() => stickerToast(w), 250); } }
+    Store.save(); }
   // ================= kérdés-építők =================
   function wordItems(w) { return [{ l: C.lang, k: w.id, t: w.es }, { l: 'hu', k: w.id, t: w.hu }]; }
   function vocabQ(w, mode, ppool) {
-    const others = shuffle(ppool.filter(x => x.id !== w.id && x.hu !== w.hu && x.es !== w.es)).slice(0, 2);
+    const others = shuffle(ppool.filter(x => x.id !== w.id && x.hu !== w.hu && x.es !== w.es && !(x.icon && x.icon === w.icon))).slice(0, 2);
     const opts = shuffle([w].concat(others)); const rec = { type: 'w', id: w.id, label: w.es, hu: w.hu, unit: w.unit };
     if (mode === 'hear') return { kind: 'choice', part: 'vocab', unit: w.unit, page: w.page, rec, prompt: 'q_hear', audio: [{ l: C.lang, k: w.id, t: w.es }], hearOnly: true, answer: w.id,
       options: opts.map(o => ({ v: o.id, label: o.es, icon: o.icon, sub: '' })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
@@ -327,10 +417,10 @@
   function quizQ(q) { return { kind: 'choice', part: 'quiz', unit: q.unit, page: q.page, rec: { type: 'q', id: 'q' + q.i, label: q.q_es, hu: q.q_hu, unit: q.unit }, prompt: null, big: q.q_es, small: q.q_hu,
     audio: [{ l: C.lang, k: 'q:' + q.i, t: q.q_es }, { l: 'hu', k: 'q:' + q.i, t: q.q_hu }], answer: q.answer, options: q.options.map((o, i) => ({ v: i, label: o })), explain: q.explain, quizPage: q.page }; }
   function spellQ(w, unit) { return { kind: 'type', part: 'spell', unit: unit || 'u2', page: '', rec: { type: 'sp', id: w.w, label: w.w, hu: w.hu, unit: unit || '' }, prompt: 'q_write', big: w.hu, audio: [{ l: C.lang, k: 'x:sp:' + w.w, t: w.w }, { l: 'hu', k: 'x:sph:' + w.w, t: w.hu }], answer: w.w, explain: w.w, w }; }
-  function genQ(topic, level) { const t = MG.make(topic, level); const q = { kind: t.kind === 'line' ? 'line' : t.kind === 'num' ? 'num' : 'choice', part: 'math', unit: topic === 'mult' || topic === 'add' || topic === 'factor' ? 'u2' : 'u1', page: '', task: t, topic,
-    rec: { type: 'g:' + topic, id: t.text.es, label: t.text.es, hu: t.text.hu, unit: topic === 'mult' || topic === 'add' || topic === 'factor' ? 'u2' : 'u1' },
+  function genQ(topic, level) { const t = MG.make(topic, level); const q = { kind: t.kind === 'line' ? 'line' : t.kind === 'num' ? 'num' : 'choice', part: 'math', unit: ['mult', 'add', 'factor', 'car'].indexOf(topic) >= 0 ? 'u2' : 'u1', page: '', task: t, topic,
+    rec: { type: 'g:' + topic, id: t.text.es, label: t.text.es, hu: t.text.hu, unit: ['mult', 'add', 'factor', 'car'].indexOf(topic) >= 0 ? 'u2' : 'u1' },
     prompt: null, big: t.text.es, small: t.text.hu, audio: null, answer: t.answer, explain: t.explain, options: t.options ? t.options.map(o => ({ v: o.v, label: o.label, es: o.es, hu: o.hu })) : null }; return q; }
-  function topicsForUnits(units) { const t = []; if (units.indexOf('u2') >= 0) t.push('mult', 'add', 'factor'); if (units.indexOf('u1') >= 0) t.push('place', 'compare', 'line', 'round'); return t.length ? t : MG.TOPICS; }
+  function topicsForUnits(units) { const t = []; if (units.indexOf('u2') >= 0) t.push('mult', 'add', 'factor', 'car'); if (units.indexOf('u1') >= 0) t.push('place', 'compare', 'line', 'round'); return t.length ? t : MG.TOPICS; }
   function level(topic) { return (P.gen[topic] && P.gen[topic].lvl) || 1; }
   function genAdapt(topic, ok) { const g = P.gen[topic] || (P.gen[topic] = { lvl: 1, run: 0, bad: 0, n: 0, ok: 0 }); g.n++; if (ok) { g.ok++; g.run++; g.bad = 0; if (g.run >= 3 && g.lvl < 5) { g.lvl++; g.run = 0; ST.levelUp = topic; } } else { g.bad++; g.run = 0; if (g.bad >= 2 && g.lvl > 1) { g.lvl--; g.bad = 0; } } }
   function pickTopic(units) { const ts = topicsForUnits(units); if (ST.topic && ST.topic !== 'mix' && ts.indexOf(ST.topic) >= 0) return ST.topic; const w = ts.map(t => { const g = P.gen[t]; return (g && g.n > 3) ? 1 + (1 - g.ok / g.n) * 3 : 2; }); let r = Math.random() * w.reduce((a, b) => a + b, 0); for (let i = 0; i < ts.length; i++) { r -= w[i]; if (r <= 0) return ts[i]; } return ts[0]; }
@@ -341,15 +431,15 @@
     render({ top: true }); autoAudio();
   }
   function curQ() { const R = ST.run; if (R.gen && !R.qs[R.i]) R.qs[R.i] = R.gen(); return R.qs[R.i]; }
-  function autoAudio() { const q = ST.run && curQ(); if (!q) return; if (q.kind === 'flash') { say(q.items); return; } if (q.task) { sayTask(q.task); return; } if (q.audio) say(q.audio); }
+  function autoAudio() { const q = ST.run && curQ(); if (!q) return; if (q.fix && !ST.run.fixSaid && q.audio) { ST.run.fixSaid = 1; say([sx('i_fix')].concat(q.audio)); return; } if (q.kind === 'flash') { say(q.items.slice(0, 1)); return; } if (q.task) { sayTask(q.task); return; } if (q.audio) say(q.audio); }
   function startTimer() { clearInterval(timerIv); timerIv = setInterval(() => { const R = ST.run; if (!R || R.mode !== 'test' || ST.view !== 'run') { clearInterval(timerIv); return; } const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); const t = el && el.querySelector('#px-timer'); if (t) t.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (left <= 0) { clearInterval(timerIv); finishRun(true); } }, 500); }
   function answerRun(resp, extra) {
     const R = ST.run, q = curQ(); if (R.ans !== null && R.mode !== 'test') return; touch();
     let ok;
-    if (q.kind === 'type') ok = norm(String(resp)) === norm(q.answer); else ok = String(resp) === String(q.answer);
+    if (q.kind === 'type') ok = norm(String(resp)) === norm(q.answer) || (q.alts || []).some(a => norm(a) === norm(String(resp))); else ok = String(resp) === String(q.answer);
     if (q.kind === 'type' && !ok && R.tries < 1 && R.mode !== 'test') { R.tries++; R.ok = 'retry'; sayHu('fb_retry'); try { H.sfxBad(); } catch (e) { } ST.mood = 'sad'; render(); return; }
     R.ans = resp; R.ok = ok; R.score += ok ? 1 : 0; R.res.push({ q, ok, resp });
-    record(q.rec, ok); if (q.topic) genAdapt(q.topic, ok);
+    record(q.rec, ok); if (q.topic) genAdapt(q.topic, ok); if (ok && q.rec && q.rec.type === 'tk') { P.tkok = P.tkok || {}; P.tkok[q.rec.id] = today(); }
     if (R.mode === 'test') { nextRun(); return; }
     ST.mood = ok ? 'happy' : 'sad'; try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { }
     if (ok) award(1);
@@ -368,23 +458,28 @@
     ST.mood = pct >= .6 ? 'happy' : 'idle'; let bonus = 0;
     if (R.mode === 'mission') { bonus = 5; P.mission[today()] = true; markActive(); }
     if (R.mode === 'test') { bonus = Math.round(pct * 10); const parts = {}; R.qs.forEach((q, i) => { const r = R.res[i]; const p = parts[q.part] || (parts[q.part] = { n: 0, ok: 0 }); p.n++; if (r && r.ok) p.ok++; });
-      P.tests.push({ ts: Date.now(), unit: R.unit, score: R.score, total: R.qs.length, secs: Math.round((Date.now() - R.start) / 1000), parts }); P.tests = P.tests.slice(-30); markActive(); }
-    if (bonus) award(bonus); R.bonus = bonus; Store.save();
+      P.tests.push({ ts: Date.now(), unit: R.unit, units: R.units || [R.unit], score: R.score, total: R.qs.length, secs: Math.round((Date.now() - R.start) / 1000), parts }); P.tests = P.tests.slice(-30); markActive();
+      R.win = pct >= 0.75; if (R.win) { bonus += 5; const cert = { ts: Date.now(), subj: subjTitle(), units: (R.units || [R.unit]).map(unitTitle), pct: Math.round(pct * 100), score: R.score, total: R.qs.length }; P.certs = (P.certs || []).concat([cert]).slice(-20); R.cert = cert; } }
+    if (bonus) award(bonus); R.bonus = bonus; Store.save(); Store.writeLocal();
     try { pct >= .6 ? H.sfxGood() : null; } catch (e) { }
-    render({ top: true }); setTimeout(() => { if (ST.view === 'run') sayHu(R.mode === 'test' ? (pct >= .8 ? 'fb_end_great' : pct >= .5 ? 'fb_end_good' : 'fb_end_try') : 'fb_end'); }, 800);
+    render({ top: true }); setTimeout(() => { if (ST.view === 'run') sayHu(R.mode === 'test' ? (R.win ? 'fb_race_win' : 'fb_race_lose') : 'fb_end'); }, 800);
   }
   // ================= nézetek =================
   function kitty(mood, size, cls) { mood = mood || 'idle'; let s = C.kitty[mood] || ''; const acc = Object.keys(P.worn).map(slot => X.acc.find(a => a.id === P.worn[slot])).filter(Boolean).map(a => a.svg).join('');
     if (acc) s = s.replace(/<\/svg>\s*$/, acc + '</svg>'); return '<div class="kitty kitty-' + mood + ' ' + (cls || '') + '" style="width:' + size + 'px;height:' + size + 'px">' + s + '</div>'; }
   function topbar(title) {
     return '<div class="px-top"><button type="button" class="pbtn l sm" data-a="home" aria-label="Kezdőlap">' + ICO.home + '<span>' + esc(hu('b_home')) + '</span></button>' +
-      '<div class="px-title">' + esc(title || '') + '</div><div class="px-stat">' + ICO.star + '<b>' + P.stars + '</b>' + ICO.flame + '<b>' + P.streak.n + '</b></div></div>';
+      '<div class="px-title">' + esc(title || '') + '</div><div class="px-stat">' + ICO.star + '<b>' + P.stars + '</b>' + ICO.flame + '<b>' + globalStreak().n + '</b></div></div>';
   }
   function instrBtn(k) { return '<button type="button" class="pbtn o sm" data-a="instr" data-k="' + k + '">' + ICO.spk + '<span>' + esc(hu('b_help')) + '</span></button>'; }
   function evType(t) { return { spelling: 'ev_spelling', control: 'ev_control', homework: 'ev_homework', test: 'ev_control' }[t] || 'ev_control'; }
   function unitChips(sel) { return '<div class="px-chips">' + [['auto', hu('c_auto')], ['all', hu('c_all')]].concat(H.D.units.map(u => [u.id, u.num + '. ' + (u.es.length > 18 ? u.es.slice(0, 16) + '…' : u.es)])).map(c => '<button type="button" class="chip' + ((P.unit || 'auto') === c[0] ? ' on' : '') + '" data-a="unit" data-u="' + c[0] + '">' + esc(c[1]) + '</button>').join('') + '</div>'; }
   function eventCard(ev) {
-    if (!ev) return '<div class="px-card"><h2>' + esc(hu('no_event')) + '</h2></div>';
+    if (!ev) { const fu = fallbackUnits(); const u0 = fu[fu.length - 1]; const links = (u0 ? Plus.linksFor(u0) : []).filter(l => l.kind !== 'folder');
+      return '<div class="px-card px-mission"><div class="px-row"><span class="px-chip review">' + esc(hu('review_card')) + '</span></div><h2 class="px-evt">' + esc(hu('no_event')) + '</h2><p class="px-evh">' + esc(hu('review_sub')) + (S('review_sub').l ? '<br><em>' + esc(S('review_sub').l) + '</em>' : '') + '</p>' +
+        '<p class="px-evh"><b>' + fu.map(unitTitle).map(esc).join(' · ') + '</b></p>' +
+        '<div class="px-row"><button type="button" class="pbtn o" data-a="sayreview">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button>' + (u0 ? '<button type="button" class="pbtn l" data-a="gounit" data-u="' + u0 + '"><span>' + esc(hu('b_goto')) + '</span>' + ICO.next + '</button>' : '') + '</div>' +
+        (links.length ? '<div class="px-links">' + links.map(l => '<a class="px-link" target="_blank" rel="noopener" href="' + esc(l.url) + '">' + ICO.link + '<span>' + esc(l.hu) + '</span></a>').join('') + '</div>' : '') + '</div>'; }
     const d = ev._days; const cd = d === 0 ? hu('cd_today') : d === 1 ? hu('cd_tomorrow') : d + ' ' + hu('cd_days_txt');
     const links = linksFor((ev.units || [])[0], ev); const u0 = (ev.units || [])[0];
     return '<div class="px-card px-mission"><div class="px-row"><span class="px-chip ' + ev.type + '">' + esc(hu(evType(ev.type))) + '</span><span class="px-date">' + esc(ev.date.replace(/-/g, '. ') + '.') + '</span></div>' +
@@ -395,15 +490,18 @@
   }
   function vHome() {
     const ev = nextEvent(); ST.curEvent = ev; const done = !!P.mission[today()];
-    const tiles = [['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], [C.subj === 'en' ? 'spelling' : 'gen', C.subj === 'en' ? 't_spelling' : 't_gen', 'T3']];
-    if (Plus.speechOK()) tiles.push(['speak', 't_speak', 'T4']); tiles.push(['testmenu', 't_test', 'T5'], ['shop', 't_shop', 'T6'], ['parent', 't_parent', 'T7']);
-    return '<div class="px-hero">' + kitty(ST.mood, 120, 'hero') + '<div><h1>' + esc(hu('hello')) + '</h1><div class="px-stat big">' + ICO.star + '<b>' + P.stars + '</b>' + ICO.flame + '<b>' + P.streak.n + '</b><span class="px-sub">' + esc(hu('streak_days')) + '</span></div></div>' +
+    const tiles = [['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ];
+    if (extraKind()) { const ek = extraKind(); tiles.push([ek, { spelling: 't_spelling', gen: 't_gen', dictado: 't_dictado', tasks: 't_tasks' }[ek], 'T3']); }
+    if (Plus.speechOK()) tiles.push(['speak', 't_speak', 'T4']); tiles.push(['testmenu', 't_test', 'T5'], ['album', 't_album', 'T8'], ['shop', 't_shop', 'T6'], ['parent', 't_parent', 'T7']);
+    const gs = globalStreak(); const tot = totalStars(); const soon = ev && ev._days >= 0 && ev._days <= 2;
+    return '<div class="px-hero">' + kitty(ST.mood, 120, 'hero') + '<div><h1>' + esc(hu('hello')) + '</h1><div class="px-stat big">' + ICO.star + '<b>' + P.stars + '</b>' + ICO.flame + '<b>' + gs.n + '</b><span class="px-sub">' + esc(hu('streak_days')) + (gs.rest ? ' · ' + esc(hu('rest_day')) : '') + '</span></div>' + (tot !== P.stars ? '<div class="px-sub">' + ICO.star + ' <b>' + tot + '</b> ' + esc(hu('stars_total')) + '</div>' : '') + '</div>' +
       '<button type="button" class="pbtn o" data-a="instr" data-k="home_intro">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button></div>' +
-      '<h3 class="px-h">' + esc(hu('today_mission')) + '</h3>' + eventCard(ev) +
-      '<button type="button" class="pbtn g xl" data-a="mission">' + (done ? ICO.ok : ICO.next) + '<span>' + esc(hu(done ? 'b_mission_again' : 'b_mission')) + '</span><small>' + esc(hu('mission_sub')) + '</small></button>' +
+      rewardHtml() + '<h3 class="px-h">' + esc(hu('today_mission')) + '</h3>' + eventCard(ev) + (ev ? readyHtml(ev) : '') +
+      (soon ? '<div class="px-card px-final"><div class="px-final-cars">' + carSvg('#3B82C4', 70) + carSvg('#D9362B', 70) + '</div><h2>' + esc(hu('race_final')) + '</h2><p class="px-evh">' + esc(hu('race_sub')) + '</p><button type="button" class="pbtn b xl" data-a="race">' + ICO.next + '<span>' + esc(hu('b_race')) + '</span></button></div>' : '') +
+      '<button type="button" class="pbtn g xl" data-a="mission">' + (done ? ICO.ok : ICO.next) + '<span>' + esc(hu(done ? 'b_mission_again' : 'b_mission')) + '</span><small>' + esc(hu(ev ? 'mission_sub' : 'mission_sub_review')) + '</small></button>' +
       '<div class="px-tiles">' + tiles.map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="go" data-v="' + t[0] + '"><span class="ic">' + tileIcon(t[0]) + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>';
   }
-  function tileIcon(k) { const m = { cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || '') + '</svg>'; }
+  function tileIcon(k) { const m = { cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || '') + '</svg>'; }
   // ---- szókártyák
   function vCards() {
     const units = activeUnits(); const p = poolFor(units); const cnt = [0, 0, 0, 0, 0, 0]; p.forEach(w => cnt[boxOf(w.id)]++);
@@ -420,7 +518,7 @@
     return topbar(hu('t_cards')) + '<div class="px-prog">' + (R.i + 1) + ' / ' + R.q.length + ' · ' + esc(hu('box')) + ': ' + b + '</div>' +
       '<div class="px-flash' + (R.flip ? ' flip' : '') + '">' + (w.icon ? '<div class="px-ico">' + w.icon + '</div>' : '') + '<div class="px-fw">' + esc(w.es) + '</div>' + (R.flip ? '<div class="px-fh">' + esc(w.hu) + '</div>' : '') +
       '<div class="px-row center"><button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '">' + ICO.spk + '<span>' + esc(C.lang.toUpperCase()) + '</span></button>' +
-      '<button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="hu">' + ICO.spk + '<span>HU</span></button></div></div>' +
+      (R.flip ? '<button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="hu">' + ICO.spk + '<span>HU</span></button>' : '') + '</div></div>' +
       (!R.flip ? '<button type="button" class="pbtn b xl" data-a="cardflip"><span>' + esc(hu('b_flip')) + '</span></button>' :
         '<div class="px-row center"><button type="button" class="pbtn g xl" data-a="cardgrade" data-ok="1">' + ICO.ok + '<span>' + esc(hu('b_knew')) + '</span></button><button type="button" class="pbtn r xl" data-a="cardgrade" data-ok="0">' + ICO.no + '<span>' + esc(hu('b_notyet')) + '</span></button></div>');
   }
@@ -429,20 +527,20 @@
     '<div class="px-tiles">' + [['memory', 'g_memory', 'T1'], ['listen', 'g_listen', 'T2'], ['drag', 'g_drag', 'T3']].map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="game" data-g="' + t[0] + '"><span class="ic">' + tileIcon('games') + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>'; }
   // memória
   function startMemory() {
-    let p = poolFor(activeUnits(), true); if (p.length < 4) p = pool().filter(w => w.icon); const ws = pickN(p, Math.min(6, p.length));
-    const cards = shuffle(ws.flatMap(w => [{ k: 'i', w }, { k: 'w', w }])).map((c, n) => Object.assign(c, { n, open: false, done: false }));
+    let p = poolFor(activeUnits(), true); if (p.length < 4) p = pool().filter(w => w.icon); let textOnly = false; if (p.length < 4) { p = poolFor(activeUnits()); if (p.length < 4) p = pool(); textOnly = true; } const ws = (textOnly ? shuffle(p) : dedupIcons(p)).slice(0, Math.min(6, p.length));
+    const cards = shuffle(ws.flatMap(w => [{ k: textOnly ? 'h' : 'i', w }, { k: 'w', w }])).map((c, n) => Object.assign(c, { n, open: false, done: false }));
     ST.mem = { cards, first: null, lock: false, moves: 0, pairs: ws.length, found: 0 }; ST.view = 'memory'; render({ top: true }); sayK('i_memory');
   }
   function vMemory() {
     const M = ST.mem; if (!M) return '';
     const win = M.found >= M.pairs;
     return topbar(hu('g_memory')) + '<div class="px-row">' + instrBtn('i_memory') + '<span class="px-prog">' + esc(hu('moves')) + ': ' + M.moves + '</span></div>' +
-      '<div class="px-mem">' + M.cards.map(c => '<button type="button" class="mcard' + (c.open || c.done ? ' open' : '') + (c.done ? ' done' : '') + '" data-a="mem" data-n="' + c.n + '" aria-label="' + (c.open || c.done ? esc(c.w.es) : '?') + '">' + (c.open || c.done ? (c.k === 'i' ? c.w.icon : '<span>' + esc(c.w.es.replace(/\s*\([^)]*\)/g, '')) + '</span>') : '<b>?</b>') + '</button>').join('') + '</div>' +
+      '<div class="px-mem">' + M.cards.map(c => '<button type="button" class="mcard' + (c.open || c.done ? ' open' : '') + (c.done ? ' done' : '') + '" data-a="mem" data-n="' + c.n + '" aria-label="' + (c.open || c.done ? esc(c.k === 'h' ? c.w.hu : c.w.es) : '?') + '">' + (c.open || c.done ? (c.k === 'i' ? c.w.icon : c.k === 'h' ? '<span class="px-hutxt">' + esc(c.w.hu.replace(/\s*\([^)]*\)/g, '')) + '</span>' : '<span>' + esc(c.w.es.replace(/\s*\([^)]*\)/g, '')) + '</span>') : '<b>?</b>') + '</button>').join('') + '</div>' +
       (win ? '<div class="px-card center">' + kitty('happy', 110) + '<h2>' + esc(hu('fb_win')) + '</h2><div class="px-row center"><button type="button" class="pbtn g" data-a="game" data-g="memory">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="go" data-v="games">' + esc(hu('b_back')) + '</button></div></div>' : '');
   }
   function memClick(n) {
     const M = ST.mem; if (!M || M.lock) return; const c = M.cards[n]; if (c.open || c.done) return; touch(); c.open = true;
-    if (c.k === 'w') say([{ l: C.lang, k: c.w.id, t: c.w.es }]);
+    if (c.k === 'w') say([{ l: C.lang, k: c.w.id, t: c.w.es }]); else if (c.k === 'h') say([{ l: 'hu', k: c.w.id, t: c.w.hu }]);
     if (M.first == null) { M.first = n; render(); return; }
     const a = M.cards[M.first]; M.moves++;
     if (a.w.id === c.w.id && a.k !== c.k) { a.done = c.done = true; a.open = c.open = false; M.first = null; M.found++; record({ type: 'w', id: c.w.id, label: c.w.es, hu: c.w.hu, unit: c.w.unit }, true); award(1); try { H.sfxGood(); } catch (e) { } ST.mood = 'happy'; render(); say(wordItems(c.w)); if (M.found >= M.pairs) { award(3); markActive(); setTimeout(() => sayHu('fb_win'), 2600); } }
@@ -450,18 +548,19 @@
   }
   // "halld és válaszd" és "húzd a képet a szóhoz"
   function startListen() {
-    const units = activeUnits(); let p = poolFor(units); if (p.length < 4) p = pool(); const ws = pickN(p, Math.min(8, p.length)); const hasIcon = poolFor(units, true).length >= 6;
+    const units = activeUnits(); let p = poolFor(units); if (p.length < 4) p = pool(); const hasIcon = poolFor(units, true).length >= 6; if (hasIcon) p = poolFor(units, true); const ws = (hasIcon ? dedupIcons(p) : pickN(p, 8)).slice(0, Math.min(8, p.length));
     startRun({ mode: 'practice', title: hu('g_listen'), qs: ws.map(w => vocabQ(w, 'hear', p)), back: 'games', instr: 'i_listen' });
   }
   function startDrag() {
-    let p = poolFor(activeUnits(), true); if (p.length < 4) p = pool().filter(w => w.icon); const ws = pickN(p, Math.min(4, p.length));
+    let p = poolFor(activeUnits(), true); if (p.length < 4) p = pool().filter(w => w.icon); if (p.length < 4) p = poolFor(activeUnits()); if (p.length < 4) p = pool(); const ws = dedupIcons(p).slice(0, Math.min(4, p.length));
     ST.drag = { ws, slots: ws.map(() => null), chips: shuffle(ws.map(w => w.id)), sel: null, wrong: null }; ST.view = 'drag'; render({ top: true }); sayK('i_drag');
   }
+  function picOf(w) { return w.icon || '<span class="px-hutxt">' + esc(w.hu.replace(/\s*\([^)]*\)/g, '')) + '</span>'; }
   function vDrag() {
     const Dg = ST.drag; if (!Dg) return ''; const placed = Dg.slots.filter(Boolean).length; const win = placed >= Dg.ws.length;
     return topbar(hu('g_drag')) + '<div class="px-row">' + instrBtn('i_drag') + '</div>' +
-      '<div class="px-slots">' + Dg.ws.map((w, i) => '<div class="px-slot' + (Dg.slots[i] ? ' filled' : '') + '" data-slot="' + i + '" data-a="slot" data-i="' + i + '"><div class="px-slotimg">' + (Dg.slots[i] ? w.icon : '') + '</div><div class="px-slotw">' + esc(w.es.replace(/\s*\([^)]*\)/g, '')) + '</div></div>').join('') + '</div>' +
-      '<div class="px-chipsrow">' + Dg.chips.filter(id => Dg.slots.indexOf(id) < 0).map(id => { const w = Dg.ws.find(x => x.id === id); return '<div class="px-pic' + (Dg.sel === id ? ' sel' : '') + '" data-drag="' + id + '" data-a="pic" data-id="' + id + '" role="button" tabindex="0">' + w.icon + '</div>'; }).join('') + '</div>' +
+      '<div class="px-slots">' + Dg.ws.map((w, i) => '<div class="px-slot' + (Dg.slots[i] ? ' filled' : '') + '" data-slot="' + i + '" data-a="slot" data-i="' + i + '"><div class="px-slotimg">' + (Dg.slots[i] ? picOf(w) : '') + '</div><div class="px-slotw">' + esc(w.es.replace(/\s*\([^)]*\)/g, '')) + '</div></div>').join('') + '</div>' +
+      '<div class="px-chipsrow">' + Dg.chips.filter(id => Dg.slots.indexOf(id) < 0).map(id => { const w = Dg.ws.find(x => x.id === id); return '<div class="px-pic' + (Dg.sel === id ? ' sel' : '') + '" data-drag="' + id + '" data-a="pic" data-id="' + id + '" role="button" tabindex="0">' + picOf(w) + '</div>'; }).join('') + '</div>' +
       (win ? '<div class="px-card center">' + kitty('happy', 110) + '<h2>' + esc(hu('fb_win')) + '</h2><div class="px-row center"><button type="button" class="pbtn g" data-a="game" data-g="drag">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="go" data-v="games">' + esc(hu('b_back')) + '</button></div></div>' : '');
   }
   function dragPlace(id, i) {
@@ -481,6 +580,40 @@
     const ws = weeks(); const w = ws.find(x => x.id === (weekId || ST.week)) || weekFor(nextEvent()); if (!w) return;
     ST.week = w.id; const list = shuffle(w.words); startRun({ mode: 'practice', title: hu('t_spelling'), qs: list.map(x => spellQ(x, w.unit)), back: 'spelling', instr: 'i_spell_run' });
   }
+  // ---- dictado (lengua): a hang kimondja a szót, Martin beírja. SOHA nem betűztetünk.
+  function dictWords(unit) {
+    const out = [], seen = {}; const huC = h => String(h || '').replace(/\s*\([^)]*\)/g, '').trim();
+    const add = (w, h, k, kh, alts) => { const n = norm(w); if (!n || seen[n]) return; seen[n] = 1; out.push({ w, hu: huC(h) || h, k, kh, alts: alts || [] }); };
+    ((X.dictado && X.dictado.lists) || []).filter(l => l.unit === unit).forEach(l => l.words.forEach(x => add(x.w, x.hu, 'x:sp:' + x.w, 'x:sph:' + x.w)));
+    H.D.glossary.filter(g => g.unit === unit).forEach(g => { const full = g.es.replace(/\s*\([^)]*\)/g, '').trim(); const bare = full.replace(/^(el|la|los|las|un|una)\s+/i, '');
+      if (/^[a-záéíóúüñ]{3,14}$/i.test(bare) && !/[\/,]/.test(g.hu)) add(full, g.hu, 'g:' + g.i, 'g:' + g.i, bare !== full ? [bare] : []); });
+    return out;
+  }
+  function dictQ(x, unit) { return { kind: 'type', part: 'dictado', unit: unit || 'u1', page: '', rec: { type: 'dc', id: norm(x.w), label: x.w, hu: x.hu, unit: unit || '' }, prompt: 'q_write_es', big: x.hu, audio: [{ l: C.lang, k: x.k, t: x.w }, { l: 'hu', k: x.kh, t: x.hu }], answer: x.w, alts: x.alts || [], explain: x.w, accent: true, reveal: [{ l: C.lang, k: x.k, t: x.w }] }; }
+  function dictUnits() { const all = unitsList(); const has = all.filter(u => dictWords(u).length >= 4); return has.length ? has : all; }
+  function vDictado() {
+    const us = dictUnits(); const au = activeUnits().filter(u => us.indexOf(u) >= 0); const sel = ST.dunit || (au[0] || us[0]);
+    const ws = dictWords(sel);
+    return topbar(hu('t_dictado')) + '<div class="px-row">' + instrBtn('i_dictado') + '</div>' +
+      '<div class="px-chips">' + us.map(u => '<button type="button" class="chip' + (u === sel ? ' on' : '') + '" data-a="dunit" data-u="' + u + '">' + esc(unitTitle(u).length > 22 ? unitTitle(u).slice(0, 20) + '…' : unitTitle(u)) + '</button>').join('') + '</div>' +
+      '<div class="px-card"><div class="px-words">' + ws.slice(0, 40).map(x => '<button type="button" class="wchip2" data-a="saydw" data-u="' + sel + '" data-w="' + esc(norm(x.w)) + '">' + esc(x.w) + '<small>' + esc(x.hu) + '</small></button>').join('') + '</div></div>' +
+      '<button type="button" class="pbtn g xl" data-a="startdict">' + ICO.next + '<span>' + esc(hu('b_start')) + '</span><small>' + ws.length + '</small></button>';
+  }
+  function startDictado(unit) { const u = unit || ST.dunit || dictUnits()[0]; const ws = pickN(dictWords(u), 10); if (!ws.length) return; ST.dunit = u; startRun({ mode: 'practice', title: hu('t_dictado'), qs: ws.map(x => dictQ(x, u)), back: 'dictado', instr: 'i_dictado_run' }); }
+  // ---- tantárgyi feladatok (cs, ns, ac): csoportosítás, párosítás, igaz/hamis
+  function taskQ(t) { let opts = t.options.map((o, i) => ({ v: i, label: o.t, sm: o.hu })); if (t.kind === 'match') opts = shuffle(opts);
+    return { kind: 'choice', part: 'task', unit: t.unit, page: '', rec: { type: 'tk', id: t.id, label: t.q, hu: t.q_hu, unit: t.unit }, prompt: { sort: 'q_sort', tf: 'q_tf', match: 'q_pick' }[t.kind] || null, big: t.q, small: t.q_hu,
+      audio: [{ l: C.lang, k: 'x:tk:' + t.id, t: t.q }, { l: 'hu', k: 'x:tkh:' + t.id, t: t.q_hu }], answer: t.answer, options: opts, explain: t.explain + ' – ' + t.explain_hu,
+      reveal: [{ l: C.lang, k: 'x:tke:' + t.id, t: t.explain }, { l: 'hu', k: 'x:tkeh:' + t.id, t: t.explain_hu }] }; }
+  function taskUnits() { const us = unitsList().filter(u => tasksAll().some(t => t.unit === u)); return us.length ? us : unitsList(); }
+  function vTasks() {
+    const us = taskUnits(); const au = activeUnits().filter(u => us.indexOf(u) >= 0); const sel = ST.tunit || (au[0] || us[0]); const ts = tasksAll().filter(t => t.unit === sel);
+    return topbar(hu('t_tasks')) + '<div class="px-row">' + instrBtn('i_tasks') + '</div>' +
+      '<div class="px-chips">' + us.map(u => '<button type="button" class="chip' + (u === sel ? ' on' : '') + '" data-a="tunit" data-u="' + u + '">' + esc(unitTitle(u).length > 22 ? unitTitle(u).slice(0, 20) + '…' : unitTitle(u)) + '</button>').join('') + '</div>' +
+      '<div class="px-card"><p style="margin:0 0 6px;font-weight:800">' + esc(hu('tasks_kinds')) + '</p><div class="px-words">' + ts.slice(0, 12).map(t => '<span class="wchip2" style="cursor:default">' + esc(t.q.length > 46 ? t.q.slice(0, 44) + '…' : t.q) + '<small>' + esc(t.q_hu.length > 46 ? t.q_hu.slice(0, 44) + '…' : t.q_hu) + '</small></span>').join('') + '</div></div>' +
+      '<button type="button" class="pbtn g xl" data-a="starttasks">' + ICO.next + '<span>' + esc(hu('b_start')) + '</span><small>' + Math.min(10, ts.length) + '</small></button>';
+  }
+  function startTasks(unit) { const u = unit || ST.tunit || taskUnits()[0]; const ts = pickN(tasksAll().filter(t => t.unit === u), 10); if (!ts.length) return; ST.tunit = u; startRun({ mode: 'practice', title: hu('t_tasks'), qs: ts.map(taskQ), back: 'tasks', instr: 'i_tasks_run' }); }
   // ---- matek-generátor
   function vGen() {
     const ts = MG.TOPICS; const sel = ST.topic || 'mix';
@@ -515,16 +648,19 @@
   // ---- próbadolgozat
   function vTestMenu() {
     const last = P.tests.slice(-3).reverse();
-    return topbar(hu('t_test')) + '<div class="px-row">' + instrBtn('i_test') + '</div><div class="px-chips">' + H.D.units.map(u => '<button type="button" class="chip big" data-a="starttest" data-u="' + u.id + '">' + u.num + '. ' + esc(u.es) + '<small>' + esc(u.hu) + '</small></button>').join('') + '</div>' +
+    const ev = nextEvent(); const cs = (P.certs || []).map((c, i) => ({ c, i })).reverse().slice(0, 8);
+    return topbar(hu('t_test')) + '<div class="px-row">' + instrBtn('i_test') + '</div>' + (ev ? '<div class="px-card px-final"><div class="px-final-cars">' + carSvg('#3B82C4', 60) + carSvg('#D9362B', 60) + '</div><p class="px-evh">' + esc(ev.title_hu) + '</p><button type="button" class="pbtn b" data-a="race">' + ICO.next + '<span>' + esc(hu('b_race')) + '</span></button></div>' : '') +
+      (cs.length ? '<h3 class="px-h">' + esc(hu('certs')) + '</h3><div class="px-row">' + cs.map(o => '<button type="button" class="pbtn l sm" data-a="cert" data-i="' + o.i + '">' + ICO.star + '<span>' + esc(o.c.units.join(', ')) + ' · ' + o.c.pct + '%</span></button>').join('') + '</div>' : '') + '<div class="px-chips">' + H.D.units.map(u => '<button type="button" class="chip big" data-a="starttest" data-u="' + u.id + '">' + u.num + '. ' + esc(u.es) + '<small>' + esc(u.hu) + '</small></button>').join('') + '</div>' +
       (last.length ? '<h3 class="px-h">' + esc(hu('last_tests')) + '</h3>' + last.map(t => '<div class="px-card slim">' + esc(unitTitle(t.unit)) + ' · <b>' + t.score + ' / ' + t.total + '</b> · ' + new Date(t.ts).toLocaleDateString('hu-HU') + '</div>').join('') : '');
   }
   function unitTitle(id) { const u = H.D.units.find(x => x.id === id); return u ? u.num + '. ' + u.es : id; }
   function buildTest(unit) {
     const D = H.D, p = pool().filter(w => w.unit === unit), qs = [];
-    const vocab = pickN(p, Math.min(C.subj === 'en' ? 4 : 3, p.length)); vocab.forEach((w, i) => qs.push(vocabQ(w, ['hear', 'tr', 'see'][i % 3], p.length > 3 ? p : pool())));
-    pickN(D.quiz.filter(q => q.unit === unit), C.subj === 'en' ? 4 : 3).forEach(q => qs.push(quizQ(q)));
+    const nv = C.subj === 'en' ? 4 : C.subj === 'mat' || C.subj === 'lengua' ? 3 : 5, nq = C.subj === 'en' ? 4 : C.subj === 'mat' || C.subj === 'lengua' ? 3 : 5; const vocab = pickN(p, Math.min(nv, p.length)); vocab.forEach((w, i) => qs.push(vocabQ(w, ['hear', 'tr', 'see'][i % 3], p.length > 3 ? p : pool())));
+    pickN(D.quiz.filter(q => q.unit === unit), nq).forEach(q => qs.push(quizQ(q)));
     if (C.subj === 'en') { const w = weeks().find(x => x.unit === unit); const sw = w ? pickN(w.words, 2) : []; const own = pickN(p.filter(x => /^[a-z]+$/.test(x.es)), 2); (sw.length ? sw : own.map(x => ({ w: x.es, hu: x.hu }))).forEach(x => { if (X.xsprite[C.lang]['x:sp:' + x.w]) qs.push(spellQ(x, unit)); }); }
-    else { const ts = topicsForUnits([unit]); for (let i = 0; i < 4; i++) { const t = ts[i % ts.length]; qs.push(genQ(t, Math.min(4, Math.max(2, level(t))))); } }
+    else if (C.subj === 'lengua') pickN(dictWords(unit), 3).forEach(x => qs.push(dictQ(x, unit)));
+    else if (C.subj === 'mat') { const ts = topicsForUnits([unit]); for (let i = 0; i < 4; i++) { const t = ts[i % ts.length]; qs.push(genQ(t, Math.min(4, Math.max(2, level(t))))); } }
     return qs;
   }
   function startTest(unit) { const qs = buildTest(unit); if (!qs.length) return; startRun({ mode: 'test', title: hu('t_test') + ' · ' + unitTitle(unit), unit, qs, secs: Math.max(300, qs.length * 60), back: 'testmenu', instr: 'i_test_run' }); }
@@ -535,18 +671,22 @@
     let h = topbar(R.title) + '<div class="px-row"><span class="px-prog">' + esc(prog) + '</span>' + (R.mode === 'test' ? '<span class="px-timer" id="px-timer">' + (function () { const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); return Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); })() + '</span>' : '') +
       (q.audio || q.task || q.items ? '<button type="button" class="pbtn o sm" data-a="qsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button>' : '') + (R.instr && R.mode !== 'test' ? instrBtn(R.instr) : '') + '</div>';
     const showFb = R.ans !== null && R.mode !== 'test'; const answered = showFb;
+    if (R.mode === 'test') { const n2 = R.qs.length || 1; const me = R.score / n2, riv = Math.min(1, R.res.length * 0.75 / n2);
+      h += '<div class="px-race" aria-hidden="true"><div class="lane me"><span class="fin"></span><span class="car" style="left:calc(' + (me * 100) + '% - ' + Math.round(me * 56) + 'px)">' + carSvg('#3B82C4') + '</span></div><div class="lane"><span class="fin"></span><span class="car" style="left:calc(' + (riv * 100) + '% - ' + Math.round(riv * 56) + 'px)">' + carSvg('#D9362B') + '</span></div></div>'; }
+    if (q.fix && R.mode !== 'test') h += '<div class="px-fix">' + esc(hu('fix_badge')) + '</div>';
     h += '<div class="px-q">' + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96) + '</div>' : '') + '<div class="px-qb">';
     if (q.prompt) h += '<div class="px-prompt">' + bi(q.prompt) + '</div>';
     if (q.big) h += '<div class="px-bigq' + (q.part === 'math' ? ' math' : '') + '">' + esc(q.big) + '</div>'; if (q.small) h += '<div class="px-smallq">' + esc(q.small) + '</div>';
     if (q.task && q.task.vis) h += visHtml(q.task.vis, q.task);
     h += '</div></div>';
     if (q.kind === 'choice') h += '<div class="px-opts n' + q.options.length + '">' + q.options.map((o, i) => { let cls = 'opt big'; if (answered) { if (String(o.v) === String(q.answer)) cls += ' correct'; else if (String(o.v) === String(R.ans)) cls += ' wrong'; else cls += ' dim'; }
-      return '<button type="button" class="' + cls + '" data-a="pick" data-i="' + i + '">' + (o.icon ? '<span class="oi">' + o.icon + '</span>' : '') + '<span>' + esc(o.label) + '</span>' + (o.es ? '<small>' + esc(o.es) + ' · ' + esc(o.hu) + '</small>' : '') + '</button>'; }).join('') + '</div>';
-    else if (q.kind === 'type') h += '<div class="px-type"><input id="px-input" class="px-input" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" value="' + esc(R.typed) + '" ' + (answered ? 'disabled' : '') + ' placeholder="' + esc(hu('type_here')) + '" aria-label="' + esc(hu('type_here')) + '"><button type="button" class="pbtn g" data-a="check"' + (answered ? ' disabled' : '') + '>' + ICO.ok + '<span>' + esc(hu('b_check')) + '</span></button></div>' + (R.ok === 'retry' ? '<div class="px-fb bad">' + esc(hu('fb_retry')) + '</div>' : '');
+      return '<button type="button" class="' + cls + '" data-a="pick" data-i="' + i + '">' + (o.icon ? '<span class="oi">' + o.icon + '</span>' : '') + '<span>' + esc(o.label) + '</span>' + (o.es ? '<small>' + esc(o.es) + ' · ' + esc(o.hu) + '</small>' : o.sm ? '<small>' + esc(o.sm) + '</small>' : '') + '</button>'; }).join('') + '</div>';
+    else if (q.kind === 'type') h += '<div class="px-type"><input id="px-input" class="px-input" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" value="' + esc(R.typed) + '" ' + (answered ? 'disabled' : '') + ' placeholder="' + esc(hu('type_here')) + '" aria-label="' + esc(hu('type_here')) + '"><button type="button" class="pbtn g" data-a="check"' + (answered ? ' disabled' : '') + '>' + ICO.ok + '<span>' + esc(hu('b_check')) + '</span></button></div>' + (C.lang === 'es' && !answered ? '<div class="px-chars">' + ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü'].map(c => '<button type="button" class="chip" data-a="ch" data-c="' + c + '">' + c + '</button>').join('') + '</div>' : '') + (R.ok === 'retry' ? '<div class="px-fb bad">' + esc(hu('fb_retry')) + '</div>' : '');
     else if (q.kind === 'num') h += numpadHtml(R, answered);
     else if (q.kind === 'line') h += lineHtml(R, q, answered);
     if (showFb) {
-      const hint = (!R.ok && q.kind === 'type') ? '<b class="px-answer">' + esc(q.answer) + '</b>' : '';
+      const lowOk = String(R.ans == null ? '' : R.ans).trim().toLowerCase(); const accent = q.accent && R.ok && q.kind === 'type' && lowOk !== q.answer.toLowerCase() && !(q.alts || []).some(a => a.toLowerCase() === lowOk);
+      const hint = ((!R.ok && q.kind === 'type') || accent) ? (accent ? '<span class="px-exp">' + esc(hu('accent_note')) + '</span> ' : '') + '<b class="px-answer">' + esc(q.answer) + '</b>' : '';
       h += '<div class="px-fb ' + (R.ok ? 'good' : 'bad') + '"><b>' + esc(hu(R.ok ? 'fb_ok_title' : 'fb_bad_title')) + '</b> ' + hint + (q.explain && q.kind !== 'type' ? '<span class="px-exp">' + esc(q.explain) + '</span>' : '') + (ST.levelUp ? '<span class="px-lvl">' + esc(hu('level_up')) + ' ★</span>' : '') + '</div>' +
         '<div class="px-row"><button type="button" class="pbtn g xl" data-a="next">' + ICO.next + '<span>' + esc(hu(R.endless || R.i + 1 < n ? 'b_next' : 'b_result')) + '</span></button>' + (R.endless ? '<button type="button" class="pbtn l" data-a="finish"><span>' + esc(hu('b_done')) + '</span></button>' : '') + '</div>';
     }
@@ -569,13 +709,14 @@
     if (v.type === 'roundline') return '<div class="px-rl"><span>' + v.lo + '</span><i></i><b>' + v.n + '</b><i></i><span>' + v.hi + '</span></div>';
     return '';
   }
-  function vFlashRun() { const R = ST.run, q = curQ(); const w = q.w; return topbar(R.title) + '<div class="px-prog">' + (R.i + 1) + ' / ' + R.qs.length + '</div><div class="px-flash' + (R.flipped ? ' flip' : '') + '">' + (w.icon ? '<div class="px-ico">' + w.icon + '</div>' : '') + '<div class="px-fw">' + esc(w.es) + '</div>' + (R.flipped ? '<div class="px-fh">' + esc(w.hu) + '</div>' : '') + '<div class="px-row center"><button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '">' + ICO.spk + '<span>' + esc(C.lang.toUpperCase()) + '</span></button><button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="hu">' + ICO.spk + '<span>HU</span></button></div></div>' +
+  function vFlashRun() { const R = ST.run, q = curQ(); const w = q.w; return topbar(R.title) + '<div class="px-prog">' + (R.i + 1) + ' / ' + R.qs.length + '</div><div class="px-flash' + (R.flipped ? ' flip' : '') + '">' + (w.icon ? '<div class="px-ico">' + w.icon + '</div>' : '') + '<div class="px-fw">' + esc(w.es) + '</div>' + (R.flipped ? '<div class="px-fh">' + esc(w.hu) + '</div>' : '') + '<div class="px-row center"><button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '">' + ICO.spk + '<span>' + esc(C.lang.toUpperCase()) + '</span></button>' + (R.flipped ? '<button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="hu">' + ICO.spk + '<span>HU</span></button>' : '') + '</div></div>' +
     (!R.flipped ? '<button type="button" class="pbtn b xl" data-a="flipm"><span>' + esc(hu('b_flip')) + '</span></button>' : '<div class="px-row center"><button type="button" class="pbtn g xl" data-a="gradem" data-ok="1">' + ICO.ok + '<span>' + esc(hu('b_knew')) + '</span></button><button type="button" class="pbtn r xl" data-a="gradem" data-ok="0">' + ICO.no + '<span>' + esc(hu('b_notyet')) + '</span></button></div>'); }
   function vRunDone() {
     const R = ST.run; const n = R.mode === 'test' ? R.qs.length : R.res.length; const pct = n ? R.score / n : 0;
-    let h = topbar(R.title) + '<div class="px-card center">' + kitty(pct >= .6 ? 'happy' : 'idle', 130) + '<h2>' + esc(hu(R.mode === 'test' ? 'test_done' : 'run_done')) + '</h2><p class="px-big">' + R.score + ' / ' + n + '</p>' + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
+    let h = topbar(R.title) + '<div class="px-card center">' + (R.mode === 'test' ? '<div class="px-final-cars">' + (R.win ? carSvg('#3B82C4', 90) + carSvg('#D9362B', 60) : carSvg('#D9362B', 90) + carSvg('#3B82C4', 60)) + '</div>' : '') + kitty(pct >= .6 ? 'happy' : 'idle', 130) + '<h2>' + esc(hu(R.mode === 'test' ? (R.win ? 'race_win' : 'race_lose') : 'run_done')) + '</h2><p class="px-big">' + R.score + ' / ' + n + '</p>' + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
     if (R.mode === 'test') h += evalHtml(R);
-    h += '<div class="px-row center"><button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button></div>';
+    h += '<div class="px-row center">' + (R.cert ? '<button type="button" class="pbtn b" data-a="cert" data-i="' + ((P.certs || []).length - 1) + '">' + ICO.star + '<span>' + esc(hu('b_cert')) + '</span></button>' : '') + '<button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button>' +
+      (ST.fromHub ? '<a class="pbtn o" href="../">' + esc(hu('b_back_plan')) + '</a>' : '') + '</div>';
     return h;
   }
   function evalHtml(R) {
@@ -589,6 +730,25 @@
       (wrong.length ? '<ul class="px-wrong">' + wrong.map(x => '<li><b>' + esc(x.q.rec.label) + '</b> <span>' + esc(x.q.rec.hu || '') + '</span></li>').join('') + '</ul>' : '<p>' + esc(hu('eval_perfect')) + '</p>') +
       (links ? '<p class="px-note">' + esc(hu('eval_practice')) + '</p><div class="px-row">' + links + '</div>' : '') + '</div>';
   }
+  // ---- matricaalbum
+  function vAlbum() {
+    const sp = stickerPool(); const got = sp.filter(w => hasSticker(w.id)).length;
+    let h = topbar(hu('t_album')) + '<div class="px-row">' + instrBtn('i_album') + '<span class="px-stat big">' + ICO.star + '<b>' + got + ' / ' + sp.length + '</b> <span class="px-sub">' + esc(hu('stk_count')) + '</span></span></div>';
+    unitsList().forEach(u => { const ws = sp.filter(w => w.unit === u); if (!ws.length) return; const g = ws.filter(w => hasSticker(w.id)).length;
+      h += '<h3 class="px-h">' + esc(unitTitle(u)) + ' <small>' + g + ' / ' + ws.length + '</small></h3><div class="px-album">' + ws.map(w => hasSticker(w.id) ? '<button type="button" class="stk on" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '" aria-label="' + esc(w.es + ' – ' + w.hu) + '"><span class="ic">' + w.icon + '</span><b>' + esc(w.es) + '</b><small>' + esc(w.hu) + '</small></button>' : '<div class="stk off" aria-label="még nincs meg"><span class="ic">' + w.icon + '</span><b>?</b></div>').join('') + '</div>'; });
+    return h;
+  }
+  // ---- oklevél (nyomtatható)
+  function vCert() {
+    const c = ST.cert; if (!c) return vHome(); const d = new Date(c.ts);
+    return topbar(hu('b_cert')) + '<div class="px-cert"><div class="px-cert-in"><div class="px-final-cars">' + carSvg('#3B82C4', 90) + '</div><h1>' + esc(hu('cert_title')) + '</h1><p class="px-cert-name">' + esc(P.name || 'Martin') + '</p><p>' + esc(hu('cert_won')) + '</p><h2>' + esc(c.subj) + '</h2><p><b>' + c.units.map(esc).join(' · ') + '</b></p><p class="px-big">' + c.score + ' / ' + c.total + ' (' + c.pct + '%)</p><div class="px-cert-kit">' + kitty('happy', 110) + '</div><p>' + d.toLocaleDateString('hu-HU') + '</p></div></div>' +
+      '<div class="px-row center noprint"><button type="button" class="pbtn b" data-a="print">' + esc(hu('b_print')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button></div>';
+  }
+  function vStart() {
+    return '<div class="px-card center px-startcard">' + kitty('happy', 150) + '<h2>' + esc(hu('start_title')) + '</h2><div class="px-final-cars">' + carSvg('#3B82C4', 80) + '</div><button type="button" class="pbtn g xl" data-a="mission">' + ICO.next + '<span>' + esc(hu('b_mission')) + '</span></button><button type="button" class="pbtn l" data-a="home"><span>' + esc(hu('b_home')) + '</span></button></div>';
+  }
+  function startRace(units) { units = (units && units.length ? units : fallbackUnits()).filter(u => unitsList().indexOf(u) >= 0); if (!units.length) return; let qs = []; units.forEach(u => { qs = qs.concat(buildTest(u)); }); qs = shuffle(qs).slice(0, 16); if (!qs.length) return;
+    startRun({ mode: 'test', race: true, title: hu('t_race') + ' · ' + units.map(unitTitle).join(', '), unit: units[0], units, qs, secs: Math.max(300, qs.length * 60), back: 'home', instr: 'i_race' }); }
   // ---- jutalmak
   function vShop() {
     const bal = P.stars - P.spent;
@@ -604,18 +764,21 @@
     const miss = Object.values(P.miss).sort((a, b) => b.n - a.n).slice(0, 12);
     const gens = Object.keys(P.gen).map(t => ({ t, g: P.gen[t] }));
     const tot = days.reduce((a, d) => { const r = P.days[d]; return r ? { sec: a.sec + r.sec, items: a.items + r.items, ok: a.ok + r.ok } : a; }, { sec: 0, items: 0, ok: 0 });
-    return topbar('Szülő · Padres · Parent') + '<div class="px-card"><h3>Gyakorlás az elmúlt 14 napban</h3><div class="px-bars">' + bars + '</div><p class="px-note">Összesen: <b>' + Math.ceil(tot.sec / 60) + ' perc</b> · <b>' + tot.items + '</b> feladat, ebből <b>' + tot.ok + '</b> jó (' + (tot.items ? Math.round(tot.ok / tot.items * 100) : 0) + '%) · napi sorozat: <b>' + P.streak.n + '</b> (rekord: ' + P.streak.best + ') · csillagok: <b>' + P.stars + '</b></p></div>' +
+    const evs = events().filter(e => e._days >= 0 && e._days <= 21).slice(0, 5);
+    const readyCard = '<div class="px-card"><h3>Felkészültség a következő eseményekre</h3>' + (evs.length ? evs.map(e => { const pc = readiness(e); return '<div class="px-ready-top"><b>' + esc(e.date.slice(5).replace('-', '.') + ' · ' + e.title_hu) + '</b><span>' + pc + '%</span></div><div class="px-meter"><i style="width:' + pc + '%;background:' + (pc < 40 ? '#E86A7A' : pc < 80 ? '#F2A65A' : '#6BBF59') + '"></i></div>'; }).join('') : '<p>Nincs közelgő esemény.</p>') +
+      '<p class="px-note">A felkészültség a szókártyák dobozaiból (3. doboz = biztos), a tantárgyi feladatokból és a legjobb próbaverseny eredményéből számol. Valódi jutalmakat (pl. 50 csillag = közös társasjáték) a nyitóoldal „Szülőknek” részében adhatsz meg – az összes tantárgy csillagai számítanak bele.</p></div>';
+    return topbar('Szülő · Padres · Parent') + readyCard + '<div class="px-card"><h3>Gyakorlás az elmúlt 14 napban</h3><div class="px-bars">' + bars + '</div><p class="px-note">Összesen: <b>' + Math.ceil(tot.sec / 60) + ' perc</b> · <b>' + tot.items + '</b> feladat, ebből <b>' + tot.ok + '</b> jó (' + (tot.items ? Math.round(tot.ok / tot.items * 100) : 0) + '%) · napi sorozat: <b>' + P.streak.n + '</b> (rekord: ' + P.streak.best + ') · csillagok: <b>' + P.stars + '</b></p></div>' +
       '<div class="px-card"><h3>Leggyakrabban hibázott szavak / feladatok</h3>' + (miss.length ? '<table class="px-tab"><tr><th>Tétel</th><th>Jelentés / megoldás</th><th>Hiba</th><th>Lecke</th></tr>' + miss.map(m => '<tr><td><b>' + esc(m.label) + '</b><br><small>' + esc(missType(m.type)) + '</small></td><td>' + esc(m.hu) + '</td><td><b>' + m.n + '×</b></td><td>' + esc(m.unit ? unitTitle(m.unit) : '') + '</td></tr>').join('') + '</table>' : '<p>Még nincs hibás tétel.</p>') + '</div>' +
       (gens.length ? '<div class="px-card"><h3>Matek-generátor szintek</h3><table class="px-tab"><tr><th>Téma</th><th>Szint</th><th>Jó / összes</th></tr>' + gens.map(x => '<tr><td>' + esc(MG.TOPIC_NAME[x.t][1]) + '</td><td>' + '★'.repeat(x.g.lvl) + '</td><td>' + x.g.ok + ' / ' + x.g.n + '</td></tr>').join('') + '</table></div>' : '') +
       '<div class="px-card"><h3>Utolsó próbadolgozatok</h3>' + (P.tests.length ? '<table class="px-tab"><tr><th>Dátum</th><th>Fejezet</th><th>Eredmény</th><th>Idő</th><th>Részletek</th></tr>' + P.tests.slice(-6).reverse().map(t => '<tr><td>' + new Date(t.ts).toLocaleDateString('hu-HU') + '</td><td>' + esc(unitTitle(t.unit)) + '</td><td><b>' + t.score + ' / ' + t.total + '</b></td><td>' + Math.floor(t.secs / 60) + ':' + String(t.secs % 60).padStart(2, '0') + '</td><td>' + Object.keys(t.parts || {}).map(k => esc(hu('part_' + k)) + ' ' + t.parts[k].ok + '/' + t.parts[k].n).join(', ') + '</td></tr>').join('') + '</table>' : '<p>Még nem volt próbadolgozat.</p>') + '</div>' +
       '<p class="px-note">Mentés helye: <b>' + esc(Store.mode) + '</b>. Ha Martin több eszközön gyakorol, az adatok nincsenek összefésülve (a legutóbb mentett példány győz).</p>';
   }
-  function missType(t) { return { w: 'szó', sp: 'spelling', q: 'kvíz', pr: 'kiejtés' }[t] || (t.indexOf('g:') === 0 ? 'matek: ' + (MG.TOPIC_NAME[t.slice(2)] || ['', ''])[1] : t); }
+  function missType(t) { return { w: 'szó', sp: 'spelling', dc: 'dictado', tk: 'tantárgyi feladat', q: 'kvíz', pr: 'kiejtés' }[t] || (t.indexOf('g:') === 0 ? 'matek: ' + (MG.TOPIC_NAME[t.slice(2)] || ['', ''])[1] : t); }
   // ================= render + események =================
   function html() {
     switch (ST.view) {
       case 'home': return vHome(); case 'cards': return vCards(); case 'cardrun': return vCardRun(); case 'games': return vGames(); case 'memory': return vMemory(); case 'drag': return vDrag();
-      case 'spelling': return vSpelling(); case 'gen': return vGen(); case 'speak': return vSpeak(); case 'testmenu': return vTestMenu(); case 'run': return vRun(); case 'shop': return vShop(); case 'parent': return vParent();
+      case 'spelling': return vSpelling(); case 'dictado': return vDictado(); case 'tasks': return vTasks(); case 'gen': return vGen(); case 'speak': return vSpeak(); case 'testmenu': return vTestMenu(); case 'run': return vRun(); case 'shop': return vShop(); case 'parent': return vParent(); case 'album': return vAlbum(); case 'cert': return vCert(); case 'start': return vStart();
     }
     return vHome();
   }
@@ -627,7 +790,7 @@
     requestAnimationFrame(() => { if (el) el.style.minHeight = ''; });
     const inp = el.querySelector('#px-input'); if (inp && !inp.disabled && o && o.top) { try { inp.focus({ preventScroll: true }); } catch (e) { } }
   }
-  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
+  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
   function act(a, d, node) {
     touch();
     switch (a) {
@@ -639,9 +802,12 @@
       case 'openc': stopAll(); H.openConcept(d.u, d.c); break;
       case 'unit': P.unit = d.u; Store.save(); render(); break;
       case 'mission': startMission(); break;
-      case 'startcards': ST.cards = { q: pickCards(activeUnits(), 10), i: 0, flip: false, ok: 0 }; ST.view = 'cardrun'; render({ top: true }); if (ST.cards.q[0]) say(wordItems(ST.cards.q[0])); break;
+      case 'race': { const ev = ST.curEvent || nextEvent(); startRace(ev && ev.units); break; }
+      case 'cert': { ST.cert = (P.certs || [])[+d.i]; if (ST.cert) go('cert'); break; }
+      case 'print': try { root.print(); } catch (e) { } break;
+      case 'startcards': ST.cards = { q: pickCards(activeUnits(), 10), i: 0, flip: false, ok: 0 }; ST.view = 'cardrun'; render({ top: true }); if (ST.cards.q[0]) say(wordItems(ST.cards.q[0]).slice(0, 1)); break;
       case 'cardflip': { const R = ST.cards; R.flip = true; render(); const w = R.q[R.i]; say([{ l: 'hu', k: w.id, t: w.hu }]); break; }
-      case 'cardgrade': { const R = ST.cards; const w = R.q[R.i]; const ok = d.ok === '1'; gradeCard(w.id, ok); record({ type: 'w', id: w.id, label: w.es, hu: w.hu, unit: w.unit }, ok); if (ok) { R.ok++; award(1); } R.i++; R.flip = false; ST.mood = ok ? 'happy' : 'idle'; if (R.i >= R.q.length) { award(2); markActive(); } render({ top: true }); if (R.q[R.i]) say(wordItems(R.q[R.i])); else sayHu('fb_end'); break; }
+      case 'cardgrade': { const R = ST.cards; const w = R.q[R.i]; const ok = d.ok === '1'; gradeCard(w.id, ok); record({ type: 'w', id: w.id, label: w.es, hu: w.hu, unit: w.unit }, ok); if (ok) { R.ok++; award(1); } R.i++; R.flip = false; ST.mood = ok ? 'happy' : 'idle'; if (R.i >= R.q.length) { award(2); markActive(); } render({ top: true }); if (R.q[R.i]) say(wordItems(R.q[R.i]).slice(0, 1)); else sayHu('fb_end'); break; }
       case 'cardsay': { const w = pool().find(x => x.id === d.w) || H.D.glossary.map(g => ({ id: 'g:' + g.i, es: g.es, hu: g.hu })).find(x => x.id === d.w); if (w) say([{ l: d.l, k: w.id, t: d.l === 'hu' ? w.hu : w.es }]); break; }
       case 'game': if (d.g === 'memory') startMemory(); else if (d.g === 'listen') startListen(); else startDrag(); break;
       case 'mem': memClick(+d.n); break;
@@ -650,6 +816,13 @@
       case 'week': ST.week = d.id; render(); break;
       case 'saywk': { const w = weeks().flatMap(x => x.words).find(x => x.w === d.w); say([{ l: C.lang, k: 'x:sp:' + d.w, t: d.w }, { l: 'hu', k: 'x:sph:' + d.w, t: w ? w.hu : '' }]); break; }
       case 'startspell': startSpelling(); break;
+      case 'dunit': ST.dunit = d.u; render(); break;
+      case 'startdict': startDictado(); break;
+      case 'tunit': ST.tunit = d.u; render(); break;
+      case 'starttasks': startTasks(); break;
+      case 'saydw': { const x = dictWords(d.u).find(y => norm(y.w) === d.w); if (x) say([{ l: C.lang, k: x.k, t: x.w }, { l: 'hu', k: x.kh, t: x.hu }]); break; }
+      case 'ch': { const inp = el.querySelector('#px-input'); if (inp && !inp.disabled) { inp.value += d.c; inp.focus({ preventScroll: true }); if (ST.run) ST.run.typed = inp.value; } break; }
+      case 'sayreview': sayK('review_sub'); break;
       case 'topic': ST.topic = d.t; render(); break;
       case 'startgen': startGen(); break;
       case 'mic': doMic(); break;
@@ -671,10 +844,12 @@
   }
   // ---- küldetés
   function startMission() {
-    const ev = nextEvent() || { units: unitsList().slice(0, 2), type: 'test' }; const units = ev.units && ev.units.length ? ev.units : unitsList().slice(0, 2); const p = poolFor(units), qs = [];
+    const ev = nextEvent() || { units: fallbackUnits(), type: 'test' }; const units = ev.units && ev.units.length ? ev.units : fallbackUnits(); const p = poolFor(units), qs = fixQs(3);
     pickCards(units, 4).forEach(w => qs.push({ kind: 'flash', part: 'vocab', w, items: wordItems(w), unit: w.unit, page: w.page, rec: { type: 'w', id: w.id, label: w.es, hu: w.hu, unit: w.unit } }));
     if (C.subj === 'en') { const wk = weekFor(ev); if (wk && (ev.type === 'spelling' || !ev.type)) pickN(wk.words, 3).forEach(x => qs.push(spellQ(x, wk.unit))); else pickN(p, 3).forEach(w => qs.push(vocabQ(w, 'hear', p))); }
-    else { const ts = topicsForUnits(units); for (let i = 0; i < 3; i++) { const t = ts[i % ts.length]; qs.push(genQ(t, level(t))); } }
+    else if (C.subj === 'lengua') { const dw = units.flatMap(u => dictWords(u).map(x => ({ x, u }))); pickN(dw, 3).forEach(o => qs.push(dictQ(o.x, o.u))); }
+    else if (C.subj === 'mat') { const ts = topicsForUnits(units); for (let i = 0; i < 3; i++) { const t = ts[i % ts.length]; qs.push(genQ(t, level(t))); } }
+    else { const tk = tasksAll().filter(t => units.indexOf(t.unit) >= 0); if (tk.length >= 3) pickN(tk, 4).forEach(t => qs.push(taskQ(t))); else pickN(p, 3).forEach((w, i) => qs.push(vocabQ(w, ['hear', 'tr', 'see'][i % 3], p))); }
     const quiz = H.D.quiz.filter(q => units.indexOf(q.unit) >= 0); pickN(quiz, 3).forEach(q => qs.push(quizQ(q)));
     startRun({ mode: 'mission', mission: true, title: hu('t_mission'), qs, back: 'home' });
   }
@@ -704,8 +879,12 @@
       el.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'px-input') { e.preventDefault(); act('check', {}, e.target); } });
       el.addEventListener('pointerdown', onPointerDown); el.addEventListener('pointermove', onPointerMove, { passive: false }); el.addEventListener('pointerup', onPointerUp); el.addEventListener('pointercancel', onPointerUp);
       el.addEventListener('input', e => { if (e.target.id === 'px-input' && ST.run) ST.run.typed = e.target.value; }); }
+    try { stickerPool().forEach(w => { if (boxOf(w.id) >= 3) { P.stk = P.stk || {}; if (!P.stk[w.id]) P.stk[w.id] = today(); } }); } catch (e) { }
+    if (!startChecked) { startChecked = true; try { const g = new URLSearchParams(root.location.search).get('go'); if (g) { ST.fromHub = true; if (g === 'mission') ST.view = 'start'; else if (g === 'race') ST.view = 'start'; } } catch (e) { } }
     injectCss(); xEnsure(); render();
   };
+  let startChecked = false;
+  try { root.addEventListener('pagehide', () => { if (P) Store.writeLocal(); }); root.addEventListener('visibilitychange', () => { if (P && document.visibilityState === 'hidden') Store.writeLocal(); }); } catch (e) { }
   Plus.unmount = function () { stopAll(); clearInterval(timerIv); };
   Plus.state = () => ({ ST, P }); Plus.S = S;
   function injectCss() { if (document.getElementById('px-css')) return; const s = document.createElement('style'); s.id = 'px-css'; s.textContent = C.css || ''; document.head.appendChild(s); }
