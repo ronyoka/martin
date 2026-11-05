@@ -2,6 +2,7 @@
 T = {
 'hello':("Szia Martin!","Hi Martin!","¡Hola, Martín!"),
 'streak_days':("napos sorozat","day streak","días seguidos"),
+'qn_label':("Hány kérdés?","How many questions?","¿Cuántas preguntas?"),
 'today_mission':("Mai küldetés","Today's mission","Misión de hoy"),
 'no_event':("Nincs közelgő dolgozat. Gyakoroljunk!","No test coming up. Let's practise!","No hay examen próximo. ¡A practicar!"),
 'cd_today':("Ma van!","It's today!","¡Es hoy!"),'cd_tomorrow':("Holnap lesz!","It's tomorrow!","¡Es mañana!"),

@@ -39,6 +39,6 @@ data = dict(kitty=dict(zip(('idle', 'happy', 'sad'), ks)), i18n=i18n, xsprite=js
             dictado=json.load(open(folder + '/dictado.json')) if os.path.exists(folder + '/dictado.json') else {'lists': []},
             tasks=json.load(open(folder + '/tasks.json')) if os.path.exists(folder + '/tasks.json') else {'tasks': []})
 json.dump(data, open(folder + '/out/plus_data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
-open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/plus.js').read())
+open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/lessonquiz.js').read() + '\n' + open(T + '/plus.js').read())
 open(folder + '/out/plus.css', 'w').write(open(T + '/plus.css').read())
 print('plus_data', len(json.dumps(data)) // 1024, 'KB; ikonok:', len(icons), 'szó-kulcs-példák:', list(icons)[:5])
