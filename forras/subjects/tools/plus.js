@@ -135,6 +135,7 @@
     const d = dayRec(); d.items++; if (ok) d.ok++; markActive();
     if (!ok && r) { const k = r.type + ':' + r.id; const m = P.miss[k] || (P.miss[k] = { n: 0, type: r.type, label: r.label, hu: r.hu || '', unit: r.unit || '' }); m.n++; m.last = today(); }
     if (ok && r && P.miss[r.type + ':' + r.id]) { const m = P.miss[r.type + ':' + r.id]; m.ok = (m.ok || 0) + 1; }
+    try { goldTrack(r, ok); } catch (e) { }
     Store.save();
   }
   // ================= hang =================
@@ -251,31 +252,37 @@
   // ================= futtató (Run): gyakorlás / küldetés / próbadolgozat =================
   function startRun(cfg) { // cfg: {mode, title, qs|gen, back}
     stopAll(); ST.run = Object.assign({ i: 0, ans: null, num: '', typed: '', score: 0, res: [], tries: 0, ok: null, start: Date.now(), flipped: false }, cfg); ST.view = 'run';
-    if (cfg.mode === 'test') { const total = cfg.secs; ST.run.end = Date.now() + total * 1000; startTimer(); }
-    render({ top: true }); autoAudio();
+    if (cfg.secs) { ST.run.end = Date.now() + cfg.secs * 1000; startTimer(); }
+    render({ top: true }); autoAudio(); duelTick();
   }
   function curQ() { const R = ST.run; if (R.gen && !R.qs[R.i]) R.qs[R.i] = R.gen(); return R.qs[R.i]; }
   function autoAudio() { const q = ST.run && curQ(); if (!q) return; if (q.fix && !ST.run.fixSaid && q.audio) { ST.run.fixSaid = 1; say([sx('i_fix')].concat(q.audio)); return; } if (q.kind === 'flash') { say(q.items.slice(0, 1)); return; } if (q.task) { sayTask(q.task); return; } if (q.audio) say(q.audio); }
-  function startTimer() { clearInterval(timerIv); timerIv = setInterval(() => { const R = ST.run; if (!R || R.mode !== 'test' || ST.view !== 'run') { clearInterval(timerIv); return; } const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); const t = el && el.querySelector('#px-timer'); if (t) t.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (left <= 0) { clearInterval(timerIv); finishRun(true); } }, 500); }
+  function startTimer() { clearInterval(timerIv); timerIv = setInterval(() => { const R = ST.run; if (!R || !R.end || R.done || ST.view !== 'run') { clearInterval(timerIv); return; } const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); const t = el && el.querySelector('#px-timer'); if (t) t.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (left <= 0) { clearInterval(timerIv); finishRun(true); } }, 500); }
   function answerRun(resp, extra) {
     const R = ST.run, q = curQ(); if (R.ans !== null && R.mode !== 'test') return; touch();
     let ok;
     if (q.kind === 'type') ok = norm(String(resp)) === norm(q.answer) || (q.alts || []).some(a => norm(a) === norm(String(resp))); else ok = String(resp) === String(q.answer);
     if (q.kind === 'type' && !ok && R.tries < 1 && R.mode !== 'test') { R.tries++; R.ok = 'retry'; sayHu('fb_retry'); try { H.sfxBad(); } catch (e) { } ST.mood = 'sad'; render(); return; }
-    R.ans = resp; R.ok = ok; R.score += ok ? 1 : 0; R.res.push({ q, ok, resp });
-    record(q.rec, ok); if (q.topic) genAdapt(q.topic, ok); if (ok && q.rec && q.rec.type === 'tk') { P.tkok = P.tkok || {}; P.tkok[q.rec.id] = today(); }
+    const dadTurn = R.duel && R.i % 2 === 1; clearInterval(duelIv);
+    R.ans = resp; R.ok = ok; if (!R.duel) R.score += ok ? 1 : 0; R.res.push({ q, ok, resp });
+    if (R.duel) { R.duel.score[R.i % 2] += ok ? 1 : 0; if (!dadTurn) R.score += ok ? 1 : 0; }
+    if (R.boss) { if (ok) { R.boss.hp = Math.max(0, R.boss.hp - 1); R.boss.hit = 1; } else { R.boss.hearts = Math.max(0, R.boss.hearts - 1); R.boss.hit = 0; } }
+    if (!dadTurn) record(q.rec, ok); if (q.topic) genAdapt(q.topic, ok); if (ok && q.rec && q.rec.type === 'tk') { P.tkok = P.tkok || {}; P.tkok[q.rec.id] = today(); }
     if (R.mode === 'test') { nextRun(); return; }
+    const cst = dadTurn ? 0 : comboHit(R, ok);
+    if (R.fast) { try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { } if (cst) award(cst); R.flashOk = ok; nextRun(); return; }
     ST.mood = ok ? 'happy' : 'sad'; try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { }
-    if (ok) award(1);
+    if (cst) award(cst);
     render(); const fb = ok ? pickPraise() : 'fb_bad';
     setTimeout(() => { if (ST.view === 'run' && ST.run === R) { const it = [sx(fb)]; if (!ok && q.reveal) it.push.apply(it, q.reveal); if (ok && q.kind === 'type') it.push(q.audio[0]); say(it); } }, ok ? 900 : 1200);
   }
   function pickPraise() { return ['fb_ok1', 'fb_ok2', 'fb_ok3', 'fb_ok4'][Math.floor(Math.random() * 4)]; }
   function nextRun() {
     const R = ST.run; ST.mood = 'idle'; ST.levelUp = null;
-    const more = R.gen ? (R.i + 1 < (R.limit || 9999)) : (R.i + 1 < R.qs.length);
+    let more = R.gen ? (R.i + 1 < (R.limit || 9999)) : (R.i + 1 < R.qs.length);
+    if (R.boss && (R.boss.hp <= 0 || R.boss.hearts <= 0)) more = false;
     if (!more) { finishRun(false); return; }
-    R.i++; R.ans = null; R.ok = null; R.num = ''; R.typed = ''; R.tries = 0; R.flipped = false; render({ top: true }); autoAudio();
+    R.i++; R.ans = null; R.ok = null; R.num = ''; R.typed = ''; R.tries = 0; R.flipped = false; if (R.boss) R.boss.hit = 0; ST.kanim = ''; render({ top: !R.fast }); if (!R.fast) autoAudio(); else { const q2 = curQ(); if (q2 && q2.hearOnly) autoAudio(); } duelTick();
   }
   function finishRun(timeUp) {
     const R = ST.run; clearInterval(timerIv); stopAll(); R.done = true; R.timeUp = !!timeUp; const total = R.res.length || 1; const pct = R.score / (R.mode === 'test' ? R.qs.length : total);
@@ -284,9 +291,15 @@
     if (R.mode === 'test') { bonus = Math.round(pct * 10); const parts = {}; R.qs.forEach((q, i) => { const r = R.res[i]; const p = parts[q.part] || (parts[q.part] = { n: 0, ok: 0 }); p.n++; if (r && r.ok) p.ok++; });
       P.tests.push({ ts: Date.now(), unit: R.unit, units: R.units || [R.unit], score: R.score, total: R.qs.length, secs: Math.round((Date.now() - R.start) / 1000), parts }); P.tests = P.tests.slice(-30); markActive();
       R.win = pct >= 0.75; if (R.win) { bonus += 5; const cert = { ts: Date.now(), subj: subjTitle(), units: (R.units || [R.unit]).map(unitTitle), pct: Math.round(pct * 100), score: R.score, total: R.qs.length }; P.certs = (P.certs || []).concat([cert]).slice(-20); R.cert = cert; } }
+    if (R.mode === 'lesson') { const n = R.res.length || 1; const pc = Math.round(R.score / n * 100); P.lq = P.lq || {}; const old = P.lq[R.lesson] || 0; const s0 = starsOf(old), s1 = starsOf(pc); if (pc > old) P.lq[R.lesson] = pc; R.lessonPct = pc; R.newStars = Math.max(0, s1 - s0); bonus += R.newStars * 2; markActive(); if (s1 >= 2) celebrate(s1 === 3); }
+    if (R.mode === 'boss') { R.win = R.boss.hp <= 0; markActive(); if (R.win) { bonus += 10; P.bossWin = P.bossWin || {}; P.bossWin[R.unit] = today(); celebrate(true); } }
+    if (R.mode === 'blitz') { P.blitz = P.blitz || {}; R.record = R.score > (P.blitz.best || 0); if (R.record) { P.blitz.best = R.score; celebrate(true); } bonus += Math.min(10, Math.round(R.score / 3)); markActive(); }
+    if (R.mode === 'duel') { const sc = R.duel.score; R.duelRes = sc[0] > sc[1] ? 'm' : sc[0] < sc[1] ? 'd' : 't'; if (R.duelRes !== 'd') celebrate(R.duelRes === 'm'); bonus += R.duelRes === 'm' ? 5 : 2; markActive(); }
+    if (R.mode === 'mission' && pct >= .8) celebrate();
+    if (R.mode === 'test' && R.win) celebrate(true);
     if (bonus) award(bonus); R.bonus = bonus; Store.save(); Store.writeLocal();
     try { pct >= .6 ? H.sfxGood() : null; } catch (e) { }
-    render({ top: true }); setTimeout(() => { if (ST.view === 'run') sayHu(R.mode === 'test' ? (R.win ? 'fb_race_win' : 'fb_race_lose') : 'fb_end'); }, 800);
+    render({ top: true }); setTimeout(() => { if (ST.view === 'run') sayHu(R.mode === 'test' ? (R.win ? 'fb_race_win' : 'fb_race_lose') : R.mode === 'boss' ? (R.win ? 'boss_win' : 'boss_lose') : R.mode === 'duel' ? ({ m: 'duel_m_win', d: 'duel_d_win', t: 'duel_tie' })[R.duelRes] : R.record ? 'blitz_record' : 'fb_end'); }, 800);
   }
   // ================= nézetek =================
   function kitty(mood, size, cls) { mood = mood || 'idle'; let s = C.kitty[mood] || ''; const acc = Object.keys(P.worn).map(slot => X.acc.find(a => a.id === P.worn[slot])).filter(Boolean).map(a => a.svg).join('');
@@ -314,18 +327,19 @@
   }
   function vHome() {
     const ev = nextEvent(); ST.curEvent = ev; const done = !!P.mission[today()];
-    const tiles = [['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ];
+    const tiles = [['map', 't_map', 'T9'], ['blitz', 't_blitz', 'T10'], ['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ['duel', 't_duel', 'T11'], ['space', 't_space', 'T12']];
+    if (C.subj === 'mat') tiles.push(['bingo', 't_bingo', 'T13']); tiles.push(['bubble', 't_bubble', 'T14'], ['build', 't_builder', 'T15'], ['room', 't_room', 'T16']);
     if (extraKind()) { const ek = extraKind(); tiles.push([ek, { spelling: 't_spelling', gen: 't_gen', dictado: 't_dictado', tasks: 't_tasks' }[ek], 'T3']); }
     if (Plus.speechOK()) tiles.push(['speak', 't_speak', 'T4']); tiles.push(['testmenu', 't_test', 'T5'], ['album', 't_album', 'T8'], ['shop', 't_shop', 'T6'], ['parent', 't_parent', 'T7']);
     const gs = globalStreak(); const tot = totalStars(); const soon = ev && ev._days >= 0 && ev._days <= 2;
     return '<div class="px-hero">' + kitty(ST.mood, 120, 'hero') + '<div><h1>' + esc(hu('hello')) + '</h1><div class="px-stat big">' + ICO.star + '<b>' + P.stars + '</b>' + ICO.flame + '<b>' + gs.n + '</b><span class="px-sub">' + esc(hu('streak_days')) + (gs.rest ? ' · ' + esc(hu('rest_day')) : '') + '</span></div>' + (tot !== P.stars ? '<div class="px-sub">' + ICO.star + ' <b>' + tot + '</b> ' + esc(hu('stars_total')) + '</div>' : '') + '</div>' +
       '<button type="button" class="pbtn o" data-a="instr" data-k="home_intro">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button></div>' +
-      rewardHtml() + '<h3 class="px-h">' + esc(hu('today_mission')) + '</h3>' + eventCard(ev) + (ev ? readyHtml(ev) : '') +
+      rewardHtml() + weeklyHtml() + '<h3 class="px-h">' + esc(hu('today_mission')) + '</h3>' + eventCard(ev) + (ev ? readyHtml(ev) : '') +
       (soon ? '<div class="px-card px-final"><div class="px-final-cars">' + carSvg('#3B82C4', 70) + carSvg('#D9362B', 70) + '</div><h2>' + esc(hu('race_final')) + '</h2><p class="px-evh">' + esc(hu('race_sub')) + '</p><button type="button" class="pbtn b xl" data-a="race">' + ICO.next + '<span>' + esc(hu('b_race')) + '</span></button></div>' : '') +
       qnChips() + '<button type="button" class="pbtn g xl" data-a="mission">' + (done ? ICO.ok : ICO.next) + '<span>' + esc(hu(done ? 'b_mission_again' : 'b_mission')) + '</span><small>' + esc(hu(ev ? 'mission_sub' : 'mission_sub_review')) + '</small></button>' +
-      '<div class="px-tiles">' + tiles.map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="go" data-v="' + t[0] + '"><span class="ic">' + tileIcon(t[0]) + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>';
+      '<div class="px-tiles">' + tiles.map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="' + (['blitz', 'duel', 'space', 'bingo', 'bubble', 'build'].indexOf(t[0]) >= 0 ? t[0] : 'go') + '" data-v="' + t[0] + '"><span class="ic">' + tileIcon(t[0]) + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>';
   }
-  function tileIcon(k) { const m = { cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || '') + '</svg>'; }
+  function tileIcon(k) { const m = { cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || FUNICO[k] || '') + '</svg>'; }
   // ---- szókártyák
   function vCards() {
     const units = activeUnits(); const p = poolFor(units); const cnt = [0, 0, 0, 0, 0, 0]; p.forEach(w => cnt[boxOf(w.id)]++);
@@ -492,13 +506,14 @@
   function vRun() {
     const R = ST.run; if (!R) return ''; if (R.done) return vRunDone();
     const q = curQ(); const n = R.gen ? (R.limit || R.qs.length) : R.qs.length; const prog = R.endless ? (R.i + 1) + '.' : (R.i + 1) + ' / ' + n;
-    let h = topbar(R.title) + '<div class="px-row"><span class="px-prog">' + esc(prog) + '</span>' + (R.mode === 'test' ? '<span class="px-timer" id="px-timer">' + (function () { const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); return Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); })() + '</span>' : '') +
+    let h = topbar(R.title) + '<div class="px-row"><span class="px-prog">' + esc(prog) + '</span>' + comboBadge(R) + (R.end ? '<span class="px-timer" id="px-timer">' + (function () { const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); return Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); })() + '</span>' : '') +
       (q.audio || q.task || q.items ? '<button type="button" class="pbtn o sm" data-a="qsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button>' : '') + (R.instr && R.mode !== 'test' ? instrBtn(R.instr) : '') + '</div>';
     const showFb = R.ans !== null && R.mode !== 'test'; const answered = showFb;
+    if (R.boss) h += bossHtml(R); if (R.duel) h += duelHtml(R); if (R.fast && R.flashOk != null) { h += '<div class="fx-flash ' + (R.flashOk ? 'ok' : 'bad') + '">' + (R.flashOk ? '✔' : '✘') + '</div>'; R.flashOk = null; }
     if (R.mode === 'test') { const n2 = R.qs.length || 1; const me = R.score / n2, riv = Math.min(1, R.res.length * 0.75 / n2);
       h += '<div class="px-race" aria-hidden="true"><div class="lane me"><span class="fin"></span><span class="car" style="left:calc(' + (me * 100) + '% - ' + Math.round(me * 56) + 'px)">' + carSvg('#3B82C4') + '</span></div><div class="lane"><span class="fin"></span><span class="car" style="left:calc(' + (riv * 100) + '% - ' + Math.round(riv * 56) + 'px)">' + carSvg('#D9362B') + '</span></div></div>'; }
     if (q.fix && R.mode !== 'test') h += '<div class="px-fix">' + esc(hu('fix_badge')) + '</div>';
-    h += '<div class="px-q">' + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96) + '</div>' : '') + '<div class="px-qb">';
+    h += '<div class="px-q">' + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96, showFb && R.ok ? (ST.kanim || 'k-jump') : '') + '</div>' : '') + '<div class="px-qb">';
     if (q.prompt) h += '<div class="px-prompt">' + bi(q.prompt) + '</div>';
     if (q.big) h += '<div class="px-bigq' + (q.part === 'math' ? ' math' : '') + '">' + esc(q.big) + '</div>'; if (q.small) h += '<div class="px-smallq">' + esc(q.small) + '</div>';
     if (q.task && q.task.vis) h += visHtml(q.task.vis, q.task);
@@ -537,7 +552,9 @@
     (!R.flipped ? '<button type="button" class="pbtn b xl" data-a="flipm"><span>' + esc(hu('b_flip')) + '</span></button>' : '<div class="px-row center"><button type="button" class="pbtn g xl" data-a="gradem" data-ok="1">' + ICO.ok + '<span>' + esc(hu('b_knew')) + '</span></button><button type="button" class="pbtn r xl" data-a="gradem" data-ok="0">' + ICO.no + '<span>' + esc(hu('b_notyet')) + '</span></button></div>'); }
   function vRunDone() {
     const R = ST.run; const n = R.mode === 'test' ? R.qs.length : R.res.length; const pct = n ? R.score / n : 0;
-    let h = topbar(R.title) + '<div class="px-card center">' + (R.mode === 'test' ? '<div class="px-final-cars">' + (R.win ? carSvg('#3B82C4', 90) + carSvg('#D9362B', 60) : carSvg('#D9362B', 90) + carSvg('#3B82C4', 60)) + '</div>' : '') + kitty(pct >= .6 ? 'happy' : 'idle', 130) + '<h2>' + esc(hu(R.mode === 'test' ? (R.win ? 'race_win' : 'race_lose') : 'run_done')) + '</h2><p class="px-big">' + R.score + ' / ' + n + '</p>' + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
+    let h = topbar(R.title) + '<div class="px-card center">' + (R.mode === 'test' ? '<div class="px-final-cars">' + (R.win ? carSvg('#3B82C4', 90) + carSvg('#D9362B', 60) : carSvg('#D9362B', 90) + carSvg('#3B82C4', 60)) + '</div>' : '') + kitty(pct >= .6 ? 'happy' : 'idle', 130) + (R.mode === 'boss' ? '<div class="fx-mon' + (R.win ? ' hit' : '') + '" style="text-align:center">' + monsterSvg(R.boss.num, 120) + '</div>' : '') + '<h2>' + esc(hu(R.mode === 'test' ? (R.win ? 'race_win' : 'race_lose') : R.mode === 'boss' ? (R.win ? 'boss_win' : 'boss_lose') : R.mode === 'duel' ? ({ m: 'duel_m_win', d: 'duel_d_win', t: 'duel_tie' })[R.duelRes] : R.record ? 'blitz_record' : 'run_done')) + '</h2>' +
+      (R.mode === 'duel' ? '<p class="px-big">' + esc(R.duel.names[0]) + ' ' + R.duel.score[0] + ' : ' + R.duel.score[1] + ' ' + esc(R.duel.names[1]) + '</p>' : R.mode === 'blitz' ? '<p class="px-big">' + R.score + ' ✔ · ' + esc(L3('rekord', 'record', 'récord').hu) + ': ' + ((P.blitz || {}).best || 0) + '</p>' : '<p class="px-big">' + R.score + ' / ' + n + '</p>') +
+      (R.mode === 'lesson' ? '<p class="px-big" style="color:#F2B705">' + [0, 1, 2].map(i => i < starsOf(R.lessonPct) ? '★' : '☆').join('') + ' <small>' + R.lessonPct + '%</small></p>' : '') + (R.bestCombo >= 3 ? '<p class="px-note">' + esc(L3('Legjobb kombó', 'Best combo', 'Mejor combo').hu) + ': ' + R.bestCombo + '×</p>' : '') + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
     if (R.mode === 'test') h += evalHtml(R);
     h += '<div class="px-row center">' + (R.cert ? '<button type="button" class="pbtn b" data-a="cert" data-i="' + ((P.certs || []).length - 1) + '">' + ICO.star + '<span>' + esc(hu('b_cert')) + '</span></button>' : '') + '<button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button>' +
       (ST.fromHub ? '<a class="pbtn o" href="../">' + esc(hu('b_back_plan')) + '</a>' : '') + '</div>';
@@ -559,7 +576,7 @@
     const sp = stickerPool(); const got = sp.filter(w => hasSticker(w.id)).length;
     let h = topbar(hu('t_album')) + '<div class="px-row">' + instrBtn('i_album') + '<span class="px-stat big">' + ICO.star + '<b>' + got + ' / ' + sp.length + '</b> <span class="px-sub">' + esc(hu('stk_count')) + '</span></span></div>';
     unitsList().forEach(u => { const ws = sp.filter(w => w.unit === u); if (!ws.length) return; const g = ws.filter(w => hasSticker(w.id)).length;
-      h += '<h3 class="px-h">' + esc(unitTitle(u)) + ' <small>' + g + ' / ' + ws.length + '</small></h3><div class="px-album">' + ws.map(w => hasSticker(w.id) ? '<button type="button" class="stk on" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '" aria-label="' + esc(w.es + ' – ' + w.hu) + '"><span class="ic">' + w.icon + '</span><b>' + esc(w.es) + '</b><small>' + esc(w.hu) + '</small></button>' : '<div class="stk off" aria-label="még nincs meg"><span class="ic">' + w.icon + '</span><b>?</b></div>').join('') + '</div>'; });
+      h += '<h3 class="px-h">' + esc(unitTitle(u)) + ' <small>' + g + ' / ' + ws.length + '</small></h3><div class="px-album">' + ws.map(w => hasSticker(w.id) ? '<button type="button" class="stk on' + (isGold(w.id) ? ' gold' : '') + '" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '" aria-label="' + esc(w.es + ' – ' + w.hu) + '"><span class="ic">' + w.icon + '</span><b>' + esc(w.es) + '</b><small>' + esc(w.hu) + '</small></button>' : '<div class="stk off" aria-label="még nincs meg"><span class="ic">' + w.icon + '</span><b>?</b></div>').join('') + '</div>'; });
     return h;
   }
   // ---- oklevél (nyomtatható)
@@ -591,7 +608,7 @@
     const evs = events().filter(e => e._days >= 0 && e._days <= 21).slice(0, 5);
     const readyCard = '<div class="px-card"><h3>Felkészültség a következő eseményekre</h3>' + (evs.length ? evs.map(e => { const pc = readiness(e); return '<div class="px-ready-top"><b>' + esc(e.date.slice(5).replace('-', '.') + ' · ' + e.title_hu) + '</b><span>' + pc + '%</span></div><div class="px-meter"><i style="width:' + pc + '%;background:' + (pc < 40 ? '#E86A7A' : pc < 80 ? '#F2A65A' : '#6BBF59') + '"></i></div>'; }).join('') : '<p>Nincs közelgő esemény.</p>') +
       '<p class="px-note">A felkészültség a szókártyák dobozaiból (3. doboz = biztos), a tantárgyi feladatokból és a legjobb próbaverseny eredményéből számol. Valódi jutalmakat (pl. 50 csillag = közös társasjáték) a nyitóoldal „Szülőknek” részében adhatsz meg – az összes tantárgy csillagai számítanak bele.</p></div>';
-    return topbar('Szülő · Padres · Parent') + readyCard + '<div class="px-card"><h3>Gyakorlás az elmúlt 14 napban</h3><div class="px-bars">' + bars + '</div><p class="px-note">Összesen: <b>' + Math.ceil(tot.sec / 60) + ' perc</b> · <b>' + tot.items + '</b> feladat, ebből <b>' + tot.ok + '</b> jó (' + (tot.items ? Math.round(tot.ok / tot.items * 100) : 0) + '%) · napi sorozat: <b>' + P.streak.n + '</b> (rekord: ' + P.streak.best + ') · csillagok: <b>' + P.stars + '</b></p></div>' +
+    return topbar('Szülő · Padres · Parent') + weeklyParentHtml() + readyCard + '<div class="px-card"><h3>Gyakorlás az elmúlt 14 napban</h3><div class="px-bars">' + bars + '</div><p class="px-note">Összesen: <b>' + Math.ceil(tot.sec / 60) + ' perc</b> · <b>' + tot.items + '</b> feladat, ebből <b>' + tot.ok + '</b> jó (' + (tot.items ? Math.round(tot.ok / tot.items * 100) : 0) + '%) · napi sorozat: <b>' + P.streak.n + '</b> (rekord: ' + P.streak.best + ') · csillagok: <b>' + P.stars + '</b></p></div>' +
       '<div class="px-card"><h3>Leggyakrabban hibázott szavak / feladatok</h3>' + (miss.length ? '<table class="px-tab"><tr><th>Tétel</th><th>Jelentés / megoldás</th><th>Hiba</th><th>Lecke</th></tr>' + miss.map(m => '<tr><td><b>' + esc(m.label) + '</b><br><small>' + esc(missType(m.type)) + '</small></td><td>' + esc(m.hu) + '</td><td><b>' + m.n + '×</b></td><td>' + esc(m.unit ? unitTitle(m.unit) : '') + '</td></tr>').join('') + '</table>' : '<p>Még nincs hibás tétel.</p>') + '</div>' +
       (gens.length ? '<div class="px-card"><h3>Matek-generátor szintek</h3><table class="px-tab"><tr><th>Téma</th><th>Szint</th><th>Jó / összes</th></tr>' + gens.map(x => '<tr><td>' + esc(MG.TOPIC_NAME[x.t][1]) + '</td><td>' + '★'.repeat(x.g.lvl) + '</td><td>' + x.g.ok + ' / ' + x.g.n + '</td></tr>').join('') + '</table></div>' : '') +
       '<div class="px-card"><h3>Utolsó próbadolgozatok</h3>' + (P.tests.length ? '<table class="px-tab"><tr><th>Dátum</th><th>Fejezet</th><th>Eredmény</th><th>Idő</th><th>Részletek</th></tr>' + P.tests.slice(-6).reverse().map(t => '<tr><td>' + new Date(t.ts).toLocaleDateString('hu-HU') + '</td><td>' + esc(unitTitle(t.unit)) + '</td><td><b>' + t.score + ' / ' + t.total + '</b></td><td>' + Math.floor(t.secs / 60) + ':' + String(t.secs % 60).padStart(2, '0') + '</td><td>' + Object.keys(t.parts || {}).map(k => esc(hu('part_' + k)) + ' ' + t.parts[k].ok + '/' + t.parts[k].n).join(', ') + '</td></tr>').join('') + '</table>' : '<p>Még nem volt próbadolgozat.</p>') + '</div>' +
@@ -602,7 +619,7 @@
   function html() {
     switch (ST.view) {
       case 'home': return vHome(); case 'cards': return vCards(); case 'cardrun': return vCardRun(); case 'games': return vGames(); case 'memory': return vMemory(); case 'drag': return vDrag();
-      case 'spelling': return vSpelling(); case 'dictado': return vDictado(); case 'tasks': return vTasks(); case 'gen': return vGen(); case 'speak': return vSpeak(); case 'testmenu': return vTestMenu(); case 'run': return vRun(); case 'shop': return vShop(); case 'parent': return vParent(); case 'album': return vAlbum(); case 'cert': return vCert(); case 'start': return vStart();
+      case 'spelling': return vSpelling(); case 'dictado': return vDictado(); case 'tasks': return vTasks(); case 'gen': return vGen(); case 'speak': return vSpeak(); case 'testmenu': return vTestMenu(); case 'run': return vRun(); case 'shop': return vShop(); case 'parent': return vParent(); case 'album': return vAlbum(); case 'cert': return vCert(); case 'start': return vStart(); case 'map': return vMap(); case 'space': return vSpace(); case 'bingo': return vBingo(); case 'bubble': return vBubble(); case 'build': return vBuild(); case 'room': return vRoom();
     }
     return vHome();
   }
@@ -614,7 +631,7 @@
     requestAnimationFrame(() => { if (el) el.style.minHeight = ''; });
     const inp = el.querySelector('#px-input'); if (inp && !inp.disabled && o && o.top) { try { inp.focus({ preventScroll: true }); } catch (e) { } }
   }
-  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
+  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', map: 'i_map', room: 'i_room', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
   function act(a, d, node) {
     touch();
     switch (a) {
@@ -660,7 +677,29 @@
       case 'next': nextRun(); break;
       case 'finish': finishRun(false); break;
       case 'qsay': { const q = curQ(); if (q.task) sayTask(q.task); else if (q.items) say(q.items); else if (q.audio) say(q.audio); break; }
-      case 'rerun': { const R = ST.run; if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else go(R.back || 'home'); break; }
+      case 'rerun': { const R = ST.run; if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else if (R.mode === 'lesson') startLesson(R.unit, R.lesson); else if (R.mode === 'boss') startBoss(R.unit); else if (R.mode === 'blitz') startBlitz(); else if (R.mode === 'duel') startDuel(); else go(R.back || 'home'); break; }
+      case 'lesson': startLesson(d.u, d.c); break;
+      case 'locked': toast(L3('Még zárva – előbb az előző állomás!', '', '').hu); try { H.sfxBad(); } catch (e) { } break;
+      case 'boss': startBoss(d.u || (activeUnits()[0])); break;
+      case 'blitz': startBlitz(); break;
+      case 'duel': startDuel(); break;
+      case 'space': startSpace(); break;
+      case 'spshot': spNext(!!d.ok, node); break;
+      case 'spsay': spSay(); break;
+      case 'bingo': startBingo(); break;
+      case 'bgsay': bgSay(); break;
+      case 'bgpick': { const g = ST.bg; const c = g.cells[+d.i]; if (!c || c.hit || g.done) break; if (c === g.called) { c.hit = true; g.ok++; award(1); try { H.sfxGood(); } catch (e) { } if (bgLine(g.cells)) { g.done = true; award(5); markActive(); celebrate(true); render(); sayHu('bingo'); } else { bgCall(); render(); bgSay(); } } else { try { H.sfxBad(); } catch (e) { } node.classList.add('no'); setTimeout(() => node.classList.remove('no'), 450); } break; }
+      case 'bubble': startBubble(); break;
+      case 'bbsay': bbSay(); break;
+      case 'bbpick': bbPick(d.id, node); break;
+      case 'build': startBuild(); break;
+      case 'bdsay': bdSay(); break;
+      case 'bdtile': bdTile(+d.i, node); break;
+      case 'bdhint': bdHint(); break;
+      case 'roombuy': { const r = ROOM.find(x => x.id === d.id); P.room = P.room || []; if (r && P.stars - P.spent >= r.p && P.room.indexOf(r.id) < 0) { P.spent += r.p; P.room.push(r.id); Store.save(); ST.mood = 'happy'; confetti(60); fanfare(); render(); setTimeout(() => { ST.mood = 'idle'; }, 2500); } break; }
+      case 'wkgoal': { const w = weekly(); w.goal = +d.n; setWeekly(w); render(); break; }
+      case 'wksave': { const w = weekly(); const i = el.querySelector('#fx-wreward'); w.reward = i ? i.value.trim().slice(0, 80) : ''; setWeekly(w); toast('Mentve ✔'); render(); break; }
+      case 'mapall': P.mapAll = !P.mapAll; Store.save(); break;
       case 'flipm': { ST.run.flipped = true; render(); const w = curQ().w; say([{ l: 'hu', k: w.id, t: w.hu }]); break; }
       case 'gradem': { const R = ST.run, q = curQ(); const ok = d.ok === '1'; gradeCard(q.w.id, ok); record({ type: 'w', id: q.w.id, label: q.w.es, hu: q.w.hu, unit: q.w.unit }, ok); R.score += ok ? 1 : 0; R.res.push({ q, ok }); if (ok) award(1); nextRun(); break; }
       case 'buy': { const a2 = X.acc.find(x => x.id === d.id); if (a2 && P.stars - P.spent >= a2.price && P.owned.indexOf(a2.id) < 0) { P.spent += a2.price; P.owned.push(a2.id); P.worn[a2.slot] = a2.id; Store.save(); ST.mood = 'happy'; try { H.sfxGood(); } catch (e) { } render(); sayHu('fb_new_acc'); } break; }
@@ -694,6 +733,221 @@
     if (!drag) return; const d = drag; drag = null;
     if (d.type === 'pic' && d.moved) { if (d.ghost) d.ghost.remove(); const t = document.elementFromPoint(e.clientX, e.clientY); const slot = t && t.closest && t.closest('[data-slot]'); if (slot) { e.preventDefault(); dragPlace(d.id, +slot.dataset.slot); } else render(); ST.suppressClick = true; setTimeout(() => { ST.suppressClick = false; }, 50); }
   }
+  // ================= JÁTÉKOS BŐVÍTÉS (Robert, 2026-11-05: „implementáld le mind a 11-et”) =================
+  // 1 kalandtérkép · 2 fejezet-szörny · 3 arany kártyák · 4 villámkör · 5 kombó · 6 űrhajó + szorzótábla-bingó · 7 buborékpukkasztó
+  // 8 szóépítő · 9 párbaj apával · 10 heti kihívás valódi jutalommal · 11 konfetti, sikerdallam, cica-mozdulatok, cicaszoba
+  const L3 = (h, e, s) => (C.lang === 'es' ? { hu: h, l: s } : { hu: h, l: e });
+  const bi3 = (h, e, s) => { const o = L3(h, e, s); return '<span class="hu">' + esc(o.hu) + '</span><span class="lg">' + esc(o.l) + '</span>'; };
+  // ---- 11: konfetti, dallam, cica-mozdulatok
+  function confetti(n) { try { const box = document.createElement('div'); box.className = 'fx-conf'; const cols = ['#F7C948', '#E86A7A', '#6BBF59', '#5DADE2', '#7D3C98', '#F2891F'];
+    for (let i = 0; i < (n || 90); i++) { const s = document.createElement('i'); s.style.left = (Math.random() * 100) + '%'; s.style.background = cols[i % cols.length]; s.style.animationDelay = (Math.random() * 0.6) + 's'; s.style.animationDuration = (1.6 + Math.random() * 1.4) + 's'; s.style.transform = 'rotate(' + Math.round(Math.random() * 360) + 'deg)'; box.appendChild(s); }
+    document.body.appendChild(box); setTimeout(() => box.remove(), 3600); } catch (e) { } }
+  function fanfare() { try { const c = (H.ctx && H.ctx()) || xctx || (xctx = new (root.AudioContext || root.webkitAudioContext)()); if (c.state === 'suspended') c.resume(); const t = c.currentTime + 0.03;
+    [[523, 0], [659, .12], [784, .24], [1047, .36], [784, .52], [1047, .62]].forEach(([f, d], i) => { const o = c.createOscillator(), g = c.createGain(); o.type = i % 2 ? 'square' : 'triangle'; o.frequency.value = f; g.gain.setValueAtTime(0.0001, t + d); g.gain.exponentialRampToValueAtTime(0.18, t + d + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t + d + (i === 5 ? 0.6 : 0.16)); o.connect(g); g.connect(c.destination); o.start(t + d); o.stop(t + d + 0.7); }); } catch (e) { } }
+  function toast(t, cls) { try { const f = document.createElement('div'); f.className = 'fx-toast ' + (cls || ''); f.textContent = t; document.body.appendChild(f); setTimeout(() => f.remove(), 1900); } catch (e) { } }
+  const KANIM = ['k-jump', 'k-spin', 'k-wiggle', 'k-flip'];
+  function celebrate(big) { confetti(big ? 140 : 70); fanfare(); ST.kanim = 'k-dance'; }
+  // ---- 5: kombó (minden kérdéses módban); visszaadja a csillagok számát
+  function comboHit(R, ok) { if (!R) return ok ? 1 : 0; R.combo = ok ? (R.combo || 0) + 1 : 0; R.bestCombo = Math.max(R.bestCombo || 0, R.combo);
+    if (!ok) return 0; ST.kanim = KANIM[Math.floor(Math.random() * KANIM.length)];
+    if (R.combo === 3) toast(hu('combo3'), 'c3'); if (R.combo > 0 && R.combo % 5 === 0) { toast(hu('combo5') + ' ×' + R.combo, 'c5'); confetti(50); ST.kanim = 'k-dance'; }
+    return R.combo >= 3 ? 2 : 1; }
+  function comboBadge(R) { return R && R.combo >= 2 ? '<span class="fx-combo' + (R.combo >= 5 ? ' hot' : '') + '">' + R.combo + '× ' + esc(L3('kombó', 'combo', 'combo').hu) + (R.combo >= 3 ? ' · 2★' : '') + '</span>' : ''; }
+  // ---- 3: arany kártyák (5× egymás után jó egy szóra)
+  function goldTrack(r, ok) { if (!r || r.type !== 'w') return; P.wrun = P.wrun || {}; P.gold = P.gold || {};
+    if (!ok) { P.wrun[r.id] = 0; return; } P.wrun[r.id] = (P.wrun[r.id] || 0) + 1;
+    if (P.wrun[r.id] >= 5 && !P.gold[r.id]) { P.gold[r.id] = today(); setTimeout(() => { toast(hu('gold_new') + ' ' + r.label, 'gold'); confetti(40); }, 400); award(3); } }
+  const isGold = id => !!(P.gold && P.gold[id]);
+  // ---- közös kérdés-forrás (leckekvíz + szókincs) egy fejezetkészlethez
+  function mixQs(units, n) { return fillTo([], units, n); }
+  function lessonQs(c, u, n) { if (typeof LQ === 'undefined') return []; const qs = LQ.forLesson(H.D, C.lang, c, u).map(q => lqConv(q, u.id)); return shuffle(qs).slice(0, n); }
+  // ---- 1: kalandtérkép
+  function lessonBest(id) { return (P.lq && P.lq[id]) || 0; }
+  function starsOf(pct) { return pct >= 95 ? 3 : pct >= 80 ? 2 : pct >= 50 ? 1 : 0; }
+  function evUnits() { const ev = nextEvent(); return ev && ev.units ? ev.units : []; }
+  function lessonOpen(u, k) { if (k === 0 || P.mapAll || evUnits().indexOf(u.id) >= 0) return true; return lessonBest(u.concepts[k - 1].id) >= 80; }
+  function vMap() {
+    let h = topbar(hu('t_map')) + '<div class="px-row">' + instrBtn('i_map') + '</div>' + qnChips();
+    const evu = evUnits();
+    H.D.units.forEach(u => { const cs = u.concepts; const tot = cs.reduce((a, c) => a + starsOf(lessonBest(c.id)), 0); const all1 = cs.every(c => starsOf(lessonBest(c.id)) >= 1) || evu.indexOf(u.id) >= 0 || P.mapAll;
+      let cur = -1; cs.forEach((c, k) => { if (cur < 0 && lessonOpen(u, k) && starsOf(lessonBest(c.id)) < 2) cur = k; });
+      h += '<div class="fx-island' + (evu.indexOf(u.id) >= 0 ? ' ev' : '') + '"><div class="fx-isl-h"><b>' + esc(u.num + '. ' + u.es) + '</b><span>' + esc(u.hu) + '</span><span class="fx-st">' + ICO.star + ' ' + tot + ' / ' + (cs.length * 3) + '</span></div><div class="fx-path">';
+      cs.forEach((c, k) => { const op = lessonOpen(u, k); const st = starsOf(lessonBest(c.id));
+        h += '<button type="button" class="fx-stn' + (op ? '' : ' lock') + (k === cur ? ' cur' : '') + '" data-a="' + (op ? 'lesson' : 'locked') + '" data-u="' + u.id + '" data-c="' + c.id + '"' + (op ? '' : ' aria-disabled="true"') + '>' +
+          '<span class="dot">' + (op ? (k + 1) : '🔒') + '</span>' + (k === cur ? '<span class="fx-cat">' + kitty('idle', 54) + '</span>' : '') + '<span class="nm">' + esc(c.es) + '</span><span class="sts">' + [0, 1, 2].map(i => '<i class="' + (i < st ? 'on' : '') + '">★</i>').join('') + '</span>' + (lessonBest(c.id) ? '<small>' + lessonBest(c.id) + '%</small>' : '') + '</button>'; });
+      h += '<button type="button" class="fx-stn boss' + (all1 ? '' : ' lock') + '" data-a="' + (all1 ? 'boss' : 'locked') + '" data-u="' + u.id + '"><span class="dot">' + monsterSvg(u.num, 46) + '</span><span class="nm">' + esc(hu('t_boss')) + '</span>' + ((P.bossWin || {})[u.id] ? '<span class="sts"><i class="on">♛</i></span>' : '') + '</button></div></div>'; });
+    return h + '<p class="px-note">' + esc(L3('80% fölött nyílik a következő állomás. A közelgő dolgozat fejezetei mindig nyitva vannak.', '', '').hu) + '</p>';
+  }
+  function startLesson(uid, cid) { const u = H.D.units.find(x => x.id === uid); const c = u && u.concepts.find(x => x.id === cid); if (!c) return; const qs = lessonQs(c, u, QN()); if (!qs.length) return;
+    startRun({ mode: 'lesson', unit: uid, lesson: cid, title: (u.concepts.indexOf(c) + 1) + '. ' + c.es, qs, back: 'map' }); }
+  // ---- 2: fejezet-szörny
+  function monsterSvg(seed, w) { const cols = ['#7D3C98', '#22603C', '#B85A12', '#1F4E79', '#C0392B', '#1A7F8E', '#8A5A2B', '#D4AC0D', '#E86A7A', '#5DADE2']; const c = cols[(+seed || 0) % cols.length];
+    return '<svg viewBox="0 0 120 110" width="' + w + '" height="' + Math.round(w * 110 / 120) + '" aria-hidden="true"><path d="M18 100 q-8 -60 42 -78 q50 18 42 78 q-10 -10 -21 0 q-10 -10 -21 0 q-10 -10 -21 0 q-11 -10 -21 0z" fill="' + c + '" stroke="#1E2A38" stroke-width="3"/><path d="M34 30 l-8 -20 l18 12 M86 30 l8 -20 l-18 12" fill="' + c + '" stroke="#1E2A38" stroke-width="3"/><circle cx="46" cy="52" r="11" fill="#fff" stroke="#1E2A38" stroke-width="3"/><circle cx="76" cy="52" r="11" fill="#fff" stroke="#1E2A38" stroke-width="3"/><circle cx="48" cy="54" r="5" fill="#1E2A38"/><circle cx="74" cy="54" r="5" fill="#1E2A38"/><path d="M44 76 q16 12 32 0" stroke="#1E2A38" stroke-width="4" fill="#fff"/><path d="M50 78 l4 6 l4 -6 M62 78 l4 6 l4 -6" fill="#fff" stroke="#1E2A38" stroke-width="2"/></svg>'; }
+  function startBoss(uid) { const u = H.D.units.find(x => x.id === uid); if (!u) return; const hp = Math.max(6, Math.min(30, Math.round(QN() * 0.6))); const qs = mixQs([uid], hp + 6); if (!qs.length) return;
+    startRun({ mode: 'boss', unit: uid, title: hu('t_boss') + ' · ' + u.num + '. ' + u.es, qs, boss: { hp, max: hp, hearts: 5, num: u.num, hit: 0 }, back: 'map', instr: 'i_boss' }); }
+  function bossHtml(R) { const b = R.boss; return '<div class="fx-boss"><div class="fx-mon' + (b.hit ? ' hit' : '') + '">' + monsterSvg(b.num, 110) + '</div><div class="fx-bars"><div class="fx-hp"><i style="width:' + Math.round(b.hp / b.max * 100) + '%"></i><span>' + b.hp + ' / ' + b.max + '</span></div><div class="fx-hearts">' + [0, 1, 2, 3, 4].map(i => '<span class="' + (i < b.hearts ? 'on' : '') + '">♥</span>').join('') + '</div></div></div>'; }
+  // ---- 4: villámkör
+  function startBlitz() { const units = activeUnits(); const base = mixQs(units, 120); if (!base.length) return; let k = 0;
+    startRun({ mode: 'blitz', fast: true, title: hu('t_blitz'), qs: [], gen: () => base[(k++) % base.length], limit: 9999, endless: true, secs: 60, back: 'home', instr: 'i_blitz' }); }
+  // ---- 9: párbaj apával
+  function startDuel() { const units = activeUnits(); const n = Math.max(10, QN() - QN() % 2); const qs = mixQs(units, n); if (!qs.length) return;
+    startRun({ mode: 'duel', title: hu('t_duel'), qs, duel: { score: [0, 0], names: ['Martin', L3('Apa', 'Dad', 'Papá').hu], secs: 7 }, back: 'home', instr: 'i_duel' }); }
+  let duelIv = null;
+  function duelTick() { clearInterval(duelIv); const R = ST.run; if (!R || !R.duel || R.done || R.i % 2 !== 1 || R.ans !== null) return; R.dEnd = Date.now() + R.duel.secs * 1000;
+    duelIv = setInterval(() => { const R2 = ST.run; if (R2 !== R || R.ans !== null || R.done || ST.view !== 'run') { clearInterval(duelIv); return; } const left = Math.max(0, (R.dEnd - Date.now()) / 1000); const t = el && el.querySelector('#fx-dt'); if (t) { t.textContent = Math.ceil(left) + ' mp'; t.style.setProperty('--p', (left / R.duel.secs * 100) + '%'); } if (left <= 0) { clearInterval(duelIv); R.timeout = true; answerRun('-timeout-'); } }, 200); }
+  function duelHtml(R) { const t = R.i % 2; return '<div class="fx-duel"><div class="pl' + (t === 0 ? ' on' : '') + '"><b>' + esc(R.duel.names[0]) + '</b><span>' + R.duel.score[0] + '</span></div><div class="vs">VS</div><div class="pl dad' + (t === 1 ? ' on' : '') + '"><b>' + esc(R.duel.names[1]) + '</b><span>' + R.duel.score[1] + '</span></div></div><div class="fx-turn">' + esc(hu(t === 0 ? 'duel_turn_m' : 'duel_turn_d')) + (t === 1 && R.ans === null ? ' <span class="fx-dt" id="fx-dt">' + R.duel.secs + ' mp</span>' : '') + '</div>'; }
+  // ---- 6a: űrhajó (matek: szorzás; többi tantárgy: szó)
+  function focusTables() { const ev = nextEvent(); const m = ev && /tabla|tables|×/i.test((ev.title || '') + (ev.title_hu || '')) ? ((ev.title || '') + ' ' + (ev.title_hu || '')).match(/\b(10|[0-9])\b/g) : null; const t = m ? Array.from(new Set(m.map(Number))) : []; return t.length ? t : [2, 3, 4, 5, 6, 7, 8, 9]; }
+  function factQ() { const ts = focusTables(); const b = ts[Math.floor(Math.random() * ts.length)], a = Math.floor(Math.random() * 11); const r = a * b; const near = shuffle(Array.from(new Set([r + b, r - b, r + 1, r - 1, r + 2, r + 10, (a + 1) * (b + 1)].filter(v => v >= 0 && v !== r)))).slice(0, 3);
+    return { prompt: a + ' × ' + b, say: [{ l: C.lang, k: 'x:none', t: numWord(a) + (C.lang === 'es' ? ' por ' : ' times ') + numWord(b) }], ans: String(r), opts: shuffle([String(r)].concat(near.map(String))), a, b }; }
+  const NW = { es: ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez'], en: ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'] };
+  function numWord(n) { return (NW[C.lang] || NW.en)[n] || String(n); }
+  function wordQ(icons) { let p = poolFor(activeUnits(), !!icons); if (p.length < 4) p = icons ? pool().filter(w => w.icon) : pool(); if (p.length < 4) p = pool(); const w = p[Math.floor(Math.random() * p.length)]; const others = shuffle(p.filter(x => x.id !== w.id && x.es !== w.es && x.hu !== w.hu && !(icons && x.icon === w.icon))).slice(0, 3);
+    return { w, prompt: w.hu, say: [{ l: 'hu', k: w.id, t: w.hu }], ans: w.id, opts: shuffle([w].concat(others)).map(o => o.id), words: [w].concat(others) }; }
+  function startSpace() { ST.sp = { i: 0, n: QN(), score: 0, combo: 0, q: C.subj === 'mat' ? factQ() : wordQ(false), k: 0 }; ST.view = 'space'; render({ top: true }); spSay(); }
+  function spSay() { const s = ST.sp; if (s && s.q && C.subj !== 'mat') say(s.q.say); }
+  function spLabel(s, v) { if (C.subj === 'mat') return v; const w = s.q.words.find(x => x.id === v); return w ? w.es : v; }
+  function vSpace() { const s = ST.sp; if (!s) return ''; if (s.done) return doneHtml(hu('t_space'), s.score, s.n, 'space');
+    const lanes = s.q.opts.map((v, i) => '<button type="button" class="fx-met" data-a="spshot" data-v="' + esc(v) + '"' + (String(v) === String(s.q.ans) ? ' data-ok="1"' : '') + ' style="left:' + (4 + i * 24) + '%;animation-duration:' + (8 + Math.random() * 3).toFixed(1) + 's;animation-delay:' + (Math.random() * 1.2).toFixed(2) + 's"><span>' + esc(spLabel(s, v)) + '</span></button>').join('');
+    return topbar(hu('t_space')) + '<div class="px-row">' + instrBtn('i_space') + '<span class="px-prog">' + (s.i + 1) + ' / ' + s.n + '</span><span class="px-stat">' + ICO.star + '<b>' + s.score + '</b></span>' + comboBadge(s) + (C.subj !== 'mat' ? '<button type="button" class="pbtn o sm" data-a="spsay">' + ICO.spk + '<span>HU</span></button>' : '') + '</div>' +
+      '<div class="fx-space" data-k="' + s.k + '"><div class="fx-target">' + esc(s.q.prompt) + '</div>' + lanes + '<div class="fx-ship">' + shipSvg() + '</div></div>'; }
+  function shipSvg() { return '<svg viewBox="0 0 80 60" width="80" height="60" aria-hidden="true"><path d="M40 4 L54 40 L40 34 L26 40 Z" fill="#5DADE2" stroke="#1F4E79" stroke-width="3" stroke-linejoin="round"/><circle cx="40" cy="22" r="6" fill="#fff" stroke="#1F4E79" stroke-width="2"/><path d="M26 40 L14 52 L30 46 M54 40 L66 52 L50 46" fill="#E86A7A" stroke="#8E2A1F" stroke-width="2"/><path d="M34 40 L40 56 L46 40" fill="#F7C948"/></svg>'; }
+  function spNext(ok, node) { const s = ST.sp; if (!s || s.lock) return; s.lock = true; const st = comboHit(s, ok); if (ok) { s.score++; award(st); try { H.sfxGood(); } catch (e) { } if (node) node.classList.add('boom'); } else { try { H.sfxBad(); } catch (e) { } const t = el.querySelector('.fx-met[data-ok]'); if (t) t.classList.add('show'); }
+    if (C.subj !== 'mat' && s.q.w) { record({ type: 'w', id: s.q.w.id, label: s.q.w.es, hu: s.q.w.hu, unit: s.q.w.unit }, ok); }
+    setTimeout(() => { s.lock = false; s.i++; if (s.i >= s.n) { s.done = true; markActive(); award(3); if (s.score / s.n >= .8) celebrate(); } else { s.q = C.subj === 'mat' ? factQ() : wordQ(false); s.k++; } render(); if (!s.done) spSay(); }, ok ? 650 : 1300); }
+  // ---- 6b: szorzótábla-bingó (matek)
+  function startBingo() { const ts = focusTables(); const facts = []; const seen = {}; let guard = 0;
+    while (facts.length < 16 && guard++ < 500) { const b = ts[Math.floor(Math.random() * ts.length)], a = Math.floor(Math.random() * 11); const v = a * b; if (seen[v]) continue; seen[v] = 1; facts.push({ a, b, v, hit: false }); }
+    ST.bg = { cells: shuffle(facts), called: null, n: 0, ok: 0, done: false }; ST.view = 'bingo'; bgCall(); render({ top: true }); bgSay(); }
+  function bgCall() { const g = ST.bg; const rest = g.cells.filter(c => !c.hit); if (!rest.length) { g.done = true; return; } g.called = rest[Math.floor(Math.random() * rest.length)]; g.n++; }
+  function bgText(c) { return numWord(c.a) + (C.lang === 'es' ? ' por ' : ' times ') + numWord(c.b); }
+  function bgSay() { const g = ST.bg; if (g && g.called && !g.done) say([{ l: C.lang, k: 'x:none', t: bgText(g.called) }]); }
+  function bgLine(cells) { const L = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15], [0, 4, 8, 12], [1, 5, 9, 13], [2, 6, 10, 14], [3, 7, 11, 15], [0, 5, 10, 15], [3, 6, 9, 12]]; return L.find(l => l.every(i => cells[i].hit)); }
+  function vBingo() { const g = ST.bg; if (!g) return ''; const line = bgLine(g.cells) || [];
+    return topbar(hu('t_bingo')) + '<div class="px-row">' + instrBtn('i_bingo') + '<button type="button" class="pbtn o sm" data-a="bgsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button><span class="px-stat">' + ICO.star + '<b>' + g.ok + '</b></span></div>' +
+      (g.done ? '<div class="px-card center"><h2 class="fx-bingo">' + esc(hu('bingo')) + '</h2><button type="button" class="pbtn g xl" data-a="bingo">' + esc(hu('b_again')) + '</button></div>' : '<div class="fx-call">' + esc(bgText(g.called)) + '</div>') +
+      '<div class="fx-bgrid">' + g.cells.map((c, i) => '<button type="button" class="fx-bc' + (c.hit ? ' hit' : '') + (line.indexOf(i) >= 0 ? ' line' : '') + '" data-a="bgpick" data-i="' + i + '"' + (c.hit || g.done ? ' disabled' : '') + '>' + c.v + '</button>').join('') + '</div>'; }
+  // ---- 7: buborékpukkasztó
+  function startBubble() { ST.bb = { i: 0, n: QN(), score: 0, combo: 0, q: wordQ(true), k: 0 }; ST.view = 'bubble'; render({ top: true }); bbSay(); }
+  function bbSay() { const b = ST.bb; if (b && b.q) say([{ l: C.lang, k: b.q.w.id, t: b.q.w.es }]); }
+  function vBubble() { const b = ST.bb; if (!b) return ''; if (b.done) return doneHtml(hu('t_bubble'), b.score, b.n, 'bubble');
+    const bs = b.q.words.slice().sort(() => Math.random() - .5).map((w, i) => '<button type="button" class="fx-bub" data-a="bbpick" data-id="' + w.id + '" style="animation-delay:' + (i * .35).toFixed(2) + 's">' + (w.icon ? '<span class="ic">' + w.icon + '</span>' : '') + '<span class="tx">' + esc(w.hu.replace(/\s*\([^)]*\)/g, '')) + '</span></button>').join('');
+    return topbar(hu('t_bubble')) + '<div class="px-row">' + instrBtn('i_bubble') + '<span class="px-prog">' + (b.i + 1) + ' / ' + b.n + '</span><span class="px-stat">' + ICO.star + '<b>' + b.score + '</b></span>' + comboBadge(b) + '</div>' +
+      '<div class="px-row center"><button type="button" class="pbtn b xl" data-a="bbsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button></div><div class="fx-bubs" data-k="' + b.k + '">' + bs + '</div>'; }
+  function bbPick(id, node) { const b = ST.bb; if (!b || b.lock) return; const ok = id === b.q.w.id;
+    if (!ok) { b.combo = 0; try { H.sfxBad(); } catch (e) { } if (node) { node.classList.add('no'); setTimeout(() => node.classList.remove('no'), 500); } record({ type: 'w', id: b.q.w.id, label: b.q.w.es, hu: b.q.w.hu, unit: b.q.w.unit }, false); b.missed = true; return; }
+    b.lock = true; const st = comboHit(b, !b.missed); b.score++; award(st || 1); record({ type: 'w', id: b.q.w.id, label: b.q.w.es, hu: b.q.w.hu, unit: b.q.w.unit }, !b.missed); try { H.sfxGood(); } catch (e) { } if (node) node.classList.add('pop');
+    setTimeout(() => { b.lock = false; b.missed = false; b.i++; if (b.i >= b.n) { b.done = true; markActive(); award(3); if (b.score / b.n >= .8) celebrate(); } else { b.q = wordQ(true); b.k++; } render(); if (!b.done) bbSay(); }, 700); }
+  // ---- 8: szóépítő (betűkből; SOHA nem betűztetünk hangosan)
+  function buildPool() { const ok = w => { const e = w.es.replace(/\s*\([^)]*\)/g, '').replace(/^(el|la|los|las|un|una|the|a|an|to)\s+/i, '').trim(); return /^[a-záéíóúñü]{3,9}$/i.test(e); }; let p = poolFor(activeUnits()).filter(ok); if (p.length < 4) p = pool().filter(ok); return p; }
+  function bdWord(w) { return w.es.replace(/\s*\([^)]*\)/g, '').replace(/^(el|la|los|las|un|una|the|a|an|to)\s+/i, '').trim().toLowerCase(); }
+  function bdNew() { const p = buildPool(); if (!p.length) return null; const w = p[Math.floor(Math.random() * p.length)]; const t = bdWord(w); return { w, t, tiles: shuffle(t.split('').map((c, i) => ({ c, i, used: false }))), pos: 0, err: 0 }; }
+  function startBuild() { const q = bdNew(); if (!q) return; ST.bd = { i: 0, n: QN(), score: 0, combo: 0, q }; ST.view = 'build'; render({ top: true }); bdSay(); }
+  function bdSay() { const b = ST.bd; if (b && b.q) say([{ l: 'hu', k: b.q.w.id, t: b.q.w.hu }, { l: C.lang, k: b.q.w.id, t: b.q.w.es }]); }
+  function vBuild() { const b = ST.bd; if (!b) return ''; if (b.done) return doneHtml(hu('t_builder'), b.score, b.n, 'build'); const q = b.q;
+    return topbar(hu('t_builder')) + '<div class="px-row">' + instrBtn('i_builder') + '<span class="px-prog">' + (b.i + 1) + ' / ' + b.n + '</span><span class="px-stat">' + ICO.star + '<b>' + b.score + '</b></span>' + comboBadge(b) + '</div>' +
+      '<div class="px-card center">' + (q.w.icon ? '<div class="px-ico">' + q.w.icon + '</div>' : '') + '<div class="px-bigq">' + esc(q.w.hu) + '</div><div class="px-row center"><button type="button" class="pbtn o" data-a="bdsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button><button type="button" class="pbtn l sm" data-a="bdhint"><span>' + esc(L3('Segíts!', 'Help!', '¡Ayuda!').hu) + '</span></button></div>' +
+      '<div class="fx-slots">' + q.t.split('').map((c, i) => '<span class="' + (i < q.pos ? 'on' : '') + '">' + (i < q.pos ? esc(c) : '') + '</span>').join('') + '</div>' +
+      '<div class="fx-tiles">' + q.tiles.map((x, i) => '<button type="button" class="fx-tile' + (x.used ? ' used' : '') + '" data-a="bdtile" data-i="' + i + '"' + (x.used ? ' disabled' : '') + '>' + esc(x.c) + '</button>').join('') + '</div></div>'; }
+  function bdTile(i, node) { const b = ST.bd; const q = b.q; const x = q.tiles[i]; if (!x || x.used || b.lock) return;
+    if (x.c === q.t[q.pos]) { x.used = true; q.pos++; if (q.pos >= q.t.length) { b.lock = true; const ok = q.err === 0; const st = comboHit(b, ok); b.score++; award(st || 1); record({ type: 'w', id: q.w.id, label: q.w.es, hu: q.w.hu, unit: q.w.unit }, ok); try { H.sfxGood(); } catch (e) { } render(); say([{ l: C.lang, k: q.w.id, t: q.w.es }]);
+        setTimeout(() => { b.lock = false; b.i++; if (b.i >= b.n) { b.done = true; markActive(); award(3); if (b.score / b.n >= .8) celebrate(); } else b.q = bdNew(); render(); if (!b.done) bdSay(); }, 1300); } else render(); }
+    else { q.err++; b.combo = 0; try { H.sfxBad(); } catch (e) { } if (node) { node.classList.add('no'); setTimeout(() => node.classList.remove('no'), 450); } } }
+  function bdHint() { const b = ST.bd, q = b.q; const x = q.tiles.find(t => !t.used && t.c === q.t[q.pos]); if (x) { q.err++; const i = q.tiles.indexOf(x); const n = el.querySelector('.fx-tile[data-i="' + i + '"]'); if (n) { n.classList.add('hint'); setTimeout(() => n.classList.remove('hint'), 900); } } }
+  function doneHtml(title, score, n, again) { return topbar(title) + '<div class="px-card center">' + kitty(score / n >= .6 ? 'happy' : 'idle', 130, score / n >= .8 ? 'k-dance' : '') + '<h2>' + esc(hu('run_done')) + '</h2><p class="px-big">' + score + ' / ' + n + '</p></div><div class="px-row center"><button type="button" class="pbtn g" data-a="' + again + '">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button></div>'; }
+  // ---- 10: heti kihívás valódi jutalommal
+  function weekKey(d) { d = d || new Date(); const m = new Date(d.getFullYear(), d.getMonth(), d.getDate()); const wd = (m.getDay() + 6) % 7; m.setDate(m.getDate() - wd); return ymd(m); }
+  function weekly() { let w = null; try { w = JSON.parse(root.localStorage.getItem('martin_weekly') || 'null'); } catch (e) { } return w || P.weekly || { goal: 5, reward: '' }; }
+  function setWeekly(w) { P.weekly = w; Store.save(); try { root.localStorage.setItem('martin_weekly', JSON.stringify(w)); } catch (e) { } }
+  function weekDays() { const wk = weekKey(); const act = activeDays(); const out = []; for (let i = 0; i < 7; i++) { const d = addDays(wk, i); out.push({ d, on: !!act[d] }); } return out; }
+  function weeklyHtml() { const w = weekly(); const ds = weekDays(); const n = ds.filter(x => x.on).length; const done = n >= w.goal; const names = ['H', 'K', 'Sz', 'Cs', 'P', 'Sz', 'V']; const t = today();
+    if (done) { P.wkCel = P.wkCel || {}; const k = weekKey(); if (!P.wkCel[k]) { P.wkCel[k] = 1; Store.save(); setTimeout(() => { celebrate(true); sayHu('weekly_done'); }, 600); } }
+    return '<div class="px-card fx-week' + (done ? ' done' : '') + '"><div class="px-row"><b class="fx-wt">' + esc(hu('t_weekly')) + '</b><span class="px-sub">' + n + ' / ' + w.goal + ' ' + esc(L3('nap', 'days', 'días').hu) + '</span></div><div class="fx-wdays">' + ds.map((x, i) => '<span class="' + (x.on ? 'on' : '') + (x.d === t ? ' today' : '') + '"><i>' + names[i] + '</i>' + (x.on ? '★' : '') + '</span>').join('') + '</div>' +
+      '<div class="fx-wbar"><i style="width:' + Math.min(100, Math.round(n / w.goal * 100)) + '%"></i></div>' + (w.reward ? '<p class="fx-wr">' + (done ? '🎉 ' + esc(hu('weekly_done')) + ' ' : esc(L3('Jutalom: ', '', '').hu)) + '<b>' + esc(w.reward) + '</b></p>' : '<p class="px-note">' + esc(L3('A jutalmat a Szülő nézetben lehet beállítani.', '', '').hu) + '</p>') + '</div>'; }
+  function weeklyParentHtml() { const w = weekly(); return '<div class="px-card"><h3>Heti kihívás (valódi jutalom)</h3><p class="px-note">Hány napot gyakoroljon a héten (hétfő–vasárnap), és mi a jutalom? A Kezdőlapon Martin látja, hol tart; ha megvan, konfetti és ünneplés jön.</p><div class="px-chips">' + [3, 4, 5, 6, 7].map(g => '<button type="button" class="chip' + (w.goal === g ? ' on' : '') + '" data-a="wkgoal" data-n="' + g + '">' + g + ' nap</button>').join('') + '</div><div class="px-row"><input id="fx-wreward" class="px-input" type="text" value="' + esc(w.reward || '') + '" placeholder="pl. mozi, közös társasjáték" aria-label="Jutalom"><button type="button" class="pbtn g" data-a="wksave"><span>Mentés</span></button></div>' +
+      '<label class="px-row"><input type="checkbox" data-a="mapall"' + (P.mapAll ? ' checked' : '') + '> <span>Kalandtérkép: minden állomás legyen nyitva</span></label></div>'; }
+  // ---- 11: cicaszoba
+  const ROOM = [
+    { id: 'rug', vb: '120 280 360 80', p: 5, hu: 'Szőnyeg', svg: '<ellipse cx="300" cy="320" rx="170" ry="28" fill="#E86A7A"/><ellipse cx="300" cy="320" rx="140" ry="20" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="10 8"/>' },
+    { id: 'window', vb: '60 40 140 120', p: 6, hu: 'Ablak', svg: '<rect x="70" y="50" width="120" height="100" rx="8" fill="#BFE3F7" stroke="#8A5A2B" stroke-width="8"/><path d="M130 50 v100 M70 100 h120" stroke="#8A5A2B" stroke-width="6"/><circle cx="165" cy="75" r="12" fill="#F7C948"/>' },
+    { id: 'plant', vb: '465 190 110 150', p: 8, hu: 'Virágcserép', svg: '<path d="M500 300 h40 l-6 36 h-28z" fill="#B85A12"/><path d="M520 300 q-30 -40 -10 -80 M520 300 q10 -50 30 -70 M520 300 q-5 -30 -30 -40" stroke="#22603C" stroke-width="6" fill="none"/><circle cx="510" cy="220" r="10" fill="#E86A7A"/><circle cx="550" cy="230" r="9" fill="#F7C948"/>' },
+    { id: 'ball', vb: '390 292 60 60', p: 8, hu: 'Fonalgombolyag', svg: '<circle cx="420" cy="322" r="18" fill="#7D3C98"/><path d="M405 315 q15 -10 30 4 M404 326 q16 -8 32 6 M438 318 q-10 30 -40 30" stroke="#C39BD3" stroke-width="3" fill="none"/>' },
+    { id: 'picture', vb: '385 48 140 105', p: 10, hu: 'Kép a falon', svg: '<rect x="400" y="60" width="110" height="80" rx="6" fill="#FFF1E4" stroke="#B8860B" stroke-width="7"/><path d="M410 130 l30 -36 l24 26 l14 -14 l24 24z" fill="#6BBF59"/><circle cx="488" cy="82" r="9" fill="#F7C948"/>' },
+    { id: 'lamp', vb: '205 160 110 180', p: 12, hu: 'Lámpa', svg: '<path d="M240 330 h40 M260 330 v-120" stroke="#1E2A38" stroke-width="6"/><path d="M228 212 l12 -40 h40 l12 40z" fill="#F7C948" stroke="#B8860B" stroke-width="4"/><circle cx="260" cy="220" r="40" fill="#F7C948" opacity=".18"/>' },
+    { id: 'bed', vb: '70 280 160 65', p: 15, hu: 'Cicaágy', svg: '<ellipse cx="150" cy="318" rx="70" ry="22" fill="#5DADE2" stroke="#1F4E79" stroke-width="5"/><ellipse cx="150" cy="310" rx="52" ry="12" fill="#FFF1E4"/>' },
+    { id: 'shelf', vb: '205 25 160 60', p: 15, hu: 'Könyvespolc', svg: '<rect x="215" y="70" width="140" height="10" fill="#8A5A2B"/><rect x="225" y="40" width="14" height="30" fill="#E86A7A"/><rect x="242" y="35" width="12" height="35" fill="#5DADE2"/><rect x="257" y="44" width="16" height="26" fill="#6BBF59"/><rect x="276" y="38" width="10" height="32" fill="#F7C948"/><path d="M300 70 l20 -26 l20 26z" fill="#7D3C98"/>' },
+    { id: 'fish', vb: '445 240 110 100', p: 20, hu: 'Akvárium', svg: '<rect x="455" y="250" width="90" height="56" rx="10" fill="#BFE3F7" stroke="#1F4E79" stroke-width="4"/><path d="M480 278 q10 -10 20 0 q-10 10 -20 0z M500 278 l8 -6 v12z" fill="#F2891F"/><circle cx="520" cy="266" r="3" fill="#fff"/><circle cx="526" cy="258" r="2" fill="#fff"/><rect x="465" y="306" width="70" height="30" fill="#8A5A2B"/>' },
+    { id: 'tower', vb: '0 180 90 165', p: 25, hu: 'Kaparófa', svg: '<rect x="30" y="200" width="24" height="136" fill="#E6C79C" stroke="#8A5A2B" stroke-width="3"/><rect x="10" y="190" width="64" height="14" rx="5" fill="#B85A12"/><rect x="10" y="260" width="64" height="12" rx="5" fill="#B85A12"/><rect x="0" y="330" width="84" height="10" rx="4" fill="#8A5A2B"/>' },
+    { id: 'garland', vb: '10 10 580 60', p: 30, hu: 'Zászlófüzér', svg: '<path d="M20 20 q290 60 560 0" stroke="#1E2A38" stroke-width="2" fill="none"/>' + [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => { const x = 45 + i * 54; const y = 20 + Math.sin(i / 9 * Math.PI) * 30; return '<path d="M' + x + ' ' + y + ' l14 0 l-7 18z" fill="' + ['#E86A7A', '#F7C948', '#6BBF59', '#5DADE2', '#7D3C98'][i % 5] + '"/>'; }).join('') },
+    { id: 'crown', vb: '320 288 100 48', p: 40, hu: 'Trónpárna', svg: '<rect x="330" y="300" width="80" height="26" rx="12" fill="#C0392B" stroke="#7B241C" stroke-width="3"/><circle cx="335" cy="326" r="5" fill="#F7C948"/><circle cx="405" cy="326" r="5" fill="#F7C948"/>' }];
+  function vRoom() { const own = P.room || []; const bal = P.stars - P.spent;
+    const scene = '<svg viewBox="0 0 600 360" class="fx-room" role="img" aria-label="Cicaszoba"><rect width="600" height="270" fill="#FFF4D6"/><rect y="270" width="600" height="90" fill="#E6C79C"/><path d="M0 270 h600" stroke="#B8860B" stroke-width="4"/>' + ROOM.filter(r => own.indexOf(r.id) >= 0).map(r => r.svg).join('') + '</svg>';
+    return topbar(hu('t_room')) + '<div class="px-row">' + instrBtn('i_room') + '<span class="px-stat big">' + ICO.star + '<b>' + bal + '</b></span></div><div class="fx-roomwrap">' + scene + '<div class="fx-roomcat">' + kitty(ST.mood === 'happy' ? 'happy' : 'idle', 110, ST.mood === 'happy' ? 'k-dance' : '') + '</div></div>' +
+      '<div class="px-tiles">' + ROOM.map(r => { const has = own.indexOf(r.id) >= 0; return '<div class="px-acc' + (has ? ' on' : '') + '"><div class="px-accimg"><svg viewBox="' + r.vb + '" aria-hidden="true">' + r.svg + '</svg></div><b>' + esc(r.hu) + '</b>' + (has ? '<span class="px-sub">✔</span>' : '<button type="button" class="pbtn o sm" data-a="roombuy" data-id="' + r.id + '"' + (bal < r.p ? ' disabled' : '') + '>' + ICO.star + ' ' + r.p + '</button>') + '</div>'; }).join('') + '</div>'; }
+  // ---- csempe-ikonok az új játékokhoz
+  const FUNICO = { map: '<path d="M8 14 l16 -6 l16 6 l16 -6 v42 l-16 6 l-16 -6 l-16 6z" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/><path d="M14 40 q10 -14 18 -4 t20 -12" stroke="#E86A7A" stroke-width="3" stroke-dasharray="4 4" fill="none"/><circle cx="50" cy="22" r="4" fill="#E86A7A"/>',
+    blitz: '<path d="M36 4 L14 36 h16 l-6 24 l26 -36 h-16z" fill="#F7C948" stroke="#B8860B" stroke-width="3" stroke-linejoin="round"/>',
+    duel: '<circle cx="20" cy="22" r="9" fill="#5DADE2"/><path d="M6 52 q0 -18 14 -18 q14 0 14 18z" fill="#5DADE2"/><circle cx="44" cy="20" r="10" fill="#9AA7B4"/><path d="M30 52 q0 -20 14 -20 q14 0 14 20z" fill="#9AA7B4"/><text x="32" y="16" font-size="12" font-weight="900" text-anchor="middle" fill="#C0392B">VS</text>',
+    space: '<path d="M32 6 L44 40 L32 34 L20 40 Z" fill="#5DADE2" stroke="#1F4E79" stroke-width="3"/><circle cx="32" cy="22" r="5" fill="#fff"/><path d="M26 40 l6 14 l6 -14" fill="#F7C948"/><circle cx="12" cy="12" r="5" fill="#8A5A2B"/><circle cx="54" cy="16" r="4" fill="#8A5A2B"/>',
+    bingo: '<rect x="8" y="8" width="48" height="48" rx="6" fill="#fff" stroke="#7D3C98" stroke-width="3"/><path d="M24 8 v48 M40 8 v48 M8 24 h48 M8 40 h48" stroke="#7D3C98" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="#E86A7A"/><circle cx="32" cy="32" r="5" fill="#E86A7A"/><circle cx="48" cy="48" r="5" fill="#E86A7A"/>',
+    bubble: '<circle cx="24" cy="36" r="16" fill="#BFE3F7" stroke="#5DADE2" stroke-width="3"/><circle cx="44" cy="18" r="11" fill="#BFE3F7" stroke="#5DADE2" stroke-width="3"/><circle cx="18" cy="30" r="4" fill="#fff"/><circle cx="40" cy="14" r="3" fill="#fff"/>',
+    build: '<rect x="6" y="22" width="16" height="20" rx="3" fill="#F7C948" stroke="#B8860B" stroke-width="2"/><rect x="24" y="22" width="16" height="20" rx="3" fill="#6BBF59" stroke="#22603C" stroke-width="2"/><rect x="42" y="22" width="16" height="20" rx="3" fill="#E86A7A" stroke="#8E2A1F" stroke-width="2"/><text x="14" y="37" font-size="12" font-weight="900" text-anchor="middle">A</text><text x="32" y="37" font-size="12" font-weight="900" text-anchor="middle">B</text><text x="50" y="37" font-size="12" font-weight="900" text-anchor="middle">C</text>',
+    room: '<path d="M8 30 L32 10 L56 30 v26 H8z" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/><rect x="26" y="38" width="12" height="18" fill="#B85A12"/><circle cx="20" cy="34" r="4" fill="#F7C948"/>' };
+  // ---- extra CSS
+  function injectFunCss() { if (document.getElementById('fx-css')) return; const s = document.createElement('style'); s.id = 'fx-css'; s.textContent = FUNCSS; document.head.appendChild(s); }
+  const FUNCSS = `
+.px-tile.T9{border-color:#1A7F8E}.px-tile.T10{border-color:#F7C948}.px-tile.T11{border-color:#9AA7B4}.px-tile.T12{border-color:#1F4E79}.px-tile.T13{border-color:#7D3C98}.px-tile.T14{border-color:#5DADE2}.px-tile.T15{border-color:#6BBF59}.px-tile.T16{border-color:#E86A7A}
+.fx-conf{position:fixed;inset:0;pointer-events:none;z-index:99999;overflow:hidden}.fx-conf i{position:absolute;top:-20px;width:10px;height:16px;border-radius:2px;animation:fxfall linear forwards}
+@keyframes fxfall{to{transform:translateY(110vh) rotate(720deg);opacity:.9}}
+.fx-toast{position:fixed;left:50%;top:18%;transform:translateX(-50%);z-index:99998;background:#fff;border:4px solid #F2891F;color:#B85A12;font:900 26px 'Baloo 2','Segoe UI Black',sans-serif;padding:10px 22px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.18);animation:fxpop 1.9s ease forwards;pointer-events:none;white-space:nowrap}
+.fx-toast.c5{border-color:#7D3C98;color:#7D3C98}.fx-toast.gold{border-color:#B8860B;color:#8A6D0B;background:#FFF7D6}
+@keyframes fxpop{0%{opacity:0;transform:translateX(-50%) scale(.5)}15%{opacity:1;transform:translateX(-50%) scale(1.12)}25%{transform:translateX(-50%) scale(1)}80%{opacity:1}100%{opacity:0;transform:translateX(-50%) translateY(-30px)}}
+.fx-combo{display:inline-flex;align-items:center;font-weight:900;color:#fff;background:#F2891F;border-radius:999px;padding:4px 12px;font-size:16px}.fx-combo.hot{background:#C0392B;animation:fxpulse .6s ease-in-out infinite alternate}
+@keyframes fxpulse{to{transform:scale(1.1)}}
+.kitty.k-jump svg{animation:kjump .35s ease-in-out infinite alternate}.kitty.k-spin svg{animation:fxspin .9s ease-in-out 1}.kitty.k-wiggle svg{animation:fxwig .25s ease-in-out 4 alternate}.kitty.k-flip svg{animation:fxflip .8s ease-in-out 1}.kitty.k-dance svg{animation:fxdance .5s ease-in-out infinite alternate}
+@keyframes fxspin{to{transform:rotate(360deg)}}@keyframes fxwig{0%{transform:rotate(-12deg)}100%{transform:rotate(12deg)}}@keyframes fxflip{50%{transform:translateY(-30px) scaleX(-1)}}@keyframes fxdance{0%{transform:translateY(0) rotate(-10deg) scale(1)}100%{transform:translateY(-18px) rotate(10deg) scale(1.08)}}
+.fx-island{background:#fff;border:3px solid #BFE3F7;border-radius:26px;padding:14px;display:flex;flex-direction:column;gap:10px;background-image:radial-gradient(circle at 10% 10%,#EAF7FF 0,#fff 60%)}.fx-island.ev{border-color:#F2891F}
+.fx-isl-h{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}.fx-isl-h b{font:800 22px 'Baloo 2','Segoe UI Black',sans-serif;color:#1F4E79}.fx-isl-h span{color:#22603C;font-weight:700}.fx-isl-h .fx-st{margin-left:auto;color:#7A4A12;font-weight:900;display:inline-flex;gap:4px;align-items:center}
+.fx-path{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+.fx-stn{position:relative;flex:1 1 120px;max-width:180px;min-height:112px;border:3px solid #6BBF59;background:#F3FBF0;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:8px;font:inherit;cursor:pointer}
+.fx-stn .dot{display:flex;align-items:center;justify-content:center;min-width:44px;height:44px;border-radius:999px;background:#6BBF59;color:#fff;font-weight:900;font-size:20px}
+.fx-stn .nm{font-weight:800;font-size:14px;text-align:center;color:#1E2A38;line-height:1.15}.fx-stn .sts i{font-style:normal;color:#D5DBE1;font-size:20px}.fx-stn .sts i.on{color:#F2B705}.fx-stn small{font-weight:800;color:#4A5562}
+.fx-stn.lock{border-color:#D5DBE1;background:#F4F6F8;cursor:not-allowed;opacity:.75}.fx-stn.lock .dot{background:#C9D3DD}
+.fx-stn.cur{border-color:#F2891F;box-shadow:0 0 0 4px #FFE2C2}.fx-cat{position:absolute;top:-30px;right:-6px;pointer-events:none}
+.fx-stn.boss{border-color:#7D3C98;background:#F6EEFA}.fx-stn.boss .dot{background:none;height:auto}
+.fx-boss{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#F6EEFA;border:3px solid #7D3C98;border-radius:22px;padding:10px 14px}.fx-mon{animation:fxbob 1.2s ease-in-out infinite alternate}.fx-mon.hit{animation:fxhit .45s ease 1}
+@keyframes fxbob{to{transform:translateY(-6px)}}@keyframes fxhit{20%{transform:translateX(-10px) rotate(-8deg);filter:brightness(1.8)}60%{transform:translateX(8px) rotate(6deg)}}
+.fx-bars{flex:1 1 200px;display:flex;flex-direction:column;gap:8px}.fx-hp{position:relative;height:24px;border-radius:999px;background:#E5D3EC;overflow:hidden}.fx-hp i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,#C0392B,#E86A7A);transition:width .4s}.fx-hp span{position:relative;display:block;text-align:center;font-weight:900;color:#fff;line-height:24px;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.fx-hearts span{font-size:26px;color:#D5DBE1;margin-right:2px}.fx-hearts span.on{color:#E86A7A}
+.fx-duel{display:flex;align-items:center;gap:10px;justify-content:center}.fx-duel .pl{flex:1 1 0;max-width:220px;border:3px solid #C9D3DD;border-radius:18px;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;background:#fff}.fx-duel .pl b{font-size:20px}.fx-duel .pl span{font:900 30px 'Baloo 2',sans-serif;color:#1F4E79}.fx-duel .pl.on{border-color:#F2891F;background:#FFF1E4}.fx-duel .vs{font:900 22px 'Baloo 2',sans-serif;color:#C0392B}
+.fx-turn{text-align:center;font:900 24px 'Baloo 2',sans-serif;color:#B85A12}.fx-dt{display:inline-block;margin-left:8px;padding:2px 12px;border-radius:999px;color:#fff;background:linear-gradient(90deg,#C0392B var(--p,100%),#9AA7B4 var(--p,100%))}
+.fx-space{position:relative;height:440px;border-radius:24px;overflow:hidden;background:radial-gradient(circle at 20% 20%,#2C3E70,#0E1630 70%);border:3px solid #1F4E79}
+.fx-space::before{content:'';position:absolute;inset:0;background-image:radial-gradient(2px 2px at 20px 30px,#fff,transparent),radial-gradient(2px 2px at 120px 80px,#fff,transparent),radial-gradient(1px 1px at 220px 150px,#fff,transparent),radial-gradient(2px 2px at 320px 40px,#fff,transparent),radial-gradient(1px 1px at 60px 200px,#fff,transparent);background-size:360px 240px;opacity:.7}
+.fx-target{position:absolute;left:50%;top:10px;transform:translateX(-50%);z-index:3;background:#fff;color:#1F4E79;border-radius:999px;padding:6px 22px;font:900 30px 'Baloo 2',sans-serif;white-space:nowrap;max-width:94%;overflow:hidden;text-overflow:ellipsis}
+.fx-met{position:absolute;top:-80px;width:22%;min-height:64px;border:none;border-radius:999px 999px 999px 999px;background:radial-gradient(circle at 35% 35%,#C49A6C,#7A5230);color:#fff;font:900 22px 'Nunito',sans-serif;cursor:pointer;animation-name:fxdrop;animation-timing-function:linear;animation-fill-mode:forwards;box-shadow:0 0 0 3px rgba(255,255,255,.25);padding:6px 4px;z-index:2}
+.fx-met span{display:block;text-shadow:0 2px 3px rgba(0,0,0,.5);word-break:break-word;line-height:1.1}
+@keyframes fxdrop{from{top:-80px}to{top:380px}}.fx-met.boom{animation:fxboom .5s ease forwards!important;background:radial-gradient(circle,#FFF7D6,#F7C948 40%,#F2891F 70%)}.fx-met.show{background:#6BBF59;animation-play-state:paused}
+@keyframes fxboom{to{transform:scale(1.8);opacity:0}}
+.fx-ship{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:1}
+.fx-call{text-align:center;font:900 34px 'Baloo 2',sans-serif;color:#7D3C98;background:#fff;border:3px solid #7D3C98;border-radius:22px;padding:10px}
+.fx-bgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:520px;margin:0 auto;width:100%}.fx-bc{aspect-ratio:1;border:3px solid #C9D3DD;border-radius:16px;background:#fff;font:900 30px 'Baloo 2',sans-serif;color:#1E2A38;cursor:pointer}.fx-bc.hit{background:#E86A7A;color:#fff;border-color:#8E2A1F}.fx-bc.line{background:#F7C948;color:#7A4A12;border-color:#B8860B;animation:fxpulse .5s ease-in-out infinite alternate}.fx-bc.no{animation:fxshake .4s}
+.fx-bingo{font-size:54px!important;color:#7D3C98!important;animation:fxpulse .5s ease-in-out infinite alternate}
+@keyframes fxshake{20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
+.fx-bubs{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;padding:10px 0 20px}.fx-bub{width:150px;height:150px;border-radius:50%;border:3px solid #5DADE2;background:radial-gradient(circle at 30% 28%,#fff 0,#EAF7FF 30%,#BFE3F7 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;font:inherit;animation:fxbub 2.4s ease-in-out infinite alternate;padding:10px}
+.fx-bub .ic svg{width:64px;height:64px}.fx-bub .tx{font-weight:800;font-size:15px;color:#1F4E79;line-height:1.1;text-align:center}.fx-bub.no{animation:fxshake .45s}.fx-bub.pop{animation:fxboom .5s ease forwards}
+@keyframes fxbub{to{transform:translateY(-14px)}}
+.fx-slots{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}.fx-slots span{width:46px;height:56px;border-bottom:5px solid #1F4E79;font:900 34px 'Baloo 2',sans-serif;color:#22603C;display:flex;align-items:flex-end;justify-content:center}.fx-slots span.on{animation:fxpop2 .3s}
+@keyframes fxpop2{from{transform:scale(1.5)}}
+.fx-tiles{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.fx-tile{width:58px;height:62px;border-radius:14px;border:3px solid #B8860B;background:#F7C948;font:900 30px 'Baloo 2',sans-serif;color:#7A4A12;cursor:pointer;box-shadow:0 4px 0 #B8860B}.fx-tile.used{visibility:hidden}.fx-tile.no{animation:fxshake .4s;background:#F5B7B1}.fx-tile.hint{animation:fxpulse .3s ease-in-out 3 alternate;background:#ABEBC6}
+.fx-week{border-color:#6BBF59}.fx-week.done{border-color:#F2B705;background:#FFFBEA}.fx-wt{font:800 22px 'Baloo 2',sans-serif;color:#22603C}.fx-wdays{display:flex;gap:6px}.fx-wdays span{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;border-radius:12px;background:#F4F6F8;border:2px solid #E1E6EB;font-weight:900;color:#F2B705;font-size:20px}.fx-wdays span i{font-style:normal;font-size:13px;color:#4A5562}.fx-wdays span.on{background:#EAF7E6;border-color:#6BBF59}.fx-wdays span.today{box-shadow:0 0 0 3px #F2891F}
+.fx-wbar{height:14px;border-radius:999px;background:#E1E6EB;overflow:hidden}.fx-wbar i{display:block;height:100%;background:linear-gradient(90deg,#6BBF59,#F2B705)}.fx-wr{margin:0;font-size:18px}
+.fx-roomwrap{position:relative;max-width:720px;margin:0 auto;width:100%}.fx-room{width:100%;height:auto;border-radius:22px;border:3px solid #F2D9B8;display:block}.fx-roomcat{position:absolute;left:44%;bottom:6%;width:18%}.fx-roomcat .kitty{width:100%!important;height:auto!important}
+.fx-flash{position:fixed;left:50%;top:40%;transform:translate(-50%,-50%);font:900 90px sans-serif;pointer-events:none;z-index:9999;animation:fxflash .6s ease forwards}.fx-flash.ok{color:#22A15A}.fx-flash.bad{color:#C0392B}@keyframes fxflash{from{opacity:1;transform:translate(-50%,-50%) scale(.6)}to{opacity:0;transform:translate(-50%,-50%) scale(1.4)}}
+.stk.gold{border-color:#B8860B!important;background:linear-gradient(135deg,#FFF7D6,#F7C948)!important;box-shadow:0 0 0 3px #F7C948}
+@media (max-width:520px){.fx-space{height:380px}@keyframes fxdrop{from{top:-80px}to{top:320px}}.fx-met{font-size:17px}.fx-bub{width:130px;height:130px}.fx-tile{width:48px;height:54px;font-size:26px}.fx-slots span{width:36px;font-size:28px}.fx-bc{font-size:24px}}
+@media (prefers-reduced-motion:reduce){.fx-conf,.fx-mon,.fx-bub,.kitty.k-dance svg,.kitty.k-jump svg{animation:none!important}.fx-met{animation-duration:20s!important}}
+`;
+
   // ================= start =================
   Plus.init = function (cfg) { C = cfg; X = cfg.data; X.i18n = X.i18n || {}; };
   Plus.mount = function (node, host) {
@@ -703,10 +957,11 @@
       el.addEventListener('click', e => { if (ST.suppressClick) return; const b = e.target.closest('[data-a]'); if (!b || !el.contains(b)) return; try { act(b.dataset.a, b.dataset, b); } catch (er) { if (root.console) console.error(er); } });
       el.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'px-input') { e.preventDefault(); act('check', {}, e.target); } });
       el.addEventListener('pointerdown', onPointerDown); el.addEventListener('pointermove', onPointerMove, { passive: false }); el.addEventListener('pointerup', onPointerUp); el.addEventListener('pointercancel', onPointerUp);
-      el.addEventListener('input', e => { if (e.target.id === 'px-input' && ST.run) ST.run.typed = e.target.value; }); }
+      el.addEventListener('input', e => { if (e.target.id === 'px-input' && ST.run) ST.run.typed = e.target.value; });
+      el.addEventListener('animationend', e => { const m = e.target; if (ST.view === 'space' && m.classList && m.classList.contains('fx-met') && m.dataset.ok && e.animationName === 'fxdrop' && ST.sp && !ST.sp.lock) spNext(false, null); }); }
     try { stickerPool().forEach(w => { if (boxOf(w.id) >= 3) { P.stk = P.stk || {}; if (!P.stk[w.id]) P.stk[w.id] = today(); } }); } catch (e) { }
     if (!startChecked) { startChecked = true; try { const g = new URLSearchParams(root.location.search).get('go'); if (g) { ST.fromHub = true; if (g === 'mission') ST.view = 'start'; else if (g === 'race') ST.view = 'start'; } } catch (e) { } }
-    injectCss(); xEnsure(); render();
+    injectCss(); injectFunCss(); xEnsure(); render();
   };
   let startChecked = false;
   try { root.addEventListener('pagehide', () => { if (P) Store.writeLocal(); }); root.addEventListener('visibilitychange', () => { if (P && document.visibilityState === 'hidden') Store.writeLocal(); }); } catch (e) { }

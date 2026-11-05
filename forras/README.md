@@ -81,3 +81,18 @@ Tanulság: a közös tools/audio.py párhuzamos futásnál OOM-mal leáll – a 
 - tools/plus.js: P.qn (alap 50; 10/20/50/100 chipek a Kezdőlapon a küldetés-gomb fölött, valamint a Szókártyák, Játékok, Spelling, Dictado, Feladatok, Feladatgenerátor és Próbadolgozat nézetben). Mai küldetés és próbadolgozat/verseny: az eddigi vegyes kérdések + a leckekvíz-generátor (LQ, lessonquiz.js) kérdései a nap fejezeteiből, véletlen sorrendben, pontosan qn darab (a hibajavító kérdések elöl). Hallás utáni játék, dictado, feladatok, spelling: qn kérdés (ha kevés a szó, újrakeverve ismétlődik). Feladatgenerátor: qn kérdés után eredmény. Próbadolgozat ideje: 45 mp/kérdés (min. 5 perc).
 - mkplus.py: a plus.bundle.js = mathgen.js + lessonquiz.js + plus.js. plus_i18n.py: új 'qn_label' (csak kiírás, nincs hozzá hang).
 - Új plus_js / plus_data assetek mind a 6 oldalon (lásd <subj>/plus_blobs.json), újrapublikálva; offline + C:\works\martin frissítve. Régi: plus.v5-elotte-qn.js, plus_i18n.v5-elotte-qn.py.
+
+## 2026-11-05 (3) – 11 játékos bővítés (Robert: „implementáld le mind a 11-et”)
+A tools/plus.js-be (forrás-részlet: tools/plus_fun.js, a plus.js-ben a „JÁTÉKOS BŐVÍTÉS” szakasz), mind a 6 tantárgyra:
+1. Kalandtérkép (view 'map'): fejezet = sziget, lecke = állomás; a lecke kvíze (LQ) QN kérdéssel; 50% ★, 80% ★★, 95% ★★★ (P.lq[lecke] = legjobb %); a következő állomás 80%-tól nyílik; a közelgő dolgozat fejezetei mindig nyitva; szülői kapcsoló: P.mapAll.
+2. Fejezet-szörny (mode 'boss'): életcsík (QN×0,6, 6–30), 5 szív; a sziget végén nyílik (minden lecke ≥1★ vagy dolgozat-fejezet). P.bossWin.
+3. Arany kártyák: egy szó 5× egymás után jó → P.gold, +3★, az albumban arany keret.
+4. Villámkör (mode 'blitz'): 60 mp, azonnali továbblépés, rekord P.blitz.best.
+5. Kombó minden kérdéssornál: 3 jó után dupla csillag, minden 5. után konfetti + táncoló cica.
+6. Űrhajó (view 'space'): hulló meteorok; matek: szorzás a dolgozat tábláiból (focusTables), többi: magyar szó → idegen szó. Szorzótábla-bingó (view 'bingo', csak mat): 4×4, a szorzást spanyolul mondja (böngésző-hang), 4 egy sorban = bingó.
+7. Buborékpukkasztó (view 'bubble'): elhangzik a szó, a jó kép/jelentés buborékját kell kipukkasztani.
+8. Szóépítő (view 'build'): betűcsempékből kell kirakni a szót (hangosan SOHA nem betűzünk; „Segíts!” felvillantja a következő betűt).
+9. Párbaj apával (mode 'duel'): felváltva, Apának 7 mp/kérdés; Apa válaszai nem kerülnek Martin statisztikájába.
+10. Heti kihívás: Szülő nézetben cél (3–7 nap) + jutalom szövege (localStorage 'martin_weekly' + P.weekly); a Kezdőlapon napok + csík; teljesítéskor ünneplés (hetente egyszer).
+11. Konfetti, sikerdallam (WebAudio), cica-mozdulatok (k-jump/spin/wiggle/flip/dance), Cicaszoba (view 'room', 12 berendezési tárgy csillagért, P.room).
+Új i18n-kulcsok (plus_i18n.py) + mkxaudio újra mind a 6 tantárgyra. A plus.css nem változott: az új CSS a plus.js-ben van (FUNCSS, #fx-css). Régi: plus.v6-elotte-fun.js.
