@@ -190,6 +190,16 @@ body{background:#FFF4D6}
         <button class="{{d.cls}}" onClick="{{d.go}}">{{d.label}}</button>
       </sc-for>
     </div>
+    <sc-if value="{{hasLessonChips}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
+        <span style="font-weight: 800">Melyik leckéből?</span>
+        <sc-for list="{{lessonChips}}" as="d" hint-placeholder-count="3"><button class="{{d.cls}}" onClick="{{d.go}}">{{d.label}}</button></sc-for>
+      </div>
+    </sc-if>
+    <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
+      <span style="font-weight: 800">Hány kérdés?</span>
+      <sc-for list="{{sizeChips}}" as="d" hint-placeholder-count="4"><button class="{{d.cls}}" onClick="{{d.go}}">{{d.label}}</button></sc-for>
+    </div>
     <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start">
       <div class="card" style="flex: 1 1 220px; max-width: 300px; padding: 16px; align-items: center; gap: 8px">
         <div style="width: 200px; height: 200px">
@@ -295,6 +305,7 @@ body{background:#FFF4D6}
           </div>
         </sc-if>
         <sc-if value="{{ocQuiz}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center"><span style="font-weight: 800">A lecke kvíze – hány kérdés?</span><sc-for list="{{sizeChips}}" as="d" hint-placeholder-count="4"><button class="{{d.cls}}" onClick="{{d.go}}">{{d.label}}</button></sc-for></div>
           <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start">
             <div class="card" style="flex: 0 1 200px; padding: 12px; align-items: center; gap: 6px"><div style="width: 150px; height: 150px"><dc-import name="Kitty" mood="{{mood}}" hint-size="150px,150px"></dc-import></div><p style="margin: 0; font-size: 20px; font-weight: 900; color: #1F4E79; text-align: center">{{kittyLine}}</p><p style="margin: 0; font-weight: 800">Pont: {{score}} / {{total}}</p></div>
             <div style="flex: 999 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
@@ -328,10 +339,12 @@ body{background:#FFF4D6}
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1700}}'>
 const LANG = '__LANG__';
+__LQJS__
+
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { data: null, err: '', view: 'plus', plusReady: false, open: null, q: '', dictUnit: 'all', quizUnit: 'all', order: null, qi: 0, picked: null, score: 0, done: false, mood: 'idle', speaking: null };
+    this.state = { data: null, err: '', view: 'plus', plusReady: false, open: null, q: '', dictUnit: 'all', quizUnit: 'all', qsize: 0, qlist: null, order: null, qi: 0, picked: null, score: 0, done: false, mood: 'idle', speaking: null };
     this.buf = {}; this.ctx = null; this.src = null; this.plusData = null; this.plusEl = null;
     this.plusRef = el => { this.plusEl = el || null; if (el) this.mountPlus(); else if (window.Plus && window.Plus.unmount) window.Plus.unmount(); };
   }
@@ -409,17 +422,23 @@ class Component extends DCLogic {
   }
   shuffle(a) { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const x = b[i]; b[i] = b[j]; b[j] = x; } return b; }
   quizVals(base, d, st) {
-      base.quizChips = [['all', 'Mind']].concat(d.units.map(u => [u.id, u.num + '. fejezet'])).map(x => ({ label: x[1], cls: 'chip' + (st.quizUnit === x[0] ? ' on' : ''), go: () => this.startQuiz(x[0]) }));
-      const order = st.order || []; base.total = order.length;
+      const scU = st.quizUnit.indexOf('c:') === 0 ? (d.units.find(u => u.concepts.some(c => 'c:' + c.id === st.quizUnit)) || {}).id : st.quizUnit;
+      base.quizChips = [['all', 'Mind']].concat(d.units.map(u => [u.id, u.num + '. fejezet'])).map(x => ({ label: x[1], cls: 'chip' + (scU === x[0] ? ' on' : ''), go: () => this.startQuiz(x[0]) }));
+      const uu = d.units.find(u => u.id === scU);
+      base.lessonChips = uu ? [[uu.id, 'Az egész fejezet']].concat(uu.concepts.map(c => ['c:' + c.id, c.es])).map(x => ({ label: x[1], cls: 'chip' + (st.quizUnit === x[0] ? ' on' : ''), go: () => this.startQuiz(x[0]) })) : [];
+      base.hasLessonChips = base.lessonChips.length > 0;
+      const pool = st.qpool || 0;
+      base.sizeChips = [[10, '10'], [20, '20'], [50, '50'], [0, 'Mind (' + pool + ')']].filter(x => x[0] === 0 || x[0] < pool).map(x => ({ label: x[1], cls: 'chip' + (st.qsize === x[0] ? ' on' : ''), go: () => this.startQuiz(st.quizUnit, x[0]) }));
+      const order = st.qlist || []; base.total = order.length;
       if (st.done) {
         base.quizDone = true;
         const r = order.length ? st.score / order.length : 0;
         base.endText = r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.';
         base.kittyLine = '¡Muy bien, Martín!';
       } else if (order.length) {
-        const q = d.quiz[order[st.qi]];
+        const q = order[st.qi];
         base.quizRunning = true; base.cur = q; base.progress = (st.qi + 1) + '. kérdés / ' + order.length;
-        const se = this.sayBtn(LANG, 'q:' + q.i, q.q_es, 'say'); const sh = this.sayBtn('hu', 'q:' + q.i, q.q_hu, 'say');
+        const se = this.sayBtn(LANG, q.sayEs[0] || 'lq', q.sayEs[1], 'say'); const sh = this.sayBtn('hu', q.sayHu[0] || 'lq', q.sayHu[1], 'say');
         base.qSay = { es: se.fn, esCls: se.cls, hu: sh.fn, huCls: sh.cls };
         const answered = st.picked !== null; base.answered = answered;
         base.opts = q.options.map((o, i) => {
@@ -434,12 +453,16 @@ class Component extends DCLogic {
         base.kittyLine = !answered ? 'Gondolkodj, Martin!' : ok ? 'Hihihi! Talált!' : 'Buuu… nem talált.';
       }
   }
-  startQuiz(unit) {
+  startQuiz(unit, size) {
     const d = this.state.data; if (!d) return;
-    const order = this.shuffle(d.quiz.filter(q => unit === 'all' || q.unit === unit).map(q => q.i));
+    const all = LQ.build(d, LANG, unit);
+    if (size === undefined) size = unit.indexOf('c:') === 0 ? 0 : 50;
+    const list = size ? all.slice(0, size) : all;
     this.stopVoice();
-    this.setState({ quizUnit: unit, order: order, qi: 0, picked: null, score: 0, done: false, mood: 'idle' });
+    this.setState({ quizUnit: unit, qsize: size, qpool: all.length, qlist: list, order: list, qi: 0, picked: null, score: 0, done: false, mood: 'idle' });
+    this.autoSay(list[0]);
   }
+  autoSay(q) { clearTimeout(this.autoT); if (q && q.auto) this.autoT = setTimeout(() => this.speak(q.auto[0], q.auto[1], q.auto[2]), 500); }
   setView(v) {
     this.stopVoice();
     this.setState({ view: v, open: null, speaking: null });
@@ -447,7 +470,7 @@ class Component extends DCLogic {
   }
   pick(idx) {
     const st = this.state; if (st.picked !== null || st.done) return;
-    const q = st.data.quiz[st.order[st.qi]]; const ok = idx === q.answer;
+    const q = st.qlist[st.qi]; const ok = idx === q.answer;
     this.setState({ picked: idx, score: st.score + (ok ? 1 : 0), mood: ok ? 'happy' : 'sad' });
     if (ok) this.sfxGood(); else this.sfxBad();
     clearTimeout(this.fbT);
@@ -455,10 +478,10 @@ class Component extends DCLogic {
   }
   next() {
     const st = this.state; this.stopVoice(); clearTimeout(this.fbT);
-    if (st.qi + 1 >= st.order.length) {
+    if (st.qi + 1 >= st.qlist.length) {
       this.setState({ done: true, mood: 'happy', picked: null }); this.sfxGood();
       this.fbT = setTimeout(() => this.speak('hu', 'fb:end'), 1300);
-    } else this.setState({ qi: st.qi + 1, picked: null, mood: 'idle' });
+    } else { this.setState({ qi: st.qi + 1, picked: null, mood: 'idle' }); this.autoSay(st.qlist[st.qi + 1]); }
   }
   allConcepts() { const d = this.state.data; const out = []; if (d) d.units.forEach(u => u.concepts.forEach(c => out.push(c))); return out; }
   move(step) { const all = this.allConcepts(); const i = all.findIndex(c => c.id === this.state.open); if (i < 0) return; const n = all[(i + step + all.length) % all.length]; this.stopVoice(); this.setState({ open: n.id, speaking: null, wordOpen: null, ltab: this.state.ltab === 'quiz' ? 'explain' : this.state.ltab }); }
@@ -473,7 +496,7 @@ class Component extends DCLogic {
     const tabs = tabDefs.map(t => ({ label: t[1], cls: 'tab' + (st.view === t[0] ? ' on' : ''), go: () => this.setView(t[0]) }));
     const base = { tabs, loading: !d, errText: st.err, headMood: st.mood, plusRef: this.plusRef, isPlus: st.view === 'plus', isUnit: false, isDict: false, isQuiz: false, hasOpen: false,
       unit: {}, unitSay: {}, unitT: {}, ocT: {}, concepts: [], q: st.q, dictChips: [], letters: [], groups: [], dictCount: 0, dictEmpty: false,
-      quizChips: [], mood: st.mood, kittyLine: '', score: st.score, total: 0, quizRunning: false, quizDone: false, cur: {}, qSay: {}, opts: [],
+      quizChips: [], lessonChips: [], hasLessonChips: false, sizeChips: [], mood: st.mood, kittyLine: '', score: st.score, total: 0, quizRunning: false, quizDone: false, cur: {}, qSay: {}, opts: [],
       answered: false, fbColor: '#1E2A38', fbTitle: '', nextLabel: '', endText: '', progress: '',
       oc: {}, ocSay: {}, ocHasGallery: false, ocNoGallery: true,
       onSearch: (e) => this.setState({ q: e.target.value }), next: () => this.next(), restart: () => this.startQuiz(st.quizUnit),
@@ -514,7 +537,7 @@ class Component extends DCLogic {
         base.hasOpen = true; base.oc = Object.assign({}, c, { pageLabel: 'Könyv: ' + c.pages + '. oldal', examples: exs, sentences: sents, dialogue: dlg, hasSent: sents.length > 0, noSent: sents.length === 0, hasDlg: dlg.length > 0 });
         const unit = d.units.find(x => x.concepts.some(k => k.id === c.id)); const lt = st.ltab || 'explain';
         const ICON = { explain: 'M4 6h16M4 12h16M4 18h10', dialogue: 'M4 5h16v10H9l-5 4V5z', examples: 'M5 12l4 4L19 6', words: 'M4 4h12l4 4v12H4zM8 12h8M8 16h8', quiz: 'M9 9a3 3 0 1 1 3 3v2M12 18h.01' };
-        base.ltabs = [['explain', 'Magyarázat'], ['dialogue', 'Párbeszéd'], ['examples', 'Példák'], ['words', 'Szótár'], ['quiz', 'Kvíz']].map(x => ({ label: x[1], icon: ICON[x[0]], cls: 'ltab' + (lt === x[0] ? ' on' : ''), go: () => { this.stopVoice(); if (x[0] === 'quiz' && (st.quizUnit !== unit.id || !st.order)) { this.setState({ ltab: 'quiz', wordOpen: null, speaking: null }); this.startQuiz(unit.id); } else this.setState({ ltab: x[0], wordOpen: null, speaking: null }); } }));
+        base.ltabs = [['explain', 'Magyarázat'], ['dialogue', 'Párbeszéd'], ['examples', 'Példák'], ['words', 'Szótár'], ['quiz', 'Kvíz']].map(x => ({ label: x[1], icon: ICON[x[0]], cls: 'ltab' + (lt === x[0] ? ' on' : ''), go: () => { this.stopVoice(); if (x[0] === 'quiz' && (st.quizUnit !== 'c:' + c.id || !st.qlist)) { this.setState({ ltab: 'quiz', wordOpen: null, speaking: null }); this.startQuiz('c:' + c.id); } else this.setState({ ltab: x[0], wordOpen: null, speaking: null }); } }));
         base.ocExplain = lt === 'explain'; base.ocDialogue = lt === 'dialogue'; base.ocExamples = lt === 'examples'; base.ocWords = lt === 'words'; base.ocQuiz = lt === 'quiz';
         base.ocUnitLabel = unit.num + '. fejezet';
         base.ocGlossary = d.glossary.filter(g => g.unit === unit.id).map(g => { const ge = this.sayBtn(LANG, 'g:' + g.i, g.es, 'mini'); const gh = this.sayBtn('hu', 'g:' + g.i, g.hu, 'mini'); return { es: g.es, hu: g.hu, esCls: ge.cls, huCls: gh.cls, sayEs: ge.fn, sayHu: gh.fn, pairEs: () => this.speakPair(LANG, 'g:' + g.i, g.es, g.hu), pairHu: () => this.speakPair('hu', 'g:' + g.i, g.hu, g.es) }; });

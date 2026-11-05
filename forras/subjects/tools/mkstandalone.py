@@ -105,13 +105,16 @@ body{background:#FFF4D6}
 __PLUSJS__
 </script>
 <script>
+__LQJS__
+</script>
+<script>
 const D = __DATA__;
 const LANG = '__LANG__';
 const KITTY = __KITTY__;
 const SPK = '__SPK__';
 const T = {LANGNAME:'__LANGNAME__', LANGLABEL:'__LANGLABEL__', LANGCODE:'__LANGCODE__', LISTEN:'__LISTEN__', VOCAB:'__VOCAB__', EXAMPLES:'__EXAMPLES__', UNITWORD:'__UNITWORD__'};
 const PD = __PLUSDATA__;
-const st = { view: 'plus', open: null, q: '', dictUnit: 'all', quizUnit: 'all', order: null, qi: 0, picked: null, score: 0, done: false, mood: 'idle', speaking: null, ltab: 'explain', wordOpen: null };
+const st = { view: 'plus', open: null, q: '', dictUnit: 'all', quizUnit: 'all', qsize: 0, qpool: 0, order: null, qi: 0, picked: null, score: 0, done: false, mood: 'idle', speaking: null, ltab: 'explain', wordOpen: null };
 const esc = s => String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 // ---- hang: <audio> elemek + sprite ----
@@ -165,10 +168,21 @@ function sayBtn(lang, key, text, base, label, aria) {
 function seqBtn(items, label) { const playing = items.some(it => st.speaking === it[0] + ':' + it[1]); return `<button class="say${playing ? ' playing' : ''}" ${h(() => playing ? (stopVoice(), render()) : playSeq(items))}>${SPK}${playing ? 'Állj ■' : label}</button>`; }
 function kitty(mood) { return `<div class="kitty kitty-${mood}">${KITTY[mood]}</div>`; }
 let fbT = null;
-function startQuiz(unit) { st.quizUnit = unit; st.order = shuffle(D.quiz.filter(q => unit === 'all' || q.unit === unit).map(q => q.i)); st.qi = 0; st.picked = null; st.score = 0; st.done = false; st.mood = 'idle'; stopVoice(); render(); }
+let autoT = null;
+function autoSay(q) { clearTimeout(autoT); if (q && q.auto) autoT = setTimeout(() => speak(q.auto[0], q.auto[1], q.auto[2]), 500); }
+function startQuiz(unit, size) { const all = LQ.build(D, LANG, unit); if (size === undefined) size = unit.indexOf('c:') === 0 ? 0 : 50; st.quizUnit = unit; st.qsize = size; st.qpool = all.length; st.order = size ? all.slice(0, size) : all; st.qi = 0; st.picked = null; st.score = 0; st.done = false; st.mood = 'idle'; stopVoice(); render(); autoSay(st.order[0]); }
+function quizChipsHtml(lessonOnly) {
+  const sc = st.quizUnit; const scU = sc.indexOf('c:') === 0 ? (D.units.find(u => u.concepts.some(c => 'c:' + c.id === sc)) || {}).id : sc;
+  const size = [[10, '10'], [20, '20'], [50, '50'], [0, 'Mind (' + st.qpool + ')']].filter(x => x[0] === 0 || x[0] < st.qpool).map(x => `<button class="chip${st.qsize === x[0] ? ' on' : ''}" ${h(() => startQuiz(sc, x[0]))}>${esc(x[1])}</button>`).join('');
+  const sizeRow = `<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">${lessonOnly ? 'A lecke kvíze – hány kérdés?' : 'Hány kérdés?'}</span>${size}</div>`;
+  if (lessonOnly) return sizeRow;
+  const uu = D.units.find(u => u.id === scU);
+  const les = uu ? `<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">Melyik leckéből?</span>` + [[uu.id, 'Az egész fejezet']].concat(uu.concepts.map(c => ['c:' + c.id, c.es])).map(x => `<button class="chip${sc === x[0] ? ' on' : ''}" ${h(() => startQuiz(x[0]))}>${esc(x[1])}</button>`).join('') + '</div>' : '';
+  return les + sizeRow;
+}
 function setView(v) { stopVoice(); st.view = v; st.open = null; if (v === 'quiz' && !st.order) startQuiz(st.quizUnit); else render(); }
-function pick(i) { if (st.picked !== null || st.done) return; const q = D.quiz[st.order[st.qi]]; const ok = i === q.answer; st.picked = i; st.score += ok ? 1 : 0; st.mood = ok ? 'happy' : 'sad'; if (ok) sfxGood(); else sfxBad(); clearTimeout(fbT); fbT = setTimeout(() => speak('hu', ok ? 'fb:ok' : 'fb:bad'), ok ? 1300 : 1600); render(); }
-function next() { stopVoice(); clearTimeout(fbT); if (st.qi + 1 >= st.order.length) { st.done = true; st.mood = 'happy'; st.picked = null; sfxGood(); fbT = setTimeout(() => speak('hu', 'fb:end'), 1300); } else { st.qi++; st.picked = null; st.mood = 'idle'; } render(); }
+function pick(i) { if (st.picked !== null || st.done) return; const q = st.order[st.qi]; const ok = i === q.answer; st.picked = i; st.score += ok ? 1 : 0; st.mood = ok ? 'happy' : 'sad'; if (ok) sfxGood(); else sfxBad(); clearTimeout(fbT); fbT = setTimeout(() => speak('hu', ok ? 'fb:ok' : 'fb:bad'), ok ? 1300 : 1600); render(); }
+function next() { stopVoice(); clearTimeout(fbT); if (st.qi + 1 >= st.order.length) { st.done = true; st.mood = 'happy'; st.picked = null; sfxGood(); fbT = setTimeout(() => speak('hu', 'fb:end'), 1300); } else { st.qi++; st.picked = null; st.mood = 'idle'; } render(); if (!st.done) autoSay(st.order[st.qi]); }
 function openC(id) { stopVoice(); st.open = id; st.wordOpen = null; st.ltab = 'explain'; render(); }
 function move(step) { const all = allConcepts(); const i = all.findIndex(c => c.id === st.open); const n = all[(i + step + all.length) % all.length]; const t = st.ltab; openC(n.id); if (t !== 'quiz') { st.ltab = t; render(); } }
 function quizPanel() {
@@ -176,12 +190,12 @@ function quizPanel() {
     if (st.done) { const r = order.length ? st.score / order.length : 0; line = '¡Muy bien, Martín!';
       right = `<div class="card" style="padding:24px;gap:12px;align-items:flex-start"><h2 style="font-size:34px;color:#1F4E79">Vége! · ¡Fin!</h2><p style="margin:0;font-size:22px;font-weight:800">${st.score} / ${order.length} jó válasz</p><p style="margin:0;font-size:18px">${r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.'}</p><button class="open-btn" ${h(() => startQuiz(st.quizUnit))}>Újra játszom</button></div>`;
     } else if (order.length) {
-      const q = D.quiz[order[st.qi]]; const answered = st.picked !== null; const ok = answered && st.picked === q.answer;
+      const q = order[st.qi]; const answered = st.picked !== null; const ok = answered && st.picked === q.answer;
       line = !answered ? 'Gondolkodj, Martin!' : ok ? 'Hihihi! Talált!' : 'Buuu… nem talált.';
       const opts = q.options.map((o, i) => { let cls = 'opt'; if (answered) { if (i === q.answer) cls += ' correct'; else if (i === st.picked) cls += ' wrong'; else cls += ' dim'; } return `<button class="${cls}" ${h(() => pick(i))}>${esc(o)}</button>`; }).join('');
       right = `<div class="card" style="padding:20px;gap:12px"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800;color:#4A5562">${st.qi + 1}. kérdés / ${order.length}</span><span class="page">könyv ${esc(q.page)}. old.</span></div>
-        <h2 style="font-size:30px"><button class="wb" ${h(() => speakPair(LANG, 'q:' + q.i, q.q_es, q.q_hu))}>${esc(q.q_es)}</button></h2><p style="margin:0;font-size:19px;font-weight:700;color:#22603C"><button class="wb" ${h(() => speakPair('hu', 'q:' + q.i, q.q_hu, q.q_es))}>${esc(q.q_hu)}</button></p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">${sayBtn(LANG, 'q:' + q.i, q.q_es, 'say', T.LANGLABEL, 'Kérdés ' + T.LANGNAME)}${sayBtn('hu', 'q:' + q.i, q.q_hu, 'say', 'Magyarul', 'Kérdés magyarul')}</div>
+        <h2 style="font-size:30px"><button class="wb" ${h(() => speak(LANG, q.sayEs[0] || 'lq', q.sayEs[1]))}>${esc(q.q_es)}</button></h2><p style="margin:0;font-size:19px;font-weight:700;color:#22603C"><button class="wb" ${h(() => speak('hu', q.sayHu[0] || 'lq', q.sayHu[1]))}>${esc(q.q_hu)}</button></p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">${sayBtn(LANG, q.sayEs[0] || 'lq', q.sayEs[1], 'say', T.LANGLABEL, 'Kérdés ' + T.LANGNAME)}${sayBtn('hu', q.sayHu[0] || 'lq', q.sayHu[1], 'say', 'Magyarul', 'Kérdés magyarul')}</div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">${opts}</div>` +
         (answered ? `<div style="border-radius:16px;padding:14px 16px;background:#F4F7FB;display:flex;flex-direction:column;gap:6px"><p style="margin:0;font-weight:800;font-size:20px;color:${ok ? '#1D5233' : '#8E2A1F'}">${ok ? 'Ügyes! ¡Muy bien!' : 'Hoppá! A jó válasz: ' + esc(q.options[q.answer])}</p><p style="margin:0;font-size:17px">${esc(q.explain)}</p><p style="margin:0;font-size:14px;color:#4A5562">Nézd meg a könyvben: ${esc(q.page)}. oldal</p></div><button class="open-btn" ${h(next)} style="align-self:flex-start">${st.qi + 1 >= order.length ? 'Eredmény' : 'Következő kérdés →'}</button>` : '') + `</div>`;
     }
@@ -228,9 +242,9 @@ function renderAll() {
       <div class="card" id="dictList">${dictRows(groups)}${list.length ? '' : '<p style="margin:0;padding:20px;font-weight:700">Nincs találat. Próbálj másik szót!</p>'}</div></section>`;
   }
   if (st.view === 'quiz') {
-    const chips = [['all', 'Mind']].concat(D.units.map(x => [x.id, x.num + '. fejezet'])).map(x => `<button class="chip${st.quizUnit === x[0] ? ' on' : ''}" ${h(() => startQuiz(x[0]))}>${esc(x[1])}</button>`).join('');
+    const scU0 = st.quizUnit.indexOf('c:') === 0 ? (D.units.find(u => u.concepts.some(c => 'c:' + c.id === st.quizUnit)) || {}).id : st.quizUnit; const chips = [['all', 'Mind']].concat(D.units.map(x => [x.id, x.num + '. fejezet'])).map(x => `<button class="chip${scU0 === x[0] ? ' on' : ''}" ${h(() => startQuiz(x[0]))}>${esc(x[1])}</button>`).join('');
     const qp = quizPanel(); const right = qp.right, line = qp.line, order = qp.order;
-    m += `<section style="display:flex;flex-direction:column;gap:14px"><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">Melyik fejezetből?</span>${chips}</div>
+    m += `<section style="display:flex;flex-direction:column;gap:14px"><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">Melyik fejezetből?</span>${chips}</div>${quizChipsHtml(false)}
       <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start"><div class="card" style="flex:1 1 220px;max-width:300px;padding:16px;align-items:center;gap:8px"><div style="width:200px;height:200px">${kitty(st.mood)}</div><p style="margin:0;font-size:22px;font-weight:800;color:#1F4E79;text-align:center">${line}</p><p style="margin:0;font-weight:800;font-size:18px">Pont: ${st.score} / ${order.length}</p></div>
       <div style="flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:14px">${right}</div></div></section>`;
   }
@@ -243,7 +257,7 @@ function renderAll() {
     if (c) {
       const gal = c.gallery && c.gallery.length; const unit = D.units.find(x => x.concepts.some(k => k.id === c.id)); const t = st.ltab;
       const ICON = { explain: 'M4 6h16M4 12h16M4 18h10', dialogue: 'M4 5h16v10H9l-5 4V5z', examples: 'M5 12l4 4L19 6', words: 'M4 4h12l4 4v12H4zM8 12h8M8 16h8', used: 'M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zM8 7h6M8 11h6', quiz: 'M9 9a3 3 0 1 1 3 3v2M12 18h.01' };
-      const tabs = [['explain', 'Magyarázat'], ['dialogue', 'Párbeszéd'], ['examples', 'Példák'], ['used', 'Szavak a leckéből'], ['words', 'Fejezet szótára'], ['quiz', 'Kvíz']].map(x => `<button class="ltab${t === x[0] ? ' on' : ''}" ${h(() => { stopVoice(); st.ltab = x[0]; st.wordOpen = null; if (x[0] === 'quiz' && (st.quizUnit !== unit.id || !st.order)) startQuiz(unit.id); else render(); })}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${ICON[x[0]]}"></path></svg>${x[1]}</button>`).join('');
+      const tabs = [['explain', 'Magyarázat'], ['dialogue', 'Párbeszéd'], ['examples', 'Példák'], ['used', 'Szavak a leckéből'], ['words', 'Fejezet szótára'], ['quiz', 'Kvíz']].map(x => `<button class="ltab${t === x[0] ? ' on' : ''}" ${h(() => { stopVoice(); st.ltab = x[0]; st.wordOpen = null; if (x[0] === 'quiz' && (st.quizUnit !== 'c:' + c.id || !st.order)) startQuiz('c:' + c.id); else render(); })}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${ICON[x[0]]}"></path></svg>${x[1]}</button>`).join('');
       let body = '';
       if (t === 'explain') {
         if (c.sentences && c.sentences.length) body = `<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><h3 style="font-size:26px;color:#1F4E79;flex:1 1 200px">Magyarázat mondatonként</h3>${seqBtn(c.sentences.flatMap((x, i) => [[LANG, 's:' + c.id + ':' + i, x.es], ['hu', 's:' + c.id + ':' + i, x.hu]]), 'Mind: ' + T.LANGNAME + ', majd magyarul')}</div>` +
@@ -268,7 +282,7 @@ function renderAll() {
       }
       if (t === 'words') { const gl = D.glossary.filter(g => g.unit === unit.id);
         body = `<h3 style="font-size:26px;color:#1F4E79">Fejezet szótára · ${unit.num}. fejezet · ${gl.length} szó</h3><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px">${gl.map(g => `<div class="sent" style="flex-direction:row;align-items:center;gap:10px"><div style="flex:1 1 120px;min-width:0"><div class="en" style="font-size:21px"><button class="wb" ${h(() => speakPair(LANG, 'g:' + g.i, g.es, g.hu))}>${esc(g.es)}</button></div><div class="huT" style="font-size:17px"><button class="wb" ${h(() => speakPair('hu', 'g:' + g.i, g.hu, g.es))}>${esc(g.hu)}</button></div></div>${sayBtn(LANG, 'g:' + g.i, g.es, 'mini', T.LANGCODE, 'Szó ' + T.LANGNAME + ': ' + g.es)}${sayBtn('hu', 'g:' + g.i, g.hu, 'mini', 'HU', 'Szó magyarul: ' + g.hu)}</div>`).join('')}</div>`; }
-      if (t === 'quiz') { const qp = quizPanel(); body = `<div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start"><div class="card" style="flex:0 1 200px;padding:12px;align-items:center;gap:6px"><div style="width:150px;height:150px">${kitty(st.mood)}</div><p style="margin:0;font-size:20px;font-weight:900;color:#1F4E79;text-align:center">${qp.line}</p><p style="margin:0;font-weight:800">Pont: ${st.score} / ${qp.order.length}</p></div><div style="flex:999 1 360px;min-width:0;display:flex;flex-direction:column;gap:14px">${qp.right}</div></div>`; }
+      if (t === 'quiz') { const qp = quizPanel(); body = quizChipsHtml(true) + `<div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start"><div class="card" style="flex:0 1 200px;padding:12px;align-items:center;gap:6px"><div style="width:150px;height:150px">${kitty(st.mood)}</div><p style="margin:0;font-size:20px;font-weight:900;color:#1F4E79;text-align:center">${qp.line}</p><p style="margin:0;font-weight:800">Pont: ${st.score} / ${qp.order.length}</p></div><div style="flex:999 1 360px;min-width:0;display:flex;flex-direction:column;gap:14px">${qp.right}</div></div>`; }
       ov = `<div class="overlay" role="dialog" aria-modal="true" aria-label="${esc(c.es)}"><div class="card" style="width:100%;max-width:900px;margin:auto 0;gap:0;background:#FFF4D6">
         <div style="display:flex;gap:14px;padding:16px 18px;flex-wrap:wrap;align-items:center;background:#FFFFFF;border-bottom:3px solid #F2D9B8"><img src="${c.img}" alt="${esc(c.es)}" style="width:150px;aspect-ratio:320/220;object-fit:cover;border-radius:14px;border:3px solid #F2D9B8">
           <div style="flex:1 1 280px;min-width:0"><span style="font-size:14px;font-weight:800;color:#4A5562">${esc(c.kind)} · <span class="page">könyv ${esc(c.pages)}. old.</span></span><h2 style="font-size:34px;color:#B85A12"><button class="wb" ${h(() => speakPair(LANG, 't:' + c.id, c.es, c.hu))}>${esc(c.es)}</button></h2><p style="margin:2px 0 0;font-size:22px;font-weight:800;color:#22603C"><button class="wb" ${h(() => speakPair('hu', 't:' + c.id, c.hu, c.es))}>${esc(c.hu)}</button> ${sayBtn(LANG, 't:' + c.id, c.es, 'mini', T.LANGCODE, 'Cím ' + T.LANGNAME)} ${sayBtn('hu', 't:' + c.id, c.hu, 'mini', 'HU', 'Cím magyarul')}</p></div>
@@ -300,7 +314,8 @@ renderAll();
 </body>
 </html>'''
 ART = {'lengua': 'https://claude.ai/artifact/1tJPrUjBo5DXqLrYogDZuZ', 'mat': 'https://claude.ai/artifact/68g68ADA96YRsRUhLaZxZX', 'cs': 'https://claude.ai/artifact/9reMXnCfG475XKG5ifExp1', 'ns': 'https://claude.ai/artifact/MyZ3rHSonfUrspu9dTCw31', 'ac': 'https://claude.ai/artifact/Uj5fLaZBPZ71p765Kd8ukQ', 'en': 'https://claude.ai/artifact/BvC94WtSPnGc64pvzygwNd'}[subj]
-out = html.replace('__PLUSJS__', PLUSJS.replace('</script', '<\\/script')).replace('__PLUSCSS__', PLUSCSS).replace('__PLUSDATA__', json.dumps(PLUS, ensure_ascii=False).replace('</', '<\\/')).replace('__XAUDIO__', json.dumps(XAUDIO)).replace('__SUBJ__', subj).replace('__CSS__', css).replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')).replace('__KITTY__', json.dumps(KITTY).replace('</', '<\\/')).replace('__SPK__', SPK).replace('__ARTIFACT__', ART)
+LQJS = open('/home/claude/subjects/tools/lessonquiz.js', encoding='utf-8').read()
+out = html.replace('__LQJS__', LQJS.replace('</script', '<\\/script')).replace('__PLUSJS__', PLUSJS.replace('</script', '<\\/script')).replace('__PLUSCSS__', PLUSCSS).replace('__PLUSDATA__', json.dumps(PLUS, ensure_ascii=False).replace('</', '<\\/')).replace('__XAUDIO__', json.dumps(XAUDIO)).replace('__SUBJ__', subj).replace('__CSS__', css).replace('__DATA__', json.dumps(data, ensure_ascii=False).replace('</', '<\\/')).replace('__KITTY__', json.dumps(KITTY).replace('</', '<\\/')).replace('__SPK__', SPK).replace('__ARTIFACT__', ART)
 for k, v in CFG.items(): out = out.replace('__' + k + '__', v)
 assert '__' not in re.sub(r'data:image[^"]*', '', out).replace('__proto__', ''), [m.start() for m in re.finditer('__', out)][:3]
 open(f'{outdir}/index.html', 'w', encoding='utf-8').write(out)

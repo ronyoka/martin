@@ -12,6 +12,7 @@ pb=f'/home/claude/subjects/{subj}/plus_blobs.json'
 if os.path.exists(pb):
     b=json.load(open(pb)); cfg.update(PLUS_URL='/_blob/'+b['plus_data'],PLUSJS_URL='/_blob/'+b['plus_js'],PLUSCSS_URL='/_blob/'+b['plus_css'],XLANG_URL='/_blob/'+b['x_lang'],XHU_URL='/_blob/'+b['x_hu'],SUBJ=subj)
 s=open('/home/claude/subjects/tools/Main.template.html').read()
+s=s.replace('__LQJS__',open('/home/claude/subjects/tools/lessonquiz.js',encoding='utf-8').read().replace('</script','<\\/script'))
 for k,v in cfg.items(): s=s.replace('__'+k+'__',v)
 assert '__' not in s.replace('__import__',''), [l for l in s.split('\n') if '__' in l][:3]
 open(out,'w').write(s); print('written',out)
