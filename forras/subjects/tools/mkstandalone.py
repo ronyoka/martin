@@ -38,6 +38,12 @@ for lang in (L, 'hu'):
     if os.path.exists(src):
         shutil.copy(src, f'{outdir}/{subj}_{lang}.mp4'); data['audio'][lang] = f'{subj}_{lang}.mp4'
 PLUS = json.load(open(f'{folder}/out/plus_data.json'))
+if PLUS.get('pages', {}).get('audio'):  # könyvoldalak hangja: offline a fájl a mappában (<subj>_pg_<unit>_<lang>.mp4)
+    for u, m in PLUS['pages']['audio'].items():
+        for l in list(m):
+            src = f'{folder}/out/pg_{u}_{l}.mp4'; dst = f'{subj}_pg_{u}_{l}.mp4'
+            if os.path.exists(src): shutil.copy(src, f'{outdir}/{dst}')
+            m[l] = dst
 PLUSJS = open(f'{folder}/out/plus.bundle.js', encoding='utf-8').read()
 PLUSCSS = open(f'{folder}/out/plus.css', encoding='utf-8').read()
 XAUDIO = {}

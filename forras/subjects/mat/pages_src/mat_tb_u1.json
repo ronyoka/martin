@@ -1,0 +1,5619 @@
+{
+ "pages": [
+  {
+   "id": "tb10",
+   "book": "tb",
+   "page": 10,
+   "unit": "u1",
+   "title": "Números de 4 cifras",
+   "title_hu": "Négyjegyű számok",
+   "summary_hu": "Fejezetnyitó oldal: Nadia városa új szelektív hulladékgyűjtő konténereket rakott ki az utcákra és parkokba, mert naponta több ezer hulladékot gyűjtenek össze. A fejezet a négyjegyű számokról szól.",
+   "words": [
+    {
+     "w": "el ayuntamiento",
+     "hu": "a városháza, az önkormányzat"
+    },
+    {
+     "w": "el reciclaje",
+     "hu": "az újrahasznosítás"
+    },
+    {
+     "w": "el contenedor",
+     "hu": "a (szemét)konténer"
+    },
+    {
+     "w": "los residuos",
+     "hu": "a hulladék, a szemét"
+    },
+    {
+     "w": "la calle",
+     "hu": "az utca"
+    },
+    {
+     "w": "el parque",
+     "hu": "a park"
+    },
+    {
+     "w": "miles",
+     "hu": "ezrek, több ezer"
+    },
+    {
+     "w": "cada día",
+     "hu": "minden nap"
+    },
+    {
+     "w": "recoger",
+     "hu": "összegyűjteni"
+    },
+    {
+     "w": "la cifra",
+     "hu": "a számjegy"
+    },
+    {
+     "w": "en casa",
+     "hu": "otthon"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb10_1",
+     "n": "1",
+     "text": "¿Hay algún contenedor parecido a los de las imágenes en el lugar donde vives?",
+     "text_hu": "Van olyan konténer, mint a képeken, ott, ahol laksz?",
+     "items": [
+      {
+       "id": "tb10_1a",
+       "q": "¿Hay algún contenedor parecido a los de las imágenes (contenedores de colores para reciclar) en el lugar donde vives?",
+       "q_hu": "Van a lakóhelyeden olyan színes szelektív konténer, mint a képeken?",
+       "kind": "open",
+       "answer": "Respuesta personal. Por ejemplo: Sí, hay contenedores amarillos, azules y verdes en mi calle.",
+       "answer_hu": "Saját válasz. Pl.: Igen, az utcánkban van sárga, kék és zöld konténer."
+      }
+     ]
+    },
+    {
+     "id": "tb10_2",
+     "n": "2",
+     "text": "¿Cómo podrías saber qué acciones de reciclaje hacéis en casa?",
+     "text_hu": "Hogyan tudhatnád meg, mit tesztek otthon az újrahasznosításért?",
+     "items": [
+      {
+       "id": "tb10_2a",
+       "q": "¿Cómo podrías saber qué acciones de reciclaje hacéis en casa?",
+       "q_hu": "Hogyan tudhatnád meg, mit tesztek otthon az újrahasznosításért (szelektív gyűjtés)?",
+       "kind": "open",
+       "answer": "Por ejemplo: observando durante una semana qué residuos separamos y anotándolo en una tabla, o preguntando a mi familia.",
+       "answer_hu": "Pl.: egy hétig figyelem és táblázatba írom, milyen szemetet válogatunk szét, vagy megkérdezem a családomat."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb11",
+   "book": "tb",
+   "page": 11,
+   "unit": "u1",
+   "title": "¿Qué vamos a aprender?",
+   "title_hu": "Mit fogunk tanulni?",
+   "summary_hu": "A fejezetnyitó második oldala: képek különböző színű szelektív konténerekről és egy városházáról. A lista megmutatja, mit tanulunk a fejezetben: négyjegyű számok, számok összehasonlítása és kerekítése, összeadás, kivonás, ezek tulajdonságai, fejszámolás és szöveges feladatok.",
+   "words": [
+    {
+     "w": "¿Qué vamos a aprender?",
+     "hu": "Mit fogunk tanulni?"
+    },
+    {
+     "w": "la comparación de números",
+     "hu": "a számok összehasonlítása"
+    },
+    {
+     "w": "la aproximación",
+     "hu": "a kerekítés"
+    },
+    {
+     "w": "la suma",
+     "hu": "az összeadás"
+    },
+    {
+     "w": "la resta",
+     "hu": "a kivonás"
+    },
+    {
+     "w": "las propiedades",
+     "hu": "a tulajdonságok"
+    },
+    {
+     "w": "el cálculo mental",
+     "hu": "a fejszámolás"
+    },
+    {
+     "w": "la resolución de problemas",
+     "hu": "a szöveges feladatok megoldása"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb11_obs",
+     "n": "Obs",
+     "text": "Observa las fotos de los contenedores.",
+     "text_hu": "Nézd meg a konténerekről készült képeket.",
+     "items": [
+      {
+       "id": "tb11_obsa",
+       "q": "En las fotos hay contenedores de varios colores: amarillo, verde, marrón y azul. ¿Qué crees que se tira en cada uno?",
+       "q_hu": "A képeken különböző színű konténerek vannak: sárga, zöld, barna és kék. Szerinted mit dobunk mindegyikbe?",
+       "kind": "open",
+       "answer": "Amarillo: envases de plástico y latas; verde: vidrio; marrón: restos orgánicos (comida); azul: papel y cartón.",
+       "answer_hu": "Sárga: műanyag csomagolás és fémdoboz; zöld: üveg; barna: szerves hulladék (ételmaradék); kék: papír és karton."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb12",
+   "book": "tb",
+   "page": 12,
+   "unit": "u1",
+   "title": "Actívate",
+   "title_hu": "Bemelegítés",
+   "summary_hu": "Ismétlő bemelegítés a háromjegyű számokkal: számok kirakása kockadobásokból, a legnagyobb és legkisebb háromjegyű szám, szomszédos számok, és egy logikai feladat három gyerek magasságáról.",
+   "words": [
+    {
+     "w": "lanzar",
+     "hu": "dobni"
+    },
+    {
+     "w": "el dado",
+     "hu": "a dobókocka"
+    },
+    {
+     "w": "la tirada",
+     "hu": "a dobás"
+    },
+    {
+     "w": "la cifra",
+     "hu": "a számjegy"
+    },
+    {
+     "w": "el mayor",
+     "hu": "a legnagyobb"
+    },
+    {
+     "w": "el menor",
+     "hu": "a legkisebb"
+    },
+    {
+     "w": "intercambiar",
+     "hu": "felcserélni"
+    },
+    {
+     "w": "consecutivos",
+     "hu": "egymást követő"
+    },
+    {
+     "w": "inmediatamente anterior",
+     "hu": "közvetlenül előtte lévő"
+    },
+    {
+     "w": "inmediatamente posterior",
+     "hu": "közvetlenül utána következő"
+    },
+    {
+     "w": "la estatura",
+     "hu": "a testmagasság"
+    },
+    {
+     "w": "impar",
+     "hu": "páratlan"
+    },
+    {
+     "w": "medir",
+     "hu": "mérni; valamekkora magas"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb12_1",
+     "n": "1",
+     "text": "Lanza 3 veces un dado. (En la imagen salen: 5, 1 y 6.)",
+     "text_hu": "Dobj háromszor egy dobókockával. (A képen ezek jöttek ki: 5, 1 és 6.)",
+     "items": [
+      {
+       "id": "tb12_1a",
+       "q": "Con las cifras 5, 1 y 6, escribe todos los números de 3 cifras que se pueden formar (sin repetir cifras).",
+       "q_hu": "Az 5, 1 és 6 számjegyekből írd le az összes háromjegyű számot, amit ki lehet rakni (mindegyik számjegy egyszer).",
+       "kind": "open",
+       "answer": "156, 165, 516, 561, 615, 651",
+       "answer_hu": "156, 165, 516, 561, 615, 651"
+      },
+      {
+       "id": "tb12_1b",
+       "q": "Lee los números que has escrito.",
+       "q_hu": "Olvasd fel a számokat, amiket leírtál.",
+       "kind": "open",
+       "answer": "ciento cincuenta y seis, ciento sesenta y cinco, quinientos dieciséis, quinientos sesenta y uno, seiscientos quince, seiscientos cincuenta y uno",
+       "answer_hu": "százötvenhat, százhatvanöt, ötszáztizenhat, ötszázhatvanegy, hatszáztizenöt, hatszázötvenegy"
+      },
+      {
+       "id": "tb12_1c",
+       "q": "Con las cifras 5, 1 y 6: ¿cuál es el mayor número de 3 cifras?",
+       "q_hu": "Az 5, 1, 6 számjegyekből: melyik a legnagyobb háromjegyű szám?",
+       "kind": "num",
+       "answer": "651"
+      },
+      {
+       "id": "tb12_1d",
+       "q": "Con las cifras 5, 1 y 6: ¿cuál es el menor número de 3 cifras?",
+       "q_hu": "Az 5, 1, 6 számjegyekből: melyik a legkisebb háromjegyű szám?",
+       "kind": "num",
+       "answer": "156"
+      },
+      {
+       "id": "tb12_1e",
+       "q": "Di qué ocurre si eliges uno de los números e intercambias el orden de sus cifras.",
+       "q_hu": "Mondd el, mi történik, ha kiválasztasz egy számot, és felcseréled a számjegyei sorrendjét.",
+       "kind": "open",
+       "answer": "Se obtiene otro número distinto de la lista, porque cada cifra cambia de valor según su posición (ej.: 516 → 615).",
+       "answer_hu": "Másik számot kapunk a listából, mert a számjegy értéke attól függ, hol áll (pl. 516 → 615)."
+      },
+      {
+       "id": "tb12_1f",
+       "q": "Suma los dos números mayores: 651 + 615 = ?",
+       "q_hu": "Add össze a két legnagyobb számot: 651 + 615 = ?",
+       "kind": "num",
+       "answer": "1266"
+      },
+      {
+       "id": "tb12_1g",
+       "q": "Resta los dos números menores: 165 − 156 = ?",
+       "q_hu": "Vond ki egymásból a két legkisebb számot: 165 − 156 = ?",
+       "kind": "num",
+       "answer": "9"
+      }
+     ]
+    },
+    {
+     "id": "tb12_2",
+     "n": "2",
+     "text": "Escribe cuál es el mayor y el menor de todos los números de 3 cifras que existen.",
+     "text_hu": "Írd le, melyik a legnagyobb és melyik a legkisebb háromjegyű szám, ami létezik.",
+     "items": [
+      {
+       "id": "tb12_2a",
+       "q": "¿Cuál es el mayor número de 3 cifras?",
+       "q_hu": "Melyik a legnagyobb háromjegyű szám?",
+       "kind": "num",
+       "answer": "999"
+      },
+      {
+       "id": "tb12_2b",
+       "q": "¿Cuál es el menor número de 3 cifras?",
+       "q_hu": "Melyik a legkisebb háromjegyű szám?",
+       "kind": "num",
+       "answer": "100"
+      }
+     ]
+    },
+    {
+     "id": "tb12_3",
+     "n": "3",
+     "text": "Averigua qué número mayor de 100 termina en 3 y sus cifras son números consecutivos.",
+     "text_hu": "Találd ki, melyik 100-nál nagyobb szám végződik 3-ra, és a számjegyei egymás után következő számok.",
+     "items": [
+      {
+       "id": "tb12_3a",
+       "q": "¿Qué número mayor de 100 termina en 3 y sus cifras son consecutivas?",
+       "q_hu": "Melyik 100-nál nagyobb szám végződik 3-ra, és számjegyei egymást követik?",
+       "kind": "num",
+       "answer": "123"
+      },
+      {
+       "id": "tb12_3b",
+       "q": "Escribe el número inmediatamente anterior a 123.",
+       "q_hu": "Írd le a 123 előtti számot.",
+       "kind": "num",
+       "answer": "122"
+      },
+      {
+       "id": "tb12_3c",
+       "q": "Escribe el número inmediatamente posterior a 123.",
+       "q_hu": "Írd le a 123 utáni számot.",
+       "kind": "num",
+       "answer": "124"
+      }
+     ]
+    },
+    {
+     "id": "tb12_4",
+     "n": "4",
+     "text": "Indica cuánto miden estos tres amigos.",
+     "text_hu": "Mondd meg, milyen magas ez a három barát.",
+     "items": [
+      {
+       "id": "tb12_4a",
+       "q": "Las estaturas son 105 cm, 120 cm y 135 cm. La niña del pelo rizado dice: «Todas las cifras de mi estatura son números impares». ¿Cuánto mide?",
+       "q_hu": "A magasságok: 105 cm, 120 cm és 135 cm. A göndör hajú lány azt mondja: „A magasságom minden számjegye páratlan.” Milyen magas?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "105 cm",
+         "hu": "105 cm"
+        },
+        {
+         "t": "120 cm",
+         "hu": "120 cm"
+        },
+        {
+         "t": "135 cm",
+         "hu": "135 cm"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb12_4b",
+       "q": "Las estaturas son 105 cm, 120 cm y 135 cm. La niña del pelo liso dice: «No soy la más alta ni la más baja». ¿Cuánto mide?",
+       "q_hu": "A magasságok: 105 cm, 120 cm és 135 cm. Az egyenes hajú lány azt mondja: „Nem én vagyok a legmagasabb, és nem is a legalacsonyabb.” Milyen magas?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "105 cm",
+         "hu": "105 cm"
+        },
+        {
+         "t": "120 cm",
+         "hu": "120 cm"
+        },
+        {
+         "t": "135 cm",
+         "hu": "135 cm"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb12_4c",
+       "q": "Las estaturas son 105 cm, 120 cm y 135 cm. El niño dice: «Mi estatura tiene un 5 en las unidades». ¿Cuánto mide (la de 135 cm ya es de la niña rizada)?",
+       "q_hu": "A magasságok: 105 cm, 120 cm és 135 cm. A fiú azt mondja: „A magasságomban az egyesek helyén 5 áll.” Milyen magas (a 135 cm már a göndör lányé)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "105 cm",
+         "hu": "105 cm"
+        },
+        {
+         "t": "120 cm",
+         "hu": "120 cm"
+        },
+        {
+         "t": "135 cm",
+         "hu": "135 cm"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb13",
+   "book": "tb",
+   "page": 13,
+   "unit": "u1",
+   "title": "Actívate",
+   "title_hu": "Bemelegítés",
+   "summary_hu": "A bemelegítés folytatása: számtrükk (+7, majd −7), a legnagyobb páratlan és legkisebb páros szám kirakása megadott számjegyekből, puzzle-k sorba rendezése. A végén a „Belépőjegy” (Ticket de entrada): önértékelés, mennyire tudod már a fejezet anyagát.",
+   "words": [
+    {
+     "w": "averiguar",
+     "hu": "kitalálni, kideríteni"
+    },
+    {
+     "w": "piensa un número",
+     "hu": "gondolj egy számra"
+    },
+    {
+     "w": "súmale",
+     "hu": "adj hozzá"
+    },
+    {
+     "w": "réstale",
+     "hu": "vonj ki belőle"
+    },
+    {
+     "w": "impar",
+     "hu": "páratlan"
+    },
+    {
+     "w": "par",
+     "hu": "páros"
+    },
+    {
+     "w": "razonar",
+     "hu": "megindokolni, végiggondolni"
+    },
+    {
+     "w": "ordenar",
+     "hu": "sorba rendezni"
+    },
+    {
+     "w": "de mayor a menor",
+     "hu": "a legnagyobbtól a legkisebbig"
+    },
+    {
+     "w": "el puzle",
+     "hu": "a kirakó, puzzle"
+    },
+    {
+     "w": "la pieza",
+     "hu": "a darab"
+    },
+    {
+     "w": "mucho, poco o nada",
+     "hu": "sokat, keveset vagy semmit"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb13_5",
+     "n": "5",
+     "text": "Averigua qué número obtienes si sigues estos pasos: 1) Piensa un número de 3 cifras. 2) Súmale 7. 3) Réstale 7.",
+     "text_hu": "Találd ki, milyen számot kapsz, ha ezeket a lépéseket követed: 1) Gondolj egy háromjegyű számra. 2) Adj hozzá 7-et. 3) Vonj ki belőle 7-et.",
+     "items": [
+      {
+       "id": "tb13_5a",
+       "q": "Piensas el número 482. Le sumas 7 y luego le restas 7. ¿Qué número obtienes?",
+       "q_hu": "A 482-re gondolsz. Hozzáadsz 7-et, aztán kivonsz 7-et. Milyen számot kapsz?",
+       "kind": "num",
+       "answer": "482"
+      },
+      {
+       "id": "tb13_5b",
+       "q": "¿Qué número obtienes siempre al final?",
+       "q_hu": "Mindig milyen számot kapsz a végén?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "El mismo número que pensaste",
+         "hu": "Ugyanazt a számot, amire gondoltál"
+        },
+        {
+         "t": "El número más 7",
+         "hu": "A számnál 7-tel többet"
+        },
+        {
+         "t": "El número menos 7",
+         "hu": "A számnál 7-tel kevesebbet"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb13_6",
+     "n": "6",
+     "text": "Escribe el mayor número impar que puedes formar con estas cifras: 0, 2, 7.",
+     "text_hu": "Írd le a legnagyobb páratlan számot, amit ezekből a számjegyekből ki tudsz rakni: 0, 2, 7.",
+     "items": [
+      {
+       "id": "tb13_6a",
+       "q": "¿Cuál es el mayor número impar de 3 cifras con las cifras 0, 2 y 7?",
+       "q_hu": "Melyik a legnagyobb páratlan háromjegyű szám a 0, 2, 7 számjegyekből?",
+       "kind": "num",
+       "answer": "207"
+      },
+      {
+       "id": "tb13_6b",
+       "q": "Razona cuál sería el menor número par de 3 cifras con esas mismas cifras (0, 2, 7).",
+       "q_hu": "Gondold végig: melyik a legkisebb páros háromjegyű szám ugyanezekből a számjegyekből (0, 2, 7)?",
+       "kind": "num",
+       "answer": "270"
+      }
+     ]
+    },
+    {
+     "id": "tb13_7",
+     "n": "7",
+     "text": "Ordena los puzles de Tina de mayor a menor número de piezas.",
+     "text_hu": "Rendezd sorba Tina kirakóit a legtöbb darabostól a legkevesebb darabosig.",
+     "items": [
+      {
+       "id": "tb13_7a",
+       "q": "Los puzles tienen 202, 220 y 200 piezas. Ordénalos de mayor a menor.",
+       "q_hu": "A kirakók 202, 220 és 200 darabosak. Rendezd őket a legnagyobbtól a legkisebbig.",
+       "kind": "type",
+       "answer": "220 > 202 > 200",
+       "alts": [
+        "220, 202, 200",
+        "220 202 200",
+        "220>202>200"
+       ],
+       "answer_hu": "220 > 202 > 200"
+      }
+     ]
+    },
+    {
+     "id": "tb13_ticket",
+     "n": "Ticket",
+     "text": "Ticket de entrada. Lee cada enunciado y di si crees que mucho, poco o nada.",
+     "text_hu": "Belépőjegy. Olvasd el az állításokat, és mondd meg, mennyire tudod: sokat, keveset vagy semmit.",
+     "items": [
+      {
+       "id": "tb13_ticketa",
+       "q": "Comparo números de hasta 4 cifras.",
+       "q_hu": "Össze tudom hasonlítani a legfeljebb négyjegyű számokat.",
+       "kind": "open",
+       "answer": "Respuesta personal: mucho, poco o nada.",
+       "answer_hu": "Saját válasz: sokat, keveset vagy semmit."
+      },
+      {
+       "id": "tb13_ticketb",
+       "q": "Sé aproximar números de hasta 4 cifras.",
+       "q_hu": "Tudom kerekíteni a legfeljebb négyjegyű számokat.",
+       "kind": "open",
+       "answer": "Respuesta personal: mucho, poco o nada.",
+       "answer_hu": "Saját válasz: sokat, keveset vagy semmit."
+      },
+      {
+       "id": "tb13_ticketc",
+       "q": "Sumo y resto números de hasta 4 cifras.",
+       "q_hu": "Össze tudok adni és ki tudok vonni legfeljebb négyjegyű számokat.",
+       "kind": "open",
+       "answer": "Respuesta personal: mucho, poco o nada.",
+       "answer_hu": "Saját válasz: sokat, keveset vagy semmit."
+      },
+      {
+       "id": "tb13_ticketd",
+       "q": "Reconozco y aplico las propiedades de la suma y la resta.",
+       "q_hu": "Felismerem és használom az összeadás és kivonás tulajdonságait.",
+       "kind": "open",
+       "answer": "Respuesta personal: mucho, poco o nada.",
+       "answer_hu": "Saját válasz: sokat, keveset vagy semmit."
+      },
+      {
+       "id": "tb13_tickete",
+       "q": "Resuelvo problemas.",
+       "q_hu": "Meg tudok oldani szöveges feladatokat.",
+       "kind": "open",
+       "answer": "Respuesta personal: mucho, poco o nada.",
+       "answer_hu": "Saját válasz: sokat, keveset vagy semmit."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb14",
+   "book": "tb",
+   "page": 14,
+   "unit": "u1",
+   "title": "Números de 4 cifras",
+   "title_hu": "Négyjegyű számok",
+   "summary_hu": "A négyjegyű számok ezresekből (UM), százasokból (C), tízesekből (D) és egyesekből (U) állnak: 1 UM = 10 C = 100 D = 1000 U. Például 2785 = 2 UM + 7 C + 8 D + 5 U = 2000 + 700 + 80 + 5. Kiolvasáskor az ezresek után mondjuk, hogy „mil”, aztán a maradék háromjegyű számot: „dos mil setecientos ochenta y cinco”. Fejszámolás: 10 hozzáadása és elvétele, 5-re végződő kétjegyű számok összeadása.",
+   "words": [
+    {
+     "w": "la unidad de millar (UM)",
+     "hu": "az ezres"
+    },
+    {
+     "w": "la centena (C)",
+     "hu": "a százas"
+    },
+    {
+     "w": "la decena (D)",
+     "hu": "a tízes"
+    },
+    {
+     "w": "la unidad (U)",
+     "hu": "az egyes"
+    },
+    {
+     "w": "mil",
+     "hu": "ezer"
+    },
+    {
+     "w": "se lee",
+     "hu": "így olvassuk"
+    },
+    {
+     "w": "la cifra",
+     "hu": "a számjegy"
+    },
+    {
+     "w": "formado por",
+     "hu": "valamiből álló"
+    },
+    {
+     "w": "sumar",
+     "hu": "összeadni"
+    },
+    {
+     "w": "restar",
+     "hu": "kivonni"
+    },
+    {
+     "w": "terminado en 5",
+     "hu": "5-re végződő"
+    },
+    {
+     "w": "dos mil setecientos ochenta y cinco",
+     "hu": "kétezer-hétszáznyolcvanöt"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb14_cm",
+     "n": "CM",
+     "text": "Cálculo mental: sumar y restar 10; sumar números de dos cifras terminados en 5.",
+     "text_hu": "Fejszámolás: 10 hozzáadása és elvétele; 5-re végződő kétjegyű számok összeadása.",
+     "items": [
+      {
+       "id": "tb14_cma",
+       "q": "35 + 10",
+       "q_hu": "35 + 10",
+       "kind": "num",
+       "answer": "45"
+      },
+      {
+       "id": "tb14_cmb",
+       "q": "327 + 10",
+       "q_hu": "327 + 10",
+       "kind": "num",
+       "answer": "337"
+      },
+      {
+       "id": "tb14_cmc",
+       "q": "35 − 10",
+       "q_hu": "35 − 10",
+       "kind": "num",
+       "answer": "25"
+      },
+      {
+       "id": "tb14_cmd",
+       "q": "327 − 10",
+       "q_hu": "327 − 10",
+       "kind": "num",
+       "answer": "317"
+      },
+      {
+       "id": "tb14_cme",
+       "q": "35 + 25",
+       "q_hu": "35 + 25",
+       "kind": "num",
+       "answer": "60"
+      },
+      {
+       "id": "tb14_cmf",
+       "q": "15 + 75",
+       "q_hu": "15 + 75",
+       "kind": "num",
+       "answer": "90"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb15",
+   "book": "tb",
+   "page": 15,
+   "unit": "u1",
+   "title": "Números de 4 cifras",
+   "title_hu": "Négyjegyű számok",
+   "summary_hu": "Gyakorlás: négyjegyű számok leírása számjegyekkel, felbontása ezresekre, százasokra, tízesekre, egyesekre, átváltások (UM, C, D, U), azonos számok összekötése, és fejszámolás.",
+   "words": [
+    {
+     "w": "escribir con cifras",
+     "hu": "számjegyekkel leírni"
+    },
+    {
+     "w": "descomponer",
+     "hu": "felbontani"
+    },
+    {
+     "w": "la matrícula",
+     "hu": "a rendszámtábla"
+    },
+    {
+     "w": "completar",
+     "hu": "kiegészíteni"
+    },
+    {
+     "w": "relacionar",
+     "hu": "összekötni, párosítani"
+    },
+    {
+     "w": "la expresión",
+     "hu": "a kifejezés"
+    },
+    {
+     "w": "igual",
+     "hu": "egyenlő"
+    },
+    {
+     "w": "tiene 3 centenas más que",
+     "hu": "3 százassal több, mint"
+    },
+    {
+     "w": "el barrio",
+     "hu": "a városnegyed, környék"
+    },
+    {
+     "w": "las personas",
+     "hu": "az emberek"
+    },
+    {
+     "w": "calcular mentalmente",
+     "hu": "fejben kiszámolni"
+    },
+    {
+     "w": "mil trescientos veinticinco",
+     "hu": "ezerháromszázhuszonöt"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb15_1",
+     "n": "1",
+     "text": "Escribe con cifras.",
+     "text_hu": "Írd le számjegyekkel.",
+     "items": [
+      {
+       "id": "tb15_1a",
+       "q": "Mil trescientos veinticinco",
+       "q_hu": "Mil trescientos veinticinco (ezerháromszázhuszonöt)",
+       "kind": "num",
+       "answer": "1325"
+      },
+      {
+       "id": "tb15_1b",
+       "q": "Cuatro mil quinientos tres",
+       "q_hu": "Cuatro mil quinientos tres (négyezer-ötszázhárom)",
+       "kind": "num",
+       "answer": "4503"
+      },
+      {
+       "id": "tb15_1c",
+       "q": "Siete mil ciento veintiséis",
+       "q_hu": "Siete mil ciento veintiséis (hétezer-százhuszonhat)",
+       "kind": "num",
+       "answer": "7126"
+      },
+      {
+       "id": "tb15_1d",
+       "q": "Tres mil ochenta",
+       "q_hu": "Tres mil ochenta (háromezer-nyolcvan)",
+       "kind": "num",
+       "answer": "3080"
+      }
+     ]
+    },
+    {
+     "id": "tb15_2",
+     "n": "2",
+     "text": "Descompón en unidades los números de estas matrículas.",
+     "text_hu": "Bontsd fel helyiértékekre a rendszámtáblák számait.",
+     "items": [
+      {
+       "id": "tb15_2a",
+       "q": "Matrícula 5139 MPN: descompón 5139 (ej.: 5000 + 100 + 30 + 9).",
+       "q_hu": "5139 MPN rendszám: bontsd fel a 5139-t (pl. 5000 + 100 + 30 + 9).",
+       "kind": "type",
+       "answer": "5000 + 100 + 30 + 9",
+       "alts": [
+        "5000+100+30+9",
+        "5 UM + 1 C + 3 D + 9 U"
+       ]
+      },
+      {
+       "id": "tb15_2b",
+       "q": "Matrícula 8200 KYG: descompón 8200 (ej.: 5000 + 100 + 30 + 9).",
+       "q_hu": "8200 KYG rendszám: bontsd fel a 8200-t (pl. 5000 + 100 + 30 + 9).",
+       "kind": "type",
+       "answer": "8000 + 200",
+       "alts": [
+        "8000+200",
+        "8 UM + 2 C",
+        "8000 + 200 + 0 + 0"
+       ]
+      },
+      {
+       "id": "tb15_2c",
+       "q": "Matrícula 1604 LNS: descompón 1604 (ej.: 5000 + 100 + 30 + 9).",
+       "q_hu": "1604 LNS rendszám: bontsd fel a 1604-t (pl. 5000 + 100 + 30 + 9).",
+       "kind": "type",
+       "answer": "1000 + 600 + 4",
+       "alts": [
+        "1000+600+4",
+        "1 UM + 6 C + 4 U",
+        "1000 + 600 + 0 + 4"
+       ]
+      },
+      {
+       "id": "tb15_2d",
+       "q": "Matrícula 4053 MGT: descompón 4053 (ej.: 5000 + 100 + 30 + 9).",
+       "q_hu": "4053 MGT rendszám: bontsd fel a 4053-t (pl. 5000 + 100 + 30 + 9).",
+       "kind": "type",
+       "answer": "4000 + 50 + 3",
+       "alts": [
+        "4000+50+3",
+        "4 UM + 5 D + 3 U",
+        "4000 + 0 + 50 + 3"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "tb15_3",
+     "n": "3",
+     "text": "Completa.",
+     "text_hu": "Egészítsd ki.",
+     "items": [
+      {
+       "id": "tb15_3a",
+       "q": "3 UM = ? D",
+       "q_hu": "3 ezres = ? tízes",
+       "kind": "num",
+       "answer": "300"
+      },
+      {
+       "id": "tb15_3b",
+       "q": "7 UM = ? U",
+       "q_hu": "7 ezres = ? egyes",
+       "kind": "num",
+       "answer": "7000"
+      },
+      {
+       "id": "tb15_3c",
+       "q": "8 C = ? U",
+       "q_hu": "8 százas = ? egyes",
+       "kind": "num",
+       "answer": "800"
+      },
+      {
+       "id": "tb15_3d",
+       "q": "? UM = 50 C",
+       "q_hu": "? ezres = 50 százas",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb15_3e",
+       "q": "? D = 200 U",
+       "q_hu": "? tízes = 200 egyes",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb15_3f",
+       "q": "? C = 40 D",
+       "q_hu": "? százas = 40 tízes",
+       "kind": "num",
+       "answer": "4"
+      }
+     ]
+    },
+    {
+     "id": "tb15_4",
+     "n": "4",
+     "text": "Relaciona las expresiones que son iguales.",
+     "text_hu": "Kösd össze az egyenlő kifejezéseket.",
+     "items": [
+      {
+       "id": "tb15_4a",
+       "q": "¿Qué número es «mil trescientos cuarenta»?",
+       "q_hu": "Melyik szám ez: „mil trescientos cuarenta” (ezerháromszáznegyven)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb15_4b",
+       "q": "¿Qué número es «siete mil treinta y cinco»?",
+       "q_hu": "Melyik szám ez: „siete mil treinta y cinco” (hétezer-harmincöt)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb15_4c",
+       "q": "¿Qué número es «mil cuatrocientos dieciséis»?",
+       "q_hu": "Melyik szám ez: „mil cuatrocientos dieciséis” (ezernégyszáztizenhat)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "id": "tb15_4d",
+       "q": "¿Qué número es «mil novecientos ochenta y uno»?",
+       "q_hu": "Melyik szám ez: „mil novecientos ochenta y uno” (ezerkilencszáznyolcvanegy)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb15_4e",
+       "q": "¿Qué número es 1000 + 9 × 100 + 8 × 10 + 1?",
+       "q_hu": "Melyik szám ez: 1000 + 9 × 100 + 8 × 10 + 1?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb15_4f",
+       "q": "¿Qué número es 1 UM + 4 C + 1 D + 6 U?",
+       "q_hu": "Melyik szám ez: 1 ezres + 4 százas + 1 tízes + 6 egyes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "id": "tb15_4g",
+       "q": "¿Qué número es 7 × 1000 + 3 × 10 + 5?",
+       "q_hu": "Melyik szám ez: 7 × 1000 + 3 × 10 + 5?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb15_4h",
+       "q": "¿Qué número es 1 UM + 3 C + 4 D?",
+       "q_hu": "Melyik szám ez: 1 ezres + 3 százas + 4 tízes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7035",
+         "hu": "7035"
+        },
+        {
+         "t": "1340",
+         "hu": "1340"
+        },
+        {
+         "t": "1981",
+         "hu": "1981"
+        },
+        {
+         "t": "1416",
+         "hu": "1416"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb15_5",
+     "n": "5",
+     "text": "Escribe con cifras el número que se indica.",
+     "text_hu": "Írd le számjegyekkel a megadott számot.",
+     "items": [
+      {
+       "id": "tb15_5a",
+       "q": "Tiene 8 C + 2 D + 4 U.",
+       "q_hu": "8 százas + 2 tízes + 4 egyes van benne.",
+       "kind": "num",
+       "answer": "824"
+      },
+      {
+       "id": "tb15_5b",
+       "q": "Su descomposición es 2 × 1000 + 3 × 100 + 9 × 10 + 7.",
+       "q_hu": "A felbontása: 2 × 1000 + 3 × 100 + 9 × 10 + 7.",
+       "kind": "num",
+       "answer": "2397"
+      },
+      {
+       "id": "tb15_5c",
+       "q": "Tiene 3 centenas más que 1789.",
+       "q_hu": "3 százassal több, mint 1789.",
+       "kind": "num",
+       "answer": "2089"
+      },
+      {
+       "id": "tb15_5d",
+       "q": "El número inmediatamente anterior a 6000.",
+       "q_hu": "A 6000 előtti szám.",
+       "kind": "num",
+       "answer": "5999"
+      }
+     ]
+    },
+    {
+     "id": "tb15_6",
+     "n": "6",
+     "text": "En el barrio de Pablo viven 1000 + 200 + 60 personas, en el de Lola, 1 UM y 7 C, y en el de Unai, 2035. Razona dónde viven más personas.",
+     "text_hu": "Pablo környékén 1000 + 200 + 60 ember él, Loláén 1 ezres és 7 százas, Unaiéban 2035. Gondold végig, hol élnek a legtöbben.",
+     "items": [
+      {
+       "id": "tb15_6a",
+       "q": "¿Cuántas personas viven en el barrio de Pablo (1000 + 200 + 60)?",
+       "q_hu": "Hányan élnek Pablo környékén (1000 + 200 + 60)?",
+       "kind": "num",
+       "answer": "1260"
+      },
+      {
+       "id": "tb15_6b",
+       "q": "¿Cuántas personas viven en el barrio de Lola (1 UM y 7 C)?",
+       "q_hu": "Hányan élnek Lola környékén (1 ezres és 7 százas)?",
+       "kind": "num",
+       "answer": "1700"
+      },
+      {
+       "id": "tb15_6c",
+       "q": "Pablo: 1260, Lola: 1700, Unai: 2035. ¿Dónde viven más personas?",
+       "q_hu": "Pablo: 1260, Lola: 1700, Unai: 2035. Hol élnek a legtöbben?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "En el barrio de Pablo",
+         "hu": "Pablo környékén"
+        },
+        {
+         "t": "En el barrio de Lola",
+         "hu": "Lola környékén"
+        },
+        {
+         "t": "En el barrio de Unai",
+         "hu": "Unai környékén"
+        }
+       ],
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "tb15_7",
+     "n": "7",
+     "text": "Calcula mentalmente.",
+     "text_hu": "Számold ki fejben.",
+     "items": [
+      {
+       "id": "tb15_7a",
+       "q": "43 + 10",
+       "q_hu": "43 + 10",
+       "kind": "num",
+       "answer": "53"
+      },
+      {
+       "id": "tb15_7b",
+       "q": "76 − 10",
+       "q_hu": "76 − 10",
+       "kind": "num",
+       "answer": "66"
+      },
+      {
+       "id": "tb15_7c",
+       "q": "189 + 10",
+       "q_hu": "189 + 10",
+       "kind": "num",
+       "answer": "199"
+      },
+      {
+       "id": "tb15_7d",
+       "q": "274 − 10",
+       "q_hu": "274 − 10",
+       "kind": "num",
+       "answer": "264"
+      },
+      {
+       "id": "tb15_7e",
+       "q": "35 + 65",
+       "q_hu": "35 + 65",
+       "kind": "num",
+       "answer": "100"
+      },
+      {
+       "id": "tb15_7f",
+       "q": "25 + 45",
+       "q_hu": "25 + 45",
+       "kind": "num",
+       "answer": "70"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb16",
+   "book": "tb",
+   "page": 16,
+   "unit": "u1",
+   "title": "Comparación de números",
+   "title_hu": "Számok összehasonlítása",
+   "summary_hu": "Két négyjegyű szám összehasonlításakor a számjegyek helyét figyeljük. Ha a számoknak különböző számú jegye van, az a nagyobb, amelyiknek több jegye van (3108 > 726). Ha ugyanannyi jegyük van, balról jobbra, egyenként hasonlítjuk össze a számjegyeket (4510 > 4360, mert 5 > 3). A számegyenesen a jobbra lévő szám mindig nagyobb. Fejszámolás: egyjegyű szám hozzáadása és elvétele.",
+   "words": [
+    {
+     "w": "comparar",
+     "hu": "összehasonlítani"
+    },
+    {
+     "w": "mayor que (>)",
+     "hu": "nagyobb, mint"
+    },
+    {
+     "w": "menor que (<)",
+     "hu": "kisebb, mint"
+    },
+    {
+     "w": "la posición",
+     "hu": "a hely, helyzet"
+    },
+    {
+     "w": "la cantidad de cifras",
+     "hu": "a számjegyek száma"
+    },
+    {
+     "w": "igual",
+     "hu": "egyenlő, ugyanaz"
+    },
+    {
+     "w": "empezando por la izquierda",
+     "hu": "balról kezdve"
+    },
+    {
+     "w": "la recta numérica",
+     "hu": "a számegyenes"
+    },
+    {
+     "w": "a la derecha",
+     "hu": "jobbra, a jobb oldalon"
+    },
+    {
+     "w": "a la izquierda",
+     "hu": "balra, a bal oldalon"
+    },
+    {
+     "w": "una a una",
+     "hu": "egyenként"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb16_cm",
+     "n": "CM",
+     "text": "Cálculo mental: sumar y restar un número de una cifra a otro de dos o tres cifras.",
+     "text_hu": "Fejszámolás: egyjegyű szám hozzáadása két- vagy háromjegyű számhoz, és elvétele belőle.",
+     "items": [
+      {
+       "id": "tb16_cma",
+       "q": "5 + 12",
+       "q_hu": "5 + 12",
+       "kind": "num",
+       "answer": "17"
+      },
+      {
+       "id": "tb16_cmb",
+       "q": "7 + 123",
+       "q_hu": "7 + 123",
+       "kind": "num",
+       "answer": "130"
+      },
+      {
+       "id": "tb16_cmc",
+       "q": "37 − 4",
+       "q_hu": "37 − 4",
+       "kind": "num",
+       "answer": "33"
+      },
+      {
+       "id": "tb16_cmd",
+       "q": "216 − 3",
+       "q_hu": "216 − 3",
+       "kind": "num",
+       "answer": "213"
+      }
+     ]
+    },
+    {
+     "id": "tb16_t",
+     "n": "T",
+     "text": "Compara (ejemplos de la teoría).",
+     "text_hu": "Hasonlítsd össze (példák az elméletből).",
+     "items": [
+      {
+       "id": "tb16_ta",
+       "q": "3108 ? 726",
+       "q_hu": "3108 ? 726",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb16_tb",
+       "q": "4510 ? 4360",
+       "q_hu": "4510 ? 4360",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb17",
+   "book": "tb",
+   "page": 17,
+   "unit": "u1",
+   "title": "Comparación de números",
+   "title_hu": "Számok összehasonlítása",
+   "summary_hu": "Gyakorlás: négyjegyű számok összehasonlítása >, <, = jelekkel, pontok leolvasása számegyenesről, Lucía családfáján születési évek összehasonlítása, és fejszámolás egyjegyű számokkal.",
+   "words": [
+    {
+     "w": "completar con los signos",
+     "hu": "kiegészíteni a jelekkel"
+    },
+    {
+     "w": "señalar",
+     "hu": "megmutatni, jelölni"
+    },
+    {
+     "w": "el punto",
+     "hu": "a pont"
+    },
+    {
+     "w": "el árbol genealógico",
+     "hu": "a családfa"
+    },
+    {
+     "w": "el primo / la prima",
+     "hu": "az unokatestvér"
+    },
+    {
+     "w": "tener menos años",
+     "hu": "fiatalabbnak lenni"
+    },
+    {
+     "w": "el familiar",
+     "hu": "a rokon"
+    },
+    {
+     "w": "la edad",
+     "hu": "az életkor"
+    },
+    {
+     "w": "el año de nacimiento",
+     "hu": "a születési év"
+    },
+    {
+     "w": "el pueblo",
+     "hu": "a falu"
+    },
+    {
+     "w": "los habitantes",
+     "hu": "a lakosok"
+    },
+    {
+     "w": "explicar",
+     "hu": "elmagyarázni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb17_1",
+     "n": "1",
+     "text": "Completa con los signos >, <, =.",
+     "text_hu": "Tedd ki a megfelelő jelet: >, <, =.",
+     "items": [
+      {
+       "id": "tb17_1a",
+       "q": "3154 ? 3156",
+       "q_hu": "3154 ? 3156",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb17_1b",
+       "q": "4427 ? 4530",
+       "q_hu": "4427 ? 4530",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb17_1c",
+       "q": "7038 ? 7108",
+       "q_hu": "7038 ? 7108",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb17_1d",
+       "q": "542 ? 1977",
+       "q_hu": "542 ? 1977",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb17_1e",
+       "q": "2691 ? 6004",
+       "q_hu": "2691 ? 6004",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb17_1f",
+       "q": "9090 ? 9009",
+       "q_hu": "9090 ? 9009",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb17_2",
+     "n": "2",
+     "text": "Indica qué número señala cada punto.",
+     "text_hu": "Mondd meg, melyik számot jelöli az egyes pont.",
+     "items": [
+      {
+       "id": "tb17_2a",
+       "q": "En una recta numérica de 900 a 1200 (cada rayita vale 10), el punto A está 2 rayitas después de 900. ¿Qué número señala?",
+       "q_hu": "A 900-tól 1200-ig tartó számegyenesen (minden kis vonás 10-et ér) a(z) A pont 2 vonással a 900 után van. Melyik számot jelöli?",
+       "kind": "num",
+       "answer": "920"
+      },
+      {
+       "id": "tb17_2b",
+       "q": "En una recta numérica de 900 a 1200 (cada rayita vale 10), el punto B está 1 rayita antes de 1000. ¿Qué número señala?",
+       "q_hu": "A 900-tól 1200-ig tartó számegyenesen (minden kis vonás 10-et ér) a(z) B pont 1 vonással az 1000 előtt van. Melyik számot jelöli?",
+       "kind": "num",
+       "answer": "990"
+      },
+      {
+       "id": "tb17_2c",
+       "q": "En una recta numérica de 900 a 1200 (cada rayita vale 10), el punto C está 4 rayitas después de 1000. ¿Qué número señala?",
+       "q_hu": "A 900-tól 1200-ig tartó számegyenesen (minden kis vonás 10-et ér) a(z) C pont 4 vonással az 1000 után van. Melyik számot jelöli?",
+       "kind": "num",
+       "answer": "1040"
+      },
+      {
+       "id": "tb17_2d",
+       "q": "En una recta numérica de 900 a 1200 (cada rayita vale 10), el punto D está 1 rayita después de 1100. ¿Qué número señala?",
+       "q_hu": "A 900-tól 1200-ig tartó számegyenesen (minden kis vonás 10-et ér) a(z) D pont 1 vonással az 1100 után van. Melyik számot jelöli?",
+       "kind": "num",
+       "answer": "1110"
+      },
+      {
+       "id": "tb17_2e",
+       "q": "En una recta numérica de 900 a 1200 (cada rayita vale 10), el punto E está en medio entre la 7.ª y la 8.ª rayita después de 1100. ¿Qué número señala?",
+       "q_hu": "A 900-tól 1200-ig tartó számegyenesen (minden kis vonás 10-et ér) a(z) E pont az 1100 utáni 7. és 8. vonás között középen van. Melyik számot jelöli?",
+       "kind": "num",
+       "answer": "1175"
+      }
+     ]
+    },
+    {
+     "id": "tb17_3",
+     "n": "3",
+     "text": "Lucía ha construido su árbol genealógico.",
+     "text_hu": "Lucía elkészítette a családfáját.",
+     "items": [
+      {
+       "id": "tb17_3a",
+       "q": "Abuelos: 1943, 1947, 1947, 1950. Padres y tíos: 1977, 1977, 1975, 1972, 1980. Lucía nació en 2012 y su hermano en 2009. Sus primos nacieron en 2008, 2010 y 2010. ¿Cuál de sus primos tiene menos años?",
+       "q_hu": "Nagyszülők: 1943, 1947, 1947, 1950. Szülők, nagybácsik, nagynénik: 1977, 1977, 1975, 1972, 1980. Lucía 2012-ben, a testvére 2009-ben született. Az unokatestvérei 2008-ban, 2010-ben és 2010-ben születtek. Melyik unokatestvére a legfiatalabb?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Los nacidos en 2010",
+         "hu": "A 2010-ben születettek"
+        },
+        {
+         "t": "El nacido en 2008",
+         "hu": "A 2008-ban született"
+        },
+        {
+         "t": "El nacido en 2009",
+         "hu": "A 2009-ben született"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb17_3b",
+       "q": "Los años de nacimiento de la familia de Lucía son: 1943, 1947, 1947, 1950, 1977, 1977, 1975, 1972, 1980, 2012, 2009, 2008, 2010, 2010. Razona: ¿en qué año nació el familiar con más edad?",
+       "q_hu": "Lucía családtagjainak születési évei: 1943, 1947, 1947, 1950, 1977, 1977, 1975, 1972, 1980, 2012, 2009, 2008, 2010, 2010. Gondold végig: melyik évben született a legidősebb rokon?",
+       "kind": "num",
+       "answer": "1943",
+       "answer_hu": "1943-ban: ő a nagypapa (a legkisebb születési év = a legidősebb)."
+      },
+      {
+       "id": "tb17_3c",
+       "q": "Representa los años de nacimiento en una recta numérica.",
+       "q_hu": "Ábrázold a születési éveket egy számegyenesen.",
+       "kind": "open",
+       "answer": "Recta de 1940 a 2015: 1943, 1947, 1950, 1972, 1975, 1977, 1980, 2008, 2009, 2010, 2012 (de izquierda a derecha).",
+       "answer_hu": "Számegyenes 1940-től 2015-ig: 1943, 1947, 1950, 1972, 1975, 1977, 1980, 2008, 2009, 2010, 2012 (balról jobbra)."
+      }
+     ]
+    },
+    {
+     "id": "tb17_4",
+     "n": "4",
+     "text": "Paula vive en un pueblo de 1 UM + 7 C + 5 D habitantes y Alonso en otro de 1500. Explica en qué pueblo hay más habitantes.",
+     "text_hu": "Paula egy 1 ezres + 7 százas + 5 tízes lakosú faluban él, Alonso egy 1500 lakosúban. Magyarázd el, melyik faluban élnek többen.",
+     "items": [
+      {
+       "id": "tb17_4a",
+       "q": "¿Cuántos habitantes tiene el pueblo de Paula (1 UM + 7 C + 5 D)?",
+       "q_hu": "Hány lakosa van Paula falujának (1 ezres + 7 százas + 5 tízes)?",
+       "kind": "num",
+       "answer": "1750"
+      },
+      {
+       "id": "tb17_4b",
+       "q": "Paula: 1750 habitantes; Alonso: 1500. ¿En qué pueblo hay más habitantes?",
+       "q_hu": "Paula faluja: 1750 lakos; Alonsóé: 1500. Melyik faluban élnek többen?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "En el de Paula",
+         "hu": "Paula falujában"
+        },
+        {
+         "t": "En el de Alonso",
+         "hu": "Alonso falujában"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb17_5",
+     "n": "5",
+     "text": "Calcula mentalmente.",
+     "text_hu": "Számold ki fejben.",
+     "items": [
+      {
+       "id": "tb17_5a",
+       "q": "7 + 32",
+       "q_hu": "7 + 32",
+       "kind": "num",
+       "answer": "39"
+      },
+      {
+       "id": "tb17_5b",
+       "q": "46 − 4",
+       "q_hu": "46 − 4",
+       "kind": "num",
+       "answer": "42"
+      },
+      {
+       "id": "tb17_5c",
+       "q": "3 + 154",
+       "q_hu": "3 + 154",
+       "kind": "num",
+       "answer": "157"
+      },
+      {
+       "id": "tb17_5d",
+       "q": "2 + 46",
+       "q_hu": "2 + 46",
+       "kind": "num",
+       "answer": "48"
+      },
+      {
+       "id": "tb17_5e",
+       "q": "78 − 5",
+       "q_hu": "78 − 5",
+       "kind": "num",
+       "answer": "73"
+      },
+      {
+       "id": "tb17_5f",
+       "q": "266 − 3",
+       "q_hu": "266 − 3",
+       "kind": "num",
+       "answer": "263"
+      },
+      {
+       "id": "tb17_5g",
+       "q": "5 + 31",
+       "q_hu": "5 + 31",
+       "kind": "num",
+       "answer": "36"
+      },
+      {
+       "id": "tb17_5h",
+       "q": "39 − 7",
+       "q_hu": "39 − 7",
+       "kind": "num",
+       "answer": "32"
+      },
+      {
+       "id": "tb17_5i",
+       "q": "6 + 432",
+       "q_hu": "6 + 432",
+       "kind": "num",
+       "answer": "438"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb18",
+   "book": "tb",
+   "page": 18,
+   "unit": "u1",
+   "title": "Aproximación de números",
+   "title_hu": "Számok kerekítése",
+   "summary_hu": "Kerekítéskor (közelítéskor) megkeressük a legközelebbi tízest, százast vagy ezrest. Pl. 1362 tízesre kerekítve 1360 (mert közelebb van hozzá), százasra kerekítve 1400. Kerekítési szabály: ha a következő számjegy 5-nél kisebb, a tízesek (százasok) számjegye marad; ha 5 vagy nagyobb, 1-et hozzáadunk. 1342 → 1340, 1346 → 1350.",
+   "words": [
+    {
+     "w": "aproximar",
+     "hu": "kerekíteni, közelíteni"
+    },
+    {
+     "w": "la aproximación",
+     "hu": "a kerekítés, közelítés"
+    },
+    {
+     "w": "más cercano",
+     "hu": "legközelebbi"
+    },
+    {
+     "w": "estar entre",
+     "hu": "valami között lenni"
+    },
+    {
+     "w": "más cerca de",
+     "hu": "közelebb valamihez"
+    },
+    {
+     "w": "el redondeo",
+     "hu": "a kerekítés"
+    },
+    {
+     "w": "redondear",
+     "hu": "kerekíteni"
+    },
+    {
+     "w": "fijarse en",
+     "hu": "figyelni valamire"
+    },
+    {
+     "w": "menor que 5",
+     "hu": "5-nél kisebb"
+    },
+    {
+     "w": "igual o mayor que 5",
+     "hu": "5 vagy annál nagyobb"
+    },
+    {
+     "w": "dejar como está",
+     "hu": "úgy hagyni, ahogy van"
+    },
+    {
+     "w": "sumar 1",
+     "hu": "1-et hozzáadni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb18_t",
+     "n": "T",
+     "text": "Aproxima (ejemplos de la teoría).",
+     "text_hu": "Kerekíts (példák az elméletből).",
+     "items": [
+      {
+       "id": "tb18_ta",
+       "q": "Aproxima 1362 a las decenas.",
+       "q_hu": "Kerekítsd az 1362-t tízesre.",
+       "kind": "num",
+       "answer": "1360"
+      },
+      {
+       "id": "tb18_tb",
+       "q": "Aproxima 1362 a las centenas.",
+       "q_hu": "Kerekítsd az 1362-t százasra.",
+       "kind": "num",
+       "answer": "1400"
+      },
+      {
+       "id": "tb18_tc",
+       "q": "Redondea 1342 a las decenas.",
+       "q_hu": "Kerekítsd az 1342-t tízesre.",
+       "kind": "num",
+       "answer": "1340"
+      },
+      {
+       "id": "tb18_td",
+       "q": "Redondea 1346 a las decenas.",
+       "q_hu": "Kerekítsd az 1346-ot tízesre.",
+       "kind": "num",
+       "answer": "1350"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb19",
+   "book": "tb",
+   "page": 19,
+   "unit": "u1",
+   "title": "Aproximación de números",
+   "title_hu": "Számok kerekítése",
+   "summary_hu": "Gyakorlás: számok tízesre és százasra kerekítése táblázatban, azonos kerekítésű számok párosítása, műemlékek látogatószámának kerekítése, és annak eldöntése, melyik közelítés pontosabb.",
+   "words": [
+    {
+     "w": "la tabla",
+     "hu": "a táblázat"
+    },
+    {
+     "w": "según el ejemplo",
+     "hu": "a példa szerint"
+    },
+    {
+     "w": "la misma aproximación",
+     "hu": "ugyanaz a kerekített érték"
+    },
+    {
+     "w": "redondear a la decena",
+     "hu": "tízesre kerekíteni"
+    },
+    {
+     "w": "los visitantes",
+     "hu": "a látogatók"
+    },
+    {
+     "w": "el monumento",
+     "hu": "a műemlék"
+    },
+    {
+     "w": "el más visitado",
+     "hu": "a leglátogatottabb"
+    },
+    {
+     "w": "recibir",
+     "hu": "fogadni, kapni"
+    },
+    {
+     "w": "el evento deportivo",
+     "hu": "a sportesemény"
+    },
+    {
+     "w": "acudir",
+     "hu": "eljönni, elmenni valahová"
+    },
+    {
+     "w": "aproximadamente",
+     "hu": "körülbelül"
+    },
+    {
+     "w": "correcto",
+     "hu": "helyes"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb19_1",
+     "n": "1",
+     "text": "Completa esta tabla según el ejemplo. (Ejemplo: 2314 está entre 2310 y 2320; aproximación a las decenas: 2310.)",
+     "text_hu": "Töltsd ki a táblázatot a példa szerint. (Példa: 2314 a 2310 és 2320 között van; tízesre kerekítve 2310.)",
+     "items": [
+      {
+       "id": "tb19_1a",
+       "q": "4567 está entre las decenas ? y 4570. ¿Cuál es la decena menor?",
+       "q_hu": "4567 a ? és 4570 tízesek között van. Melyik a kisebb tízes?",
+       "kind": "num",
+       "answer": "4560"
+      },
+      {
+       "id": "tb19_1b",
+       "q": "4567 está entre las decenas 4560 y ?. ¿Cuál es la decena mayor?",
+       "q_hu": "4567 a 4560 és ? tízesek között van. Melyik a nagyobb tízes?",
+       "kind": "num",
+       "answer": "4570"
+      },
+      {
+       "id": "tb19_1c",
+       "q": "Aproximación de 4567 a las decenas.",
+       "q_hu": "Kerekítsd a(z) 4567-t tízesre.",
+       "kind": "num",
+       "answer": "4570"
+      },
+      {
+       "id": "tb19_1d",
+       "q": "3891 está entre las decenas ? y 3900. ¿Cuál es la decena menor?",
+       "q_hu": "3891 a ? és 3900 tízesek között van. Melyik a kisebb tízes?",
+       "kind": "num",
+       "answer": "3890"
+      },
+      {
+       "id": "tb19_1e",
+       "q": "3891 está entre las decenas 3890 y ?. ¿Cuál es la decena mayor?",
+       "q_hu": "3891 a 3890 és ? tízesek között van. Melyik a nagyobb tízes?",
+       "kind": "num",
+       "answer": "3900"
+      },
+      {
+       "id": "tb19_1f",
+       "q": "Aproximación de 3891 a las decenas.",
+       "q_hu": "Kerekítsd a(z) 3891-t tízesre.",
+       "kind": "num",
+       "answer": "3890"
+      },
+      {
+       "id": "tb19_1g",
+       "q": "1932 está entre las decenas ? y 1940. ¿Cuál es la decena menor?",
+       "q_hu": "1932 a ? és 1940 tízesek között van. Melyik a kisebb tízes?",
+       "kind": "num",
+       "answer": "1930"
+      },
+      {
+       "id": "tb19_1h",
+       "q": "1932 está entre las decenas 1930 y ?. ¿Cuál es la decena mayor?",
+       "q_hu": "1932 a 1930 és ? tízesek között van. Melyik a nagyobb tízes?",
+       "kind": "num",
+       "answer": "1940"
+      },
+      {
+       "id": "tb19_1i",
+       "q": "Aproximación de 1932 a las decenas.",
+       "q_hu": "Kerekítsd a(z) 1932-t tízesre.",
+       "kind": "num",
+       "answer": "1930"
+      },
+      {
+       "id": "tb19_1j",
+       "q": "6043 está entre las decenas ? y 6050. ¿Cuál es la decena menor?",
+       "q_hu": "6043 a ? és 6050 tízesek között van. Melyik a kisebb tízes?",
+       "kind": "num",
+       "answer": "6040"
+      },
+      {
+       "id": "tb19_1k",
+       "q": "6043 está entre las decenas 6040 y ?. ¿Cuál es la decena mayor?",
+       "q_hu": "6043 a 6040 és ? tízesek között van. Melyik a nagyobb tízes?",
+       "kind": "num",
+       "answer": "6050"
+      },
+      {
+       "id": "tb19_1l",
+       "q": "Aproximación de 6043 a las decenas.",
+       "q_hu": "Kerekítsd a(z) 6043-t tízesre.",
+       "kind": "num",
+       "answer": "6040"
+      }
+     ]
+    },
+    {
+     "id": "tb19_2",
+     "n": "2",
+     "text": "Relaciona los números con la misma aproximación a las centenas.",
+     "text_hu": "Kösd össze azokat a számokat, amelyeknek ugyanaz a százasra kerekített értéke.",
+     "items": [
+      {
+       "id": "tb19_2a",
+       "q": "¿Qué número tiene la misma aproximación a las centenas que 2325?",
+       "q_hu": "Melyik számnak ugyanaz a százasra kerekített értéke, mint a(z) 2325-nak?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "2406",
+         "hu": "2406"
+        },
+        {
+         "t": "2250",
+         "hu": "2250"
+        },
+        {
+         "t": "2493",
+         "hu": "2493"
+        },
+        {
+         "t": "2760",
+         "hu": "2760"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb19_2b",
+       "q": "¿Qué número tiene la misma aproximación a las centenas que 2471?",
+       "q_hu": "Melyik számnak ugyanaz a százasra kerekített értéke, mint a(z) 2471-nak?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "2406",
+         "hu": "2406"
+        },
+        {
+         "t": "2250",
+         "hu": "2250"
+        },
+        {
+         "t": "2493",
+         "hu": "2493"
+        },
+        {
+         "t": "2760",
+         "hu": "2760"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb19_2c",
+       "q": "¿Qué número tiene la misma aproximación a las centenas que 2828?",
+       "q_hu": "Melyik számnak ugyanaz a százasra kerekített értéke, mint a(z) 2828-nak?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "2406",
+         "hu": "2406"
+        },
+        {
+         "t": "2250",
+         "hu": "2250"
+        },
+        {
+         "t": "2493",
+         "hu": "2493"
+        },
+        {
+         "t": "2760",
+         "hu": "2760"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "id": "tb19_2d",
+       "q": "¿Qué número tiene la misma aproximación a las centenas que 2387?",
+       "q_hu": "Melyik számnak ugyanaz a százasra kerekített értéke, mint a(z) 2387-nak?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "2406",
+         "hu": "2406"
+        },
+        {
+         "t": "2250",
+         "hu": "2250"
+        },
+        {
+         "t": "2493",
+         "hu": "2493"
+        },
+        {
+         "t": "2760",
+         "hu": "2760"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb19_3",
+     "n": "3",
+     "text": "Redondea a la decena el número de visitantes.",
+     "text_hu": "Kerekítsd tízesre a látogatók számát.",
+     "items": [
+      {
+       "id": "tb19_3a",
+       "q": "El monumento A (un acueducto) recibe 3219 visitantes. Redondea a la decena.",
+       "q_hu": "Az A műemléket (egy vízvezetéket) 3219-en látogatják. Kerekítsd tízesre.",
+       "kind": "num",
+       "answer": "3220"
+      },
+      {
+       "id": "tb19_3b",
+       "q": "El monumento B (un palacio con fuente de leones) recibe 9658 visitantes. Redondea a la decena.",
+       "q_hu": "A B műemléket (palota oroszlános szökőkúttal) 9658-an látogatják. Kerekítsd tízesre.",
+       "kind": "num",
+       "answer": "9660"
+      },
+      {
+       "id": "tb19_3c",
+       "q": "El monumento C (una iglesia antigua) recibe 1624 visitantes. Redondea a la decena.",
+       "q_hu": "A C műemléket (egy régi templomot) 1624-en látogatják. Kerekítsd tízesre.",
+       "kind": "num",
+       "answer": "1620"
+      },
+      {
+       "id": "tb19_3d",
+       "q": "A: 3219, B: 9658, C: 1624 visitantes. Razona qué monumento es el más visitado.",
+       "q_hu": "A: 3219, B: 9658, C: 1624 látogató. Gondold végig, melyik a leglátogatottabb műemlék.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "A",
+         "hu": "A"
+        },
+        {
+         "t": "B",
+         "hu": "B"
+        },
+        {
+         "t": "C",
+         "hu": "C"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb19_3e",
+       "q": "A: 3219, B: 9658, C: 1624 visitantes. ¿Y el que menos?",
+       "q_hu": "A: 3219, B: 9658, C: 1624 látogató. És melyiket látogatják a legkevesebben?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "A",
+         "hu": "A"
+        },
+        {
+         "t": "B",
+         "hu": "B"
+        },
+        {
+         "t": "C",
+         "hu": "C"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb19_3f",
+       "q": "A: 3219, B: 9658, C: 1624 visitantes. Averigua qué monumento recibe entre 3000 y 4000 visitantes.",
+       "q_hu": "A: 3219, B: 9658, C: 1624 látogató. Derítsd ki, melyik műemléket látogatják 3000 és 4000 közötti számban.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "A",
+         "hu": "A"
+        },
+        {
+         "t": "B",
+         "hu": "B"
+        },
+        {
+         "t": "C",
+         "hu": "C"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb19_4",
+     "n": "4",
+     "text": "A un evento deportivo acuden 2567 personas. Explica qué es más correcto decir.",
+     "text_hu": "Egy sporteseményre 2567 ember megy el. Magyarázd el, melyiket helyesebb mondani.",
+     "items": [
+      {
+       "id": "tb19_4a",
+       "q": "Acuden 2567 personas. ¿Qué es más correcto decir?",
+       "q_hu": "2567 ember megy el. Melyiket helyesebb mondani?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Acuden 2500 personas aproximadamente.",
+         "hu": "Körülbelül 2500 ember megy el."
+        },
+        {
+         "t": "Acuden 2600 personas aproximadamente.",
+         "hu": "Körülbelül 2600 ember megy el."
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb19_4b",
+       "q": "Explica por qué.",
+       "q_hu": "Magyarázd el, miért.",
+       "kind": "open",
+       "answer": "Porque 2567 está más cerca de 2600 que de 2500 (la cifra de las decenas es 6, mayor que 5).",
+       "answer_hu": "Mert 2567 közelebb van a 2600-hoz, mint a 2500-hoz (a tízesek helyén 6 áll, ami 5-nél nagyobb)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb20",
+   "book": "tb",
+   "page": 20,
+   "unit": "u1",
+   "title": "Suma",
+   "title_hu": "Összeadás",
+   "summary_hu": "Összeadáskor mindig egyest egyessel, tízest tízessel stb. adunk össze. Az összeadandók neve „sumando”, az eredményé „suma” (összeg). Írásbeli összeadás (en vertical): jobbról kezdve összeadjuk az egyeseket, a maradékot (átvitelt) a tízesekhez írjuk, és így tovább: 2362 + 1938 = 4300. Összeadás felbontással: mindkét számot helyiértékekre bontjuk, külön összeadjuk az ezreseket, százasokat, tízeseket, egyeseket, majd újra összerakjuk a számot.",
+   "words": [
+    {
+     "w": "la suma",
+     "hu": "az összeadás; az összeg"
+    },
+    {
+     "w": "el sumando",
+     "hu": "az összeadandó (tag)"
+    },
+    {
+     "w": "sumar",
+     "hu": "összeadni"
+    },
+    {
+     "w": "en vertical",
+     "hu": "írásban, egymás alá írva"
+    },
+    {
+     "w": "colocar",
+     "hu": "odaírni, elhelyezni"
+    },
+    {
+     "w": "llevar",
+     "hu": "átvinni (maradékot)"
+    },
+    {
+     "w": "la descomposición",
+     "hu": "a felbontás"
+    },
+    {
+     "w": "descomponer",
+     "hu": "felbontani"
+    },
+    {
+     "w": "por separado",
+     "hu": "külön-külön"
+    },
+    {
+     "w": "recomponer",
+     "hu": "újra összerakni"
+    },
+    {
+     "w": "si es necesario",
+     "hu": "ha szükséges"
+    },
+    {
+     "w": "por último",
+     "hu": "végül"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb20_t",
+     "n": "T",
+     "text": "Suma (ejemplo de la teoría).",
+     "text_hu": "Adj össze (példa az elméletből).",
+     "items": [
+      {
+       "id": "tb20_ta",
+       "q": "2362 + 1938",
+       "q_hu": "2362 + 1938",
+       "kind": "num",
+       "answer": "4300"
+      },
+      {
+       "id": "tb20_tb",
+       "q": "Por descomposición: 2000 + 1000 = ?",
+       "q_hu": "Felbontással: 2000 + 1000 = ?",
+       "kind": "num",
+       "answer": "3000"
+      },
+      {
+       "id": "tb20_tc",
+       "q": "Por descomposición: 300 + 900 = ?",
+       "q_hu": "Felbontással: 300 + 900 = ?",
+       "kind": "num",
+       "answer": "1200"
+      },
+      {
+       "id": "tb20_td",
+       "q": "Por descomposición: 60 + 30 = ?",
+       "q_hu": "Felbontással: 60 + 30 = ?",
+       "kind": "num",
+       "answer": "90"
+      },
+      {
+       "id": "tb20_te",
+       "q": "Por descomposición: 2 + 8 = ?",
+       "q_hu": "Felbontással: 2 + 8 = ?",
+       "kind": "num",
+       "answer": "10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb21",
+   "book": "tb",
+   "page": 21,
+   "unit": "u1",
+   "title": "Suma",
+   "title_hu": "Összeadás",
+   "summary_hu": "Gyakorlás: négyjegyű számok írásbeli összeadása, hiányzó számjegyek pótlása összeadásban, számsorozatok folytatása (+5, +10, +100), összeadás felbontással, és egy szöveges feladat a postáról.",
+   "words": [
+    {
+     "w": "resolver",
+     "hu": "megoldani"
+    },
+    {
+     "w": "calcular",
+     "hu": "kiszámolni"
+    },
+    {
+     "w": "el resultado",
+     "hu": "az eredmény"
+    },
+    {
+     "w": "completar",
+     "hu": "kiegészíteni"
+    },
+    {
+     "w": "continuar",
+     "hu": "folytatni"
+    },
+    {
+     "w": "la serie",
+     "hu": "a számsor, sorozat"
+    },
+    {
+     "w": "fácil",
+     "hu": "könnyű"
+    },
+    {
+     "w": "explicar por qué",
+     "hu": "elmagyarázni, miért"
+    },
+    {
+     "w": "el servicio de Correos",
+     "hu": "a posta"
+    },
+    {
+     "w": "repartir",
+     "hu": "kihordani, szétosztani"
+    },
+    {
+     "w": "la carta",
+     "hu": "a levél"
+    },
+    {
+     "w": "por la mañana",
+     "hu": "délelőtt, reggel"
+    },
+    {
+     "w": "por la tarde",
+     "hu": "délután"
+    },
+    {
+     "w": "en el día",
+     "hu": "egész nap, aznap"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb21_1",
+     "n": "1",
+     "text": "Resuelve estas sumas.",
+     "text_hu": "Oldd meg ezeket az összeadásokat.",
+     "items": [
+      {
+       "id": "tb21_1a",
+       "q": "2863 + 3451",
+       "q_hu": "2863 + 3451",
+       "kind": "num",
+       "answer": "6314"
+      },
+      {
+       "id": "tb21_1b",
+       "q": "6087 + 914",
+       "q_hu": "6087 + 914",
+       "kind": "num",
+       "answer": "7001"
+      },
+      {
+       "id": "tb21_1c",
+       "q": "7053 + 1868",
+       "q_hu": "7053 + 1868",
+       "kind": "num",
+       "answer": "8921"
+      }
+     ]
+    },
+    {
+     "id": "tb21_2",
+     "n": "2",
+     "text": "Calcula el resultado.",
+     "text_hu": "Számold ki az eredményt.",
+     "items": [
+      {
+       "id": "tb21_2a",
+       "q": "4582 + 1643",
+       "q_hu": "4582 + 1643",
+       "kind": "num",
+       "answer": "6225"
+      },
+      {
+       "id": "tb21_2b",
+       "q": "7890 + 1234",
+       "q_hu": "7890 + 1234",
+       "kind": "num",
+       "answer": "9124"
+      },
+      {
+       "id": "tb21_2c",
+       "q": "5678 + 3576",
+       "q_hu": "5678 + 3576",
+       "kind": "num",
+       "answer": "9254"
+      },
+      {
+       "id": "tb21_2d",
+       "q": "3009 + 2005",
+       "q_hu": "3009 + 2005",
+       "kind": "num",
+       "answer": "5014"
+      },
+      {
+       "id": "tb21_2e",
+       "q": "3269 + 5840",
+       "q_hu": "3269 + 5840",
+       "kind": "num",
+       "answer": "9109"
+      },
+      {
+       "id": "tb21_2f",
+       "q": "2184 + 3951",
+       "q_hu": "2184 + 3951",
+       "kind": "num",
+       "answer": "6135"
+      }
+     ]
+    },
+    {
+     "id": "tb21_3",
+     "n": "3",
+     "text": "Completa.",
+     "text_hu": "Egészítsd ki.",
+     "items": [
+      {
+       "id": "tb21_3a",
+       "q": "3485 + 1?23 = 520▢ → ¿qué cifra va en el lugar de ? (centenas del segundo sumando)?",
+       "q_hu": "3485 + 1?23 = 520▢ → melyik számjegy kerül a ? helyére (a második szám százasai)?",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb21_3b",
+       "q": "3485 + 1?23 = 520▢ → ¿qué cifra va en ▢ (unidades del resultado)?",
+       "q_hu": "3485 + 1?23 = 520▢ → melyik számjegy kerül a ▢ helyére (az eredmény egyesei)?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb21_3c",
+       "q": "76?8 + ▢595 = 9213 → ¿qué cifra va en ? (decenas del primer sumando)?",
+       "q_hu": "76?8 + ▢595 = 9213 → melyik számjegy kerül a ? helyére (az első szám tízesei)?",
+       "kind": "num",
+       "answer": "1"
+      },
+      {
+       "id": "tb21_3d",
+       "q": "76?8 + ▢595 = 9213 → ¿qué cifra va en ▢ (unidades de millar del segundo sumando)?",
+       "q_hu": "76?8 + ▢595 = 9213 → melyik számjegy kerül a ▢ helyére (a második szám ezresei)?",
+       "kind": "num",
+       "answer": "1"
+      },
+      {
+       "id": "tb21_3e",
+       "q": "987 + 4?62 = ▢54△ → ¿qué cifra va en ? (centenas del segundo sumando)?",
+       "q_hu": "987 + 4?62 = ▢54△ → melyik számjegy kerül a ? helyére (a második szám százasai)?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb21_3f",
+       "q": "987 + 4?62 = ▢54△ → ¿qué cifra va en ▢ (unidades de millar del resultado)?",
+       "q_hu": "987 + 4?62 = ▢54△ → melyik számjegy kerül a ▢ helyére (az eredmény ezresei)?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb21_3g",
+       "q": "987 + 4?62 = ▢54△ → ¿qué cifra va en △ (unidades del resultado)?",
+       "q_hu": "987 + 4?62 = ▢54△ → melyik számjegy kerül a △ helyére (az eredmény egyesei)?",
+       "kind": "num",
+       "answer": "9"
+      }
+     ]
+    },
+    {
+     "id": "tb21_4",
+     "n": "4",
+     "text": "Continúa estas series.",
+     "text_hu": "Folytasd a számsorokat.",
+     "items": [
+      {
+       "id": "tb21_4a",
+       "q": "741, 746, ?, ?, ? (cada vez +5)",
+       "q_hu": "741, 746, ?, ?, ? (mindig +5)",
+       "kind": "type",
+       "answer": "751, 756, 761",
+       "alts": [
+        "751 756 761",
+        "751,756,761"
+       ]
+      },
+      {
+       "id": "tb21_4b",
+       "q": "402, 412, ?, ?, ? (cada vez +10)",
+       "q_hu": "402, 412, ?, ?, ? (mindig +10)",
+       "kind": "type",
+       "answer": "422, 432, 442",
+       "alts": [
+        "422 432 442",
+        "422,432,442"
+       ]
+      },
+      {
+       "id": "tb21_4c",
+       "q": "328, 428, ?, ?, ? (cada vez +100)",
+       "q_hu": "328, 428, ?, ?, ? (mindig +100)",
+       "kind": "type",
+       "answer": "528, 628, 728",
+       "alts": [
+        "528 628 728",
+        "528,628,728"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "tb21_5",
+     "n": "5",
+     "text": "Calcula estas sumas por descomposición.",
+     "text_hu": "Számold ki ezeket az összeadásokat felbontással.",
+     "items": [
+      {
+       "id": "tb21_5a",
+       "q": "7750 + 1560",
+       "q_hu": "7750 + 1560",
+       "kind": "num",
+       "answer": "9310"
+      },
+      {
+       "id": "tb21_5b",
+       "q": "1977 + 1979",
+       "q_hu": "1977 + 1979",
+       "kind": "num",
+       "answer": "3956"
+      },
+      {
+       "id": "tb21_5c",
+       "q": "5555 + 3445",
+       "q_hu": "5555 + 3445",
+       "kind": "num",
+       "answer": "9000"
+      }
+     ]
+    },
+    {
+     "id": "tb21_6",
+     "n": "6",
+     "text": "¿De qué forma te resulta más fácil hacer una suma? ¿En vertical o por descomposición? Explica por qué.",
+     "text_hu": "Hogyan könnyebb neked összeadni? Írásban (egymás alá írva) vagy felbontással? Magyarázd el, miért.",
+     "items": [
+      {
+       "id": "tb21_6a",
+       "q": "¿De qué forma te resulta más fácil hacer una suma: en vertical o por descomposición? ¿Por qué?",
+       "q_hu": "Hogyan könnyebb összeadni: írásban vagy felbontással? Miért?",
+       "kind": "open",
+       "answer": "Respuesta personal. Ej.: En vertical, porque sumo cifra a cifra y no me pierdo.",
+       "answer_hu": "Saját válasz. Pl.: Írásban, mert számjegyenként adok össze, és nem keveredek bele."
+      }
+     ]
+    },
+    {
+     "id": "tb21_7",
+     "n": "7",
+     "text": "El servicio de Correos ha repartido 2437 cartas por la mañana y 3845 por la tarde. Calcula cuántas ha repartido en el día.",
+     "text_hu": "A posta délelőtt 2437, délután 3845 levelet hordott ki. Számold ki, hányat hordott ki egész nap.",
+     "items": [
+      {
+       "id": "tb21_7a",
+       "q": "2437 cartas por la mañana y 3845 por la tarde. ¿Cuántas cartas en total?",
+       "q_hu": "Délelőtt 2437, délután 3845 levél. Hány levél összesen?",
+       "kind": "num",
+       "answer": "6282"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb22",
+   "book": "tb",
+   "page": 22,
+   "unit": "u1",
+   "title": "Resta",
+   "title_hu": "Kivonás",
+   "summary_hu": "Kivonáskor egyest egyesből, tízest tízesből stb. vonunk ki. A kisebbítendő neve „minuendo”, a kivonandóé „sustraendo”, az eredményé „diferencia” (különbség); a kisebbítendő nagyobb a kivonandónál. Írásbeli kivonásnál, ha egy helyiértéken nem lehet kivonni (pl. 2-ből 6-ot), 1 tízest 10 egyesre váltunk: 3452 − 1396 = 2056. Kivonás felbontással: mindkét számot helyiértékekre bontjuk, helyiértékenként kivonunk, majd a különbségeket összeadjuk: 6357 − 2143 = 4000 + 200 + 10 + 4 = 4214.",
+   "words": [
+    {
+     "w": "la resta",
+     "hu": "a kivonás"
+    },
+    {
+     "w": "restar",
+     "hu": "kivonni"
+    },
+    {
+     "w": "el minuendo",
+     "hu": "a kisebbítendő"
+    },
+    {
+     "w": "el sustraendo",
+     "hu": "a kivonandó"
+    },
+    {
+     "w": "la diferencia",
+     "hu": "a különbség"
+    },
+    {
+     "w": "no puedo restar 6 a 2",
+     "hu": "2-ből nem tudok 6-ot kivonni"
+    },
+    {
+     "w": "convertir",
+     "hu": "átváltani"
+    },
+    {
+     "w": "convierto 1 decena en 10 unidades",
+     "hu": "1 tízest 10 egyesre váltok"
+    },
+    {
+     "w": "resta en vertical",
+     "hu": "írásbeli kivonás"
+    },
+    {
+     "w": "resta por descomposición",
+     "hu": "kivonás felbontással"
+    },
+    {
+     "w": "por último",
+     "hu": "végül"
+    },
+    {
+     "w": "se suman las diferencias",
+     "hu": "összeadjuk a különbségeket"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb22_t",
+     "n": "T",
+     "text": "Resta (ejemplos de la teoría).",
+     "text_hu": "Vonj ki (példák az elméletből).",
+     "items": [
+      {
+       "id": "tb22_ta",
+       "q": "3452 − 1396",
+       "q_hu": "3452 − 1396",
+       "kind": "num",
+       "answer": "2056"
+      },
+      {
+       "id": "tb22_tb",
+       "q": "Por descomposición: 7 − 3 = ?",
+       "q_hu": "Felbontással: 7 − 3 = ?",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb22_tc",
+       "q": "Por descomposición: 50 − 40 = ?",
+       "q_hu": "Felbontással: 50 − 40 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb22_td",
+       "q": "Por descomposición: 300 − 100 = ?",
+       "q_hu": "Felbontással: 300 − 100 = ?",
+       "kind": "num",
+       "answer": "200"
+      },
+      {
+       "id": "tb22_te",
+       "q": "Por descomposición: 6000 − 2000 = ?",
+       "q_hu": "Felbontással: 6000 − 2000 = ?",
+       "kind": "num",
+       "answer": "4000"
+      },
+      {
+       "id": "tb22_tf",
+       "q": "6357 − 2143",
+       "q_hu": "6357 − 2143",
+       "kind": "num",
+       "answer": "4214"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb23",
+   "book": "tb",
+   "page": 23,
+   "unit": "u1",
+   "title": "Resta",
+   "title_hu": "Kivonás",
+   "summary_hu": "Gyakorlás: a kivonás tagjainak megnevezése (kisebbítendő, kivonandó, különbség), kivonás felbontással és írásban, számsorok visszafelé (−5, −10, −100), és két szöveges feladat (színházjegy-pontok, tóban telelő madarak).",
+   "words": [
+    {
+     "w": "los términos",
+     "hu": "a tagok (a művelet részei)"
+    },
+    {
+     "w": "el minuendo",
+     "hu": "a kisebbítendő"
+    },
+    {
+     "w": "el sustraendo",
+     "hu": "a kivonandó"
+    },
+    {
+     "w": "la diferencia",
+     "hu": "a különbség"
+    },
+    {
+     "w": "ordenados de menor a mayor",
+     "hu": "a legkisebbtől a legnagyobbig sorba rendezve"
+    },
+    {
+     "w": "conseguir",
+     "hu": "megszerezni, összegyűjteni"
+    },
+    {
+     "w": "los puntos",
+     "hu": "a pontok"
+    },
+    {
+     "w": "las entradas de teatro",
+     "hu": "a színházjegyek"
+    },
+    {
+     "w": "faltar",
+     "hu": "hiányozni"
+    },
+    {
+     "w": "de momento",
+     "hu": "egyelőre, most"
+    },
+    {
+     "w": "la laguna",
+     "hu": "a tó, lagúna"
+    },
+    {
+     "w": "el ave / las aves",
+     "hu": "a madár / a madarak"
+    },
+    {
+     "w": "pasar el invierno",
+     "hu": "áttelelni"
+    },
+    {
+     "w": "emigrar",
+     "hu": "elvándorolni, elköltözni"
+    },
+    {
+     "w": "quedar",
+     "hu": "maradni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb23_1",
+     "n": "1",
+     "text": "Escribe los términos y el resultado de estas restas.",
+     "text_hu": "Írd le a kivonások tagjait és az eredményt.",
+     "items": [
+      {
+       "id": "tb23_1a",
+       "q": "En la resta 6241 − 3578, ¿cuál es el minuendo?",
+       "q_hu": "A(z) 6241 − 3578 kivonásban mi a kisebbítendő (minuendo)?",
+       "kind": "num",
+       "answer": "6241"
+      },
+      {
+       "id": "tb23_1b",
+       "q": "En la resta 6241 − 3578, ¿cuál es el sustraendo?",
+       "q_hu": "A(z) 6241 − 3578 kivonásban mi a kivonandó (sustraendo)?",
+       "kind": "num",
+       "answer": "3578"
+      },
+      {
+       "id": "tb23_1c",
+       "q": "En la resta 6241 − 3578, ¿cuál es la diferencia?",
+       "q_hu": "A(z) 6241 − 3578 kivonásban mennyi a különbség (diferencia)?",
+       "kind": "num",
+       "answer": "2663"
+      },
+      {
+       "id": "tb23_1d",
+       "q": "En la resta 9015 − 4369, ¿cuál es el minuendo?",
+       "q_hu": "A(z) 9015 − 4369 kivonásban mi a kisebbítendő (minuendo)?",
+       "kind": "num",
+       "answer": "9015"
+      },
+      {
+       "id": "tb23_1e",
+       "q": "En la resta 9015 − 4369, ¿cuál es el sustraendo?",
+       "q_hu": "A(z) 9015 − 4369 kivonásban mi a kivonandó (sustraendo)?",
+       "kind": "num",
+       "answer": "4369"
+      },
+      {
+       "id": "tb23_1f",
+       "q": "En la resta 9015 − 4369, ¿cuál es la diferencia?",
+       "q_hu": "A(z) 9015 − 4369 kivonásban mennyi a különbség (diferencia)?",
+       "kind": "num",
+       "answer": "4646"
+      },
+      {
+       "id": "tb23_1g",
+       "q": "En la resta 5302 − 1984, ¿cuál es el minuendo?",
+       "q_hu": "A(z) 5302 − 1984 kivonásban mi a kisebbítendő (minuendo)?",
+       "kind": "num",
+       "answer": "5302"
+      },
+      {
+       "id": "tb23_1h",
+       "q": "En la resta 5302 − 1984, ¿cuál es el sustraendo?",
+       "q_hu": "A(z) 5302 − 1984 kivonásban mi a kivonandó (sustraendo)?",
+       "kind": "num",
+       "answer": "1984"
+      },
+      {
+       "id": "tb23_1i",
+       "q": "En la resta 5302 − 1984, ¿cuál es la diferencia?",
+       "q_hu": "A(z) 5302 − 1984 kivonásban mennyi a különbség (diferencia)?",
+       "kind": "num",
+       "answer": "3318"
+      },
+      {
+       "id": "tb23_1j",
+       "q": "En la resta 8000 − 2893, ¿cuál es el minuendo?",
+       "q_hu": "A(z) 8000 − 2893 kivonásban mi a kisebbítendő (minuendo)?",
+       "kind": "num",
+       "answer": "8000"
+      },
+      {
+       "id": "tb23_1k",
+       "q": "En la resta 8000 − 2893, ¿cuál es el sustraendo?",
+       "q_hu": "A(z) 8000 − 2893 kivonásban mi a kivonandó (sustraendo)?",
+       "kind": "num",
+       "answer": "2893"
+      },
+      {
+       "id": "tb23_1l",
+       "q": "En la resta 8000 − 2893, ¿cuál es la diferencia?",
+       "q_hu": "A(z) 8000 − 2893 kivonásban mennyi a különbség (diferencia)?",
+       "kind": "num",
+       "answer": "5107"
+      }
+     ]
+    },
+    {
+     "id": "tb23_2",
+     "n": "2",
+     "text": "Calcula la diferencia de estas restas por descomposición.",
+     "text_hu": "Számold ki ezeknek a kivonásoknak a különbségét felbontással.",
+     "items": [
+      {
+       "id": "tb23_2a",
+       "q": "4867 − 2143",
+       "q_hu": "4867 − 2143",
+       "kind": "num",
+       "answer": "2724"
+      },
+      {
+       "id": "tb23_2b",
+       "q": "3478 − 25",
+       "q_hu": "3478 − 25",
+       "kind": "num",
+       "answer": "3453"
+      },
+      {
+       "id": "tb23_2c",
+       "q": "1987 − 436",
+       "q_hu": "1987 − 436",
+       "kind": "num",
+       "answer": "1551"
+      },
+      {
+       "id": "tb23_2d",
+       "q": "9585 − 5351",
+       "q_hu": "9585 − 5351",
+       "kind": "num",
+       "answer": "4234"
+      },
+      {
+       "id": "tb23_2e",
+       "q": "5768 − 1234",
+       "q_hu": "5768 − 1234",
+       "kind": "num",
+       "answer": "4534"
+      },
+      {
+       "id": "tb23_2f",
+       "q": "9769 − 3758",
+       "q_hu": "9769 − 3758",
+       "kind": "num",
+       "answer": "6011"
+      }
+     ]
+    },
+    {
+     "id": "tb23_3",
+     "n": "3",
+     "text": "Resuelve estas restas en vertical.",
+     "text_hu": "Oldd meg ezeket a kivonásokat írásban.",
+     "items": [
+      {
+       "id": "tb23_3a",
+       "q": "2941 − 2736",
+       "q_hu": "2941 − 2736",
+       "kind": "num",
+       "answer": "205"
+      },
+      {
+       "id": "tb23_3b",
+       "q": "6512 − 3280",
+       "q_hu": "6512 − 3280",
+       "kind": "num",
+       "answer": "3232"
+      },
+      {
+       "id": "tb23_3c",
+       "q": "7245 − 3637",
+       "q_hu": "7245 − 3637",
+       "kind": "num",
+       "answer": "3608"
+      },
+      {
+       "id": "tb23_3d",
+       "q": "Di los resultados ordenados de menor a mayor (2941 − 2736, 6512 − 3280, 7245 − 3637).",
+       "q_hu": "Mondd el az eredményeket a legkisebbtől a legnagyobbig (2941 − 2736, 6512 − 3280, 7245 − 3637).",
+       "kind": "type",
+       "answer": "205, 3232, 3608",
+       "alts": [
+        "205 3232 3608",
+        "205 < 3232 < 3608",
+        "205,3232,3608"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "tb23_4",
+     "n": "4",
+     "text": "Continúa estas series.",
+     "text_hu": "Folytasd a számsorokat.",
+     "items": [
+      {
+       "id": "tb23_4a",
+       "q": "285, 280, ?, ?, ? (cada vez −5)",
+       "q_hu": "285, 280, ?, ?, ? (mindig −5)",
+       "kind": "type",
+       "answer": "275, 270, 265",
+       "alts": [
+        "275 270 265",
+        "275,270,265"
+       ]
+      },
+      {
+       "id": "tb23_4b",
+       "q": "744, 734, ?, ?, ? (cada vez −10)",
+       "q_hu": "744, 734, ?, ?, ? (mindig −10)",
+       "kind": "type",
+       "answer": "724, 714, 704",
+       "alts": [
+        "724 714 704",
+        "724,714,704"
+       ]
+      },
+      {
+       "id": "tb23_4c",
+       "q": "931, 831, ?, ?, ? (cada vez −100)",
+       "q_hu": "931, 831, ?, ?, ? (mindig −100)",
+       "kind": "type",
+       "answer": "731, 631, 531",
+       "alts": [
+        "731 631 531",
+        "731,631,531"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "tb23_5",
+     "n": "5",
+     "text": "La familia de Irene quiere conseguir 2150 puntos para unas entradas de teatro. Calcula los puntos que les faltan si de momento tienen 785.",
+     "text_hu": "Irene családja 2150 pontot szeretne összegyűjteni színházjegyekre. Számold ki, hány pont hiányzik még, ha most 785 pontjuk van.",
+     "items": [
+      {
+       "id": "tb23_5a",
+       "q": "Necesitan 2150 puntos y tienen 785. ¿Cuántos puntos les faltan?",
+       "q_hu": "2150 pont kell, és 785 van. Hány pont hiányzik?",
+       "kind": "num",
+       "answer": "1365"
+      }
+     ]
+    },
+    {
+     "id": "tb23_6",
+     "n": "6",
+     "text": "En la laguna han pasado el invierno 6732 aves. Si al comienzo de la primavera emigran 4250, calcula cuántas aves quedan todavía en la laguna.",
+     "text_hu": "A tónál 6732 madár telelt át. Ha tavasz elején 4250 elrepül, számold ki, hány madár marad még a tónál.",
+     "items": [
+      {
+       "id": "tb23_6a",
+       "q": "6732 aves; emigran 4250. ¿Cuántas quedan?",
+       "q_hu": "6732 madár; 4250 elrepül. Hány marad?",
+       "kind": "num",
+       "answer": "2482"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb24",
+   "book": "tb",
+   "page": 24,
+   "unit": "u1",
+   "title": "Propiedades de la suma y la resta",
+   "title_hu": "Az összeadás és a kivonás tulajdonságai",
+   "summary_hu": "Felcserélhetőség (propiedad conmutativa): az összeadás eredménye nem változik, ha felcseréljük a tagok sorrendjét (5 + 3 = 3 + 5 = 8). Csoportosíthatóság (propiedad asociativa): három vagy több tagnál mindegy, hogyan csoportosítjuk őket ((2 + 4) + 3 = 2 + (4 + 3) = 9). A kivonás ellenőrzése (prueba de la resta): a különbség + a kivonandó = a kisebbítendő (1396 + 2056 = 3452).",
+   "words": [
+    {
+     "w": "la propiedad",
+     "hu": "a tulajdonság"
+    },
+    {
+     "w": "conmutativa",
+     "hu": "felcserélhető"
+    },
+    {
+     "w": "asociativa",
+     "hu": "csoportosítható"
+    },
+    {
+     "w": "la operación",
+     "hu": "a művelet"
+    },
+    {
+     "w": "el resultado no varía",
+     "hu": "az eredmény nem változik"
+    },
+    {
+     "w": "cambiar el orden",
+     "hu": "megváltoztatni a sorrendet"
+    },
+    {
+     "w": "asociar / agrupar",
+     "hu": "csoportosítani"
+    },
+    {
+     "w": "la prueba de la resta",
+     "hu": "a kivonás ellenőrzése (próbája)"
+    },
+    {
+     "w": "coincidir",
+     "hu": "megegyezni"
+    },
+    {
+     "w": "comprobar",
+     "hu": "ellenőrizni"
+    },
+    {
+     "w": "bien hecha",
+     "hu": "jól megcsinált, helyes"
+    },
+    {
+     "w": "la sombrilla",
+     "hu": "a napernyő"
+    },
+    {
+     "w": "la taza",
+     "hu": "a csésze"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb24_t",
+     "n": "T",
+     "text": "Practica las propiedades (ejemplos de la teoría).",
+     "text_hu": "Gyakorold a tulajdonságokat (példák az elméletből).",
+     "items": [
+      {
+       "id": "tb24_ta",
+       "q": "5 + 3 = 3 + 5 = ?",
+       "q_hu": "5 + 3 = 3 + 5 = ?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb24_tb",
+       "q": "5 + 3 = 3 + 5. ¿Qué propiedad es?",
+       "q_hu": "5 + 3 = 3 + 5. Melyik tulajdonság ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb24_tc",
+       "q": "(2 + 4) + 3 = 2 + (4 + 3) = ?",
+       "q_hu": "(2 + 4) + 3 = 2 + (4 + 3) = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb24_td",
+       "q": "(2 + 4) + 3 = 2 + (4 + 3). ¿Qué propiedad es?",
+       "q_hu": "(2 + 4) + 3 = 2 + (4 + 3). Melyik tulajdonság ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb24_te",
+       "q": "3452 − 2056 = ?",
+       "q_hu": "3452 − 2056 = ?",
+       "kind": "num",
+       "answer": "1396"
+      },
+      {
+       "id": "tb24_tf",
+       "q": "Prueba de la resta: 1396 + 2056 = ? (tiene que dar el minuendo)",
+       "q_hu": "A kivonás ellenőrzése: 1396 + 2056 = ? (a kisebbítendőt kell kapnod)",
+       "kind": "num",
+       "answer": "3452"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb25",
+   "book": "tb",
+   "page": 25,
+   "unit": "u1",
+   "title": "Propiedades de la suma y la resta",
+   "title_hu": "Az összeadás és a kivonás tulajdonságai",
+   "summary_hu": "Gyakorlás: összeadás kétféleképpen (csoportosítás), hiányzó tagok pótlása és a tulajdonság megnevezése, kivonások és ellenőrzésük, igaz/hamis állítások a kivonásról, kivonásos táblázat kitöltése, és két szöveges feladat (zászlócskák, osztálylétszám).",
+   "words": [
+    {
+     "w": "la papelera",
+     "hu": "a szemetes, papírkosár"
+    },
+    {
+     "w": "de dos maneras diferentes",
+     "hu": "kétféleképpen"
+    },
+    {
+     "w": "utilizar",
+     "hu": "használni"
+    },
+    {
+     "w": "aplicar",
+     "hu": "alkalmazni"
+    },
+    {
+     "w": "comprobar",
+     "hu": "ellenőrizni"
+    },
+    {
+     "w": "la afirmación",
+     "hu": "az állítás"
+    },
+    {
+     "w": "verdadero",
+     "hu": "igaz"
+    },
+    {
+     "w": "falso",
+     "hu": "hamis"
+    },
+    {
+     "w": "cumplir",
+     "hu": "teljesíteni (szabályt)"
+    },
+    {
+     "w": "la localidad",
+     "hu": "a település"
+    },
+    {
+     "w": "decorar",
+     "hu": "díszíteni"
+    },
+    {
+     "w": "el banderín",
+     "hu": "a zászlócska"
+    },
+    {
+     "w": "rojo, verde, azul",
+     "hu": "piros, zöld, kék"
+    },
+    {
+     "w": "entre las dos clases",
+     "hu": "a két osztályban együtt"
+    },
+    {
+     "w": "responder",
+     "hu": "válaszolni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb25_1",
+     "n": "1",
+     "text": "Calcula la cantidad total de papeleras de dos maneras diferentes.",
+     "text_hu": "Számold ki kétféleképpen, hány szemetes van összesen.",
+     "items": [
+      {
+       "id": "tb25_1a",
+       "q": "Hay 3 grupos de papeleras: 4, 3 y 6. Calcula (4 + 3) + 6.",
+       "q_hu": "3 csoport szemetes van: 4, 3 és 6. Számold ki: (4 + 3) + 6.",
+       "kind": "num",
+       "answer": "13"
+      },
+      {
+       "id": "tb25_1b",
+       "q": "Ahora calcula 4 + (3 + 6).",
+       "q_hu": "Most számold ki: 4 + (3 + 6).",
+       "kind": "num",
+       "answer": "13"
+      },
+      {
+       "id": "tb25_1c",
+       "q": "¿Qué propiedad has utilizado?",
+       "q_hu": "Melyik tulajdonságot használtad?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb25_2",
+     "n": "2",
+     "text": "Completa e indica qué propiedad has aplicado.",
+     "text_hu": "Egészítsd ki, és mondd meg, melyik tulajdonságot alkalmaztad.",
+     "items": [
+      {
+       "id": "tb25_2a",
+       "q": "36 + ? = 15 + 36 → ¿qué número falta?",
+       "q_hu": "36 + ? = 15 + 36 → melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "15"
+      },
+      {
+       "id": "tb25_2b",
+       "q": "36 + 15 = 15 + 36 = ?",
+       "q_hu": "36 + 15 = 15 + 36 = ?",
+       "kind": "num",
+       "answer": "51"
+      },
+      {
+       "id": "tb25_2c",
+       "q": "36 + 15 = 15 + 36. ¿Qué propiedad has aplicado?",
+       "q_hu": "36 + 15 = 15 + 36. Melyik tulajdonságot alkalmaztad?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb25_2d",
+       "q": "12 + ? + 7 = 12 + 5 + 7 → ¿qué número falta en el primer lado?",
+       "q_hu": "12 + ? + 7 = 12 + 5 + 7 → melyik szám hiányzik a bal oldalon?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb25_2e",
+       "q": "12 + 5 + 7 = ? + 5 + 7 → ¿qué número falta?",
+       "q_hu": "12 + 5 + 7 = ? + 5 + 7 → melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb25_2f",
+       "q": "12 + 5 + 7 = ?",
+       "q_hu": "12 + 5 + 7 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb25_2g",
+       "q": "12 + (5 + 7) = (12 + 5) + 7. ¿Qué propiedad has aplicado?",
+       "q_hu": "12 + (5 + 7) = (12 + 5) + 7. Melyik tulajdonságot alkalmaztad?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb25_2h",
+       "q": "? + 202 = 202 + 714 → ¿qué número va en el primer hueco?",
+       "q_hu": "? + 202 = 202 + 714 → melyik szám kerül az első helyre?",
+       "kind": "num",
+       "answer": "714"
+      },
+      {
+       "id": "tb25_2i",
+       "q": "714 + 202 = ? + 714 → ¿qué número falta?",
+       "q_hu": "714 + 202 = ? + 714 → melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "202"
+      },
+      {
+       "id": "tb25_2j",
+       "q": "714 + 202 = 202 + 714 = ?",
+       "q_hu": "714 + 202 = 202 + 714 = ?",
+       "kind": "num",
+       "answer": "916"
+      },
+      {
+       "id": "tb25_2k",
+       "q": "714 + 202 = 202 + 714. ¿Qué propiedad has aplicado?",
+       "q_hu": "714 + 202 = 202 + 714. Melyik tulajdonságot alkalmaztad?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb25_2l",
+       "q": "58 + 140 + ? = 58 + 16 + 140 → ¿qué número falta?",
+       "q_hu": "58 + 140 + ? = 58 + 16 + 140 → melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb25_2m",
+       "q": "58 + 140 + 16 = 58 + 16 + ? → ¿qué número falta?",
+       "q_hu": "58 + 140 + 16 = 58 + 16 + ? → melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "140"
+      },
+      {
+       "id": "tb25_2n",
+       "q": "58 + 140 + 16 = ?",
+       "q_hu": "58 + 140 + 16 = ?",
+       "kind": "num",
+       "answer": "214"
+      },
+      {
+       "id": "tb25_2o",
+       "q": "58 + 140 + 16 = 58 + 16 + 140. ¿Qué propiedad has aplicado?",
+       "q_hu": "58 + 140 + 16 = 58 + 16 + 140. Melyik tulajdonságot alkalmaztad?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség (kommutativitás)"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság (asszociativitás)"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb25_3",
+     "n": "3",
+     "text": "Resuelve estas restas. Comprueba los resultados que has obtenido.",
+     "text_hu": "Oldd meg ezeket a kivonásokat. Ellenőrizd a kapott eredményeket.",
+     "items": [
+      {
+       "id": "tb25_3a",
+       "q": "8652 − 4978",
+       "q_hu": "8652 − 4978",
+       "kind": "num",
+       "answer": "3674"
+      },
+      {
+       "id": "tb25_3b",
+       "q": "7431 − 2865",
+       "q_hu": "7431 − 2865",
+       "kind": "num",
+       "answer": "4566"
+      },
+      {
+       "id": "tb25_3c",
+       "q": "5240 − 1653",
+       "q_hu": "5240 − 1653",
+       "kind": "num",
+       "answer": "3587"
+      },
+      {
+       "id": "tb25_3d",
+       "q": "Comprueba: 3674 + 4978 = ? (debe dar 8652)",
+       "q_hu": "Ellenőrizd: 3674 + 4978 = ? (8652-t kell kapnod)",
+       "kind": "num",
+       "answer": "8652"
+      },
+      {
+       "id": "tb25_3e",
+       "q": "Comprueba: 4566 + 2865 = ? (debe dar 7431)",
+       "q_hu": "Ellenőrizd: 4566 + 2865 = ? (7431-t kell kapnod)",
+       "kind": "num",
+       "answer": "7431"
+      },
+      {
+       "id": "tb25_3f",
+       "q": "Comprueba: 3587 + 1653 = ? (debe dar 5240)",
+       "q_hu": "Ellenőrizd: 3587 + 1653 = ? (5240-t kell kapnod)",
+       "kind": "num",
+       "answer": "5240"
+      }
+     ]
+    },
+    {
+     "id": "tb25_4",
+     "n": "4",
+     "text": "Explica si estas afirmaciones son verdaderas o falsas.",
+     "text_hu": "Magyarázd el, hogy ezek az állítások igazak vagy hamisak.",
+     "items": [
+      {
+       "id": "tb25_4a",
+       "q": "El minuendo siempre es mayor que el sustraendo.",
+       "q_hu": "A kisebbítendő mindig nagyobb a kivonandónál.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb25_4b",
+       "q": "La resta no cumple la propiedad conmutativa.",
+       "q_hu": "A kivonás nem felcserélhető (nem teljesíti a felcserélhetőséget).",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb25_4c",
+       "q": "Explica por qué la resta no es conmutativa.",
+       "q_hu": "Magyarázd el, miért nem felcserélhető a kivonás.",
+       "kind": "open",
+       "answer": "Porque si cambiamos el orden, el resultado cambia: 8 − 3 = 5, pero 3 − 8 no se puede hacer con números naturales.",
+       "answer_hu": "Mert ha felcseréljük a sorrendet, más lesz az eredmény: 8 − 3 = 5, de 3 − 8-at nem tudjuk elvégezni (a kisebbítendőnek nagyobbnak kell lennie)."
+      }
+     ]
+    },
+    {
+     "id": "tb25_5",
+     "n": "5",
+     "text": "Completa esta tabla.",
+     "text_hu": "Töltsd ki a táblázatot.",
+     "items": [
+      {
+       "id": "tb25_5a",
+       "q": "Minuendo 7321, diferencia 2738. ¿Cuál es el sustraendo?",
+       "q_hu": "Kisebbítendő 7321, különbség 2738. Mennyi a kivonandó?",
+       "kind": "num",
+       "answer": "4583"
+      },
+      {
+       "id": "tb25_5b",
+       "q": "Minuendo 5042, diferencia 3182. ¿Cuál es el sustraendo?",
+       "q_hu": "Kisebbítendő 5042, különbség 3182. Mennyi a kivonandó?",
+       "kind": "num",
+       "answer": "1860"
+      },
+      {
+       "id": "tb25_5c",
+       "q": "Minuendo 8105, diferencia 5788. ¿Cuál es el sustraendo?",
+       "q_hu": "Kisebbítendő 8105, különbség 5788. Mennyi a kivonandó?",
+       "kind": "num",
+       "answer": "2317"
+      }
+     ]
+    },
+    {
+     "id": "tb25_6",
+     "n": "6",
+     "text": "Las calles de una localidad se han decorado con 273 banderines rojos, 1045 verdes y 520 azules. Razona cuántos banderines han decorado las calles.",
+     "text_hu": "Egy település utcáit 273 piros, 1045 zöld és 520 kék zászlócskával díszítették. Gondold végig, hány zászlócska díszíti az utcákat.",
+     "items": [
+      {
+       "id": "tb25_6a",
+       "q": "273 rojos + 1045 verdes + 520 azules = ?",
+       "q_hu": "273 piros + 1045 zöld + 520 kék = ?",
+       "kind": "num",
+       "answer": "1838"
+      }
+     ]
+    },
+    {
+     "id": "tb25_7",
+     "n": "7",
+     "text": "En la clase de Mateo hay 13 niñas y 11 niños, y en la clase de Sofía hay 11 niñas y 13 niños. ¿En cuál hay más niños y niñas? ¿Cuántos niños y niñas hay entre las dos clases? Responde.",
+     "text_hu": "Mateo osztályában 13 lány és 11 fiú van, Sofía osztályában 11 lány és 13 fiú. Melyikben van több gyerek? Hány gyerek van a két osztályban együtt? Válaszolj.",
+     "items": [
+      {
+       "id": "tb25_7a",
+       "q": "Clase de Mateo: 13 + 11. Clase de Sofía: 11 + 13. ¿En cuál hay más niños y niñas?",
+       "q_hu": "Mateo osztálya: 13 + 11. Sofía osztálya: 11 + 13. Melyikben van több gyerek?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "En la de Mateo",
+         "hu": "Mateo osztályában"
+        },
+        {
+         "t": "En la de Sofía",
+         "hu": "Sofía osztályában"
+        },
+        {
+         "t": "En las dos hay los mismos",
+         "hu": "Mindkettőben ugyanannyi"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb25_7b",
+       "q": "¿Cuántos niños y niñas hay entre las dos clases?",
+       "q_hu": "Hány gyerek van a két osztályban együtt?",
+       "kind": "num",
+       "answer": "48"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb26",
+   "book": "tb",
+   "page": 26,
+   "unit": "u1",
+   "title": "Elegir la pregunta",
+   "title_hu": "A kérdés kiválasztása",
+   "summary_hu": "Szöveges feladatok megoldása: el kell dönteni, melyik kérdésre lehet válaszolni a kép adataiból. Mario könyveket vett ki a könyvtárból: a képen meg lehet számolni, hány könyvet visz (5), de az nem látszik, hány matekkönyv, és az sem, hánykor érkezett. Lépések: elolvassuk és megértjük a szöveget, leírjuk a képet, megnézzük, melyik kérdés válaszolható meg, végül válaszolunk.",
+   "words": [
+    {
+     "w": "la resolución de problemas",
+     "hu": "a szöveges feladatok megoldása"
+    },
+    {
+     "w": "elegir",
+     "hu": "kiválasztani"
+    },
+    {
+     "w": "la pregunta",
+     "hu": "a kérdés"
+    },
+    {
+     "w": "la biblioteca",
+     "hu": "a könyvtár"
+    },
+    {
+     "w": "sacar libros",
+     "hu": "könyvet kikölcsönözni"
+    },
+    {
+     "w": "el enunciado",
+     "hu": "a feladat szövege"
+    },
+    {
+     "w": "describir",
+     "hu": "leírni, elmondani"
+    },
+    {
+     "w": "la estantería",
+     "hu": "a könyvespolc"
+    },
+    {
+     "w": "el título",
+     "hu": "a cím"
+    },
+    {
+     "w": "la portada",
+     "hu": "a borító"
+    },
+    {
+     "w": "los datos",
+     "hu": "az adatok"
+    },
+    {
+     "w": "analizar",
+     "hu": "megvizsgálni"
+    },
+    {
+     "w": "la solución",
+     "hu": "a megoldás"
+    },
+    {
+     "w": "el reloj",
+     "hu": "az óra"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb26_t",
+     "n": "T",
+     "text": "Mario ha sacado unos libros de la biblioteca. Observa la imagen y responde a estas preguntas.",
+     "text_hu": "Mario könyveket kölcsönzött ki a könyvtárból. Nézd meg a képet, és válaszolj a kérdésekre.",
+     "items": [
+      {
+       "id": "tb26_ta",
+       "q": "En la imagen, Mario lleva 5 libros en la mano; no se ve el título ni la portada de los libros y no hay relojes. Pregunta: «¿Cuántos libros son de matemáticas?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "A képen Mario 5 könyvet visz a kezében; a könyvek címe és borítója nem látszik, óra nincs a képen. Kérdés: „Hány könyv matematikakönyv?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb26_tb",
+       "q": "En la imagen, Mario lleva 5 libros en la mano; no se ve el título ni la portada de los libros y no hay relojes. Pregunta: «¿Cuántos libros ha sacado en total?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "A képen Mario 5 könyvet visz a kezében; a könyvek címe és borítója nem látszik, óra nincs a képen. Kérdés: „Hány könyvet kölcsönzött ki összesen?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb26_tc",
+       "q": "En la imagen, Mario lleva 5 libros en la mano; no se ve el título ni la portada de los libros y no hay relojes. Pregunta: «¿A qué hora llegó Mario a la biblioteca?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "A képen Mario 5 könyvet visz a kezében; a könyvek címe és borítója nem látszik, óra nincs a képen. Kérdés: „Hány órakor érkezett Mario a könyvtárba?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb26_td",
+       "q": "¿Cuántos libros ha sacado Mario en total?",
+       "q_hu": "Hány könyvet kölcsönzött ki Mario összesen?",
+       "kind": "num",
+       "answer": "5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb27",
+   "book": "tb",
+   "page": 27,
+   "unit": "u1",
+   "title": "Elegir la pregunta",
+   "title_hu": "A kérdés kiválasztása",
+   "summary_hu": "Gyakorlás: válaszd ki és válaszold meg azokat a kérdéseket, amelyekre a kép (órák, térkép) adataiból lehet válaszolni. Végül válaszd ki a feladathoz illő műveletet, és oldd meg.",
+   "words": [
+    {
+     "w": "el taller",
+     "hu": "a foglalkozás, műhely(foglalkozás)"
+    },
+    {
+     "w": "el comienzo",
+     "hu": "a kezdet"
+    },
+    {
+     "w": "el final",
+     "hu": "a vég"
+    },
+    {
+     "w": "la actividad",
+     "hu": "a tevékenység"
+    },
+    {
+     "w": "empezar",
+     "hu": "kezdődni"
+    },
+    {
+     "w": "realizar",
+     "hu": "elvégezni, részt venni"
+    },
+    {
+     "w": "la distancia",
+     "hu": "a távolság"
+    },
+    {
+     "w": "el kilómetro (km)",
+     "hu": "a kilométer"
+    },
+    {
+     "w": "pasando por",
+     "hu": "érintve, keresztülmenve"
+    },
+    {
+     "w": "recorrer",
+     "hu": "megtenni (utat)"
+    },
+    {
+     "w": "tardar",
+     "hu": "(idő)be telni"
+    },
+    {
+     "w": "la operación",
+     "hu": "a művelet"
+    },
+    {
+     "w": "el álbum digital",
+     "hu": "a digitális album"
+    },
+    {
+     "w": "colocar",
+     "hu": "elhelyezni, betenni"
+    },
+    {
+     "w": "quedar por",
+     "hu": "még hátra van"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb27_1",
+     "n": "1",
+     "text": "Responde la pregunta que puedes contestar con los datos de la imagen.",
+     "text_hu": "Válaszold meg azt a kérdést, amelyre a kép adataiból válaszolni tudsz.",
+     "items": [
+      {
+       "id": "tb27_1a",
+       "q": "Imagen: un reloj marca las 9:00 (comienzo del taller) y otro las 2:00 (final del taller). Pregunta: «¿Qué tipo de actividad se hizo durante el taller?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Kép: az egyik óra 9:00-t mutat (a foglalkozás kezdete), a másik 2:00-t (a foglalkozás vége). Kérdés: „Milyen tevékenységet végeztek a foglalkozáson?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb27_1b",
+       "q": "Imagen: un reloj marca las 9:00 (comienzo del taller) y otro las 2:00 (final del taller). Pregunta: «¿A qué hora empezó el taller?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Kép: az egyik óra 9:00-t mutat (a foglalkozás kezdete), a másik 2:00-t (a foglalkozás vége). Kérdés: „Hány órakor kezdődött a foglalkozás?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb27_1c",
+       "q": "Imagen: un reloj marca las 9:00 (comienzo del taller) y otro las 2:00 (final del taller). Pregunta: «¿Cuántas personas realizaron el taller?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Kép: az egyik óra 9:00-t mutat (a foglalkozás kezdete), a másik 2:00-t (a foglalkozás vége). Kérdés: „Hány ember vett részt a foglalkozáson?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb27_1d",
+       "q": "Imagen: un reloj marca las 9:00 (comienzo del taller) y otro las 2:00 (final del taller). ¿A qué hora empezó el taller? (escribe solo la hora)",
+       "q_hu": "Kép: az egyik óra 9:00-t mutat (a foglalkozás kezdete), a másik 2:00-t (a foglalkozás vége). Hány órakor kezdődött a foglalkozás? (csak az órát írd)",
+       "kind": "num",
+       "answer": "9",
+       "answer_hu": "9 órakor"
+      },
+      {
+       "id": "tb27_1e",
+       "q": "Mapa: de Alustre a Bosquejo hay 73 km, de Bosquejo a Cárcala 54 km y de Alustre a Cárcala 62 km. Pregunta: «¿Cuántos kilómetros hay entre una ciudad que no está en el mapa y Bosquejo?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Térkép: Alustréból Bosquejóba 73 km, Bosquejóból Cárcalába 54 km, Alustréból Cárcalába 62 km. Kérdés: „Hány kilométer van egy olyan város, amely nincs a térképen, és Bosquejo között?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb27_1f",
+       "q": "Mapa: de Alustre a Bosquejo hay 73 km, de Bosquejo a Cárcala 54 km y de Alustre a Cárcala 62 km. Pregunta: «¿Qué distancia hay entre Alustre y Cárcala?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Térkép: Alustréból Bosquejóba 73 km, Bosquejóból Cárcalába 54 km, Alustréból Cárcalába 62 km. Kérdés: „Mekkora a távolság Alustre és Cárcala között?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb27_1g",
+       "q": "Mapa: de Alustre a Bosquejo hay 73 km, de Bosquejo a Cárcala 54 km y de Alustre a Cárcala 62 km. ¿Qué distancia hay entre Alustre y Cárcala? (en km)",
+       "q_hu": "Térkép: Alustréból Bosquejóba 73 km, Bosquejóból Cárcalába 54 km, Alustréból Cárcalába 62 km. Mekkora a távolság Alustre és Cárcala között? (km-ben)",
+       "kind": "num",
+       "answer": "62"
+      },
+      {
+       "id": "tb27_1h",
+       "q": "Mapa: de Alustre a Bosquejo hay 73 km, de Bosquejo a Cárcala 54 km y de Alustre a Cárcala 62 km. Pregunta: «Si fueras desde Alustre hasta Cárcala pasando por Bosquejo, ¿cuántos kilómetros recorrerías?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Térkép: Alustréból Bosquejóba 73 km, Bosquejóból Cárcalába 54 km, Alustréból Cárcalába 62 km. Kérdés: „Ha Alustréból Cárcalába Bosquejón keresztül mennél, hány kilométert tennél meg?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb27_1i",
+       "q": "Mapa: de Alustre a Bosquejo hay 73 km, de Bosquejo a Cárcala 54 km y de Alustre a Cárcala 62 km. Si fueras desde Alustre hasta Cárcala pasando por Bosquejo, ¿cuántos kilómetros recorrerías? (73 + 54)",
+       "q_hu": "Térkép: Alustréból Bosquejóba 73 km, Bosquejóból Cárcalába 54 km, Alustréból Cárcalába 62 km. Ha Alustréból Cárcalába Bosquejón keresztül mennél, hány km-t tennél meg? (73 + 54)",
+       "kind": "num",
+       "answer": "127"
+      },
+      {
+       "id": "tb27_1j",
+       "q": "Mapa: de Alustre a Bosquejo hay 73 km, de Bosquejo a Cárcala 54 km y de Alustre a Cárcala 62 km. Pregunta: «¿Cuánto se tarda en ir de Alustre a Bosquejo?» ¿Se puede responder con los datos de la imagen?",
+       "q_hu": "Térkép: Alustréból Bosquejóba 73 km, Bosquejóból Cárcalába 54 km, Alustréból Cárcalába 62 km. Kérdés: „Mennyi idő alatt lehet eljutni Alustréból Bosquejóba?” Meg lehet válaszolni a kép adatai alapján?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí se puede responder",
+         "hu": "Igen, meg lehet válaszolni"
+        },
+        {
+         "t": "No se puede responder",
+         "hu": "Nem lehet megválaszolni"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb27_2",
+     "n": "2",
+     "text": "Elige la operación que responde a la pregunta.",
+     "text_hu": "Válaszd ki azt a műveletet, amely megválaszolja a kérdést.",
+     "items": [
+      {
+       "id": "tb27_2a",
+       "q": "Marta quiere hacer un álbum digital con 65 fotos. Si ya ha colocado 38, ¿cuántas fotos le quedan por colocar? Elige la operación.",
+       "q_hu": "Marta egy 65 fotós digitális albumot szeretne készíteni. Ha már 38-at betett, hány fotót kell még betennie? Válaszd ki a műveletet.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "65 + 38",
+         "hu": "65 + 38"
+        },
+        {
+         "t": "68 − 35",
+         "hu": "68 − 35"
+        },
+        {
+         "t": "38 + 65",
+         "hu": "38 + 65"
+        },
+        {
+         "t": "65 − 38",
+         "hu": "65 − 38"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "id": "tb27_2b",
+       "q": "Resuelve el problema: 65 − 38 = ?",
+       "q_hu": "Oldd meg a feladatot: 65 − 38 = ?",
+       "kind": "num",
+       "answer": "27",
+       "answer_hu": "27 fotót kell még betennie."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb28",
+   "book": "tb",
+   "page": 28,
+   "unit": "u1",
+   "title": "Practicamos",
+   "title_hu": "Gyakorlunk",
+   "summary_hu": "Vegyes gyakorlás: számok összehasonlítása, négyjegyű szám keresése feltételek alapján, igaz/hamis állítások a kerekítésről, ki tévedett a kerekítésnél, és egy bolti kerekítés ellenőrzése.",
+   "words": [
+    {
+     "w": "practicamos",
+     "hu": "gyakorlunk"
+    },
+    {
+     "w": "adecuado",
+     "hu": "megfelelő, odaillő"
+    },
+    {
+     "w": "cumplir las condiciones",
+     "hu": "megfelelni a feltételeknek"
+    },
+    {
+     "w": "la suma de las cifras",
+     "hu": "a számjegyek összege"
+    },
+    {
+     "w": "igual que",
+     "hu": "ugyanaz, mint"
+    },
+    {
+     "w": "entre siete mil y nueve mil",
+     "hu": "hétezer és kilencezer között"
+    },
+    {
+     "w": "la centena más cercana",
+     "hu": "a legközelebbi százas"
+    },
+    {
+     "w": "más próxima",
+     "hu": "legközelebbi"
+    },
+    {
+     "w": "equivocarse",
+     "hu": "tévedni"
+    },
+    {
+     "w": "la pista",
+     "hu": "a nyom, segítség (rejtvényben)"
+    },
+    {
+     "w": "confundirse",
+     "hu": "összekeverni, tévedni"
+    },
+    {
+     "w": "el objeto",
+     "hu": "a tárgy"
+    },
+    {
+     "w": "costar",
+     "hu": "kerülni (valamennyibe)"
+    },
+    {
+     "w": "el vendedor",
+     "hu": "az eladó"
+    },
+    {
+     "w": "te lo dejo en",
+     "hu": "ennyiért adom neked"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb28_1",
+     "n": "1",
+     "text": "Compara y completa con el número adecuado: 4000, 3528, 3705, 4263.",
+     "text_hu": "Hasonlítsd össze, és írd be a megfelelő számot: 4000, 3528, 3705, 4263.",
+     "items": [
+      {
+       "id": "tb28_1a",
+       "q": "3209 < ? < 3614",
+       "q_hu": "3209 < ? < 3614",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4000",
+         "hu": "4000"
+        },
+        {
+         "t": "3528",
+         "hu": "3528"
+        },
+        {
+         "t": "3705",
+         "hu": "3705"
+        },
+        {
+         "t": "4263",
+         "hu": "4263"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb28_1b",
+       "q": "4137 < ? < 4386",
+       "q_hu": "4137 < ? < 4386",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4000",
+         "hu": "4000"
+        },
+        {
+         "t": "3528",
+         "hu": "3528"
+        },
+        {
+         "t": "3705",
+         "hu": "3705"
+        },
+        {
+         "t": "4263",
+         "hu": "4263"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "id": "tb28_1c",
+       "q": "3962 < ? < 4137",
+       "q_hu": "3962 < ? < 4137",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4000",
+         "hu": "4000"
+        },
+        {
+         "t": "3528",
+         "hu": "3528"
+        },
+        {
+         "t": "3705",
+         "hu": "3705"
+        },
+        {
+         "t": "4263",
+         "hu": "4263"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb28_1d",
+       "q": "3650 < ? < 3800",
+       "q_hu": "3650 < ? < 3800",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4000",
+         "hu": "4000"
+        },
+        {
+         "t": "3528",
+         "hu": "3528"
+        },
+        {
+         "t": "3705",
+         "hu": "3705"
+        },
+        {
+         "t": "4263",
+         "hu": "4263"
+        }
+       ],
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "tb28_2",
+     "n": "2",
+     "text": "Escribe un número de cuatro cifras que cumpla estas condiciones.",
+     "text_hu": "Írj egy négyjegyű számot, amely megfelel ezeknek a feltételeknek.",
+     "items": [
+      {
+       "id": "tb28_2a",
+       "q": "Escribe un número de 4 cifras: la cifra de las decenas + la de las unidades = 5; la cifra de las centenas es igual que la de las unidades; está entre siete mil y nueve mil.",
+       "q_hu": "Írj egy négyjegyű számot: a tízesek és az egyesek számjegyének összege 5; a százasok számjegye ugyanaz, mint az egyeseké; a szám hétezer és kilencezer között van.",
+       "kind": "type",
+       "answer": "7050",
+       "alts": [
+        "7141",
+        "7232",
+        "7323",
+        "7414",
+        "7505",
+        "8050",
+        "8141",
+        "8232",
+        "8323",
+        "8414",
+        "8505"
+       ],
+       "answer_hu": "Több jó megoldás van, pl. 7050, 7141, 7232, 7323, 7414, 7505, 8050, 8141, 8232, 8323, 8414, 8505."
+      }
+     ]
+    },
+    {
+     "id": "tb28_3",
+     "n": "3",
+     "text": "Indica si estas afirmaciones son verdaderas o falsas.",
+     "text_hu": "Mondd meg, hogy ezek az állítások igazak vagy hamisak.",
+     "items": [
+      {
+       "id": "tb28_3a",
+       "q": "La aproximación de 2457 a la centena más cercana es 2400.",
+       "q_hu": "A 2457 legközelebbi százasra kerekítve 2400.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb28_3b",
+       "q": "El número 721 se encuentra entre las centenas 700 y 800.",
+       "q_hu": "A 721 a 700 és 800 százasok között van.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb28_3c",
+       "q": "La unidad de millar más próxima a 3622 es 3000.",
+       "q_hu": "A 3622-höz legközelebbi ezres a 3000.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb28_3d",
+       "q": "El número 9340 es la aproximación a la decena de 9335.",
+       "q_hu": "A 9335 tízesre kerekítve 9340.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb28_3e",
+       "q": "La aproximación a las centenas de 5000 es 5000.",
+       "q_hu": "Az 5000 százasra kerekítve 5000.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb28_4",
+     "n": "4",
+     "text": "Razona quién se ha equivocado según estas pistas: la cifra de las unidades es 5; al redondearlo a las decenas se convierte en 6130; su aproximación a las centenas es 6100.",
+     "text_hu": "Gondold végig, ki tévedett a nyomok alapján: az egyesek helyén 5 áll; tízesre kerekítve 6130 lesz; százasra kerekítve 6100.",
+     "items": [
+      {
+       "id": "tb28_4a",
+       "q": "La niña dice 6135 y el niño dice 6125. ¿Quién se ha equivocado?",
+       "q_hu": "A lány azt mondja: 6135, a fiú: 6125. Ki tévedett?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "La niña (6135)",
+         "hu": "A lány (6135)"
+        },
+        {
+         "t": "El niño (6125)",
+         "hu": "A fiú (6125)"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb28_4b",
+       "q": "Explica en qué se ha confundido.",
+       "q_hu": "Magyarázd el, mit kevert össze.",
+       "kind": "open",
+       "answer": "6135 redondeado a las decenas es 6140, no 6130 (la cifra de las unidades es 5, así que se suma 1 decena). El número correcto es 6125.",
+       "answer_hu": "A 6135 tízesre kerekítve 6140, nem 6130 (az egyesek helyén 5 áll, ezért 1 tízest hozzáadunk). A jó szám a 6125."
+      }
+     ]
+    },
+    {
+     "id": "tb28_5",
+     "n": "5",
+     "text": "Si un objeto cuesta 4399 € y el vendedor nos dice: «Te lo redondeo a la centena y te lo dejo en 4300 €», explica si hizo bien el redondeo.",
+     "text_hu": "Ha egy tárgy 4399 €-ba kerül, és az eladó azt mondja: „Százasra kerekítem, és 4300 €-ért adom”, magyarázd el, jól kerekített-e.",
+     "items": [
+      {
+       "id": "tb28_5a",
+       "q": "4399 € redondeado a la centena es 4300 €. ¿Hizo bien el redondeo el vendedor?",
+       "q_hu": "4399 € százasra kerekítve 4300 €. Jól kerekített az eladó?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb28_5b",
+       "q": "¿Cuál es el redondeo correcto de 4399 a la centena?",
+       "q_hu": "Mennyi a 4399 helyesen százasra kerekítve?",
+       "kind": "num",
+       "answer": "4400",
+       "answer_hu": "4400 €, mert a tízesek helyén 9 áll (5 vagy több), ezért 1 százast hozzáadunk. Az eladó nem kerekített, hanem kedvezményt adott."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb29",
+   "book": "tb",
+   "page": 29,
+   "unit": "u1",
+   "title": "Practicamos",
+   "title_hu": "Gyakorlunk",
+   "summary_hu": "Vegyes gyakorlás: összeadások és kivonások, a legnagyobb eredmény megkeresése, a megfelelő két összeadandó kiválasztása, azonos eredményű összeadások (felcserélhetőség), és a csoportosíthatóság használata a gyorsabb számoláshoz.",
+   "words": [
+    {
+     "w": "buscar",
+     "hu": "keresni"
+    },
+    {
+     "w": "el resultado mayor",
+     "hu": "a legnagyobb eredmény"
+    },
+    {
+     "w": "la caja",
+     "hu": "a doboz"
+    },
+    {
+     "w": "cuyo resultado",
+     "hu": "amelynek az eredménye"
+    },
+    {
+     "w": "el indicado",
+     "hu": "a megadott"
+    },
+    {
+     "w": "comprobar",
+     "hu": "ellenőrizni"
+    },
+    {
+     "w": "el mismo resultado",
+     "hu": "ugyanaz az eredmény"
+    },
+    {
+     "w": "analizar",
+     "hu": "megvizsgálni"
+    },
+    {
+     "w": "más rápido",
+     "hu": "gyorsabban"
+    },
+    {
+     "w": "la propiedad asociativa",
+     "hu": "a csoportosíthatóság"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb29_6",
+     "n": "6",
+     "text": "Calcula y busca el resultado mayor.",
+     "text_hu": "Számold ki, és keresd meg a legnagyobb eredményt.",
+     "items": [
+      {
+       "id": "tb29_6a",
+       "q": "723 + 545",
+       "q_hu": "723 + 545",
+       "kind": "num",
+       "answer": "1268"
+      },
+      {
+       "id": "tb29_6b",
+       "q": "935 − 247",
+       "q_hu": "935 − 247",
+       "kind": "num",
+       "answer": "688"
+      },
+      {
+       "id": "tb29_6c",
+       "q": "1352 + 638",
+       "q_hu": "1352 + 638",
+       "kind": "num",
+       "answer": "1990"
+      },
+      {
+       "id": "tb29_6d",
+       "q": "1418 − 528",
+       "q_hu": "1418 − 528",
+       "kind": "num",
+       "answer": "890"
+      },
+      {
+       "id": "tb29_6e",
+       "q": "7152 + 1899",
+       "q_hu": "7152 + 1899",
+       "kind": "num",
+       "answer": "9051"
+      },
+      {
+       "id": "tb29_6f",
+       "q": "7403 + 1459",
+       "q_hu": "7403 + 1459",
+       "kind": "num",
+       "answer": "8862"
+      },
+      {
+       "id": "tb29_6g",
+       "q": "¿Cuál tiene el resultado mayor: 723 + 545, 935 − 247, 1352 + 638, 1418 − 528, 7152 + 1899 o 7403 + 1459?",
+       "q_hu": "Melyiknek a legnagyobb az eredménye: 723 + 545, 935 − 247, 1352 + 638, 1418 − 528, 7152 + 1899 vagy 7403 + 1459?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "1352 + 638",
+         "hu": "1352 + 638"
+        },
+        {
+         "t": "7152 + 1899",
+         "hu": "7152 + 1899"
+        },
+        {
+         "t": "7403 + 1459",
+         "hu": "7403 + 1459"
+        },
+        {
+         "t": "723 + 545",
+         "hu": "723 + 545"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb29_7",
+     "n": "7",
+     "text": "Elige de cada caja los dos sumandos cuyo resultado sea el indicado.",
+     "text_hu": "Válaszd ki minden dobozból azt a két összeadandót, amelynek az összege a megadott szám.",
+     "items": [
+      {
+       "id": "tb29_7a",
+       "q": "Números de la caja: 6457, 1326, 1805. ¿Qué dos sumandos dan 3131?",
+       "q_hu": "A dobozban lévő számok: 6457, 1326, 1805. Melyik két szám összege 3131?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6457 + 1326",
+         "hu": "6457 + 1326"
+        },
+        {
+         "t": "6457 + 1805",
+         "hu": "6457 + 1805"
+        },
+        {
+         "t": "1326 + 1805",
+         "hu": "1326 + 1805"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb29_7b",
+       "q": "Números de la caja: 1457, 5342, 2563. ¿Qué dos sumandos dan 4020?",
+       "q_hu": "A dobozban lévő számok: 1457, 5342, 2563. Melyik két szám összege 4020?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "1457 + 5342",
+         "hu": "1457 + 5342"
+        },
+        {
+         "t": "1457 + 2563",
+         "hu": "1457 + 2563"
+        },
+        {
+         "t": "5342 + 2563",
+         "hu": "5342 + 2563"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb29_7c",
+       "q": "Números de la caja: 3278, 2954, 9874. ¿Qué dos sumandos dan 6232?",
+       "q_hu": "A dobozban lévő számok: 3278, 2954, 9874. Melyik két szám összege 6232?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3278 + 2954",
+         "hu": "3278 + 2954"
+        },
+        {
+         "t": "3278 + 9874",
+         "hu": "3278 + 9874"
+        },
+        {
+         "t": "2954 + 9874",
+         "hu": "2954 + 9874"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb29_8",
+     "n": "8",
+     "text": "Comprueba en qué sumas se obtiene el mismo resultado y explica por qué.",
+     "text_hu": "Ellenőrizd, melyik összeadásoknak ugyanaz az eredménye, és magyarázd el, miért.",
+     "items": [
+      {
+       "id": "tb29_8a",
+       "q": "1258 + 93",
+       "q_hu": "1258 + 93",
+       "kind": "num",
+       "answer": "1351"
+      },
+      {
+       "id": "tb29_8b",
+       "q": "295 + 467",
+       "q_hu": "295 + 467",
+       "kind": "num",
+       "answer": "762"
+      },
+      {
+       "id": "tb29_8c",
+       "q": "2092 + 1645",
+       "q_hu": "2092 + 1645",
+       "kind": "num",
+       "answer": "3737"
+      },
+      {
+       "id": "tb29_8d",
+       "q": "93 + 1258",
+       "q_hu": "93 + 1258",
+       "kind": "num",
+       "answer": "1351"
+      },
+      {
+       "id": "tb29_8e",
+       "q": "¿En qué sumas se obtiene el mismo resultado?",
+       "q_hu": "Melyik összeadásoknak ugyanaz az eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a (1258 + 93) y d (93 + 1258)",
+         "hu": "a (1258 + 93) és d (93 + 1258)"
+        },
+        {
+         "t": "a y b",
+         "hu": "a és b"
+        },
+        {
+         "t": "b y c",
+         "hu": "b és c"
+        },
+        {
+         "t": "c y d",
+         "hu": "c és d"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb29_8f",
+       "q": "¿Por qué dan el mismo resultado?",
+       "q_hu": "Miért ugyanaz az eredményük?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Por la propiedad conmutativa: cambia el orden de los sumandos, pero no el resultado",
+         "hu": "A felcserélhetőség miatt: a tagok sorrendje változik, az eredmény nem"
+        },
+        {
+         "t": "Por la prueba de la resta",
+         "hu": "A kivonás ellenőrzése miatt"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb29_9",
+     "n": "9",
+     "text": "Analiza cómo usar la propiedad asociativa para sumar más rápido: 2500 + 1200 + 500.",
+     "text_hu": "Vizsgáld meg, hogyan használhatod a csoportosíthatóságot a gyorsabb összeadáshoz: 2500 + 1200 + 500.",
+     "items": [
+      {
+       "id": "tb29_9a",
+       "q": "2500 + 500 = ? (agrupa primero estos dos)",
+       "q_hu": "2500 + 500 = ? (először ezt a kettőt csoportosítsd)",
+       "kind": "num",
+       "answer": "3000"
+      },
+      {
+       "id": "tb29_9b",
+       "q": "2500 + 1200 + 500 = (2500 + 500) + 1200 = ?",
+       "q_hu": "2500 + 1200 + 500 = (2500 + 500) + 1200 = ?",
+       "kind": "num",
+       "answer": "4200"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb30",
+   "book": "tb",
+   "page": 30,
+   "unit": "u1",
+   "title": "Practicamos",
+   "title_hu": "Gyakorlunk",
+   "summary_hu": "Vegyes gyakorlás: összeadás vagy kivonás keresése, amely egy adott számhoz (4020) közelít, hibás kivonások javítása, vonatos szöveges feladat, történelmi események időrendbe állítása, és saját szöveges feladat írása.",
+   "words": [
+    {
+     "w": "la maceta",
+     "hu": "a virágláda, virágcserép"
+    },
+    {
+     "w": "la regadera",
+     "hu": "a locsolókanna"
+    },
+    {
+     "w": "aproximarse a",
+     "hu": "közelíteni valamihez"
+    },
+    {
+     "w": "el valor",
+     "hu": "az érték"
+    },
+    {
+     "w": "correcto",
+     "hu": "helyes"
+    },
+    {
+     "w": "el tren",
+     "hu": "a vonat"
+    },
+    {
+     "w": "el pasajero / el viajero",
+     "hu": "az utas"
+    },
+    {
+     "w": "la parada",
+     "hu": "a megálló"
+    },
+    {
+     "w": "subir / bajar",
+     "hu": "felszállni / leszállni"
+    },
+    {
+     "w": "el destino",
+     "hu": "az úti cél"
+    },
+    {
+     "w": "el acontecimiento",
+     "hu": "az esemény"
+    },
+    {
+     "w": "el orden cronológico",
+     "hu": "időrend"
+    },
+    {
+     "w": "la línea del tiempo",
+     "hu": "az időszalag"
+    },
+    {
+     "w": "crear",
+     "hu": "kitalálni, létrehozni"
+    },
+    {
+     "w": "el enunciado",
+     "hu": "a feladat szövege"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb30_11",
+     "n": "11",
+     "text": "Elige dos números de cada maceta para que el resultado de su suma o de su resta se aproxime al valor de la regadera (4020).",
+     "text_hu": "Válassz minden virágládából két számot úgy, hogy az összegük vagy különbségük a locsolókanna értékéhez (4020) közelítsen.",
+     "items": [
+      {
+       "id": "tb30_11a",
+       "q": "Maceta con los números 2105, 1915, 1001. ¿Qué suma o resta de dos números se aproxima más a 4020 (la regadera)?",
+       "q_hu": "Virágláda ezekkel a számokkal: 2105, 1915, 1001. Melyik két szám összege vagy különbsége van a legközelebb a 4020-hoz (a locsolókanna száma)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "2105 + 1915",
+         "hu": "2105 + 1915"
+        },
+        {
+         "t": "2105 − 1915",
+         "hu": "2105 − 1915"
+        },
+        {
+         "t": "2105 + 1001",
+         "hu": "2105 + 1001"
+        },
+        {
+         "t": "2105 − 1001",
+         "hu": "2105 − 1001"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb30_11b",
+       "q": "Maceta con los números 7540, 3525, 8900. ¿Qué suma o resta de dos números se aproxima más a 4020 (la regadera)?",
+       "q_hu": "Virágláda ezekkel a számokkal: 7540, 3525, 8900. Melyik két szám összege vagy különbsége van a legközelebb a 4020-hoz (a locsolókanna száma)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7540 + 3525",
+         "hu": "7540 + 3525"
+        },
+        {
+         "t": "7540 − 3525",
+         "hu": "7540 − 3525"
+        },
+        {
+         "t": "7540 + 8900",
+         "hu": "7540 + 8900"
+        },
+        {
+         "t": "8900 − 7540",
+         "hu": "8900 − 7540"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb30_11c",
+       "q": "Maceta con los números 4025, 8045, 1050. ¿Qué suma o resta de dos números se aproxima más a 4020 (la regadera)?",
+       "q_hu": "Virágláda ezekkel a számokkal: 4025, 8045, 1050. Melyik két szám összege vagy különbsége van a legközelebb a 4020-hoz (a locsolókanna száma)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4025 + 8045",
+         "hu": "4025 + 8045"
+        },
+        {
+         "t": "8045 − 4025",
+         "hu": "8045 − 4025"
+        },
+        {
+         "t": "4025 + 1050",
+         "hu": "4025 + 1050"
+        },
+        {
+         "t": "4025 − 1050",
+         "hu": "4025 − 1050"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb30_11d",
+       "q": "Maceta con los números 3501, 523, 9500. ¿Qué suma o resta de dos números se aproxima más a 4020 (la regadera)?",
+       "q_hu": "Virágláda ezekkel a számokkal: 3501, 523, 9500. Melyik két szám összege vagy különbsége van a legközelebb a 4020-hoz (a locsolókanna száma)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3501 + 523",
+         "hu": "3501 + 523"
+        },
+        {
+         "t": "3501 − 523",
+         "hu": "3501 − 523"
+        },
+        {
+         "t": "3501 + 9500",
+         "hu": "3501 + 9500"
+        },
+        {
+         "t": "9500 − 3501",
+         "hu": "9500 − 3501"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb30_12",
+     "n": "12",
+     "text": "Explica por qué estas restas no son correctas.",
+     "text_hu": "Magyarázd el, miért nem helyesek ezek a kivonások.",
+     "items": [
+      {
+       "id": "tb30_12a",
+       "q": "8760 − 1250 = 7516 está mal. ¿Cuál es el resultado correcto?",
+       "q_hu": "8760 − 1250 = 7516 hibás. Mi a helyes eredmény?",
+       "kind": "num",
+       "answer": "7510",
+       "answer_hu": "Helyesen 7510: az egyeseknél 0 − 0 = 0, nem 6."
+      },
+      {
+       "id": "tb30_12b",
+       "q": "3524 − 1341 = 2183: en la resta, encima del 3 (UM) se ha escrito 4 y encima del 5 (C) se ha escrito 12. ¿Qué está mal?",
+       "q_hu": "3524 − 1341 = 2183: a kivonásban a 3 (ezres) fölé 4-et, az 5 (százas) fölé 12-t írtak. Mi a hiba?",
+       "kind": "open",
+       "answer": "La llevada está mal colocada: como no se puede restar 4 a 2 en las decenas, hay que convertir 1 centena en 10 decenas (5 C → 4 C y 2 D → 12 D), no cambiar las unidades de millar. Bien hecha da 2183.",
+       "answer_hu": "Rossz helyre írták a váltást: mivel a tízeseknél 2-ből nem lehet 4-et elvenni, 1 százast kell 10 tízesre váltani (5 százas → 4, 2 tízes → 12), nem az ezreseket kell átírni. Helyesen számolva 2183 jön ki."
+      },
+      {
+       "id": "tb30_12c",
+       "q": "1640 − 5783 = 9923. ¿Por qué no es correcta esta resta?",
+       "q_hu": "1640 − 5783 = 9923. Miért nem helyes ez a kivonás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Porque el minuendo (1640) es menor que el sustraendo (5783) y no se puede restar",
+         "hu": "Mert a kisebbítendő (1640) kisebb a kivonandónál (5783), így nem lehet kivonni"
+        },
+        {
+         "t": "Porque falta una llevada en las unidades",
+         "hu": "Mert hiányzik egy váltás az egyeseknél"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb30_13",
+     "n": "13",
+     "text": "Un tren comienza el viaje con 260 pasajeros. En la única parada del trayecto suben 170 pasajeros, pero se bajan 80. Calcula con cuántos viajeros llega el tren a su destino.",
+     "text_hu": "Egy vonat 260 utassal indul. Az út egyetlen megállójában 170 utas felszáll, de 80 leszáll. Számold ki, hány utassal ér célba a vonat.",
+     "items": [
+      {
+       "id": "tb30_13a",
+       "q": "260 + 170 − 80 = ?",
+       "q_hu": "260 + 170 − 80 = ?",
+       "kind": "num",
+       "answer": "350"
+      }
+     ]
+    },
+    {
+     "id": "tb30_14",
+     "n": "14",
+     "text": "Sitúa estos acontecimientos por orden cronológico en una línea del tiempo.",
+     "text_hu": "Helyezd el ezeket az eseményeket időrendben egy időszalagon.",
+     "items": [
+      {
+       "id": "tb30_14a",
+       "q": "a. 1604: Publicación de El Quijote. b. 1969: Primera visita del ser humano a la Luna. c. 1819: Inauguración del Museo del Prado. d. 1934: Nacimiento de Jane Goodall. Escribe las letras en orden cronológico (del más antiguo al más reciente).",
+       "q_hu": "a. 1604: megjelenik a Don Quijote. b. 1969: az ember először jár a Holdon. c. 1819: megnyílik a Prado Múzeum. d. 1934: megszületik Jane Goodall. Írd le a betűket időrendben (a legrégebbitől a legújabbig).",
+       "kind": "type",
+       "answer": "a, c, d, b",
+       "alts": [
+        "acdb",
+        "a c d b",
+        "a,c,d,b"
+       ],
+       "answer_hu": "a (1604), c (1819), d (1934), b (1969)"
+      }
+     ]
+    },
+    {
+     "id": "tb30_15",
+     "n": "15",
+     "text": "Crea el enunciado de un problema que se resuelva utilizando una suma y una resta, con números de 4 cifras. Resuelve el problema.",
+     "text_hu": "Találj ki egy szöveges feladatot, amelyet egy összeadással és egy kivonással kell megoldani, négyjegyű számokkal. Oldd meg a feladatot.",
+     "items": [
+      {
+       "id": "tb30_15a",
+       "q": "Crea y resuelve un problema con una suma y una resta con números de 4 cifras.",
+       "q_hu": "Találj ki és oldj meg egy feladatot egy összeadással és egy kivonással, négyjegyű számokkal.",
+       "kind": "open",
+       "answer": "Ejemplo: En una biblioteca hay 2350 libros. Llegan 1240 libros nuevos y se prestan 1105. ¿Cuántos libros quedan? 2350 + 1240 = 3590; 3590 − 1105 = 2485 libros.",
+       "answer_hu": "Példa: Egy könyvtárban 2350 könyv van. Érkezik 1240 új könyv, és kölcsönadnak 1105-öt. Hány könyv marad? 2350 + 1240 = 3590; 3590 − 1105 = 2485 könyv."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb31",
+   "book": "tb",
+   "page": 31,
+   "unit": "u1",
+   "title": "¿Qué hemos aprendido? Repasa",
+   "title_hu": "Mit tanultunk? Ismétlés",
+   "summary_hu": "A fejezet összefoglalása: a négyjegyű számok ezresekből, százasokból, tízesekből és egyesekből állnak (2785 = 2 UM + 7 C + 8 D + 5 U = 2000 + 700 + 80 + 5, kiolvasva „dos mil setecientos ochenta y cinco”). Összehasonlításuk a számjegyek helye alapján (2785 > 2568, mert 7 > 5), ábrázolás számegyenesen, kerekítés tízesre vagy százasra (2568 százasra kerekítve 2600). Összeadás és kivonás (2785 + 2568 = 5353, 2785 − 2568 = 217), a felcserélhetőség (5 + 7 = 7 + 5), a csoportosíthatóság ((2 + 6) + 8 = 2 + (6 + 8)) és a kivonás ellenőrzése (kisebbítendő = különbség + kivonandó).",
+   "words": [
+    {
+     "w": "repasar",
+     "hu": "ismételni, átismételni"
+    },
+    {
+     "w": "¿Qué hemos aprendido?",
+     "hu": "Mit tanultunk?"
+    },
+    {
+     "w": "estar formado por",
+     "hu": "valamiből állni"
+    },
+    {
+     "w": "se leen",
+     "hu": "így olvassuk őket"
+    },
+    {
+     "w": "se comparan",
+     "hu": "összehasonlítjuk őket"
+    },
+    {
+     "w": "se representan y ordenan",
+     "hu": "ábrázoljuk és sorba rendezzük őket"
+    },
+    {
+     "w": "se aproximan",
+     "hu": "kerekítjük őket"
+    },
+    {
+     "w": "se suman y se restan",
+     "hu": "összeadjuk és kivonjuk őket"
+    },
+    {
+     "w": "la propiedad conmutativa",
+     "hu": "a felcserélhetőség"
+    },
+    {
+     "w": "la propiedad asociativa",
+     "hu": "a csoportosíthatóság"
+    },
+    {
+     "w": "la prueba de la resta",
+     "hu": "a kivonás ellenőrzése"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb31_repasa",
+     "n": "Repasa",
+     "text": "Repasa: practica con los ejemplos del resumen.",
+     "text_hu": "Ismétlés: gyakorolj az összefoglaló példáival.",
+     "items": [
+      {
+       "id": "tb31_repasaa",
+       "q": "2785 = 2 UM + 7 C + ? D + 5 U",
+       "q_hu": "2785 = 2 ezres + 7 százas + ? tízes + 5 egyes",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb31_repasab",
+       "q": "¿Cómo se lee 2785?",
+       "q_hu": "Hogyan olvassuk spanyolul a 2785-öt?",
+       "kind": "type",
+       "answer": "dos mil setecientos ochenta y cinco",
+       "alts": [],
+       "answer_hu": "kétezer-hétszáznyolcvanöt"
+      },
+      {
+       "id": "tb31_repasac",
+       "q": "2785 ? 2568",
+       "q_hu": "2785 ? 2568",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb31_repasad",
+       "q": "Aproximación de 2568 a las centenas.",
+       "q_hu": "Kerekítsd a 2568-at százasra.",
+       "kind": "num",
+       "answer": "2600"
+      },
+      {
+       "id": "tb31_repasae",
+       "q": "2785 + 2568",
+       "q_hu": "2785 + 2568",
+       "kind": "num",
+       "answer": "5353"
+      },
+      {
+       "id": "tb31_repasaf",
+       "q": "2785 − 2568",
+       "q_hu": "2785 − 2568",
+       "kind": "num",
+       "answer": "217"
+      },
+      {
+       "id": "tb31_repasag",
+       "q": "Prueba de la resta: 217 + 2568 = ?",
+       "q_hu": "A kivonás ellenőrzése: 217 + 2568 = ?",
+       "kind": "num",
+       "answer": "2785"
+      },
+      {
+       "id": "tb31_repasah",
+       "q": "5 + 7 = 7 + 5. ¿Qué propiedad es?",
+       "q_hu": "5 + 7 = 7 + 5. Melyik tulajdonság ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb31_repasai",
+       "q": "(2 + 6) + 8 = 2 + (6 + 8). ¿Qué propiedad es?",
+       "q_hu": "(2 + 6) + 8 = 2 + (6 + 8). Melyik tulajdonság ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb32",
+   "book": "tb",
+   "page": 32,
+   "unit": "u1",
+   "title": "¿Qué hemos aprendido? Aplica",
+   "title_hu": "Mit tanultunk? Alkalmazd",
+   "summary_hu": "Egy iskola családjai és tanárai egész héten élelmiszert gyűjtöttek a város élelmiszerbankjának. A táblázat: rizs 2405 kg, tészta 3190 kg, tej 2450 liter, hüvelyesek 1058 kg. A feladatokban ezeket a számokat kell kiolvasni, felbontani, összehasonlítani, kerekíteni, összeadni és kivonni.",
+   "words": [
+    {
+     "w": "aplicar",
+     "hu": "alkalmazni"
+    },
+    {
+     "w": "el profesorado",
+     "hu": "a tanárok, tantestület"
+    },
+    {
+     "w": "el colegio",
+     "hu": "az iskola"
+    },
+    {
+     "w": "donar",
+     "hu": "adományozni"
+    },
+    {
+     "w": "el banco de alimentos",
+     "hu": "az élelmiszerbank"
+    },
+    {
+     "w": "el equipo directivo",
+     "hu": "az iskolavezetés"
+    },
+    {
+     "w": "el recuento",
+     "hu": "a számlálás, összesítés"
+    },
+    {
+     "w": "el arroz",
+     "hu": "a rizs"
+    },
+    {
+     "w": "la pasta",
+     "hu": "a tészta"
+    },
+    {
+     "w": "la leche",
+     "hu": "a tej"
+    },
+    {
+     "w": "las legumbres",
+     "hu": "a hüvelyesek (bab, lencse, csicseriborsó)"
+    },
+    {
+     "w": "el kilo (kg)",
+     "hu": "a kilogramm"
+    },
+    {
+     "w": "el litro (l)",
+     "hu": "a liter"
+    },
+    {
+     "w": "los alimentos sólidos",
+     "hu": "a szilárd élelmiszerek"
+    },
+    {
+     "w": "de manera urgente",
+     "hu": "sürgősen"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb32_1",
+     "n": "1",
+     "text": "Escribe cómo se leen las cantidades de legumbres y de pasta.",
+     "text_hu": "Írd le, hogyan kell kiolvasni a hüvelyesek és a tészta mennyiségét.",
+     "items": [
+      {
+       "id": "tb32_1a",
+       "q": "Tabla de alimentos recogidos: arroz 2405 kg, pasta 3190 kg, leche 2450 l, legumbres 1058 kg. ¿Cómo se lee 1058 (legumbres)?",
+       "q_hu": "Az összegyűjtött élelmiszerek táblázata: rizs 2405 kg, tészta 3190 kg, tej 2450 l, hüvelyesek 1058 kg. Hogyan olvassuk spanyolul az 1058-at (hüvelyesek)?",
+       "kind": "type",
+       "answer": "mil cincuenta y ocho",
+       "alts": [],
+       "answer_hu": "ezerötvennyolc"
+      },
+      {
+       "id": "tb32_1b",
+       "q": "Tabla de alimentos recogidos: arroz 2405 kg, pasta 3190 kg, leche 2450 l, legumbres 1058 kg. ¿Cómo se lee 3190 (pasta)?",
+       "q_hu": "Az összegyűjtött élelmiszerek táblázata: rizs 2405 kg, tészta 3190 kg, tej 2450 l, hüvelyesek 1058 kg. Hogyan olvassuk spanyolul a 3190-et (tészta)?",
+       "kind": "type",
+       "answer": "tres mil ciento noventa",
+       "alts": [],
+       "answer_hu": "háromezer-százkilencven"
+      }
+     ]
+    },
+    {
+     "id": "tb32_2",
+     "n": "2",
+     "text": "Descompón la cantidad de arroz de dos formas. ¿Qué cifra ocupa el lugar de las decenas? ¿Qué significado tiene?",
+     "text_hu": "Bontsd fel kétféleképpen a rizs mennyiségét. Melyik számjegy áll a tízesek helyén? Mit jelent?",
+     "items": [
+      {
+       "id": "tb32_2a",
+       "q": "Descompón 2405 en UM, C, D y U.",
+       "q_hu": "Bontsd fel a 2405-öt ezresekre, százasokra, tízesekre és egyesekre.",
+       "kind": "type",
+       "answer": "2 UM + 4 C + 0 D + 5 U",
+       "alts": [
+        "2 UM + 4 C + 5 U",
+        "2UM+4C+0D+5U",
+        "2UM+4C+5U"
+       ],
+       "answer_hu": "2 ezres + 4 százas + 0 tízes + 5 egyes"
+      },
+      {
+       "id": "tb32_2b",
+       "q": "Descompón 2405 como suma (ej.: 2000 + ...).",
+       "q_hu": "Bontsd fel a 2405-öt összegként (pl. 2000 + ...).",
+       "kind": "type",
+       "answer": "2000 + 400 + 5",
+       "alts": [
+        "2000+400+5",
+        "2000 + 400 + 0 + 5",
+        "2 × 1000 + 4 × 100 + 5"
+       ]
+      },
+      {
+       "id": "tb32_2c",
+       "q": "¿Qué cifra ocupa el lugar de las decenas en 2405?",
+       "q_hu": "Melyik számjegy áll a 2405-ben a tízesek helyén?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb32_2d",
+       "q": "¿Qué significa el 0 en las decenas de 2405?",
+       "q_hu": "Mit jelent a 0 a 2405 tízesei helyén?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Que no hay decenas",
+         "hu": "Hogy nincs tízes"
+        },
+        {
+         "t": "Que hay 10 decenas",
+         "hu": "Hogy 10 tízes van"
+        },
+        {
+         "t": "Que el número es par",
+         "hu": "Hogy a szám páros"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb32_3",
+     "n": "3",
+     "text": "¿De qué producto se ha recogido más cantidad, de arroz o de leche? Ordena las cuatro cantidades de alimentos de menor a mayor.",
+     "text_hu": "Melyik termékből gyűjtöttek többet, rizsből vagy tejből? Rendezd a négy mennyiséget a legkisebbtől a legnagyobbig.",
+     "items": [
+      {
+       "id": "tb32_3a",
+       "q": "Arroz: 2405; leche: 2450. ¿De qué se ha recogido más cantidad?",
+       "q_hu": "Rizs: 2405; tej: 2450. Miből gyűjtöttek többet?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "De arroz",
+         "hu": "Rizsből"
+        },
+        {
+         "t": "De leche",
+         "hu": "Tejből"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb32_3b",
+       "q": "Tabla de alimentos recogidos: arroz 2405 kg, pasta 3190 kg, leche 2450 l, legumbres 1058 kg. Ordena las cuatro cantidades de menor a mayor.",
+       "q_hu": "Az összegyűjtött élelmiszerek táblázata: rizs 2405 kg, tészta 3190 kg, tej 2450 l, hüvelyesek 1058 kg. Rendezd a négy mennyiséget a legkisebbtől a legnagyobbig.",
+       "kind": "type",
+       "answer": "1058, 2405, 2450, 3190",
+       "alts": [
+        "1058 2405 2450 3190",
+        "1058 < 2405 < 2450 < 3190",
+        "1058,2405,2450,3190"
+       ],
+       "answer_hu": "1058 (hüvelyesek), 2405 (rizs), 2450 (tej), 3190 (tészta)"
+      }
+     ]
+    },
+    {
+     "id": "tb32_4",
+     "n": "4",
+     "text": "A lo largo de la semana, ¿cuántos kilos de pasta y legumbre se han recogido aproximadamente? Calcula la cantidad exacta recogida. ¿Qué propiedad usarías para calcularla de otra manera?",
+     "text_hu": "Körülbelül hány kiló tésztát és hüvelyest gyűjtöttek a héten? Számold ki a pontos mennyiséget. Melyik tulajdonságot használnád, hogy másképp is kiszámold?",
+     "items": [
+      {
+       "id": "tb32_4a",
+       "q": "Pasta: 3190 kg; legumbres: 1058 kg. Redondea cada cantidad a la centena y súmalas. ¿Cuántos kilos aproximadamente?",
+       "q_hu": "Tészta: 3190 kg; hüvelyesek: 1058 kg. Kerekítsd mindkettőt százasra, és add össze. Kb. hány kiló?",
+       "kind": "num",
+       "answer": "4300",
+       "answer_hu": "Kb. 4300 kg (3200 + 1100)."
+      },
+      {
+       "id": "tb32_4b",
+       "q": "Calcula la cantidad exacta: 3190 + 1058 = ?",
+       "q_hu": "Számold ki a pontos mennyiséget: 3190 + 1058 = ?",
+       "kind": "num",
+       "answer": "4248"
+      },
+      {
+       "id": "tb32_4c",
+       "q": "Para calcularlo de otra manera (1058 + 3190), ¿qué propiedad usarías?",
+       "q_hu": "Ha másképp számolnád (1058 + 3190), melyik tulajdonságot használnád?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb32_5",
+     "n": "5",
+     "text": "Averigua de dos formas distintas la cantidad de alimentos sólidos que se ha recogido en total. ¿Has utilizado alguna propiedad conocida? ¿Cuál?",
+     "text_hu": "Számold ki kétféleképpen, mennyi szilárd élelmiszert gyűjtöttek összesen. Használtál valamilyen ismert tulajdonságot? Melyiket?",
+     "items": [
+      {
+       "id": "tb32_5a",
+       "q": "Alimentos sólidos: arroz 2405 kg, pasta 3190 kg, legumbres 1058 kg. Calcula (2405 + 3190) + 1058.",
+       "q_hu": "Szilárd élelmiszerek: rizs 2405 kg, tészta 3190 kg, hüvelyesek 1058 kg. Számold ki: (2405 + 3190) + 1058.",
+       "kind": "num",
+       "answer": "6653"
+      },
+      {
+       "id": "tb32_5b",
+       "q": "Ahora calcula 2405 + (3190 + 1058).",
+       "q_hu": "Most számold ki: 2405 + (3190 + 1058).",
+       "kind": "num",
+       "answer": "6653"
+      },
+      {
+       "id": "tb32_5c",
+       "q": "¿Qué propiedad has utilizado?",
+       "q_hu": "Melyik tulajdonságot használtad?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatóság"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb32_6",
+     "n": "6",
+     "text": "Si del total de leche recogida se envían 1275 litros de manera urgente, ¿cuántos litros quedan? Comprueba el resultado.",
+     "text_hu": "Ha az összegyűjtött tejből 1275 litert sürgősen elküldenek, hány liter marad? Ellenőrizd az eredményt.",
+     "items": [
+      {
+       "id": "tb32_6a",
+       "q": "Hay 2450 l de leche y se envían 1275 l. ¿Cuántos litros quedan?",
+       "q_hu": "2450 l tej van, és 1275 l-t elküldenek. Hány liter marad?",
+       "kind": "num",
+       "answer": "1175"
+      },
+      {
+       "id": "tb32_6b",
+       "q": "Comprueba: 1175 + 1275 = ? (debe dar 2450)",
+       "q_hu": "Ellenőrizd: 1175 + 1275 = ? (2450-et kell kapnod)",
+       "kind": "num",
+       "answer": "2450"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb33",
+   "book": "tb",
+   "page": 33,
+   "unit": "u1",
+   "title": "¿Qué hemos aprendido? Crea",
+   "title_hu": "Mit tanultunk? Alkoss",
+   "summary_hu": "Záró projekt: el kell mondani, mit tesztek otthon a héten az újrahasznosításért. Három feladat közül lehet választani: beszámoló írása, oszlopdiagram rajzolása a hulladékfajtákról, vagy plakát készítése a családnak. Végül a „Kilépőjegy” (Ticket de salida): önértékelés, és összehasonlítás a fejezet eleji belépőjeggyel.",
+   "words": [
+    {
+     "w": "crear",
+     "hu": "alkotni, létrehozni"
+    },
+    {
+     "w": "encajar",
+     "hu": "illeni valakihez"
+    },
+    {
+     "w": "redactar un informe",
+     "hu": "beszámolót írni"
+    },
+    {
+     "w": "el gráfico de barras",
+     "hu": "az oszlopdiagram"
+    },
+    {
+     "w": "elaborar un cartel",
+     "hu": "plakátot készíteni"
+    },
+    {
+     "w": "los residuos",
+     "hu": "a hulladék"
+    },
+    {
+     "w": "el contenedor adecuado",
+     "hu": "a megfelelő konténer"
+    },
+    {
+     "w": "con más facilidad",
+     "hu": "könnyebben"
+    },
+    {
+     "w": "acordarse de",
+     "hu": "emlékezni valamire"
+    },
+    {
+     "w": "la equivocación",
+     "hu": "a tévedés, hiba"
+    },
+    {
+     "w": "un poco, bastante o mucho",
+     "hu": "egy kicsit, eléggé vagy nagyon"
+    },
+    {
+     "w": "el ticket de salida",
+     "hu": "a kilépőjegy"
+    },
+    {
+     "w": "no olvides",
+     "hu": "ne felejtsd el"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb33_crea",
+     "n": "Crea",
+     "text": "Es el momento de explicar qué acciones de reciclaje hacéis en casa durante la semana. ¿Cuál de estas tareas crees que encaja mejor contigo? ¿Por qué?",
+     "text_hu": "Itt az ideje elmondani, mit tesztek otthon a héten az újrahasznosításért. Szerinted melyik feladat illik hozzád a legjobban? Miért?",
+     "items": [
+      {
+       "id": "tb33_creaa",
+       "q": "¿Cuál de estas tareas encaja mejor contigo? 1) Redactar un informe: si habéis tirado los residuos al contenedor adecuado y cuáles habéis reciclado con más facilidad. 2) Dibujar un gráfico de barras con los tipos de residuos reciclados durante la semana. 3) Elaborar un cartel para que tu familia se acuerde de reciclar y cometa menos equivocaciones. ¿Por qué?",
+       "q_hu": "Melyik feladat illik hozzád a legjobban? 1) Beszámolót írni: jó konténerbe dobtátok-e a szemetet, és mit volt a legkönnyebb újrahasznosítani. 2) Oszlopdiagramot rajzolni a héten újrahasznosított hulladékfajtákról. 3) Plakátot készíteni, hogy a családod emlékezzen az újrahasznosításra és kevesebbet tévedjen. Miért?",
+       "kind": "open",
+       "answer": "Respuesta personal. Ej.: El gráfico de barras, porque me gusta dibujar y contar.",
+       "answer_hu": "Saját válasz. Pl.: Az oszlopdiagram, mert szeretek rajzolni és számolni."
+      },
+      {
+       "id": "tb33_creab",
+       "q": "Haz la tarea que has elegido y explica por qué encaja contigo.",
+       "q_hu": "Készítsd el a választott feladatot, és magyarázd el, miért illik hozzád.",
+       "kind": "open",
+       "answer": "Respuesta personal. Ej.: Elijo el gráfico de barras porque me gusta dibujar y contar: lunes 3 envases, martes 5 papeles...",
+       "answer_hu": "Saját válasz. Pl.: Az oszlopdiagramot választom, mert szeretek rajzolni és számolni: hétfő 3 műanyag flakon, kedd 5 papír..."
+      }
+     ]
+    },
+    {
+     "id": "tb33_ticket",
+     "n": "Ticket",
+     "text": "Ticket de salida. Lee cada enunciado y di cuánto crees que has aprendido: un poco, bastante o mucho. ¡No olvides compararlo con tu ticket de entrada!",
+     "text_hu": "Kilépőjegy. Olvasd el az állításokat, és mondd meg, mennyit tanultál: egy kicsit, eléggé vagy nagyon sokat. Ne felejtsd el összehasonlítani a belépőjegyeddel!",
+     "items": [
+      {
+       "id": "tb33_ticketa",
+       "q": "La comparación de números de hasta 4 cifras.",
+       "q_hu": "Legfeljebb négyjegyű számok összehasonlítása.",
+       "kind": "open",
+       "answer": "Respuesta personal: un poco, bastante o mucho.",
+       "answer_hu": "Saját válasz: egy kicsit, eléggé vagy nagyon."
+      },
+      {
+       "id": "tb33_ticketb",
+       "q": "La aproximación de números de hasta 4 cifras.",
+       "q_hu": "Legfeljebb négyjegyű számok kerekítése.",
+       "kind": "open",
+       "answer": "Respuesta personal: un poco, bastante o mucho.",
+       "answer_hu": "Saját válasz: egy kicsit, eléggé vagy nagyon."
+      },
+      {
+       "id": "tb33_ticketc",
+       "q": "La suma y la resta de números de hasta 4 cifras.",
+       "q_hu": "Legfeljebb négyjegyű számok összeadása és kivonása.",
+       "kind": "open",
+       "answer": "Respuesta personal: un poco, bastante o mucho.",
+       "answer_hu": "Saját válasz: egy kicsit, eléggé vagy nagyon."
+      },
+      {
+       "id": "tb33_ticketd",
+       "q": "Las propiedades de la suma y de la resta.",
+       "q_hu": "Az összeadás és a kivonás tulajdonságai.",
+       "kind": "open",
+       "answer": "Respuesta personal: un poco, bastante o mucho.",
+       "answer_hu": "Saját válasz: egy kicsit, eléggé vagy nagyon."
+      },
+      {
+       "id": "tb33_tickete",
+       "q": "La resolución de problemas.",
+       "q_hu": "Szöveges feladatok megoldása.",
+       "kind": "open",
+       "answer": "Respuesta personal: un poco, bastante o mucho.",
+       "answer_hu": "Saját válasz: egy kicsit, eléggé vagy nagyon."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

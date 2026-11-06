@@ -111,6 +111,7 @@
       if (type === 'w') { const w = pool().find(x => x.id === id); if (w) { const pp = poolFor([w.unit]); return vocabQ(w, 'tr', pp.length > 3 ? pp : pool()); } }
       if (type === 'q') { const q = H.D.quiz.find(x => 'q' + x.i === id); if (q) return quizQ(q); }
       if (type === 'sp') { const o = weeks().flatMap(w => w.words.map(y => ({ y, u: w.unit }))).find(o2 => o2.y.w === id); if (o && X.xsprite[C.lang]['x:sp:' + o.y.w]) return spellQ(o.y, o.u); }
+      if (type === 'pg') { const o = pgItem(id); if (o) return pgQ(o.p, o.t, o.it, true); }
       if (type === 'tk') { const t = tasksAll().find(x => x.id === id); if (t) return taskQ(t); }
       if (type === 'dc') { for (const u of unitsList()) { const x = dictWords(u).find(y => norm(y.w) === id); if (x) return dictQ(x, u); } }
       if (type === 'g') { const topic = id.split(':')[0]; if (MG && MG.TOPICS.indexOf(topic) >= 0) return genQ(topic, level(topic)); }
@@ -146,7 +147,7 @@
       Object.keys(C.xAudio).forEach(l => { if (!xbuf[l] && xctx && !xbuf['_p' + l]) { xbuf['_p' + l] = 1; fetch(C.xAudio[l]).then(r => r.arrayBuffer()).then(ab => xctx.decodeAudioData(ab)).then(b => { xbuf[l] = b; }).catch(() => { xbuf['_p' + l] = 0; }); } });
     } else Object.keys(C.xAudio).forEach(l => { if (!xel[l]) { const a = new Audio(C.xAudio[l]); a.preload = 'auto'; xel[l] = a; } });
   }
-  function segOf(lang, key) { if (key.indexOf('x:') === 0 || key.indexOf('n:') === 0) return X.xsprite[lang] && X.xsprite[lang][key]; return H.D.sprite[lang] && H.D.sprite[lang][key]; }
+  function segOf(lang, key) { if (key.indexOf('p:') === 0) return pgSeg(lang, key); if (key.indexOf('x:') === 0 || key.indexOf('n:') === 0) return X.xsprite[lang] && X.xsprite[lang][key]; return H.D.sprite[lang] && H.D.sprite[lang][key]; }
   function xplay(lang, key, text, done) {
     const seg = X.xsprite[lang] && X.xsprite[lang][key];
     if (C.xMode === 'ctx' && xctx && xbuf[lang] && seg) {
@@ -162,7 +163,7 @@
   }
   function stopX() { if (xsrc) { try { xsrc.stop(); } catch (e) { } xsrc = null; } if (xcur) { try { xcur.pause(); } catch (e) { } xcur = null; } clearTimeout(xtimer); }
   function stopAll() { tok++; stopX(); try { H.stop(); } catch (e) { } if (root.speechSynthesis) { try { root.speechSynthesis.cancel(); } catch (e) { } } }
-  function playOne(it, done) { const k = it.k; if (k.indexOf('x:') === 0 || k.indexOf('n:') === 0) xplay(it.l, k, it.t, done); else H.speak(it.l, k, it.t, done); }
+  function playOne(it, done) { const k = it.k; if (k.indexOf('p:') === 0) { pgPlay(it.l, k, it.t, done); return; } if (k.indexOf('x:') === 0 || k.indexOf('n:') === 0) xplay(it.l, k, it.t, done); else H.speak(it.l, k, it.t, done); }
   function say(items, then) { // items: [{l,k,t}]
     stopAll(); xEnsure(); const my = ++tok; let i = 0;
     const next = () => { if (my !== tok) return; if (i >= items.length) { if (then) then(); return; } const it = items[i++]; let fired = false; const seg = segOf(it.l, it.k);
@@ -295,11 +296,111 @@
     if (R.mode === 'boss') { R.win = R.boss.hp <= 0; markActive(); if (R.win) { bonus += 10; P.bossWin = P.bossWin || {}; P.bossWin[R.unit] = today(); celebrate(true); } }
     if (R.mode === 'blitz') { P.blitz = P.blitz || {}; R.record = R.score > (P.blitz.best || 0); if (R.record) { P.blitz.best = R.score; celebrate(true); } bonus += Math.min(10, Math.round(R.score / 3)); markActive(); }
     if (R.mode === 'duel') { const sc = R.duel.score; R.duelRes = sc[0] > sc[1] ? 'm' : sc[0] < sc[1] ? 'd' : 't'; if (R.duelRes !== 'd') celebrate(R.duelRes === 'm'); bonus += R.duelRes === 'm' ? 5 : 2; markActive(); }
+    if (R.mode === 'page') bonus += pgFinish(R);
     if (R.mode === 'mission' && pct >= .8) celebrate();
     if (R.mode === 'test' && R.win) celebrate(true);
     if (bonus) award(bonus); R.bonus = bonus; Store.save(); Store.writeLocal();
     try { pct >= .6 ? H.sfxGood() : null; } catch (e) { }
     render({ top: true }); setTimeout(() => { if (ST.view === 'run') sayHu(R.mode === 'test' ? (R.win ? 'fb_race_win' : 'fb_race_lose') : R.mode === 'boss' ? (R.win ? 'boss_win' : 'boss_lose') : R.mode === 'duel' ? ({ m: 'duel_m_win', d: 'duel_d_win', t: 'duel_tie' })[R.duelRes] : R.record ? 'blitz_record' : 'fb_end'); }, 800);
+  }
+  // ================= KÖNYVOLDALAK (Robert 2026-11-06: oldalanként minden szó és feladat) =================
+  // adat: X.pages = {books:[{id,title,title_hu}], pages:[{id,book,page,unit,lesson,title,title_hu,summary_hu,words:[{w,hu}],tasks:[{id,n,text,text_hu,items:[{id,q,q_hu,kind,answer,alts,answer_hu,options}]}]}]}
+  // hang: fejezetenként külön sprite (X.pages.audio[unit][lang] = url, X.pages.sprite[lang][kulcs] = [kezdet, hossz, unit]); kulcsok: p:t:/p:th:<pid> cím, p:w:/p:wh:<pid>:<i> szó, p:k:/p:kh:<tid> utasítás, p:q:/p:qh:<iid> alpont
+  function pgData() { return (X.pages && X.pages.pages) || []; }
+  function pgBooks() { const b = (X.pages && X.pages.books) || []; return b.filter(x => pgData().some(p => p.book === x.id)); }
+  function pgFind(id) { return pgData().find(p => p.id === id); }
+  function pgCheckable(it) { return it.kind === 'num' || it.kind === 'type' || it.kind === 'choice'; }
+  function pgPct(pid) { return ((P.pg || {})[pid]) || 0; }
+  function pgStars(pid) { const p = pgPct(pid); return p ? [0, 1, 2].map(i => i < starsOf(p) ? '★' : '☆').join('') : ''; }
+  function pgUnits(book) { return unitsList().filter(u => pgData().some(p => p.book === book && p.unit === u)); }
+  function pgQ(p, t, it, first) {
+    const audio = []; if (first) audio.push({ l: C.lang, k: 'p:k:' + t.id, t: t.text, gap: 250 });
+    audio.push({ l: C.lang, k: 'p:q:' + it.id, t: it.q }); if (first) audio.push({ l: 'hu', k: 'p:kh:' + t.id, t: t.text_hu, gap: 250 }); audio.push({ l: 'hu', k: 'p:qh:' + it.id, t: it.q_hu });
+    const q = { kind: it.kind, part: 'page', unit: p.unit, page: String(p.page), rec: { type: 'pg', id: it.id, label: it.q, hu: it.q_hu, unit: p.unit }, prompt: null,
+      ctx: { n: t.n, es: t.text, hu: t.text_hu, page: p.page, book: p.book }, big: it.q, small: it.q_hu !== it.q ? it.q_hu : '', audio, answer: String(it.answer), alts: it.alts || [],
+      explain: it.answer_hu ? it.answer_hu : '', accent: C.lang === 'es' };
+    if (it.kind === 'choice') { q.options = (it.options || []).map((o, i) => ({ v: i, label: o.t, sm: o.hu && o.hu !== o.t ? o.hu : '' })); q.answer = String(it.answer); const o = (it.options || [])[it.answer]; if (o) q.explain = o.t + (o.hu && o.hu !== o.t ? ' – ' + o.hu : '') + (it.answer_hu && it.answer_hu !== o.hu ? ' · ' + it.answer_hu : ''); }
+    if (it.kind === 'type') q.explain = (it.answer_hu || '');
+    return q;
+  }
+  function pgQs(p, tid) { const qs = []; p.tasks.forEach(t => { if (tid && t.id !== tid) return; let first = true; t.items.forEach(it => { if (!pgCheckable(it)) return; qs.push(pgQ(p, t, it, first)); first = false; }); }); return qs; }
+  function startPage(pid, tid) { const p = pgFind(pid); if (!p) return; pgPreload(p.unit); const qs = pgQs(p, tid); if (!qs.length) { toast(hu('pg_none')); return; } ST.pid = pid;
+    startRun({ mode: 'page', title: bookName(p.book) + ' · ' + p.page + '. ' + hu('pg_page'), qs, back: 'page', pid, tid: tid || null, instr: 'i_page_run' }); }
+  function bookName(id) { const b = pgBooks().find(x => x.id === id); return b ? b.title_hu : id; }
+  function vPages() {
+    const books = pgBooks(); if (!books.length) return topbar(hu('t_pages')) + '<div class="px-card">' + esc(hu('pg_empty')) + '</div>';
+    const bk = ST.pgbook && books.some(b => b.id === ST.pgbook) ? ST.pgbook : books[0].id; ST.pgbook = bk;
+    const us = pgUnits(bk); const au = activeUnits().filter(u => us.indexOf(u) >= 0); const un = ST.pgunit && us.indexOf(ST.pgunit) >= 0 ? ST.pgunit : (au[0] || us[0]); ST.pgunit = un;
+    const ps = pgData().filter(p => p.book === bk && p.unit === un).sort((a, b) => a.page - b.page);
+    return topbar(hu('t_pages')) + '<div class="px-row">' + instrBtn('i_pages') + '</div>' +
+      '<div class="px-chips">' + books.map(b => '<button type="button" class="chip' + (b.id === bk ? ' on' : '') + '" data-a="pgbook" data-b="' + b.id + '">' + esc(b.title_hu) + '</button>').join('') + '</div>' +
+      '<div class="px-chips">' + us.map(u => '<button type="button" class="chip' + (u === un ? ' on' : '') + '" data-a="pgunit" data-u="' + u + '">' + esc(unitTitle(u).length > 24 ? unitTitle(u).slice(0, 22) + '…' : unitTitle(u)) + '</button>').join('') + '</div>' +
+      '<div class="px-pgrid">' + ps.map(p => { const n = p.tasks.reduce((s, t) => s + t.items.length, 0); const pc = pgPct(p.id);
+        return '<button type="button" class="px-pg' + (pc >= 80 ? ' done' : '') + '" data-a="pgopen" data-p="' + p.id + '"><b>' + p.page + '.</b><span class="t">' + esc(p.title) + '</span><small>' + esc(p.title_hu) + '</small><span class="m">' + p.tasks.length + ' ' + esc(hu('pg_tasks')) + ' · ' + n + ' ' + esc(hu('pg_items')) + (pc ? ' · <em>' + pgStars(p.id) + ' ' + pc + '%</em>' : '') + '</span></button>'; }).join('') + '</div>';
+  }
+  function itemHtml(it, show) {
+    const ans = it.kind === 'choice' ? ((it.options || [])[it.answer] || {}) : null;
+    const a = it.kind === 'choice' ? (ans.t || '') + (ans.hu && ans.hu !== ans.t ? ' – ' + ans.hu : '') : String(it.answer || '');
+    const opts = it.kind === 'choice' ? '<div class="px-pgopts">' + (it.options || []).map(o => '<span>' + esc(o.t) + (o.hu && o.hu !== o.t ? ' <small>' + esc(o.hu) + '</small>' : '') + '</span>').join('') + '</div>' : '';
+    return '<li class="px-pgi k-' + it.kind + '"><div class="qq"><button type="button" class="pbtn o xs" data-a="pgsayi" data-i="' + esc(it.id) + '" aria-label="' + esc(hu('b_listen')) + '">' + ICO.spk + '</button><div><b>' + esc(it.q) + '</b>' + (it.q_hu && it.q_hu !== it.q ? '<small>' + esc(it.q_hu) + '</small>' : '') + opts + '</div></div>' +
+      (show || it.kind === 'open' && ST.pgsol && ST.pgsol[it.id] ? '<div class="sol"><span>' + esc(hu('pg_solution')) + ':</span> <b>' + esc(a) + '</b>' + (it.answer_hu && it.answer_hu !== a ? '<small>' + esc(it.answer_hu) + '</small>' : '') + '</div>' :
+        it.kind === 'open' ? '<button type="button" class="chip" data-a="pgsol" data-i="' + esc(it.id) + '">' + esc(hu('pg_show_sol')) + '</button>' : '') + '</li>';
+  }
+  function vPage() {
+    const p = pgFind(ST.pid); if (!p) return vPages(); const same = pgData().filter(x => x.book === p.book).sort((a, b) => a.page - b.page); const ix = same.indexOf(p);
+    const prev = same[ix - 1], next = same[ix + 1]; const show = !!ST.pgall; const nq = pgQs(p).length; const pc = pgPct(p.id);
+    const lesson = p.lesson ? '<button type="button" class="pbtn l sm" data-a="openc" data-u="' + p.unit + '" data-c="' + p.lesson + '"><span>' + esc(hu('pg_lesson')) + '</span>' + ICO.next + '</button>' : '';
+    let h = topbar(bookName(p.book) + ' · ' + p.page + '. ' + hu('pg_page')) +
+      '<div class="px-row"><button type="button" class="pbtn l sm" data-a="go" data-v="pages"><span>← ' + esc(hu('t_pages')) + '</span></button>' + (prev ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + prev.id + '"><span>← ' + prev.page + '.</span></button>' : '') + (next ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + next.id + '"><span>' + next.page + '. →</span></button>' : '') + lesson + '</div>' +
+      '<div class="px-card px-pghead"><div class="px-row"><button type="button" class="pbtn o" data-a="pgsayt" data-p="' + p.id + '">' + ICO.spk + '</button><div><h2 class="px-evt">' + esc(p.title) + '</h2><p class="px-evh">' + esc(p.title_hu) + '</p></div></div>' +
+      (p.summary_hu ? '<p class="px-pgsum">' + esc(p.summary_hu) + '</p>' : '') + (pc ? '<p class="px-note">' + pgStars(p.id) + ' ' + pc + '%</p>' : '') + '</div>';
+    if (p.words && p.words.length) h += '<h3 class="px-h">' + esc(hu('pg_words')) + '</h3><div class="px-words">' + p.words.map((w, i) => '<button type="button" class="wchip2" data-a="pgsayw" data-p="' + p.id + '" data-i="' + i + '">' + esc(w.w) + '<small>' + esc(w.hu) + '</small></button>').join('') + '</div>';
+    if (nq) h += '<button type="button" class="pbtn g xl" data-a="pgstart" data-p="' + p.id + '">' + ICO.next + '<span>' + esc(hu('pg_solve_all')) + '</span><small>' + nq + '</small></button>';
+    h += '<div class="px-row"><h3 class="px-h" style="margin:0">' + esc(hu('pg_tasks_h')) + '</h3><button type="button" class="chip' + (show ? ' on' : '') + '" data-a="pgall">' + esc(hu('pg_parent_sol')) + '</button></div>';
+    p.tasks.forEach(t => { const nc = t.items.filter(pgCheckable).length;
+      h += '<div class="px-card px-pgtask"><div class="px-row"><span class="px-pgn">' + esc(t.n) + '</span><button type="button" class="pbtn o sm" data-a="pgsayk" data-t="' + esc(t.id) + '">' + ICO.spk + '</button><div class="tt"><b>' + esc(t.text) + '</b><small>' + esc(t.text_hu) + '</small></div></div>' +
+        '<ol class="px-pgis">' + t.items.map(it => itemHtml(it, show)).join('') + '</ol>' +
+        (nc ? '<button type="button" class="pbtn g" data-a="pgstart" data-p="' + p.id + '" data-t="' + esc(t.id) + '">' + ICO.next + '<span>' + esc(hu('pg_solve_task')) + '</span><small>' + nc + '</small></button>' : '') + '</div>'; });
+    return h;
+  }
+  function pgItem(iid) { for (const p of pgData()) for (const t of p.tasks) for (const it of t.items) if (it.id === iid) return { p, t, it }; return null; }
+  function pgAct(a, d) {
+    switch (a) {
+      case 'pgbook': ST.pgbook = d.b; ST.pgunit = null; render(); return true;
+      case 'pgunit': ST.pgunit = d.u; render(); return true;
+      case 'pgopen': { const p = pgFind(d.p); if (p) pgPreload(p.unit); go('page', { pid: d.p, pgsol: {} }); return true; }
+      case 'pgall': ST.pgall = !ST.pgall; render(); return true;
+      case 'pgsol': ST.pgsol = ST.pgsol || {}; ST.pgsol[d.i] = 1; render(); return true;
+      case 'pgstart': startPage(d.p, d.t); return true;
+      case 'pgsayt': { const p = pgFind(d.p); if (p) say([{ l: C.lang, k: 'p:t:' + p.id, t: p.title }, { l: 'hu', k: 'p:th:' + p.id, t: p.title_hu }]); return true; }
+      case 'pgsayw': { const p = pgFind(d.p); const w = p && p.words[+d.i]; if (w) say([{ l: C.lang, k: 'p:w:' + p.id + ':' + d.i, t: w.w }, { l: 'hu', k: 'p:wh:' + p.id + ':' + d.i, t: w.hu }]); return true; }
+      case 'pgsayk': { const o = pgData().flatMap(p => p.tasks).find(t => t.id === d.t); if (o) say([{ l: C.lang, k: 'p:k:' + o.id, t: o.text }, { l: 'hu', k: 'p:kh:' + o.id, t: o.text_hu }]); return true; }
+      case 'pgsayi': { const o = pgItem(d.i); if (o) say([{ l: C.lang, k: 'p:q:' + o.it.id, t: o.it.q }, { l: 'hu', k: 'p:qh:' + o.it.id, t: o.it.q_hu }]); return true; }
+    }
+    return false;
+  }
+  function pgFinish(R) { const n = R.res.length || 1; const pc = Math.round(R.score / n * 100); if (!R.tid) { P.pg = P.pg || {}; const old = P.pg[R.pid] || 0; const s0 = starsOf(old), s1 = starsOf(pc); if (pc > old) P.pg[R.pid] = pc; R.lessonPct = pc; R.newStars = Math.max(0, s1 - s0); markActive(); if (s1 >= 2) celebrate(s1 === 3); return R.newStars * 2 + 2; } R.lessonPct = pc; markActive(); return pc >= 80 ? 1 : 0; }
+  function ctxHtml(q) { if (!q.ctx) return ''; return '<div class="px-ctx"><span class="px-pgn">' + esc(q.ctx.n) + '</span><div><b>' + esc(q.ctx.es) + '</b><small>' + esc(q.ctx.hu) + '</small></div></div>'; }
+  const PGCSS = '.px-pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:10px 0}.px-pg{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;background:#fff;border:2px solid #F2C98F;border-radius:14px;padding:10px;cursor:pointer;font:inherit;color:#3A2A12;min-height:96px}.px-pg b{font-size:22px;color:#B85A12}.px-pg .t{font-weight:800;font-size:14px;line-height:1.2}.px-pg small{color:#6B5A44;font-size:12.5px;line-height:1.2}.px-pg .m{margin-top:auto;font-size:11.5px;color:#22603C}.px-pg .m em{color:#B8860B;font-style:normal;font-weight:800}.px-pg.done{border-color:#6BBF59;background:#F1FAEE}' +
+    '.px-pghead h2{margin:0}.px-pgsum{margin:8px 0 0;color:#4A3B26;line-height:1.4}.px-pgtask .tt{display:flex;flex-direction:column;flex:1;min-width:0}.px-pgtask .tt small,.px-ctx small{color:#6B5A44;font-size:14px}.px-pgn{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 6px;border-radius:16px;background:#F2891F;color:#fff;font-weight:900;font-size:15px}' +
+    '.px-pgis{list-style:none;margin:8px 0;padding:0;display:flex;flex-direction:column;gap:6px}.px-pgi{background:#FFF9EC;border-radius:10px;padding:6px 8px}.px-pgi .qq{display:flex;gap:8px;align-items:flex-start}.px-pgi .qq>div{display:flex;flex-direction:column;min-width:0;overflow-wrap:anywhere}.px-pgi small{color:#6B5A44}.px-pgi .sol{margin-top:4px;color:#8E2A1F;display:flex;flex-direction:column}.px-pgi .sol span{font-size:12px;color:#8E2A1F;font-weight:800}.px-pgopts{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}.px-pgopts span{background:#fff;border:1px solid #E8D5B0;border-radius:8px;padding:1px 6px;font-size:13px}' +
+    '.pbtn.xs{min-width:34px;min-height:34px;padding:4px}.pbtn.xs svg{width:18px;height:18px}.px-ctx{display:flex;gap:8px;align-items:flex-start;background:#FFF1E4;border-radius:12px;padding:8px 10px;margin:6px 0}.px-ctx>div{display:flex;flex-direction:column}.px-pg .t,.px-pg small{overflow-wrap:anywhere}';
+  function pgCss() { try { if (document.getElementById('pg-css')) return; const s = document.createElement('style'); s.id = 'pg-css'; s.textContent = PGCSS; document.head.appendChild(s); } catch (e) { } }
+  const pgbuf = {}, pgel = {};
+  function pgSeg(lang, key) { const sp = X.pages && X.pages.sprite && X.pages.sprite[lang]; return sp ? sp[key] : null; }
+  function pgUrl(unit, lang) { const a = X.pages && X.pages.audio && X.pages.audio[unit]; return a ? a[lang] : null; }
+  function pgPreload(unit) { [C.lang, 'hu'].forEach(l => { const u = pgUrl(unit, l); const id = unit + ':' + l; if (!u) return;
+    if (C.xMode === 'ctx') { try { xctx = (H.ctx && H.ctx()) || xctx || new (root.AudioContext || root.webkitAudioContext)(); } catch (e) { } if (xctx && !pgbuf[id] && !pgbuf['_p' + id]) { pgbuf['_p' + id] = 1; fetch(u).then(r => r.arrayBuffer()).then(ab => xctx.decodeAudioData(ab)).then(b => { pgbuf[id] = b; }).catch(() => { pgbuf['_p' + id] = 0; }); } }
+    else if (!pgel[id]) { const a = new Audio(u); a.preload = 'auto'; pgel[id] = a; } }); }
+  function pgPlay(lang, key, text, done) {
+    const seg = pgSeg(lang, key); const id = seg ? seg[2] + ':' + lang : '';
+    if (seg && C.xMode === 'ctx' && xctx && pgbuf[id]) { try { if (xctx.state === 'suspended') xctx.resume(); const s = xctx.createBufferSource(); s.buffer = pgbuf[id]; s.connect(xctx.destination); s.start(0, seg[0], seg[1] + 0.1); xsrc = s; s.onended = () => { if (xsrc === s) xsrc = null; done(); }; return; } catch (e) { } }
+    if (seg && C.xMode === 'el') { if (!pgel[id]) pgPreload(seg[2]); const a = pgel[id]; if (a) { const stopAt = seg[0] + seg[1] + 0.1; xcur = a;
+      const go2 = () => { try { a.currentTime = seg[0]; a.play().catch(() => { }); } catch (e) { } const tick = () => { if (xcur !== a) return; if (a.currentTime >= stopAt || (a.paused && a.currentTime > seg[0] + 0.3)) { a.pause(); xcur = null; done(); } else xtimer = setTimeout(tick, 50); }; xtimer = setTimeout(tick, 50); };
+      if (a.readyState >= 1) go2(); else { a.addEventListener('loadedmetadata', go2, { once: true }); a.load(); } return; } }
+    if (seg && C.xMode === 'ctx') pgPreload(seg[2]);
+    if (root.speechSynthesis && text) { try { const u = new SpeechSynthesisUtterance(text); u.lang = lang === 'es' ? 'es-ES' : lang === 'en' ? 'en-GB' : 'hu-HU'; u.onend = () => done(); u.onerror = () => done(); root.speechSynthesis.speak(u); return; } catch (e) { } }
+    setTimeout(done, 300);
   }
   // ================= nézetek =================
   function kitty(mood, size, cls) { mood = mood || 'idle'; let s = C.kitty[mood] || ''; const acc = Object.keys(P.worn).map(slot => X.acc.find(a => a.id === P.worn[slot])).filter(Boolean).map(a => a.svg).join('');
@@ -327,7 +428,7 @@
   }
   function vHome() {
     const ev = nextEvent(); ST.curEvent = ev; const done = !!P.mission[today()];
-    const tiles = [['map', 't_map', 'T9'], ['blitz', 't_blitz', 'T10'], ['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ['duel', 't_duel', 'T11'], ['space', 't_space', 'T12']];
+    const tiles = pgData().length ? [['pages', 't_pages', 'T5']] : []; tiles.push(['map', 't_map', 'T9'], ['blitz', 't_blitz', 'T10'], ['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ['duel', 't_duel', 'T11'], ['space', 't_space', 'T12']);
     if (C.subj === 'mat') tiles.push(['bingo', 't_bingo', 'T13']); tiles.push(['bubble', 't_bubble', 'T14'], ['build', 't_builder', 'T15'], ['room', 't_room', 'T16']);
     if (extraKind()) { const ek = extraKind(); tiles.push([ek, { spelling: 't_spelling', gen: 't_gen', dictado: 't_dictado', tasks: 't_tasks' }[ek], 'T3']); }
     if (Plus.speechOK()) tiles.push(['speak', 't_speak', 'T4']); tiles.push(['testmenu', 't_test', 'T5'], ['album', 't_album', 'T8'], ['shop', 't_shop', 'T6'], ['parent', 't_parent', 'T7']);
@@ -339,7 +440,7 @@
       qnChips() + '<button type="button" class="pbtn g xl" data-a="mission">' + (done ? ICO.ok : ICO.next) + '<span>' + esc(hu(done ? 'b_mission_again' : 'b_mission')) + '</span><small>' + esc(hu(ev ? 'mission_sub' : 'mission_sub_review')) + '</small></button>' +
       '<div class="px-tiles">' + tiles.map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="' + (['blitz', 'duel', 'space', 'bingo', 'bubble', 'build'].indexOf(t[0]) >= 0 ? t[0] : 'go') + '" data-v="' + t[0] + '"><span class="ic">' + tileIcon(t[0]) + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>';
   }
-  function tileIcon(k) { const m = { cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || FUNICO[k] || '') + '</svg>'; }
+  function tileIcon(k) { const m = { pages: '<path d="M8 14 q12 -6 24 0 v38 q-12 -6 -24 0z" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M32 14 q12 -6 24 0 v38 q-12 -6 -24 0z" fill="#FFF1E4" stroke="#1F4E79" stroke-width="3"/><path d="M14 24 h12 M14 32 h12 M38 24 h12 M38 32 h8" stroke="#F2891F" stroke-width="3"/>', cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || FUNICO[k] || '') + '</svg>'; }
   // ---- szókártyák
   function vCards() {
     const units = activeUnits(); const p = poolFor(units); const cnt = [0, 0, 0, 0, 0, 0]; p.forEach(w => cnt[boxOf(w.id)]++);
@@ -512,6 +613,7 @@
     if (R.boss) h += bossHtml(R); if (R.duel) h += duelHtml(R); if (R.fast && R.flashOk != null) { h += '<div class="fx-flash ' + (R.flashOk ? 'ok' : 'bad') + '">' + (R.flashOk ? '✔' : '✘') + '</div>'; R.flashOk = null; }
     if (R.mode === 'test') { const n2 = R.qs.length || 1; const me = R.score / n2, riv = Math.min(1, R.res.length * 0.75 / n2);
       h += '<div class="px-race" aria-hidden="true"><div class="lane me"><span class="fin"></span><span class="car" style="left:calc(' + (me * 100) + '% - ' + Math.round(me * 56) + 'px)">' + carSvg('#3B82C4') + '</span></div><div class="lane"><span class="fin"></span><span class="car" style="left:calc(' + (riv * 100) + '% - ' + Math.round(riv * 56) + 'px)">' + carSvg('#D9362B') + '</span></div></div>'; }
+    h += ctxHtml(q);
     if (q.fix && R.mode !== 'test') h += '<div class="px-fix">' + esc(hu('fix_badge')) + '</div>';
     h += '<div class="px-q">' + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96, showFb && R.ok ? (ST.kanim || 'k-jump') : '') + '</div>' : '') + '<div class="px-qb">';
     if (q.prompt) h += '<div class="px-prompt">' + bi(q.prompt) + '</div>';
@@ -554,9 +656,9 @@
     const R = ST.run; const n = R.mode === 'test' ? R.qs.length : R.res.length; const pct = n ? R.score / n : 0;
     let h = topbar(R.title) + '<div class="px-card center">' + (R.mode === 'test' ? '<div class="px-final-cars">' + (R.win ? carSvg('#3B82C4', 90) + carSvg('#D9362B', 60) : carSvg('#D9362B', 90) + carSvg('#3B82C4', 60)) + '</div>' : '') + kitty(pct >= .6 ? 'happy' : 'idle', 130) + (R.mode === 'boss' ? '<div class="fx-mon' + (R.win ? ' hit' : '') + '" style="text-align:center">' + monsterSvg(R.boss.num, 120) + '</div>' : '') + '<h2>' + esc(hu(R.mode === 'test' ? (R.win ? 'race_win' : 'race_lose') : R.mode === 'boss' ? (R.win ? 'boss_win' : 'boss_lose') : R.mode === 'duel' ? ({ m: 'duel_m_win', d: 'duel_d_win', t: 'duel_tie' })[R.duelRes] : R.record ? 'blitz_record' : 'run_done')) + '</h2>' +
       (R.mode === 'duel' ? '<p class="px-big">' + esc(R.duel.names[0]) + ' ' + R.duel.score[0] + ' : ' + R.duel.score[1] + ' ' + esc(R.duel.names[1]) + '</p>' : R.mode === 'blitz' ? '<p class="px-big">' + R.score + ' ✔ · ' + esc(L3('rekord', 'record', 'récord').hu) + ': ' + ((P.blitz || {}).best || 0) + '</p>' : '<p class="px-big">' + R.score + ' / ' + n + '</p>') +
-      (R.mode === 'lesson' ? '<p class="px-big" style="color:#F2B705">' + [0, 1, 2].map(i => i < starsOf(R.lessonPct) ? '★' : '☆').join('') + ' <small>' + R.lessonPct + '%</small></p>' : '') + (R.bestCombo >= 3 ? '<p class="px-note">' + esc(L3('Legjobb kombó', 'Best combo', 'Mejor combo').hu) + ': ' + R.bestCombo + '×</p>' : '') + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
+      ((R.mode === 'lesson' || R.mode === 'page') && R.lessonPct != null ? '<p class="px-big" style="color:#F2B705">' + [0, 1, 2].map(i => i < starsOf(R.lessonPct) ? '★' : '☆').join('') + ' <small>' + R.lessonPct + '%</small></p>' : '') + (R.bestCombo >= 3 ? '<p class="px-note">' + esc(L3('Legjobb kombó', 'Best combo', 'Mejor combo').hu) + ': ' + R.bestCombo + '×</p>' : '') + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
     if (R.mode === 'test') h += evalHtml(R);
-    h += '<div class="px-row center">' + (R.cert ? '<button type="button" class="pbtn b" data-a="cert" data-i="' + ((P.certs || []).length - 1) + '">' + ICO.star + '<span>' + esc(hu('b_cert')) + '</span></button>' : '') + '<button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button>' +
+    h += '<div class="px-row center">' + (R.cert ? '<button type="button" class="pbtn b" data-a="cert" data-i="' + ((P.certs || []).length - 1) + '">' + ICO.star + '<span>' + esc(hu('b_cert')) + '</span></button>' : '') + (R.mode === 'page' ? '<button type="button" class="pbtn o" data-a="pgopen" data-p="' + esc(R.pid) + '"><span>' + esc(hu('pg_back')) + '</span></button>' : '') + '<button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button>' +
       (ST.fromHub ? '<a class="pbtn o" href="../">' + esc(hu('b_back_plan')) + '</a>' : '') + '</div>';
     return h;
   }
@@ -617,7 +719,9 @@
   function missType(t) { return { w: 'szó', sp: 'spelling', dc: 'dictado', tk: 'tantárgyi feladat', q: 'kvíz', pr: 'kiejtés' }[t] || (t.indexOf('g:') === 0 ? 'matek: ' + (MG.TOPIC_NAME[t.slice(2)] || ['', ''])[1] : t); }
   // ================= render + események =================
   function html() {
+    pgCss();
     switch (ST.view) {
+      case 'pages': return vPages(); case 'page': return vPage();
       case 'home': return vHome(); case 'cards': return vCards(); case 'cardrun': return vCardRun(); case 'games': return vGames(); case 'memory': return vMemory(); case 'drag': return vDrag();
       case 'spelling': return vSpelling(); case 'dictado': return vDictado(); case 'tasks': return vTasks(); case 'gen': return vGen(); case 'speak': return vSpeak(); case 'testmenu': return vTestMenu(); case 'run': return vRun(); case 'shop': return vShop(); case 'parent': return vParent(); case 'album': return vAlbum(); case 'cert': return vCert(); case 'start': return vStart(); case 'map': return vMap(); case 'space': return vSpace(); case 'bingo': return vBingo(); case 'bubble': return vBubble(); case 'build': return vBuild(); case 'room': return vRoom();
     }
@@ -631,9 +735,9 @@
     requestAnimationFrame(() => { if (el) el.style.minHeight = ''; });
     const inp = el.querySelector('#px-input'); if (inp && !inp.disabled && o && o.top) { try { inp.focus({ preventScroll: true }); } catch (e) { } }
   }
-  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', map: 'i_map', room: 'i_room', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
+  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { pages: 'i_pages', cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', map: 'i_map', room: 'i_room', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
   function act(a, d, node) {
-    touch();
+    touch(); if (pgAct(a, d)) return;
     switch (a) {
       case 'home': go('home'); break;
       case 'go': go(d.v); break;
@@ -677,7 +781,7 @@
       case 'next': nextRun(); break;
       case 'finish': finishRun(false); break;
       case 'qsay': { const q = curQ(); if (q.task) sayTask(q.task); else if (q.items) say(q.items); else if (q.audio) say(q.audio); break; }
-      case 'rerun': { const R = ST.run; if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else if (R.mode === 'lesson') startLesson(R.unit, R.lesson); else if (R.mode === 'boss') startBoss(R.unit); else if (R.mode === 'blitz') startBlitz(); else if (R.mode === 'duel') startDuel(); else go(R.back || 'home'); break; }
+      case 'rerun': { const R = ST.run; if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else if (R.mode === 'lesson') startLesson(R.unit, R.lesson); else if (R.mode === 'page') startPage(R.pid, R.tid); else if (R.mode === 'boss') startBoss(R.unit); else if (R.mode === 'blitz') startBlitz(); else if (R.mode === 'duel') startDuel(); else go(R.back || 'home'); break; }
       case 'lesson': startLesson(d.u, d.c); break;
       case 'locked': toast(L3('Még zárva – előbb az előző állomás!', '', '').hu); try { H.sfxBad(); } catch (e) { } break;
       case 'boss': startBoss(d.u || (activeUnits()[0])); break;

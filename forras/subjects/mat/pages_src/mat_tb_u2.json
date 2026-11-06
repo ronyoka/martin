@@ -1,0 +1,5702 @@
+{
+ "pages": [
+  {
+   "id": "tb34",
+   "book": "tb",
+   "page": 34,
+   "unit": "u2",
+   "title": "La multiplicación",
+   "title_hu": "A szorzás",
+   "summary_hu": "A 2. fejezet nyitóoldala: egy fotó színes házakról (sárga, zöld, piros). A fejezetben a szorzást tanuljuk: ugyanannak a számnak az ismételt összeadását.",
+   "words": [
+    {
+     "w": "la multiplicación",
+     "hu": "a szorzás"
+    },
+    {
+     "w": "multiplicar",
+     "hu": "szorozni"
+    },
+    {
+     "w": "la casa",
+     "hu": "a ház"
+    },
+    {
+     "w": "el color",
+     "hu": "a szín"
+    },
+    {
+     "w": "la ventana",
+     "hu": "az ablak"
+    },
+    {
+     "w": "el balcón",
+     "hu": "az erkély"
+    },
+    {
+     "w": "amarillo",
+     "hu": "sárga"
+    },
+    {
+     "w": "verde",
+     "hu": "zöld"
+    },
+    {
+     "w": "rojo",
+     "hu": "piros"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb34_1",
+     "n": "1",
+     "text": "Observa la foto.",
+     "text_hu": "Nézd meg a fotót.",
+     "items": [
+      {
+       "id": "tb34_1a",
+       "q": "En la foto hay una casa amarilla, una casa verde y una casa roja. ¿Cuántas casas de colores se ven?",
+       "q_hu": "A fotón van egy sárga, egy zöld és egy piros ház. Hány színes ház látszik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "2",
+         "hu": "2"
+        },
+        {
+         "t": "3",
+         "hu": "3"
+        },
+        {
+         "t": "4",
+         "hu": "4"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb35",
+   "book": "tb",
+   "page": 35,
+   "unit": "u2",
+   "title": "¿Qué vamos a aprender?",
+   "title_hu": "Mit fogunk tanulni?",
+   "summary_hu": "Egy faluban népszámlálást (censo) tartanak: megszámolják, hányan laknak az egyes utcákban. Ha minden házban ugyanannyian laknak, szorzással gyorsan kiszámolható az összes lakó. A fejezet témái: a szorzás és tagjai, a szorzótáblák, fejszámolás, problémamegoldás.",
+   "words": [
+    {
+     "w": "el pueblo",
+     "hu": "a falu"
+    },
+    {
+     "w": "los vecinos",
+     "hu": "a szomszédok, a lakók"
+    },
+    {
+     "w": "el censo",
+     "hu": "a népszámlálás, összeírás"
+    },
+    {
+     "w": "la calle",
+     "hu": "az utca"
+    },
+    {
+     "w": "las personas",
+     "hu": "az emberek"
+    },
+    {
+     "w": "vivir",
+     "hu": "lakni, élni"
+    },
+    {
+     "w": "la misma cantidad",
+     "hu": "ugyanannyi"
+    },
+    {
+     "w": "las tablas de multiplicar",
+     "hu": "a szorzótáblák"
+    },
+    {
+     "w": "el cálculo mental",
+     "hu": "a fejszámolás"
+    },
+    {
+     "w": "la resolución de problemas",
+     "hu": "a szöveges feladatok megoldása"
+    },
+    {
+     "w": "los términos",
+     "hu": "a tagok (a művelet részei)"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb35_1",
+     "n": "1",
+     "text": "¿Qué detalles te llaman la atención de estas casas?",
+     "text_hu": "Mi tűnik fel neked ezeken a házakon?",
+     "items": [
+      {
+       "id": "tb35_1a",
+       "q": "¿Qué detalles te llaman la atención de estas casas?",
+       "q_hu": "Mi tűnik fel neked ezeken a házakon?",
+       "kind": "open",
+       "answer": "Son de muchos colores (rojo, azul, verde...), tienen tejados en punta, chimeneas y muchas ventanas.",
+       "answer_hu": "Sok színűek (piros, kék, zöld...), csúcsos tetejük, kéményeik és sok ablakuk van."
+      }
+     ]
+    },
+    {
+     "id": "tb35_2",
+     "n": "2",
+     "text": "¿Cómo calcularías cuántas personas viven en estas casas si en cada una viven la misma cantidad de personas?",
+     "text_hu": "Hogyan számolnád ki, hányan laknak ezekben a házakban, ha mindegyikben ugyanannyian laknak?",
+     "items": [
+      {
+       "id": "tb35_2a",
+       "q": "Si en cada casa viven las mismas personas, ¿qué operación es más rápida para saber el total?",
+       "q_hu": "Ha minden házban ugyanannyian laknak, melyik művelettel kapod meg leggyorsabban az összeset?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Una multiplicación: casas × personas de cada casa",
+         "hu": "Szorzás: házak száma × egy házban lakók száma"
+        },
+        {
+         "t": "Una resta",
+         "hu": "Kivonás"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb35_2b",
+       "q": "Hay 6 casas y en cada una viven 4 personas. ¿Cuántas personas viven en total? (6 × 4)",
+       "q_hu": "6 ház van, mindegyikben 4 ember lakik. Hányan laknak összesen? (6 × 4)",
+       "kind": "num",
+       "answer": "24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb36",
+   "book": "tb",
+   "page": 36,
+   "unit": "u2",
+   "title": "Actívate",
+   "title_hu": "Hangolódj rá!",
+   "summary_hu": "Bemelegítő feladatok: a dupla (kétszeres) fogalma építőkockákkal, és Mara órarendjéből számolás (hány óra van 2 vagy 4 hét alatt).",
+   "words": [
+    {
+     "w": "relacionar",
+     "hu": "összekötni, párosítani"
+    },
+    {
+     "w": "la figura",
+     "hu": "az alakzat, figura"
+    },
+    {
+     "w": "la caja",
+     "hu": "a doboz"
+    },
+    {
+     "w": "el doble",
+     "hu": "a kétszerese, dupla"
+    },
+    {
+     "w": "el bloque",
+     "hu": "az építőkocka"
+    },
+    {
+     "w": "la pieza",
+     "hu": "a darab, elem"
+    },
+    {
+     "w": "el horario",
+     "hu": "az órarend"
+    },
+    {
+     "w": "la clase",
+     "hu": "a tanóra"
+    },
+    {
+     "w": "la semana",
+     "hu": "a hét"
+    },
+    {
+     "w": "la asignatura",
+     "hu": "a tantárgy"
+    },
+    {
+     "w": "Matemáticas",
+     "hu": "matematika"
+    },
+    {
+     "w": "Naturales",
+     "hu": "természetismeret"
+    },
+    {
+     "w": "Música",
+     "hu": "ének-zene"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb36_1",
+     "n": "1",
+     "text": "RELACIONA cada figura con la caja que tenga el doble de bloques.",
+     "text_hu": "Kösd össze mindegyik építményt azzal a dobozzal, amelyikben kétszer annyi kocka van!",
+     "items": [
+      {
+       "id": "tb36_1a",
+       "q": "Figura 1: una casa con 10 bloques (9 cuadrados y 1 tejado). ¿Qué caja tiene el doble de bloques?",
+       "q_hu": "1. építmény: egy ház 10 kockából (9 négyzet és 1 tető). Melyik dobozban van kétszer ennyi?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "16 piezas",
+         "hu": "16 darab"
+        },
+        {
+         "t": "18 piezas",
+         "hu": "18 darab"
+        },
+        {
+         "t": "20 piezas",
+         "hu": "20 darab"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb36_1b",
+       "q": "Figura 2: una torre con 8 bloques. ¿Qué caja tiene el doble de bloques?",
+       "q_hu": "2. építmény: egy torony 8 kockából. Melyik dobozban van kétszer ennyi?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "16 piezas",
+         "hu": "16 darab"
+        },
+        {
+         "t": "18 piezas",
+         "hu": "18 darab"
+        },
+        {
+         "t": "20 piezas",
+         "hu": "20 darab"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb36_1c",
+       "q": "Figura 3: una puerta con 9 bloques. ¿Qué caja tiene el doble de bloques?",
+       "q_hu": "3. építmény: egy kapu 9 kockából. Melyik dobozban van kétszer ennyi?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "16 piezas",
+         "hu": "16 darab"
+        },
+        {
+         "t": "18 piezas",
+         "hu": "18 darab"
+        },
+        {
+         "t": "20 piezas",
+         "hu": "20 darab"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb36_2",
+     "n": "2",
+     "text": "OBSERVA el horario de Mara y RESPONDE.",
+     "text_hu": "Nézd meg Mara órarendjét, és válaszolj!",
+     "items": [
+      {
+       "id": "tb36_2a",
+       "q": "Mara tiene Matemáticas: lunes 1 clase, martes 1, miércoles 1, jueves 2 y viernes 2. ¿Cuántas clases de Matemáticas tiene en 2 semanas?",
+       "q_hu": "Marának matekórája van: hétfőn 1, kedden 1, szerdán 1, csütörtökön 2, pénteken 2. Hány matekórája van 2 hét alatt?",
+       "kind": "num",
+       "answer": "14",
+       "answer_hu": "Egy héten 7 óra, 2 hét alatt 2 × 7 = 14."
+      },
+      {
+       "id": "tb36_2b",
+       "q": "Mara tiene Naturales el lunes y el miércoles (2 clases por semana). ¿Cuántas clases de Naturales tiene en 4 semanas?",
+       "q_hu": "Marának hétfőn és szerdán van természetismeret órája (hetente 2). Hány ilyen órája van 4 hét alatt?",
+       "kind": "num",
+       "answer": "8",
+       "answer_hu": "4 × 2 = 8"
+      },
+      {
+       "id": "tb36_2c1",
+       "q": "En una semana Mara tiene 1 clase de Música y 2 de Naturales. ¿Tiene el doble de clases de Naturales que de Música?",
+       "q_hu": "Egy héten Marának 1 ének-zene és 2 természetismeret órája van. Kétszer annyi természetismeret órája van, mint ének?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb36_2c2",
+       "q": "En una semana Mara tiene 1 clase de Música y 2 de Sociales. ¿Tiene el doble de clases de Sociales que de Música?",
+       "q_hu": "Egy héten 1 ének és 2 társadalomismeret órája van. Kétszer annyi társadalomismeret órája van, mint ének?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb36_2c3",
+       "q": "En una semana Mara tiene 1 clase de Música y 2 de Plástica. ¿Tiene el doble de clases de Plástica que de Música?",
+       "q_hu": "Egy héten 1 ének és 2 rajz órája van. Kétszer annyi rajzórája van, mint ének?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb36_2c4",
+       "q": "En una semana Mara tiene 1 clase de Música y 2 de Atención Educativa. ¿Tiene el doble de Atención Educativa que de Música?",
+       "q_hu": "Egy héten 1 ének és 2 „Atención Educativa” (erkölcstan-szerű) órája van. Ebből kétszer annyi van, mint énekből?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb36_2c5",
+       "q": "En una semana Mara tiene 1 clase de Música y 5 de Lengua. ¿Tiene el doble de clases de Lengua que de Música?",
+       "q_hu": "Egy héten 1 ének és 5 spanyol nyelv órája van. Kétszer annyi spanyolórája van, mint ének?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb36_2c6",
+       "q": "En una semana Mara tiene 1 clase de Música y 3 de Educa (Educación Física). ¿Tiene el doble de Educa que de Música?",
+       "q_hu": "Egy héten 1 ének és 3 testnevelés órája van. Kétszer annyi tesiórája van, mint ének?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb37",
+   "book": "tb",
+   "page": 37,
+   "unit": "u2",
+   "title": "Actívate",
+   "title_hu": "Hangolódj rá!",
+   "summary_hu": "Ugrálás a számegyenesen 3-asával és 4-esével (ez már a szorzótábla előkészítése), egy dupla-feladat karkötőkkel, és a „belépőjegy”: önértékelés a fejezet elején.",
+   "words": [
+    {
+     "w": "la abeja",
+     "hu": "a méhecske"
+    },
+    {
+     "w": "la flor",
+     "hu": "a virág"
+    },
+    {
+     "w": "llegar hasta",
+     "hu": "eljutni valameddig"
+    },
+    {
+     "w": "averiguar",
+     "hu": "kideríteni"
+    },
+    {
+     "w": "la pulsera",
+     "hu": "a karkötő"
+    },
+    {
+     "w": "hacer",
+     "hu": "csinálni"
+    },
+    {
+     "w": "el doble que",
+     "hu": "kétszer annyi, mint"
+    },
+    {
+     "w": "el ticket de entrada",
+     "hu": "a belépőjegy"
+    },
+    {
+     "w": "mucho, poco o nada",
+     "hu": "sokat, keveset vagy semmit"
+    },
+    {
+     "w": "reconocer",
+     "hu": "felismerni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb37_3",
+     "n": "3",
+     "text": "INDICA hasta qué número llega cada abeja.",
+     "text_hu": "Mondd meg, melyik számig jut el a méhecske!",
+     "items": [
+      {
+       "id": "tb37_3a",
+       "q": "La abeja a empieza en el 3 y salta 5 veces sumando 3 (+3, +3, +3, +3, +3). ¿Hasta qué número llega?",
+       "q_hu": "Az a) méhecske a 3-ról indul, és 5-ször ugrik, mindig +3-at (+3, +3, +3, +3, +3). Melyik számig jut el?",
+       "kind": "num",
+       "answer": "18",
+       "answer_hu": "3, 6, 9, 12, 15, 18"
+      },
+      {
+       "id": "tb37_3b",
+       "q": "La abeja b empieza en el 4 y salta 5 veces sumando 4 (+4, +4, +4, +4, +4). ¿Hasta qué número llega?",
+       "q_hu": "A b) méhecske a 4-ről indul, és 5-ször ugrik, mindig +4-et. Melyik számig jut el?",
+       "kind": "num",
+       "answer": "24",
+       "answer_hu": "4, 8, 12, 16, 20, 24"
+      }
+     ]
+    },
+    {
+     "id": "tb37_4",
+     "n": "4",
+     "text": "AVERIGUA quién ha hecho más pulseras.",
+     "text_hu": "Derítsd ki, ki készített a legtöbb karkötőt!",
+     "items": [
+      {
+       "id": "tb37_4a",
+       "q": "Sandra ha hecho 2 pulseras. Luna ha hecho el doble que Sandra. ¿Cuántas pulseras ha hecho Luna?",
+       "q_hu": "Sandra 2 karkötőt készített. Luna kétszer annyit, mint Sandra. Hány karkötőt készített Luna?",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb37_4b",
+       "q": "Luna ha hecho 4 pulseras. Sergio ha hecho el doble que Luna. ¿Cuántas pulseras ha hecho Sergio?",
+       "q_hu": "Luna 4 karkötőt készített. Sergio kétszer annyit, mint Luna. Hányat készített Sergio?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb37_4c",
+       "q": "Sandra: 2 pulseras, Luna: el doble que Sandra, Sergio: el doble que Luna. ¿Quién ha hecho más pulseras?",
+       "q_hu": "Sandra 2, Luna kétszer annyi, mint Sandra, Sergio kétszer annyi, mint Luna. Ki készített a legtöbbet?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sandra",
+         "hu": "Sandra"
+        },
+        {
+         "t": "Luna",
+         "hu": "Luna"
+        },
+        {
+         "t": "Sergio",
+         "hu": "Sergio"
+        }
+       ],
+       "answer": 2
+      }
+     ]
+    },
+    {
+     "id": "tb37_ticket",
+     "n": "Ticket de entrada",
+     "text": "LEE cada enunciado y DI si crees que mucho, poco o nada.",
+     "text_hu": "Olvasd el a mondatokat, és mondd meg: sokat, keveset vagy semmit tudsz erről?",
+     "items": [
+      {
+       "id": "tb37_ticket_1",
+       "q": "Relaciono la suma y la multiplicación.",
+       "q_hu": "Össze tudom kapcsolni az összeadást és a szorzást.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb37_ticket_2",
+       "q": "Reconozco una multiplicación.",
+       "q_hu": "Felismerem a szorzást.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb37_ticket_3",
+       "q": "Identifico los términos de una multiplicación.",
+       "q_hu": "Meg tudom nevezni a szorzás tagjait.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb37_ticket_4",
+       "q": "Manejo las tablas de multiplicar.",
+       "q_hu": "Tudom használni a szorzótáblát.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb37_ticket_5",
+       "q": "Resuelvo problemas.",
+       "q_hu": "Meg tudok oldani szöveges feladatokat.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb38",
+   "book": "tb",
+   "page": 38,
+   "unit": "u2",
+   "title": "Multiplicación",
+   "title_hu": "Szorzás",
+   "summary_hu": "A szorzás ugyanannak a számnak az ismételt összeadása: 8 + 8 + 8 = 3 × 8 = 24, kiolvasva „háromszor nyolc egyenlő huszonnéggyel” (tres veces ocho). A szorzás tagjai a tényezők (factores), az eredmény a szorzat (producto). Fejszámolás: három egyjegyű szám összeadása és 5-re végződő számok kivonása.",
+   "words": [
+    {
+     "w": "multiplicar",
+     "hu": "szorozni"
+    },
+    {
+     "w": "sumar",
+     "hu": "összeadni"
+    },
+    {
+     "w": "los números iguales",
+     "hu": "egyforma számok"
+    },
+    {
+     "w": "el bote",
+     "hu": "a doboz, tégely"
+    },
+    {
+     "w": "la cera",
+     "hu": "a zsírkréta"
+    },
+    {
+     "w": "veces",
+     "hu": "-szor, -szer (háromszor = tres veces)"
+    },
+    {
+     "w": "es igual a",
+     "hu": "egyenlő"
+    },
+    {
+     "w": "el factor",
+     "hu": "a tényező"
+    },
+    {
+     "w": "el producto",
+     "hu": "a szorzat"
+    },
+    {
+     "w": "el resultado",
+     "hu": "az eredmény"
+    },
+    {
+     "w": "restar",
+     "hu": "kivonni"
+    },
+    {
+     "w": "la cifra",
+     "hu": "a számjegy"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb38_ej",
+     "n": "★",
+     "text": "Silvia tiene 3 botes con 8 ceras en cada uno. ¿Cuántas ceras tiene en total?",
+     "text_hu": "Silviának 3 doboza van, mindegyikben 8 zsírkréta. Hány zsírkrétája van összesen?",
+     "items": [
+      {
+       "id": "tb38_eja",
+       "q": "8 + 8 + 8 = ?",
+       "q_hu": "8 + 8 + 8 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb38_ejb",
+       "q": "3 × 8 = ?",
+       "q_hu": "3 × 8 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb38_ejc",
+       "q": "En 3 × 8 = 24, ¿cómo se llama el 24?",
+       "q_hu": "A 3 × 8 = 24-ben hogy hívják a 24-et?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "factor",
+         "hu": "tényező"
+        },
+        {
+         "t": "producto",
+         "hu": "szorzat"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb38_ejd",
+       "q": "¿Cómo se lee 3 × 8 = 24?",
+       "q_hu": "Hogyan olvassuk ki: 3 × 8 = 24?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "tres veces ocho es igual a veinticuatro",
+         "hu": "háromszor nyolc egyenlő huszonnéggyel"
+        },
+        {
+         "t": "ocho veces tres es igual a veinticuatro",
+         "hu": "nyolcszor három egyenlő huszonnéggyel"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb38_cm",
+     "n": "Cálculo mental",
+     "text": "Sumar tres números de 1 cifra. Restar números de dos cifras acabados en 5.",
+     "text_hu": "Három egyjegyű szám összeadása. 5-re végződő kétjegyű számok kivonása.",
+     "items": [
+      {
+       "id": "tb38_cma",
+       "q": "2 + 6 + 4 = ?",
+       "q_hu": "2 + 6 + 4 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb38_cmb",
+       "q": "3 + 7 + 5 = ?",
+       "q_hu": "3 + 7 + 5 = ?",
+       "kind": "num",
+       "answer": "15"
+      },
+      {
+       "id": "tb38_cmc",
+       "q": "45 - 25 = ?",
+       "q_hu": "45 - 25 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb38_cmd",
+       "q": "65 - 35 = ?",
+       "q_hu": "65 - 35 = ?",
+       "kind": "num",
+       "answer": "30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb39",
+   "book": "tb",
+   "page": 39,
+   "unit": "u2",
+   "title": "Multiplicación",
+   "title_hu": "Szorzás – gyakorlás",
+   "summary_hu": "Gyakorló feladatok a szorzásról: összeadás átírása szorzássá, a tényezők és a szorzat felismerése, igaz–hamis állítások, szöveges feladat és fejszámolás.",
+   "words": [
+    {
+     "w": "completar",
+     "hu": "kiegészíteni"
+    },
+    {
+     "w": "los sumandos",
+     "hu": "az összeadandók (tagok)"
+    },
+    {
+     "w": "señalar",
+     "hu": "megjelölni"
+    },
+    {
+     "w": "expresar",
+     "hu": "kifejezni, felírni"
+    },
+    {
+     "w": "el dibujo",
+     "hu": "a rajz"
+    },
+    {
+     "w": "verdadero",
+     "hu": "igaz"
+    },
+    {
+     "w": "falso",
+     "hu": "hamis"
+    },
+    {
+     "w": "la cesta",
+     "hu": "a kosár"
+    },
+    {
+     "w": "la manzana",
+     "hu": "az alma"
+    },
+    {
+     "w": "el mirador",
+     "hu": "a kilátó"
+    },
+    {
+     "w": "el valle",
+     "hu": "a völgy"
+    },
+    {
+     "w": "la aldea",
+     "hu": "a kis falu"
+    },
+    {
+     "w": "calcular mentalmente",
+     "hu": "fejben kiszámolni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb39_1",
+     "n": "1",
+     "text": "COMPLETA.",
+     "text_hu": "Egészítsd ki!",
+     "items": [
+      {
+       "id": "tb39_1a",
+       "q": "La multiplicación es una ? de sumandos iguales.",
+       "q_hu": "A szorzás egyforma összeadandók ? (spanyol szóval).",
+       "kind": "type",
+       "answer": "suma",
+       "alts": [],
+       "answer_hu": "összeadása (suma = összeadás)"
+      },
+      {
+       "id": "tb39_1b1",
+       "q": "Los números que se multiplican se llaman ? ...",
+       "q_hu": "Azokat a számokat, amelyeket összeszorzunk, így hívjuk: ? (spanyolul)",
+       "kind": "type",
+       "answer": "factores",
+       "alts": [
+        "factor"
+       ],
+       "answer_hu": "tényezők (factores)"
+      },
+      {
+       "id": "tb39_1b2",
+       "q": "... y el resultado, ? .",
+       "q_hu": "... az eredményt pedig így: ? (spanyolul)",
+       "kind": "type",
+       "answer": "producto",
+       "alts": [],
+       "answer_hu": "szorzat (producto)"
+      },
+      {
+       "id": "tb39_1c",
+       "q": "La multiplicación 2 × 5 se lee ? veces cinco.",
+       "q_hu": "A 2 × 5 kiolvasva: ? veces cinco (spanyol számnévvel).",
+       "kind": "type",
+       "answer": "dos",
+       "alts": [
+        "2"
+       ],
+       "answer_hu": "kétszer (dos veces cinco = kétszer öt)"
+      }
+     ]
+    },
+    {
+     "id": "tb39_2",
+     "n": "2",
+     "text": "COMPLETA estas operaciones.",
+     "text_hu": "Egészítsd ki a műveleteket!",
+     "items": [
+      {
+       "id": "tb39_2a1",
+       "q": "1 + 1 + 1 + 1 + 1 + 1 + 1 = ? × 1  (¿cuántas veces se suma el 1?)",
+       "q_hu": "1 + 1 + 1 + 1 + 1 + 1 + 1 = ? × 1  (hányszor adtuk össze a 1-t?)",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb39_2a2",
+       "q": "1 + 1 + 1 + 1 + 1 + 1 + 1 = 7 × 1 = ?",
+       "q_hu": "1 + 1 + 1 + 1 + 1 + 1 + 1 = 7 × 1 = ?",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb39_2b1",
+       "q": "5 + 5 + 5 + 5 + 5 = ? × 5  (¿cuántas veces se suma el 5?)",
+       "q_hu": "5 + 5 + 5 + 5 + 5 = ? × 5  (hányszor adtuk össze a 5-t?)",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb39_2b2",
+       "q": "5 + 5 + 5 + 5 + 5 = 5 × 5 = ?",
+       "q_hu": "5 + 5 + 5 + 5 + 5 = 5 × 5 = ?",
+       "kind": "num",
+       "answer": "25"
+      },
+      {
+       "id": "tb39_2c1",
+       "q": "8 + 8 + 8 = ? × 8  (¿cuántas veces se suma el 8?)",
+       "q_hu": "8 + 8 + 8 = ? × 8  (hányszor adtuk össze a 8-t?)",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb39_2c2",
+       "q": "8 + 8 + 8 = 3 × 8 = ?",
+       "q_hu": "8 + 8 + 8 = 3 × 8 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb39_2d1",
+       "q": "9 + 9 = ? × 9  (¿cuántas veces se suma el 9?)",
+       "q_hu": "9 + 9 = ? × 9  (hányszor adtuk össze a 9-t?)",
+       "kind": "num",
+       "answer": "2"
+      },
+      {
+       "id": "tb39_2d2",
+       "q": "9 + 9 = 2 × 9 = ?",
+       "q_hu": "9 + 9 = 2 × 9 = ?",
+       "kind": "num",
+       "answer": "18"
+      }
+     ]
+    },
+    {
+     "id": "tb39_3",
+     "n": "3",
+     "text": "SEÑALA los factores y el producto de cada una de estas multiplicaciones.",
+     "text_hu": "Jelöld meg mindegyik szorzásban a tényezőket és a szorzatot!",
+     "items": [
+      {
+       "id": "tb39_3a1",
+       "q": "6 × 5 = 30. ¿Cuáles son los factores?",
+       "q_hu": "6 × 5 = 30. Melyek a tényezők?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 y 5",
+         "hu": "6 és 5"
+        },
+        {
+         "t": "5 y 30",
+         "hu": "5 és 30"
+        },
+        {
+         "t": "6 y 30",
+         "hu": "6 és 30"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb39_3a2",
+       "q": "6 × 5 = 30. ¿Cuál es el producto?",
+       "q_hu": "6 × 5 = 30. Melyik a szorzat?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6",
+         "hu": "6"
+        },
+        {
+         "t": "5",
+         "hu": "5"
+        },
+        {
+         "t": "30",
+         "hu": "30"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb39_3b1",
+       "q": "7 × 9 = 63. ¿Cuáles son los factores?",
+       "q_hu": "7 × 9 = 63. Melyek a tényezők?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7 y 63",
+         "hu": "7 és 63"
+        },
+        {
+         "t": "7 y 9",
+         "hu": "7 és 9"
+        },
+        {
+         "t": "9 y 63",
+         "hu": "9 és 63"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb39_3b2",
+       "q": "7 × 9 = 63. ¿Cuál es el producto?",
+       "q_hu": "7 × 9 = 63. Melyik a szorzat?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "63",
+         "hu": "63"
+        },
+        {
+         "t": "7",
+         "hu": "7"
+        },
+        {
+         "t": "9",
+         "hu": "9"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb39_3c1",
+       "q": "8 × 3 = 24. ¿Cuáles son los factores?",
+       "q_hu": "8 × 3 = 24. Melyek a tényezők?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3 y 24",
+         "hu": "3 és 24"
+        },
+        {
+         "t": "8 y 24",
+         "hu": "8 és 24"
+        },
+        {
+         "t": "8 y 3",
+         "hu": "8 és 3"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb39_3c2",
+       "q": "8 × 3 = 24. ¿Cuál es el producto?",
+       "q_hu": "8 × 3 = 24. Melyik a szorzat?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "8",
+         "hu": "8"
+        },
+        {
+         "t": "24",
+         "hu": "24"
+        },
+        {
+         "t": "3",
+         "hu": "3"
+        }
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    {
+     "id": "tb39_4",
+     "n": "4",
+     "text": "EXPRESA cada dibujo como una suma y como una multiplicación.",
+     "text_hu": "Írd fel mindegyik rajzot összeadásként és szorzásként is!",
+     "items": [
+      {
+       "id": "tb39_4a1",
+       "q": "Dibujo a: 4 grupos de 2 pelotas de tenis. 2 + 2 + 2 + 2 = ? × 2 (¿cuántos grupos?)",
+       "q_hu": "a) rajz: 4 csoport, mindegyikben 2 teniszlabda. 2 + 2 + 2 + 2 = ? × 2 (hány csoport?)",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb39_4a2",
+       "q": "Dibujo a: 2 + 2 + 2 + 2 = 4 × 2 = ? pelotas",
+       "q_hu": "a) rajz: 2 + 2 + 2 + 2 = 4 × 2 = ? labda",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb39_4b1",
+       "q": "Dibujo b: 3 grupos de 3 pinzas de pelo. 3 + 3 + 3 = ? × 3 (¿cuántos grupos?)",
+       "q_hu": "b) rajz: 3 csoport, mindegyikben 3 hajcsat. 3 + 3 + 3 = ? × 3 (hány csoport?)",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb39_4b2",
+       "q": "Dibujo b: 3 + 3 + 3 = 3 × 3 = ? pinzas",
+       "q_hu": "b) rajz: 3 + 3 + 3 = 3 × 3 = ? hajcsat",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb39_4c1",
+       "q": "Dibujo c: 5 flores sueltas (de 1 en 1). 1 + 1 + 1 + 1 + 1 = ? × 1",
+       "q_hu": "c) rajz: 5 különálló virág (egyesével). 1 + 1 + 1 + 1 + 1 = ? × 1",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb39_4c2",
+       "q": "Dibujo c: 1 + 1 + 1 + 1 + 1 = 5 × 1 = ? flores",
+       "q_hu": "c) rajz: 1 + 1 + 1 + 1 + 1 = 5 × 1 = ? virág",
+       "kind": "num",
+       "answer": "5"
+      }
+     ]
+    },
+    {
+     "id": "tb39_5",
+     "n": "5",
+     "text": "INDICA si estas afirmaciones son verdaderas o falsas.",
+     "text_hu": "Mondd meg, igazak vagy hamisak az állítások!",
+     "items": [
+      {
+       "id": "tb39_5a",
+       "q": "En 4 × 6 = 24, el 24 es un factor.",
+       "q_hu": "A 4 × 6 = 24-ben a 24 tényező.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis: a 24 a szorzat."
+      },
+      {
+       "id": "tb39_5b",
+       "q": "La multiplicación es una suma de sumandos iguales.",
+       "q_hu": "A szorzás egyforma összeadandók összeadása.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb39_5c",
+       "q": "9 × 8 se lee «ocho veces nueve».",
+       "q_hu": "A 9 × 8-at így olvassuk: „nyolcszor kilenc”.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis: „nueve veces ocho” = kilencszer nyolc."
+      }
+     ]
+    },
+    {
+     "id": "tb39_6",
+     "n": "6",
+     "text": "DIBUJA 2 cestas con 7 manzanas en cada una. Después, ESCRIBE la multiplicación que representa el total de manzanas.",
+     "text_hu": "Rajzolj 2 kosarat, mindegyikbe 7 almát! Utána írd fel a szorzást, ami megmutatja, hány alma van összesen.",
+     "items": [
+      {
+       "id": "tb39_6a",
+       "q": "Dibuja 2 cestas con 7 manzanas en cada una.",
+       "q_hu": "Rajzolj 2 kosarat, mindegyikben 7 almával.",
+       "kind": "open",
+       "answer": "Dos cestas con 7 manzanas cada una.",
+       "answer_hu": "Két kosár, mindegyikben 7 alma."
+      },
+      {
+       "id": "tb39_6b",
+       "q": "2 cestas con 7 manzanas: 2 × 7 = ? manzanas",
+       "q_hu": "2 kosár, mindegyikben 7 alma: 2 × 7 = ? alma",
+       "kind": "num",
+       "answer": "14"
+      }
+     ]
+    },
+    {
+     "id": "tb39_7",
+     "n": "7",
+     "text": "Desde un mirador se distinguen 3 valles. Si en cada uno hay 5 aldeas, DETERMINA cuántas aldeas se ven desde el mirador.",
+     "text_hu": "Egy kilátóból 3 völgy látszik. Mindegyik völgyben 5 kis falu van. Hány falu látszik a kilátóból?",
+     "items": [
+      {
+       "id": "tb39_7a",
+       "q": "3 valles con 5 aldeas cada uno: 3 × 5 = ?",
+       "q_hu": "3 völgy, mindegyikben 5 falu: 3 × 5 = ?",
+       "kind": "num",
+       "answer": "15",
+       "answer_hu": "15 falu"
+      }
+     ]
+    },
+    {
+     "id": "tb39_8",
+     "n": "8",
+     "text": "CALCULA mentalmente.",
+     "text_hu": "Számold ki fejben!",
+     "items": [
+      {
+       "id": "tb39_8a",
+       "q": "3 + 4 + 7 = ?",
+       "q_hu": "3 + 4 + 7 = ?",
+       "kind": "num",
+       "answer": "14"
+      },
+      {
+       "id": "tb39_8b",
+       "q": "85 - 35 = ?",
+       "q_hu": "85 - 35 = ?",
+       "kind": "num",
+       "answer": "50"
+      },
+      {
+       "id": "tb39_8c",
+       "q": "1 + 8 + 5 = ?",
+       "q_hu": "1 + 8 + 5 = ?",
+       "kind": "num",
+       "answer": "14"
+      },
+      {
+       "id": "tb39_8d",
+       "q": "65 - 15 = ?",
+       "q_hu": "65 - 15 = ?",
+       "kind": "num",
+       "answer": "50"
+      },
+      {
+       "id": "tb39_8e",
+       "q": "6 + 2 + 9 = ?",
+       "q_hu": "6 + 2 + 9 = ?",
+       "kind": "num",
+       "answer": "17"
+      },
+      {
+       "id": "tb39_8f",
+       "q": "95 - 75 = ?",
+       "q_hu": "95 - 75 = ?",
+       "kind": "num",
+       "answer": "20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb40",
+   "book": "tb",
+   "page": 40,
+   "unit": "u2",
+   "title": "Tablas del 1, del 5 y del 10",
+   "title_hu": "Az 1-es, 5-ös és 10-es szorzótábla",
+   "summary_hu": "Az 1-es, 5-ös és 10-es szorzótábla. Bármely szám × 1 önmaga; az 5-ös tábla eredményei 0-ra vagy 5-re végződnek; ×10-nél egy 0-t írunk a szám végére (42 × 10 = 420).",
+   "words": [
+    {
+     "w": "la tabla de multiplicar",
+     "hu": "a szorzótábla"
+    },
+    {
+     "w": "la tabla del cinco",
+     "hu": "az 5-ös szorzótábla"
+    },
+    {
+     "w": "la fruta",
+     "hu": "a gyümölcs"
+    },
+    {
+     "w": "el plátano",
+     "hu": "a banán"
+    },
+    {
+     "w": "la uva",
+     "hu": "a szőlő(szem)"
+    },
+    {
+     "w": "el grupo",
+     "hu": "a csoport"
+    },
+    {
+     "w": "una vez",
+     "hu": "egyszer"
+    },
+    {
+     "w": "cuatro veces cinco son veinte",
+     "hu": "négyszer öt az húsz"
+    },
+    {
+     "w": "la solución",
+     "hu": "a megoldás"
+    },
+    {
+     "w": "las decenas exactas",
+     "hu": "kerek tízesek"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb40_tabla1",
+     "n": "Tabla del 1",
+     "text": "Tabla del 1.",
+     "text_hu": "A 1-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb40_tabla1_1",
+       "q": "0 × 1 = ?",
+       "q_hu": "0 × 1 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb40_tabla1_2",
+       "q": "1 × 1 = ?",
+       "q_hu": "1 × 1 = ?",
+       "kind": "num",
+       "answer": "1"
+      },
+      {
+       "id": "tb40_tabla1_3",
+       "q": "2 × 1 = ?",
+       "q_hu": "2 × 1 = ?",
+       "kind": "num",
+       "answer": "2"
+      },
+      {
+       "id": "tb40_tabla1_4",
+       "q": "3 × 1 = ?",
+       "q_hu": "3 × 1 = ?",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb40_tabla1_5",
+       "q": "4 × 1 = ?",
+       "q_hu": "4 × 1 = ?",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb40_tabla1_6",
+       "q": "5 × 1 = ?",
+       "q_hu": "5 × 1 = ?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb40_tabla1_7",
+       "q": "6 × 1 = ?",
+       "q_hu": "6 × 1 = ?",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb40_tabla1_8",
+       "q": "7 × 1 = ?",
+       "q_hu": "7 × 1 = ?",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb40_tabla1_9",
+       "q": "8 × 1 = ?",
+       "q_hu": "8 × 1 = ?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb40_tabla1_10",
+       "q": "9 × 1 = ?",
+       "q_hu": "9 × 1 = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb40_tabla1_11",
+       "q": "10 × 1 = ?",
+       "q_hu": "10 × 1 = ?",
+       "kind": "num",
+       "answer": "10"
+      }
+     ]
+    },
+    {
+     "id": "tb40_tabla5",
+     "n": "Tabla del 5",
+     "text": "Tabla del 5.",
+     "text_hu": "A 5-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb40_tabla5_1",
+       "q": "0 × 5 = ?",
+       "q_hu": "0 × 5 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb40_tabla5_2",
+       "q": "1 × 5 = ?",
+       "q_hu": "1 × 5 = ?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb40_tabla5_3",
+       "q": "2 × 5 = ?",
+       "q_hu": "2 × 5 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb40_tabla5_4",
+       "q": "3 × 5 = ?",
+       "q_hu": "3 × 5 = ?",
+       "kind": "num",
+       "answer": "15"
+      },
+      {
+       "id": "tb40_tabla5_5",
+       "q": "4 × 5 = ?",
+       "q_hu": "4 × 5 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb40_tabla5_6",
+       "q": "5 × 5 = ?",
+       "q_hu": "5 × 5 = ?",
+       "kind": "num",
+       "answer": "25"
+      },
+      {
+       "id": "tb40_tabla5_7",
+       "q": "6 × 5 = ?",
+       "q_hu": "6 × 5 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb40_tabla5_8",
+       "q": "7 × 5 = ?",
+       "q_hu": "7 × 5 = ?",
+       "kind": "num",
+       "answer": "35"
+      },
+      {
+       "id": "tb40_tabla5_9",
+       "q": "8 × 5 = ?",
+       "q_hu": "8 × 5 = ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb40_tabla5_10",
+       "q": "9 × 5 = ?",
+       "q_hu": "9 × 5 = ?",
+       "kind": "num",
+       "answer": "45"
+      },
+      {
+       "id": "tb40_tabla5_11",
+       "q": "10 × 5 = ?",
+       "q_hu": "10 × 5 = ?",
+       "kind": "num",
+       "answer": "50"
+      }
+     ]
+    },
+    {
+     "id": "tb40_tabla10",
+     "n": "Tabla del 10",
+     "text": "Tabla del 10.",
+     "text_hu": "A 10-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb40_tabla10_1",
+       "q": "0 × 10 = ?",
+       "q_hu": "0 × 10 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb40_tabla10_2",
+       "q": "1 × 10 = ?",
+       "q_hu": "1 × 10 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb40_tabla10_3",
+       "q": "2 × 10 = ?",
+       "q_hu": "2 × 10 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb40_tabla10_4",
+       "q": "3 × 10 = ?",
+       "q_hu": "3 × 10 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb40_tabla10_5",
+       "q": "4 × 10 = ?",
+       "q_hu": "4 × 10 = ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb40_tabla10_6",
+       "q": "5 × 10 = ?",
+       "q_hu": "5 × 10 = ?",
+       "kind": "num",
+       "answer": "50"
+      },
+      {
+       "id": "tb40_tabla10_7",
+       "q": "6 × 10 = ?",
+       "q_hu": "6 × 10 = ?",
+       "kind": "num",
+       "answer": "60"
+      },
+      {
+       "id": "tb40_tabla10_8",
+       "q": "7 × 10 = ?",
+       "q_hu": "7 × 10 = ?",
+       "kind": "num",
+       "answer": "70"
+      },
+      {
+       "id": "tb40_tabla10_9",
+       "q": "8 × 10 = ?",
+       "q_hu": "8 × 10 = ?",
+       "kind": "num",
+       "answer": "80"
+      },
+      {
+       "id": "tb40_tabla10_10",
+       "q": "9 × 10 = ?",
+       "q_hu": "9 × 10 = ?",
+       "kind": "num",
+       "answer": "90"
+      },
+      {
+       "id": "tb40_tabla10_11",
+       "q": "10 × 10 = ?",
+       "q_hu": "10 × 10 = ?",
+       "kind": "num",
+       "answer": "100"
+      }
+     ]
+    },
+    {
+     "id": "tb40_ej",
+     "n": "★",
+     "text": "CALCULA cuántas frutas hay con una multiplicación.",
+     "text_hu": "Számold ki szorzással, hány gyümölcs van!",
+     "items": [
+      {
+       "id": "tb40_eja",
+       "q": "Hay 4 grupos de 5 plátanos: 4 × 5 = ?",
+       "q_hu": "4 csoport banán van, mindegyikben 5: 4 × 5 = ?",
+       "kind": "num",
+       "answer": "20",
+       "answer_hu": "20 banán"
+      },
+      {
+       "id": "tb40_ejb",
+       "q": "Hay 1 grupo con 10 uvas: 1 × 10 = ?",
+       "q_hu": "1 fürt szőlő van, 10 szemmel: 1 × 10 = ?",
+       "kind": "num",
+       "answer": "10",
+       "answer_hu": "10 szem szőlő"
+      }
+     ]
+    },
+    {
+     "id": "tb40_cm",
+     "n": "Cálculo mental",
+     "text": "Multiplicar un número de 2 y 3 cifras por 10. Sumar decenas exactas.",
+     "text_hu": "Két- és háromjegyű szám szorzása 10-zel. Kerek tízesek összeadása.",
+     "items": [
+      {
+       "id": "tb40_cma",
+       "q": "42 × 10 = ?",
+       "q_hu": "42 × 10 = ?",
+       "kind": "num",
+       "answer": "420"
+      },
+      {
+       "id": "tb40_cmb",
+       "q": "163 × 10 = ?",
+       "q_hu": "163 × 10 = ?",
+       "kind": "num",
+       "answer": "1630"
+      },
+      {
+       "id": "tb40_cmc",
+       "q": "20 + 50 = ?",
+       "q_hu": "20 + 50 = ?",
+       "kind": "num",
+       "answer": "70"
+      },
+      {
+       "id": "tb40_cmd",
+       "q": "410 + 370 = ?",
+       "q_hu": "410 + 370 = ?",
+       "kind": "num",
+       "answer": "780"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb41",
+   "book": "tb",
+   "page": 41,
+   "unit": "u2",
+   "title": "Tablas del 1, del 5 y del 10",
+   "title_hu": "Az 1-es, 5-ös és 10-es szorzótábla – gyakorlás",
+   "summary_hu": "Gyakorlás az 1-es, 5-ös és 10-es szorzótáblával: összeadás átírása szorzássá, hiányzó tényező, sorozatok 5-ösével és 10-esével, szöveges feladatok és fejszámolás (×10).",
+   "words": [
+    {
+     "w": "resolver",
+     "hu": "megoldani"
+    },
+    {
+     "w": "continuar",
+     "hu": "folytatni"
+    },
+    {
+     "w": "la serie",
+     "hu": "a sorozat"
+    },
+    {
+     "w": "el clima",
+     "hu": "az időjárás, éghajlat"
+    },
+    {
+     "w": "el termómetro",
+     "hu": "a hőmérő"
+    },
+    {
+     "w": "la cima",
+     "hu": "a hegycsúcs"
+    },
+    {
+     "w": "la montaña",
+     "hu": "a hegy"
+    },
+    {
+     "w": "los alpinistas",
+     "hu": "a hegymászók"
+    },
+    {
+     "w": "ascender",
+     "hu": "felmenni, emelkedni"
+    },
+    {
+     "w": "el metro",
+     "hu": "a méter"
+    },
+    {
+     "w": "el día",
+     "hu": "a nap"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb41_1",
+     "n": "1",
+     "text": "EXPRESA como una multiplicación y CALCULA.",
+     "text_hu": "Írd fel szorzásként, és számold ki!",
+     "items": [
+      {
+       "id": "tb41_1a1",
+       "q": "1 + 1 + 1 + 1 + 1 = ? × 1  (¿cuántas veces se suma el 1?)",
+       "q_hu": "1 + 1 + 1 + 1 + 1 = ? × 1  (hányszor adtuk össze a 1-t?)",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb41_1a2",
+       "q": "1 + 1 + 1 + 1 + 1 = 5 × 1 = ?",
+       "q_hu": "1 + 1 + 1 + 1 + 1 = 5 × 1 = ?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb41_1b1",
+       "q": "10 = ? × 10  (¿cuántas veces se suma el 10?)",
+       "q_hu": "10 = ? × 10  (hányszor adtuk össze a 10-t?)",
+       "kind": "num",
+       "answer": "1"
+      },
+      {
+       "id": "tb41_1b2",
+       "q": "10 = 1 × 10 = ?",
+       "q_hu": "10 = 1 × 10 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb41_1c1",
+       "q": "5 + 5 + 5 = ? × 5  (¿cuántas veces se suma el 5?)",
+       "q_hu": "5 + 5 + 5 = ? × 5  (hányszor adtuk össze a 5-t?)",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb41_1c2",
+       "q": "5 + 5 + 5 = 3 × 5 = ?",
+       "q_hu": "5 + 5 + 5 = 3 × 5 = ?",
+       "kind": "num",
+       "answer": "15"
+      },
+      {
+       "id": "tb41_1d1",
+       "q": "5 + 5 + 5 + 5 + 5 + 5 + 5 = ? × 5  (¿cuántas veces se suma el 5?)",
+       "q_hu": "5 + 5 + 5 + 5 + 5 + 5 + 5 = ? × 5  (hányszor adtuk össze a 5-t?)",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb41_1d2",
+       "q": "5 + 5 + 5 + 5 + 5 + 5 + 5 = 7 × 5 = ?",
+       "q_hu": "5 + 5 + 5 + 5 + 5 + 5 + 5 = 7 × 5 = ?",
+       "kind": "num",
+       "answer": "35"
+      },
+      {
+       "id": "tb41_1e1",
+       "q": "10 + 10 + 10 + 10 = ? × 10  (¿cuántas veces se suma el 10?)",
+       "q_hu": "10 + 10 + 10 + 10 = ? × 10  (hányszor adtuk össze a 10-t?)",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb41_1e2",
+       "q": "10 + 10 + 10 + 10 = 4 × 10 = ?",
+       "q_hu": "10 + 10 + 10 + 10 = 4 × 10 = ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb41_1f1",
+       "q": "1 = ? × 1  (¿cuántas veces se suma el 1?)",
+       "q_hu": "1 = ? × 1  (hányszor adtuk össze a 1-t?)",
+       "kind": "num",
+       "answer": "1"
+      },
+      {
+       "id": "tb41_1f2",
+       "q": "1 = 1 × 1 = ?",
+       "q_hu": "1 = 1 × 1 = ?",
+       "kind": "num",
+       "answer": "1"
+      }
+     ]
+    },
+    {
+     "id": "tb41_2",
+     "n": "2",
+     "text": "RESUELVE estas multiplicaciones.",
+     "text_hu": "Oldd meg a szorzásokat!",
+     "items": [
+      {
+       "id": "tb41_2a",
+       "q": "4 × 1 = ?",
+       "q_hu": "4 × 1 = ?",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb41_2b",
+       "q": "6 × 5 = ?",
+       "q_hu": "6 × 5 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb41_2c",
+       "q": "8 × 10 = ?",
+       "q_hu": "8 × 10 = ?",
+       "kind": "num",
+       "answer": "80"
+      },
+      {
+       "id": "tb41_2d",
+       "q": "7 × 1 = ?",
+       "q_hu": "7 × 1 = ?",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb41_2e",
+       "q": "5 × 5 = ?",
+       "q_hu": "5 × 5 = ?",
+       "kind": "num",
+       "answer": "25"
+      },
+      {
+       "id": "tb41_2f",
+       "q": "0 × 10 = ?",
+       "q_hu": "0 × 10 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb41_2g",
+       "q": "3 × 1 = ?",
+       "q_hu": "3 × 1 = ?",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb41_2h",
+       "q": "2 × 10 = ?",
+       "q_hu": "2 × 10 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb41_2i",
+       "q": "7 × 5 = ?",
+       "q_hu": "7 × 5 = ?",
+       "kind": "num",
+       "answer": "35"
+      }
+     ]
+    },
+    {
+     "id": "tb41_3",
+     "n": "3",
+     "text": "COMPLETA.",
+     "text_hu": "Egészítsd ki!",
+     "items": [
+      {
+       "id": "tb41_3a",
+       "q": "6 × 1 = ?",
+       "q_hu": "6 × 1 = ?",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb41_3b",
+       "q": "4 × ? = 20",
+       "q_hu": "4 × ? = 20",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb41_3c",
+       "q": "? × 10 = 80",
+       "q_hu": "? × 10 = 80",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb41_3d",
+       "q": "? × 5 = 15",
+       "q_hu": "? × 5 = 15",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb41_3e",
+       "q": "8 × ? = 40",
+       "q_hu": "8 × ? = 40",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb41_3f",
+       "q": "3 × 10 = ?",
+       "q_hu": "3 × 10 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb41_3g",
+       "q": "? × 10 = 70",
+       "q_hu": "? × 10 = 70",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb41_3h",
+       "q": "9 × 1 = ?",
+       "q_hu": "9 × 1 = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb41_3i",
+       "q": "? × 5 = 0",
+       "q_hu": "? × 5 = 0",
+       "kind": "num",
+       "answer": "0"
+      }
+     ]
+    },
+    {
+     "id": "tb41_4",
+     "n": "4",
+     "text": "CONTINÚA las series.",
+     "text_hu": "Folytasd a sorozatokat!",
+     "items": [
+      {
+       "id": "tb41_4a1",
+       "q": "Serie a (+5): 425, ?",
+       "q_hu": "a) sorozat (+5): 425, ?",
+       "kind": "num",
+       "answer": "430"
+      },
+      {
+       "id": "tb41_4a2",
+       "q": "Serie a (+5): 425, 430, ?",
+       "q_hu": "a) sorozat (+5): 425, 430, ?",
+       "kind": "num",
+       "answer": "435"
+      },
+      {
+       "id": "tb41_4a3",
+       "q": "Serie a (+5): 425, 430, 435, ?",
+       "q_hu": "a) sorozat (+5): 425, 430, 435, ?",
+       "kind": "num",
+       "answer": "440"
+      },
+      {
+       "id": "tb41_4a4",
+       "q": "Serie a (+5): 425, 430, 435, 440, ?",
+       "q_hu": "a) sorozat (+5): 425, 430, 435, 440, ?",
+       "kind": "num",
+       "answer": "445"
+      },
+      {
+       "id": "tb41_4b1",
+       "q": "Serie b (+10): 425, ?",
+       "q_hu": "b) sorozat (+10): 425, ?",
+       "kind": "num",
+       "answer": "435"
+      },
+      {
+       "id": "tb41_4b2",
+       "q": "Serie b (+10): 425, 435, ?",
+       "q_hu": "b) sorozat (+10): 425, 435, ?",
+       "kind": "num",
+       "answer": "445"
+      },
+      {
+       "id": "tb41_4b3",
+       "q": "Serie b (+10): 425, 435, 445, ?",
+       "q_hu": "b) sorozat (+10): 425, 435, 445, ?",
+       "kind": "num",
+       "answer": "455"
+      },
+      {
+       "id": "tb41_4b4",
+       "q": "Serie b (+10): 425, 435, 445, 455, ?",
+       "q_hu": "b) sorozat (+10): 425, 435, 445, 455, ?",
+       "kind": "num",
+       "answer": "465"
+      }
+     ]
+    },
+    {
+     "id": "tb41_5",
+     "n": "5",
+     "text": "Para estudiar su clima, se instalan 3 termómetros en la cima de 5 montañas. CALCULA cuántos se utilizan en total.",
+     "text_hu": "Az időjárás figyelésére 5 hegy csúcsára egyenként 3 hőmérőt szerelnek. Hány hőmérőt használnak összesen?",
+     "items": [
+      {
+       "id": "tb41_5a",
+       "q": "5 montañas con 3 termómetros cada una: 5 × 3 = ?",
+       "q_hu": "5 hegy, mindegyiken 3 hőmérő: 5 × 3 = ?",
+       "kind": "num",
+       "answer": "15",
+       "answer_hu": "15 hőmérő"
+      }
+     ]
+    },
+    {
+     "id": "tb41_6",
+     "n": "6",
+     "text": "Si un grupo de alpinistas asciende 900 metros cada día, DETERMINA cuántos metros habrá ascendido en 10 días.",
+     "text_hu": "Egy hegymászócsoport minden nap 900 métert megy felfelé. Hány métert mennek fel 10 nap alatt?",
+     "items": [
+      {
+       "id": "tb41_6a",
+       "q": "900 metros cada día durante 10 días: 900 × 10 = ?",
+       "q_hu": "Naponta 900 méter, 10 napig: 900 × 10 = ?",
+       "kind": "num",
+       "answer": "9000",
+       "answer_hu": "9000 méter"
+      }
+     ]
+    },
+    {
+     "id": "tb41_7",
+     "n": "7",
+     "text": "CALCULA mentalmente.",
+     "text_hu": "Számold ki fejben!",
+     "items": [
+      {
+       "id": "tb41_7a",
+       "q": "37 × 10 = ?",
+       "q_hu": "37 × 10 = ?",
+       "kind": "num",
+       "answer": "370"
+      },
+      {
+       "id": "tb41_7b",
+       "q": "516 × 10 = ?",
+       "q_hu": "516 × 10 = ?",
+       "kind": "num",
+       "answer": "5160"
+      },
+      {
+       "id": "tb41_7c",
+       "q": "28 × 10 = ?",
+       "q_hu": "28 × 10 = ?",
+       "kind": "num",
+       "answer": "280"
+      },
+      {
+       "id": "tb41_7d",
+       "q": "734 × 10 = ?",
+       "q_hu": "734 × 10 = ?",
+       "kind": "num",
+       "answer": "7340"
+      },
+      {
+       "id": "tb41_7e",
+       "q": "40 + 50 = ?",
+       "q_hu": "40 + 50 = ?",
+       "kind": "num",
+       "answer": "90"
+      },
+      {
+       "id": "tb41_7f",
+       "q": "230 + 620 = ?",
+       "q_hu": "230 + 620 = ?",
+       "kind": "num",
+       "answer": "850"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb42",
+   "book": "tb",
+   "page": 42,
+   "unit": "u2",
+   "title": "Tablas del 2, del 4 y del 8",
+   "title_hu": "A 2-es, 4-es és 8-as szorzótábla",
+   "summary_hu": "A 2-es, 4-es és 8-as szorzótábla. A kétszeres (dupla) kiszámolása = szorzás 2-vel. Érdekesség: a 4-es tábla a 2-es duplája, a 8-as a 4-es duplája.",
+   "words": [
+    {
+     "w": "el doble",
+     "hu": "a kétszerese, dupla"
+    },
+    {
+     "w": "calcular el doble",
+     "hu": "kiszámolni a kétszeresét"
+    },
+    {
+     "w": "la pieza de madera",
+     "hu": "a fadarab, fakocka"
+    },
+    {
+     "w": "la torre",
+     "hu": "a torony"
+    },
+    {
+     "w": "en total",
+     "hu": "összesen"
+    },
+    {
+     "w": "tres veces cuatro son doce",
+     "hu": "háromszor négy az tizenkettő"
+    },
+    {
+     "w": "multiplicar por 2",
+     "hu": "szorozni 2-vel"
+    },
+    {
+     "w": "la tabla del ocho",
+     "hu": "a 8-as szorzótábla"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb42_tabla2",
+     "n": "Tabla del 2",
+     "text": "Tabla del 2.",
+     "text_hu": "A 2-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb42_tabla2_1",
+       "q": "0 × 2 = ?",
+       "q_hu": "0 × 2 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb42_tabla2_2",
+       "q": "1 × 2 = ?",
+       "q_hu": "1 × 2 = ?",
+       "kind": "num",
+       "answer": "2"
+      },
+      {
+       "id": "tb42_tabla2_3",
+       "q": "2 × 2 = ?",
+       "q_hu": "2 × 2 = ?",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb42_tabla2_4",
+       "q": "3 × 2 = ?",
+       "q_hu": "3 × 2 = ?",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb42_tabla2_5",
+       "q": "4 × 2 = ?",
+       "q_hu": "4 × 2 = ?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb42_tabla2_6",
+       "q": "5 × 2 = ?",
+       "q_hu": "5 × 2 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb42_tabla2_7",
+       "q": "6 × 2 = ?",
+       "q_hu": "6 × 2 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb42_tabla2_8",
+       "q": "7 × 2 = ?",
+       "q_hu": "7 × 2 = ?",
+       "kind": "num",
+       "answer": "14"
+      },
+      {
+       "id": "tb42_tabla2_9",
+       "q": "8 × 2 = ?",
+       "q_hu": "8 × 2 = ?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb42_tabla2_10",
+       "q": "9 × 2 = ?",
+       "q_hu": "9 × 2 = ?",
+       "kind": "num",
+       "answer": "18"
+      },
+      {
+       "id": "tb42_tabla2_11",
+       "q": "10 × 2 = ?",
+       "q_hu": "10 × 2 = ?",
+       "kind": "num",
+       "answer": "20"
+      }
+     ]
+    },
+    {
+     "id": "tb42_tabla4",
+     "n": "Tabla del 4",
+     "text": "Tabla del 4.",
+     "text_hu": "A 4-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb42_tabla4_1",
+       "q": "0 × 4 = ?",
+       "q_hu": "0 × 4 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb42_tabla4_2",
+       "q": "1 × 4 = ?",
+       "q_hu": "1 × 4 = ?",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb42_tabla4_3",
+       "q": "2 × 4 = ?",
+       "q_hu": "2 × 4 = ?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb42_tabla4_4",
+       "q": "3 × 4 = ?",
+       "q_hu": "3 × 4 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb42_tabla4_5",
+       "q": "4 × 4 = ?",
+       "q_hu": "4 × 4 = ?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb42_tabla4_6",
+       "q": "5 × 4 = ?",
+       "q_hu": "5 × 4 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb42_tabla4_7",
+       "q": "6 × 4 = ?",
+       "q_hu": "6 × 4 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb42_tabla4_8",
+       "q": "7 × 4 = ?",
+       "q_hu": "7 × 4 = ?",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb42_tabla4_9",
+       "q": "8 × 4 = ?",
+       "q_hu": "8 × 4 = ?",
+       "kind": "num",
+       "answer": "32"
+      },
+      {
+       "id": "tb42_tabla4_10",
+       "q": "9 × 4 = ?",
+       "q_hu": "9 × 4 = ?",
+       "kind": "num",
+       "answer": "36"
+      },
+      {
+       "id": "tb42_tabla4_11",
+       "q": "10 × 4 = ?",
+       "q_hu": "10 × 4 = ?",
+       "kind": "num",
+       "answer": "40"
+      }
+     ]
+    },
+    {
+     "id": "tb42_tabla8",
+     "n": "Tabla del 8",
+     "text": "Tabla del 8.",
+     "text_hu": "A 8-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb42_tabla8_1",
+       "q": "0 × 8 = ?",
+       "q_hu": "0 × 8 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb42_tabla8_2",
+       "q": "1 × 8 = ?",
+       "q_hu": "1 × 8 = ?",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb42_tabla8_3",
+       "q": "2 × 8 = ?",
+       "q_hu": "2 × 8 = ?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb42_tabla8_4",
+       "q": "3 × 8 = ?",
+       "q_hu": "3 × 8 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb42_tabla8_5",
+       "q": "4 × 8 = ?",
+       "q_hu": "4 × 8 = ?",
+       "kind": "num",
+       "answer": "32"
+      },
+      {
+       "id": "tb42_tabla8_6",
+       "q": "5 × 8 = ?",
+       "q_hu": "5 × 8 = ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb42_tabla8_7",
+       "q": "6 × 8 = ?",
+       "q_hu": "6 × 8 = ?",
+       "kind": "num",
+       "answer": "48"
+      },
+      {
+       "id": "tb42_tabla8_8",
+       "q": "7 × 8 = ?",
+       "q_hu": "7 × 8 = ?",
+       "kind": "num",
+       "answer": "56"
+      },
+      {
+       "id": "tb42_tabla8_9",
+       "q": "8 × 8 = ?",
+       "q_hu": "8 × 8 = ?",
+       "kind": "num",
+       "answer": "64"
+      },
+      {
+       "id": "tb42_tabla8_10",
+       "q": "9 × 8 = ?",
+       "q_hu": "9 × 8 = ?",
+       "kind": "num",
+       "answer": "72"
+      },
+      {
+       "id": "tb42_tabla8_11",
+       "q": "10 × 8 = ?",
+       "q_hu": "10 × 8 = ?",
+       "kind": "num",
+       "answer": "80"
+      }
+     ]
+    },
+    {
+     "id": "tb42_ej",
+     "n": "★",
+     "text": "¿Cuántas piezas de madera hay en total?",
+     "text_hu": "Hány fadarab van összesen?",
+     "items": [
+      {
+       "id": "tb42_eja",
+       "q": "3 torres de 4 piezas cada una: 3 × 4 = ?",
+       "q_hu": "3 torony, mindegyik 4 darabból: 3 × 4 = ?",
+       "kind": "num",
+       "answer": "12",
+       "answer_hu": "12 darab"
+      },
+      {
+       "id": "tb42_ejb",
+       "q": "5 casitas de 2 piezas cada una: 5 × 2 = ?",
+       "q_hu": "5 kis ház, mindegyik 2 darabból: 5 × 2 = ?",
+       "kind": "num",
+       "answer": "10",
+       "answer_hu": "10 darab"
+      }
+     ]
+    },
+    {
+     "id": "tb42_cm",
+     "n": "Cálculo mental",
+     "text": "Calcular el doble de un número.",
+     "text_hu": "Egy szám kétszeresének kiszámolása.",
+     "items": [
+      {
+       "id": "tb42_cma",
+       "q": "7 × 2 = ?",
+       "q_hu": "7 × 2 = ?",
+       "kind": "num",
+       "answer": "14"
+      },
+      {
+       "id": "tb42_cmb",
+       "q": "31 × 2 = ?",
+       "q_hu": "31 × 2 = ?",
+       "kind": "num",
+       "answer": "62"
+      },
+      {
+       "id": "tb42_cmc",
+       "q": "341 × 2 = ?",
+       "q_hu": "341 × 2 = ?",
+       "kind": "num",
+       "answer": "682"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb43",
+   "book": "tb",
+   "page": 43,
+   "unit": "u2",
+   "title": "Tablas del 2, del 4 y del 8",
+   "title_hu": "A 2-es, 4-es és 8-as szorzótábla – gyakorlás",
+   "summary_hu": "Gyakorlás a 2-es, 4-es és 8-as szorzótáblával: szorzás és eredmény összekötése, hiányzó tényező, összeadás átírása szorzássá, szöveges feladat egy hajóval, és kétszeres fejszámolás.",
+   "words": [
+    {
+     "w": "relacionar",
+     "hu": "összekötni"
+    },
+    {
+     "w": "el resultado",
+     "hu": "az eredmény"
+    },
+    {
+     "w": "el factor que falta",
+     "hu": "a hiányzó tényező"
+    },
+    {
+     "w": "la caja",
+     "hu": "a doboz"
+    },
+    {
+     "w": "el balón",
+     "hu": "a labda"
+    },
+    {
+     "w": "realizar",
+     "hu": "elvégezni"
+    },
+    {
+     "w": "comprobar",
+     "hu": "ellenőrizni"
+    },
+    {
+     "w": "el barco",
+     "hu": "a hajó"
+    },
+    {
+     "w": "los pasajeros",
+     "hu": "az utasok"
+    },
+    {
+     "w": "la isla",
+     "hu": "a sziget"
+    },
+    {
+     "w": "el kilómetro",
+     "hu": "a kilométer"
+    },
+    {
+     "w": "recorrer",
+     "hu": "megtenni (utat)"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb43_1",
+     "n": "1",
+     "text": "RELACIONA cada multiplicación con su resultado.",
+     "text_hu": "Kösd össze mindegyik szorzást az eredményével!",
+     "items": [
+      {
+       "id": "tb43_1a",
+       "q": "6 × 2",
+       "q_hu": "6 × 2",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "40",
+         "hu": "40"
+        },
+        {
+         "t": "12",
+         "hu": "12"
+        },
+        {
+         "t": "28",
+         "hu": "28"
+        },
+        {
+         "t": "80",
+         "hu": "80"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb43_1b",
+       "q": "7 × 4",
+       "q_hu": "7 × 4",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "40",
+         "hu": "40"
+        },
+        {
+         "t": "12",
+         "hu": "12"
+        },
+        {
+         "t": "28",
+         "hu": "28"
+        },
+        {
+         "t": "80",
+         "hu": "80"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb43_1c",
+       "q": "5 × 8",
+       "q_hu": "5 × 8",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "40",
+         "hu": "40"
+        },
+        {
+         "t": "12",
+         "hu": "12"
+        },
+        {
+         "t": "28",
+         "hu": "28"
+        },
+        {
+         "t": "80",
+         "hu": "80"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb43_1d",
+       "q": "10 × 8",
+       "q_hu": "10 × 8",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "40",
+         "hu": "40"
+        },
+        {
+         "t": "12",
+         "hu": "12"
+        },
+        {
+         "t": "28",
+         "hu": "28"
+        },
+        {
+         "t": "80",
+         "hu": "80"
+        }
+       ],
+       "answer": 3
+      }
+     ]
+    },
+    {
+     "id": "tb43_2",
+     "n": "2",
+     "text": "AVERIGUA el factor que falta en cada multiplicación.",
+     "text_hu": "Találd ki a hiányzó tényezőt!",
+     "items": [
+      {
+       "id": "tb43_2a",
+       "q": "? × 2 = 8",
+       "q_hu": "? × 2 = 8",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb43_2b",
+       "q": "4 × ? = 16",
+       "q_hu": "4 × ? = 16",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb43_2c",
+       "q": "? × 8 = 24",
+       "q_hu": "? × 8 = 24",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb43_2d",
+       "q": "? × 4 = 0",
+       "q_hu": "? × 4 = 0",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb43_2e",
+       "q": "10 × ? = 80",
+       "q_hu": "10 × ? = 80",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb43_2f",
+       "q": "9 × ? = 18",
+       "q_hu": "9 × ? = 18",
+       "kind": "num",
+       "answer": "2"
+      },
+      {
+       "id": "tb43_2g",
+       "q": "7 × ? = 14",
+       "q_hu": "7 × ? = 14",
+       "kind": "num",
+       "answer": "2"
+      },
+      {
+       "id": "tb43_2h",
+       "q": "? × 2 = 16",
+       "q_hu": "? × 2 = 16",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb43_2i",
+       "q": "7 × ? = 28",
+       "q_hu": "7 × ? = 28",
+       "kind": "num",
+       "answer": "4"
+      }
+     ]
+    },
+    {
+     "id": "tb43_3",
+     "n": "3",
+     "text": "DIBUJA 2 cajas y, en cada caja, 4 balones. Después, ESCRIBE la multiplicación que representa el total de balones.",
+     "text_hu": "Rajzolj 2 dobozt, mindegyikbe 4 labdát! Utána írd fel a szorzást, ami megmutatja, hány labda van összesen.",
+     "items": [
+      {
+       "id": "tb43_3a",
+       "q": "Dibuja 2 cajas con 4 balones en cada una.",
+       "q_hu": "Rajzolj 2 dobozt, mindegyikben 4 labdával.",
+       "kind": "open",
+       "answer": "Dos cajas con 4 balones cada una.",
+       "answer_hu": "Két doboz, mindegyikben 4 labda."
+      },
+      {
+       "id": "tb43_3b",
+       "q": "2 cajas con 4 balones: 2 × 4 = ? balones",
+       "q_hu": "2 doboz, mindegyikben 4 labda: 2 × 4 = ? labda",
+       "kind": "num",
+       "answer": "8"
+      }
+     ]
+    },
+    {
+     "id": "tb43_4",
+     "n": "4",
+     "text": "REALIZA estas sumas. Después, EXPRÉSALAS como una multiplicación y comprueba que obtienes los mismos resultados.",
+     "text_hu": "Végezd el az összeadásokat! Utána írd fel őket szorzásként, és ellenőrizd, hogy ugyanazt kapod-e.",
+     "items": [
+      {
+       "id": "tb43_4a1",
+       "q": "4 + 4 + 4 + 4 = ? × 4  (¿cuántas veces se suma el 4?)",
+       "q_hu": "4 + 4 + 4 + 4 = ? × 4  (hányszor adtuk össze a 4-t?)",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb43_4a2",
+       "q": "4 + 4 + 4 + 4 = 4 × 4 = ?",
+       "q_hu": "4 + 4 + 4 + 4 = 4 × 4 = ?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb43_4b1",
+       "q": "8 + 8 + 8 + 8 + 8 + 8 + 8 = ? × 8  (¿cuántas veces se suma el 8?)",
+       "q_hu": "8 + 8 + 8 + 8 + 8 + 8 + 8 = ? × 8  (hányszor adtuk össze a 8-t?)",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb43_4b2",
+       "q": "8 + 8 + 8 + 8 + 8 + 8 + 8 = 7 × 8 = ?",
+       "q_hu": "8 + 8 + 8 + 8 + 8 + 8 + 8 = 7 × 8 = ?",
+       "kind": "num",
+       "answer": "56"
+      },
+      {
+       "id": "tb43_4c1",
+       "q": "2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = ? × 2  (¿cuántas veces se suma el 2?)",
+       "q_hu": "2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = ? × 2  (hányszor adtuk össze a 2-t?)",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb43_4c2",
+       "q": "2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 8 × 2 = ?",
+       "q_hu": "2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 = 8 × 2 = ?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb43_4d1",
+       "q": "4 = ? × 4  (¿cuántas veces se suma el 4?)",
+       "q_hu": "4 = ? × 4  (hányszor adtuk össze a 4-t?)",
+       "kind": "num",
+       "answer": "1"
+      },
+      {
+       "id": "tb43_4d2",
+       "q": "4 = 1 × 4 = ?",
+       "q_hu": "4 = 1 × 4 = ?",
+       "kind": "num",
+       "answer": "4"
+      }
+     ]
+    },
+    {
+     "id": "tb43_5",
+     "n": "5",
+     "text": "Un barco lleva pasajeros a una isla 4 veces al día. CALCULA cuántos kilómetros recorre cada día.",
+     "text_hu": "Egy hajó naponta 4-szer viszi át az utasokat egy szigetre. Hány kilométert tesz meg naponta?",
+     "items": [
+      {
+       "id": "tb43_5a",
+       "q": "La isla está a 8 km. El barco hace el viaje 4 veces al día: 4 × 8 = ? km",
+       "q_hu": "A sziget 8 km-re van. A hajó naponta 4-szer teszi meg az utat: 4 × 8 = ? km",
+       "kind": "num",
+       "answer": "32",
+       "answer_hu": "32 km (a könyv szerint 4 × 8; ha a visszautat is számoljuk, 64 km)"
+      }
+     ]
+    },
+    {
+     "id": "tb43_6",
+     "n": "6",
+     "text": "CALCULA mentalmente.",
+     "text_hu": "Számold ki fejben!",
+     "items": [
+      {
+       "id": "tb43_6a",
+       "q": "6 × 2 = ?",
+       "q_hu": "6 × 2 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb43_6b",
+       "q": "14 × 2 = ?",
+       "q_hu": "14 × 2 = ?",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb43_6c",
+       "q": "103 × 2 = ?",
+       "q_hu": "103 × 2 = ?",
+       "kind": "num",
+       "answer": "206"
+      },
+      {
+       "id": "tb43_6d",
+       "q": "8 × 2 = ?",
+       "q_hu": "8 × 2 = ?",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb43_6e",
+       "q": "33 × 2 = ?",
+       "q_hu": "33 × 2 = ?",
+       "kind": "num",
+       "answer": "66"
+      },
+      {
+       "id": "tb43_6f",
+       "q": "241 × 2 = ?",
+       "q_hu": "241 × 2 = ?",
+       "kind": "num",
+       "answer": "482"
+      },
+      {
+       "id": "tb43_6g",
+       "q": "5 × 2 = ?",
+       "q_hu": "5 × 2 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb43_6h",
+       "q": "42 × 2 = ?",
+       "q_hu": "42 × 2 = ?",
+       "kind": "num",
+       "answer": "84"
+      },
+      {
+       "id": "tb43_6i",
+       "q": "320 × 2 = ?",
+       "q_hu": "320 × 2 = ?",
+       "kind": "num",
+       "answer": "640"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb44",
+   "book": "tb",
+   "page": 44,
+   "unit": "u2",
+   "title": "Tablas del 3, del 6 y del 9",
+   "title_hu": "A 3-as, 6-os és 9-es szorzótábla",
+   "summary_hu": "A 3-as, 6-os és 9-es szorzótábla. A háromszoros (triple) kiszámolása = szorzás 3-mal. Érdekesség: a 6-os tábla a 3-as duplája.",
+   "words": [
+    {
+     "w": "el triple",
+     "hu": "a háromszorosa"
+    },
+    {
+     "w": "calcular el triple",
+     "hu": "kiszámolni a háromszorosát"
+    },
+    {
+     "w": "multiplicar por 3",
+     "hu": "szorozni 3-mal"
+    },
+    {
+     "w": "los arándanos",
+     "hu": "az áfonyák"
+    },
+    {
+     "w": "los cubiertos",
+     "hu": "az evőeszközök"
+    },
+    {
+     "w": "dos veces nueve son dieciocho",
+     "hu": "kétszer kilenc az tizennyolc"
+    },
+    {
+     "w": "la tabla del nueve",
+     "hu": "a 9-es szorzótábla"
+    },
+    {
+     "w": "el tenedor",
+     "hu": "a villa"
+    },
+    {
+     "w": "la cuchara",
+     "hu": "a kanál"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb44_tabla3",
+     "n": "Tabla del 3",
+     "text": "Tabla del 3.",
+     "text_hu": "A 3-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb44_tabla3_1",
+       "q": "0 × 3 = ?",
+       "q_hu": "0 × 3 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb44_tabla3_2",
+       "q": "1 × 3 = ?",
+       "q_hu": "1 × 3 = ?",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb44_tabla3_3",
+       "q": "2 × 3 = ?",
+       "q_hu": "2 × 3 = ?",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb44_tabla3_4",
+       "q": "3 × 3 = ?",
+       "q_hu": "3 × 3 = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb44_tabla3_5",
+       "q": "4 × 3 = ?",
+       "q_hu": "4 × 3 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb44_tabla3_6",
+       "q": "5 × 3 = ?",
+       "q_hu": "5 × 3 = ?",
+       "kind": "num",
+       "answer": "15"
+      },
+      {
+       "id": "tb44_tabla3_7",
+       "q": "6 × 3 = ?",
+       "q_hu": "6 × 3 = ?",
+       "kind": "num",
+       "answer": "18"
+      },
+      {
+       "id": "tb44_tabla3_8",
+       "q": "7 × 3 = ?",
+       "q_hu": "7 × 3 = ?",
+       "kind": "num",
+       "answer": "21"
+      },
+      {
+       "id": "tb44_tabla3_9",
+       "q": "8 × 3 = ?",
+       "q_hu": "8 × 3 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb44_tabla3_10",
+       "q": "9 × 3 = ?",
+       "q_hu": "9 × 3 = ?",
+       "kind": "num",
+       "answer": "27"
+      },
+      {
+       "id": "tb44_tabla3_11",
+       "q": "10 × 3 = ?",
+       "q_hu": "10 × 3 = ?",
+       "kind": "num",
+       "answer": "30"
+      }
+     ]
+    },
+    {
+     "id": "tb44_tabla6",
+     "n": "Tabla del 6",
+     "text": "Tabla del 6.",
+     "text_hu": "A 6-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb44_tabla6_1",
+       "q": "0 × 6 = ?",
+       "q_hu": "0 × 6 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb44_tabla6_2",
+       "q": "1 × 6 = ?",
+       "q_hu": "1 × 6 = ?",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb44_tabla6_3",
+       "q": "2 × 6 = ?",
+       "q_hu": "2 × 6 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb44_tabla6_4",
+       "q": "3 × 6 = ?",
+       "q_hu": "3 × 6 = ?",
+       "kind": "num",
+       "answer": "18"
+      },
+      {
+       "id": "tb44_tabla6_5",
+       "q": "4 × 6 = ?",
+       "q_hu": "4 × 6 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb44_tabla6_6",
+       "q": "5 × 6 = ?",
+       "q_hu": "5 × 6 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb44_tabla6_7",
+       "q": "6 × 6 = ?",
+       "q_hu": "6 × 6 = ?",
+       "kind": "num",
+       "answer": "36"
+      },
+      {
+       "id": "tb44_tabla6_8",
+       "q": "7 × 6 = ?",
+       "q_hu": "7 × 6 = ?",
+       "kind": "num",
+       "answer": "42"
+      },
+      {
+       "id": "tb44_tabla6_9",
+       "q": "8 × 6 = ?",
+       "q_hu": "8 × 6 = ?",
+       "kind": "num",
+       "answer": "48"
+      },
+      {
+       "id": "tb44_tabla6_10",
+       "q": "9 × 6 = ?",
+       "q_hu": "9 × 6 = ?",
+       "kind": "num",
+       "answer": "54"
+      },
+      {
+       "id": "tb44_tabla6_11",
+       "q": "10 × 6 = ?",
+       "q_hu": "10 × 6 = ?",
+       "kind": "num",
+       "answer": "60"
+      }
+     ]
+    },
+    {
+     "id": "tb44_tabla9",
+     "n": "Tabla del 9",
+     "text": "Tabla del 9.",
+     "text_hu": "A 9-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb44_tabla9_1",
+       "q": "0 × 9 = ?",
+       "q_hu": "0 × 9 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb44_tabla9_2",
+       "q": "1 × 9 = ?",
+       "q_hu": "1 × 9 = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb44_tabla9_3",
+       "q": "2 × 9 = ?",
+       "q_hu": "2 × 9 = ?",
+       "kind": "num",
+       "answer": "18"
+      },
+      {
+       "id": "tb44_tabla9_4",
+       "q": "3 × 9 = ?",
+       "q_hu": "3 × 9 = ?",
+       "kind": "num",
+       "answer": "27"
+      },
+      {
+       "id": "tb44_tabla9_5",
+       "q": "4 × 9 = ?",
+       "q_hu": "4 × 9 = ?",
+       "kind": "num",
+       "answer": "36"
+      },
+      {
+       "id": "tb44_tabla9_6",
+       "q": "5 × 9 = ?",
+       "q_hu": "5 × 9 = ?",
+       "kind": "num",
+       "answer": "45"
+      },
+      {
+       "id": "tb44_tabla9_7",
+       "q": "6 × 9 = ?",
+       "q_hu": "6 × 9 = ?",
+       "kind": "num",
+       "answer": "54"
+      },
+      {
+       "id": "tb44_tabla9_8",
+       "q": "7 × 9 = ?",
+       "q_hu": "7 × 9 = ?",
+       "kind": "num",
+       "answer": "63"
+      },
+      {
+       "id": "tb44_tabla9_9",
+       "q": "8 × 9 = ?",
+       "q_hu": "8 × 9 = ?",
+       "kind": "num",
+       "answer": "72"
+      },
+      {
+       "id": "tb44_tabla9_10",
+       "q": "9 × 9 = ?",
+       "q_hu": "9 × 9 = ?",
+       "kind": "num",
+       "answer": "81"
+      },
+      {
+       "id": "tb44_tabla9_11",
+       "q": "10 × 9 = ?",
+       "q_hu": "10 × 9 = ?",
+       "kind": "num",
+       "answer": "90"
+      }
+     ]
+    },
+    {
+     "id": "tb44_ej",
+     "n": "★",
+     "text": "¿Cuántos arándanos hay en total? ¿Cuántos cubiertos hay en total?",
+     "text_hu": "Hány áfonya van összesen? Hány evőeszköz van összesen?",
+     "items": [
+      {
+       "id": "tb44_eja",
+       "q": "Hay 2 ramas con 9 arándanos cada una: 2 × 9 = ?",
+       "q_hu": "2 ág van, mindegyiken 9 áfonya: 2 × 9 = ?",
+       "kind": "num",
+       "answer": "18",
+       "answer_hu": "18 áfonya"
+      },
+      {
+       "id": "tb44_ejb",
+       "q": "Hay 5 grupos de 3 cubiertos: 5 × 3 = ?",
+       "q_hu": "5 csoport evőeszköz van, mindegyikben 3: 5 × 3 = ?",
+       "kind": "num",
+       "answer": "15",
+       "answer_hu": "15 evőeszköz"
+      }
+     ]
+    },
+    {
+     "id": "tb44_cm",
+     "n": "Cálculo mental",
+     "text": "Calcular el triple de un número.",
+     "text_hu": "Egy szám háromszorosának kiszámolása.",
+     "items": [
+      {
+       "id": "tb44_cma",
+       "q": "4 × 3 = ?",
+       "q_hu": "4 × 3 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb44_cmb",
+       "q": "13 × 3 = ?",
+       "q_hu": "13 × 3 = ?",
+       "kind": "num",
+       "answer": "39"
+      },
+      {
+       "id": "tb44_cmc",
+       "q": "121 × 3 = ?",
+       "q_hu": "121 × 3 = ?",
+       "kind": "num",
+       "answer": "363"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb45",
+   "book": "tb",
+   "page": 45,
+   "unit": "u2",
+   "title": "Tablas del 3, del 6 y del 9",
+   "title_hu": "A 3-as, 6-os és 9-es szorzótábla – gyakorlás",
+   "summary_hu": "Gyakorlás a 3-as, 6-os és 9-es szorzótáblával: összeadás és szorzás párosítása, hiányzó tényező, egy számhoz két szorzás keresése, rajz értelmezése, árak kiszámolása és háromszoros fejszámolás.",
+   "words": [
+    {
+     "w": "la suma",
+     "hu": "az összeadás, összeg"
+    },
+    {
+     "w": "escribir",
+     "hu": "írni"
+    },
+    {
+     "w": "interpretar",
+     "hu": "értelmezni"
+    },
+    {
+     "w": "los voluntarios",
+     "hu": "az önkéntesek"
+    },
+    {
+     "w": "limpiar",
+     "hu": "takarítani"
+    },
+    {
+     "w": "la zona de monte",
+     "hu": "erdős terület"
+    },
+    {
+     "w": "la semana",
+     "hu": "a hét (7 nap)"
+    },
+    {
+     "w": "costar",
+     "hu": "kerülni (pénzbe)"
+    },
+    {
+     "w": "el cuaderno",
+     "hu": "a füzet"
+    },
+    {
+     "w": "la caja de rotuladores",
+     "hu": "a filctolldoboz"
+    },
+    {
+     "w": "el euro",
+     "hu": "az euró"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb45_1",
+     "n": "1",
+     "text": "RELACIONA cada suma con su multiplicación.",
+     "text_hu": "Kösd össze mindegyik összeadást a hozzá tartozó szorzással!",
+     "items": [
+      {
+       "id": "tb45_1a",
+       "q": "9 + 9 + 9",
+       "q_hu": "9 + 9 + 9",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 9",
+         "hu": "6 × 9"
+        },
+        {
+         "t": "3 × 6",
+         "hu": "3 × 6"
+        },
+        {
+         "t": "6 × 3",
+         "hu": "6 × 3"
+        },
+        {
+         "t": "3 × 9",
+         "hu": "3 × 9"
+        }
+       ],
+       "answer": 3
+      },
+      {
+       "id": "tb45_1b",
+       "q": "3 + 3 + 3 + 3 + 3 + 3",
+       "q_hu": "3 + 3 + 3 + 3 + 3 + 3",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 9",
+         "hu": "6 × 9"
+        },
+        {
+         "t": "3 × 6",
+         "hu": "3 × 6"
+        },
+        {
+         "t": "6 × 3",
+         "hu": "6 × 3"
+        },
+        {
+         "t": "3 × 9",
+         "hu": "3 × 9"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb45_1c",
+       "q": "6 + 6 + 6",
+       "q_hu": "6 + 6 + 6",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 9",
+         "hu": "6 × 9"
+        },
+        {
+         "t": "3 × 6",
+         "hu": "3 × 6"
+        },
+        {
+         "t": "6 × 3",
+         "hu": "6 × 3"
+        },
+        {
+         "t": "3 × 9",
+         "hu": "3 × 9"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb45_1d",
+       "q": "9 + 9 + 9 + 9 + 9 + 9",
+       "q_hu": "9 + 9 + 9 + 9 + 9 + 9",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 9",
+         "hu": "6 × 9"
+        },
+        {
+         "t": "3 × 6",
+         "hu": "3 × 6"
+        },
+        {
+         "t": "6 × 3",
+         "hu": "6 × 3"
+        },
+        {
+         "t": "3 × 9",
+         "hu": "3 × 9"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb45_2",
+     "n": "2",
+     "text": "ESCRIBE el factor que falta.",
+     "text_hu": "Írd be a hiányzó számot!",
+     "items": [
+      {
+       "id": "tb45_2a",
+       "q": "? × 3 = 15",
+       "q_hu": "? × 3 = 15",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb45_2b",
+       "q": "6 × ? = 36",
+       "q_hu": "6 × ? = 36",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb45_2c",
+       "q": "? × 6 = 48",
+       "q_hu": "? × 6 = 48",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb45_2d",
+       "q": "10 × ? = 30",
+       "q_hu": "10 × ? = 30",
+       "kind": "num",
+       "answer": "3"
+      },
+      {
+       "id": "tb45_2e",
+       "q": "4 × 9 = ?",
+       "q_hu": "4 × 9 = ?",
+       "kind": "num",
+       "answer": "36"
+      },
+      {
+       "id": "tb45_2f",
+       "q": "7 × 9 = ?",
+       "q_hu": "7 × 9 = ?",
+       "kind": "num",
+       "answer": "63"
+      }
+     ]
+    },
+    {
+     "id": "tb45_3",
+     "n": "3",
+     "text": "ESCRIBE dos multiplicaciones que den como resultado cada uno de estos productos.",
+     "text_hu": "Írj két szorzást, amelynek az eredménye a megadott szám!",
+     "items": [
+      {
+       "id": "tb45_3a",
+       "q": "Dos multiplicaciones que den 10.",
+       "q_hu": "Két szorzás, amelynek eredménye 10.",
+       "kind": "open",
+       "answer": "2 × 5 y 5 × 2 (también 1 × 10, 10 × 1)",
+       "answer_hu": "2 × 5 és 5 × 2 (vagy 1 × 10, 10 × 1)"
+      },
+      {
+       "id": "tb45_3b",
+       "q": "Dos multiplicaciones que den 24.",
+       "q_hu": "Két szorzás, amelynek eredménye 24.",
+       "kind": "open",
+       "answer": "3 × 8 y 4 × 6 (también 8 × 3, 6 × 4)",
+       "answer_hu": "3 × 8 és 4 × 6 (vagy 8 × 3, 6 × 4)"
+      },
+      {
+       "id": "tb45_3c",
+       "q": "Dos multiplicaciones que den 32.",
+       "q_hu": "Két szorzás, amelynek eredménye 32.",
+       "kind": "open",
+       "answer": "4 × 8 y 8 × 4",
+       "answer_hu": "4 × 8 és 8 × 4"
+      },
+      {
+       "id": "tb45_3d",
+       "q": "Dos multiplicaciones que den 72.",
+       "q_hu": "Két szorzás, amelynek eredménye 72.",
+       "kind": "open",
+       "answer": "8 × 9 y 9 × 8",
+       "answer_hu": "8 × 9 és 9 × 8"
+      }
+     ]
+    },
+    {
+     "id": "tb45_4",
+     "n": "4",
+     "text": "INTERPRETA este dibujo con una multiplicación.",
+     "text_hu": "Írd fel ezt a rajzot egy szorzással!",
+     "items": [
+      {
+       "id": "tb45_4a",
+       "q": "En el dibujo hay 2 filas de 9 islas cada una. 2 × 9 = ? islas",
+       "q_hu": "A rajzon 2 sor sziget van, mindegyik sorban 9. 2 × 9 = ? sziget",
+       "kind": "num",
+       "answer": "18"
+      }
+     ]
+    },
+    {
+     "id": "tb45_5",
+     "n": "5",
+     "text": "Un equipo de voluntarios limpia 3 zonas de monte cada día. CALCULA cuántas zonas limpian en una semana.",
+     "text_hu": "Egy önkéntes csapat minden nap 3 erdős területet takarít ki. Hány területet takarítanak ki egy hét alatt?",
+     "items": [
+      {
+       "id": "tb45_5a",
+       "q": "3 zonas cada día durante 7 días: 7 × 3 = ?",
+       "q_hu": "Naponta 3 terület, 7 napig: 7 × 3 = ?",
+       "kind": "num",
+       "answer": "21",
+       "answer_hu": "21 terület"
+      }
+     ]
+    },
+    {
+     "id": "tb45_6",
+     "n": "6",
+     "text": "AVERIGUA cuánto cuestan.",
+     "text_hu": "Derítsd ki, mennyibe kerülnek!",
+     "items": [
+      {
+       "id": "tb45_6a",
+       "q": "a. Cuatro cuadernos. Cada cuaderno cuesta 3 €. 4 × 3 = ? €",
+       "q_hu": "a) Négy füzet. Egy füzet 3 €. 4 × 3 = ? €",
+       "kind": "num",
+       "answer": "12",
+       "answer_hu": "12 €"
+      },
+      {
+       "id": "tb45_6b",
+       "q": "b. Cinco cajas de rotuladores. Cada caja cuesta 9 €. 5 × 9 = ? €",
+       "q_hu": "b) Öt doboz filctoll. Egy doboz 9 €. 5 × 9 = ? €",
+       "kind": "num",
+       "answer": "45",
+       "answer_hu": "45 €"
+      }
+     ]
+    },
+    {
+     "id": "tb45_7",
+     "n": "7",
+     "text": "CALCULA mentalmente.",
+     "text_hu": "Számold ki fejben!",
+     "items": [
+      {
+       "id": "tb45_7a",
+       "q": "7 × 3 = ?",
+       "q_hu": "7 × 3 = ?",
+       "kind": "num",
+       "answer": "21"
+      },
+      {
+       "id": "tb45_7b",
+       "q": "9 × 3 = ?",
+       "q_hu": "9 × 3 = ?",
+       "kind": "num",
+       "answer": "27"
+      },
+      {
+       "id": "tb45_7c",
+       "q": "10 × 3 = ?",
+       "q_hu": "10 × 3 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb45_7d",
+       "q": "32 × 3 = ?",
+       "q_hu": "32 × 3 = ?",
+       "kind": "num",
+       "answer": "96"
+      },
+      {
+       "id": "tb45_7e",
+       "q": "40 × 3 = ?",
+       "q_hu": "40 × 3 = ?",
+       "kind": "num",
+       "answer": "120"
+      },
+      {
+       "id": "tb45_7f",
+       "q": "231 × 3 = ?",
+       "q_hu": "231 × 3 = ?",
+       "kind": "num",
+       "answer": "693"
+      },
+      {
+       "id": "tb45_7g",
+       "q": "303 × 3 = ?",
+       "q_hu": "303 × 3 = ?",
+       "kind": "num",
+       "answer": "909"
+      },
+      {
+       "id": "tb45_7h",
+       "q": "120 × 3 = ?",
+       "q_hu": "120 × 3 = ?",
+       "kind": "num",
+       "answer": "360"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb46",
+   "book": "tb",
+   "page": 46,
+   "unit": "u2",
+   "title": "Tablas del 7 y del 0",
+   "title_hu": "A 7-es és a 0-s szorzótábla",
+   "summary_hu": "A 7-es és a 0-s szorzótábla. Bármely szám × 0 = 0: ha 5 üres gyertyatartó van, akkor 5 × 0 = 0 gyertya van.",
+   "words": [
+    {
+     "w": "la tabla del siete",
+     "hu": "a 7-es szorzótábla"
+    },
+    {
+     "w": "la tabla del cero",
+     "hu": "a 0-s szorzótábla"
+    },
+    {
+     "w": "la cereza",
+     "hu": "a cseresznye"
+    },
+    {
+     "w": "la vela",
+     "hu": "a gyertya"
+    },
+    {
+     "w": "el portavelas",
+     "hu": "a gyertyatartó"
+    },
+    {
+     "w": "vacío",
+     "hu": "üres"
+    },
+    {
+     "w": "cero",
+     "hu": "nulla"
+    },
+    {
+     "w": "cinco veces cero es cero",
+     "hu": "ötször nulla az nulla"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb46_tabla7",
+     "n": "Tabla del 7",
+     "text": "Tabla del 7.",
+     "text_hu": "A 7-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb46_tabla7_1",
+       "q": "0 × 7 = ?",
+       "q_hu": "0 × 7 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla7_2",
+       "q": "1 × 7 = ?",
+       "q_hu": "1 × 7 = ?",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb46_tabla7_3",
+       "q": "2 × 7 = ?",
+       "q_hu": "2 × 7 = ?",
+       "kind": "num",
+       "answer": "14"
+      },
+      {
+       "id": "tb46_tabla7_4",
+       "q": "3 × 7 = ?",
+       "q_hu": "3 × 7 = ?",
+       "kind": "num",
+       "answer": "21"
+      },
+      {
+       "id": "tb46_tabla7_5",
+       "q": "4 × 7 = ?",
+       "q_hu": "4 × 7 = ?",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb46_tabla7_6",
+       "q": "5 × 7 = ?",
+       "q_hu": "5 × 7 = ?",
+       "kind": "num",
+       "answer": "35"
+      },
+      {
+       "id": "tb46_tabla7_7",
+       "q": "6 × 7 = ?",
+       "q_hu": "6 × 7 = ?",
+       "kind": "num",
+       "answer": "42"
+      },
+      {
+       "id": "tb46_tabla7_8",
+       "q": "7 × 7 = ?",
+       "q_hu": "7 × 7 = ?",
+       "kind": "num",
+       "answer": "49"
+      },
+      {
+       "id": "tb46_tabla7_9",
+       "q": "8 × 7 = ?",
+       "q_hu": "8 × 7 = ?",
+       "kind": "num",
+       "answer": "56"
+      },
+      {
+       "id": "tb46_tabla7_10",
+       "q": "9 × 7 = ?",
+       "q_hu": "9 × 7 = ?",
+       "kind": "num",
+       "answer": "63"
+      },
+      {
+       "id": "tb46_tabla7_11",
+       "q": "10 × 7 = ?",
+       "q_hu": "10 × 7 = ?",
+       "kind": "num",
+       "answer": "70"
+      }
+     ]
+    },
+    {
+     "id": "tb46_tabla0",
+     "n": "Tabla del 0",
+     "text": "Tabla del 0.",
+     "text_hu": "A 0-es szorzótábla. Számold ki!",
+     "items": [
+      {
+       "id": "tb46_tabla0_1",
+       "q": "0 × 0 = ?",
+       "q_hu": "0 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_2",
+       "q": "1 × 0 = ?",
+       "q_hu": "1 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_3",
+       "q": "2 × 0 = ?",
+       "q_hu": "2 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_4",
+       "q": "3 × 0 = ?",
+       "q_hu": "3 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_5",
+       "q": "4 × 0 = ?",
+       "q_hu": "4 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_6",
+       "q": "5 × 0 = ?",
+       "q_hu": "5 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_7",
+       "q": "6 × 0 = ?",
+       "q_hu": "6 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_8",
+       "q": "7 × 0 = ?",
+       "q_hu": "7 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_9",
+       "q": "8 × 0 = ?",
+       "q_hu": "8 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_10",
+       "q": "9 × 0 = ?",
+       "q_hu": "9 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb46_tabla0_11",
+       "q": "10 × 0 = ?",
+       "q_hu": "10 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      }
+     ]
+    },
+    {
+     "id": "tb46_ej",
+     "n": "★",
+     "text": "¿Cuántas cerezas hay en total? ¿Cuántas velas hay en total?",
+     "text_hu": "Hány cseresznye van összesen? Hány gyertya van összesen?",
+     "items": [
+      {
+       "id": "tb46_eja",
+       "q": "Hay 4 grupos de 7 cerezas: 4 × 7 = ?",
+       "q_hu": "4 csoport cseresznye van, mindegyikben 7: 4 × 7 = ?",
+       "kind": "num",
+       "answer": "28",
+       "answer_hu": "28 cseresznye"
+      },
+      {
+       "id": "tb46_ejb",
+       "q": "Hay 5 portavelas vacíos (0 velas en cada uno): 5 × 0 = ?",
+       "q_hu": "5 üres gyertyatartó van (mindegyikben 0 gyertya): 5 × 0 = ?",
+       "kind": "num",
+       "answer": "0",
+       "answer_hu": "0 gyertya"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb47",
+   "book": "tb",
+   "page": 47,
+   "unit": "u2",
+   "title": "Tablas del 7 y del 0",
+   "title_hu": "A 7-es és a 0-s szorzótábla – gyakorlás",
+   "summary_hu": "Gyakorlás a 7-es és 0-s szorzótáblával: számolás, hiányzó tényező, összeadás és szorzás párosítása, gombok megszámolása kabátokon, és egy szöveges feladat madárfészkekkel.",
+   "words": [
+    {
+     "w": "calcular",
+     "hu": "kiszámolni"
+    },
+    {
+     "w": "el botón",
+     "hu": "a gomb"
+    },
+    {
+     "w": "la chaqueta",
+     "hu": "a kabát, pulóver"
+    },
+    {
+     "w": "la cremallera",
+     "hu": "a cipzár"
+    },
+    {
+     "w": "en cada caso",
+     "hu": "mindegyik esetben"
+    },
+    {
+     "w": "el acantilado",
+     "hu": "a sziklafal"
+    },
+    {
+     "w": "el nido",
+     "hu": "a fészek"
+    },
+    {
+     "w": "las aves",
+     "hu": "a madarak"
+    },
+    {
+     "w": "los polluelos",
+     "hu": "a fiókák"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb47_1",
+     "n": "1",
+     "text": "CALCULA.",
+     "text_hu": "Számold ki!",
+     "items": [
+      {
+       "id": "tb47_1a",
+       "q": "4 × 7 = ?",
+       "q_hu": "4 × 7 = ?",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb47_1b",
+       "q": "5 × 0 = ?",
+       "q_hu": "5 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_1c",
+       "q": "2 × 7 = ?",
+       "q_hu": "2 × 7 = ?",
+       "kind": "num",
+       "answer": "14"
+      },
+      {
+       "id": "tb47_1d",
+       "q": "0 × 0 = ?",
+       "q_hu": "0 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_1e",
+       "q": "7 × 0 = ?",
+       "q_hu": "7 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_1f",
+       "q": "8 × 7 = ?",
+       "q_hu": "8 × 7 = ?",
+       "kind": "num",
+       "answer": "56"
+      }
+     ]
+    },
+    {
+     "id": "tb47_2",
+     "n": "2",
+     "text": "ESCRIBE el factor que falta.",
+     "text_hu": "Írd be a hiányzó tényezőt!",
+     "items": [
+      {
+       "id": "tb47_2a",
+       "q": "? × 7 = 49",
+       "q_hu": "? × 7 = 49",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb47_2b",
+       "q": "9 × ? = 0",
+       "q_hu": "9 × ? = 0",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_2c",
+       "q": "? × 7 = 70",
+       "q_hu": "? × 7 = 70",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb47_2d",
+       "q": "3 × ? = 21",
+       "q_hu": "3 × ? = 21",
+       "kind": "num",
+       "answer": "7"
+      },
+      {
+       "id": "tb47_2e",
+       "q": "? × 7 = 0",
+       "q_hu": "? × 7 = 0",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_2f",
+       "q": "5 × ? = 35",
+       "q_hu": "5 × ? = 35",
+       "kind": "num",
+       "answer": "7"
+      }
+     ]
+    },
+    {
+     "id": "tb47_3",
+     "n": "3",
+     "text": "RELACIONA cada suma con su multiplicación.",
+     "text_hu": "Kösd össze mindegyik összeadást a hozzá tartozó szorzással!",
+     "items": [
+      {
+       "id": "tb47_3a",
+       "q": "7 + 7 + 7 + 7 + 7 + 7 + 7 + 7 + 7",
+       "q_hu": "7 + 7 + 7 + 7 + 7 + 7 + 7 + 7 + 7",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 7",
+         "hu": "6 × 7"
+        },
+        {
+         "t": "9 × 7",
+         "hu": "9 × 7"
+        },
+        {
+         "t": "8 × 0",
+         "hu": "8 × 0"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb47_3b",
+       "q": "0 + 0 + 0 + 0 + 0 + 0 + 0 + 0",
+       "q_hu": "0 + 0 + 0 + 0 + 0 + 0 + 0 + 0",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 7",
+         "hu": "6 × 7"
+        },
+        {
+         "t": "9 × 7",
+         "hu": "9 × 7"
+        },
+        {
+         "t": "8 × 0",
+         "hu": "8 × 0"
+        }
+       ],
+       "answer": 2
+      },
+      {
+       "id": "tb47_3c",
+       "q": "7 + 7 + 7 + 7 + 7 + 7",
+       "q_hu": "7 + 7 + 7 + 7 + 7 + 7",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6 × 7",
+         "hu": "6 × 7"
+        },
+        {
+         "t": "9 × 7",
+         "hu": "9 × 7"
+        },
+        {
+         "t": "8 × 0",
+         "hu": "8 × 0"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb47_4",
+     "n": "4",
+     "text": "COMPLETA.",
+     "text_hu": "Egészítsd ki!",
+     "items": [
+      {
+       "id": "tb47_4a",
+       "q": "4 × 8 = ?",
+       "q_hu": "4 × 8 = ?",
+       "kind": "num",
+       "answer": "32"
+      },
+      {
+       "id": "tb47_4b",
+       "q": "6 × 0 = ?",
+       "q_hu": "6 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_4c",
+       "q": "? × 7 = 0",
+       "q_hu": "? × 7 = 0",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb47_4d",
+       "q": "? × 2 = 20",
+       "q_hu": "? × 2 = 20",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb47_4e",
+       "q": "8 × ? = 72",
+       "q_hu": "8 × ? = 72",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb47_4f",
+       "q": "1 × ? = 7",
+       "q_hu": "1 × ? = 7",
+       "kind": "num",
+       "answer": "7"
+      }
+     ]
+    },
+    {
+     "id": "tb47_5",
+     "n": "5",
+     "text": "AVERIGUA cuántos botones hay en total en cada caso.",
+     "text_hu": "Derítsd ki, hány gomb van összesen az egyes esetekben!",
+     "items": [
+      {
+       "id": "tb47_5a",
+       "q": "a. Hay 7 chaquetas y cada una tiene 4 botones. 7 × 4 = ? botones",
+       "q_hu": "a) 7 kabát van, mindegyiken 4 gomb. 7 × 4 = ? gomb",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb47_5b",
+       "q": "b. Hay 6 chaquetas con cremallera y ninguna tiene botones (0). 6 × 0 = ? botones",
+       "q_hu": "b) 6 cipzáras kabát van, egyiken sincs gomb (0). 6 × 0 = ? gomb",
+       "kind": "num",
+       "answer": "0"
+      }
+     ]
+    },
+    {
+     "id": "tb47_6",
+     "n": "6",
+     "text": "En un acantilado hay 7 nidos de aves. Si en cada nido hay 6 polluelos, CALCULA cuántos polluelos hay en total.",
+     "text_hu": "Egy sziklafalon 7 madárfészek van. Mindegyik fészekben 6 fióka van. Hány fióka van összesen?",
+     "items": [
+      {
+       "id": "tb47_6a",
+       "q": "7 nidos con 6 polluelos cada uno: 7 × 6 = ?",
+       "q_hu": "7 fészek, mindegyikben 6 fióka: 7 × 6 = ?",
+       "kind": "num",
+       "answer": "42",
+       "answer_hu": "42 fióka"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb48",
+   "book": "tb",
+   "page": 48,
+   "unit": "u2",
+   "title": "Resolución de problemas: Ordenar las partes",
+   "title_hu": "Szöveges feladatok: a részek sorba rendezése",
+   "summary_hu": "Két összekevert szöveges feladatot kell szétválogatni: megkeressük a kérdést (kérdőjelek között van), a hozzá tartozó szöveget (adatokat) és a megoldást. Busz: 52 ülés, 36 utas → 16 szabad ülés. Lucía születésnapja: 58 piros + 45 kék lufi = 103 lufi.",
+   "words": [
+    {
+     "w": "ordenar",
+     "hu": "sorba rendezni"
+    },
+    {
+     "w": "las partes",
+     "hu": "a részek"
+    },
+    {
+     "w": "el enunciado",
+     "hu": "a feladat szövege (adatok)"
+    },
+    {
+     "w": "la pregunta",
+     "hu": "a kérdés"
+    },
+    {
+     "w": "los signos de interrogación",
+     "hu": "a kérdőjelek"
+    },
+    {
+     "w": "el globo",
+     "hu": "a lufi"
+    },
+    {
+     "w": "inflar",
+     "hu": "felfújni"
+    },
+    {
+     "w": "el autobús",
+     "hu": "a busz"
+    },
+    {
+     "w": "el asiento",
+     "hu": "az ülés"
+    },
+    {
+     "w": "libre",
+     "hu": "szabad"
+    },
+    {
+     "w": "el cumpleaños",
+     "hu": "a születésnap"
+    },
+    {
+     "w": "subir",
+     "hu": "felszállni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb48_ej",
+     "n": "★",
+     "text": "Localiza el enunciado, la pregunta y la solución de cada uno.",
+     "text_hu": "Keresd meg mindkét feladat szövegét, kérdését és megoldását!",
+     "items": [
+      {
+       "id": "tb48_eja",
+       "q": "¿Qué pregunta va con «Un autobús tiene 52 asientos. Si se han subido 36 pasajeros»?",
+       "q_hu": "Melyik kérdés tartozik ehhez: „Egy buszon 52 ülés van. Felszállt 36 utas”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "¿Cuántos asientos quedan libres?",
+         "hu": "Hány ülés maradt szabadon?"
+        },
+        {
+         "t": "¿Cuántos globos han inflado en total?",
+         "hu": "Hány lufit fújtak fel összesen?"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb48_ejb",
+       "q": "Un autobús tiene 52 asientos y se han subido 36 pasajeros. ¿Cuántos asientos quedan libres? (52 - 36)",
+       "q_hu": "Egy buszon 52 ülés van, és felszállt 36 utas. Hány ülés maradt szabadon? (52 - 36)",
+       "kind": "num",
+       "answer": "16",
+       "answer_hu": "16 ülés"
+      },
+      {
+       "id": "tb48_ejc",
+       "q": "En el cumpleaños de Lucía han inflado 58 globos rojos y 45 azules. ¿Cuántos globos han inflado en total? (58 + 45)",
+       "q_hu": "Lucía születésnapján 58 piros és 45 kék lufit fújtak fel. Hány lufit fújtak fel összesen? (58 + 45)",
+       "kind": "num",
+       "answer": "103",
+       "answer_hu": "103 lufi"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb49",
+   "book": "tb",
+   "page": 49,
+   "unit": "u2",
+   "title": "Resolución de problemas: Ordenar las partes",
+   "title_hu": "Szöveges feladatok: a részek sorba rendezése – gyakorlás",
+   "summary_hu": "Összekevert szöveges feladatok részeit kell párosítani (szöveg, kérdés, megoldás), majd megoldani őket. Utána ki kell választani, melyik kép mutatja helyesen az adatot (12 labda a zsákban), és kiszámolni az összes labdát.",
+   "words": [
+    {
+     "w": "la biblioteca",
+     "hu": "a könyvtár"
+    },
+    {
+     "w": "el libro de aventuras",
+     "hu": "a kalandkönyv"
+    },
+    {
+     "w": "prestar",
+     "hu": "kölcsönadni"
+    },
+    {
+     "w": "quedar",
+     "hu": "maradni"
+    },
+    {
+     "w": "el cromo",
+     "hu": "a matrica, gyűjtögetős kártya"
+    },
+    {
+     "w": "regalar",
+     "hu": "ajándékozni"
+    },
+    {
+     "w": "perder",
+     "hu": "elveszíteni"
+    },
+    {
+     "w": "el recreo",
+     "hu": "a szünet (iskolában)"
+    },
+    {
+     "w": "la floristería",
+     "hu": "a virágbolt"
+    },
+    {
+     "w": "el lirio",
+     "hu": "a liliom"
+    },
+    {
+     "w": "el tulipán",
+     "hu": "a tulipán"
+    },
+    {
+     "w": "el depósito",
+     "hu": "a tartály"
+    },
+    {
+     "w": "el aceite",
+     "hu": "az olaj"
+    },
+    {
+     "w": "la pelota de tenis",
+     "hu": "a teniszlabda"
+    },
+    {
+     "w": "la bolsa",
+     "hu": "a zsák, táska"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb49_1",
+     "n": "1",
+     "text": "ORDENA las partes de cada problema y RESUÉLVELOS.",
+     "text_hu": "Rendezd sorba a feladatok részeit, és oldd meg őket!",
+     "items": [
+      {
+       "id": "tb49_1a1",
+       "q": "En la biblioteca del colegio hay 245 libros de aventuras. Si se han prestado 68 libros esta semana, ¿cuántos libros de aventuras quedan en la biblioteca? (245 - 68)",
+       "q_hu": "Az iskolai könyvtárban 245 kalandkönyv van. Ezen a héten 68-at kölcsönadtak. Hány kalandkönyv maradt a könyvtárban? (245 - 68)",
+       "kind": "num",
+       "answer": "177",
+       "answer_hu": "177 könyv"
+      },
+      {
+       "id": "tb49_1a2",
+       "q": "Mario tenía 50 cromos. Su abuela le regaló 25 cromos más, pero después perdió 15 jugando en el recreo. ¿Cuántos cromos tiene Mario ahora? (50 + 25 - 15)",
+       "q_hu": "Mariónak 50 matricája volt. A nagymamája adott neki még 25-öt, de a szünetben elvesztett 15-öt. Hány matricája van most? (50 + 25 - 15)",
+       "kind": "num",
+       "answer": "60",
+       "answer_hu": "60 matrica"
+      },
+      {
+       "id": "tb49_1b1",
+       "q": "En una floristería hay 150 lirios y 75 tulipanes. ¿Cuántos lirios más que tulipanes hay? (150 - 75)",
+       "q_hu": "Egy virágboltban 150 liliom és 75 tulipán van. Mennyivel több a liliom, mint a tulipán? (150 - 75)",
+       "kind": "num",
+       "answer": "75",
+       "answer_hu": "75 liliommal több"
+      },
+      {
+       "id": "tb49_1b2",
+       "q": "De un depósito con 100 litros de aceite se han extraído 50 litros el sábado y 25 litros el domingo. ¿Cuántos litros de aceite se han extraído en total? (50 + 25)",
+       "q_hu": "Egy 100 literes olajtartályból szombaton 50, vasárnap 25 litert vettek ki. Hány litert vettek ki összesen? (50 + 25)",
+       "kind": "num",
+       "answer": "75",
+       "answer_hu": "75 liter"
+      }
+     ]
+    },
+    {
+     "id": "tb49_2",
+     "n": "2",
+     "text": "¿Qué imagen tiene el dato correcto? RESUELVE el problema.",
+     "text_hu": "Melyik kép mutatja a helyes adatot? Oldd meg a feladatot!",
+     "items": [
+      {
+       "id": "tb49_2a",
+       "q": "Imagen A: la bolsa está casi llena (muchísimas pelotas). Imagen B: una sola capa de pocas pelotas. Imagen C: unas 12 pelotas. ¿Qué imagen muestra las 12 pelotas que había al llegar Curro?",
+       "q_hu": "A kép: a zsák majdnem tele (nagyon sok labda). B kép: csak egy sor, kevés labda. C kép: kb. 12 labda. Melyik kép mutatja azt a 12 labdát, ami Curro érkezésekor a zsákban volt?",
+       "kind": "open",
+       "answer": "La imagen C (12 pelotas).",
+       "answer_hu": "A C kép (12 labda)."
+      },
+      {
+       "id": "tb49_2b",
+       "q": "Curro recoge pelotas de tenis. Cuando llegó, había 12 pelotas en la bolsa. Después recogió 25 más. ¿Cuántas pelotas hay ahora en total? (12 + 25)",
+       "q_hu": "Curro teniszlabdákat szed össze. Amikor odaért, 12 labda volt a zsákban. Utána még 25-öt összeszedett. Hány labda van most összesen? (12 + 25)",
+       "kind": "num",
+       "answer": "37",
+       "answer_hu": "37 labda"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb50",
+   "book": "tb",
+   "page": 50,
+   "unit": "u2",
+   "title": "Practicamos",
+   "title_hu": "Gyakoroljunk!",
+   "summary_hu": "Vegyes gyakorlás: a „kakukktojás” megkeresése (melyik kifejezés nem illik a szorzótáblához), csoportok szorzása, sorozatok folytatása és a szorzótábla felismerése.",
+   "words": [
+    {
+     "w": "practicamos",
+     "hu": "gyakoroljunk"
+    },
+    {
+     "w": "la expresión intrusa",
+     "hu": "a kakukktojás (a nem odaillő kifejezés)"
+    },
+    {
+     "w": "el grupo",
+     "hu": "a csoport"
+    },
+    {
+     "w": "la llave",
+     "hu": "a kulcs"
+    },
+    {
+     "w": "el llavero",
+     "hu": "a kulcstartó"
+    },
+    {
+     "w": "el huevo",
+     "hu": "a tojás"
+    },
+    {
+     "w": "la huevera",
+     "hu": "a tojástartó"
+    },
+    {
+     "w": "la botella",
+     "hu": "az üveg, palack"
+    },
+    {
+     "w": "corresponder",
+     "hu": "megfelelni, tartozni valamihez"
+    },
+    {
+     "w": "la secuencia",
+     "hu": "a sorozat"
+    },
+    {
+     "w": "la página",
+     "hu": "az oldal"
+    },
+    {
+     "w": "leer",
+     "hu": "olvasni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb50_1",
+     "n": "1",
+     "text": "INDICA cuál es la expresión intrusa en cada grupo.",
+     "text_hu": "Mondd meg, melyik a kakukktojás az egyes csoportokban!",
+     "items": [
+      {
+       "id": "tb50_1a",
+       "q": "Grupo A: 3 + 3 + 3 + 3 + 3, 4 × 3, 6 + 6 + 6. ¿Cuál es la intrusa?",
+       "q_hu": "A csoport: 3 + 3 + 3 + 3 + 3, 4 × 3, 6 + 6 + 6. Melyik a kakukktojás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3 + 3 + 3 + 3 + 3",
+         "hu": "3 + 3 + 3 + 3 + 3"
+        },
+        {
+         "t": "4 × 3",
+         "hu": "4 × 3"
+        },
+        {
+         "t": "6 + 6 + 6",
+         "hu": "6 + 6 + 6"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "6 + 6 + 6, mert hatosokat ad össze; a többi a 3-as táblához tartozik (5 × 3, 4 × 3)."
+      },
+      {
+       "id": "tb50_1b",
+       "q": "Grupo B: 7 × 2, 7 + 7 + 7 + 7, 3 × 7. ¿Cuál es la intrusa?",
+       "q_hu": "B csoport: 7 × 2, 7 + 7 + 7 + 7, 3 × 7. Melyik a kakukktojás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "7 × 2",
+         "hu": "7 × 2"
+        },
+        {
+         "t": "7 + 7 + 7 + 7",
+         "hu": "7 + 7 + 7 + 7"
+        },
+        {
+         "t": "3 × 7",
+         "hu": "3 × 7"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "7 × 2, mert ez a 2-es táblából van; a többi a 7-esből (4 × 7, 3 × 7)."
+      },
+      {
+       "id": "tb50_1c",
+       "q": "Grupo C: 8 + 9, 9 × 8, 8 + 8 + 8. ¿Cuál es la intrusa?",
+       "q_hu": "C csoport: 8 + 9, 9 × 8, 8 + 8 + 8. Melyik a kakukktojás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "8 + 9",
+         "hu": "8 + 9"
+        },
+        {
+         "t": "9 × 8",
+         "hu": "9 × 8"
+        },
+        {
+         "t": "8 + 8 + 8",
+         "hu": "8 + 8 + 8"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "8 + 9, mert nem egyforma számokat adunk össze, ez nem szorzás."
+      }
+     ]
+    },
+    {
+     "id": "tb50_2",
+     "n": "2",
+     "text": "CALCULA.",
+     "text_hu": "Számold ki!",
+     "items": [
+      {
+       "id": "tb50_2a",
+       "q": "a. Las llaves que hay en 7 llaveros. Cada llavero tiene 4 llaves. 7 × 4 = ?",
+       "q_hu": "a) Hány kulcs van 7 kulcstartón? Mindegyiken 4 kulcs van. 7 × 4 = ?",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb50_2b",
+       "q": "b. Los huevos que hay en 4 hueveras. Cada huevera tiene 6 huevos. 4 × 6 = ?",
+       "q_hu": "b) Hány tojás van 4 tojástartóban? Mindegyikben 6 tojás van. 4 × 6 = ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb50_2c",
+       "q": "c. Las botellas que hay en 8 cajas. Cada caja tiene 6 botellas. 8 × 6 = ?",
+       "q_hu": "c) Hány üveg van 8 dobozban? Mindegyikben 6 üveg van. 8 × 6 = ?",
+       "kind": "num",
+       "answer": "48"
+      }
+     ]
+    },
+    {
+     "id": "tb50_3",
+     "n": "3",
+     "text": "CONTINÚA estas series e INDICA a qué tabla corresponden.",
+     "text_hu": "Folytasd a sorozatokat, és mondd meg, melyik szorzótáblához tartoznak!",
+     "items": [
+      {
+       "id": "tb50_3a1",
+       "q": "Serie a: 6, 12, 18, ?",
+       "q_hu": "a) sorozat: 6, 12, 18, ?",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb50_3a2",
+       "q": "Serie a: 6, 12, 18, 24, ?",
+       "q_hu": "a) sorozat: 6, 12, 18, 24, ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb50_3a3",
+       "q": "Serie a: 6, 12, 18, 24, 30, ?",
+       "q_hu": "a) sorozat: 6, 12, 18, 24, 30, ?",
+       "kind": "num",
+       "answer": "36"
+      },
+      {
+       "id": "tb50_3a4",
+       "q": "Serie a: 6, 12, 18... ¿Es la tabla del ...?",
+       "q_hu": "a) sorozat: 6, 12, 18... Hányas szorzótábla?",
+       "kind": "num",
+       "answer": "6",
+       "answer_hu": "a 6-os tábla"
+      },
+      {
+       "id": "tb50_3b1",
+       "q": "Serie b: 7, 14, 21, ?",
+       "q_hu": "b) sorozat: 7, 14, 21, ?",
+       "kind": "num",
+       "answer": "28"
+      },
+      {
+       "id": "tb50_3b2",
+       "q": "Serie b: 7, 14, 21, 28, ?",
+       "q_hu": "b) sorozat: 7, 14, 21, 28, ?",
+       "kind": "num",
+       "answer": "35"
+      },
+      {
+       "id": "tb50_3b3",
+       "q": "Serie b: 7, 14, 21, 28, 35, ?",
+       "q_hu": "b) sorozat: 7, 14, 21, 28, 35, ?",
+       "kind": "num",
+       "answer": "42"
+      },
+      {
+       "id": "tb50_3b4",
+       "q": "Serie b: 7, 14, 21... ¿Es la tabla del ...?",
+       "q_hu": "b) sorozat: 7, 14, 21... Hányas szorzótábla?",
+       "kind": "num",
+       "answer": "7",
+       "answer_hu": "a 7-es tábla"
+      },
+      {
+       "id": "tb50_3c1",
+       "q": "Serie c: 8, 16, 24, ?",
+       "q_hu": "c) sorozat: 8, 16, 24, ?",
+       "kind": "num",
+       "answer": "32"
+      },
+      {
+       "id": "tb50_3c2",
+       "q": "Serie c: 8, 16, 24, 32, ?",
+       "q_hu": "c) sorozat: 8, 16, 24, 32, ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb50_3c3",
+       "q": "Serie c: 8, 16, 24, 32, 40, ?",
+       "q_hu": "c) sorozat: 8, 16, 24, 32, 40, ?",
+       "kind": "num",
+       "answer": "48"
+      },
+      {
+       "id": "tb50_3c4",
+       "q": "Serie c: 8, 16, 24... ¿Es la tabla del ...?",
+       "q_hu": "c) sorozat: 8, 16, 24... Hányas szorzótábla?",
+       "kind": "num",
+       "answer": "8",
+       "answer_hu": "a 8-as tábla"
+      }
+     ]
+    },
+    {
+     "id": "tb50_4",
+     "n": "4",
+     "text": "ESCRIBE a qué tabla te recuerda esta secuencia.",
+     "text_hu": "Írd le, melyik szorzótáblára emlékeztet ez a sorozat!",
+     "items": [
+      {
+       "id": "tb50_4_1",
+       "q": "En los barcos están los números 3, 6, 9, 12, 15, 18, 21, 24. ¿A qué tabla te recuerda? (tabla del ...)",
+       "q_hu": "A hajókon ezek a számok vannak: 3, 6, 9, 12, 15, 18, 21, 24. Melyik szorzótáblára emlékeztet? (...-as tábla)",
+       "kind": "num",
+       "answer": "3",
+       "answer_hu": "a 3-as tábla"
+      },
+      {
+       "id": "tb50_4a",
+       "q": "a. Sergio lee 3 páginas el día 1, 6 el día 2, 9 el día 3... ¿Cuántas páginas leerá el día 9? (9 × 3)",
+       "q_hu": "a) Sergio az 1. napon 3 oldalt olvas, a 2. napon 6-ot, a 3. napon 9-et... Hány oldalt olvas a 9. napon? (9 × 3)",
+       "kind": "num",
+       "answer": "27"
+      },
+      {
+       "id": "tb50_4b",
+       "q": "b. Siguiendo la serie 3, 6, 9..., ¿qué día habrá leído 30 páginas?",
+       "q_hu": "b) A 3, 6, 9... sorozatot folytatva melyik napon ér el a 30 oldalig?",
+       "kind": "num",
+       "answer": "10",
+       "answer_hu": "a 10. napon (10 × 3 = 30)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb51",
+   "book": "tb",
+   "page": 51,
+   "unit": "u2",
+   "title": "Practicamos",
+   "title_hu": "Gyakoroljunk!",
+   "summary_hu": "Vegyes gyakorlás: a 6-os tábla a 3-as kétszerese (6 × 7 = 2 × 21 = 42), az 5-ös és 10-es tábla összehasonlítása, kirándulás költségei, és paradicsomok megszámolása szorzással.",
+   "words": [
+    {
+     "w": "explicar",
+     "hu": "elmagyarázni"
+    },
+    {
+     "w": "la relación",
+     "hu": "a kapcsolat"
+    },
+    {
+     "w": "suceder",
+     "hu": "történni"
+    },
+    {
+     "w": "la excursión",
+     "hu": "a kirándulás"
+    },
+    {
+     "w": "el billete",
+     "hu": "a jegy"
+    },
+    {
+     "w": "pagar",
+     "hu": "fizetni"
+    },
+    {
+     "w": "la botella de agua",
+     "hu": "a vizes palack"
+    },
+    {
+     "w": "el precio",
+     "hu": "az ár"
+    },
+    {
+     "w": "gastar",
+     "hu": "költeni"
+    },
+    {
+     "w": "la tomatera",
+     "hu": "a paradicsomtő"
+    },
+    {
+     "w": "el tomate",
+     "hu": "a paradicsom"
+    },
+    {
+     "w": "el huerto",
+     "hu": "a veteményes kert"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb51_5",
+     "n": "5",
+     "text": "EXPLICA cómo puede calcular María cuánto es 6 × 7 con la información que le da Andrés.",
+     "text_hu": "Magyarázd el, hogyan számolhatja ki María, mennyi 6 × 7, ha Andrés megmondja neki, hogy 3 × 7 = 21!",
+     "items": [
+      {
+       "id": "tb51_5a",
+       "q": "Andrés sabe que 3 × 7 = 21. ¿Qué relación hay entre la tabla del 3 y la del 6? ¿Cómo calcula María 6 × 7?",
+       "q_hu": "Andrés tudja, hogy 3 × 7 = 21. Mi a kapcsolat a 3-as és a 6-os tábla között? Hogyan számolja ki María a 6 × 7-et?",
+       "kind": "open",
+       "answer": "La tabla del 6 es el doble de la del 3: 6 × 7 es el doble de 3 × 7, es decir, 21 + 21 = 42.",
+       "answer_hu": "A 6-os tábla a 3-as kétszerese: a 6 × 7 a 3 × 7 kétszerese, vagyis 21 + 21 = 42."
+      },
+      {
+       "id": "tb51_5b",
+       "q": "3 × 7 = 21, entonces 6 × 7 = 21 + 21 = ?",
+       "q_hu": "3 × 7 = 21, tehát 6 × 7 = 21 + 21 = ?",
+       "kind": "num",
+       "answer": "42"
+      }
+     ]
+    },
+    {
+     "id": "tb51_6",
+     "n": "6",
+     "text": "COMPLETA.",
+     "text_hu": "Töltsd ki a táblázatot!",
+     "items": [
+      {
+       "id": "tb51_6_1",
+       "q": "1 × 5 = ?",
+       "q_hu": "1 × 5 = ?",
+       "kind": "num",
+       "answer": "5"
+      },
+      {
+       "id": "tb51_6_2",
+       "q": "2 × 5 = ?",
+       "q_hu": "2 × 5 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb51_6_3",
+       "q": "3 × 5 = ?",
+       "q_hu": "3 × 5 = ?",
+       "kind": "num",
+       "answer": "15"
+      },
+      {
+       "id": "tb51_6_4",
+       "q": "4 × 5 = ?",
+       "q_hu": "4 × 5 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb51_6_5",
+       "q": "5 × 5 = ?",
+       "q_hu": "5 × 5 = ?",
+       "kind": "num",
+       "answer": "25"
+      },
+      {
+       "id": "tb51_6_6",
+       "q": "6 × 5 = ?",
+       "q_hu": "6 × 5 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb51_6_7",
+       "q": "7 × 5 = ?",
+       "q_hu": "7 × 5 = ?",
+       "kind": "num",
+       "answer": "35"
+      },
+      {
+       "id": "tb51_6_8",
+       "q": "8 × 5 = ?",
+       "q_hu": "8 × 5 = ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb51_6_9",
+       "q": "9 × 5 = ?",
+       "q_hu": "9 × 5 = ?",
+       "kind": "num",
+       "answer": "45"
+      },
+      {
+       "id": "tb51_6_10",
+       "q": "10 × 5 = ?",
+       "q_hu": "10 × 5 = ?",
+       "kind": "num",
+       "answer": "50"
+      },
+      {
+       "id": "tb51_6_11",
+       "q": "1 × 10 = ?",
+       "q_hu": "1 × 10 = ?",
+       "kind": "num",
+       "answer": "10"
+      },
+      {
+       "id": "tb51_6_12",
+       "q": "2 × 10 = ?",
+       "q_hu": "2 × 10 = ?",
+       "kind": "num",
+       "answer": "20"
+      },
+      {
+       "id": "tb51_6_13",
+       "q": "3 × 10 = ?",
+       "q_hu": "3 × 10 = ?",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb51_6_14",
+       "q": "4 × 10 = ?",
+       "q_hu": "4 × 10 = ?",
+       "kind": "num",
+       "answer": "40"
+      },
+      {
+       "id": "tb51_6_15",
+       "q": "5 × 10 = ?",
+       "q_hu": "5 × 10 = ?",
+       "kind": "num",
+       "answer": "50"
+      },
+      {
+       "id": "tb51_6_16",
+       "q": "6 × 10 = ?",
+       "q_hu": "6 × 10 = ?",
+       "kind": "num",
+       "answer": "60"
+      },
+      {
+       "id": "tb51_6_17",
+       "q": "7 × 10 = ?",
+       "q_hu": "7 × 10 = ?",
+       "kind": "num",
+       "answer": "70"
+      },
+      {
+       "id": "tb51_6_18",
+       "q": "8 × 10 = ?",
+       "q_hu": "8 × 10 = ?",
+       "kind": "num",
+       "answer": "80"
+      },
+      {
+       "id": "tb51_6_19",
+       "q": "9 × 10 = ?",
+       "q_hu": "9 × 10 = ?",
+       "kind": "num",
+       "answer": "90"
+      },
+      {
+       "id": "tb51_6_20",
+       "q": "10 × 10 = ?",
+       "q_hu": "10 × 10 = ?",
+       "kind": "num",
+       "answer": "100"
+      },
+      {
+       "id": "tb51_6_21",
+       "q": "INDICA qué relación encuentras entre los resultados de la tabla del 5 y la tabla del 10. ¿Por qué crees que sucede?",
+       "q_hu": "Milyen kapcsolatot látsz az 5-ös és a 10-es tábla eredményei között? Szerinted miért van ez így?",
+       "kind": "open",
+       "answer": "Los resultados de la tabla del 10 son el doble que los de la tabla del 5, porque 10 es el doble de 5.",
+       "answer_hu": "A 10-es tábla eredményei az 5-ös tábla eredményeinek kétszeresei, mert a 10 az 5 kétszerese."
+      }
+     ]
+    },
+    {
+     "id": "tb51_7",
+     "n": "7",
+     "text": "Cinco amigos se van de excursión en autobús. Pagan 7 euros por cada billete. Además, compran 4 botellas de agua.",
+     "text_hu": "Öt barát busszal kirándulni megy. Minden jegyért 7 eurót fizetnek. Vesznek még 4 üveg vizet is (egy üveg 2 €).",
+     "items": [
+      {
+       "id": "tb51_7a",
+       "q": "a. CALCULA el precio de los billetes: 5 billetes de 7 €. 5 × 7 = ? €",
+       "q_hu": "a) Számold ki a jegyek árát: 5 jegy, egyenként 7 €. 5 × 7 = ? €",
+       "kind": "num",
+       "answer": "35",
+       "answer_hu": "35 €"
+      },
+      {
+       "id": "tb51_7b",
+       "q": "b. DETERMINA cuánto han costado las botellas de agua: 4 botellas de 2 €. 4 × 2 = ? €",
+       "q_hu": "b) Mennyibe került a víz? 4 üveg, egyenként 2 €. 4 × 2 = ? €",
+       "kind": "num",
+       "answer": "8",
+       "answer_hu": "8 €"
+      },
+      {
+       "id": "tb51_7c",
+       "q": "c. HALLA el dinero que se gastan en total: billetes 35 € y agua 8 €. 35 + 8 = ? €",
+       "q_hu": "c) Mennyit költenek összesen? Jegyek 35 €, víz 8 €. 35 + 8 = ? €",
+       "kind": "num",
+       "answer": "43",
+       "answer_hu": "43 €"
+      }
+     ]
+    },
+    {
+     "id": "tb51_8",
+     "n": "8",
+     "text": "OBSERVA el dibujo y RESPONDE.",
+     "text_hu": "Nézd meg a rajzot, és válaszolj!",
+     "items": [
+      {
+       "id": "tb51_8a",
+       "q": "a. En el huerto de Matilde hay 2 filas de tomateras con 4 tomateras en cada fila. ¿Cuántas tomateras hay? (2 × 4)",
+       "q_hu": "a) Matilde kertjében 2 sorban vannak a paradicsomtövek, soronként 4. Hány paradicsomtő van? (2 × 4)",
+       "kind": "num",
+       "answer": "8"
+      },
+      {
+       "id": "tb51_8b",
+       "q": "b. Hay 8 tomateras y cada una tiene 3 tomates. ¿Cuántos tomates hay en total? (8 × 3)",
+       "q_hu": "b) 8 paradicsomtő van, mindegyiken 3 paradicsom. Hány paradicsom van összesen? (8 × 3)",
+       "kind": "num",
+       "answer": "24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb52",
+   "book": "tb",
+   "page": 52,
+   "unit": "u2",
+   "title": "Practicamos",
+   "title_hu": "Gyakoroljunk!",
+   "summary_hu": "Vegyes gyakorlás: Carmen számtrükkje (bármelyik számot szorozzuk 9-cel, a számjegyek összege mindig 9), zsákok dobozokba osztása, dupla és tripla, és elemek csomagolása.",
+   "words": [
+    {
+     "w": "el reto",
+     "hu": "a kihívás, fejtörő"
+    },
+    {
+     "w": "pensar un número",
+     "hu": "gondolni egy számra"
+    },
+    {
+     "w": "sumar las cifras",
+     "hu": "összeadni a számjegyeket"
+    },
+    {
+     "w": "razonar",
+     "hu": "végiggondolni, megindokolni"
+    },
+    {
+     "w": "la cooperativa",
+     "hu": "a szövetkezet"
+    },
+    {
+     "w": "el saco",
+     "hu": "a zsák"
+    },
+    {
+     "w": "las semillas",
+     "hu": "a magok, vetőmag"
+    },
+    {
+     "w": "transportar",
+     "hu": "szállítani"
+    },
+    {
+     "w": "la meteoróloga",
+     "hu": "a meteorológus (nő)"
+    },
+    {
+     "w": "el instrumento de medida",
+     "hu": "a mérőműszer"
+    },
+    {
+     "w": "la batería",
+     "hu": "az elem, akkumulátor"
+    },
+    {
+     "w": "el paquete",
+     "hu": "a csomag"
+    },
+    {
+     "w": "sobrar",
+     "hu": "megmaradni, fölöslegesnek lenni"
+    },
+    {
+     "w": "suficiente",
+     "hu": "elég"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb52_9",
+     "n": "9",
+     "text": "Carmen ha preparado este reto para la clase de Matemáticas.",
+     "text_hu": "Carmen ezt a fejtörőt készítette a matekórára.",
+     "items": [
+      {
+       "id": "tb52_9a",
+       "q": "Piensa un número del 1 al 10, multiplícalo por 9 y suma las cifras del resultado (si la suma tiene dos cifras, súmalas de nuevo). Por ejemplo con 4: 4 × 9 = 36, 3 + 6 = ? ",
+       "q_hu": "Gondolj egy számra 1 és 10 között, szorozd meg 9-cel, és add össze az eredmény számjegyeit (ha a végeredmény kétjegyű, azt is add össze). Például 4-gyel: 4 × 9 = 36, 3 + 6 = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb52_9b",
+       "q": "Prueba con otro número, por ejemplo 7: 7 × 9 = 63, 6 + 3 = ?",
+       "q_hu": "Próbáld ki másik számmal, például 7-tel: 7 × 9 = 63, 6 + 3 = ?",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb52_9c",
+       "q": "EXPLICA por qué el resultado siempre es el mismo.",
+       "q_hu": "Magyarázd el, miért mindig ugyanaz az eredmény!",
+       "kind": "open",
+       "answer": "Porque en la tabla del 9 las cifras de cada resultado siempre suman 9 (18, 27, 36, 45...; 90 → 9 + 0 = 9).",
+       "answer_hu": "Mert a 9-es szorzótáblában minden eredmény számjegyeinek összege 9 (18, 27, 36, 45...; 90 → 9 + 0 = 9)."
+      }
+     ]
+    },
+    {
+     "id": "tb52_10",
+     "n": "10",
+     "text": "Una cooperativa vende sacos de semillas. Las semillas se transportan en cajas de 6 sacos o de 4 sacos.",
+     "text_hu": "Egy szövetkezet vetőmagos zsákokat árul. A zsákokat 6-os vagy 4-es dobozokban szállítják.",
+     "items": [
+      {
+       "id": "tb52_10a1",
+       "q": "a. Para transportar 24 sacos solo con cajas de 6 sacos, ¿cuántas cajas necesitan? (? × 6 = 24)",
+       "q_hu": "a) 24 zsákot szállítanak csak 6-os dobozokban. Hány doboz kell? (? × 6 = 24)",
+       "kind": "num",
+       "answer": "4"
+      },
+      {
+       "id": "tb52_10a2",
+       "q": "a. Para transportar 24 sacos solo con cajas de 4 sacos, ¿cuántas cajas necesitan? (? × 4 = 24)",
+       "q_hu": "a) 24 zsákot szállítanak csak 4-es dobozokban. Hány doboz kell? (? × 4 = 24)",
+       "kind": "num",
+       "answer": "6"
+      },
+      {
+       "id": "tb52_10b1",
+       "q": "b. Para transportar 30 sacos (sin que sobre sitio), ¿qué tipo de cajas puede utilizar?",
+       "q_hu": "b) 30 zsákot kell szállítani úgy, hogy minden doboz tele legyen. Melyik dobozt használhatják?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Cajas de 6 sacos",
+         "hu": "6-os dobozok"
+        },
+        {
+         "t": "Cajas de 4 sacos",
+         "hu": "4-es dobozok"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "6-os dobozokat, mert 5 × 6 = 30; a 4-es tábla nem ad 30-at (7 × 4 = 28, 8 × 4 = 32)."
+      },
+      {
+       "id": "tb52_10b2",
+       "q": "b. ¿Cuántas cajas de 6 sacos necesitan para 30 sacos? (? × 6 = 30)",
+       "q_hu": "b) Hány 6-os doboz kell 30 zsákhoz? (? × 6 = 30)",
+       "kind": "num",
+       "answer": "5"
+      }
+     ]
+    },
+    {
+     "id": "tb52_11",
+     "n": "11",
+     "text": "COMPLETA con las palabras doble o triple.",
+     "text_hu": "Egészítsd ki a „doble” (kétszerese) vagy „triple” (háromszorosa) szóval!",
+     "items": [
+      {
+       "id": "tb52_11a",
+       "q": "20 es el ? de 10.",
+       "q_hu": "A 20 a 10-nek a ...",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "doble",
+         "hu": "dupla (kétszerese)"
+        },
+        {
+         "t": "triple",
+         "hu": "tripla (háromszorosa)"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb52_11b",
+       "q": "El ? de 8 es 24.",
+       "q_hu": "A 8 ... 24.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "doble",
+         "hu": "dupla (kétszerese)"
+        },
+        {
+         "t": "triple",
+         "hu": "tripla (háromszorosa)"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb52_11c",
+       "q": "60 es el ? de 20.",
+       "q_hu": "A 60 a 20-nak a ...",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "doble",
+         "hu": "dupla (kétszerese)"
+        },
+        {
+         "t": "triple",
+         "hu": "tripla (háromszorosa)"
+        }
+       ],
+       "answer": 1
+      },
+      {
+       "id": "tb52_11d",
+       "q": "El ? de 40 es 80.",
+       "q_hu": "A 40 ... 80.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "doble",
+         "hu": "dupla (kétszerese)"
+        },
+        {
+         "t": "triple",
+         "hu": "tripla (háromszorosa)"
+        }
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "id": "tb52_12",
+     "n": "12",
+     "text": "Rosana es meteoróloga. Los instrumentos de medida que usa funcionan con baterías. Las baterías vienen en paquetes de 3 unidades.",
+     "text_hu": "Rosana meteorológus. A mérőműszerei elemmel működnek. Az elemek 3 darabos csomagokban kaphatók.",
+     "items": [
+      {
+       "id": "tb52_12a1",
+       "q": "a. Tiene 8 instrumentos y cada uno utiliza 2 baterías. ¿Cuántas baterías necesita? (8 × 2)",
+       "q_hu": "a) 8 műszere van, mindegyikbe 2 elem kell. Hány elem kell összesen? (8 × 2)",
+       "kind": "num",
+       "answer": "16"
+      },
+      {
+       "id": "tb52_12a2",
+       "q": "a. DISEÑA un paquete alternativo sin unidades sobrantes (para 16 baterías).",
+       "q_hu": "a) Tervezz másfajta csomagot, hogy ne maradjon fölösleges elem (16 elemhez)!",
+       "kind": "open",
+       "answer": "Paquetes de 4 baterías (4 × 4 = 16), o de 2 (8 × 2 = 16), o de 8 (2 × 8 = 16).",
+       "answer_hu": "4 darabos csomag (4 × 4 = 16), vagy 2 darabos (8 × 2 = 16), vagy 8 darabos (2 × 8 = 16)."
+      },
+      {
+       "id": "tb52_12b1",
+       "q": "b. Si solo tiene 3 paquetes de 3 baterías, ¿cuántas baterías tiene en total? (3 × 3)",
+       "q_hu": "b) Ha csak 3 csomagja van, csomagonként 3 elemmel, hány eleme van összesen? (3 × 3)",
+       "kind": "num",
+       "answer": "9"
+      },
+      {
+       "id": "tb52_12b2",
+       "q": "b. Tiene 9 baterías y necesita 16. ¿Son suficientes para sus instrumentos?",
+       "q_hu": "b) 9 eleme van, de 16 kell. Elég ez a műszereihez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, 9 kevesebb, mint 16 (7 hiányzik)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb53",
+   "book": "tb",
+   "page": 53,
+   "unit": "u2",
+   "title": "¿Qué hemos aprendido? Repasa",
+   "title_hu": "Mit tanultunk? Ismétlés",
+   "summary_hu": "Összefoglaló: a szorzás ugyanannak a számnak az ismételt összeadása (3 + 3 + 3 + 3 = 4 × 3 = 12). A 4 és a 3 a tényezők, a 12 a szorzat; kiolvasva „4 veces 3 es igual a 12”. Az oldalon az összes szorzótábla (0-tól 10-ig) szerepel – a szorzótáblák segítenek gyorsabban számolni.",
+   "words": [
+    {
+     "w": "repasar",
+     "hu": "ismételni, átnézni"
+    },
+    {
+     "w": "¿qué hemos aprendido?",
+     "hu": "mit tanultunk?"
+    },
+    {
+     "w": "el mismo número",
+     "hu": "ugyanaz a szám"
+    },
+    {
+     "w": "los factores",
+     "hu": "a tényezők"
+    },
+    {
+     "w": "el producto",
+     "hu": "a szorzat"
+    },
+    {
+     "w": "se lee",
+     "hu": "így olvassuk"
+    },
+    {
+     "w": "calcular más rápido",
+     "hu": "gyorsabban számolni"
+    },
+    {
+     "w": "las tablas de multiplicar",
+     "hu": "a szorzótáblák"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb53_repasa",
+     "n": "Repasa",
+     "text": "Multiplicar es sumar varias veces el mismo número.",
+     "text_hu": "Szorozni azt jelenti, hogy ugyanazt a számot többször összeadjuk.",
+     "items": [
+      {
+       "id": "tb53_repasaa",
+       "q": "3 + 3 + 3 + 3 = 4 × 3 = ?",
+       "q_hu": "3 + 3 + 3 + 3 = 4 × 3 = ?",
+       "kind": "num",
+       "answer": "12"
+      },
+      {
+       "id": "tb53_repasab",
+       "q": "En 4 × 3 = 12, ¿cómo se llaman el 4 y el 3?",
+       "q_hu": "A 4 × 3 = 12-ben hogy hívjuk a 4-et és a 3-at?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "factores",
+         "hu": "tényezők"
+        },
+        {
+         "t": "productos",
+         "hu": "szorzatok"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb53_repasac",
+       "q": "¿Cómo se lee 4 × 3 = 12?",
+       "q_hu": "Hogyan olvassuk ki: 4 × 3 = 12?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4 veces 3 es igual a 12",
+         "hu": "négyszer három egyenlő 12-vel"
+        },
+        {
+         "t": "3 veces 4 es igual a 12",
+         "hu": "háromszor négy egyenlő 12-vel"
+        }
+       ],
+       "answer": 0
+      },
+      {
+       "id": "tb53_repasad",
+       "q": "8 × 7 = ?",
+       "q_hu": "8 × 7 = ?",
+       "kind": "num",
+       "answer": "56"
+      },
+      {
+       "id": "tb53_repasae",
+       "q": "9 × 6 = ?",
+       "q_hu": "9 × 6 = ?",
+       "kind": "num",
+       "answer": "54"
+      },
+      {
+       "id": "tb53_repasaf",
+       "q": "7 × 9 = ?",
+       "q_hu": "7 × 9 = ?",
+       "kind": "num",
+       "answer": "63"
+      },
+      {
+       "id": "tb53_repasag",
+       "q": "6 × 8 = ?",
+       "q_hu": "6 × 8 = ?",
+       "kind": "num",
+       "answer": "48"
+      },
+      {
+       "id": "tb53_repasah",
+       "q": "4 × 0 = ?",
+       "q_hu": "4 × 0 = ?",
+       "kind": "num",
+       "answer": "0"
+      },
+      {
+       "id": "tb53_repasai",
+       "q": "10 × 10 = ?",
+       "q_hu": "10 × 10 = ?",
+       "kind": "num",
+       "answer": "100"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb54",
+   "book": "tb",
+   "page": 54,
+   "unit": "u2",
+   "title": "¿Qué hemos aprendido? Aplica",
+   "title_hu": "Mit tanultunk? Alkalmazd!",
+   "summary_hu": "Az „Aventura Matemática” táborban 5 csapat van, mindegyikben 5 résztvevő, és mindegyiket egy-egy vezető irányítja (piros, kék, zöld, fehér és narancs csapat). Három versenyszám van: toronyépítés, tájékozódás (3 nyom) és gyorsasági verseny. A feladatokat szorzással kell megoldani.",
+   "words": [
+    {
+     "w": "el campamento",
+     "hu": "a tábor"
+    },
+    {
+     "w": "la jornada",
+     "hu": "a nap (program)"
+    },
+    {
+     "w": "la prueba",
+     "hu": "a próba, versenyszám"
+    },
+    {
+     "w": "el equipo",
+     "hu": "a csapat"
+    },
+    {
+     "w": "el participante",
+     "hu": "a résztvevő"
+    },
+    {
+     "w": "la torre",
+     "hu": "a torony"
+    },
+    {
+     "w": "la orientación",
+     "hu": "a tájékozódás"
+    },
+    {
+     "w": "la pista",
+     "hu": "a nyom (amit keresnek)"
+    },
+    {
+     "w": "el monitor / la monitora",
+     "hu": "a táborvezető (fiú / lány)"
+    },
+    {
+     "w": "tardar",
+     "hu": "(valamennyi ideig) tartani, időbe telni"
+    },
+    {
+     "w": "el minuto",
+     "hu": "a perc"
+    },
+    {
+     "w": "la mesa",
+     "hu": "az asztal"
+    },
+    {
+     "w": "la silla",
+     "hu": "a szék"
+    },
+    {
+     "w": "el alumnado",
+     "hu": "a diákok"
+    },
+    {
+     "w": "sentarse",
+     "hu": "leülni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb54_1",
+     "n": "1",
+     "text": "Si todos los equipos se juntan para hacerse una foto antes de comenzar las pruebas, CALCULA los participantes que saldrán en la foto.",
+     "text_hu": "Ha a verseny előtt mind az 5 csapat (csapatonként 5 résztvevő) együtt fényképezkedik, hány résztvevő lesz a fotón?",
+     "items": [
+      {
+       "id": "tb54_1a",
+       "q": "5 equipos con 5 participantes cada uno: 5 × 5 = ?",
+       "q_hu": "5 csapat, mindegyikben 5 résztvevő: 5 × 5 = ?",
+       "kind": "num",
+       "answer": "25",
+       "answer_hu": "25 résztvevő"
+      }
+     ]
+    },
+    {
+     "id": "tb54_2",
+     "n": "2",
+     "text": "En la primera prueba, los equipos reciben 8 cajas de bloques. Si en cada caja hay 6 piezas, HALLA las piezas que recibe cada equipo.",
+     "text_hu": "Az első versenyszámban minden csapat 8 doboz építőkockát kap. Minden dobozban 6 darab van. Hány darabot kap egy csapat?",
+     "items": [
+      {
+       "id": "tb54_2a",
+       "q": "8 cajas con 6 piezas cada una: 8 × 6 = ?",
+       "q_hu": "8 doboz, mindegyikben 6 darab: 8 × 6 = ?",
+       "kind": "num",
+       "answer": "48",
+       "answer_hu": "48 darab"
+      }
+     ]
+    },
+    {
+     "id": "tb54_3",
+     "n": "3",
+     "text": "Cada pista de la prueba 2 tiene 7 preguntas. RAZONA cuántas preguntas responderá cada equipo en total en esa prueba.",
+     "text_hu": "A 2. versenyszámban 3 nyom van, és mindegyik nyomhoz 7 kérdés tartozik. Hány kérdésre válaszol egy csapat összesen?",
+     "items": [
+      {
+       "id": "tb54_3a",
+       "q": "3 pistas con 7 preguntas cada una: 3 × 7 = ?",
+       "q_hu": "3 nyom, mindegyiknél 7 kérdés: 3 × 7 = ?",
+       "kind": "num",
+       "answer": "21",
+       "answer_hu": "21 kérdés"
+      }
+     ]
+    },
+    {
+     "id": "tb54_4",
+     "n": "4",
+     "text": "En la prueba 3 el equipo rojo tarda 3 minutos y el equipo naranja tarda 4 minutos. CALCULA cuánto tardan los demás equipos.",
+     "text_hu": "A 3. versenyszámban a piros csapatnak 3 perc kell, a narancsnak 4 perc. Számold ki, mennyi idő kell a többi csapatnak!",
+     "items": [
+      {
+       "id": "tb54_4a",
+       "q": "a. El equipo azul tarda el doble que el naranja (4 minutos). ¿Cuántos minutos tarda?",
+       "q_hu": "a) A kék csapatnak kétszer annyi idő kell, mint a narancsnak (4 perc). Hány perc?",
+       "kind": "num",
+       "answer": "8",
+       "answer_hu": "8 perc"
+      },
+      {
+       "id": "tb54_4b",
+       "q": "b. El equipo blanco tarda el triple que el rojo (3 minutos). ¿Cuántos minutos tarda?",
+       "q_hu": "b) A fehér csapatnak háromszor annyi idő kell, mint a pirosnak (3 perc). Hány perc?",
+       "kind": "num",
+       "answer": "9",
+       "answer_hu": "9 perc"
+      },
+      {
+       "id": "tb54_4c",
+       "q": "c. El equipo verde tarda lo mismo que el rojo (3 min) y el azul (8 min) juntos. ¿Cuántos minutos tarda?",
+       "q_hu": "c) A zöld csapatnak annyi idő kell, mint a pirosnak (3 perc) és a kéknek (8 perc) együtt. Hány perc?",
+       "kind": "num",
+       "answer": "11",
+       "answer_hu": "11 perc"
+      }
+     ]
+    },
+    {
+     "id": "tb54_5",
+     "n": "5",
+     "text": "Al final del día, se preparan 4 mesas grandes para la hora de la cena. Si en cada mesa hay 6 sillas, RAZONA si puede sentarse todo el alumnado.",
+     "text_hu": "A nap végén 4 nagy asztalt készítenek a vacsorához. Minden asztalnál 6 szék van. Gondold végig: le tud-e ülni mind a 25 gyerek?",
+     "items": [
+      {
+       "id": "tb54_5a1",
+       "q": "4 mesas con 6 sillas cada una: 4 × 6 = ? sillas",
+       "q_hu": "4 asztal, mindegyiknél 6 szék: 4 × 6 = ? szék",
+       "kind": "num",
+       "answer": "24"
+      },
+      {
+       "id": "tb54_5a2",
+       "q": "Hay 24 sillas y 25 participantes (alumnos). ¿Puede sentarse todo el alumnado?",
+       "q_hu": "24 szék van és 25 gyerek. Le tud ülni minden gyerek?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, 1 széknél kevesebb van (24 < 25)."
+      },
+      {
+       "id": "tb54_5b1",
+       "q": "Si añaden una mesa más con 6 sillas: 5 × 6 = ? sillas",
+       "q_hu": "Ha még egy 6 székes asztalt hoznak: 5 × 6 = ? szék",
+       "kind": "num",
+       "answer": "30"
+      },
+      {
+       "id": "tb54_5b2",
+       "q": "Hay 30 sillas, 25 alumnos y 5 monitores (25 + 5 = 30). ¿Podrían sentarse también los monitores y monitoras?",
+       "q_hu": "30 szék van, 25 gyerek és 5 táborvezető (25 + 5 = 30). Le tudnak ülni a vezetők is?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen, pont elég: 30 szék és 30 ember."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tb55",
+   "book": "tb",
+   "page": 55,
+   "unit": "u2",
+   "title": "¿Qué hemos aprendido? Crea",
+   "title_hu": "Mit tanultunk? Alkoss!",
+   "summary_hu": "A falu lakói már összegyűjtötték az adatokat a népszámláláshoz. Választani kell egy módot, hogyan tudassák ezt mindenkivel: levél, plakát vagy rádióhirdetés. Végül a „kilépőjegy”: önértékelés, mennyit tanultál a fejezetben.",
+   "words": [
+    {
+     "w": "crear",
+     "hu": "alkotni"
+    },
+    {
+     "w": "comunicar",
+     "hu": "közölni, tudatni"
+    },
+    {
+     "w": "elegir",
+     "hu": "választani"
+    },
+    {
+     "w": "la carta",
+     "hu": "a levél"
+    },
+    {
+     "w": "el cartel",
+     "hu": "a plakát"
+    },
+    {
+     "w": "el anuncio",
+     "hu": "a hirdetés"
+    },
+    {
+     "w": "la radio",
+     "hu": "a rádió"
+    },
+    {
+     "w": "disponible",
+     "hu": "elérhető"
+    },
+    {
+     "w": "el ticket de salida",
+     "hu": "a kilépőjegy"
+    },
+    {
+     "w": "comparar",
+     "hu": "összehasonlítani"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "tb55_crea",
+     "n": "Crea",
+     "text": "Elige la manera que más te guste para ayudar a los vecinos.",
+     "text_hu": "Válaszd ki, melyik módon segítenél legszívesebben a falu lakóinak!",
+     "items": [
+      {
+       "id": "tb55_crea_1",
+       "q": "¿Cómo quieres comunicar que el censo ya está hecho?",
+       "q_hu": "Hogyan szeretnéd tudatni, hogy kész a népszámlálás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Escribir una carta a los vecinos",
+         "hu": "Levelet írok a lakóknak"
+        },
+        {
+         "t": "Dibujar un cartel",
+         "hu": "Plakátot rajzolok"
+        },
+        {
+         "t": "Elaborar un anuncio para la radio",
+         "hu": "Rádióhirdetést készítek"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Bármelyik jó – ez saját választás, nincs egyetlen helyes válasz."
+      },
+      {
+       "id": "tb55_crea_2",
+       "q": "Haz tu carta, cartel o anuncio.",
+       "q_hu": "Készítsd el a leveledet, plakátodat vagy hirdetésedet!",
+       "kind": "open",
+       "answer": "Ejemplo: «Queridos vecinos: ya hemos terminado el censo del pueblo. Ya sabemos cuántas personas viven en cada calle.»",
+       "answer_hu": "Példa: „Kedves szomszédok! Elkészült a falu népszámlálása. Már tudjuk, hányan laknak az egyes utcákban.”"
+      }
+     ]
+    },
+    {
+     "id": "tb55_ticket",
+     "n": "Ticket de salida",
+     "text": "LEE cada enunciado y DI cuánto crees que has aprendido: mucho, poco o nada.",
+     "text_hu": "Olvasd el a mondatokat, és mondd meg, mennyit tanultál: sokat, keveset vagy semmit!",
+     "items": [
+      {
+       "id": "tb55_ticket_1",
+       "q": "La relación entre la suma y la multiplicación.",
+       "q_hu": "Az összeadás és a szorzás kapcsolata.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb55_ticket_2",
+       "q": "Los términos de la multiplicación.",
+       "q_hu": "A szorzás tagjai (tényezők, szorzat).",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb55_ticket_3",
+       "q": "Las tablas de multiplicar.",
+       "q_hu": "A szorzótáblák.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      },
+      {
+       "id": "tb55_ticket_4",
+       "q": "La resolución de problemas.",
+       "q_hu": "A szöveges feladatok megoldása.",
+       "kind": "open",
+       "answer": "Mucho / poco / nada (respuesta personal).",
+       "answer_hu": "Sokat / keveset / semmit (saját válasz)."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

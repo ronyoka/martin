@@ -129,3 +129,16 @@ T = {
 'mission_sub_review':("vegyes gyakorlás a legutóbbi fejezetből","mixed practice of the latest unit","práctica variada de la última unidad"),
 }
 # a hangot csak azokhoz a kulcsokhoz generáljuk, amelyekhez van szöveg az adott nyelven
+# Könyvoldalak (2026-11-06)
+T.update({
+'t_pages':("Könyvoldalak","Book pages","Páginas del libro"),
+'i_pages':("Válaszd ki a könyvet és a fejezetet, aztán az oldalt! Minden oldalon megvannak a szavak és a feladatok.","Choose the book, the unit and the page! Every page has its words and exercises.","Elige el libro, la unidad y la página. En cada página están las palabras y las actividades."),
+'i_page_run':("Olvasd el a feladatot, hallgasd meg, és válaszolj!","Read the exercise, listen and answer!","Lee la actividad, escucha y responde."),
+'pg_page':("oldal","page","página"),'pg_tasks':("feladat","exercises","actividades"),'pg_items':("kérdés","questions","preguntas"),
+'pg_words':("Szavak az oldalon","Words on this page","Palabras de la página"),'pg_tasks_h':("Feladatok","Exercises","Actividades"),
+'pg_solve_all':("Az egész oldal megoldása","Solve the whole page","Resolver toda la página"),'pg_solve_task':("Ezt a feladatot megoldom","I'll do this exercise","Hago esta actividad"),
+'pg_solution':("Megoldás","Solution","Solución"),'pg_show_sol':("Megoldás mutatása","Show the solution","Ver la solución"),'pg_parent_sol':("Minden megoldás (szülő)","All solutions (parent)","Todas las soluciones"),
+'pg_lesson':("Lecke","Lesson","Lección"),'pg_back':("Vissza az oldalra","Back to the page","Volver a la página"),
+'pg_none':("Ezen az oldalon nincs gépen ellenőrizhető feladat.","There are no checkable exercises on this page.","En esta página no hay actividades para comprobar."),
+'pg_empty':("Ehhez a tantárgyhoz még nincsenek feldolgozva a könyvoldalak.","The book pages for this subject are not ready yet.","Las páginas de este libro todavía no están preparadas."),
+})

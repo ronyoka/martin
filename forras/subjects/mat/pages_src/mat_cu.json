@@ -1,0 +1,4946 @@
+{
+ "pages": [
+  {
+   "id": "cu5",
+   "book": "cu",
+   "page": 5,
+   "unit": "u1",
+   "title": "Números de 4 cifras",
+   "title_hu": "Négyjegyű számok",
+   "summary_hu": "Négyjegyű számok felépítése: ezresek (UM), százasok (C), tízesek (D) és egyesek (U). Meg kell tanulni kiolvasni és helyiértékek szerint felbontani (pl. 3549 = 3000 + 500 + 40 + 9).",
+   "words": [
+    {
+     "w": "el número de 4 cifras",
+     "hu": "négyjegyű szám"
+    },
+    {
+     "w": "la unidad de millar (UM)",
+     "hu": "ezres"
+    },
+    {
+     "w": "la centena (C)",
+     "hu": "százas"
+    },
+    {
+     "w": "la decena (D)",
+     "hu": "tízes"
+    },
+    {
+     "w": "la unidad (U)",
+     "hu": "egyes"
+    },
+    {
+     "w": "se lee",
+     "hu": "így olvassuk"
+    },
+    {
+     "w": "la descomposición",
+     "hu": "felbontás"
+    },
+    {
+     "w": "anterior",
+     "hu": "előző"
+    },
+    {
+     "w": "posterior",
+     "hu": "következő"
+    },
+    {
+     "w": "mil",
+     "hu": "ezer"
+    },
+    {
+     "w": "completa",
+     "hu": "egészítsd ki"
+    },
+    {
+     "w": "la tabla",
+     "hu": "táblázat"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu5_1",
+     "n": "1",
+     "text": "Completa la tabla.",
+     "text_hu": "Töltsd ki a táblázatot.",
+     "items": [
+      {
+       "q": "¿Cómo se lee 1315?",
+       "q_hu": "Hogyan olvassuk spanyolul: 1315?",
+       "kind": "type",
+       "answer": "mil trescientos quince",
+       "alts": [],
+       "answer_hu": "ezerháromszáztizenöt",
+       "id": "cu5_1a"
+      },
+      {
+       "q": "Descomposición de 1315 (UM + C + D + U en números)",
+       "q_hu": "Bontsd fel: 1315 = ezres + százas + tízes + egyes",
+       "kind": "type",
+       "answer": "1000 + 300 + 10 + 5",
+       "alts": [
+        "1000+300+10+5"
+       ],
+       "id": "cu5_1b"
+      },
+      {
+       "q": "1315: ¿cuántas unidades de millar (UM)?",
+       "q_hu": "1315: hány ezres (UM)?",
+       "kind": "num",
+       "answer": "1",
+       "id": "cu5_1c"
+      },
+      {
+       "q": "1315: ¿cuántas centenas (C)?",
+       "q_hu": "1315: hány százas (C)?",
+       "kind": "num",
+       "answer": "3",
+       "id": "cu5_1d"
+      },
+      {
+       "q": "1315: ¿cuántas decenas (D)?",
+       "q_hu": "1315: hány tízes (D)?",
+       "kind": "num",
+       "answer": "1",
+       "id": "cu5_1e"
+      },
+      {
+       "q": "1315: ¿cuántas unidades (U)?",
+       "q_hu": "1315: hány egyes (U)?",
+       "kind": "num",
+       "answer": "5",
+       "id": "cu5_1f"
+      },
+      {
+       "q": "¿Qué número es «dos mil ciento siete»?",
+       "q_hu": "Melyik szám a „dos mil ciento siete” (kétezer-százhét)?",
+       "kind": "num",
+       "answer": "2107",
+       "id": "cu5_1g"
+      },
+      {
+       "q": "Descomposición de 2107",
+       "q_hu": "Bontsd fel: 2107",
+       "kind": "type",
+       "answer": "2000 + 100 + 7",
+       "alts": [
+        "2000+100+7",
+        "2000 + 100 + 0 + 7",
+        "2000+100+0+7"
+       ],
+       "id": "cu5_1h"
+      },
+      {
+       "q": "2107: ¿cuántas UM?",
+       "q_hu": "2107: hány ezres?",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu5_1i"
+      },
+      {
+       "q": "2107: ¿cuántas C?",
+       "q_hu": "2107: hány százas?",
+       "kind": "num",
+       "answer": "1",
+       "id": "cu5_1j"
+      },
+      {
+       "q": "2107: ¿cuántas D?",
+       "q_hu": "2107: hány tízes?",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu5_1k"
+      },
+      {
+       "q": "2107: ¿cuántas U?",
+       "q_hu": "2107: hány egyes?",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu5_1l"
+      },
+      {
+       "q": "¿Qué número es 3000 + 400 + 20 + 8?",
+       "q_hu": "Melyik szám: 3000 + 400 + 20 + 8?",
+       "kind": "num",
+       "answer": "3428",
+       "id": "cu5_1m"
+      },
+      {
+       "q": "¿Cómo se lee 3428?",
+       "q_hu": "Hogyan olvassuk spanyolul: 3428?",
+       "kind": "type",
+       "answer": "tres mil cuatrocientos veintiocho",
+       "alts": [],
+       "answer_hu": "háromezer-négyszázhuszonnyolc",
+       "id": "cu5_1n"
+      },
+      {
+       "q": "3428: ¿cuántas UM?",
+       "q_hu": "3428: hány ezres?",
+       "kind": "num",
+       "answer": "3",
+       "id": "cu5_1o"
+      },
+      {
+       "q": "3428: ¿cuántas C?",
+       "q_hu": "3428: hány százas?",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu5_1p"
+      },
+      {
+       "q": "3428: ¿cuántas D?",
+       "q_hu": "3428: hány tízes?",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu5_1q"
+      },
+      {
+       "q": "3428: ¿cuántas U?",
+       "q_hu": "3428: hány egyes?",
+       "kind": "num",
+       "answer": "8",
+       "id": "cu5_1r"
+      },
+      {
+       "q": "¿Qué número tiene 3 UM, 0 C, 0 D y 3 U?",
+       "q_hu": "Melyik szám: 3 ezres, 0 százas, 0 tízes, 3 egyes?",
+       "kind": "num",
+       "answer": "3003",
+       "id": "cu5_1s"
+      },
+      {
+       "q": "¿Cómo se lee 3003?",
+       "q_hu": "Hogyan olvassuk spanyolul: 3003?",
+       "kind": "type",
+       "answer": "tres mil tres",
+       "alts": [],
+       "answer_hu": "háromezer-három",
+       "id": "cu5_1t"
+      },
+      {
+       "q": "Descomposición de 3003",
+       "q_hu": "Bontsd fel: 3003",
+       "kind": "type",
+       "answer": "3000 + 3",
+       "alts": [
+        "3000+3",
+        "3000 + 0 + 0 + 3",
+        "3000+0+0+3"
+       ],
+       "id": "cu5_1u"
+      }
+     ]
+    },
+    {
+     "id": "cu5_2",
+     "n": "2",
+     "text": "Indica la unidad de millar inmediatamente anterior y la inmediatamente posterior en cada caso.",
+     "text_hu": "Írd be a közvetlenül előtte és utána következő kerek ezrest.",
+     "items": [
+      {
+       "q": "Unidad de millar anterior a 6000",
+       "q_hu": "A(z) 6000 előtti kerek ezres",
+       "kind": "num",
+       "answer": "5000",
+       "id": "cu5_2a"
+      },
+      {
+       "q": "Unidad de millar posterior a 6000",
+       "q_hu": "A(z) 6000 utáni kerek ezres",
+       "kind": "num",
+       "answer": "7000",
+       "id": "cu5_2b"
+      },
+      {
+       "q": "Unidad de millar anterior a 3000",
+       "q_hu": "A(z) 3000 előtti kerek ezres",
+       "kind": "num",
+       "answer": "2000",
+       "id": "cu5_2c"
+      },
+      {
+       "q": "Unidad de millar posterior a 3000",
+       "q_hu": "A(z) 3000 utáni kerek ezres",
+       "kind": "num",
+       "answer": "4000",
+       "id": "cu5_2d"
+      },
+      {
+       "q": "Unidad de millar anterior a 2000",
+       "q_hu": "A(z) 2000 előtti kerek ezres",
+       "kind": "num",
+       "answer": "1000",
+       "id": "cu5_2e"
+      },
+      {
+       "q": "Unidad de millar posterior a 2000",
+       "q_hu": "A(z) 2000 utáni kerek ezres",
+       "kind": "num",
+       "answer": "3000",
+       "id": "cu5_2f"
+      },
+      {
+       "q": "Unidad de millar anterior a 4000",
+       "q_hu": "A(z) 4000 előtti kerek ezres",
+       "kind": "num",
+       "answer": "3000",
+       "id": "cu5_2g"
+      },
+      {
+       "q": "Unidad de millar posterior a 4000",
+       "q_hu": "A(z) 4000 utáni kerek ezres",
+       "kind": "num",
+       "answer": "5000",
+       "id": "cu5_2h"
+      },
+      {
+       "q": "Unidad de millar anterior a 5000",
+       "q_hu": "A(z) 5000 előtti kerek ezres",
+       "kind": "num",
+       "answer": "4000",
+       "id": "cu5_2i"
+      },
+      {
+       "q": "Unidad de millar posterior a 5000",
+       "q_hu": "A(z) 5000 utáni kerek ezres",
+       "kind": "num",
+       "answer": "6000",
+       "id": "cu5_2j"
+      },
+      {
+       "q": "Unidad de millar anterior a 8000",
+       "q_hu": "A(z) 8000 előtti kerek ezres",
+       "kind": "num",
+       "answer": "7000",
+       "id": "cu5_2k"
+      },
+      {
+       "q": "Unidad de millar posterior a 8000",
+       "q_hu": "A(z) 8000 utáni kerek ezres",
+       "kind": "num",
+       "answer": "9000",
+       "id": "cu5_2l"
+      }
+     ]
+    },
+    {
+     "id": "cu5_3",
+     "n": "3",
+     "text": "Escribe el número que corresponde a cada descomposición.",
+     "text_hu": "Írd le, melyik szám tartozik a felbontáshoz.",
+     "items": [
+      {
+       "q": "6 UM + 3 C + 1 D + 8 U",
+       "q_hu": "6 ezres + 3 százas + 1 tízes + 8 egyes",
+       "kind": "num",
+       "answer": "6318",
+       "id": "cu5_3a"
+      },
+      {
+       "q": "9000 + 200 + 50 + 7",
+       "q_hu": "9000 + 200 + 50 + 7",
+       "kind": "num",
+       "answer": "9257",
+       "id": "cu5_3b"
+      },
+      {
+       "q": "4 × 1000 + 0 × 100 + 7 × 10 + 1 × 1",
+       "q_hu": "4 × 1000 + 0 × 100 + 7 × 10 + 1 × 1",
+       "kind": "num",
+       "answer": "4071",
+       "id": "cu5_3c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu6",
+   "book": "cu",
+   "page": 6,
+   "unit": "u1",
+   "title": "Números de 4 cifras",
+   "title_hu": "Négyjegyű számok",
+   "summary_hu": "Gyakorlás: egy számjegy értéke a helyétől függ (az 5 a 5281-ben 5000-et ér). Felbontások ellenőrzése és egy szám többféle felbontása.",
+   "words": [
+    {
+     "w": "la cifra",
+     "hu": "számjegy"
+    },
+    {
+     "w": "destacada",
+     "hu": "kiemelt"
+    },
+    {
+     "w": "representa",
+     "hu": "jelent, ér"
+    },
+    {
+     "w": "comprueba",
+     "hu": "ellenőrizd"
+    },
+    {
+     "w": "bien",
+     "hu": "jó"
+    },
+    {
+     "w": "mal",
+     "hu": "rossz"
+    },
+    {
+     "w": "descompuesto",
+     "hu": "felbontott"
+    },
+    {
+     "w": "la solución",
+     "hu": "megoldás"
+    },
+    {
+     "w": "descompón",
+     "hu": "bontsd fel"
+    },
+    {
+     "w": "de tres formas distintas",
+     "hu": "háromféleképpen"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu6_4",
+     "n": "4",
+     "text": "Escribe las unidades que representa la cifra destacada en cada número.",
+     "text_hu": "Írd le, hány egyest ér a kiemelt számjegy a számban.",
+     "items": [
+      {
+       "q": "¿Cuánto vale la cifra 2 en 5281?",
+       "q_hu": "Mennyit ér a 2-es számjegy az 5281-ben?",
+       "kind": "num",
+       "answer": "200",
+       "id": "cu6_4a"
+      },
+      {
+       "q": "¿Cuánto vale la cifra 9 en 1960?",
+       "q_hu": "Mennyit ér a 9-es számjegy az 1960-ban?",
+       "kind": "num",
+       "answer": "900",
+       "id": "cu6_4b"
+      },
+      {
+       "q": "¿Cuánto vale la cifra 4 en 7034?",
+       "q_hu": "Mennyit ér a 4-es számjegy a 7034-ben?",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu6_4c"
+      },
+      {
+       "q": "¿Cuánto vale la cifra 4 en 4305?",
+       "q_hu": "Mennyit ér a 4-es számjegy a 4305-ben?",
+       "kind": "num",
+       "answer": "4000",
+       "id": "cu6_4d"
+      }
+     ]
+    },
+    {
+     "id": "cu6_5",
+     "n": "5",
+     "text": "Comprueba si estos números están bien descompuestos y, en caso contrario, escribe la descomposición correcta.",
+     "text_hu": "Ellenőrizd, hogy jól vannak-e felbontva a számok. Ha nem, írd le a helyes felbontást.",
+     "items": [
+      {
+       "q": "6214 = 62 C + 14 U",
+       "q_hu": "6214 = 62 százas + 14 egyes",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "bien",
+         "hu": "jó"
+        },
+        {
+         "t": "mal",
+         "hu": "rossz"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "jó (6200 + 14 = 6214)",
+       "id": "cu6_5a"
+      },
+      {
+       "q": "3471 = 3 UM + 47 D + 7 U",
+       "q_hu": "3471 = 3 ezres + 47 tízes + 7 egyes",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "bien",
+         "hu": "jó"
+        },
+        {
+         "t": "mal",
+         "hu": "rossz"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "rossz (3000 + 470 + 7 = 3477)",
+       "id": "cu6_5b"
+      },
+      {
+       "q": "Escribe la descomposición correcta de 3471 con UM, D y U: 3 UM + 47 D + ? U",
+       "q_hu": "Írd le helyesen: 3471 = 3 ezres + 47 tízes + ? egyes. Mennyi a ?",
+       "kind": "type",
+       "answer": "1",
+       "alts": [
+        "1 U"
+       ],
+       "answer_hu": "1 egyes (3 UM + 47 D + 1 U)",
+       "id": "cu6_5c"
+      },
+      {
+       "q": "7328 = 7 UM + 3 C + 2 D + 8 U",
+       "q_hu": "7328 = 7 ezres + 3 százas + 2 tízes + 8 egyes",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "bien",
+         "hu": "jó"
+        },
+        {
+         "t": "mal",
+         "hu": "rossz"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "jó",
+       "id": "cu6_5d"
+      }
+     ]
+    },
+    {
+     "id": "cu6_6",
+     "n": "6",
+     "text": "Descompón estos números de tres formas distintas.",
+     "text_hu": "Bontsd fel ezeket a számokat háromféleképpen.",
+     "items": [
+      {
+       "q": "Descompón 6060 de tres formas.",
+       "q_hu": "Bontsd fel a 6060-at háromféleképpen.",
+       "kind": "open",
+       "answer": "6 UM + 6 D; 6000 + 60; 6 × 1000 + 6 × 10",
+       "answer_hu": "6 ezres + 6 tízes; 6000 + 60; 6 × 1000 + 6 × 10",
+       "id": "cu6_6a"
+      },
+      {
+       "q": "Descompón 4003 de tres formas.",
+       "q_hu": "Bontsd fel a 4003-at háromféleképpen.",
+       "kind": "open",
+       "answer": "4 UM + 3 U; 4000 + 3; 4 × 1000 + 3 × 1",
+       "answer_hu": "4 ezres + 3 egyes; 4000 + 3; 4 × 1000 + 3 × 1",
+       "id": "cu6_6b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu7",
+   "book": "cu",
+   "page": 7,
+   "unit": "u1",
+   "title": "Comparación de números",
+   "title_hu": "Számok összehasonlítása",
+   "summary_hu": "Két azonos jegyszámú számot balról jobbra, számjegyenként hasonlítunk össze (1783 > 1734, mert 8 > 3). Ha a számjegyek száma különböző, az a nagyobb, amelyiknek több jegye van.",
+   "words": [
+    {
+     "w": "comparar",
+     "hu": "összehasonlítani"
+    },
+    {
+     "w": "mayor",
+     "hu": "nagyobb"
+    },
+    {
+     "w": "menor",
+     "hu": "kisebb"
+    },
+    {
+     "w": "la misma cantidad de cifras",
+     "hu": "ugyanannyi számjegy"
+    },
+    {
+     "w": "de izquierda a derecha",
+     "hu": "balról jobbra"
+    },
+    {
+     "w": "formar",
+     "hu": "kirakni, alkotni"
+    },
+    {
+     "w": "rodea",
+     "hu": "karikázd be"
+    },
+    {
+     "w": "sobra",
+     "hu": "kilóg, felesleges"
+    },
+    {
+     "w": "entre",
+     "hu": "között"
+    },
+    {
+     "w": "siempre",
+     "hu": "mindig"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu7_1",
+     "n": "1",
+     "text": "Escribe el mayor y el menor número de cuatro cifras que puedas formar.",
+     "text_hu": "Írd le a legnagyobb és a legkisebb négyjegyű számot, amit ki tudsz rakni a golyókból.",
+     "items": [
+      {
+       "q": "Con las cifras 2, 8, 0 y 5: el número mayor es…",
+       "q_hu": "A 2, 8, 0, 5 számjegyekből a legnagyobb szám:",
+       "kind": "num",
+       "answer": "8520",
+       "id": "cu7_1a"
+      },
+      {
+       "q": "Con las cifras 2, 8, 0 y 5: el número menor (de 4 cifras) es…",
+       "q_hu": "A 2, 8, 0, 5 számjegyekből a legkisebb négyjegyű szám (0-val nem kezdődhet):",
+       "kind": "num",
+       "answer": "2058",
+       "id": "cu7_1b"
+      },
+      {
+       "q": "Con las cifras 1, 9, 7 y 3: el número mayor es…",
+       "q_hu": "Az 1, 9, 7, 3 számjegyekből a legnagyobb szám:",
+       "kind": "num",
+       "answer": "9731",
+       "id": "cu7_1c"
+      },
+      {
+       "q": "Con las cifras 1, 9, 7 y 3: el número menor es…",
+       "q_hu": "Az 1, 9, 7, 3 számjegyekből a legkisebb szám:",
+       "kind": "num",
+       "answer": "1379",
+       "id": "cu7_1d"
+      }
+     ]
+    },
+    {
+     "id": "cu7_2",
+     "n": "2",
+     "text": "Rodea el número que sobra en cada caso.",
+     "text_hu": "Karikázd be azt a számot, amelyik kilóg a sorból.",
+     "items": [
+      {
+       "q": "Estos números están entre el 1430 y el 2690: 1560, 2089, 2700, 1920, 1700, 1680. ¿Cuál sobra?",
+       "q_hu": "Ezek a számok 1430 és 2690 között vannak: 1560, 2089, 2700, 1920, 1700, 1680. Melyik nem illik ide?",
+       "kind": "num",
+       "answer": "2700",
+       "id": "cu7_2a"
+      },
+      {
+       "q": "Estos números están entre el 3420 y el 4680: 3520, 4280, 3720, 4530, 4150, 3340. ¿Cuál sobra?",
+       "q_hu": "Ezek a számok 3420 és 4680 között vannak: 3520, 4280, 3720, 4530, 4150, 3340. Melyik nem illik ide?",
+       "kind": "num",
+       "answer": "3340",
+       "id": "cu7_2b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu8",
+   "book": "cu",
+   "page": 8,
+   "unit": "u1",
+   "title": "Comparación de números",
+   "title_hu": "Számok összehasonlítása",
+   "summary_hu": "Számok sorba rendezése, igaz–hamis állítások a nagyságról, összehasonlítás <, >, = jelekkel (először ki kell számolni a felbontást), és számok elhelyezése a számegyenesen.",
+   "words": [
+    {
+     "w": "ordena",
+     "hu": "rendezd sorba"
+    },
+    {
+     "w": "de menor a mayor",
+     "hu": "a legkisebbtől a legnagyobbig"
+    },
+    {
+     "w": "de mayor a menor",
+     "hu": "a legnagyobbtól a legkisebbig"
+    },
+    {
+     "w": "verdadero",
+     "hu": "igaz"
+    },
+    {
+     "w": "falso",
+     "hu": "hamis"
+    },
+    {
+     "w": "el signo",
+     "hu": "jel"
+    },
+    {
+     "w": "la recta numérica",
+     "hu": "számegyenes"
+    },
+    {
+     "w": "representa",
+     "hu": "ábrázold"
+    },
+    {
+     "w": "más pequeño",
+     "hu": "legkisebb"
+    },
+    {
+     "w": "más grande",
+     "hu": "legnagyobb"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu8_3",
+     "n": "3",
+     "text": "Ordena estos números de menor a mayor.",
+     "text_hu": "Rendezd sorba a számokat a legkisebbtől a legnagyobbig.",
+     "items": [
+      {
+       "q": "Números: 3450, 3045, 4305, 3540, 4053. ¿Cuál va en el 1.er lugar (el menor)?",
+       "q_hu": "Számok: 3450, 3045, 4305, 3540, 4053. Melyik az 1. (a legkisebb)?",
+       "kind": "num",
+       "answer": "3045",
+       "id": "cu8_3a"
+      },
+      {
+       "q": "Números: 3450, 3045, 4305, 3540, 4053. ¿Cuál va en el 2.º lugar?",
+       "q_hu": "Számok: 3450, 3045, 4305, 3540, 4053. Melyik a 2.?",
+       "kind": "num",
+       "answer": "3450",
+       "id": "cu8_3b"
+      },
+      {
+       "q": "Números: 3450, 3045, 4305, 3540, 4053. ¿Cuál va en el 3.er lugar?",
+       "q_hu": "Számok: 3450, 3045, 4305, 3540, 4053. Melyik a 3.?",
+       "kind": "num",
+       "answer": "3540",
+       "id": "cu8_3c"
+      },
+      {
+       "q": "Números: 3450, 3045, 4305, 3540, 4053. ¿Cuál va en el 4.º lugar?",
+       "q_hu": "Számok: 3450, 3045, 4305, 3540, 4053. Melyik a 4.?",
+       "kind": "num",
+       "answer": "4053",
+       "id": "cu8_3d"
+      },
+      {
+       "q": "Números: 3450, 3045, 4305, 3540, 4053. ¿Cuál va en el 5.º lugar (el mayor)?",
+       "q_hu": "Számok: 3450, 3045, 4305, 3540, 4053. Melyik az 5. (a legnagyobb)?",
+       "kind": "num",
+       "answer": "4305",
+       "id": "cu8_3e"
+      }
+     ]
+    },
+    {
+     "id": "cu8_4",
+     "n": "4",
+     "text": "Escribe V si es verdadero y F si es falso.",
+     "text_hu": "Írj I-t, ha igaz, és H-t, ha hamis.",
+     "items": [
+      {
+       "q": "El número 5678 es mayor que 5687.",
+       "q_hu": "Az 5678 nagyobb, mint az 5687.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu8_4a"
+      },
+      {
+       "q": "Un número con más cifras que otro siempre es el mayor.",
+       "q_hu": "Az a szám, amelyiknek több számjegye van, mindig nagyobb.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu8_4b"
+      },
+      {
+       "q": "1000 es el número de 4 cifras más pequeño.",
+       "q_hu": "Az 1000 a legkisebb négyjegyű szám.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu8_4c"
+      },
+      {
+       "q": "9000 es el número de 4 cifras más grande.",
+       "q_hu": "A 9000 a legnagyobb négyjegyű szám.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu8_4d"
+      },
+      {
+       "q": "Un número con menos cifras que otro siempre es el mayor.",
+       "q_hu": "Az a szám, amelyiknek kevesebb számjegye van, mindig nagyobb.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu8_4e"
+      }
+     ]
+    },
+    {
+     "id": "cu8_5",
+     "n": "5",
+     "text": "Compara estos números con los signos <, > o =.",
+     "text_hu": "Hasonlítsd össze a számokat <, > vagy = jellel.",
+     "items": [
+      {
+       "q": "4157 __ 4000 + 200 + 60 + 7",
+       "q_hu": "4157 __ 4000 + 200 + 60 + 7",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "<",
+       "id": "cu8_5a"
+      },
+      {
+       "q": "3465 __ 3 UM + 14 C + 6 D + 5 U",
+       "q_hu": "3465 __ 3 ezres + 14 százas + 6 tízes + 5 egyes",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "<",
+       "id": "cu8_5b"
+      },
+      {
+       "q": "8472 __ 8 × 1000 + 0 × 100 + 7 × 10 + 1 × 1",
+       "q_hu": "8472 __ 8 × 1000 + 0 × 100 + 7 × 10 + 1 × 1",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 0,
+       "answer_hu": ">",
+       "id": "cu8_5c"
+      },
+      {
+       "q": "2001 __ 20 C + 1 U",
+       "q_hu": "2001 __ 20 százas + 1 egyes",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "=",
+       "id": "cu8_5d"
+      },
+      {
+       "q": "5025 __ 4 UM + 11 C",
+       "q_hu": "5025 __ 4 ezres + 11 százas",
+       "kind": "choice",
+       "options": [
+        {
+         "t": ">",
+         "hu": ">"
+        },
+        {
+         "t": "<",
+         "hu": "<"
+        },
+        {
+         "t": "=",
+         "hu": "="
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "<",
+       "id": "cu8_5e"
+      }
+     ]
+    },
+    {
+     "id": "cu8_6",
+     "n": "6",
+     "text": "Representa en la recta numérica estos números. Ordena los números representados de mayor a menor.",
+     "text_hu": "Jelöld be a számegyenesen ezeket a számokat. Utána rendezd őket a legnagyobbtól a legkisebbig.",
+     "items": [
+      {
+       "q": "Recta numérica de 1000 a 1900 (marcas cada 50). Coloca: 1100, 1725, 1850, 1250, 1450.",
+       "q_hu": "Számegyenes 1000-től 1900-ig (50-esével beosztva). Jelöld be: 1100, 1725, 1850, 1250, 1450.",
+       "kind": "open",
+       "answer": "1100 en la marca del 1100; 1250 entre 1200 y 1300; 1450 entre 1400 y 1500; 1725 entre 1700 y 1750; 1850 entre 1800 y 1900.",
+       "answer_hu": "1100 pont az 1100-nál; 1250 az 1200 és 1300 közepén; 1450 az 1400 és 1500 közepén; 1725 az 1700 és 1750 között; 1850 az 1800 és 1900 közepén.",
+       "id": "cu8_6a"
+      },
+      {
+       "q": "De mayor a menor (1100, 1725, 1850, 1250, 1450): 1.º",
+       "q_hu": "Legnagyobbtól (1100, 1725, 1850, 1250, 1450): 1.",
+       "kind": "num",
+       "answer": "1850",
+       "id": "cu8_6b"
+      },
+      {
+       "q": "De mayor a menor: 2.º",
+       "q_hu": "Legnagyobbtól: 2.",
+       "kind": "num",
+       "answer": "1725",
+       "id": "cu8_6c"
+      },
+      {
+       "q": "De mayor a menor: 3.º",
+       "q_hu": "Legnagyobbtól: 3.",
+       "kind": "num",
+       "answer": "1450",
+       "id": "cu8_6d"
+      },
+      {
+       "q": "De mayor a menor: 4.º",
+       "q_hu": "Legnagyobbtól: 4.",
+       "kind": "num",
+       "answer": "1250",
+       "id": "cu8_6e"
+      },
+      {
+       "q": "De mayor a menor: 5.º (el menor)",
+       "q_hu": "Legnagyobbtól: 5. (a legkisebb)",
+       "kind": "num",
+       "answer": "1100",
+       "id": "cu8_6f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu9",
+   "book": "cu",
+   "page": 9,
+   "unit": "u1",
+   "title": "Aproximación de números",
+   "title_hu": "Számok kerekítése",
+   "summary_hu": "Kerekítés tízesre és százasra: megnézzük, melyik kerek számhoz van közelebb a szám (pl. 6878 közelebb van 6880-hoz, 8530 közelebb van 8500-hoz). Kerekítés ezresre is.",
+   "words": [
+    {
+     "w": "la aproximación",
+     "hu": "kerekítés, közelítés"
+    },
+    {
+     "w": "aproximar",
+     "hu": "kerekíteni"
+    },
+    {
+     "w": "más cerca de",
+     "hu": "közelebb van ...-hoz"
+    },
+    {
+     "w": "más próximo",
+     "hu": "legközelebbi"
+    },
+    {
+     "w": "se encuentra entre",
+     "hu": "között van"
+    },
+    {
+     "w": "la opción correcta",
+     "hu": "a helyes válasz"
+    },
+    {
+     "w": "colorea",
+     "hu": "színezd ki"
+    },
+    {
+     "w": "rojo",
+     "hu": "piros"
+    },
+    {
+     "w": "azul",
+     "hu": "kék"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu9_1",
+     "n": "1",
+     "text": "Rodea la opción correcta.",
+     "text_hu": "Karikázd be a helyes választ.",
+     "items": [
+      {
+       "q": "8456 está más cerca de…",
+       "q_hu": "A(z) 8456 melyikhez van közelebb?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "8450",
+         "hu": "8450"
+        },
+        {
+         "t": "8460",
+         "hu": "8460"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_1a"
+      },
+      {
+       "q": "4123 está más cerca de…",
+       "q_hu": "A(z) 4123 melyikhez van közelebb?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4100",
+         "hu": "4100"
+        },
+        {
+         "t": "4200",
+         "hu": "4200"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_1b"
+      },
+      {
+       "q": "6783 está más cerca de…",
+       "q_hu": "A(z) 6783 melyikhez van közelebb?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6780",
+         "hu": "6780"
+        },
+        {
+         "t": "6790",
+         "hu": "6790"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_1c"
+      }
+     ]
+    },
+    {
+     "id": "cu9_2",
+     "n": "2",
+     "text": "Colorea la centena más próxima a cada número.",
+     "text_hu": "Színezd ki a számhoz legközelebbi kerek százast.",
+     "items": [
+      {
+       "q": "Centena más próxima a 1280: 1200 o 1300",
+       "q_hu": "Melyik kerek százas van legközelebb az 1280-hoz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "1200",
+         "hu": "1200"
+        },
+        {
+         "t": "1300",
+         "hu": "1300"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_2a"
+      },
+      {
+       "q": "Centena más próxima a 4030: 4000 o 4100",
+       "q_hu": "Melyik kerek százas van legközelebb a 4030-hoz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "4000",
+         "hu": "4000"
+        },
+        {
+         "t": "4100",
+         "hu": "4100"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_2b"
+      },
+      {
+       "q": "Centena más próxima a 3510: 3500 o 3600",
+       "q_hu": "Melyik kerek százas van legközelebb a 3510-hez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3500",
+         "hu": "3500"
+        },
+        {
+         "t": "3600",
+         "hu": "3600"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_2c"
+      },
+      {
+       "q": "Centena más próxima a 6460: 6400 o 6500",
+       "q_hu": "Melyik kerek százas van legközelebb a 6460-hoz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "6400",
+         "hu": "6400"
+        },
+        {
+         "t": "6500",
+         "hu": "6500"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_2d"
+      }
+     ]
+    },
+    {
+     "id": "cu9_3",
+     "n": "3",
+     "text": "Colorea de rojo los números que se aproximen a 3000 y de azul los que se aproximen a 5000.",
+     "text_hu": "Színezd pirosra azokat a számokat, amelyek 3000-re kerekednek, és kékre azokat, amelyek 5000-re.",
+     "items": [
+      {
+       "q": "4502 se aproxima a…",
+       "q_hu": "A(z) 4502 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_3a"
+      },
+      {
+       "q": "2647 se aproxima a…",
+       "q_hu": "A(z) 2647 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_3b"
+      },
+      {
+       "q": "3236 se aproxima a…",
+       "q_hu": "A(z) 3236 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_3c"
+      },
+      {
+       "q": "5478 se aproxima a…",
+       "q_hu": "A(z) 5478 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_3d"
+      },
+      {
+       "q": "3125 se aproxima a…",
+       "q_hu": "A(z) 3125 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_3e"
+      },
+      {
+       "q": "2946 se aproxima a…",
+       "q_hu": "A(z) 2946 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_3f"
+      },
+      {
+       "q": "3401 se aproxima a…",
+       "q_hu": "A(z) 3401 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_3g"
+      },
+      {
+       "q": "4580 se aproxima a…",
+       "q_hu": "A(z) 4580 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_3h"
+      },
+      {
+       "q": "2510 se aproxima a…",
+       "q_hu": "A(z) 2510 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 0,
+       "id": "cu9_3i"
+      },
+      {
+       "q": "5327 se aproxima a…",
+       "q_hu": "A(z) 5327 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_3j"
+      },
+      {
+       "q": "4712 se aproxima a…",
+       "q_hu": "A(z) 4712 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_3k"
+      },
+      {
+       "q": "5218 se aproxima a…",
+       "q_hu": "A(z) 5218 mire kerekedik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "3000 (rojo)",
+         "hu": "3000 (piros)"
+        },
+        {
+         "t": "5000 (azul)",
+         "hu": "5000 (kék)"
+        }
+       ],
+       "answer": 1,
+       "id": "cu9_3l"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu10",
+   "book": "cu",
+   "page": 10,
+   "unit": "u1",
+   "title": "Aproximación de números",
+   "title_hu": "Számok kerekítése",
+   "summary_hu": "Kerekítés ezresre: a százasok számjegyét nézzük. Ha kisebb, mint 5, lefelé kerekítünk (6429 → 6000), ha 5 vagy több, felfelé. Spanyol hegycsúcsok magasságát kell kerekíteni.",
+   "words": [
+    {
+     "w": "el redondeo",
+     "hu": "kerekítés"
+    },
+    {
+     "w": "por redondeo",
+     "hu": "kerekítéssel"
+    },
+    {
+     "w": "la altura",
+     "hu": "magasság"
+    },
+    {
+     "w": "el pico",
+     "hu": "hegycsúcs"
+    },
+    {
+     "w": "situado",
+     "hu": "található"
+    },
+    {
+     "w": "el metro (m)",
+     "hu": "méter"
+    },
+    {
+     "w": "la unidad de millar",
+     "hu": "ezres"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu10_4",
+     "n": "4",
+     "text": "Aproxima por redondeo a la unidad de millar la altura de estos picos situados en España.",
+     "text_hu": "Kerekítsd ezresre ezeknek a spanyolországi hegycsúcsoknak a magasságát.",
+     "items": [
+      {
+       "q": "Teide: 3718 m → ¿? m",
+       "q_hu": "Teide: 3718 m → ? m",
+       "kind": "num",
+       "answer": "4000",
+       "id": "cu10_4a"
+      },
+      {
+       "q": "Aneto: 3404 m → ¿? m",
+       "q_hu": "Aneto: 3404 m → ? m",
+       "kind": "num",
+       "answer": "3000",
+       "id": "cu10_4b"
+      },
+      {
+       "q": "Mulhacén: 3479 m → ¿? m",
+       "q_hu": "Mulhacén: 3479 m → ? m",
+       "kind": "num",
+       "answer": "3000",
+       "id": "cu10_4c"
+      },
+      {
+       "q": "Monte Perdido: 3355 m → ¿? m",
+       "q_hu": "Monte Perdido: 3355 m → ? m",
+       "kind": "num",
+       "answer": "3000",
+       "id": "cu10_4d"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu11",
+   "book": "cu",
+   "page": 11,
+   "unit": "u1",
+   "title": "Suma",
+   "title_hu": "Összeadás",
+   "summary_hu": "Írásbeli összeadás négyjegyű számokkal: egyest egyessel, tízest tízessel, százast százassal, ezrest ezressel adunk össze, és ha 10 vagy több jön ki, átviszünk (maradék) a következő oszlopba.",
+   "words": [
+    {
+     "w": "la suma",
+     "hu": "összeadás, összeg"
+    },
+    {
+     "w": "sumar",
+     "hu": "összeadni"
+    },
+    {
+     "w": "se suman",
+     "hu": "összeadjuk"
+    },
+    {
+     "w": "completa",
+     "hu": "egészítsd ki"
+    },
+    {
+     "w": "coloca",
+     "hu": "helyezd el, írd"
+    },
+    {
+     "w": "en vertical",
+     "hu": "egymás alá (írásban)"
+    },
+    {
+     "w": "calcula",
+     "hu": "számold ki"
+    },
+    {
+     "w": "varios números",
+     "hu": "több szám"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu11_1",
+     "n": "1",
+     "text": "Completa estas sumas.",
+     "text_hu": "Egészítsd ki az összeadásokat (írd be a hiányzó számjegyeket). Írd le az egész összeadást.",
+     "items": [
+      {
+       "q": "Completa: 34_8 + 3_14 = _69_",
+       "q_hu": "Egészítsd ki: 34_8 + 3_14 = _69_",
+       "kind": "type",
+       "answer": "3478 + 3214 = 6692",
+       "alts": [
+        "3478+3214=6692"
+       ],
+       "id": "cu11_1a"
+      },
+      {
+       "q": "Completa: _00_ + 30_9 = 5_16",
+       "q_hu": "Egészítsd ki: _00_ + 30_9 = 5_16",
+       "kind": "type",
+       "answer": "2007 + 3009 = 5016",
+       "alts": [
+        "2007+3009=5016"
+       ],
+       "id": "cu11_1b"
+      },
+      {
+       "q": "Completa: 5_10 + _80_ = 88_1",
+       "q_hu": "Egészítsd ki: 5_10 + _80_ = 88_1",
+       "kind": "type",
+       "answer": "5010 + 3801 = 8811",
+       "alts": [
+        "5010+3801=8811"
+       ],
+       "id": "cu11_1c"
+      },
+      {
+       "q": "Completa: 70_5 + _94_ = 9_50",
+       "q_hu": "Egészítsd ki: 70_5 + _94_ = 9_50",
+       "kind": "type",
+       "answer": "7005 + 2945 = 9950",
+       "alts": [
+        "7005+2945=9950"
+       ],
+       "id": "cu11_1d"
+      }
+     ]
+    },
+    {
+     "id": "cu11_2",
+     "n": "2",
+     "text": "Coloca estas sumas en vertical y calcúlalas.",
+     "text_hu": "Írd egymás alá és számold ki.",
+     "items": [
+      {
+       "q": "6125 + 2246 =",
+       "q_hu": "6125 + 2246 =",
+       "kind": "num",
+       "answer": "8371",
+       "id": "cu11_2a"
+      },
+      {
+       "q": "5249 + 3132 =",
+       "q_hu": "5249 + 3132 =",
+       "kind": "num",
+       "answer": "8381",
+       "id": "cu11_2b"
+      },
+      {
+       "q": "3698 + 5693 =",
+       "q_hu": "3698 + 5693 =",
+       "kind": "num",
+       "answer": "9391",
+       "id": "cu11_2c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu12",
+   "book": "cu",
+   "page": 12,
+   "unit": "u1",
+   "title": "Suma",
+   "title_hu": "Összeadás",
+   "summary_hu": "Összeadás felbontással (ezresek, százasok, tízesek, egyesek külön), írásbeli összeadás, és egy szöveges feladat matricákról.",
+   "words": [
+    {
+     "w": "por descomposición",
+     "hu": "felbontással"
+    },
+    {
+     "w": "el resultado",
+     "hu": "eredmény"
+    },
+    {
+     "w": "el cromo",
+     "hu": "matrica, gyűjtőkártya"
+    },
+    {
+     "w": "el hermano",
+     "hu": "fiútestvér, testvér"
+    },
+    {
+     "w": "más que",
+     "hu": "többet, mint"
+    },
+    {
+     "w": "entre los dos",
+     "hu": "ketten együtt"
+    },
+    {
+     "w": "tiene",
+     "hu": "van neki"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu12_3",
+     "n": "3",
+     "text": "Calcula estas sumas por descomposición.",
+     "text_hu": "Számold ki az összeadásokat felbontással.",
+     "items": [
+      {
+       "q": "1334 + 4781 =",
+       "q_hu": "1334 + 4781 =",
+       "kind": "num",
+       "answer": "6115",
+       "id": "cu12_3a"
+      },
+      {
+       "q": "3426 + 6130 =",
+       "q_hu": "3426 + 6130 =",
+       "kind": "num",
+       "answer": "9556",
+       "id": "cu12_3b"
+      },
+      {
+       "q": "4872 + 3123 =",
+       "q_hu": "4872 + 3123 =",
+       "kind": "num",
+       "answer": "7995",
+       "id": "cu12_3c"
+      },
+      {
+       "q": "7127 + 1245 =",
+       "q_hu": "7127 + 1245 =",
+       "kind": "num",
+       "answer": "8372",
+       "id": "cu12_3d"
+      }
+     ]
+    },
+    {
+     "id": "cu12_4",
+     "n": "4",
+     "text": "Calcula. Colorea el resultado de estas sumas.",
+     "text_hu": "Számold ki. Utána színezd ki az eredményeket.",
+     "items": [
+      {
+       "q": "1543 + 2925 =",
+       "q_hu": "1543 + 2925 =",
+       "kind": "num",
+       "answer": "4468",
+       "id": "cu12_4a"
+      },
+      {
+       "q": "2036 + 4378 =",
+       "q_hu": "2036 + 4378 =",
+       "kind": "num",
+       "answer": "6414",
+       "id": "cu12_4b"
+      },
+      {
+       "q": "6210 + 2283 =",
+       "q_hu": "6210 + 2283 =",
+       "kind": "num",
+       "answer": "8493",
+       "id": "cu12_4c"
+      },
+      {
+       "q": "¿Es 3468 el resultado de una de estas sumas?",
+       "q_hu": "A(z) 3468 valamelyik összeadás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "id": "cu12_4d"
+      },
+      {
+       "q": "¿Es 4468 el resultado de una de estas sumas?",
+       "q_hu": "A(z) 4468 valamelyik összeadás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "id": "cu12_4e"
+      },
+      {
+       "q": "¿Es 6414 el resultado de una de estas sumas?",
+       "q_hu": "A(z) 6414 valamelyik összeadás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "id": "cu12_4f"
+      },
+      {
+       "q": "¿Es 6314 el resultado de una de estas sumas?",
+       "q_hu": "A(z) 6314 valamelyik összeadás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "id": "cu12_4g"
+      },
+      {
+       "q": "¿Es 8493 el resultado de una de estas sumas?",
+       "q_hu": "A(z) 8493 valamelyik összeadás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "id": "cu12_4h"
+      },
+      {
+       "q": "¿Es 8553 el resultado de una de estas sumas?",
+       "q_hu": "A(z) 8553 valamelyik összeadás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "id": "cu12_4i"
+      }
+     ]
+    },
+    {
+     "id": "cu12_5",
+     "n": "5",
+     "text": "María tiene 250 cromos del juego de Magia y su hermano Pedro tiene 908 cromos más que ella.",
+     "text_hu": "Máriának 250 Magia-kártyája van, a testvérének, Pedrónak 908-cal több.",
+     "items": [
+      {
+       "q": "¿Cuántos cromos tiene Pedro? (250 + 908)",
+       "q_hu": "Hány kártyája van Pedrónak?",
+       "kind": "num",
+       "answer": "1158",
+       "id": "cu12_5a"
+      },
+      {
+       "q": "¿Cuántos cromos tienen entre los dos?",
+       "q_hu": "Hány kártyájuk van kettejüknek együtt?",
+       "kind": "num",
+       "answer": "1408",
+       "id": "cu12_5b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu13",
+   "book": "cu",
+   "page": 13,
+   "unit": "u1",
+   "title": "Resta",
+   "title_hu": "Kivonás",
+   "summary_hu": "Írásbeli kivonás négyjegyű számokkal: egyest egyesből, tízest tízesből stb. vonunk ki. Ha a felső számjegy kisebb, egy tízest (százast, ezrest) „kölcsönkérünk” a szomszédtól.",
+   "words": [
+    {
+     "w": "la resta",
+     "hu": "kivonás"
+    },
+    {
+     "w": "restar",
+     "hu": "kivonni"
+    },
+    {
+     "w": "se restan",
+     "hu": "kivonjuk"
+    },
+    {
+     "w": "calcula",
+     "hu": "számold ki"
+    },
+    {
+     "w": "coloca en vertical",
+     "hu": "írd egymás alá"
+    },
+    {
+     "w": "calcúlalas",
+     "hu": "számold ki őket"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu13_1",
+     "n": "1",
+     "text": "Calcula estas restas.",
+     "text_hu": "Számold ki a kivonásokat.",
+     "items": [
+      {
+       "q": "6587 − 2105 =",
+       "q_hu": "6587 − 2105 =",
+       "kind": "num",
+       "answer": "4482",
+       "id": "cu13_1a"
+      },
+      {
+       "q": "5478 − 2417 =",
+       "q_hu": "5478 − 2417 =",
+       "kind": "num",
+       "answer": "3061",
+       "id": "cu13_1b"
+      },
+      {
+       "q": "3425 − 2312 =",
+       "q_hu": "3425 − 2312 =",
+       "kind": "num",
+       "answer": "1113",
+       "id": "cu13_1c"
+      },
+      {
+       "q": "8025 − 5476 =",
+       "q_hu": "8025 − 5476 =",
+       "kind": "num",
+       "answer": "2549",
+       "id": "cu13_1d"
+      }
+     ]
+    },
+    {
+     "id": "cu13_2",
+     "n": "2",
+     "text": "Coloca estas restas en vertical y calcúlalas.",
+     "text_hu": "Írd egymás alá és számold ki.",
+     "items": [
+      {
+       "q": "8457 − 3214 =",
+       "q_hu": "8457 − 3214 =",
+       "kind": "num",
+       "answer": "5243",
+       "id": "cu13_2a"
+      },
+      {
+       "q": "6789 − 1258 =",
+       "q_hu": "6789 − 1258 =",
+       "kind": "num",
+       "answer": "5531",
+       "id": "cu13_2b"
+      },
+      {
+       "q": "5397 − 1456 =",
+       "q_hu": "5397 − 1456 =",
+       "kind": "num",
+       "answer": "3941",
+       "id": "cu13_2c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu14",
+   "book": "cu",
+   "page": 14,
+   "unit": "u1",
+   "title": "Resta",
+   "title_hu": "Kivonás",
+   "summary_hu": "Kivonás felbontással és írásban, az eredmények kiszínezése, valamint egy szöveges feladat a pékről, aki kenyereket árul.",
+   "words": [
+    {
+     "w": "por descomposición",
+     "hu": "felbontással"
+    },
+    {
+     "w": "la panadera",
+     "hu": "pék (nő)"
+    },
+    {
+     "w": "hornear",
+     "hu": "sütni"
+    },
+    {
+     "w": "el pan / los panes",
+     "hu": "kenyér / kenyerek"
+    },
+    {
+     "w": "vender",
+     "hu": "eladni"
+    },
+    {
+     "w": "ha vendido",
+     "hu": "eladott"
+    },
+    {
+     "w": "antes del mediodía",
+     "hu": "délelőtt (dél előtt)"
+    },
+    {
+     "w": "por la tarde",
+     "hu": "délután"
+    },
+    {
+     "w": "le queda",
+     "hu": "marad neki"
+    },
+    {
+     "w": "en total",
+     "hu": "összesen"
+    },
+    {
+     "w": "responde",
+     "hu": "válaszolj"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu14_3",
+     "n": "3",
+     "text": "Calcula estas restas por descomposición.",
+     "text_hu": "Számold ki a kivonásokat felbontással.",
+     "items": [
+      {
+       "q": "3654 − 1789 =",
+       "q_hu": "3654 − 1789 =",
+       "kind": "num",
+       "answer": "1865",
+       "id": "cu14_3a"
+      },
+      {
+       "q": "8341 − 2159 =",
+       "q_hu": "8341 − 2159 =",
+       "kind": "num",
+       "answer": "6182",
+       "id": "cu14_3b"
+      },
+      {
+       "q": "4658 − 2547 =",
+       "q_hu": "4658 − 2547 =",
+       "kind": "num",
+       "answer": "2111",
+       "id": "cu14_3c"
+      },
+      {
+       "q": "7654 − 3157 =",
+       "q_hu": "7654 − 3157 =",
+       "kind": "num",
+       "answer": "4497",
+       "id": "cu14_3d"
+      }
+     ]
+    },
+    {
+     "id": "cu14_4",
+     "n": "4",
+     "text": "Calcula. Colorea el resultado de estas restas.",
+     "text_hu": "Számold ki. Utána színezd ki az eredményeket.",
+     "items": [
+      {
+       "q": "4852 − 2542 =",
+       "q_hu": "4852 − 2542 =",
+       "kind": "num",
+       "answer": "2310",
+       "id": "cu14_4a"
+      },
+      {
+       "q": "4238 − 4125 =",
+       "q_hu": "4238 − 4125 =",
+       "kind": "num",
+       "answer": "113",
+       "id": "cu14_4b"
+      },
+      {
+       "q": "3258 − 2014 =",
+       "q_hu": "3258 − 2014 =",
+       "kind": "num",
+       "answer": "1244",
+       "id": "cu14_4c"
+      },
+      {
+       "q": "¿Es 2310 el resultado de una de estas restas?",
+       "q_hu": "A(z) 2310 valamelyik kivonás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "id": "cu14_4d"
+      },
+      {
+       "q": "¿Es 2130 el resultado de una de estas restas?",
+       "q_hu": "A(z) 2130 valamelyik kivonás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "id": "cu14_4e"
+      },
+      {
+       "q": "¿Es 1113 el resultado de una de estas restas?",
+       "q_hu": "A(z) 1113 valamelyik kivonás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "id": "cu14_4f"
+      },
+      {
+       "q": "¿Es 113 el resultado de una de estas restas?",
+       "q_hu": "A(z) 113 valamelyik kivonás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "id": "cu14_4g"
+      },
+      {
+       "q": "¿Es 1244 el resultado de una de estas restas?",
+       "q_hu": "A(z) 1244 valamelyik kivonás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "id": "cu14_4h"
+      },
+      {
+       "q": "¿Es 2144 el resultado de una de estas restas?",
+       "q_hu": "A(z) 2144 valamelyik kivonás eredménye?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "id": "cu14_4i"
+      }
+     ]
+    },
+    {
+     "id": "cu14_5",
+     "n": "5",
+     "text": "Iris es panadera y ha horneado hoy 500 panes para venderlos. Ha vendido 230 antes del mediodía y 150 por la tarde. Responde a las preguntas.",
+     "text_hu": "Iris pék, ma 500 kenyeret sütött eladásra. Délelőtt 230-at adott el, délután 150-et. Válaszolj a kérdésekre.",
+     "items": [
+      {
+       "q": "¿Cuántos panes ha vendido hoy en total? (230 + 150)",
+       "q_hu": "Hány kenyeret adott el ma összesen?",
+       "kind": "num",
+       "answer": "380",
+       "id": "cu14_5a"
+      },
+      {
+       "q": "¿Cuántos panes le quedan por vender? (500 − 380)",
+       "q_hu": "Hány kenyér maradt még eladatlanul?",
+       "kind": "num",
+       "answer": "120",
+       "id": "cu14_5b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu15",
+   "book": "cu",
+   "page": 15,
+   "unit": "u1",
+   "title": "Propiedades de la suma y la resta",
+   "title_hu": "Az összeadás és kivonás tulajdonságai",
+   "summary_hu": "Felcserélhetőség (conmutativa): a tagok sorrendje felcserélhető, az összeg nem változik. Csoportosíthatóság (asociativa): mindegy, melyik két tagot adjuk össze először. Ezek csak az összeadásra igazak, a kivonásra nem.",
+   "words": [
+    {
+     "w": "la propiedad",
+     "hu": "tulajdonság"
+    },
+    {
+     "w": "conmutativa",
+     "hu": "felcserélhetőség"
+    },
+    {
+     "w": "asociativa",
+     "hu": "csoportosíthatóság"
+    },
+    {
+     "w": "se aplica",
+     "hu": "érvényes, alkalmazzuk"
+    },
+    {
+     "w": "en cada caso",
+     "hu": "minden esetben"
+    },
+    {
+     "w": "has aplicado",
+     "hu": "alkalmaztál"
+    },
+    {
+     "w": "solo",
+     "hu": "csak"
+    },
+    {
+     "w": "diferente",
+     "hu": "különböző"
+    },
+    {
+     "w": "el paréntesis",
+     "hu": "zárójel"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu15_1",
+     "n": "1",
+     "text": "Indica qué propiedad de la suma se aplica en cada caso.",
+     "text_hu": "Jelöld (kösd össze), melyik tulajdonságot használjuk.",
+     "items": [
+      {
+       "q": "8020 + 545 = 545 + 8020",
+       "q_hu": "8020 + 545 = 545 + 8020",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 0,
+       "id": "cu15_1a"
+      },
+      {
+       "q": "(6720 + 3507) + 10 = 6720 + (3507 + 10)",
+       "q_hu": "(6720 + 3507) + 10 = 6720 + (3507 + 10)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 1,
+       "id": "cu15_1b"
+      },
+      {
+       "q": "6312 + 4577 = 4577 + 6312",
+       "q_hu": "6312 + 4577 = 4577 + 6312",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 0,
+       "id": "cu15_1c"
+      }
+     ]
+    },
+    {
+     "id": "cu15_2",
+     "n": "2",
+     "text": "Calcula estas sumas. ¿Qué propiedad has aplicado en cada caso?",
+     "text_hu": "Számold ki az összegeket. Melyik tulajdonságot használtad?",
+     "items": [
+      {
+       "q": "1302 + ___ = 787 + 1302. ¿Qué número falta?",
+       "q_hu": "1302 + ___ = 787 + 1302. Melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "787",
+       "id": "cu15_2a"
+      },
+      {
+       "q": "1302 + 787 =",
+       "q_hu": "1302 + 787 =",
+       "kind": "num",
+       "answer": "2089",
+       "id": "cu15_2b"
+      },
+      {
+       "q": "(3521 + 2843) + 2647 = 3521 + (___ + 2647). ¿Qué número falta?",
+       "q_hu": "(3521 + 2843) + 2647 = 3521 + (___ + 2647). Melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "2843",
+       "id": "cu15_2c"
+      },
+      {
+       "q": "(3521 + 2843) + 2647 =",
+       "q_hu": "(3521 + 2843) + 2647 =",
+       "kind": "num",
+       "answer": "9011",
+       "id": "cu15_2d"
+      },
+      {
+       "q": "___ + ___ = 1356 + 2145. Escribe la suma que falta.",
+       "q_hu": "___ + ___ = 1356 + 2145. Írd be a hiányzó összeadást.",
+       "kind": "type",
+       "answer": "2145 + 1356",
+       "alts": [
+        "2145+1356"
+       ],
+       "id": "cu15_2e"
+      },
+      {
+       "q": "1356 + 2145 =",
+       "q_hu": "1356 + 2145 =",
+       "kind": "num",
+       "answer": "3501",
+       "id": "cu15_2f"
+      },
+      {
+       "q": "5364 + (1001 + 964) = (___ + 1001) + 964. ¿Qué número falta?",
+       "q_hu": "5364 + (1001 + 964) = (___ + 1001) + 964. Melyik szám hiányzik?",
+       "kind": "num",
+       "answer": "5364",
+       "id": "cu15_2g"
+      },
+      {
+       "q": "5364 + (1001 + 964) =",
+       "q_hu": "5364 + (1001 + 964) =",
+       "kind": "num",
+       "answer": "7329",
+       "id": "cu15_2h"
+      },
+      {
+       "q": "1302 + 787 = 787 + 1302: ¿qué propiedad?",
+       "q_hu": "1302 + 787 = 787 + 1302: melyik tulajdonság?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 0,
+       "id": "cu15_2i"
+      },
+      {
+       "q": "(3521 + 2843) + 2647 = 3521 + (2843 + 2647): ¿qué propiedad?",
+       "q_hu": "(3521 + 2843) + 2647 = 3521 + (2843 + 2647): melyik tulajdonság?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 1,
+       "id": "cu15_2j"
+      },
+      {
+       "q": "2145 + 1356 = 1356 + 2145: ¿qué propiedad?",
+       "q_hu": "2145 + 1356 = 1356 + 2145: melyik tulajdonság?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 0,
+       "id": "cu15_2k"
+      },
+      {
+       "q": "5364 + (1001 + 964) = (5364 + 1001) + 964: ¿qué propiedad?",
+       "q_hu": "5364 + (1001 + 964) = (5364 + 1001) + 964: melyik tulajdonság?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "conmutativa",
+         "hu": "felcserélhetőség"
+        },
+        {
+         "t": "asociativa",
+         "hu": "csoportosíthatóság"
+        }
+       ],
+       "answer": 1,
+       "id": "cu15_2l"
+      }
+     ]
+    },
+    {
+     "id": "cu15_3",
+     "n": "3",
+     "text": "Escribe V si es verdadero y F si es falso.",
+     "text_hu": "Írj I-t, ha igaz, és H-t, ha hamis.",
+     "items": [
+      {
+       "q": "La propiedad conmutativa se aplica solo a la resta de números.",
+       "q_hu": "A felcserélhetőség csak a kivonásra érvényes.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu15_3a"
+      },
+      {
+       "q": "La propiedad asociativa se puede aplicar a la resta de números.",
+       "q_hu": "A csoportosíthatóság alkalmazható a kivonásra is.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu15_3b"
+      },
+      {
+       "q": "El resultado de 500 + 845 es diferente al de 845 + 500.",
+       "q_hu": "Az 500 + 845 eredménye más, mint a 845 + 500-é.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu15_3c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu16",
+   "book": "cu",
+   "page": 16,
+   "unit": "u1",
+   "title": "Prueba de la resta",
+   "title_hu": "A kivonás ellenőrzése",
+   "summary_hu": "A kivonás tagjai: kisebbítendő (minuendo) − kivonandó (sustraendo) = különbség (diferencia). Ellenőrzés: különbség + kivonandó = kisebbítendő.",
+   "words": [
+    {
+     "w": "la prueba",
+     "hu": "ellenőrzés, próba"
+    },
+    {
+     "w": "el minuendo",
+     "hu": "kisebbítendő"
+    },
+    {
+     "w": "el sustraendo",
+     "hu": "kivonandó"
+    },
+    {
+     "w": "la diferencia",
+     "hu": "különbség"
+    },
+    {
+     "w": "los términos",
+     "hu": "tagok"
+    },
+    {
+     "w": "identifica",
+     "hu": "nevezd meg"
+    },
+    {
+     "w": "comprueba",
+     "hu": "ellenőrizd"
+    },
+    {
+     "w": "la biblioteca",
+     "hu": "könyvtár"
+    },
+    {
+     "w": "el libro",
+     "hu": "könyv"
+    },
+    {
+     "w": "prestar",
+     "hu": "kölcsönadni"
+    },
+    {
+     "w": "quedan",
+     "hu": "maradnak"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu16_5",
+     "n": "5",
+     "text": "Identifica los términos de la resta y comprueba el resultado que has obtenido.",
+     "text_hu": "Nevezd meg a kivonás tagjait, és ellenőrizd az eredményt.",
+     "items": [
+      {
+       "q": "3478 − 1540 = 1938. ¿Qué es 3478?",
+       "q_hu": "3478 − 1540 = 1938. Mi a 3478?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "minuendo",
+         "hu": "kisebbítendő"
+        },
+        {
+         "t": "sustraendo",
+         "hu": "kivonandó"
+        },
+        {
+         "t": "diferencia",
+         "hu": "különbség"
+        }
+       ],
+       "answer": 0,
+       "id": "cu16_5a"
+      },
+      {
+       "q": "3478 − 1540 = 1938. ¿Qué es 1540?",
+       "q_hu": "3478 − 1540 = 1938. Mi az 1540?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "minuendo",
+         "hu": "kisebbítendő"
+        },
+        {
+         "t": "sustraendo",
+         "hu": "kivonandó"
+        },
+        {
+         "t": "diferencia",
+         "hu": "különbség"
+        }
+       ],
+       "answer": 1,
+       "id": "cu16_5b"
+      },
+      {
+       "q": "3478 − 1540 = 1938. ¿Qué es 1938?",
+       "q_hu": "3478 − 1540 = 1938. Mi az 1938?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "minuendo",
+         "hu": "kisebbítendő"
+        },
+        {
+         "t": "sustraendo",
+         "hu": "kivonandó"
+        },
+        {
+         "t": "diferencia",
+         "hu": "különbség"
+        }
+       ],
+       "answer": 2,
+       "id": "cu16_5c"
+      },
+      {
+       "q": "Prueba: 1938 + 1540 =",
+       "q_hu": "Ellenőrzés: 1938 + 1540 =",
+       "kind": "num",
+       "answer": "3478",
+       "id": "cu16_5d"
+      }
+     ]
+    },
+    {
+     "id": "cu16_6",
+     "n": "6",
+     "text": "Completa la tabla con los términos que faltan y realiza la prueba.",
+     "text_hu": "Töltsd ki a táblázatot a hiányzó tagokkal, és végezd el az ellenőrzést.",
+     "items": [
+      {
+       "q": "Minuendo 450, sustraendo 120. ¿Diferencia?",
+       "q_hu": "Kisebbítendő 450, kivonandó 120. Mennyi a különbség?",
+       "kind": "num",
+       "answer": "330",
+       "id": "cu16_6a"
+      },
+      {
+       "q": "Minuendo 780, diferencia 250. ¿Sustraendo?",
+       "q_hu": "Kisebbítendő 780, különbség 250. Mennyi a kivonandó?",
+       "kind": "num",
+       "answer": "530",
+       "id": "cu16_6b"
+      },
+      {
+       "q": "Sustraendo 300, diferencia 400. ¿Minuendo?",
+       "q_hu": "Kivonandó 300, különbség 400. Mennyi a kisebbítendő?",
+       "kind": "num",
+       "answer": "700",
+       "id": "cu16_6c"
+      },
+      {
+       "q": "Realiza la prueba de las tres restas.",
+       "q_hu": "Végezd el a három kivonás ellenőrzését.",
+       "kind": "open",
+       "answer": "330 + 120 = 450; 250 + 530 = 780; 400 + 300 = 700",
+       "answer_hu": "330 + 120 = 450; 250 + 530 = 780; 400 + 300 = 700",
+       "id": "cu16_6d"
+      }
+     ]
+    },
+    {
+     "id": "cu16_7",
+     "n": "7",
+     "text": "En la biblioteca del colegio había 8345 libros. Si se han prestado 6820 libros, calcula cuántos libros quedan en la biblioteca.",
+     "text_hu": "Az iskolai könyvtárban 8345 könyv volt. 6820 könyvet kikölcsönöztek. Számold ki, hány könyv maradt a könyvtárban.",
+     "items": [
+      {
+       "q": "8345 − 6820 = ¿Cuántos libros quedan?",
+       "q_hu": "8345 − 6820 = Hány könyv maradt?",
+       "kind": "num",
+       "answer": "1525",
+       "id": "cu16_7a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu17",
+   "book": "cu",
+   "page": 17,
+   "unit": "u2",
+   "title": "Multiplicación",
+   "title_hu": "Szorzás",
+   "summary_hu": "A szorzás egyenlő számok összeadása: 3 + 3 = 6 ugyanaz, mint 2 × 3 = 6. A szorzás tagjai a tényezők (factores), az eredmény a szorzat (producto).",
+   "words": [
+    {
+     "w": "la multiplicación",
+     "hu": "szorzás"
+    },
+    {
+     "w": "multiplicar",
+     "hu": "szorozni"
+    },
+    {
+     "w": "el factor / los factores",
+     "hu": "tényező / tényezők"
+    },
+    {
+     "w": "el producto",
+     "hu": "szorzat"
+    },
+    {
+     "w": "la suma de números iguales",
+     "hu": "egyenlő számok összeadása"
+    },
+    {
+     "w": "el peluche",
+     "hu": "plüssállat"
+    },
+    {
+     "w": "expresa",
+     "hu": "írd fel"
+    },
+    {
+     "w": "como suma",
+     "hu": "összeadásként"
+    },
+    {
+     "w": "como multiplicación",
+     "hu": "szorzásként"
+    },
+    {
+     "w": "¿cuántos?",
+     "hu": "hány?"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu17_1",
+     "n": "1",
+     "text": "¿Cuántos peluches hay? Expresa la operación como suma y como multiplicación.",
+     "text_hu": "Hány plüssállat van? Írd fel összeadásként és szorzásként is.",
+     "items": [
+      {
+       "q": "En la imagen hay 4 grupos de 3 peluches. Escríbelo como suma.",
+       "q_hu": "A képen 4 csoport van, mindegyikben 3 plüssállat. Írd fel összeadásként.",
+       "kind": "type",
+       "answer": "3 + 3 + 3 + 3",
+       "alts": [
+        "3+3+3+3",
+        "3 + 3 + 3 + 3 = 12",
+        "3+3+3+3=12"
+       ],
+       "id": "cu17_1a"
+      },
+      {
+       "q": "Escríbelo como multiplicación (4 grupos de 3).",
+       "q_hu": "Írd fel szorzásként (4 csoport, 3-asával).",
+       "kind": "type",
+       "answer": "4 × 3",
+       "alts": [
+        "4x3",
+        "4 x 3",
+        "4×3",
+        "3 × 4",
+        "3x4",
+        "3 x 4"
+       ],
+       "id": "cu17_1b"
+      },
+      {
+       "q": "¿Cuántos peluches hay en total?",
+       "q_hu": "Hány plüssállat van összesen?",
+       "kind": "num",
+       "answer": "12",
+       "id": "cu17_1c"
+      }
+     ]
+    },
+    {
+     "id": "cu17_2",
+     "n": "2",
+     "text": "Identifica los términos de esta multiplicación y escribe factor y producto donde corresponda.",
+     "text_hu": "Nevezd meg a szorzás tagjait: írd oda, hogy tényező (factor) vagy szorzat (producto).",
+     "items": [
+      {
+       "q": "6 × 7 = 42 → 6 es…",
+       "q_hu": "6 × 7 = 42 → a 6 a …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "factor",
+         "hu": "tényező"
+        },
+        {
+         "t": "producto",
+         "hu": "szorzat"
+        }
+       ],
+       "answer": 0,
+       "id": "cu17_2a"
+      },
+      {
+       "q": "6 × 7 = 42 → 7 es…",
+       "q_hu": "6 × 7 = 42 → a 7 a …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "factor",
+         "hu": "tényező"
+        },
+        {
+         "t": "producto",
+         "hu": "szorzat"
+        }
+       ],
+       "answer": 0,
+       "id": "cu17_2b"
+      },
+      {
+       "q": "6 × 7 = 42 → 42 es…",
+       "q_hu": "6 × 7 = 42 → a 42 a …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "factor",
+         "hu": "tényező"
+        },
+        {
+         "t": "producto",
+         "hu": "szorzat"
+        }
+       ],
+       "answer": 1,
+       "id": "cu17_2c"
+      }
+     ]
+    },
+    {
+     "id": "cu17_3",
+     "n": "3",
+     "text": "Expresa estas multiplicaciones como sumas y escribe su resultado.",
+     "text_hu": "Írd fel a szorzásokat összeadásként, és írd le az eredményt.",
+     "items": [
+      {
+       "q": "5 × 9 como suma",
+       "q_hu": "5 × 9 összeadásként",
+       "kind": "type",
+       "answer": "9 + 9 + 9 + 9 + 9",
+       "alts": [
+        "9+9+9+9+9",
+        "5+5+5+5+5+5+5+5+5",
+        "5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5"
+       ],
+       "id": "cu17_3a"
+      },
+      {
+       "q": "5 × 9 =",
+       "q_hu": "5 × 9 =",
+       "kind": "num",
+       "answer": "45",
+       "id": "cu17_3b"
+      },
+      {
+       "q": "6 × 4 como suma",
+       "q_hu": "6 × 4 összeadásként",
+       "kind": "type",
+       "answer": "4 + 4 + 4 + 4 + 4 + 4",
+       "alts": [
+        "4+4+4+4+4+4",
+        "6+6+6+6",
+        "6 + 6 + 6 + 6"
+       ],
+       "id": "cu17_3c"
+      },
+      {
+       "q": "6 × 4 =",
+       "q_hu": "6 × 4 =",
+       "kind": "num",
+       "answer": "24",
+       "id": "cu17_3d"
+      },
+      {
+       "q": "4 × 10 como suma",
+       "q_hu": "4 × 10 összeadásként",
+       "kind": "type",
+       "answer": "10 + 10 + 10 + 10",
+       "alts": [
+        "10+10+10+10",
+        "4+4+4+4+4+4+4+4+4+4"
+       ],
+       "id": "cu17_3e"
+      },
+      {
+       "q": "4 × 10 =",
+       "q_hu": "4 × 10 =",
+       "kind": "num",
+       "answer": "40",
+       "id": "cu17_3f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu18",
+   "book": "cu",
+   "page": 18,
+   "unit": "u2",
+   "title": "Multiplicación",
+   "title_hu": "Szorzás",
+   "summary_hu": "Összeadások párosítása a megfelelő szorzással, igaz–hamis állítások a szorzásról, és két egyszerű szöveges feladat (dobozok lampionokkal, almák a gyerekeknek).",
+   "words": [
+    {
+     "w": "relaciona",
+     "hu": "kösd össze"
+    },
+    {
+     "w": "correspondiente",
+     "hu": "megfelelő"
+    },
+    {
+     "w": "la suma repetida",
+     "hu": "ismételt összeadás"
+    },
+    {
+     "w": "el farolillo",
+     "hu": "lampion"
+    },
+    {
+     "w": "la caja",
+     "hu": "doboz"
+    },
+    {
+     "w": "dentro de",
+     "hu": "belsejében, -ban/-ben"
+    },
+    {
+     "w": "colgar",
+     "hu": "felakasztani"
+    },
+    {
+     "w": "la caseta",
+     "hu": "sátor, bódé"
+    },
+    {
+     "w": "la feria",
+     "hu": "vásár, ünnepi vásár"
+    },
+    {
+     "w": "la manzana",
+     "hu": "alma"
+    },
+    {
+     "w": "entregar",
+     "hu": "odaadni"
+    },
+    {
+     "w": "el hijo / los hijos",
+     "hu": "fia / gyerekei"
+    },
+    {
+     "w": "halla",
+     "hu": "keresd meg, számold ki"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu18_4",
+     "n": "4",
+     "text": "Relaciona cada suma con la multiplicación correspondiente.",
+     "text_hu": "Kösd össze az összeadást a hozzá tartozó szorzással.",
+     "items": [
+      {
+       "q": "2 + 2 + 2 + 2",
+       "q_hu": "2 + 2 + 2 + 2",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "5 × 10",
+         "hu": "5 × 10"
+        },
+        {
+         "t": "4 × 2",
+         "hu": "4 × 2"
+        },
+        {
+         "t": "2 × 7",
+         "hu": "2 × 7"
+        },
+        {
+         "t": "3 × 5",
+         "hu": "3 × 5"
+        }
+       ],
+       "answer": 1,
+       "id": "cu18_4a"
+      },
+      {
+       "q": "5 + 5 + 5",
+       "q_hu": "5 + 5 + 5",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "5 × 10",
+         "hu": "5 × 10"
+        },
+        {
+         "t": "4 × 2",
+         "hu": "4 × 2"
+        },
+        {
+         "t": "2 × 7",
+         "hu": "2 × 7"
+        },
+        {
+         "t": "3 × 5",
+         "hu": "3 × 5"
+        }
+       ],
+       "answer": 3,
+       "id": "cu18_4b"
+      },
+      {
+       "q": "10 + 10 + 10 + 10 + 10",
+       "q_hu": "10 + 10 + 10 + 10 + 10",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "5 × 10",
+         "hu": "5 × 10"
+        },
+        {
+         "t": "4 × 2",
+         "hu": "4 × 2"
+        },
+        {
+         "t": "2 × 7",
+         "hu": "2 × 7"
+        },
+        {
+         "t": "3 × 5",
+         "hu": "3 × 5"
+        }
+       ],
+       "answer": 0,
+       "id": "cu18_4c"
+      },
+      {
+       "q": "7 + 7",
+       "q_hu": "7 + 7",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "5 × 10",
+         "hu": "5 × 10"
+        },
+        {
+         "t": "4 × 2",
+         "hu": "4 × 2"
+        },
+        {
+         "t": "2 × 7",
+         "hu": "2 × 7"
+        },
+        {
+         "t": "3 × 5",
+         "hu": "3 × 5"
+        }
+       ],
+       "answer": 2,
+       "id": "cu18_4d"
+      }
+     ]
+    },
+    {
+     "id": "cu18_5",
+     "n": "5",
+     "text": "Escribe V si es verdadero y F si es falso.",
+     "text_hu": "Írj I-t, ha igaz, és H-t, ha hamis.",
+     "items": [
+      {
+       "q": "La multiplicación es una suma repetida del mismo número.",
+       "q_hu": "A szorzás ugyanannak a számnak az ismételt összeadása.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu18_5a"
+      },
+      {
+       "q": "Los factores son los números que se suman en una multiplicación.",
+       "q_hu": "A tényezők azok a számok, amelyeket a szorzásban összeadunk. (A tényezőket összeszorozzuk!)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu18_5b"
+      },
+      {
+       "q": "El producto es el resultado de la multiplicación.",
+       "q_hu": "A szorzat a szorzás eredménye.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu18_5c"
+      },
+      {
+       "q": "El resultado de multiplicar 3 × 5 es el mismo que el de sumar 5 + 5 + 5.",
+       "q_hu": "A 3 × 5 eredménye ugyanaz, mint az 5 + 5 + 5-é.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu18_5d"
+      }
+     ]
+    },
+    {
+     "id": "cu18_6",
+     "n": "6",
+     "text": "Para decorar su caseta de la feria, la familia García ha comprado cajas de farolillos de colores. Si han comprado 8 cajas y dentro de cada caja vienen 5 farolillos, calcula cuántos farolillos tienen en total para colgar.",
+     "text_hu": "A García család lampionos dobozokat vett, hogy feldíszítse a vásári sátrát. 8 dobozt vettek, mindegyikben 5 lampion van. Számold ki, hány lampionjuk van összesen.",
+     "items": [
+      {
+       "q": "8 cajas × 5 farolillos = ¿Cuántos farolillos?",
+       "q_hu": "8 doboz × 5 lampion = Hány lampion?",
+       "kind": "num",
+       "answer": "40",
+       "id": "cu18_6a"
+      }
+     ]
+    },
+    {
+     "id": "cu18_7",
+     "n": "7",
+     "text": "Celia entrega 2 manzanas a cada uno de sus 3 hijos. Halla cuántas manzanas entrega en total.",
+     "text_hu": "Celia mind a 3 gyerekének 2-2 almát ad. Hány almát ad összesen?",
+     "items": [
+      {
+       "q": "3 hijos × 2 manzanas = ¿Cuántas manzanas?",
+       "q_hu": "3 gyerek × 2 alma = Hány alma?",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu18_7a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu19",
+   "book": "cu",
+   "page": 19,
+   "unit": "u2",
+   "title": "Tablas del 1, del 5 y del 10",
+   "title_hu": "Az 1-es, 5-ös és 10-es szorzótábla",
+   "summary_hu": "Az 1-es, 5-ös és 10-es szorzótábla. Ha egy számot 1-gyel szorzunk, önmaga marad; az 5-ös tábla eredményei 0-ra vagy 5-re végződnek; a 10-es tábla eredményei 0-ra.",
+   "words": [
+    {
+     "w": "la tabla de multiplicar",
+     "hu": "szorzótábla"
+    },
+    {
+     "w": "la tabla del 5",
+     "hu": "az 5-ös szorzótábla"
+    },
+    {
+     "w": "completa",
+     "hu": "töltsd ki"
+    },
+    {
+     "w": "resuelve",
+     "hu": "oldd meg"
+    },
+    {
+     "w": "por",
+     "hu": "-szor/-szer (×)"
+    },
+    {
+     "w": "igual",
+     "hu": "egyenlő (=)"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu19_1",
+     "n": "1",
+     "text": "Completa esta tabla.",
+     "text_hu": "Töltsd ki a szorzótáblát (sor × oszlop).",
+     "items": [
+      {
+       "q": "2 × 1 =",
+       "q_hu": "2 × 1 =",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu19_1a"
+      },
+      {
+       "q": "2 × 5 =",
+       "q_hu": "2 × 5 =",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu19_1b"
+      },
+      {
+       "q": "2 × 10 =",
+       "q_hu": "2 × 10 =",
+       "kind": "num",
+       "answer": "20",
+       "id": "cu19_1c"
+      },
+      {
+       "q": "4 × 1 =",
+       "q_hu": "4 × 1 =",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu19_1d"
+      },
+      {
+       "q": "4 × 5 =",
+       "q_hu": "4 × 5 =",
+       "kind": "num",
+       "answer": "20",
+       "id": "cu19_1e"
+      },
+      {
+       "q": "4 × 10 =",
+       "q_hu": "4 × 10 =",
+       "kind": "num",
+       "answer": "40",
+       "id": "cu19_1f"
+      },
+      {
+       "q": "7 × 1 =",
+       "q_hu": "7 × 1 =",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu19_1g"
+      },
+      {
+       "q": "7 × 5 =",
+       "q_hu": "7 × 5 =",
+       "kind": "num",
+       "answer": "35",
+       "id": "cu19_1h"
+      },
+      {
+       "q": "7 × 10 =",
+       "q_hu": "7 × 10 =",
+       "kind": "num",
+       "answer": "70",
+       "id": "cu19_1i"
+      },
+      {
+       "q": "9 × 1 =",
+       "q_hu": "9 × 1 =",
+       "kind": "num",
+       "answer": "9",
+       "id": "cu19_1j"
+      },
+      {
+       "q": "9 × 5 =",
+       "q_hu": "9 × 5 =",
+       "kind": "num",
+       "answer": "45",
+       "id": "cu19_1k"
+      },
+      {
+       "q": "9 × 10 =",
+       "q_hu": "9 × 10 =",
+       "kind": "num",
+       "answer": "90",
+       "id": "cu19_1l"
+      }
+     ]
+    },
+    {
+     "id": "cu19_2",
+     "n": "2",
+     "text": "Resuelve estas multiplicaciones.",
+     "text_hu": "Oldd meg a szorzásokat.",
+     "items": [
+      {
+       "q": "6 × 1 =",
+       "q_hu": "6 × 1 =",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu19_2a"
+      },
+      {
+       "q": "5 × 10 =",
+       "q_hu": "5 × 10 =",
+       "kind": "num",
+       "answer": "50",
+       "id": "cu19_2b"
+      },
+      {
+       "q": "1 × 10 =",
+       "q_hu": "1 × 10 =",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu19_2c"
+      },
+      {
+       "q": "10 × 1 =",
+       "q_hu": "10 × 1 =",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu19_2d"
+      },
+      {
+       "q": "7 × 10 =",
+       "q_hu": "7 × 10 =",
+       "kind": "num",
+       "answer": "70",
+       "id": "cu19_2e"
+      },
+      {
+       "q": "6 × 5 =",
+       "q_hu": "6 × 5 =",
+       "kind": "num",
+       "answer": "30",
+       "id": "cu19_2f"
+      },
+      {
+       "q": "2 × 1 =",
+       "q_hu": "2 × 1 =",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu19_2g"
+      },
+      {
+       "q": "8 × 5 =",
+       "q_hu": "8 × 5 =",
+       "kind": "num",
+       "answer": "40",
+       "id": "cu19_2h"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu20",
+   "book": "cu",
+   "page": 20,
+   "unit": "u2",
+   "title": "Tablas del 1, del 5 y del 10",
+   "title_hu": "Az 1-es, 5-ös és 10-es szorzótábla",
+   "summary_hu": "Igaz–hamis állítások a szorzótáblákról, szorzások párosítása az eredménnyel, és két szöveges feladat (virágcserepek sorokban, fakockák zacskókban).",
+   "words": [
+    {
+     "w": "termina en 0",
+     "hu": "0-ra végződik"
+    },
+    {
+     "w": "cualquier número",
+     "hu": "bármelyik szám"
+    },
+    {
+     "w": "multiplicado por",
+     "hu": "szorozva ...-val"
+    },
+    {
+     "w": "el patio",
+     "hu": "udvar"
+    },
+    {
+     "w": "la maceta",
+     "hu": "virágcserép"
+    },
+    {
+     "w": "el geranio",
+     "hu": "muskátli"
+    },
+    {
+     "w": "la pared",
+     "hu": "fal"
+    },
+    {
+     "w": "la fila",
+     "hu": "sor"
+    },
+    {
+     "w": "la bolsa",
+     "hu": "zacskó"
+    },
+    {
+     "w": "la pieza de madera",
+     "hu": "fadarab, fakocka"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu20_3",
+     "n": "3",
+     "text": "Escribe V si es verdadero y F si es falso.",
+     "text_hu": "Írj I-t, ha igaz, és H-t, ha hamis.",
+     "items": [
+      {
+       "q": "El resultado de 7 × 5 termina en 0.",
+       "q_hu": "A 7 × 5 eredménye 0-ra végződik.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu20_3a"
+      },
+      {
+       "q": "Cualquier número multiplicado por 10 termina en 0.",
+       "q_hu": "Bármelyik szám 10-zel szorozva 0-ra végződik.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu20_3b"
+      },
+      {
+       "q": "Si multiplicas un número por 1, el resultado es 1.",
+       "q_hu": "Ha egy számot 1-gyel szorzol, az eredmény 1.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis",
+       "id": "cu20_3c"
+      }
+     ]
+    },
+    {
+     "id": "cu20_4",
+     "n": "4",
+     "text": "Relaciona cada multiplicación con su producto.",
+     "text_hu": "Kösd össze a szorzást az eredményével.",
+     "items": [
+      {
+       "q": "4 × 5",
+       "q_hu": "4 × 5",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "70",
+         "hu": "70"
+        },
+        {
+         "t": "20",
+         "hu": "20"
+        },
+        {
+         "t": "60",
+         "hu": "60"
+        },
+        {
+         "t": "9",
+         "hu": "9"
+        }
+       ],
+       "answer": 1,
+       "id": "cu20_4a"
+      },
+      {
+       "q": "7 × 10",
+       "q_hu": "7 × 10",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "70",
+         "hu": "70"
+        },
+        {
+         "t": "20",
+         "hu": "20"
+        },
+        {
+         "t": "60",
+         "hu": "60"
+        },
+        {
+         "t": "9",
+         "hu": "9"
+        }
+       ],
+       "answer": 0,
+       "id": "cu20_4b"
+      },
+      {
+       "q": "9 × 1",
+       "q_hu": "9 × 1",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "70",
+         "hu": "70"
+        },
+        {
+         "t": "20",
+         "hu": "20"
+        },
+        {
+         "t": "60",
+         "hu": "60"
+        },
+        {
+         "t": "9",
+         "hu": "9"
+        }
+       ],
+       "answer": 3,
+       "id": "cu20_4c"
+      },
+      {
+       "q": "6 × 10",
+       "q_hu": "6 × 10",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "70",
+         "hu": "70"
+        },
+        {
+         "t": "20",
+         "hu": "20"
+        },
+        {
+         "t": "60",
+         "hu": "60"
+        },
+        {
+         "t": "9",
+         "hu": "9"
+        }
+       ],
+       "answer": 2,
+       "id": "cu20_4d"
+      }
+     ]
+    },
+    {
+     "id": "cu20_5",
+     "n": "5",
+     "text": "En un patio hay colocadas macetas de geranios en la pared formando 4 filas. Si en cada fila han colgado 5 macetas, halla cuántas macetas de geranios hay en la pared del patio.",
+     "text_hu": "Egy udvar falán muskátlis cserepek lógnak 4 sorban. Minden sorban 5 cserép van. Hány cserép muskátli van a falon?",
+     "items": [
+      {
+       "q": "4 filas × 5 macetas = ¿Cuántas macetas?",
+       "q_hu": "4 sor × 5 cserép = Hány cserép?",
+       "kind": "num",
+       "answer": "20",
+       "id": "cu20_5a"
+      }
+     ]
+    },
+    {
+     "id": "cu20_6",
+     "n": "6",
+     "text": "César tiene 5 bolsas con 10 piezas de madera cada una. Calcula cuántas piezas de madera tiene en total.",
+     "text_hu": "Césarnak 5 zacskója van, mindegyikben 10 fakocka. Hány fakockája van összesen?",
+     "items": [
+      {
+       "q": "5 bolsas × 10 piezas = ¿Cuántas piezas?",
+       "q_hu": "5 zacskó × 10 fakocka = Hány fakocka?",
+       "kind": "num",
+       "answer": "50",
+       "id": "cu20_6a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu21",
+   "book": "cu",
+   "page": 21,
+   "unit": "u2",
+   "title": "Tablas del 2, del 4 y del 8",
+   "title_hu": "A 2-es, 4-es és 8-as szorzótábla",
+   "summary_hu": "A 2-es, 4-es és 8-as szorzótábla. Jó trükk: a 4-es tábla a 2-es kétszerese, a 8-as tábla a 4-es kétszerese.",
+   "words": [
+    {
+     "w": "la tabla del 2",
+     "hu": "a 2-es szorzótábla"
+    },
+    {
+     "w": "la tabla del 4",
+     "hu": "a 4-es szorzótábla"
+    },
+    {
+     "w": "la tabla del 8",
+     "hu": "a 8-as szorzótábla"
+    },
+    {
+     "w": "el factor que falta",
+     "hu": "a hiányzó tényező"
+    },
+    {
+     "w": "resuelve",
+     "hu": "oldd meg"
+    },
+    {
+     "w": "escribe",
+     "hu": "írd le"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu21_1",
+     "n": "1",
+     "text": "Resuelve estas multiplicaciones.",
+     "text_hu": "Oldd meg a szorzásokat.",
+     "items": [
+      {
+       "q": "2 × 2 =",
+       "q_hu": "2 × 2 =",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu21_1a"
+      },
+      {
+       "q": "4 × 4 =",
+       "q_hu": "4 × 4 =",
+       "kind": "num",
+       "answer": "16",
+       "id": "cu21_1b"
+      },
+      {
+       "q": "8 × 8 =",
+       "q_hu": "8 × 8 =",
+       "kind": "num",
+       "answer": "64",
+       "id": "cu21_1c"
+      },
+      {
+       "q": "1 × 8 =",
+       "q_hu": "1 × 8 =",
+       "kind": "num",
+       "answer": "8",
+       "id": "cu21_1d"
+      },
+      {
+       "q": "6 × 4 =",
+       "q_hu": "6 × 4 =",
+       "kind": "num",
+       "answer": "24",
+       "id": "cu21_1e"
+      },
+      {
+       "q": "4 × 8 =",
+       "q_hu": "4 × 8 =",
+       "kind": "num",
+       "answer": "32",
+       "id": "cu21_1f"
+      },
+      {
+       "q": "3 × 4 =",
+       "q_hu": "3 × 4 =",
+       "kind": "num",
+       "answer": "12",
+       "id": "cu21_1g"
+      },
+      {
+       "q": "5 × 2 =",
+       "q_hu": "5 × 2 =",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu21_1h"
+      }
+     ]
+    },
+    {
+     "id": "cu21_2",
+     "n": "2",
+     "text": "Escribe el factor que falta en cada multiplicación.",
+     "text_hu": "Írd be a hiányzó tényezőt.",
+     "items": [
+      {
+       "q": "5 × ___ = 20",
+       "q_hu": "5 × ___ = 20",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu21_2a"
+      },
+      {
+       "q": "4 × ___ = 8",
+       "q_hu": "4 × ___ = 8",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu21_2b"
+      },
+      {
+       "q": "5 × ___ = 40",
+       "q_hu": "5 × ___ = 40",
+       "kind": "num",
+       "answer": "8",
+       "id": "cu21_2c"
+      },
+      {
+       "q": "9 × ___ = 18",
+       "q_hu": "9 × ___ = 18",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu21_2d"
+      },
+      {
+       "q": "9 × ___ = 36",
+       "q_hu": "9 × ___ = 36",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu21_2e"
+      },
+      {
+       "q": "___ × 2 = 14",
+       "q_hu": "___ × 2 = 14",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu21_2f"
+      },
+      {
+       "q": "___ × 4 = 4",
+       "q_hu": "___ × 4 = 4",
+       "kind": "num",
+       "answer": "1",
+       "id": "cu21_2g"
+      },
+      {
+       "q": "___ × 8 = 56",
+       "q_hu": "___ × 8 = 56",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu21_2h"
+      },
+      {
+       "q": "___ × 2 = 12",
+       "q_hu": "___ × 2 = 12",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu21_2i"
+      },
+      {
+       "q": "___ × 8 = 72",
+       "q_hu": "___ × 8 = 72",
+       "kind": "num",
+       "answer": "9",
+       "id": "cu21_2j"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu22",
+   "book": "cu",
+   "page": 22,
+   "unit": "u2",
+   "title": "Tablas del 2, del 4 y del 8",
+   "title_hu": "A 2-es, 4-es és 8-as szorzótábla",
+   "summary_hu": "Szorzások párosítása az eredménnyel, a „kétszeresének a kétszerese” (= 4-szerese), és szöveges feladatok padokról, csapatokról és madárfészkekről.",
+   "words": [
+    {
+     "w": "el doble",
+     "hu": "kétszerese"
+    },
+    {
+     "w": "el doble del doble",
+     "hu": "a kétszeresének a kétszerese"
+    },
+    {
+     "w": "el banco",
+     "hu": "pad"
+    },
+    {
+     "w": "sentarse",
+     "hu": "leülni"
+    },
+    {
+     "w": "el parque",
+     "hu": "park"
+    },
+    {
+     "w": "el equipo",
+     "hu": "csapat"
+    },
+    {
+     "w": "el estudiante",
+     "hu": "diák"
+    },
+    {
+     "w": "participar",
+     "hu": "részt venni"
+    },
+    {
+     "w": "el árbol",
+     "hu": "fa"
+    },
+    {
+     "w": "la rama",
+     "hu": "ág"
+    },
+    {
+     "w": "el nido",
+     "hu": "fészek"
+    },
+    {
+     "w": "averigua",
+     "hu": "derítsd ki"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu22_3",
+     "n": "3",
+     "text": "Relaciona cada número con su multiplicación.",
+     "text_hu": "Kösd össze a szorzást az eredményével (40, 12, 16, 0, 56, 8 közül).",
+     "items": [
+      {
+       "q": "3 × 4 = (40, 12, 16, 0, 56, 8)",
+       "q_hu": "3 × 4 = (40, 12, 16, 0, 56, 8 közül)",
+       "kind": "num",
+       "answer": "12",
+       "id": "cu22_3a"
+      },
+      {
+       "q": "5 × 8 = (40, 12, 16, 0, 56, 8)",
+       "q_hu": "5 × 8 = (40, 12, 16, 0, 56, 8 közül)",
+       "kind": "num",
+       "answer": "40",
+       "id": "cu22_3b"
+      },
+      {
+       "q": "7 × 8 = (40, 12, 16, 0, 56, 8)",
+       "q_hu": "7 × 8 = (40, 12, 16, 0, 56, 8 közül)",
+       "kind": "num",
+       "answer": "56",
+       "id": "cu22_3c"
+      },
+      {
+       "q": "8 × 2 = (40, 12, 16, 0, 56, 8)",
+       "q_hu": "8 × 2 = (40, 12, 16, 0, 56, 8 közül)",
+       "kind": "num",
+       "answer": "16",
+       "id": "cu22_3d"
+      },
+      {
+       "q": "4 × 2 = (40, 12, 16, 0, 56, 8)",
+       "q_hu": "4 × 2 = (40, 12, 16, 0, 56, 8 közül)",
+       "kind": "num",
+       "answer": "8",
+       "id": "cu22_3e"
+      },
+      {
+       "q": "4 × 4 = (40, 12, 16, 0, 56, 8)",
+       "q_hu": "4 × 4 = (40, 12, 16, 0, 56, 8 közül)",
+       "kind": "num",
+       "answer": "16",
+       "id": "cu22_3f"
+      }
+     ]
+    },
+    {
+     "id": "cu22_4",
+     "n": "4",
+     "text": "Escribe la multiplicación que representa el doble del doble de 3 y calcula el resultado.",
+     "text_hu": "Írd fel szorzásként a 3 kétszeresének a kétszeresét, és számold ki.",
+     "items": [
+      {
+       "q": "Multiplicación del doble del doble de 3",
+       "q_hu": "A 3 kétszeresének a kétszerese szorzásként",
+       "kind": "type",
+       "answer": "4 × 3",
+       "alts": [
+        "4x3",
+        "4 x 3",
+        "3 × 4",
+        "3x4",
+        "2 × 2 × 3",
+        "2x2x3"
+       ],
+       "answer_hu": "4 × 3 (= 2 × 2 × 3)",
+       "id": "cu22_4a"
+      },
+      {
+       "q": "El doble del doble de 3 =",
+       "q_hu": "A 3 kétszeresének a kétszerese =",
+       "kind": "num",
+       "answer": "12",
+       "id": "cu22_4b"
+      }
+     ]
+    },
+    {
+     "id": "cu22_5",
+     "n": "5",
+     "text": "En el parque hay 4 bancos. Si en cada banco se sientan 4 niños, halla cuántos niños hay sentados en total.",
+     "text_hu": "A parkban 4 pad van. Mindegyik padon 4 gyerek ül. Hány gyerek ül összesen?",
+     "items": [
+      {
+       "q": "4 bancos × 4 niños = ¿Cuántos niños?",
+       "q_hu": "4 pad × 4 gyerek = Hány gyerek?",
+       "kind": "num",
+       "answer": "16",
+       "id": "cu22_5a"
+      }
+     ]
+    },
+    {
+     "id": "cu22_6",
+     "n": "6",
+     "text": "El profesor de Matemática formó 4 equipos y puso a 8 estudiantes en cada uno. Determina cuántos estudiantes participan en total.",
+     "text_hu": "A matektanár 4 csapatot alakított, mindegyikben 8 diák van. Hány diák vesz részt összesen?",
+     "items": [
+      {
+       "q": "4 equipos × 8 estudiantes = ¿Cuántos estudiantes?",
+       "q_hu": "4 csapat × 8 diák = Hány diák?",
+       "kind": "num",
+       "answer": "32",
+       "id": "cu22_6a"
+      }
+     ]
+    },
+    {
+     "id": "cu22_7",
+     "n": "7",
+     "text": "Un árbol tiene 2 ramas y cada rama tiene 4 nidos. Averigua cuántos nidos hay en total en el árbol.",
+     "text_hu": "Egy fának 2 ága van, és minden ágon 4 fészek. Hány fészek van összesen a fán?",
+     "items": [
+      {
+       "q": "2 ramas × 4 nidos = ¿Cuántos nidos?",
+       "q_hu": "2 ág × 4 fészek = Hány fészek?",
+       "kind": "num",
+       "answer": "8",
+       "id": "cu22_7a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu23",
+   "book": "cu",
+   "page": 23,
+   "unit": "u2",
+   "title": "Tablas del 3, del 6 y del 9",
+   "title_hu": "A 3-as, 6-os és 9-es szorzótábla",
+   "summary_hu": "A 3-as, 6-os és 9-es szorzótábla. Trükk: a 6-os tábla a 3-as kétszerese, a 9-es tábla a 3-as háromszorosa.",
+   "words": [
+    {
+     "w": "la tabla del 3",
+     "hu": "a 3-as szorzótábla"
+    },
+    {
+     "w": "la tabla del 6",
+     "hu": "a 6-os szorzótábla"
+    },
+    {
+     "w": "la tabla del 9",
+     "hu": "a 9-es szorzótábla"
+    },
+    {
+     "w": "resuelve",
+     "hu": "oldd meg"
+    },
+    {
+     "w": "completa esta tabla",
+     "hu": "töltsd ki a táblázatot"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu23_1",
+     "n": "1",
+     "text": "Resuelve estas multiplicaciones.",
+     "text_hu": "Oldd meg a szorzásokat.",
+     "items": [
+      {
+       "q": "4 × 3 =",
+       "q_hu": "4 × 3 =",
+       "kind": "num",
+       "answer": "12",
+       "id": "cu23_1a"
+      },
+      {
+       "q": "7 × 6 =",
+       "q_hu": "7 × 6 =",
+       "kind": "num",
+       "answer": "42",
+       "id": "cu23_1b"
+      },
+      {
+       "q": "9 × 3 =",
+       "q_hu": "9 × 3 =",
+       "kind": "num",
+       "answer": "27",
+       "id": "cu23_1c"
+      },
+      {
+       "q": "7 × 9 =",
+       "q_hu": "7 × 9 =",
+       "kind": "num",
+       "answer": "63",
+       "id": "cu23_1d"
+      },
+      {
+       "q": "4 × 6 =",
+       "q_hu": "4 × 6 =",
+       "kind": "num",
+       "answer": "24",
+       "id": "cu23_1e"
+      },
+      {
+       "q": "8 × 9 =",
+       "q_hu": "8 × 9 =",
+       "kind": "num",
+       "answer": "72",
+       "id": "cu23_1f"
+      },
+      {
+       "q": "2 × 3 =",
+       "q_hu": "2 × 3 =",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu23_1g"
+      },
+      {
+       "q": "9 × 6 =",
+       "q_hu": "9 × 6 =",
+       "kind": "num",
+       "answer": "54",
+       "id": "cu23_1h"
+      }
+     ]
+    },
+    {
+     "id": "cu23_2",
+     "n": "2",
+     "text": "Completa esta tabla.",
+     "text_hu": "Töltsd ki a szorzótáblát (sor × oszlop).",
+     "items": [
+      {
+       "q": "1 × 3 =",
+       "q_hu": "1 × 3 =",
+       "kind": "num",
+       "answer": "3",
+       "id": "cu23_2a"
+      },
+      {
+       "q": "1 × 6 =",
+       "q_hu": "1 × 6 =",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu23_2b"
+      },
+      {
+       "q": "1 × 9 =",
+       "q_hu": "1 × 9 =",
+       "kind": "num",
+       "answer": "9",
+       "id": "cu23_2c"
+      },
+      {
+       "q": "3 × 3 =",
+       "q_hu": "3 × 3 =",
+       "kind": "num",
+       "answer": "9",
+       "id": "cu23_2d"
+      },
+      {
+       "q": "3 × 6 =",
+       "q_hu": "3 × 6 =",
+       "kind": "num",
+       "answer": "18",
+       "id": "cu23_2e"
+      },
+      {
+       "q": "3 × 9 =",
+       "q_hu": "3 × 9 =",
+       "kind": "num",
+       "answer": "27",
+       "id": "cu23_2f"
+      },
+      {
+       "q": "5 × 3 =",
+       "q_hu": "5 × 3 =",
+       "kind": "num",
+       "answer": "15",
+       "id": "cu23_2g"
+      },
+      {
+       "q": "5 × 6 =",
+       "q_hu": "5 × 6 =",
+       "kind": "num",
+       "answer": "30",
+       "id": "cu23_2h"
+      },
+      {
+       "q": "5 × 9 =",
+       "q_hu": "5 × 9 =",
+       "kind": "num",
+       "answer": "45",
+       "id": "cu23_2i"
+      },
+      {
+       "q": "10 × 3 =",
+       "q_hu": "10 × 3 =",
+       "kind": "num",
+       "answer": "30",
+       "id": "cu23_2j"
+      },
+      {
+       "q": "10 × 6 =",
+       "q_hu": "10 × 6 =",
+       "kind": "num",
+       "answer": "60",
+       "id": "cu23_2k"
+      },
+      {
+       "q": "10 × 9 =",
+       "q_hu": "10 × 9 =",
+       "kind": "num",
+       "answer": "90",
+       "id": "cu23_2l"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu24",
+   "book": "cu",
+   "page": 24,
+   "unit": "u2",
+   "title": "Tablas del 3, del 6 y del 9",
+   "title_hu": "A 3-as, 6-os és 9-es szorzótábla",
+   "summary_hu": "Igaz–hamis állítások, ugyanazt az eredményt adó szorzások, hibák javítása, és hogyan lehet a 4 × 3 = 12-ből kiszámolni a 4 × 6-ot (kétszerese). Szöveges feladat a szardíniás nyársakról.",
+   "words": [
+    {
+     "w": "el triple",
+     "hu": "háromszorosa"
+    },
+    {
+     "w": "el mismo resultado",
+     "hu": "ugyanaz az eredmény"
+    },
+    {
+     "w": "busca",
+     "hu": "keresd meg"
+    },
+    {
+     "w": "el error",
+     "hu": "hiba"
+    },
+    {
+     "w": "corrígelos",
+     "hu": "javítsd ki őket"
+    },
+    {
+     "w": "explica",
+     "hu": "magyarázd el"
+    },
+    {
+     "w": "usando",
+     "hu": "felhasználva"
+    },
+    {
+     "w": "el espeto",
+     "hu": "nyárs (halsütő)"
+    },
+    {
+     "w": "la sardina",
+     "hu": "szardínia"
+    },
+    {
+     "w": "la bandeja",
+     "hu": "tálca"
+    },
+    {
+     "w": "asar",
+     "hu": "sütni (roston)"
+    },
+    {
+     "w": "la arena",
+     "hu": "homok"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu24_3",
+     "n": "3",
+     "text": "Escribe V si es verdadero y F si es falso.",
+     "text_hu": "Írj I-t, ha igaz, és H-t, ha hamis.",
+     "items": [
+      {
+       "q": "El resultado de 7 × 3 es 21.",
+       "q_hu": "A 7 × 3 eredménye 21.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu24_3a"
+      },
+      {
+       "q": "La tabla del 6 es el triple de la tabla del 2.",
+       "q_hu": "A 6-os tábla a 2-es tábla háromszorosa.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu24_3b"
+      },
+      {
+       "q": "4 × 6 es igual a 4 + 4 + 4 + 4 + 4 + 4.",
+       "q_hu": "A 4 × 6 egyenlő 4 + 4 + 4 + 4 + 4 + 4-gyel.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "id": "cu24_3c"
+      }
+     ]
+    },
+    {
+     "id": "cu24_4",
+     "n": "4",
+     "text": "Escribe dos multiplicaciones para obtener el mismo resultado en cada caso.",
+     "text_hu": "Írj két szorzást, amelynek ugyanez az eredménye.",
+     "items": [
+      {
+       "q": "Dos multiplicaciones cuyo resultado sea 12",
+       "q_hu": "Két szorzás, amelynek az eredménye 12",
+       "kind": "open",
+       "answer": "3 × 4 y 2 × 6 (también 6 × 2, 4 × 3, 1 × 12)",
+       "answer_hu": "3 × 4 és 2 × 6 (vagy 6 × 2, 4 × 3)",
+       "id": "cu24_4a"
+      },
+      {
+       "q": "Dos multiplicaciones cuyo resultado sea 36",
+       "q_hu": "Két szorzás, amelynek az eredménye 36",
+       "kind": "open",
+       "answer": "4 × 9 y 6 × 6 (también 9 × 4)",
+       "answer_hu": "4 × 9 és 6 × 6 (vagy 9 × 4)",
+       "id": "cu24_4b"
+      }
+     ]
+    },
+    {
+     "id": "cu24_5",
+     "n": "5",
+     "text": "Busca los errores y corrígelos.",
+     "text_hu": "Keresd meg a hibákat, és javítsd ki őket (írd le a helyes eredményt).",
+     "items": [
+      {
+       "q": "5 × 9 = 35. Escribe el resultado correcto.",
+       "q_hu": "5 × 9 = 35. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "45",
+       "answer_hu": "hibás, helyesen 45",
+       "id": "cu24_5a"
+      },
+      {
+       "q": "7 × 3 = 12. Escribe el resultado correcto.",
+       "q_hu": "7 × 3 = 12. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "21",
+       "answer_hu": "hibás, helyesen 21",
+       "id": "cu24_5b"
+      },
+      {
+       "q": "9 × 6 = 54. Escribe el resultado correcto.",
+       "q_hu": "9 × 6 = 54. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "54",
+       "answer_hu": "helyes",
+       "id": "cu24_5c"
+      },
+      {
+       "q": "2 × 9 = 81. Escribe el resultado correcto.",
+       "q_hu": "2 × 9 = 81. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "18",
+       "answer_hu": "hibás, helyesen 18",
+       "id": "cu24_5d"
+      },
+      {
+       "q": "5 × 2 = 10. Escribe el resultado correcto.",
+       "q_hu": "5 × 2 = 10. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "10",
+       "answer_hu": "helyes",
+       "id": "cu24_5e"
+      },
+      {
+       "q": "7 × 4 = 82. Escribe el resultado correcto.",
+       "q_hu": "7 × 4 = 82. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "28",
+       "answer_hu": "hibás, helyesen 28",
+       "id": "cu24_5f"
+      },
+      {
+       "q": "9 × 8 = 27. Escribe el resultado correcto.",
+       "q_hu": "9 × 8 = 27. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "72",
+       "answer_hu": "hibás, helyesen 72",
+       "id": "cu24_5g"
+      },
+      {
+       "q": "2 × 2 = 4. Escribe el resultado correcto.",
+       "q_hu": "2 × 2 = 4. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "4",
+       "answer_hu": "helyes",
+       "id": "cu24_5h"
+      }
+     ]
+    },
+    {
+     "id": "cu24_6",
+     "n": "6",
+     "text": "Explica cómo puedes calcular 4 × 6 usando el resultado de 4 × 3 = 12.",
+     "text_hu": "Magyarázd el, hogyan számolhatod ki a 4 × 6-ot a 4 × 3 = 12 segítségével.",
+     "items": [
+      {
+       "q": "¿Cómo calculas 4 × 6 a partir de 4 × 3 = 12?",
+       "q_hu": "Hogyan kapod meg a 4 × 6-ot a 4 × 3 = 12-ből?",
+       "kind": "open",
+       "answer": "Como 6 es el doble de 3, 4 × 6 es el doble de 4 × 3: 12 + 12 = 24.",
+       "answer_hu": "Mivel a 6 a 3 kétszerese, a 4 × 6 a 4 × 3 kétszerese: 12 + 12 = 24.",
+       "id": "cu24_6a"
+      },
+      {
+       "q": "4 × 6 =",
+       "q_hu": "4 × 6 =",
+       "kind": "num",
+       "answer": "24",
+       "id": "cu24_6b"
+      }
+     ]
+    },
+    {
+     "id": "cu24_7",
+     "n": "7",
+     "text": "Paco está preparando espetos de sardinas en la barca de arena. Ha preparado una bandeja con 6 espetos para una mesa. Si cada espeto tiene 9 sardinas, calcula cuántas sardinas va a asar en total.",
+     "text_hu": "Paco szardíniás nyársakat készít a homokban álló csónaknál. Egy asztalnak 6 nyársat tett egy tálcára. Minden nyárson 9 szardínia van. Hány szardíniát fog összesen megsütni?",
+     "items": [
+      {
+       "q": "6 espetos × 9 sardinas = ¿Cuántas sardinas?",
+       "q_hu": "6 nyárs × 9 szardínia = Hány szardínia?",
+       "kind": "num",
+       "answer": "54",
+       "id": "cu24_7a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu25",
+   "book": "cu",
+   "page": 25,
+   "unit": "u2",
+   "title": "Tablas del 7 y del 0",
+   "title_hu": "A 7-es és a 0-s szorzótábla",
+   "summary_hu": "A 7-es szorzótábla, és a 0-val szorzás: bármelyik számot 0-val szorozva az eredmény mindig 0.",
+   "words": [
+    {
+     "w": "la tabla del 7",
+     "hu": "a 7-es szorzótábla"
+    },
+    {
+     "w": "la tabla del 0",
+     "hu": "a 0-s szorzótábla"
+    },
+    {
+     "w": "localiza",
+     "hu": "keresd meg"
+    },
+    {
+     "w": "los errores",
+     "hu": "hibák"
+    },
+    {
+     "w": "corrígelos",
+     "hu": "javítsd ki őket"
+    },
+    {
+     "w": "cero",
+     "hu": "nulla"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu25_1",
+     "n": "1",
+     "text": "Localiza los errores y corrígelos.",
+     "text_hu": "Keresd meg a hibákat, és javítsd ki őket (írd le a helyes eredményt).",
+     "items": [
+      {
+       "q": "4 × 7 = 28. Escribe el resultado correcto.",
+       "q_hu": "4 × 7 = 28. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "28",
+       "answer_hu": "helyes",
+       "id": "cu25_1a"
+      },
+      {
+       "q": "7 × 5 = 53. Escribe el resultado correcto.",
+       "q_hu": "7 × 5 = 53. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "35",
+       "answer_hu": "hibás, helyesen 35",
+       "id": "cu25_1b"
+      },
+      {
+       "q": "9 × 0 = 0. Escribe el resultado correcto.",
+       "q_hu": "9 × 0 = 0. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "0",
+       "answer_hu": "helyes",
+       "id": "cu25_1c"
+      },
+      {
+       "q": "2 × 7 = 14. Escribe el resultado correcto.",
+       "q_hu": "2 × 7 = 14. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "14",
+       "answer_hu": "helyes",
+       "id": "cu25_1d"
+      },
+      {
+       "q": "5 × 3 = 15. Escribe el resultado correcto.",
+       "q_hu": "5 × 3 = 15. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "15",
+       "answer_hu": "helyes",
+       "id": "cu25_1e"
+      },
+      {
+       "q": "4 × 0 = 4. Escribe el resultado correcto.",
+       "q_hu": "4 × 0 = 4. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "0",
+       "answer_hu": "hibás, helyesen 0",
+       "id": "cu25_1f"
+      },
+      {
+       "q": "6 × 7 = 36. Escribe el resultado correcto.",
+       "q_hu": "6 × 7 = 36. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "42",
+       "answer_hu": "hibás, helyesen 42",
+       "id": "cu25_1g"
+      },
+      {
+       "q": "7 × 2 = 4. Escribe el resultado correcto.",
+       "q_hu": "7 × 2 = 4. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "14",
+       "answer_hu": "hibás, helyesen 14",
+       "id": "cu25_1h"
+      },
+      {
+       "q": "8 × 0 = 0. Escribe el resultado correcto.",
+       "q_hu": "8 × 0 = 0. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "0",
+       "answer_hu": "helyes",
+       "id": "cu25_1i"
+      },
+      {
+       "q": "0 × 7 = 7. Escribe el resultado correcto.",
+       "q_hu": "0 × 7 = 7. Írd le a helyes eredményt.",
+       "kind": "num",
+       "answer": "0",
+       "answer_hu": "hibás, helyesen 0",
+       "id": "cu25_1j"
+      }
+     ]
+    },
+    {
+     "id": "cu25_2",
+     "n": "2",
+     "text": "Resuelve estas multiplicaciones.",
+     "text_hu": "Oldd meg a szorzásokat.",
+     "items": [
+      {
+       "q": "2 × 0 =",
+       "q_hu": "2 × 0 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu25_2a"
+      },
+      {
+       "q": "1 × 7 =",
+       "q_hu": "1 × 7 =",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu25_2b"
+      },
+      {
+       "q": "2 × 7 =",
+       "q_hu": "2 × 7 =",
+       "kind": "num",
+       "answer": "14",
+       "id": "cu25_2c"
+      },
+      {
+       "q": "1 × 0 =",
+       "q_hu": "1 × 0 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu25_2d"
+      },
+      {
+       "q": "3 × 0 =",
+       "q_hu": "3 × 0 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu25_2e"
+      },
+      {
+       "q": "4 × 7 =",
+       "q_hu": "4 × 7 =",
+       "kind": "num",
+       "answer": "28",
+       "id": "cu25_2f"
+      },
+      {
+       "q": "4 × 0 =",
+       "q_hu": "4 × 0 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu25_2g"
+      },
+      {
+       "q": "7 × 7 =",
+       "q_hu": "7 × 7 =",
+       "kind": "num",
+       "answer": "49",
+       "id": "cu25_2h"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu26",
+   "book": "cu",
+   "page": 26,
+   "unit": "u2",
+   "title": "Tablas del 7 y del 0",
+   "title_hu": "A 7-es és a 0-s szorzótábla",
+   "summary_hu": "Vegyes szorzások az összes eddigi szorzótáblából, hiányzó tényezők kitalálása, és két szöveges feladat (olívabogyós kosarak, fenyők sorokban).",
+   "words": [
+    {
+     "w": "el producto",
+     "hu": "szorzat"
+    },
+    {
+     "w": "calcula estos productos",
+     "hu": "számold ki a szorzatokat"
+    },
+    {
+     "w": "completa",
+     "hu": "egészítsd ki"
+    },
+    {
+     "w": "el cesto",
+     "hu": "kosár"
+    },
+    {
+     "w": "la aceituna",
+     "hu": "olívabogyó"
+    },
+    {
+     "w": "el kilo (kg)",
+     "hu": "kilogramm"
+    },
+    {
+     "w": "recoger",
+     "hu": "szedni, gyűjteni"
+    },
+    {
+     "w": "el pinar",
+     "hu": "fenyőerdő"
+    },
+    {
+     "w": "el pino",
+     "hu": "fenyőfa"
+    },
+    {
+     "w": "la fila",
+     "hu": "sor"
+    },
+    {
+     "w": "determina",
+     "hu": "határozd meg"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu26_3",
+     "n": "3",
+     "text": "Calcula estos productos.",
+     "text_hu": "Számold ki a szorzatokat.",
+     "items": [
+      {
+       "q": "6 × 4 =",
+       "q_hu": "6 × 4 =",
+       "kind": "num",
+       "answer": "24",
+       "id": "cu26_3a"
+      },
+      {
+       "q": "9 × 8 =",
+       "q_hu": "9 × 8 =",
+       "kind": "num",
+       "answer": "72",
+       "id": "cu26_3b"
+      },
+      {
+       "q": "7 × 0 =",
+       "q_hu": "7 × 0 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu26_3c"
+      },
+      {
+       "q": "3 × 2 =",
+       "q_hu": "3 × 2 =",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu26_3d"
+      },
+      {
+       "q": "5 × 3 =",
+       "q_hu": "5 × 3 =",
+       "kind": "num",
+       "answer": "15",
+       "id": "cu26_3e"
+      },
+      {
+       "q": "2 × 8 =",
+       "q_hu": "2 × 8 =",
+       "kind": "num",
+       "answer": "16",
+       "id": "cu26_3f"
+      },
+      {
+       "q": "0 × 4 =",
+       "q_hu": "0 × 4 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu26_3g"
+      },
+      {
+       "q": "4 × 2 =",
+       "q_hu": "4 × 2 =",
+       "kind": "num",
+       "answer": "8",
+       "id": "cu26_3h"
+      },
+      {
+       "q": "1 × 10 =",
+       "q_hu": "1 × 10 =",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu26_3i"
+      },
+      {
+       "q": "8 × 5 =",
+       "q_hu": "8 × 5 =",
+       "kind": "num",
+       "answer": "40",
+       "id": "cu26_3j"
+      },
+      {
+       "q": "10 × 6 =",
+       "q_hu": "10 × 6 =",
+       "kind": "num",
+       "answer": "60",
+       "id": "cu26_3k"
+      },
+      {
+       "q": "5 × 0 =",
+       "q_hu": "5 × 0 =",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu26_3l"
+      },
+      {
+       "q": "3 × 6 =",
+       "q_hu": "3 × 6 =",
+       "kind": "num",
+       "answer": "18",
+       "id": "cu26_3m"
+      },
+      {
+       "q": "9 × 7 =",
+       "q_hu": "9 × 7 =",
+       "kind": "num",
+       "answer": "63",
+       "id": "cu26_3n"
+      },
+      {
+       "q": "2 × 1 =",
+       "q_hu": "2 × 1 =",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu26_3o"
+      }
+     ]
+    },
+    {
+     "id": "cu26_4",
+     "n": "4",
+     "text": "Completa estas multiplicaciones.",
+     "text_hu": "Egészítsd ki a szorzásokat (írd be a hiányzó tényezőt).",
+     "items": [
+      {
+       "q": "1 × ___ = 4",
+       "q_hu": "1 × ___ = 4",
+       "kind": "num",
+       "answer": "4",
+       "id": "cu26_4a"
+      },
+      {
+       "q": "3 × ___ = 15",
+       "q_hu": "3 × ___ = 15",
+       "kind": "num",
+       "answer": "5",
+       "id": "cu26_4b"
+      },
+      {
+       "q": "8 × ___ = 24",
+       "q_hu": "8 × ___ = 24",
+       "kind": "num",
+       "answer": "3",
+       "id": "cu26_4c"
+      },
+      {
+       "q": "6 × ___ = 42",
+       "q_hu": "6 × ___ = 42",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu26_4d"
+      },
+      {
+       "q": "10 × ___ = 20",
+       "q_hu": "10 × ___ = 20",
+       "kind": "num",
+       "answer": "2",
+       "id": "cu26_4e"
+      },
+      {
+       "q": "___ × 6 = 0",
+       "q_hu": "___ × 6 = 0",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu26_4f"
+      },
+      {
+       "q": "___ × 9 = 9",
+       "q_hu": "___ × 9 = 9",
+       "kind": "num",
+       "answer": "1",
+       "id": "cu26_4g"
+      },
+      {
+       "q": "___ × 2 = 10",
+       "q_hu": "___ × 2 = 10",
+       "kind": "num",
+       "answer": "5",
+       "id": "cu26_4h"
+      },
+      {
+       "q": "___ × 5 = 35",
+       "q_hu": "___ × 5 = 35",
+       "kind": "num",
+       "answer": "7",
+       "id": "cu26_4i"
+      },
+      {
+       "q": "___ × 3 = 0",
+       "q_hu": "___ × 3 = 0",
+       "kind": "num",
+       "answer": "0",
+       "id": "cu26_4j"
+      },
+      {
+       "q": "2 × ___ = 6",
+       "q_hu": "2 × ___ = 6",
+       "kind": "num",
+       "answer": "3",
+       "id": "cu26_4k"
+      },
+      {
+       "q": "10 × ___ = 100",
+       "q_hu": "10 × ___ = 100",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu26_4l"
+      },
+      {
+       "q": "5 × ___ = 30",
+       "q_hu": "5 × ___ = 30",
+       "kind": "num",
+       "answer": "6",
+       "id": "cu26_4m"
+      },
+      {
+       "q": "9 × ___ = 90",
+       "q_hu": "9 × ___ = 90",
+       "kind": "num",
+       "answer": "10",
+       "id": "cu26_4n"
+      },
+      {
+       "q": "2 × ___ = 18",
+       "q_hu": "2 × ___ = 18",
+       "kind": "num",
+       "answer": "9",
+       "id": "cu26_4o"
+      }
+     ]
+    },
+    {
+     "id": "cu26_5",
+     "n": "5",
+     "text": "Lucía ha llenado 5 cestos con 7 kg de aceitunas en cada uno. Calcula cuántos kilos de aceituna ha recogido en total.",
+     "text_hu": "Lucía 5 kosarat töltött meg, mindegyikbe 7 kg olívabogyó került. Hány kiló olívabogyót szedett összesen?",
+     "items": [
+      {
+       "q": "5 cestos × 7 kg = ¿Cuántos kilos?",
+       "q_hu": "5 kosár × 7 kg = Hány kiló?",
+       "kind": "num",
+       "answer": "35",
+       "id": "cu26_5a"
+      }
+     ]
+    },
+    {
+     "id": "cu26_6",
+     "n": "6",
+     "text": "En un pequeño pinar hay 7 filas y en cada fila hay 9 pinos. Determina cuántos pinos hay en el pinar.",
+     "text_hu": "Egy kis fenyőerdőben 7 sor van, minden sorban 9 fenyő. Hány fenyő van összesen?",
+     "items": [
+      {
+       "q": "7 filas × 9 pinos = ¿Cuántos pinos?",
+       "q_hu": "7 sor × 9 fenyő = Hány fenyő?",
+       "kind": "num",
+       "answer": "63",
+       "id": "cu26_6a"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

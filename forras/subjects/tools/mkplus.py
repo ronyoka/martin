@@ -37,7 +37,13 @@ kt = open(T + '/Kitty.dc.html', encoding='utf-8').read(); ks = re.findall(r'<svg
 data = dict(kitty=dict(zip(('idle', 'happy', 'sad'), ks)), i18n=i18n, xsprite=json.load(open(xs)) if os.path.exists(xs) else {'hu': {}, L: {}}, icons=icons, acc=acc,
             schedule=json.load(open(folder + '/schedule.json')), links=json.load(open(folder + '/links.json')), spelling=json.load(open(folder + '/spelling.json')) if os.path.exists(folder + '/spelling.json') else {'weeks': []},
             dictado=json.load(open(folder + '/dictado.json')) if os.path.exists(folder + '/dictado.json') else {'lists': []},
-            tasks=json.load(open(folder + '/tasks.json')) if os.path.exists(folder + '/tasks.json') else {'tasks': []})
+            tasks=json.load(open(folder + '/tasks.json')) if os.path.exists(folder + '/tasks.json') else {'tasks': []},
+            pages=json.load(open(folder + '/pages.json')) if os.path.exists(folder + '/pages.json') else {'books': [], 'pages': []})
+# könyvoldalak hangja: out/pg_sprite.json; artifact-URL a pg_blobs.json-ból (fájlnév -> asset id), különben fájlnév (offline)
+pgs = folder + '/out/pg_sprite.json'
+if os.path.exists(pgs):
+    g = json.load(open(pgs)); pb = json.load(open(folder + '/pg_blobs.json')) if os.path.exists(folder + '/pg_blobs.json') else {}
+    data['pages']['sprite'] = g['sprite']; data['pages']['audio'] = {u: {l: ('/_blob/' + pb[f] if f in pb else f) for l, f in m.items()} for u, m in g['audio'].items()}
 json.dump(data, open(folder + '/out/plus_data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/lessonquiz.js').read() + '\n' + open(T + '/plus.js').read())
 open(folder + '/out/plus.css', 'w').write(open(T + '/plus.css').read())

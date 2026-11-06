@@ -1,0 +1,4261 @@
+{
+"books": [
+{
+"id": "tb",
+"title": "Ciencias Sociales 3",
+"title_hu": "Tankönyv"
+}
+],
+"pages": [
+{
+"id": "tb12",
+"book": "tb",
+"page": 12,
+"unit": "u1",
+"title": "La localidad",
+"title_hu": "A település",
+"summary_hu": "Az 1. fejezet nyitóoldala. Lucía településén az önkormányzat elindította a „Conócenos” (Ismerj meg minket) projektet: a látogatók térképet kapnak egy útvonallal és a legfontosabb helyek fotóival (tengerpart, régi paloták).",
+"words": [
+{
+"w": "la localidad",
+"hu": "a település"
+},
+{
+"w": "el ayuntamiento",
+"hu": "az önkormányzat, a városháza"
+},
+{
+"w": "el patrimonio",
+"hu": "az örökség (értékes régi dolgok, helyek)"
+},
+{
+"w": "los servicios",
+"hu": "a szolgáltatások"
+},
+{
+"w": "el plano",
+"hu": "a térkép (városé)"
+},
+{
+"w": "el recorrido",
+"hu": "az útvonal, a bejárás"
+},
+{
+"w": "la fotografía",
+"hu": "a fénykép"
+},
+{
+"w": "los sitios más destacados",
+"hu": "a legfontosabb helyek"
+},
+{
+"w": "dar a conocer",
+"hu": "megismertetni, bemutatni"
+}
+],
+"tasks": [
+{
+"id": "tb12_1",
+"n": "1",
+"text": "¿Qué explicarías sobre cada fotografía?",
+"text_hu": "Mit mondanál el az egyes fényképekről?",
+"items": [
+{
+"id": "tb12_1a",
+"q": "En las fotos se ven una playa con rocas junto al mar y varios edificios antiguos (palacios). ¿Qué explicarías sobre cada fotografía?",
+"q_hu": "A fotókon egy sziklás tengerpart és több régi épület (palota) látható. Mit mondanál el az egyes fotókról?",
+"kind": "open",
+"answer": "La playa es patrimonio natural: es bonita y hay que cuidarla. Los palacios son patrimonio cultural: son edificios antiguos e importantes de la localidad.",
+"answer_hu": "A tengerpart természeti örökség: szép, vigyázni kell rá. A paloták kulturális örökség: régi, fontos épületek a településen."
+}
+]
+},
+{
+"id": "tb12_2",
+"n": "2",
+"text": "¿Qué harías tú para dar a conocer tu localidad?",
+"text_hu": "Te mit csinálnál, hogy megismertesd a településedet másokkal?",
+"items": [
+{
+"id": "tb12_2a",
+"q": "¿Cuál de estas ideas sirve para dar a conocer una localidad?",
+"q_hu": "Melyik ötlet segít bemutatni egy települést?",
+"kind": "choice",
+"options": [
+{
+"t": "Hacer un plano con los lugares más bonitos",
+"hu": "Térképet készíteni a legszebb helyekkel"
+},
+{
+"t": "Tirar basura en el parque",
+"hu": "Szemetet dobni a parkban"
+},
+{
+"t": "Quedarse en casa sin hablar con nadie",
+"hu": "Otthon maradni és senkivel sem beszélni"
+}
+],
+"answer": 0
+},
+{
+"id": "tb12_2b",
+"q": "¿Qué harías tú para dar a conocer tu localidad?",
+"q_hu": "Te mit csinálnál, hogy megismertesd a településedet?",
+"kind": "open",
+"answer": "Haría un plano con fotos de los monumentos, los parques y los lugares más bonitos, y una guía con las fiestas y las tradiciones.",
+"answer_hu": "Készítenék egy térképet a műemlékek, parkok és legszebb helyek fotóival, és egy kis útmutatót az ünnepekről és hagyományokról."
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb13",
+"book": "tb",
+"page": 13,
+"unit": "u1",
+"title": "¿Qué vamos a aprender?",
+"title_hu": "Mit fogunk tanulni?",
+"summary_hu": "A fejezet témái: együttélés a településen, az önkormányzat (Ayuntamiento), a helyi örökség, a közlekedésbiztonság, valamint a térkép és az útvonalak. A képeken egy település nevezetes helyei: kert, szökőkút, régi épületek.",
+"words": [
+{
+"w": "la convivencia",
+"hu": "az együttélés, a jó viszony másokkal"
+},
+{
+"w": "el Ayuntamiento",
+"hu": "az önkormányzat, a városháza"
+},
+{
+"w": "el patrimonio local",
+"hu": "a helyi örökség"
+},
+{
+"w": "la seguridad vial",
+"hu": "a közlekedésbiztonság"
+},
+{
+"w": "el itinerario",
+"hu": "az útvonal"
+},
+{
+"w": "aprender",
+"hu": "tanulni"
+},
+{
+"w": "la fuente",
+"hu": "a szökőkút"
+}
+],
+"tasks": [
+{
+"id": "tb13_1",
+"n": "1",
+"text": "¿Qué vamos a aprender?",
+"text_hu": "Mit fogunk tanulni?",
+"items": [
+{
+"id": "tb13_1a",
+"q": "¿Cuál de estos temas aprendemos en esta unidad?",
+"q_hu": "Melyik témát tanuljuk ebben a fejezetben?",
+"kind": "choice",
+"options": [
+{
+"t": "La seguridad vial",
+"hu": "A közlekedésbiztonság"
+},
+{
+"t": "Los planetas",
+"hu": "A bolygók"
+},
+{
+"t": "Los dinosaurios",
+"hu": "A dinoszauruszok"
+}
+],
+"answer": 0
+},
+{
+"id": "tb13_1b",
+"q": "¿Cuál de estos temas también está en la unidad?",
+"q_hu": "Melyik téma van még benne a fejezetben?",
+"kind": "choice",
+"options": [
+{
+"t": "Las plantas del desierto",
+"hu": "A sivatagi növények"
+},
+{
+"t": "El plano y los itinerarios",
+"hu": "A térkép és az útvonalak"
+},
+{
+"t": "Los números romanos",
+"hu": "A római számok"
+}
+],
+"answer": 1
+},
+{
+"id": "tb13_1c",
+"q": "«El patrimonio local» es un tema de la unidad. ¿Verdadero o falso?",
+"q_hu": "„A helyi örökség” a fejezet egyik témája. Igaz vagy hamis?",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb14",
+"book": "tb",
+"page": 14,
+"unit": "u1",
+"title": "Actívate",
+"title_hu": "Hangolódj rá!",
+"summary_hu": "Ráhangoló feladatok: kik dolgoznak az önkormányzatban, hogyan írjunk le egy útvonalat, és mit csinálnak rosszul az emberek az utcán (egy képen).",
+"words": [
+{
+"w": "la alcaldesa / el alcalde",
+"hu": "a polgármester (nő / férfi)"
+},
+{
+"w": "el concejal / la concejala",
+"hu": "a képviselő (önkormányzati)"
+},
+{
+"w": "el barrendero municipal",
+"hu": "a városi utcaseprő"
+},
+{
+"w": "la bombera municipal",
+"hu": "a városi tűzoltó (nő)"
+},
+{
+"w": "el presidente del Gobierno",
+"hu": "a miniszterelnök"
+},
+{
+"w": "el intruso / la intrusa",
+"hu": "a kakukktojás, a betolakodó"
+},
+{
+"w": "perder",
+"hu": "elveszíteni"
+},
+{
+"w": "el juguete",
+"hu": "a játék"
+},
+{
+"w": "el camino",
+"hu": "az út"
+},
+{
+"w": "el paso de peatones",
+"hu": "a gyalogátkelő, a zebra"
+},
+{
+"w": "la estatua",
+"hu": "a szobor"
+},
+{
+"w": "incorrecto",
+"hu": "helytelen"
+}
+],
+"tasks": [
+{
+"id": "tb14_1",
+"n": "1",
+"text": "Entre estas personas se ha escondido una que no trabaja en el Ayuntamiento. ENCUENTRA al intruso o la intrusa.",
+"text_hu": "Ezek között az emberek között elbújt valaki, aki nem az önkormányzatnál dolgozik. KERESD MEG a kakukktojást!",
+"items": [
+{
+"id": "tb14_1a",
+"q": "¿Quién NO trabaja en el Ayuntamiento?",
+"q_hu": "Ki NEM az önkormányzatnál dolgozik?",
+"kind": "choice",
+"options": [
+{
+"t": "Alcaldesa",
+"hu": "Polgármester (nő)"
+},
+{
+"t": "Concejal",
+"hu": "Önkormányzati képviselő"
+},
+{
+"t": "Barrendero municipal",
+"hu": "Városi utcaseprő"
+},
+{
+"t": "Presidente del Gobierno",
+"hu": "Miniszterelnök"
+}
+],
+"answer": 3
+}
+]
+},
+{
+"id": "tb14_2",
+"n": "2",
+"text": "Al volver del parque has perdido un juguete y tienes que explicarle a un familiar por dónde puede buscarlo.",
+"text_hu": "Amikor hazajöttél a parkból, elvesztettél egy játékot, és el kell magyaráznod egy családtagodnak, merre keresse.",
+"items": [
+{
+"id": "tb14_2a",
+"q": "DIBUJA un plano con el camino que has hecho para volver desde el parque hasta tu casa.",
+"q_hu": "RAJZOLJ egy térképet arról az útról, amelyen a parkból hazamentél.",
+"kind": "open",
+"answer": "Plano con el parque, las calles por las que he pasado y mi casa, con el camino marcado con una línea.",
+"answer_hu": "Térkép a parkkal, az utcákkal, amelyeken átmentem, és a házunkkal; az utat egy vonal jelöli."
+},
+{
+"id": "tb14_2b",
+"q": "SEÑALA al menos tres lugares por los que tenga que pasar cerca.",
+"q_hu": "JELÖLJ BE legalább három helyet, amelyek mellett el kell haladnia.",
+"kind": "open",
+"answer": "Por ejemplo: la panadería, el colegio y la parada del autobús.",
+"answer_hu": "Például: a pékség, az iskola és a buszmegálló."
+}
+]
+},
+{
+"id": "tb14_3",
+"n": "3",
+"text": "Haz de detective de ciudadanos y ESCRIBE tres acciones que las personas de esta ilustración están realizando de manera incorrecta.",
+"text_hu": "Légy polgár-detektív, és ÍRJ le három dolgot, amit az emberek ezen a képen rosszul csinálnak!",
+"items": [
+{
+"id": "tb14_3a",
+"q": "En la ilustración, un hombre cruza la calzada por fuera del paso de peatones. ¿Está bien o mal?",
+"q_hu": "A képen egy férfi a zebrán kívül megy át az úttesten. Jó ez vagy rossz?",
+"kind": "choice",
+"options": [
+{
+"t": "Está bien",
+"hu": "Jó"
+},
+{
+"t": "Está mal",
+"hu": "Rossz"
+}
+],
+"answer": 1
+},
+{
+"id": "tb14_3b",
+"q": "Un niño se sube a la estatua del monumento. ¿Está bien o mal?",
+"q_hu": "Egy gyerek felmászik az emlékmű szobrára. Jó ez vagy rossz?",
+"kind": "choice",
+"options": [
+{
+"t": "Está bien",
+"hu": "Jó"
+},
+{
+"t": "Está mal",
+"hu": "Rossz"
+}
+],
+"answer": 1
+},
+{
+"id": "tb14_3c",
+"q": "Un niño va arrastrando algo con un palo y lo deja tirado en la acera. ¿Está bien o mal?",
+"q_hu": "Egy fiú egy bottal húz valamit, és a járdán hagyja. Jó ez vagy rossz?",
+"kind": "choice",
+"options": [
+{
+"t": "Está bien",
+"hu": "Jó"
+},
+{
+"t": "Está mal",
+"hu": "Rossz"
+}
+],
+"answer": 1
+},
+{
+"id": "tb14_3d",
+"q": "Una niña y una mujer cruzan por el paso de peatones. ¿Está bien o mal?",
+"q_hu": "Egy kislány és egy nő a zebrán megy át. Jó ez vagy rossz?",
+"kind": "choice",
+"options": [
+{
+"t": "Está bien",
+"hu": "Jó"
+},
+{
+"t": "Está mal",
+"hu": "Rossz"
+}
+],
+"answer": 0
+},
+{
+"id": "tb14_3e",
+"q": "Los ciclistas llevan casco y van por la calzada. ¿Está bien o mal?",
+"q_hu": "A biciklisek bukósisakot viselnek és az úton mennek. Jó ez vagy rossz?",
+"kind": "choice",
+"options": [
+{
+"t": "Está bien",
+"hu": "Jó"
+},
+{
+"t": "Está mal",
+"hu": "Rossz"
+}
+],
+"answer": 0
+},
+{
+"id": "tb14_3f",
+"q": "ESCRIBE tres acciones incorrectas de la ilustración.",
+"q_hu": "ÍRJ le három helytelen dolgot a képről!",
+"kind": "open",
+"answer": "1. Un hombre cruza la calle fuera del paso de peatones. 2. Un niño se sube a la estatua. 3. Un niño arrastra cosas y ensucia la acera.",
+"answer_hu": "1. Egy férfi nem a zebrán megy át. 2. Egy gyerek felmászik a szoborra. 3. Egy fiú húz valamit és összepiszkítja a járdát."
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb15",
+"book": "tb",
+"page": 15,
+"unit": "u1",
+"title": "Actívate",
+"title_hu": "Hangolódj rá!",
+"summary_hu": "Folytatódnak a ráhangoló feladatok: kívánságláda az önkormányzatnak, történet írása egy múzeumi képről, és a „belépőjegy” önértékelés: mennyit tudsz már a témákról.",
+"words": [
+{
+"w": "el buzón",
+"hu": "a postaláda, levélláda"
+},
+{
+"w": "la petición",
+"hu": "a kérés, kívánság"
+},
+{
+"w": "necesario",
+"hu": "szükséges"
+},
+{
+"w": "en voz alta",
+"hu": "hangosan"
+},
+{
+"w": "la historia",
+"hu": "a történet"
+},
+{
+"w": "la comida",
+"hu": "az étel"
+},
+{
+"w": "la visita",
+"hu": "a látogatás"
+},
+{
+"w": "el cuidado",
+"hu": "a vigyázás, gondoskodás"
+},
+{
+"w": "el respeto",
+"hu": "a tisztelet"
+},
+{
+"w": "el silencio",
+"hu": "a csend"
+},
+{
+"w": "el ticket de entrada",
+"hu": "a belépőjegy"
+}
+],
+"tasks": [
+{
+"id": "tb15_4",
+"n": "4",
+"text": "El Ayuntamiento ha instalado un buzón para que las personas escriban las cosas que les gustaría que hubiese en la localidad.",
+"text_hu": "Az önkormányzat kitett egy levélládát, hogy az emberek leírják, mit szeretnének még a településen.",
+"items": [
+{
+"id": "tb15_4a",
+"q": "Piensa en los lugares por los que sueles pasar o a los que sueles ir en tu barrio y ESCRIBE tres cosas que no hay y que crees que son necesarias.",
+"q_hu": "Gondolj azokra a helyekre a környékeden, ahol gyakran jársz, és ÍRJ le három dolgot, ami nincs ott, de szerinted kellene.",
+"kind": "open",
+"answer": "Por ejemplo: más papeleras, un carril bici y un parque con columpios.",
+"answer_hu": "Például: több szemetes, kerékpárút és egy park hintákkal."
+},
+{
+"id": "tb15_4b",
+"q": "Poned en común los resultados metiendo todas las peticiones en una caja y leyéndolas después en voz alta. ANOTA las que han sido más repetidas.",
+"q_hu": "Tegyétek az összes kérést egy dobozba, aztán olvassátok fel hangosan. JEGYEZD FEL, melyiket írták a legtöbben.",
+"kind": "open",
+"answer": "Actividad de clase: anotar las peticiones más repetidas.",
+"answer_hu": "Osztálytevékenység: a leggyakoribb kérések felírása."
+}
+]
+},
+{
+"id": "tb15_5",
+"n": "5",
+"text": "Échale imaginación y ESCRIBE la historia de esta ilustración utilizando, al menos, tres de las palabras propuestas: patrimonio, comida, visita, cuidado, respeto, silencio.",
+"text_hu": "Használd a képzeleted, és ÍRD le a kép történetét legalább három megadott szóval: örökség, étel, látogatás, vigyázás, tisztelet, csend.",
+"items": [
+{
+"id": "tb15_5a",
+"q": "En la ilustración hay personas mirando cuadros en un museo. ¿Qué lugar es?",
+"q_hu": "A képen emberek festményeket néznek. Milyen hely ez?",
+"kind": "choice",
+"options": [
+{
+"t": "Un museo",
+"hu": "Egy múzeum"
+},
+{
+"t": "Un supermercado",
+"hu": "Egy szupermarket"
+},
+{
+"t": "Un hospital",
+"hu": "Egy kórház"
+}
+],
+"answer": 0
+},
+{
+"id": "tb15_5b",
+"q": "En un museo, ¿qué hay que guardar?",
+"q_hu": "Mit kell tartani egy múzeumban?",
+"kind": "choice",
+"options": [
+{
+"t": "Silencio",
+"hu": "Csendet"
+},
+{
+"t": "Comida",
+"hu": "Ételt"
+},
+{
+"t": "Gritos",
+"hu": "Kiabálást"
+}
+],
+"answer": 0
+},
+{
+"id": "tb15_5c",
+"q": "ESCRIBE la historia de la ilustración con al menos tres de las palabras.",
+"q_hu": "ÍRD le a kép történetét legalább három szóval!",
+"kind": "open",
+"answer": "Hoy hemos hecho una visita al museo para conocer el patrimonio de la localidad. Hemos mirado los cuadros con respeto y en silencio, y no hemos llevado comida.",
+"answer_hu": "Ma ellátogattunk a múzeumba, hogy megismerjük a település örökségét. Tisztelettel és csendben néztük a képeket, és nem vittünk be ételt."
+}
+]
+},
+{
+"id": "tb15_ticket",
+"n": "Ticket de entrada",
+"text": "LEE cada enunciado y DI si crees que sabes mucho, poco o nada.",
+"text_hu": "OLVASD el az egyes mondatokat, és mondd meg, szerinted sokat, keveset vagy semmit sem tudsz róla.",
+"items": [
+{
+"id": "tb15_ticket_1",
+"q": "Pongo en práctica las normas básicas de convivencia.",
+"q_hu": "Betartom az együttélés alapszabályait.",
+"kind": "open",
+"answer": "Mucho / poco / nada (autoevaluación).",
+"answer_hu": "Sokat / keveset / semmit (önértékelés)."
+},
+{
+"id": "tb15_ticket_2",
+"q": "Identifico a las personas que trabajan en un Ayuntamiento.",
+"q_hu": "Felismerem, kik dolgoznak az önkormányzatnál.",
+"kind": "open",
+"answer": "Mucho / poco / nada (autoevaluación).",
+"answer_hu": "Sokat / keveset / semmit (önértékelés)."
+},
+{
+"id": "tb15_ticket_3",
+"q": "Distingo los servicios municipales de la localidad.",
+"q_hu": "Meg tudom különböztetni a település szolgáltatásait.",
+"kind": "open",
+"answer": "Mucho / poco / nada (autoevaluación).",
+"answer_hu": "Sokat / keveset / semmit (önértékelés)."
+},
+{
+"id": "tb15_ticket_4",
+"q": "Sé cuidar el patrimonio de la localidad.",
+"q_hu": "Tudok vigyázni a település örökségére.",
+"kind": "open",
+"answer": "Mucho / poco / nada (autoevaluación).",
+"answer_hu": "Sokat / keveset / semmit (önértékelés)."
+},
+{
+"id": "tb15_ticket_5",
+"q": "Conozco las normas básicas de seguridad vial.",
+"q_hu": "Ismerem a közlekedésbiztonság alapszabályait.",
+"kind": "open",
+"answer": "Mucho / poco / nada (autoevaluación).",
+"answer_hu": "Sokat / keveset / semmit (önértékelés)."
+},
+{
+"id": "tb15_ticket_6",
+"q": "Sé trazar un itinerario en un plano.",
+"q_hu": "Be tudok rajzolni egy útvonalat a térképre.",
+"kind": "open",
+"answer": "Mucho / poco / nada (autoevaluación).",
+"answer_hu": "Sokat / keveset / semmit (önértékelés)."
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb16",
+"book": "tb",
+"page": 16,
+"unit": "u1",
+"title": "La convivencia en la localidad",
+"title_hu": "Együttélés a településen",
+"summary_hu": "A település (falu vagy város) az a hely, ahol az emberek élnek. Az együttélést törvények (mindenkinek kötelező szabályok, pl. tilos lopni), együttélési normák (pl. átadni a helyet az időseknek a buszon) és értékek (pl. empátia, szolidaritás) segítik, hogy tiszteljük egymást és békében éljünk.",
+"words": [
+{
+"w": "la convivencia",
+"hu": "az együttélés"
+},
+{
+"w": "el pueblo",
+"hu": "a falu"
+},
+{
+"w": "la ciudad",
+"hu": "a város"
+},
+{
+"w": "los vecinos y las vecinas",
+"hu": "a szomszédok"
+},
+{
+"w": "vivir en sociedad",
+"hu": "közösségben élni"
+},
+{
+"w": "la ley",
+"hu": "a törvény"
+},
+{
+"w": "la norma",
+"hu": "a szabály, norma"
+},
+{
+"w": "el valor",
+"hu": "az érték (jó tulajdonság)"
+},
+{
+"w": "el delito",
+"hu": "a bűncselekmény"
+},
+{
+"w": "el robo",
+"hu": "a lopás"
+},
+{
+"w": "ceder el asiento",
+"hu": "átadni az ülőhelyet"
+},
+{
+"w": "la empatía",
+"hu": "az empátia (beleélni magunkat a másik érzéseibe)"
+},
+{
+"w": "la solidaridad",
+"hu": "a szolidaritás, összetartás"
+},
+{
+"w": "los derechos",
+"hu": "a jogok"
+}
+],
+"tasks": [
+{
+"id": "tb16_comp",
+"n": "Comprueba",
+"text": "Comprueba lo que has leído.",
+"text_hu": "Ellenőrizd, mit olvastál! (kiegészítő kérdések)",
+"items": [
+{
+"id": "tb16_compa",
+"q": "Un pueblo o una ciudad es una…",
+"q_hu": "Egy falu vagy egy város egy…",
+"kind": "choice",
+"options": [
+{
+"t": "localidad",
+"hu": "település"
+},
+{
+"t": "montaña",
+"hu": "hegy"
+},
+{
+"t": "familia",
+"hu": "család"
+}
+],
+"answer": 0
+},
+{
+"id": "tb16_compb",
+"q": "«Las leyes castigan los delitos, como el robo.» ¿Verdadero o falso?",
+"q_hu": "„A törvények megbüntetik a bűncselekményeket, például a lopást.” Igaz vagy hamis?",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+},
+{
+"id": "tb16_compc",
+"q": "Ceder el asiento a las personas mayores en el autobús es…",
+"q_hu": "Átadni a helyet az időseknek a buszon egy…",
+"kind": "choice",
+"options": [
+{
+"t": "una norma de convivencia",
+"hu": "együttélési szabály"
+},
+{
+"t": "un delito",
+"hu": "bűncselekmény"
+},
+{
+"t": "una señal de tráfico",
+"hu": "közlekedési tábla"
+}
+],
+"answer": 0
+},
+{
+"id": "tb16_compd",
+"q": "Comprender los sentimientos y las emociones de otras personas y ponerse en su lugar se llama…",
+"q_hu": "Megérteni mások érzéseit és a helyükbe képzelni magunkat úgy hívják, hogy…",
+"kind": "choice",
+"options": [
+{
+"t": "empatía",
+"hu": "empátia"
+},
+{
+"t": "robo",
+"hu": "lopás"
+},
+{
+"t": "ley",
+"hu": "törvény"
+}
+],
+"answer": 0
+}
+]
+}
+],
+"lesson": "c1_convivencia"
+},
+{
+"id": "tb17",
+"book": "tb",
+"page": 17,
+"unit": "u1",
+"title": "Respeto a la diversidad",
+"title_hu": "A sokféleség tisztelete",
+"summary_hu": "A településen nagyon különböző emberek élnek, és ez gazdagítja a közösséget. Nem szabad senkit hátrányosan megkülönböztetni (diszkriminálni) származása, kultúrája, vallása, kora, pénze, gondolatai vagy fogyatékossága miatt. A béke kultúrája azt jelenti, hogy a vitákat békésen oldjuk meg: beszélgetéssel, megegyezéssel és közvetítéssel.",
+"words": [
+{
+"w": "la diversidad",
+"hu": "a sokféleség"
+},
+{
+"w": "el respeto",
+"hu": "a tisztelet"
+},
+{
+"w": "la discriminación",
+"hu": "a hátrányos megkülönböztetés"
+},
+{
+"w": "rechazar",
+"hu": "elutasítani"
+},
+{
+"w": "el origen",
+"hu": "a származás"
+},
+{
+"w": "la religión",
+"hu": "a vallás"
+},
+{
+"w": "la edad",
+"hu": "a kor (életkor)"
+},
+{
+"w": "el racismo",
+"hu": "a rasszizmus"
+},
+{
+"w": "la paz",
+"hu": "a béke"
+},
+{
+"w": "la violencia",
+"hu": "az erőszak"
+},
+{
+"w": "el conflicto",
+"hu": "a vita, konfliktus"
+},
+{
+"w": "el diálogo",
+"hu": "a beszélgetés, párbeszéd"
+},
+{
+"w": "la negociación",
+"hu": "a megegyezés, tárgyalás"
+},
+{
+"w": "la mediación",
+"hu": "a közvetítés (valaki segít kibékülni)"
+},
+{
+"w": "los derechos humanos",
+"hu": "az emberi jogok"
+}
+],
+"tasks": [
+{
+"id": "tb17_1",
+"n": "1",
+"text": "EXPLICA qué son las leyes, las normas y los valores.",
+"text_hu": "MAGYARÁZD EL, mik a törvények, a szabályok (normák) és az értékek!",
+"items": [
+{
+"id": "tb17_1a",
+"q": "Las leyes son…",
+"q_hu": "A törvények…",
+"kind": "choice",
+"options": [
+{
+"t": "normas que todas las personas tienen que cumplir",
+"hu": "szabályok, amelyeket mindenkinek be kell tartania"
+},
+{
+"t": "cualidades que nos enseñan a ser buenas personas",
+"hu": "tulajdonságok, amelyek megtanítanak jó embernek lenni"
+},
+{
+"t": "juegos del recreo",
+"hu": "szünetben játszott játékok"
+}
+],
+"answer": 0
+},
+{
+"id": "tb17_1b",
+"q": "Las normas de convivencia son…",
+"q_hu": "Az együttélési szabályok (normák)…",
+"kind": "choice",
+"options": [
+{
+"t": "castigos para los delitos",
+"hu": "büntetések a bűnökre"
+},
+{
+"t": "reglas que guían cómo se comportan las personas en la sociedad; se transmiten de padres a hijos",
+"hu": "szabályok arról, hogyan viselkedjünk; a szülők adják át a gyerekeknek"
+},
+{
+"t": "señales de tráfico",
+"hu": "közlekedési táblák"
+}
+],
+"answer": 1
+},
+{
+"id": "tb17_1c",
+"q": "Los valores, como la empatía o la solidaridad, son…",
+"q_hu": "Az értékek, például az empátia vagy a szolidaritás…",
+"kind": "choice",
+"options": [
+{
+"t": "cosas que se compran",
+"hu": "dolgok, amiket meg lehet venni"
+},
+{
+"t": "leyes del Gobierno",
+"hu": "a kormány törvényei"
+},
+{
+"t": "cualidades que nos enseñan a ser buenas personas",
+"hu": "tulajdonságok, amelyek megtanítanak jó embernek lenni"
+}
+],
+"answer": 2
+}
+]
+},
+{
+"id": "tb17_2",
+"n": "2",
+"text": "CITA algunas de las actitudes que se deben rechazar y por qué.",
+"text_hu": "SOROLJ FEL néhány viselkedést, amelyet el kell utasítani, és mondd meg, miért!",
+"items": [
+{
+"id": "tb17_2a",
+"q": "¿Qué actitud se debe rechazar?",
+"q_hu": "Melyik viselkedést kell elutasítani?",
+"kind": "choice",
+"options": [
+{
+"t": "Ayudar a un compañero nuevo",
+"hu": "Segíteni egy új osztálytársnak"
+},
+{
+"t": "Discriminar a alguien por su origen o su cultura",
+"hu": "Valakit a származása vagy kultúrája miatt hátrányosan megkülönböztetni"
+},
+{
+"t": "Respetar las ideas de los demás",
+"hu": "Tisztelni mások gondolatait"
+}
+],
+"answer": 1
+},
+{
+"id": "tb17_2b",
+"q": "También se debe rechazar discriminar a alguien por su…",
+"q_hu": "Azt is el kell utasítani, ha valakit hátrányosan megkülönböztetnek a… miatt.",
+"kind": "choice",
+"options": [
+{
+"t": "edad o religión",
+"hu": "kora vagy vallása"
+},
+{
+"t": "nombre bonito",
+"hu": "szép neve"
+},
+{
+"t": "buena letra",
+"hu": "szép kézírása"
+}
+],
+"answer": 0
+},
+{
+"id": "tb17_2c",
+"q": "¿Por qué se deben rechazar estas actitudes?",
+"q_hu": "Miért kell elutasítani ezeket a viselkedéseket?",
+"kind": "open",
+"answer": "Porque todas las personas tienen los mismos derechos y la diversidad nos enriquece; la discriminación hace daño y rompe la convivencia.",
+"answer_hu": "Mert minden embernek ugyanazok a jogai, és a sokféleség gazdagít minket; a megkülönböztetés fájdalmat okoz és tönkreteszi az együttélést."
+}
+]
+},
+{
+"id": "tb17_3",
+"n": "3",
+"text": "DEFINE qué es la cultura de la paz.",
+"text_hu": "HATÁROZD MEG, mi a béke kultúrája!",
+"items": [
+{
+"id": "tb17_3a",
+"q": "La cultura de la paz es…",
+"q_hu": "A béke kultúrája…",
+"kind": "choice",
+"options": [
+{
+"t": "vivir en paz y armonía respetando los derechos de todos y resolver los conflictos de manera pacífica",
+"hu": "békében és egyetértésben élni, tisztelve mindenki jogait, és a vitákat békésen megoldani"
+},
+{
+"t": "ganar siempre las discusiones gritando",
+"hu": "mindig megnyerni a vitát kiabálással"
+},
+{
+"t": "no hablar nunca con nadie",
+"hu": "soha senkivel nem beszélni"
+}
+],
+"answer": 0
+},
+{
+"id": "tb17_3b",
+"q": "¿Cómo se resuelven los conflictos de forma pacífica?",
+"q_hu": "Hogyan oldjuk meg a vitákat békésen?",
+"kind": "choice",
+"options": [
+{
+"t": "Con golpes",
+"hu": "Verekedéssel"
+},
+{
+"t": "Con diálogo, negociación y mediación",
+"hu": "Beszélgetéssel, megegyezéssel és közvetítéssel"
+},
+{
+"t": "Con insultos",
+"hu": "Csúfolódással"
+}
+],
+"answer": 1
+}
+]
+}
+],
+"lesson": "c1_convivencia"
+},
+{
+"id": "tb18",
+"book": "tb",
+"page": 18,
+"unit": "u1",
+"title": "El Ayuntamiento",
+"title_hu": "Az önkormányzat",
+"summary_hu": "Minden településnek van egy vezetése, amit Ayuntamiento-nak (önkormányzat) hívnak; ez szervezi és intézi a község (municipio) ügyeit. Itt dolgozik a polgármester (a legfőbb vezető), a képviselők (akik egy-egy területért felelnek, pl. sport, kultúra, tisztaság) és a városi dolgozók. Négyévente önkormányzati választás van, ahol a 18 év felettiek szavaznak; a képviselők választják meg a polgármestert.",
+"words": [
+{
+"w": "el Ayuntamiento",
+"hu": "az önkormányzat, a városháza"
+},
+{
+"w": "el municipio",
+"hu": "a község (az önkormányzat területe)"
+},
+{
+"w": "el alcalde / la alcaldesa",
+"hu": "a polgármester"
+},
+{
+"w": "el concejal / la concejala",
+"hu": "az önkormányzati képviselő"
+},
+{
+"w": "los trabajadores municipales",
+"hu": "a városi dolgozók"
+},
+{
+"w": "gobernar",
+"hu": "kormányozni, vezetni"
+},
+{
+"w": "las elecciones municipales",
+"hu": "az önkormányzati választás"
+},
+{
+"w": "votar",
+"hu": "szavazni"
+},
+{
+"w": "el padrón municipal",
+"hu": "a lakosok nyilvántartása"
+},
+{
+"w": "la máxima autoridad",
+"hu": "a legfőbb vezető"
+},
+{
+"w": "la limpieza",
+"hu": "a takarítás, tisztaság"
+},
+{
+"w": "la vivienda",
+"hu": "a lakás"
+}
+],
+"tasks": [
+{
+"id": "tb18_comp",
+"n": "Comprueba",
+"text": "Comprueba lo que has leído.",
+"text_hu": "Ellenőrizd, mit olvastál! (kiegészítő kérdések)",
+"items": [
+{
+"id": "tb18_compa",
+"q": "¿Quién dirige el Ayuntamiento y es su máxima autoridad?",
+"q_hu": "Ki vezeti az önkormányzatot, ki a legfőbb vezetője?",
+"kind": "choice",
+"options": [
+{
+"t": "El alcalde o la alcaldesa",
+"hu": "A polgármester"
+},
+{
+"t": "El barrendero",
+"hu": "Az utcaseprő"
+},
+{
+"t": "El presidente del Gobierno",
+"hu": "A miniszterelnök"
+}
+],
+"answer": 0
+},
+{
+"id": "tb18_compb",
+"q": "¿Cada cuántos años se celebran elecciones municipales?",
+"q_hu": "Hány évente van önkormányzati választás?",
+"kind": "num",
+"answer": "4",
+"answer_hu": "négyévente"
+},
+{
+"id": "tb18_compc",
+"q": "Pueden votar las personas mayores de … años. ¿Qué número falta?",
+"q_hu": "A … év feletti emberek szavazhatnak. Melyik szám hiányzik?",
+"kind": "num",
+"answer": "18",
+"answer_hu": "18 év"
+},
+{
+"id": "tb18_compd",
+"q": "¿Quién decide quién ocupará la alcaldía?",
+"q_hu": "Ki dönti el, ki lesz a polgármester?",
+"kind": "choice",
+"options": [
+{
+"t": "Los niños del colegio",
+"hu": "Az iskolás gyerekek"
+},
+{
+"t": "Los concejales y concejalas",
+"hu": "A képviselők"
+},
+{
+"t": "Los turistas",
+"hu": "A turisták"
+}
+],
+"answer": 1
+},
+{
+"id": "tb18_compe",
+"q": "Los concejales ayudan al alcalde a gobernar y se encargan de áreas como deportes o cultura. ¿Verdadero o falso?",
+"q_hu": "A képviselők segítenek a polgármesternek vezetni, és egy-egy területért felelnek (pl. sport, kultúra). Igaz vagy hamis?",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+}
+]
+}
+],
+"lesson": "c1_ayuntamiento"
+},
+{
+"id": "tb19",
+"book": "tb",
+"page": 19,
+"unit": "u1",
+"title": "Los servicios municipales",
+"title_hu": "A városi (önkormányzati) szolgáltatások",
+"summary_hu": "Az önkormányzat szervezi a közszolgáltatásokat, hogy jobb legyen az élet: kultúra és sport (könyvtár, múzeum, sportcsarnok), biztonság (rendőrség, tűzoltók), tömegközlekedés (busz, metró, villamos), forgalomirányítás, szociális segítség, köztéri tárgyak karbantartása (lámpák, szökőkutak), parkok gondozása, szemétszállítás, vízellátás és csatorna. Mindezt az emberek által fizetett helyi adókból (impuestos municipales) fizeti.",
+"words": [
+{
+"w": "los servicios públicos",
+"hu": "a közszolgáltatások"
+},
+{
+"w": "la biblioteca",
+"hu": "a könyvtár"
+},
+{
+"w": "el museo",
+"hu": "a múzeum"
+},
+{
+"w": "el polideportivo",
+"hu": "a sportcsarnok"
+},
+{
+"w": "los bomberos",
+"hu": "a tűzoltók"
+},
+{
+"w": "la policía",
+"hu": "a rendőrség"
+},
+{
+"w": "el transporte público",
+"hu": "a tömegközlekedés"
+},
+{
+"w": "el tranvía",
+"hu": "a villamos"
+},
+{
+"w": "la farola",
+"hu": "az utcai lámpa"
+},
+{
+"w": "la recogida de basuras",
+"hu": "a szemétszállítás"
+},
+{
+"w": "el alcantarillado",
+"hu": "a csatorna(hálózat)"
+},
+{
+"w": "los parques y jardines",
+"hu": "a parkok és kertek"
+},
+{
+"w": "los impuestos municipales",
+"hu": "a helyi adók"
+}
+],
+"tasks": [
+{
+"id": "tb19_1",
+"n": "1",
+"text": "EXPLICA qué es un Ayuntamiento.",
+"text_hu": "MAGYARÁZD EL, mi az önkormányzat (Ayuntamiento)!",
+"items": [
+{
+"id": "tb19_1a",
+"q": "Un Ayuntamiento es…",
+"q_hu": "Az önkormányzat…",
+"kind": "choice",
+"options": [
+{
+"t": "el gobierno de una localidad, que organiza y gestiona todo lo que ocurre en el municipio",
+"hu": "egy település vezetése, amely szervezi és intézi a község ügyeit"
+},
+{
+"t": "una tienda de juguetes",
+"hu": "egy játékbolt"
+},
+{
+"t": "un tipo de señal de tráfico",
+"hu": "egy közlekedési tábla fajta"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "tb19_2",
+"n": "2",
+"text": "ENUMERA las distintas profesiones que componen un Ayuntamiento.",
+"text_hu": "SOROLD FEL, milyen foglalkozású emberek alkotják az önkormányzatot!",
+"items": [
+{
+"id": "tb19_2a",
+"q": "¿Quién dirige el Ayuntamiento?",
+"q_hu": "Ki vezeti az önkormányzatot?",
+"kind": "type",
+"answer": "el alcalde",
+"alts": [
+"la alcaldesa",
+"alcalde",
+"alcaldesa",
+"el alcalde o la alcaldesa"
+],
+"answer_hu": "a polgármester"
+},
+{
+"id": "tb19_2b",
+"q": "¿Quiénes ayudan al alcalde a gobernar?",
+"q_hu": "Kik segítenek a polgármesternek vezetni?",
+"kind": "type",
+"answer": "los concejales",
+"alts": [
+"concejales",
+"las concejalas",
+"concejales y concejalas",
+"los concejales y las concejalas"
+],
+"answer_hu": "a képviselők"
+},
+{
+"id": "tb19_2c",
+"q": "¿Quiénes realizan las tareas para que la localidad funcione bien (limpieza, seguridad…)?",
+"q_hu": "Kik végzik a munkát, hogy a település jól működjön (takarítás, biztonság…)?",
+"kind": "type",
+"answer": "los trabajadores municipales",
+"alts": [
+"trabajadores municipales",
+"las trabajadoras municipales",
+"trabajadores y trabajadoras municipales"
+],
+"answer_hu": "a városi dolgozók"
+}
+]
+},
+{
+"id": "tb19_3",
+"n": "3",
+"text": "NOMBRA tres servicios municipales que uses o veas en tu día a día.",
+"text_hu": "NEVEZZ MEG három városi szolgáltatást, amit nap mint nap használsz vagy látsz!",
+"items": [
+{
+"id": "tb19_3a",
+"q": "¿Cuál de estos es un servicio municipal?",
+"q_hu": "Melyik ezek közül városi szolgáltatás?",
+"kind": "choice",
+"options": [
+{
+"t": "La recogida de basuras",
+"hu": "A szemétszállítás"
+},
+{
+"t": "Un videojuego",
+"hu": "Egy videojáték"
+},
+{
+"t": "El cumpleaños de un amigo",
+"hu": "Egy barát születésnapja"
+}
+],
+"answer": 0
+},
+{
+"id": "tb19_3b",
+"q": "¿Cuál de estos también es un servicio municipal?",
+"q_hu": "Melyik ez közül is városi szolgáltatás?",
+"kind": "choice",
+"options": [
+{
+"t": "La televisión de casa",
+"hu": "Az otthoni tévé"
+},
+{
+"t": "El autobús urbano",
+"hu": "A városi busz"
+},
+{
+"t": "La mochila del colegio",
+"hu": "Az iskolatáska"
+}
+],
+"answer": 1
+},
+{
+"id": "tb19_3c",
+"q": "NOMBRA tres servicios municipales que uses o veas en tu día a día.",
+"q_hu": "Nevezz meg három városi szolgáltatást, amit használsz vagy látsz!",
+"kind": "open",
+"answer": "La biblioteca municipal, el autobús y la limpieza de las calles.",
+"answer_hu": "A városi könyvtár, a busz és az utcák takarítása."
+}
+]
+}
+],
+"lesson": "c1_ayuntamiento"
+},
+{
+"id": "tb20",
+"book": "tb",
+"page": 20,
+"unit": "u1",
+"title": "El patrimonio local",
+"title_hu": "A helyi örökség",
+"summary_hu": "Az örökség (patrimonio) mindaz, amit a múltból örököltünk, és szépsége vagy természeti, művészeti, történelmi értéke miatt meg kell őrizni. Lehet természeti (pl. értékes vagy veszélyeztetett tájak) és kulturális. A kulturális örökség lehet tárgyi (amit meg lehet fogni, pl. egy városfal) vagy szellemi (szokások, hagyományok, tudás, pl. karnevál, kínai újév). A más országokból érkezett emberek szokásai is gazdagítják.",
+"words": [
+{
+"w": "el patrimonio",
+"hu": "az örökség"
+},
+{
+"w": "heredar",
+"hu": "örökölni"
+},
+{
+"w": "conservar",
+"hu": "megőrizni"
+},
+{
+"w": "proteger",
+"hu": "megvédeni"
+},
+{
+"w": "el patrimonio natural",
+"hu": "a természeti örökség"
+},
+{
+"w": "el patrimonio cultural",
+"hu": "a kulturális örökség"
+},
+{
+"w": "el patrimonio material",
+"hu": "a tárgyi örökség (meg lehet fogni)"
+},
+{
+"w": "el patrimonio inmaterial",
+"hu": "a szellemi örökség (szokások, hagyományok)"
+},
+{
+"w": "la costumbre",
+"hu": "a szokás"
+},
+{
+"w": "la tradición",
+"hu": "a hagyomány"
+},
+{
+"w": "la muralla",
+"hu": "a városfal"
+},
+{
+"w": "el carnaval",
+"hu": "a karnevál, farsang"
+},
+{
+"w": "amenazado",
+"hu": "veszélyeztetett"
+}
+],
+"tasks": [
+{
+"id": "tb20_comp",
+"n": "Comprueba",
+"text": "Comprueba lo que has leído.",
+"text_hu": "Ellenőrizd, mit olvastál! (kiegészítő kérdések)",
+"items": [
+{
+"id": "tb20_compa",
+"q": "Una muralla antigua de una ciudad es patrimonio…",
+"q_hu": "Egy város régi fala… örökség.",
+"kind": "choice",
+"options": [
+{
+"t": "material",
+"hu": "tárgyi"
+},
+{
+"t": "inmaterial",
+"hu": "szellemi"
+},
+{
+"t": "natural",
+"hu": "természeti"
+}
+],
+"answer": 0
+},
+{
+"id": "tb20_compb",
+"q": "El carnaval es patrimonio…",
+"q_hu": "A karnevál… örökség.",
+"kind": "choice",
+"options": [
+{
+"t": "material",
+"hu": "tárgyi"
+},
+{
+"t": "inmaterial",
+"hu": "szellemi"
+},
+{
+"t": "natural",
+"hu": "természeti"
+}
+],
+"answer": 1
+},
+{
+"id": "tb20_compc",
+"q": "La celebración del Año Nuevo chino es patrimonio…",
+"q_hu": "A kínai újév ünneplése… örökség.",
+"kind": "choice",
+"options": [
+{
+"t": "inmaterial",
+"hu": "szellemi"
+},
+{
+"t": "natural",
+"hu": "természeti"
+},
+{
+"t": "material",
+"hu": "tárgyi"
+}
+],
+"answer": 0
+},
+{
+"id": "tb20_compd",
+"q": "Un bosque protegido es patrimonio…",
+"q_hu": "Egy védett erdő… örökség.",
+"kind": "choice",
+"options": [
+{
+"t": "cultural",
+"hu": "kulturális"
+},
+{
+"t": "natural",
+"hu": "természeti"
+}
+],
+"answer": 1
+},
+{
+"id": "tb20_compe",
+"q": "«El patrimonio material es todo aquello que se puede tocar.» ¿Verdadero o falso?",
+"q_hu": "„A tárgyi örökség minden, amit meg lehet fogni.” Igaz vagy hamis?",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+}
+]
+}
+],
+"lesson": "c1_patrimonio"
+},
+{
+"id": "tb21",
+"book": "tb",
+"page": 21,
+"unit": "u1",
+"title": "El cuidado del patrimonio",
+"title_hu": "Vigyázzunk az örökségre!",
+"summary_hu": "A törvények mellett mi magunk is segíthetünk megóvni az örökséget. Ha műemléket, múzeumot, könyvtárat vagy régészeti lelőhelyet látogatunk, szabályokat kell betartani: követni az utasításokat és a kijelölt útvonalat, tisztelni a többieket (nem telefonálni, nem hangoskodni, nem futni), nem fényképezni, ha nem szabad, nem megérinteni a műalkotásokat, és csak a kijelölt helyen enni-inni.",
+"words": [
+{
+"w": "el cuidado",
+"hu": "a gondozás, vigyázás"
+},
+{
+"w": "el monumento",
+"hu": "a műemlék"
+},
+{
+"w": "el yacimiento arqueológico",
+"hu": "a régészeti lelőhely"
+},
+{
+"w": "las instrucciones",
+"hu": "az utasítások"
+},
+{
+"w": "el teléfono móvil",
+"hu": "a mobiltelefon"
+},
+{
+"w": "hablar en voz alta",
+"hu": "hangosan beszélni"
+},
+{
+"w": "correr",
+"hu": "futni"
+},
+{
+"w": "hacer fotografías",
+"hu": "fényképezni"
+},
+{
+"w": "tocar",
+"hu": "megérinteni"
+},
+{
+"w": "la obra de arte",
+"hu": "a műalkotás"
+},
+{
+"w": "comer y beber",
+"hu": "enni és inni"
+},
+{
+"w": "permitido",
+"hu": "megengedett"
+}
+],
+"tasks": [
+{
+"id": "tb21_1",
+"n": "1",
+"text": "DEFINE qué es el patrimonio.",
+"text_hu": "HATÁROZD MEG, mi az örökség!",
+"items": [
+{
+"id": "tb21_1a",
+"q": "El patrimonio es…",
+"q_hu": "Az örökség…",
+"kind": "choice",
+"options": [
+{
+"t": "todo lo que se ha heredado del pasado y que es importante conservar por su belleza o su valor natural, artístico o histórico",
+"hu": "minden, amit a múltból örököltünk, és szépsége vagy természeti, művészeti, történelmi értéke miatt meg kell őrizni"
+},
+{
+"t": "el dinero que tiene el Ayuntamiento",
+"hu": "az önkormányzat pénze"
+},
+{
+"t": "las señales de tráfico de la ciudad",
+"hu": "a város közlekedési táblái"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "tb21_2",
+"n": "2",
+"text": "EXPLICA por qué es importante cuidar el patrimonio.",
+"text_hu": "MAGYARÁZD EL, miért fontos vigyázni az örökségre!",
+"items": [
+{
+"id": "tb21_2a",
+"q": "Es importante cuidar el patrimonio para que…",
+"q_hu": "Azért fontos vigyázni az örökségre, hogy…",
+"kind": "choice",
+"options": [
+{
+"t": "podamos disfrutarlo y también lo disfruten otras personas en el futuro",
+"hu": "mi is élvezhessük, és a jövőben mások is"
+},
+{
+"t": "nadie pueda verlo nunca",
+"hu": "soha senki ne láthassa"
+},
+{
+"t": "se rompa pronto",
+"hu": "hamar tönkremenjen"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "tb21_3",
+"n": "3",
+"text": "NOMBRA un ejemplo de patrimonio natural y otro de patrimonio cultural de tu entorno.",
+"text_hu": "NEVEZZ MEG egy természeti és egy kulturális örökséget a környezetedből!",
+"items": [
+{
+"id": "tb21_3a",
+"q": "Un ejemplo de patrimonio natural de tu entorno.",
+"q_hu": "Egy természeti örökség a környékedről.",
+"kind": "open",
+"answer": "Una playa, un río, un bosque o una montaña de la zona.",
+"answer_hu": "Egy tengerpart, folyó, erdő vagy hegy a környéken."
+},
+{
+"id": "tb21_3b",
+"q": "Un ejemplo de patrimonio cultural de tu entorno.",
+"q_hu": "Egy kulturális örökség a környékedről.",
+"kind": "open",
+"answer": "Una iglesia antigua, un castillo, un museo o una fiesta tradicional.",
+"answer_hu": "Egy régi templom, vár, múzeum vagy hagyományos ünnep."
+}
+]
+},
+{
+"id": "tb21_4",
+"n": "4",
+"text": "DESCRIBE la escena de la visita al museo y haz un listado con las cosas que no se deben hacer.",
+"text_hu": "ÍRD LE a múzeumi látogatás jelenetét, és készíts listát arról, mit nem szabad csinálni!",
+"items": [
+{
+"id": "tb21_4a",
+"q": "En el museo, ¿se puede usar el teléfono móvil y hablar en voz alta?",
+"q_hu": "A múzeumban szabad mobilozni és hangosan beszélni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "tb21_4b",
+"q": "¿Se pueden tocar las obras de arte?",
+"q_hu": "Szabad megérinteni a műalkotásokat?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "tb21_4c",
+"q": "¿Se pueden hacer fotografías?",
+"q_hu": "Szabad fényképezni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí, siempre",
+"hu": "Igen, mindig"
+},
+{
+"t": "Solo si está permitido",
+"hu": "Csak ha megengedett"
+}
+],
+"answer": 1
+},
+{
+"id": "tb21_4d",
+"q": "¿Dónde se puede comer y beber?",
+"q_hu": "Hol szabad enni és inni?",
+"kind": "choice",
+"options": [
+{
+"t": "Al lado de los cuadros",
+"hu": "A képek mellett"
+},
+{
+"t": "Solo en las zonas permitidas",
+"hu": "Csak a kijelölt helyeken"
+}
+],
+"answer": 1
+},
+{
+"id": "tb21_4e",
+"q": "Hay que seguir las instrucciones y los recorridos marcados para la visita. ¿Verdadero o falso?",
+"q_hu": "Követni kell az utasításokat és a kijelölt útvonalat. Igaz vagy hamis?",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+},
+{
+"id": "tb21_4f",
+"q": "Haz un listado con las cosas que no se deben hacer en el museo.",
+"q_hu": "Írd le, mit nem szabad csinálni a múzeumban!",
+"kind": "open",
+"answer": "No usar el móvil, no hablar en voz alta, no correr, no hacer fotos si no está permitido, no tocar las obras de arte, no comer ni beber fuera de las zonas permitidas.",
+"answer_hu": "Nem mobilozni, nem hangoskodni, nem futni, nem fényképezni, ha nem szabad, nem megérinteni a műalkotásokat, nem enni-inni a kijelölt helyen kívül."
+}
+]
+}
+],
+"lesson": "c1_patrimonio"
+},
+{
+"id": "tb22",
+"book": "tb",
+"page": 22,
+"unit": "u1",
+"title": "La seguridad vial",
+"title_hu": "Közlekedésbiztonság",
+"summary_hu": "A közlekedésbiztonság azoknak a szabályoknak az összessége, amelyek lehetővé teszik, hogy az emberek és a járművek biztonságosan közlekedjenek. A közlekedési jelzések fajtái: táblák (oszlopon), fényjelzések (lámpa), az útra festett jelek (pl. zebra) és a rendőr kézjelei. A táblák: piros szélű háromszög = veszély, piros szélű kör = tilalom, kék kör = kötelező, kék négyzet/téglalap = hasznos információ.",
+"words": [
+{
+"w": "la seguridad vial",
+"hu": "a közlekedésbiztonság"
+},
+{
+"w": "la señal de tráfico",
+"hu": "a közlekedési tábla, jelzés"
+},
+{
+"w": "la señal vertical",
+"hu": "a (oszlopon álló) tábla"
+},
+{
+"w": "la señal luminosa",
+"hu": "a fényjelzés (lámpa)"
+},
+{
+"w": "el semáforo",
+"hu": "a közlekedési lámpa"
+},
+{
+"w": "la calzada",
+"hu": "az úttest"
+},
+{
+"w": "el agente de tráfico",
+"hu": "a közlekedési rendőr"
+},
+{
+"w": "el silbato",
+"hu": "a síp"
+},
+{
+"w": "el peligro",
+"hu": "a veszély"
+},
+{
+"w": "la prohibición",
+"hu": "a tilalom"
+},
+{
+"w": "la obligación",
+"hu": "a kötelezettség, kötelező dolog"
+},
+{
+"w": "triangular",
+"hu": "háromszög alakú"
+},
+{
+"w": "circular",
+"hu": "kör alakú"
+},
+{
+"w": "el vehículo",
+"hu": "a jármű"
+}
+],
+"tasks": [
+{
+"id": "tb22_comp",
+"n": "Comprueba",
+"text": "Comprueba lo que has leído.",
+"text_hu": "Ellenőrizd, mit olvastál! (kiegészítő kérdések)",
+"items": [
+{
+"id": "tb22_compa",
+"q": "Una señal triangular con borde rojo indica…",
+"q_hu": "A piros szélű háromszög alakú tábla…-t jelez.",
+"kind": "choice",
+"options": [
+{
+"t": "peligro",
+"hu": "veszélyt"
+},
+{
+"t": "prohibición",
+"hu": "tilalmat"
+},
+{
+"t": "obligación",
+"hu": "kötelezettséget"
+},
+{
+"t": "información útil",
+"hu": "hasznos információt"
+}
+],
+"answer": 0
+},
+{
+"id": "tb22_compb",
+"q": "Una señal circular con borde rojo indica…",
+"q_hu": "A piros szélű kör alakú tábla…-t jelez.",
+"kind": "choice",
+"options": [
+{
+"t": "peligro",
+"hu": "veszélyt"
+},
+{
+"t": "prohibición",
+"hu": "tilalmat"
+},
+{
+"t": "obligación",
+"hu": "kötelezettséget"
+},
+{
+"t": "información útil",
+"hu": "hasznos információt"
+}
+],
+"answer": 1
+},
+{
+"id": "tb22_compc",
+"q": "Una señal circular con fondo azul indica…",
+"q_hu": "A kék alapú kör alakú tábla…-t jelez.",
+"kind": "choice",
+"options": [
+{
+"t": "peligro",
+"hu": "veszélyt"
+},
+{
+"t": "prohibición",
+"hu": "tilalmat"
+},
+{
+"t": "obligación",
+"hu": "kötelezettséget"
+},
+{
+"t": "información útil",
+"hu": "hasznos információt"
+}
+],
+"answer": 2
+},
+{
+"id": "tb22_compd",
+"q": "Una señal cuadrada o rectangular con fondo azul ofrece…",
+"q_hu": "A kék alapú négyzet vagy téglalap alakú tábla…-t ad.",
+"kind": "choice",
+"options": [
+{
+"t": "peligro",
+"hu": "veszélyt"
+},
+{
+"t": "prohibición",
+"hu": "tilalmat"
+},
+{
+"t": "obligación",
+"hu": "kötelezettséget"
+},
+{
+"t": "información útil",
+"hu": "hasznos információt"
+}
+],
+"answer": 3
+},
+{
+"id": "tb22_compe",
+"q": "Los pasos de peatones son señales…",
+"q_hu": "A zebrák…",
+"kind": "choice",
+"options": [
+{
+"t": "pintadas en la calzada",
+"hu": "az útra festett jelek"
+},
+{
+"t": "luminosas",
+"hu": "fényjelzések"
+},
+{
+"t": "hechas por agentes",
+"hu": "rendőri jelzések"
+}
+],
+"answer": 0
+},
+{
+"id": "tb22_compf",
+"q": "El semáforo es una señal…",
+"q_hu": "A közlekedési lámpa egy…",
+"kind": "choice",
+"options": [
+{
+"t": "luminosa",
+"hu": "fényjelzés"
+},
+{
+"t": "pintada en la calzada",
+"hu": "útra festett jel"
+},
+{
+"t": "hecha con un silbato",
+"hu": "sípjelzés"
+}
+],
+"answer": 0
+}
+]
+}
+],
+"lesson": "c1_vial"
+},
+{
+"id": "tb23",
+"book": "tb",
+"page": 23,
+"unit": "u1",
+"title": "Normas de seguridad vial",
+"title_hu": "A közlekedésbiztonság szabályai",
+"summary_hu": "Fontos betartani a táblákat és a közlekedési szabályokat, mert így elkerüljük a baleseteket. Szabályok: mindig a járdán menj, távol a szegélytől; autóban mindig kösd be a biztonsági övet és ülj megfelelő ülésen; biciklin, rolleren, görkorcsolyán viselj bukósisakot és védőfelszerelést; mielőtt átmész a zebrán vagy zöld lámpánál, nézz balra, jobbra, aztán megint balra.",
+"words": [
+{
+"w": "la acera",
+"hu": "a járda"
+},
+{
+"w": "el bordillo",
+"hu": "a járdaszegély"
+},
+{
+"w": "el cinturón de seguridad",
+"hu": "a biztonsági öv"
+},
+{
+"w": "el asiento",
+"hu": "az ülés"
+},
+{
+"w": "el casco",
+"hu": "a bukósisak"
+},
+{
+"w": "las protecciones",
+"hu": "a védőfelszerelés"
+},
+{
+"w": "la bicicleta",
+"hu": "a bicikli, kerékpár"
+},
+{
+"w": "el patinete",
+"hu": "a roller"
+},
+{
+"w": "los patines",
+"hu": "a görkorcsolya"
+},
+{
+"w": "cruzar la calle",
+"hu": "átmenni az úton"
+},
+{
+"w": "mirar a la izquierda",
+"hu": "balra nézni"
+},
+{
+"w": "mirar a la derecha",
+"hu": "jobbra nézni"
+},
+{
+"w": "el accidente",
+"hu": "a baleset"
+}
+],
+"tasks": [
+{
+"id": "tb23_1",
+"n": "1",
+"text": "DEFINE seguridad vial.",
+"text_hu": "HATÁROZD MEG, mi a közlekedésbiztonság!",
+"items": [
+{
+"id": "tb23_1a",
+"q": "La seguridad vial es…",
+"q_hu": "A közlekedésbiztonság…",
+"kind": "choice",
+"options": [
+{
+"t": "el conjunto de normas y acciones que permiten que las personas y los vehículos se muevan por las calles y carreteras de forma segura",
+"hu": "azoknak a szabályoknak és tetteknek az összessége, amelyekkel emberek és járművek biztonságosan közlekedhetnek az utcákon és utakon"
+},
+{
+"t": "una carrera de coches",
+"hu": "egy autóverseny"
+},
+{
+"t": "un tipo de patrimonio",
+"hu": "egyfajta örökség"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "tb23_2",
+"n": "2",
+"text": "CLASIFICA los cuatro tipos principales de señales de tráfico.",
+"text_hu": "OSZTÁLYOZD a közlekedési jelzések négy fő fajtáját!",
+"items": [
+{
+"id": "tb23_2a",
+"q": "Las señales colocadas en postes, como la de paso de peatones, son señales…",
+"q_hu": "Az oszlopra tett táblák, pl. a gyalogátkelő táblája…",
+"kind": "choice",
+"options": [
+{
+"t": "verticales",
+"hu": "függőleges táblák"
+},
+{
+"t": "luminosas",
+"hu": "fényjelzések"
+},
+{
+"t": "pintadas en la calzada",
+"hu": "útra festett jelek"
+},
+{
+"t": "hechas por agentes de tráfico",
+"hu": "rendőri jelzések"
+}
+],
+"answer": 0
+},
+{
+"id": "tb23_2b",
+"q": "Los semáforos, que nos indican cuándo se puede pasar y cuándo hay que parar con colores, son señales…",
+"q_hu": "A lámpák, amelyek színekkel mutatják, mikor mehetünk és mikor kell megállni…",
+"kind": "choice",
+"options": [
+{
+"t": "verticales",
+"hu": "függőleges táblák"
+},
+{
+"t": "luminosas",
+"hu": "fényjelzések"
+},
+{
+"t": "pintadas en la calzada",
+"hu": "útra festett jelek"
+},
+{
+"t": "hechas por agentes de tráfico",
+"hu": "rendőri jelzések"
+}
+],
+"answer": 1
+},
+{
+"id": "tb23_2c",
+"q": "Los pasos de peatones dibujados en el suelo son señales…",
+"q_hu": "Az útra rajzolt zebrák…",
+"kind": "choice",
+"options": [
+{
+"t": "verticales",
+"hu": "függőleges táblák"
+},
+{
+"t": "luminosas",
+"hu": "fényjelzések"
+},
+{
+"t": "pintadas en la calzada",
+"hu": "útra festett jelek"
+},
+{
+"t": "hechas por agentes de tráfico",
+"hu": "rendőri jelzések"
+}
+],
+"answer": 2
+},
+{
+"id": "tb23_2d",
+"q": "Las que hace un policía con sus brazos o con un silbato son señales…",
+"q_hu": "Amit a rendőr a karjával vagy sípjával jelez…",
+"kind": "choice",
+"options": [
+{
+"t": "verticales",
+"hu": "függőleges táblák"
+},
+{
+"t": "luminosas",
+"hu": "fényjelzések"
+},
+{
+"t": "pintadas en la calzada",
+"hu": "útra festett jelek"
+},
+{
+"t": "hechas por agentes de tráfico",
+"hu": "rendőri jelzések"
+}
+],
+"answer": 3
+}
+]
+},
+{
+"id": "tb23_3",
+"n": "3",
+"text": "EXPLICA por qué es necesario mirar a ambos lados antes de cruzar la calle.",
+"text_hu": "MAGYARÁZD EL, miért kell mindkét irányba nézni, mielőtt átmész az úton!",
+"items": [
+{
+"id": "tb23_3a",
+"q": "Antes de cruzar, ¿en qué orden hay que mirar?",
+"q_hu": "Átkelés előtt milyen sorrendben kell nézni?",
+"kind": "choice",
+"options": [
+{
+"t": "Izquierda, derecha y otra vez izquierda",
+"hu": "Balra, jobbra, aztán megint balra"
+},
+{
+"t": "Solo hacia arriba",
+"hu": "Csak felfelé"
+},
+{
+"t": "No hace falta mirar",
+"hu": "Nem kell nézni"
+}
+],
+"answer": 0
+},
+{
+"id": "tb23_3b",
+"q": "¿Por qué es necesario mirar a ambos lados antes de cruzar?",
+"q_hu": "Miért kell mindkét irányba nézni átkelés előtt?",
+"kind": "open",
+"answer": "Para comprobar que no viene ningún vehículo y evitar un accidente.",
+"answer_hu": "Hogy megnézzük, nem jön-e jármű, és elkerüljük a balesetet."
+}
+]
+}
+],
+"lesson": "c1_vial"
+},
+{
+"id": "tb24",
+"book": "tb",
+"page": 24,
+"unit": "u1",
+"title": "El plano y los itinerarios",
+"title_hu": "A térkép és az útvonalak",
+"summary_hu": "A térkép (plano) egy kis hely (szoba, ház, környék, település) részletes rajza felülről nézve. A várostérképen az utcák és a fontos épületek látszanak; segít eligazodni ismeretlen helyen. Részei: színek (az utcák szürkék, a parkok zöldek), égtájak (észak, dél, kelet, nyugat), utcanevek, négyzetháló (betűk és számok, pl. B4) és jelmagyarázat (kis jelek épületekre, pl. kórház, iskola, park).",
+"words": [
+{
+"w": "el plano",
+"hu": "a térkép (helyé, városé)"
+},
+{
+"w": "el itinerario",
+"hu": "az útvonal"
+},
+{
+"w": "visto desde arriba",
+"hu": "felülről nézve"
+},
+{
+"w": "el barrio",
+"hu": "a városrész, környék"
+},
+{
+"w": "orientarse",
+"hu": "eligazodni, tájékozódni"
+},
+{
+"w": "los puntos cardinales",
+"hu": "az égtájak"
+},
+{
+"w": "el norte",
+"hu": "az észak"
+},
+{
+"w": "el sur",
+"hu": "a dél"
+},
+{
+"w": "el este",
+"hu": "a kelet"
+},
+{
+"w": "el oeste",
+"hu": "a nyugat"
+},
+{
+"w": "la cuadrícula",
+"hu": "a négyzetháló"
+},
+{
+"w": "la leyenda",
+"hu": "a jelmagyarázat"
+},
+{
+"w": "el símbolo",
+"hu": "a jel, szimbólum"
+},
+{
+"w": "el hospital",
+"hu": "a kórház"
+}
+],
+"tasks": [
+{
+"id": "tb24_comp",
+"n": "Comprueba",
+"text": "Comprueba lo que has leído.",
+"text_hu": "Ellenőrizd, mit olvastál! (kiegészítő kérdések)",
+"items": [
+{
+"id": "tb24_compa",
+"q": "Un plano es un dibujo de un lugar visto…",
+"q_hu": "A térkép egy hely rajza…nézve.",
+"kind": "choice",
+"options": [
+{
+"t": "desde arriba",
+"hu": "felülről"
+},
+{
+"t": "desde un lado",
+"hu": "oldalról"
+},
+{
+"t": "desde abajo",
+"hu": "alulról"
+}
+],
+"answer": 0
+},
+{
+"id": "tb24_compb",
+"q": "En un plano, las calles suelen ser de color…",
+"q_hu": "A térképen az utcák általában…színűek.",
+"kind": "choice",
+"options": [
+{
+"t": "gris",
+"hu": "szürke"
+},
+{
+"t": "verde",
+"hu": "zöld"
+},
+{
+"t": "rojo",
+"hu": "piros"
+}
+],
+"answer": 0
+},
+{
+"id": "tb24_compc",
+"q": "En un plano, los parques suelen ser de color…",
+"q_hu": "A térképen a parkok általában…színűek.",
+"kind": "choice",
+"options": [
+{
+"t": "azul",
+"hu": "kék"
+},
+{
+"t": "verde",
+"hu": "zöld"
+},
+{
+"t": "gris",
+"hu": "szürke"
+}
+],
+"answer": 1
+},
+{
+"id": "tb24_compd",
+"q": "Los dibujos pequeños que representan edificios o servicios (colegio, hospital, parque) se llaman…",
+"q_hu": "A kis rajzokat, amelyek épületeket, szolgáltatásokat jelölnek, úgy hívják, hogy…",
+"kind": "choice",
+"options": [
+{
+"t": "la leyenda",
+"hu": "jelmagyarázat"
+},
+{
+"t": "la cuadrícula",
+"hu": "négyzetháló"
+},
+{
+"t": "el semáforo",
+"hu": "lámpa"
+}
+],
+"answer": 0
+},
+{
+"id": "tb24_compe",
+"q": "Las letras y números (A, B, C… 1, 2, 3…) que permiten situar rápido los elementos forman…",
+"q_hu": "A betűk és számok (A, B, C… 1, 2, 3…), amelyekkel gyorsan megtaláljuk a dolgokat, a…",
+"kind": "choice",
+"options": [
+{
+"t": "la leyenda",
+"hu": "jelmagyarázat"
+},
+{
+"t": "la cuadrícula",
+"hu": "négyzetháló"
+},
+{
+"t": "la muralla",
+"hu": "városfal"
+}
+],
+"answer": 1
+},
+{
+"id": "tb24_compf",
+"q": "Los cuatro puntos cardinales son norte, sur, este y…",
+"q_hu": "A négy égtáj: észak, dél, kelet és…",
+"kind": "type",
+"answer": "oeste",
+"alts": [
+"el oeste"
+],
+"answer_hu": "nyugat"
+}
+]
+}
+],
+"lesson": "c1_plano"
+},
+{
+"id": "tb25",
+"book": "tb",
+"page": 25,
+"unit": "u1",
+"title": "El plano y los itinerarios",
+"title_hu": "A térkép és az útvonalak",
+"summary_hu": "Hogyan rajzoljunk útvonalat a térképre: 1) keressük meg az égtájakat, 2) keressük meg a kiindulási és az érkezési pontot, 3) válasszuk ki a legjobb utat, 4) keressük meg az utcákat és a tájékozódási pontokat (könyvtár, állomás, kórház). A feladatban a térkép bal alsó sarkában (A1) park van, a cél a C3 négyzetben van.",
+"words": [
+{
+"w": "trazar",
+"hu": "megrajzolni, kijelölni"
+},
+{
+"w": "el punto de partida",
+"hu": "a kiindulási pont"
+},
+{
+"w": "el punto de destino",
+"hu": "az érkezési pont, cél"
+},
+{
+"w": "el mejor camino",
+"hu": "a legjobb út"
+},
+{
+"w": "el lugar de referencia",
+"hu": "a tájékozódási pont"
+},
+{
+"w": "la estación de tren",
+"hu": "a vasútállomás"
+},
+{
+"w": "la estación de autobuses",
+"hu": "a buszpályaudvar"
+},
+{
+"w": "la iglesia",
+"hu": "a templom"
+},
+{
+"w": "el centro médico",
+"hu": "az orvosi rendelő"
+},
+{
+"w": "camina hacia…",
+"hu": "menj … felé"
+},
+{
+"w": "toma la calle de la izquierda",
+"hu": "menj be a bal oldali utcába"
+},
+{
+"w": "sigue recto",
+"hu": "menj egyenesen"
+}
+],
+"tasks": [
+{
+"id": "tb25_1",
+"n": "1",
+"text": "Durante un paseo por el parque con tu madre, una señora os ha preguntado cómo llegar hasta la estación de tren. A partir del siguiente plano, EXPLICA cómo llegar desde el parque (A1) hasta el hospital (C3).",
+"text_hu": "Amikor anyukáddal sétáltatok a parkban, egy néni megkérdezte, hogyan jut el a vasútállomásra. A térkép alapján MAGYARÁZD EL, hogyan lehet eljutni a parktól (A1) a kórházig (C3)!",
+"items": [
+{
+"id": "tb25_1a",
+"q": "Identifica el punto de partida: ¿dónde empieza el itinerario?",
+"q_hu": "Mi a kiindulási pont? Hol kezdődik az útvonal?",
+"kind": "choice",
+"options": [
+{
+"t": "En el parque (A1)",
+"hu": "A parkban (A1)"
+},
+{
+"t": "En el hospital (C3)",
+"hu": "A kórháznál (C3)"
+},
+{
+"t": "En la iglesia",
+"hu": "A templomnál"
+}
+],
+"answer": 0
+},
+{
+"id": "tb25_1b",
+"q": "Identifica el punto de destino: ¿dónde termina el itinerario?",
+"q_hu": "Mi az érkezési pont? Hol ér véget az útvonal?",
+"kind": "choice",
+"options": [
+{
+"t": "En el parque (A1)",
+"hu": "A parkban (A1)"
+},
+{
+"t": "En el hospital (C3)",
+"hu": "A kórháznál (C3)"
+},
+{
+"t": "En el colegio",
+"hu": "Az iskolánál"
+}
+],
+"answer": 1
+},
+{
+"id": "tb25_1c",
+"q": "En el plano el norte está arriba. A1 está abajo a la izquierda. ¿Qué punto cardinal está más cerca del punto de partida?",
+"q_hu": "A térképen fent van az észak. Az A1 bal alul van. Melyik égtájhoz van közel a kiindulási pont?",
+"kind": "choice",
+"options": [
+{
+"t": "Suroeste (sur y oeste)",
+"hu": "Délnyugat (dél és nyugat)"
+},
+{
+"t": "Noreste (norte y este)",
+"hu": "Északkelet (észak és kelet)"
+}
+],
+"answer": 0
+},
+{
+"id": "tb25_1d",
+"q": "C3 está arriba a la derecha del centro. ¿Qué punto cardinal está más cerca del punto de destino?",
+"q_hu": "A C3 a középtől jobbra fent van. Melyik égtájhoz van közel az érkezési pont?",
+"kind": "choice",
+"options": [
+{
+"t": "Suroeste (sur y oeste)",
+"hu": "Délnyugat (dél és nyugat)"
+},
+{
+"t": "Noreste (norte y este)",
+"hu": "Északkelet (észak és kelet)"
+}
+],
+"answer": 1
+},
+{
+"id": "tb25_1e",
+"q": "Da las indicaciones de forma clara utilizando expresiones como estas: «Camina hacia el…», «Toma la calle de la izquierda», «Sigue por la calle…», «Sigue recto hasta…».",
+"q_hu": "Adj világos útbaigazítást ilyen kifejezésekkel: „Menj a … felé”, „Menj be a bal oldali utcába”, „Menj tovább a … utcán”, „Menj egyenesen a …-ig”.",
+"kind": "open",
+"answer": "Sal del parque y camina hacia el norte. Sigue recto por la calle hasta el edificio grande. Toma la calle de la derecha y sigue recto hasta llegar a C3.",
+"answer_hu": "Gyere ki a parkból és menj észak felé. Menj egyenesen az utcán a nagy épületig. Fordulj be jobbra, és menj egyenesen, amíg a C3-hoz érsz."
+}
+]
+}
+],
+"lesson": "c1_plano"
+},
+{
+"id": "tb26",
+"book": "tb",
+"page": 26,
+"unit": "u1",
+"title": "Practicamos",
+"title_hu": "Gyakoroljunk!",
+"summary_hu": "Gyakorló feladatok: törvény, együttélési szabály vagy érték? Miért helyes, ahogy a biciklis közlekedik? Mikor nem tisztelik mások jogait és a sokféleséget?",
+"words": [
+{
+"w": "identificar",
+"hu": "felismerni, megállapítani"
+},
+{
+"w": "la oración",
+"hu": "a mondat"
+},
+{
+"w": "la guerra",
+"hu": "a háború"
+},
+{
+"w": "el hambre",
+"hu": "az éhség"
+},
+{
+"w": "recoger dinero",
+"hu": "pénzt gyűjteni"
+},
+{
+"w": "el Parlamento",
+"hu": "a parlament, országgyűlés"
+},
+{
+"w": "el permiso de residencia",
+"hu": "a tartózkodási engedély"
+},
+{
+"w": "la anciana",
+"hu": "az idős néni"
+},
+{
+"w": "el bastón",
+"hu": "a bot, sétabot"
+},
+{
+"w": "el ciclista",
+"hu": "a biciklis"
+},
+{
+"w": "el carril bici",
+"hu": "a kerékpárút"
+},
+{
+"w": "el comerciante",
+"hu": "a kereskedő, boltos"
+},
+{
+"w": "reírse de",
+"hu": "kinevetni valakit"
+},
+{
+"w": "el acento",
+"hu": "a kiejtés, akcentus"
+}
+],
+"tasks": [
+{
+"id": "tb26_1",
+"n": "1",
+"text": "IDENTIFICA cuál de las siguientes oraciones es una ley, cuál una norma de convivencia y cuál un valor.",
+"text_hu": "ÁLLAPÍTSD MEG, melyik mondat törvény, melyik együttélési szabály és melyik érték!",
+"items": [
+{
+"id": "tb26_1a",
+"q": "Hoy han venido al colegio a explicar que, debido a la guerra, en un país lejano las personas sufren hambre y necesidades, y se ha decidido recoger dinero para ayudarlas.",
+"q_hu": "Ma eljöttek az iskolába elmondani, hogy egy távoli országban a háború miatt éheznek és szükséget szenvednek az emberek, és úgy döntöttek, pénzt gyűjtenek, hogy segítsenek nekik.",
+"kind": "choice",
+"options": [
+{
+"t": "Ley",
+"hu": "Törvény"
+},
+{
+"t": "Norma de convivencia",
+"hu": "Együttélési szabály"
+},
+{
+"t": "Valor (solidaridad)",
+"hu": "Érték (szolidaritás)"
+}
+],
+"answer": 2
+},
+{
+"id": "tb26_1b",
+"q": "Ayer, el Parlamento estableció que todas las personas de fuera del país que están solicitando su permiso de residencia puedan obtenerlo.",
+"q_hu": "Tegnap a parlament elrendelte, hogy minden külföldi, aki tartózkodási engedélyt kér, megkaphassa.",
+"kind": "choice",
+"options": [
+{
+"t": "Ley",
+"hu": "Törvény"
+},
+{
+"t": "Norma de convivencia",
+"hu": "Együttélési szabály"
+},
+{
+"t": "Valor",
+"hu": "Érték"
+}
+],
+"answer": 0
+},
+{
+"id": "tb26_1c",
+"q": "La semana pasada ayudé a una anciana a recoger su bastón, que se le había caído al suelo, porque no podía agacharse a recogerlo.",
+"q_hu": "Múlt héten segítettem egy idős néninek felvenni a botját, ami leesett a földre, mert nem tudott lehajolni érte.",
+"kind": "choice",
+"options": [
+{
+"t": "Ley",
+"hu": "Törvény"
+},
+{
+"t": "Norma de convivencia",
+"hu": "Együttélési szabály"
+},
+{
+"t": "Valor",
+"hu": "Érték"
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "tb26_2",
+"n": "2",
+"text": "EXPLICA por qué esta ciclista está siguiendo las normas de circulación correctas.",
+"text_hu": "MAGYARÁZD EL, miért tartja be helyesen ez a biciklis a közlekedési szabályokat!",
+"items": [
+{
+"id": "tb26_2a",
+"q": "En la imagen, la ciclista lleva en la cabeza…",
+"q_hu": "A képen a biciklis a fején… visel.",
+"kind": "choice",
+"options": [
+{
+"t": "un casco",
+"hu": "bukósisakot"
+},
+{
+"t": "una gorra de fiesta",
+"hu": "partisapkát"
+},
+{
+"t": "nada",
+"hu": "semmit"
+}
+],
+"answer": 0
+},
+{
+"id": "tb26_2b",
+"q": "¿Por dónde circula la ciclista?",
+"q_hu": "Hol halad a biciklis?",
+"kind": "choice",
+"options": [
+{
+"t": "Por el carril bici",
+"hu": "A kerékpárúton"
+},
+{
+"t": "Por la acera entre los peatones",
+"hu": "A járdán a gyalogosok között"
+},
+{
+"t": "Por dentro de un parque",
+"hu": "Egy park belsejében"
+}
+],
+"answer": 0
+},
+{
+"id": "tb26_2c",
+"q": "Delante de la ciclista hay un semáforo y un paso de peatones. ¿Qué debe hacer si está en rojo?",
+"q_hu": "A biciklis előtt lámpa és zebra van. Mit kell tennie, ha piros?",
+"kind": "choice",
+"options": [
+{
+"t": "Parar",
+"hu": "Megállni"
+},
+{
+"t": "Pasar muy rápido",
+"hu": "Nagyon gyorsan átmenni"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "tb26_3",
+"n": "3",
+"text": "Lee las siguientes oraciones e IDENTIFICA por qué no se respetan los derechos y la diversidad de las personas en cada una de ellas.",
+"text_hu": "Olvasd el a mondatokat, és ÁLLAPÍTSD MEG, miért nem tisztelik bennük az emberek jogait és a sokféleséget!",
+"items": [
+{
+"id": "tb26_3a",
+"q": "Un comerciante le dice a su empleada que no levante el saco de patatas porque las chicas son muy débiles para hacer ese trabajo. Discrimina por…",
+"q_hu": "Egy boltos azt mondja az alkalmazottjának, hogy ne emelje fel a krumplis zsákot, mert a lányok túl gyengék ehhez a munkához. Mi miatt különbözteti meg?",
+"kind": "choice",
+"options": [
+{
+"t": "ser mujer",
+"hu": "mert nő"
+},
+{
+"t": "su edad",
+"hu": "a kora miatt"
+},
+{
+"t": "su color de piel",
+"hu": "a bőrszíne miatt"
+},
+{
+"t": "su origen",
+"hu": "a származása miatt"
+}
+],
+"answer": 0
+},
+{
+"id": "tb26_3b",
+"q": "En el parque, un grupo de niños se ríe de Omar, que acaba de llegar de otro país, porque habla con un acento diferente. Discriminan por…",
+"q_hu": "A parkban néhány gyerek kineveti Omart, aki most érkezett egy másik országból, mert más a kiejtése. Mi miatt különböztetik meg?",
+"kind": "choice",
+"options": [
+{
+"t": "ser mujer",
+"hu": "mert nő"
+},
+{
+"t": "su edad",
+"hu": "a kora miatt"
+},
+{
+"t": "su color de piel",
+"hu": "a bőrszíne miatt"
+},
+{
+"t": "su origen",
+"hu": "a származása miatt"
+}
+],
+"answer": 3
+},
+{
+"id": "tb26_3c",
+"q": "Luis ha escuchado decir a su amigo Hugo que su abuelo es un vejestorio. No se respeta a la persona por…",
+"q_hu": "Luis hallotta, hogy a barátja, Hugo „vén roncsnak” nevezi a nagypapáját. Mi miatt nem tisztelik?",
+"kind": "choice",
+"options": [
+{
+"t": "ser mujer",
+"hu": "mert nő"
+},
+{
+"t": "su edad",
+"hu": "a kora miatt"
+},
+{
+"t": "su color de piel",
+"hu": "a bőrszíne miatt"
+},
+{
+"t": "su origen",
+"hu": "a származása miatt"
+}
+],
+"answer": 1
+},
+{
+"id": "tb26_3d",
+"q": "En una calle, alguien ha colocado un cartel que dice que ha habido robos en la zona porque hay muchas personas negras. Discrimina por…",
+"q_hu": "Valaki kitett egy plakátot az utcán, hogy azért voltak lopások a környéken, mert sok fekete ember él ott. Mi miatt különböztet meg?",
+"kind": "choice",
+"options": [
+{
+"t": "ser mujer",
+"hu": "mert nő"
+},
+{
+"t": "su edad",
+"hu": "a kora miatt"
+},
+{
+"t": "su color de piel (racismo)",
+"hu": "a bőrszíne miatt (rasszizmus)"
+},
+{
+"t": "su religión",
+"hu": "a vallása miatt"
+}
+],
+"answer": 2
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb27",
+"book": "tb",
+"page": 27,
+"unit": "u1",
+"title": "Practicamos",
+"title_hu": "Gyakoroljunk!",
+"summary_hu": "Gyakorló feladatok: hibás állítások javítása az önkormányzatról, közlekedési táblák osztályozása, városi szolgáltatások felismerése fotókon és vitás helyzetek békés megoldása (közvetítés).",
+"words": [
+{
+"w": "la afirmación",
+"hu": "az állítás"
+},
+{
+"w": "incorrecto",
+"hu": "helytelen"
+},
+{
+"w": "los ministros y las ministras",
+"hu": "a miniszterek"
+},
+{
+"w": "el límite de velocidad",
+"hu": "a sebességkorlátozás"
+},
+{
+"w": "el desprendimiento",
+"hu": "a kőomlás"
+},
+{
+"w": "la parada de autobús",
+"hu": "a buszmegálló"
+},
+{
+"w": "los bomberos",
+"hu": "a tűzoltók"
+},
+{
+"w": "la limpieza de las calles",
+"hu": "az utcák takarítása"
+},
+{
+"w": "la biblioteca",
+"hu": "a könyvtár"
+},
+{
+"w": "el jardinero",
+"hu": "a kertész"
+},
+{
+"w": "mediar",
+"hu": "közvetíteni, segíteni kibékülni"
+},
+{
+"w": "el recreo",
+"hu": "a szünet (iskolai)"
+},
+{
+"w": "la discusión",
+"hu": "a vita, veszekedés"
+},
+{
+"w": "razonar",
+"hu": "megindokolni"
+}
+],
+"tasks": [
+{
+"id": "tb27_4",
+"n": "4",
+"text": "Las siguientes afirmaciones son incorrectas: ESCRÍBELAS de forma correcta.",
+"text_hu": "Ezek az állítások hibásak: ÍRD LE őket helyesen!",
+"items": [
+{
+"id": "tb27_4a",
+"q": "«El Ayuntamiento está dirigido por el presidente del Gobierno.» Corrige: El Ayuntamiento está dirigido por el…",
+"q_hu": "„Az önkormányzatot a miniszterelnök vezeti.” Javítsd: Az önkormányzatot a … vezeti.",
+"kind": "type",
+"answer": "alcalde",
+"alts": [
+"la alcaldesa",
+"alcaldesa",
+"el alcalde",
+"alcalde o alcaldesa",
+"el alcalde o la alcaldesa"
+],
+"answer_hu": "polgármester"
+},
+{
+"id": "tb27_4b",
+"q": "«En las elecciones municipales votan todas las personas, incluso los niños y las niñas.» ¿Cuál es la frase correcta?",
+"q_hu": "„Az önkormányzati választáson mindenki szavaz, még a gyerekek is.” Melyik a helyes mondat?",
+"kind": "choice",
+"options": [
+{
+"t": "Votan las personas mayores de 18 años inscritas en el padrón municipal.",
+"hu": "A 18 év feletti, a településen bejelentett emberek szavaznak."
+},
+{
+"t": "Solo votan los niños.",
+"hu": "Csak a gyerekek szavaznak."
+},
+{
+"t": "No vota nadie.",
+"hu": "Senki sem szavaz."
+}
+],
+"answer": 0
+},
+{
+"id": "tb27_4c",
+"q": "«El Ayuntamiento está formado por los ministros y las ministras.» ¿Cuál es la frase correcta?",
+"q_hu": "„Az önkormányzatot a miniszterek alkotják.” Melyik a helyes mondat?",
+"kind": "choice",
+"options": [
+{
+"t": "Está formado por el alcalde o la alcaldesa, los concejales y las concejalas y los trabajadores municipales.",
+"hu": "A polgármester, a képviselők és a városi dolgozók alkotják."
+},
+{
+"t": "Está formado por los profesores del colegio.",
+"hu": "Az iskola tanárai alkotják."
+},
+{
+"t": "Está formado por los turistas.",
+"hu": "A turisták alkotják."
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "tb27_5",
+"n": "5",
+"text": "CLASIFICA las siguientes señales de tráfico según sean de peligro, obligación, prohibición o información.",
+"text_hu": "OSZTÁLYOZD a közlekedési táblákat aszerint, hogy veszélyt, kötelezettséget, tilalmat vagy információt jeleznek!",
+"items": [
+{
+"id": "tb27_5a",
+"q": "Señal A: círculo con borde rojo y el número 120 (velocidad máxima).",
+"q_hu": "A tábla: piros szélű kör, benne a 120-as szám (legnagyobb sebesség).",
+"kind": "choice",
+"options": [
+{
+"t": "Peligro",
+"hu": "Veszély"
+},
+{
+"t": "Obligación",
+"hu": "Kötelezettség"
+},
+{
+"t": "Prohibición",
+"hu": "Tilalom"
+},
+{
+"t": "Información",
+"hu": "Információ"
+}
+],
+"answer": 2
+},
+{
+"id": "tb27_5b",
+"q": "Señal B: triángulo con borde rojo y piedras que caen.",
+"q_hu": "B tábla: piros szélű háromszög, lehulló kövekkel.",
+"kind": "choice",
+"options": [
+{
+"t": "Peligro",
+"hu": "Veszély"
+},
+{
+"t": "Obligación",
+"hu": "Kötelezettség"
+},
+{
+"t": "Prohibición",
+"hu": "Tilalom"
+},
+{
+"t": "Información",
+"hu": "Információ"
+}
+],
+"answer": 0
+},
+{
+"id": "tb27_5c",
+"q": "Señal C: círculo azul con una flecha blanca hacia arriba.",
+"q_hu": "C tábla: kék kör, fehér, felfelé mutató nyíllal.",
+"kind": "choice",
+"options": [
+{
+"t": "Peligro",
+"hu": "Veszély"
+},
+{
+"t": "Obligación",
+"hu": "Kötelezettség"
+},
+{
+"t": "Prohibición",
+"hu": "Tilalom"
+},
+{
+"t": "Información",
+"hu": "Információ"
+}
+],
+"answer": 1
+},
+{
+"id": "tb27_5d",
+"q": "Señal D: rectángulo azul con un autobús (parada de autobús).",
+"q_hu": "D tábla: kék téglalap egy busszal (buszmegálló).",
+"kind": "choice",
+"options": [
+{
+"t": "Peligro",
+"hu": "Veszély"
+},
+{
+"t": "Obligación",
+"hu": "Kötelezettség"
+},
+{
+"t": "Prohibición",
+"hu": "Tilalom"
+},
+{
+"t": "Información",
+"hu": "Információ"
+}
+],
+"answer": 3
+}
+]
+},
+{
+"id": "tb27_6",
+"n": "6",
+"text": "Observa estas fotografías y resuelve las actividades.",
+"text_hu": "Nézd meg a fényképeket, és oldd meg a feladatokat!",
+"items": [
+{
+"id": "tb27_6a",
+"q": "IDENTIFICA el servicio municipal. Foto A: varias personas con uniforme y casco de bombero.",
+"q_hu": "MELYIK városi szolgáltatás? A fotó: többen tűzoltó egyenruhában és sisakban.",
+"kind": "choice",
+"options": [
+{
+"t": "Seguridad y emergencias (bomberos)",
+"hu": "Biztonság és vészhelyzet (tűzoltók)"
+},
+{
+"t": "Biblioteca",
+"hu": "Könyvtár"
+},
+{
+"t": "Cuidado de parques y jardines",
+"hu": "Parkok gondozása"
+},
+{
+"t": "Limpieza de las calles",
+"hu": "Utcatakarítás"
+}
+],
+"answer": 0
+},
+{
+"id": "tb27_6b",
+"q": "Foto B: una persona con chaleco y un carrito barriendo la calle.",
+"q_hu": "B fotó: egy láthatósági mellényes ember kiskocsival söpri az utcát.",
+"kind": "choice",
+"options": [
+{
+"t": "Seguridad y emergencias (bomberos)",
+"hu": "Biztonság és vészhelyzet (tűzoltók)"
+},
+{
+"t": "Biblioteca",
+"hu": "Könyvtár"
+},
+{
+"t": "Cuidado de parques y jardines",
+"hu": "Parkok gondozása"
+},
+{
+"t": "Limpieza de las calles",
+"hu": "Utcatakarítás"
+}
+],
+"answer": 3
+},
+{
+"id": "tb27_6c",
+"q": "Foto C: una persona colocando libros en unas estanterías.",
+"q_hu": "C fotó: valaki könyveket pakol a polcokra.",
+"kind": "choice",
+"options": [
+{
+"t": "Seguridad y emergencias (bomberos)",
+"hu": "Biztonság és vészhelyzet (tűzoltók)"
+},
+{
+"t": "Biblioteca",
+"hu": "Könyvtár"
+},
+{
+"t": "Cuidado de parques y jardines",
+"hu": "Parkok gondozása"
+},
+{
+"t": "Limpieza de las calles",
+"hu": "Utcatakarítás"
+}
+],
+"answer": 1
+},
+{
+"id": "tb27_6d",
+"q": "Foto D: un trabajador cortando el césped junto a un banco.",
+"q_hu": "D fotó: egy dolgozó füvet nyír egy pad mellett.",
+"kind": "choice",
+"options": [
+{
+"t": "Seguridad y emergencias (bomberos)",
+"hu": "Biztonság és vészhelyzet (tűzoltók)"
+},
+{
+"t": "Biblioteca",
+"hu": "Könyvtár"
+},
+{
+"t": "Cuidado de parques y jardines",
+"hu": "Parkok gondozása"
+},
+{
+"t": "Limpieza de las calles",
+"hu": "Utcatakarítás"
+}
+],
+"answer": 2
+},
+{
+"id": "tb27_6e",
+"q": "ESCRIBE una oración que resuma la importancia del trabajo que hace cada una de estas personas.",
+"q_hu": "ÍRJ egy-egy mondatot arról, miért fontos ezeknek az embereknek a munkája!",
+"kind": "open",
+"answer": "Los bomberos nos protegen en las emergencias. Los barrenderos mantienen limpias las calles. Los bibliotecarios cuidan los libros para que todos podamos leer. Los jardineros cuidan los parques para que podamos disfrutarlos.",
+"answer_hu": "A tűzoltók megvédenek minket a bajban. Az utcaseprők tisztán tartják az utcákat. A könyvtárosok vigyáznak a könyvekre, hogy mindenki olvashasson. A kertészek gondozzák a parkokat, hogy élvezhessük őket."
+}
+]
+},
+{
+"id": "tb27_7",
+"n": "7",
+"text": "Imagina que tienes que mediar en dos conflictos que se han producido durante el recreo. Uno se ha solucionado de forma pacífica y dialogada. En otro conflicto ha habido una fuerte discusión y se ha regresado a clase sin que se haya resuelto.",
+"text_hu": "Képzeld el, hogy két vitában kell közvetítened, amelyek a szünetben történtek. Az egyiket békésen, beszélgetéssel oldották meg. A másikban nagy veszekedés volt, és úgy mentek vissza az osztályba, hogy nem oldódott meg.",
+"items": [
+{
+"id": "tb27_7a",
+"q": "¿Cuál de las dos formas crees que es más correcta?",
+"q_hu": "Szerinted melyik megoldás a helyesebb?",
+"kind": "choice",
+"options": [
+{
+"t": "La forma pacífica y dialogada",
+"hu": "A békés, beszélgetéssel történő"
+},
+{
+"t": "La fuerte discusión sin resolver",
+"hu": "A nagy veszekedés megoldás nélkül"
+}
+],
+"answer": 0
+},
+{
+"id": "tb27_7b",
+"q": "RAZONA tu respuesta.",
+"q_hu": "INDOKOLD meg a válaszod!",
+"kind": "open",
+"answer": "Porque hablando y escuchando a los demás se resuelven los problemas sin hacer daño a nadie y se mantiene la buena convivencia.",
+"answer_hu": "Mert ha beszélgetünk és meghallgatjuk egymást, a gondok megoldódnak anélkül, hogy bárkinek fájdalmat okoznánk, és megmarad a jó viszony."
+},
+{
+"id": "tb27_7c",
+"q": "¿Qué harías tú en estos casos si te nombrasen mediador o mediadora de tu clase? ESCRIBE cómo te gustaría que se resolviesen los conflictos.",
+"q_hu": "Mit tennél, ha téged választanának az osztály közvetítőjének? ÍRD LE, hogyan szeretnéd, hogy megoldódjanak a viták!",
+"kind": "open",
+"answer": "Escucharía a las dos partes sin gritar, les ayudaría a explicar lo que sienten y buscaríamos juntos una solución en la que todos estén de acuerdo.",
+"answer_hu": "Kiabálás nélkül meghallgatnám mindkét felet, segítenék elmondani, mit éreznek, és együtt keresnénk egy olyan megoldást, amivel mindenki egyetért."
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb28",
+"book": "tb",
+"page": 28,
+"unit": "u1",
+"title": "Practicamos",
+"title_hu": "Gyakoroljunk!",
+"summary_hu": "Gyakorló feladatok: fényképek besorolása az örökség fajtái szerint, a helyi szolgáltatások értékelése, veszélyes közlekedési viselkedések, és kutatás a saját településed örökségéről.",
+"words": [
+{
+"w": "las pautas",
+"hu": "a lépések, útmutatás"
+},
+{
+"w": "clasificar",
+"hu": "osztályozni, csoportosítani"
+},
+{
+"w": "la catedral",
+"hu": "a székesegyház"
+},
+{
+"w": "el baile",
+"hu": "a tánc"
+},
+{
+"w": "evaluar",
+"hu": "értékelni"
+},
+{
+"w": "la nota",
+"hu": "a jegy, osztályzat"
+},
+{
+"w": "el mantenimiento",
+"hu": "a karbantartás"
+},
+{
+"w": "pasear",
+"hu": "sétálni"
+},
+{
+"w": "las consecuencias",
+"hu": "a következmények"
+},
+{
+"w": "peligroso",
+"hu": "veszélyes"
+},
+{
+"w": "justificar",
+"hu": "megindokolni"
+},
+{
+"w": "investigar",
+"hu": "kutatni, utánanézni"
+},
+{
+"w": "el plato típico",
+"hu": "a jellegzetes étel"
+},
+{
+"w": "las fiestas",
+"hu": "az ünnepek"
+}
+],
+"tasks": [
+{
+"id": "tb28_8",
+"n": "8",
+"text": "Sigue las pautas indicadas para clasificar las fotografías.",
+"text_hu": "Kövesd a lépéseket, és csoportosítsd a fényképeket!",
+"items": [
+{
+"id": "tb28_8a",
+"q": "ANOTA todo lo que te llame la atención de cada una de ellas. (A: músicos y una bailaora de flamenco en un escenario; B: una catedral antigua; C: un arco de roca junto al mar.)",
+"q_hu": "JEGYEZD FEL, mi tűnik fel neked az egyes fotókon! (A: zenészek és egy flamencótáncos a színpadon; B: egy régi székesegyház; C: egy sziklaív a tenger mellett.)",
+"kind": "open",
+"answer": "A: la música, el baile y los trajes. B: es un edificio muy grande y antiguo, con muchos adornos. C: es una roca con forma de arco junto al mar.",
+"answer_hu": "A: a zene, a tánc és a ruhák. B: nagyon nagy, régi, díszes épület. C: ív alakú szikla a tenger mellett."
+},
+{
+"id": "tb28_8b",
+"q": "CLASIFÍCALAS. Foto A: un espectáculo de baile flamenco.",
+"q_hu": "CSOPORTOSÍTSD! A fotó: flamenco-táncelőadás.",
+"kind": "choice",
+"options": [
+{
+"t": "Patrimonio natural",
+"hu": "Természeti örökség"
+},
+{
+"t": "Patrimonio cultural material",
+"hu": "Kulturális tárgyi örökség"
+},
+{
+"t": "Patrimonio cultural inmaterial",
+"hu": "Kulturális szellemi örökség"
+}
+],
+"answer": 2
+},
+{
+"id": "tb28_8c",
+"q": "Foto B: una catedral antigua.",
+"q_hu": "B fotó: egy régi székesegyház.",
+"kind": "choice",
+"options": [
+{
+"t": "Patrimonio natural",
+"hu": "Természeti örökség"
+},
+{
+"t": "Patrimonio cultural material",
+"hu": "Kulturális tárgyi örökség"
+},
+{
+"t": "Patrimonio cultural inmaterial",
+"hu": "Kulturális szellemi örökség"
+}
+],
+"answer": 1
+},
+{
+"id": "tb28_8d",
+"q": "Foto C: un arco de roca junto al mar.",
+"q_hu": "C fotó: egy sziklaív a tenger mellett.",
+"kind": "choice",
+"options": [
+{
+"t": "Patrimonio natural",
+"hu": "Természeti örökség"
+},
+{
+"t": "Patrimonio cultural material",
+"hu": "Kulturális tárgyi örökség"
+},
+{
+"t": "Patrimonio cultural inmaterial",
+"hu": "Kulturális szellemi örökség"
+}
+],
+"answer": 0
+},
+{
+"id": "tb28_8e",
+"q": "EXPLICA en qué te has basado para clasificar cada una de ellas de esa manera.",
+"q_hu": "MAGYARÁZD EL, mi alapján soroltad be őket így!",
+"kind": "open",
+"answer": "A es inmaterial porque el baile es una tradición que no se puede tocar. B es material porque es un edificio que se puede tocar. C es natural porque la ha hecho la naturaleza.",
+"answer_hu": "Az A szellemi, mert a tánc hagyomány, amit nem lehet megfogni. A B tárgyi, mert épület, meg lehet érinteni. A C természeti, mert a természet alkotta."
+}
+]
+},
+{
+"id": "tb28_9",
+"n": "9",
+"text": "EVALÚA cada uno de estos servicios de tu localidad del 1 al 5 y explica por qué los has calificado con esa nota.",
+"text_hu": "ÉRTÉKELD 1-től 5-ig a településed szolgáltatásait, és mondd el, miért adtál ilyen jegyet!",
+"items": [
+{
+"id": "tb28_9a",
+"q": "Biblioteca municipal",
+"q_hu": "Városi könyvtár",
+"kind": "open",
+"answer": "Nota personal del 1 al 5 y una razón (por ejemplo: 5, porque tiene muchos libros).",
+"answer_hu": "Saját jegy 1–5 és egy indoklás (pl. 5, mert sok könyv van benne)."
+},
+{
+"id": "tb28_9b",
+"q": "Autobuses",
+"q_hu": "Buszok",
+"kind": "open",
+"answer": "Nota personal del 1 al 5 y una razón.",
+"answer_hu": "Saját jegy 1–5 és egy indoklás."
+},
+{
+"id": "tb28_9c",
+"q": "Mantenimiento de parques y jardines",
+"q_hu": "Parkok és kertek karbantartása",
+"kind": "open",
+"answer": "Nota personal del 1 al 5 y una razón.",
+"answer_hu": "Saját jegy 1–5 és egy indoklás."
+},
+{
+"id": "tb28_9d",
+"q": "Seguridad vial",
+"q_hu": "Közlekedésbiztonság",
+"kind": "open",
+"answer": "Nota personal del 1 al 5 y una razón.",
+"answer_hu": "Saját jegy 1–5 és egy indoklás."
+},
+{
+"id": "tb28_9e",
+"q": "Limpieza de las calles",
+"q_hu": "Utcák takarítása",
+"kind": "open",
+"answer": "Nota personal del 1 al 5 y una razón.",
+"answer_hu": "Saját jegy 1–5 és egy indoklás."
+}
+]
+},
+{
+"id": "tb28_10",
+"n": "10",
+"text": "Imagina que estás paseando y ves a una persona que cruza la calle sin mirar a los lados y a otra persona en bicicleta que no para en un semáforo en rojo.",
+"text_hu": "Képzeld el, hogy sétálsz, és látsz valakit, aki úgy megy át az úton, hogy nem néz körül, és egy biciklist, aki nem áll meg a piros lámpánál.",
+"items": [
+{
+"id": "tb28_10a",
+"q": "¿Qué ocurriría si un coche va rápido?",
+"q_hu": "Mi történne, ha egy autó gyorsan jönne?",
+"kind": "choice",
+"options": [
+{
+"t": "Podría haber un accidente y alguien podría salir herido",
+"hu": "Baleset történhetne, és valaki megsérülhetne"
+},
+{
+"t": "No pasaría nada",
+"hu": "Semmi sem történne"
+}
+],
+"answer": 0
+},
+{
+"id": "tb28_10b",
+"q": "EXPLICA las posibles consecuencias.",
+"q_hu": "MAGYARÁZD EL a lehetséges következményeket!",
+"kind": "open",
+"answer": "El coche podría atropellar al peatón o chocar con el ciclista; podrían hacerse mucho daño.",
+"answer_hu": "Az autó elüthetné a gyalogost vagy nekimehetne a biciklisnek; súlyosan megsérülhetnének."
+},
+{
+"id": "tb28_10c",
+"q": "¿Cuál de los dos comportamientos es más peligroso? JUSTIFICA tu respuesta.",
+"q_hu": "Melyik viselkedés veszélyesebb? INDOKOLD meg!",
+"kind": "open",
+"answer": "Los dos son muy peligrosos. Por ejemplo: el ciclista que no para en rojo, porque va más rápido y los coches tienen preferencia; o el peatón, porque no mira y no ve llegar el coche.",
+"answer_hu": "Mindkettő nagyon veszélyes. Például: a biciklis, aki nem áll meg pirosnál, mert gyorsabban megy, és az autóknak zöld van; vagy a gyalogos, mert nem néz, így nem látja jönni az autót."
+}
+]
+},
+{
+"id": "tb28_11",
+"n": "11",
+"text": "Investiga sobre el patrimonio de tu localidad y:",
+"text_hu": "Nézz utána a településed örökségének, és:",
+"items": [
+{
+"id": "tb28_11a",
+"q": "ESCRIBE un listado de lo más destacado. Por ejemplo, monumentos, espacios naturales, tradiciones, etc.",
+"q_hu": "ÍRJ listát a legfontosabbakról, pl. műemlékek, természeti helyek, hagyományok stb.",
+"kind": "open",
+"answer": "Listado con monumentos, espacios naturales y tradiciones de la localidad.",
+"answer_hu": "Lista a település műemlékeiről, természeti helyeiről és hagyományairól."
+},
+{
+"id": "tb28_11b",
+"q": "DIBUJA un plano en el que sitúes todos los principales monumentos, edificios públicos o espacios naturales.",
+"q_hu": "RAJZOLJ térképet, amelyen bejelölöd a fő műemlékeket, középületeket vagy természeti helyeket!",
+"kind": "open",
+"answer": "Plano con leyenda donde aparecen los monumentos, el Ayuntamiento, el colegio y los parques.",
+"answer_hu": "Térkép jelmagyarázattal, rajta a műemlékek, a városháza, az iskola és a parkok."
+},
+{
+"id": "tb28_11c",
+"q": "EXPLICA alguna costumbre o tradición destacada. Por ejemplo, si hay un baile o un plato típico, si se visita algún lugar concreto durante las fiestas, etc.",
+"q_hu": "MESÉLJ el egy fontos szokást vagy hagyományt, pl. jellegzetes tánc, étel, vagy hely, ahová az ünnepeken elmennek.",
+"kind": "open",
+"answer": "Por ejemplo: en las fiestas del pueblo se baila un baile típico y se come un plato tradicional.",
+"answer_hu": "Például: a falu ünnepén jellegzetes táncot járnak és hagyományos ételt esznek."
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb29",
+"book": "tb",
+"page": 29,
+"unit": "u1",
+"title": "¿Qué hemos aprendido? Repasa",
+"title_hu": "Mit tanultunk? Ismétlés",
+"summary_hu": "Összefoglaló ábra: az együttélés azon alapul, hogy képesek vagyunk közösségben élni – törvényekkel, szabályokkal és értékekkel, a sokféleség tiszteletével és a viták békés megoldásával (beszélgetés, megegyezés, közvetítés). A települést az önkormányzat vezeti (polgármester, képviselők, városi dolgozók). Az örökséget védeni kell; lehet természeti és kulturális (tárgyi és szellemi). A közlekedésbiztonság szabályai a jelzésekkel (táblák, festett jelek, lámpák, rendőri jelzések) segítenek elkerülni a baleseteket.",
+"words": [
+{
+"w": "repasar",
+"hu": "ismételni, átnézni"
+},
+{
+"w": "la convivencia",
+"hu": "az együttélés"
+},
+{
+"w": "adoptar",
+"hu": "elfogadni, alkalmazni"
+},
+{
+"w": "respetar la diversidad",
+"hu": "tisztelni a sokféleséget"
+},
+{
+"w": "resolver los conflictos",
+"hu": "megoldani a vitákat"
+},
+{
+"w": "estar gobernado por",
+"hu": "valaki vezeti"
+},
+{
+"w": "estar compuesto por",
+"hu": "… alkotja"
+},
+{
+"w": "proteger y conservar",
+"hu": "megvédeni és megőrizni"
+},
+{
+"w": "evitar accidentes",
+"hu": "elkerülni a baleseteket"
+}
+],
+"tasks": [
+{
+"id": "tb29_rep",
+"n": "Repasa",
+"text": "Repasa el esquema.",
+"text_hu": "Ismételd át az ábrát! (kiegészítő kérdések)",
+"items": [
+{
+"id": "tb29_repa",
+"q": "La convivencia se basa en la capacidad de las personas para…",
+"q_hu": "Az együttélés azon alapul, hogy az emberek képesek…",
+"kind": "choice",
+"options": [
+{
+"t": "vivir en sociedad",
+"hu": "közösségben élni"
+},
+{
+"t": "vivir solas",
+"hu": "egyedül élni"
+},
+{
+"t": "correr rápido",
+"hu": "gyorsan futni"
+}
+],
+"answer": 0
+},
+{
+"id": "tb29_repb",
+"q": "La localidad está gobernada por un…",
+"q_hu": "A települést egy … vezeti.",
+"kind": "choice",
+"options": [
+{
+"t": "Ayuntamiento",
+"hu": "önkormányzat"
+},
+{
+"t": "museo",
+"hu": "múzeum"
+},
+{
+"t": "semáforo",
+"hu": "közlekedési lámpa"
+}
+],
+"answer": 0
+},
+{
+"id": "tb29_repc",
+"q": "El patrimonio puede ser…",
+"q_hu": "Az örökség lehet…",
+"kind": "choice",
+"options": [
+{
+"t": "natural o cultural",
+"hu": "természeti vagy kulturális"
+},
+{
+"t": "rápido o lento",
+"hu": "gyors vagy lassú"
+},
+{
+"t": "rojo o azul",
+"hu": "piros vagy kék"
+}
+],
+"answer": 0
+},
+{
+"id": "tb29_repd",
+"q": "La seguridad vial establece unas normas para…",
+"q_hu": "A közlekedésbiztonság szabályokat állít fel, hogy…",
+"kind": "choice",
+"options": [
+{
+"t": "evitar accidentes",
+"hu": "elkerüljük a baleseteket"
+},
+{
+"t": "ganar carreras",
+"hu": "versenyt nyerjünk"
+},
+{
+"t": "hacer fotos",
+"hu": "fényképezzünk"
+}
+],
+"answer": 0
+},
+{
+"id": "tb29_repe",
+"q": "Los conflictos se resuelven de forma pacífica por medio de diálogo, negociación y…",
+"q_hu": "A vitákat békésen beszélgetéssel, megegyezéssel és … oldjuk meg.",
+"kind": "choice",
+"options": [
+{
+"t": "mediación",
+"hu": "közvetítéssel"
+},
+{
+"t": "gritos",
+"hu": "kiabálással"
+},
+{
+"t": "castigos",
+"hu": "büntetéssel"
+}
+],
+"answer": 0
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb30",
+"book": "tb",
+"page": 30,
+"unit": "u1",
+"title": "¿Qué hemos aprendido? Aplica",
+"title_hu": "Mit tanultunk? Alkalmazd!",
+"summary_hu": "Egy francia gyerekcsoport egy cserediák-program keretében egy hétre ellátogat az iskoládba. Sok kérdésük van a településről és a működéséről, neked kell válaszolnod. A térképen fent a szálloda (HOTEL, a C4 négyzet körül), lent balra az iskola (COLEGIO, A1–B1).",
+"words": [
+{
+"w": "aplicar",
+"hu": "alkalmazni"
+},
+{
+"w": "el grupo",
+"hu": "a csoport"
+},
+{
+"w": "procedente de",
+"hu": "… -ból/-ből érkező"
+},
+{
+"w": "el intercambio",
+"hu": "a csere(program)"
+},
+{
+"w": "el hotel",
+"hu": "a szálloda"
+},
+{
+"w": "el colegio",
+"hu": "az iskola"
+},
+{
+"w": "la forma más sencilla",
+"hu": "a legegyszerűbb mód"
+},
+{
+"w": "resumir",
+"hu": "összefoglalni"
+},
+{
+"w": "funcionar",
+"hu": "működni"
+},
+{
+"w": "valorar",
+"hu": "értékelni"
+},
+{
+"w": "el cartel",
+"hu": "a plakát"
+},
+{
+"w": "la protección",
+"hu": "a védelem"
+}
+],
+"tasks": [
+{
+"id": "tb30_1",
+"n": "1",
+"text": "Lo primero que les interesa conocer son las normas de convivencia de la localidad. ESCRIBE un listado con las que consideres fundamentales.",
+"text_hu": "Először az érdekli őket, milyen együttélési szabályok vannak a településen. ÍRJ listát azokról, amelyeket a legfontosabbnak tartasz!",
+"items": [
+{
+"id": "tb30_1a",
+"q": "¿Cuál de estas es una norma de convivencia?",
+"q_hu": "Melyik ezek közül együttélési szabály?",
+"kind": "choice",
+"options": [
+{
+"t": "Ceder el asiento a las personas mayores",
+"hu": "Átadni a helyet az időseknek"
+},
+{
+"t": "Tirar papeles al suelo",
+"hu": "Papírt dobni a földre"
+},
+{
+"t": "Gritar por la noche",
+"hu": "Éjjel kiabálni"
+}
+],
+"answer": 0
+},
+{
+"id": "tb30_1b",
+"q": "ESCRIBE un listado con las normas de convivencia que consideres fundamentales.",
+"q_hu": "Írd le a legfontosabb együttélési szabályokat!",
+"kind": "open",
+"answer": "Saludar y respetar a los vecinos, no hacer ruido por la noche, tirar la basura a la papelera, cuidar los parques, ceder el asiento a las personas mayores.",
+"answer_hu": "Köszönni és tisztelni a szomszédokat, éjjel nem zajongani, a szemetet a kukába dobni, vigyázni a parkokra, átadni a helyet az időseknek."
+}
+]
+},
+{
+"id": "tb30_2",
+"n": "2",
+"text": "Después, quieren saber cómo llegar desde el hotel hasta el colegio. INDICA la forma más sencilla observando el plano.",
+"text_hu": "Aztán azt szeretnék tudni, hogyan jutnak el a szállodától az iskoláig. MUTASD MEG a legegyszerűbb utat a térkép alapján!",
+"items": [
+{
+"id": "tb30_2a",
+"q": "En el plano, ¿dónde está el colegio?",
+"q_hu": "Hol van az iskola a térképen?",
+"kind": "choice",
+"options": [
+{
+"t": "Abajo a la izquierda (A1-B1)",
+"hu": "Bal alul (A1–B1)"
+},
+{
+"t": "Arriba a la derecha (D4)",
+"hu": "Jobb fent (D4)"
+},
+{
+"t": "En el centro (C2)",
+"hu": "Középen (C2)"
+}
+],
+"answer": 0
+},
+{
+"id": "tb30_2b",
+"q": "En el plano, ¿dónde está el hotel?",
+"q_hu": "Hol van a szálloda a térképen?",
+"kind": "choice",
+"options": [
+{
+"t": "Abajo a la izquierda (A1)",
+"hu": "Bal alul (A1)"
+},
+{
+"t": "Arriba, hacia la derecha (C4)",
+"hu": "Fent, jobbra (C4)"
+}
+],
+"answer": 1
+},
+{
+"id": "tb30_2c",
+"q": "INDICA la forma más sencilla de llegar desde el hotel hasta el colegio.",
+"q_hu": "Írd le a legegyszerűbb utat a szállodától az iskoláig!",
+"kind": "open",
+"answer": "Sal del hotel, camina hacia el sur por la calle principal, cruza por el paso de peatones y gira a la derecha (hacia el oeste) por la calle de abajo hasta llegar al colegio.",
+"answer_hu": "Gyere ki a szállodából, menj dél felé a főutcán, menj át a zebrán, majd fordulj jobbra (nyugat felé) az alsó utcán, amíg az iskolához érsz."
+}
+]
+},
+{
+"id": "tb30_3",
+"n": "3",
+"text": "Han visto que algunas señales de tráfico son diferentes a las de su país. RESUME las normas básicas de seguridad vial.",
+"text_hu": "Észrevették, hogy néhány közlekedési tábla más, mint az ő országukban. FOGLALD ÖSSZE a közlekedésbiztonság alapszabályait!",
+"items": [
+{
+"id": "tb30_3a",
+"q": "¿Por dónde hay que caminar siempre?",
+"q_hu": "Hol kell mindig gyalogolni?",
+"kind": "choice",
+"options": [
+{
+"t": "Por la acera, lejos del bordillo",
+"hu": "A járdán, távol a szegélytől"
+},
+{
+"t": "Por el centro de la calzada",
+"hu": "Az úttest közepén"
+}
+],
+"answer": 0
+},
+{
+"id": "tb30_3b",
+"q": "En el coche hay que llevar siempre…",
+"q_hu": "Autóban mindig … kell.",
+"kind": "choice",
+"options": [
+{
+"t": "el cinturón de seguridad abrochado",
+"hu": "bekötni a biztonsági övet"
+},
+{
+"t": "la ventanilla abierta",
+"hu": "nyitva tartani az ablakot"
+}
+],
+"answer": 0
+},
+{
+"id": "tb30_3c",
+"q": "En bicicleta, patinete o patines hay que llevar siempre…",
+"q_hu": "Biciklin, rolleren vagy görkorcsolyán mindig … kell viselni.",
+"kind": "type",
+"answer": "casco",
+"alts": [
+"el casco",
+"un casco",
+"casco y protecciones"
+],
+"answer_hu": "bukósisakot"
+},
+{
+"id": "tb30_3d",
+"q": "RESUME las normas básicas de seguridad vial.",
+"q_hu": "Foglald össze a közlekedés alapszabályait!",
+"kind": "open",
+"answer": "Caminar por la acera, cruzar por el paso de peatones mirando a la izquierda, a la derecha y otra vez a la izquierda, respetar los semáforos, usar el cinturón y llevar casco en la bici.",
+"answer_hu": "A járdán menni, a zebrán átkelni balra-jobbra-balra nézve, betartani a lámpát, bekötni az övet, és biciklin bukósisakot viselni."
+}
+]
+},
+{
+"id": "tb30_4",
+"n": "4",
+"text": "Mañana van a visitar el Ayuntamiento. EXPLICA cómo funciona y qué personas lo componen.",
+"text_hu": "Holnap ellátogatnak az önkormányzathoz. MAGYARÁZD EL, hogyan működik, és kik dolgoznak ott!",
+"items": [
+{
+"id": "tb30_4a",
+"q": "¿Quién elige a los concejales y concejalas?",
+"q_hu": "Ki választja meg a képviselőket?",
+"kind": "choice",
+"options": [
+{
+"t": "Las personas mayores de 18 años, en las elecciones municipales cada cuatro años",
+"hu": "A 18 év felettiek, négyévente az önkormányzati választáson"
+},
+{
+"t": "El director del colegio",
+"hu": "Az iskolaigazgató"
+}
+],
+"answer": 0
+},
+{
+"id": "tb30_4b",
+"q": "¿Cuál de estas personas NO forma parte del Ayuntamiento?",
+"q_hu": "Ki NEM tagja az önkormányzatnak?",
+"kind": "choice",
+"options": [
+{
+"t": "La alcaldesa",
+"hu": "A polgármester"
+},
+{
+"t": "Un concejal",
+"hu": "Egy képviselő"
+},
+{
+"t": "Una ministra del Gobierno",
+"hu": "Egy kormányminiszter"
+},
+{
+"t": "Un trabajador municipal",
+"hu": "Egy városi dolgozó"
+}
+],
+"answer": 2
+},
+{
+"id": "tb30_4c",
+"q": "EXPLICA cómo funciona el Ayuntamiento y qué personas lo componen.",
+"q_hu": "Magyarázd el, hogyan működik az önkormányzat, és kik alkotják!",
+"kind": "open",
+"answer": "El Ayuntamiento gobierna la localidad y organiza los servicios públicos con los impuestos municipales. Lo componen el alcalde o alcaldesa, los concejales y concejalas y los trabajadores municipales.",
+"answer_hu": "Az önkormányzat vezeti a települést, és a helyi adókból szervezi a közszolgáltatásokat. A polgármester, a képviselők és a városi dolgozók alkotják."
+}
+]
+},
+{
+"id": "tb30_5",
+"n": "5",
+"text": "Por último, van a conocer el museo de la localidad.",
+"text_hu": "Végül megnézik a település múzeumát.",
+"items": [
+{
+"id": "tb30_5a",
+"q": "VALORA por qué es importante proteger el patrimonio cultural y natural.",
+"q_hu": "Mondd el, miért fontos megvédeni a kulturális és természeti örökséget!",
+"kind": "open",
+"answer": "Porque es la herencia de nuestro pasado, es bonito y valioso, y así lo podrán disfrutar también las personas en el futuro.",
+"answer_hu": "Mert a múltunk öröksége, szép és értékes, és így a jövőben mások is élvezhetik."
+},
+{
+"id": "tb30_5b",
+"q": "DIBUJA un cartel explicándoles algunas normas de protección y cuidado del patrimonio.",
+"q_hu": "RAJZOLJ plakátot, amelyen elmagyarázod nekik, hogyan vigyázzunk az örökségre!",
+"kind": "open",
+"answer": "Cartel con dibujos: no tocar las obras, no hacer fotos si no está permitido, no usar el móvil, no comer, hablar bajito y seguir el recorrido.",
+"answer_hu": "Rajzos plakát: ne érintsd meg a műalkotásokat, ne fényképezz, ha nem szabad, ne mobilozz, ne egyél, beszélj halkan, kövesd az útvonalat."
+}
+]
+}
+],
+"lesson": ""
+},
+{
+"id": "tb31",
+"book": "tb",
+"page": 31,
+"unit": "u1",
+"title": "¿Qué hemos aprendido? Crea",
+"title_hu": "Mit tanultunk? Alkoss!",
+"summary_hu": "Ahogy Lucía településének önkormányzata elindította a „Conócenos” tervet, te is kitalálhatod, hogyan mutatnád be a településedet: turistakalauzzal, útvonalas térképpel vagy jó szokások gyűjteményével. A „kilépőjegy” önértékelés: mennyit tanultál; hasonlítsd össze a belépőjeggyel!",
+"words": [
+{
+"w": "crear",
+"hu": "alkotni, létrehozni"
+},
+{
+"w": "la guía turística",
+"hu": "a turistakalauz"
+},
+{
+"w": "la guía de buenas prácticas",
+"hu": "a jó szokások útmutatója"
+},
+{
+"w": "representativo",
+"hu": "jellegzetes, fontos"
+},
+{
+"w": "mantener",
+"hu": "megtartani, fenntartani"
+},
+{
+"w": "elegir",
+"hu": "választani"
+},
+{
+"w": "el ticket de salida",
+"hu": "a kilépőjegy"
+},
+{
+"w": "comparar",
+"hu": "összehasonlítani"
+},
+{
+"w": "bastante",
+"hu": "elég sok, eléggé"
+}
+],
+"tasks": [
+{
+"id": "tb31_crea",
+"n": "Crea",
+"text": "Al igual que el Ayuntamiento de Lucía ha puesto en marcha el plan «Conócenos»: ¿Cuál de estas opciones elegirías tú para dar a conocer tu localidad?",
+"text_hu": "Ahogy Lucía településének önkormányzata elindította a „Conócenos” (Ismerj meg minket) tervet: te melyiket választanád, hogy bemutasd a településedet?",
+"items": [
+{
+"id": "tb31_creaa",
+"q": "¿Qué opción incluye la información más importante del patrimonio natural y cultural?",
+"q_hu": "Melyik tartalmazza a természeti és kulturális örökség legfontosabb adatait?",
+"kind": "choice",
+"options": [
+{
+"t": "Una guía turística",
+"hu": "Turistakalauz"
+},
+{
+"t": "Un plano con varios recorridos",
+"hu": "Térkép több útvonallal"
+},
+{
+"t": "Una guía de buenas prácticas",
+"hu": "Jó szokások útmutatója"
+}
+],
+"answer": 0
+},
+{
+"id": "tb31_creab",
+"q": "¿Qué opción ayuda a que las personas que la visitan conozcan los lugares más representativos siguiendo un camino?",
+"q_hu": "Melyik segít, hogy a látogatók egy útvonalon végigmenve megismerjék a legfontosabb helyeket?",
+"kind": "choice",
+"options": [
+{
+"t": "Una guía turística",
+"hu": "Turistakalauz"
+},
+{
+"t": "Un plano con varios recorridos",
+"hu": "Térkép több útvonallal"
+},
+{
+"t": "Una guía de buenas prácticas",
+"hu": "Jó szokások útmutatója"
+}
+],
+"answer": 1
+},
+{
+"id": "tb31_creac",
+"q": "¿Qué opción sirve para mantener la convivencia y la protección del patrimonio?",
+"q_hu": "Melyik segít megőrizni az együttélést és az örökség védelmét?",
+"kind": "choice",
+"options": [
+{
+"t": "Una guía turística",
+"hu": "Turistakalauz"
+},
+{
+"t": "Un plano con varios recorridos",
+"hu": "Térkép több útvonallal"
+},
+{
+"t": "Una guía de buenas prácticas",
+"hu": "Jó szokások útmutatója"
+}
+],
+"answer": 2
+},
+{
+"id": "tb31_cread",
+"q": "¿Cuál de estas opciones elegirías tú? Prepárala.",
+"q_hu": "Te melyiket választanád? Készítsd el!",
+"kind": "open",
+"answer": "Por ejemplo: un plano con un recorrido por los monumentos y parques de la localidad, con fotos y una leyenda.",
+"answer_hu": "Például: térkép egy útvonallal a település műemlékein és parkjain át, fotókkal és jelmagyarázattal."
+}
+]
+},
+{
+"id": "tb31_ticket",
+"n": "Ticket de salida",
+"text": "LEE cada enunciado y DI cuánto crees que has aprendido: un poco, bastante o mucho. ¡No olvides compararlo con tu ticket de entrada!",
+"text_hu": "OLVASD el az egyes mondatokat, és mondd meg, szerinted mennyit tanultál: keveset, elég sokat vagy sokat. Ne felejtsd el összehasonlítani a belépőjegyeddel!",
+"items": [
+{
+"id": "tb31_ticket_1",
+"q": "Las normas básicas de convivencia.",
+"q_hu": "Az együttélés alapszabályai.",
+"kind": "open",
+"answer": "Un poco / bastante / mucho (autoevaluación).",
+"answer_hu": "Keveset / elég sokat / sokat (önértékelés)."
+},
+{
+"id": "tb31_ticket_2",
+"q": "Las personas que trabajan en un Ayuntamiento.",
+"q_hu": "Akik az önkormányzatnál dolgoznak.",
+"kind": "open",
+"answer": "Un poco / bastante / mucho (autoevaluación).",
+"answer_hu": "Keveset / elég sokat / sokat (önértékelés)."
+},
+{
+"id": "tb31_ticket_3",
+"q": "Los servicios municipales de la localidad.",
+"q_hu": "A település szolgáltatásai.",
+"kind": "open",
+"answer": "Un poco / bastante / mucho (autoevaluación).",
+"answer_hu": "Keveset / elég sokat / sokat (önértékelés)."
+},
+{
+"id": "tb31_ticket_4",
+"q": "El patrimonio de la localidad.",
+"q_hu": "A település öröksége.",
+"kind": "open",
+"answer": "Un poco / bastante / mucho (autoevaluación).",
+"answer_hu": "Keveset / elég sokat / sokat (önértékelés)."
+},
+{
+"id": "tb31_ticket_5",
+"q": "Las normas básicas de seguridad vial.",
+"q_hu": "A közlekedésbiztonság alapszabályai.",
+"kind": "open",
+"answer": "Un poco / bastante / mucho (autoevaluación).",
+"answer_hu": "Keveset / elég sokat / sokat (önértékelés)."
+},
+{
+"id": "tb31_ticket_6",
+"q": "Los itinerarios en un plano.",
+"q_hu": "Útvonalak a térképen.",
+"kind": "open",
+"answer": "Un poco / bastante / mucho (autoevaluación).",
+"answer_hu": "Keveset / elég sokat / sokat (önértékelés)."
+}
+]
+}
+],
+"lesson": ""
+}
+]
+}
