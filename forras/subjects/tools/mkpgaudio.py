@@ -50,6 +50,9 @@ for p in P['pages']:
         if t.get('help'): add(i0, L, 'p:h:' + t['id'], t['help']['es']); add(i0, 'hu', 'p:hh:' + t['id'], t['help']['hu'])
         for it in t['items']:
             add(i0, L, 'p:q:' + it['id'], it['q']); add(i0, 'hu', 'p:qh:' + it['id'], it.get('q_hu') or it['q'])
+            for j, o in enumerate(it.get('options') or []):
+                add(i0, L, f"p:o:{it['id']}:{j}", o.get('t', '')); 
+                if o.get('hu') and o.get('hu') != o.get('t'): add(i0, 'hu', f"p:oh:{it['id']}:{j}", o['hu'])
 SR = 22050; CACHE = '/home/claude/pgcache'; os.makedirs(CACHE, exist_ok=True)
 def clip(l, txt):
     h = hashlib.md5((l + '|' + txt).encode()).hexdigest(); f = f'{CACHE}/{h}.npy'
