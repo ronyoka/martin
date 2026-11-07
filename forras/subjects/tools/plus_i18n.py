@@ -131,6 +131,7 @@ T = {
 # a hangot csak azokhoz a kulcsokhoz generáljuk, amelyekhez van szöveg az adott nyelven
 # Könyvoldalak (2026-11-06)
 T.update({
+'t_mq':("Matek-kvíz","Maths quiz","Quiz de mates"),
 't_pages':("Könyvoldalak","Book pages","Páginas del libro"),
 'i_pages':("Válaszd ki a könyvet és a fejezetet, aztán az oldalt! Minden oldalon megvannak a szavak és a feladatok.","Choose the book, the unit and the page! Every page has its words and exercises.","Elige el libro, la unidad y la página. En cada página están las palabras y las actividades."),
 'i_page_run':("Olvasd el a feladatot, hallgasd meg, és válaszolj!","Read the exercise, listen and answer!","Lee la actividad, escucha y responde."),

@@ -184,6 +184,7 @@ body{background:#FFF4D6}
 
 <sc-if value="{{isQuiz}}" hint-placeholder-val="{{ false }}">
   <section style="display: flex; flex-direction: column; gap: 14px">
+    <sc-if value="{{isMat}}" hint-placeholder-val="{{ false }}"><button class="open-btn" onClick="{{goMq}}" style="align-self: flex-start; background: #3B82C4">🔢 Új Matek-kvíz: számokkal, minden témára, passzolható →</button></sc-if>
     <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
       <span style="font-weight: 800">Melyik fejezetből?</span>
       <sc-for list="{{quizChips}}" as="d" hint-placeholder-count="3">
@@ -235,6 +236,7 @@ body{background:#FFF4D6}
               </div>
               <button class="open-btn" onClick="{{next}}" style="align-self: flex-start">{{nextLabel}}</button>
             </sc-if>
+<sc-if value="{{canSkip}}" hint-placeholder-val="{{ false }}"><button class="chip" onClick="{{skipQ}}" style="align-self: flex-start">⏭ Passz · Paso</button></sc-if>
           </div>
         </sc-if>
         <sc-if value="{{quizDone}}" hint-placeholder-val="{{ false }}">
@@ -320,6 +322,7 @@ body{background:#FFF4D6}
                     <div style="border-radius: 16px; padding: 14px 16px; background: #F4F7FB; display: flex; flex-direction: column; gap: 6px"><p style="margin: 0; font-weight: 800; font-size: 20px; color: {{fbColor}}">{{fbTitle}}</p><p style="margin: 0; font-size: 17px">{{cur.explain}}</p><p style="margin: 0; font-size: 14px; color: #4A5562">Nézd meg a könyvben: {{cur.page}}. oldal</p></div>
                     <button class="open-btn" onClick="{{next}}" style="align-self: flex-start">{{nextLabel}}</button>
                   </sc-if>
+<sc-if value="{{canSkip}}" hint-placeholder-val="{{ false }}"><button class="chip" onClick="{{skipQ}}" style="align-self: flex-start">⏭ Passz · Paso</button></sc-if>
                 </div>
               </sc-if>
               <sc-if value="{{quizDone}}" hint-placeholder-val="{{ false }}">
@@ -429,18 +432,18 @@ class Component extends DCLogic {
       base.hasLessonChips = base.lessonChips.length > 0;
       const pool = st.qpool || 0;
       base.sizeChips = [[10, '10'], [20, '20'], [50, '50'], [0, 'Mind (' + pool + ')']].filter(x => x[0] === 0 || x[0] < pool).map(x => ({ label: x[1], cls: 'chip' + (st.qsize === x[0] ? ' on' : ''), go: () => this.startQuiz(st.quizUnit, x[0]) }));
-      const order = st.qlist || []; base.total = order.length;
+      const order = st.qlist || []; base.total = order.filter(q => !q._again).length;
       if (st.done) {
         base.quizDone = true;
-        const r = order.length ? st.score / order.length : 0;
-        base.endText = r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.';
+        const r = base.total ? st.score / base.total : 0;
+        base.endText = r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.'; if (st.skipped) base.endText += ' (Passzolva: ' + st.skipped + ')';
         base.kittyLine = '¡Muy bien, Martín!';
       } else if (order.length) {
         const q = order[st.qi];
         base.quizRunning = true; base.cur = q; base.progress = (st.qi + 1) + '. kérdés / ' + order.length;
         const se = this.sayBtn(LANG, q.sayEs[0] || 'lq', q.sayEs[1], 'say'); const sh = this.sayBtn('hu', q.sayHu[0] || 'lq', q.sayHu[1], 'say');
         base.qSay = { es: se.fn, esCls: se.cls, hu: sh.fn, huCls: sh.cls };
-        const answered = st.picked !== null; base.answered = answered;
+        const answered = st.picked !== null; base.answered = answered; base.canSkip = !answered; base.skipQ = () => this.skipQ();
         base.opts = q.options.map((o, i) => {
           let cls = 'opt';
           if (answered) { if (i === q.answer) cls += ' correct'; else if (i === st.picked) cls += ' wrong'; else cls += ' dim'; }
@@ -459,7 +462,7 @@ class Component extends DCLogic {
     if (size === undefined) size = unit.indexOf('c:') === 0 ? 0 : 50;
     const list = size ? all.slice(0, size) : all;
     this.stopVoice();
-    this.setState({ quizUnit: unit, qsize: size, qpool: all.length, qlist: list, order: list, qi: 0, picked: null, score: 0, done: false, mood: 'idle' });
+    this.setState({ quizUnit: unit, qsize: size, qpool: all.length, qlist: list, order: list, qi: 0, picked: null, score: 0, done: false, mood: 'idle', skipped: 0 });
     this.autoSay(list[0]);
   }
   autoSay(q) { clearTimeout(this.autoT); if (q && q.auto) this.autoT = setTimeout(() => this.speak(q.auto[0], q.auto[1], q.auto[2]), 500); }
@@ -475,6 +478,12 @@ class Component extends DCLogic {
     if (ok) this.sfxGood(); else this.sfxBad();
     clearTimeout(this.fbT);
     this.fbT = setTimeout(() => this.speak('hu', ok ? 'fb:ok' : 'fb:bad'), ok ? 1300 : 1600);
+  }
+  skipQ() {
+    const st = this.state; if (st.picked !== null || st.done) return; this.stopVoice(); clearTimeout(this.fbT);
+    const q = st.qlist[st.qi]; const list = st.qlist.slice(); if (!q._again) list.push(Object.assign({}, q, { _again: true }));
+    if (st.qi + 1 >= list.length) { this.setState({ qlist: list, order: list, skipped: (st.skipped || 0) + 1, done: true, mood: 'happy', picked: null }); }
+    else { this.setState({ qlist: list, order: list, skipped: (st.skipped || 0) + 1, qi: st.qi + 1, picked: null, mood: 'idle' }); this.autoSay(list[st.qi + 1]); }
   }
   next() {
     const st = this.state; this.stopVoice(); clearTimeout(this.fbT);
@@ -494,7 +503,7 @@ class Component extends DCLogic {
     const st = this.state; const d = st.data;
     const tabDefs = [['plus', 'Mai küldetés']].concat(d ? d.units.map(u => [u.id, u.num + '. ' + u.es]) : [['u1', '1.']]).concat([['dict', 'Szótár A–Z'], ['quiz', 'Kvíz']]);
     const tabs = tabDefs.map(t => ({ label: t[1], cls: 'tab' + (st.view === t[0] ? ' on' : ''), go: () => this.setView(t[0]) }));
-    const base = { tabs, loading: !d, errText: st.err, headMood: st.mood, plusRef: this.plusRef, isPlus: st.view === 'plus', isUnit: false, isDict: false, isQuiz: false, hasOpen: false,
+    const base = { tabs, loading: !d, errText: st.err, headMood: st.mood, plusRef: this.plusRef, isPlus: st.view === 'plus', isUnit: false, isDict: false, isQuiz: false, hasOpen: false, isMat: !!(window.Plus && window.Plus.open) && /subj: 'mat'/.test(String(this.mountPlus)), goMq: () => { try { window.Plus.open('mq'); } catch (e) {} this.setView('plus'); try { window.scrollTo(0, 0); } catch (e) {} },
       unit: {}, unitSay: {}, unitT: {}, ocT: {}, concepts: [], q: st.q, dictChips: [], letters: [], groups: [], dictCount: 0, dictEmpty: false,
       quizChips: [], lessonChips: [], hasLessonChips: false, sizeChips: [], mood: st.mood, kittyLine: '', score: st.score, total: 0, quizRunning: false, quizDone: false, cur: {}, qSay: {}, opts: [],
       answered: false, fbColor: '#1E2A38', fbTitle: '', nextLabel: '', endText: '', progress: '',

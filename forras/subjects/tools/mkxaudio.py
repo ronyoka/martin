@@ -21,6 +21,10 @@ for lang in ('hu', L):
     for h in range(1, 10): items[lang].append((f'n:h{h*100}', nw(h * 100, lang)))
     for t in range(1, 10): items[lang].append((f'n:t{t}', nw(t * 1000, lang)))
 items['es' if L == 'es' else L].append(('n:hc', 'ciento')) if L == 'es' else None
+# matek-kvíz kifejezések (tools/mathquiz.js MQ.PH: [es, hu]) -> x:mq_<kulcs>
+if subj == 'mat':
+    ph = json.loads(subprocess.run(['node', '-e', "global.window=global;process.stdout.write(JSON.stringify(require('/home/claude/subjects/tools/mathquiz.js').PH))"], capture_output=True, text=True, check=True).stdout)
+    for k, (es, hu) in ph.items(): items['es'].append(('x:mq_' + k, es)); items['hu'].append(('x:mq_' + k, hu))
 # események (csak a szöveges címek)
 evs = list(sched.get('events', []))
 for r in sched.get('recurring', []): evs.append(dict(r, id=r['id']))
@@ -49,10 +53,14 @@ for lang in (L, 'hu'):
     v = V[lang]; parts = []; pos = 0.0; m = {}; gap = np.zeros(int(SR * 0.25), np.int16)
     for key, txt in items[lang]:
         if key in m: continue
-        tmp = f'/tmp/_x_{subj}.wav'
-        with wave.open(tmp, 'wb') as w: v.synthesize_wav(txt, w)
-        with wave.open(tmp) as w: sr = w.getframerate(); a = np.frombuffer(w.readframes(w.getnframes()), np.int16)
-        if sr != SR: a = np.interp(np.linspace(0, len(a), int(len(a) * SR / sr), endpoint=False), np.arange(len(a)), a).astype(np.int16)
+        import hashlib; cf = f"/home/claude/xcache/{VOICES[lang]}/{hashlib.sha1(txt.encode()).hexdigest()}.npy"
+        if os.path.exists(cf): a = np.load(cf)
+        else:
+            tmp = f'/tmp/_x_{subj}.wav'
+            with wave.open(tmp, 'wb') as w: v.synthesize_wav(txt, w)
+            with wave.open(tmp) as w: sr = w.getframerate(); a = np.frombuffer(w.readframes(w.getnframes()), np.int16)
+            if sr != SR: a = np.interp(np.linspace(0, len(a), int(len(a) * SR / sr), endpoint=False), np.arange(len(a)), a).astype(np.int16)
+            os.makedirs(os.path.dirname(cf), exist_ok=True); np.save(cf, a)
         m[key] = [round(pos, 3), round(len(a) / SR, 3)]; parts += [a, gap]; pos += (len(a) + len(gap)) / SR
     wavp = f'{folder}/out/x_{lang}.wav'
     with wave.open(wavp, 'wb') as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(np.concatenate(parts).tobytes())

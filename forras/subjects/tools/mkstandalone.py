@@ -184,7 +184,7 @@ function kitty(mood) { return `<div class="kitty kitty-${mood}">${KITTY[mood]}</
 let fbT = null;
 let autoT = null;
 function autoSay(q) { clearTimeout(autoT); if (q && q.auto) autoT = setTimeout(() => speak(q.auto[0], q.auto[1], q.auto[2]), 500); }
-function startQuiz(unit, size) { const all = LQ.build(D, LANG, unit); if (size === undefined) size = unit.indexOf('c:') === 0 ? 0 : 50; st.quizUnit = unit; st.qsize = size; st.qpool = all.length; st.order = size ? all.slice(0, size) : all; st.qi = 0; st.picked = null; st.score = 0; st.done = false; st.mood = 'idle'; stopVoice(); render(); autoSay(st.order[0]); }
+function startQuiz(unit, size) { const all = LQ.build(D, LANG, unit); if (size === undefined) size = unit.indexOf('c:') === 0 ? 0 : 50; st.quizUnit = unit; st.qsize = size; st.qpool = all.length; st.order = size ? all.slice(0, size) : all; st.qi = 0; st.picked = null; st.score = 0; st.done = false; st.skipped = 0; st.mood = 'idle'; stopVoice(); render(); autoSay(st.order[0]); }
 function quizChipsHtml(lessonOnly) {
   const sc = st.quizUnit; const scU = sc.indexOf('c:') === 0 ? (D.units.find(u => u.concepts.some(c => 'c:' + c.id === sc)) || {}).id : sc;
   const size = [[10, '10'], [20, '20'], [50, '50'], [0, 'Mind (' + st.qpool + ')']].filter(x => x[0] === 0 || x[0] < st.qpool).map(x => `<button class="chip${st.qsize === x[0] ? ' on' : ''}" ${h(() => startQuiz(sc, x[0]))}>${esc(x[1])}</button>`).join('');
@@ -199,10 +199,11 @@ function pick(i) { if (st.picked !== null || st.done) return; const q = st.order
 function next() { stopVoice(); clearTimeout(fbT); if (st.qi + 1 >= st.order.length) { st.done = true; st.mood = 'happy'; st.picked = null; sfxGood(); fbT = setTimeout(() => speak('hu', 'fb:end'), 1300); } else { st.qi++; st.picked = null; st.mood = 'idle'; } render(); if (!st.done) autoSay(st.order[st.qi]); }
 function openC(id) { stopVoice(); st.open = id; st.wordOpen = null; st.ltab = 'explain'; render(); }
 function move(step) { const all = allConcepts(); const i = all.findIndex(c => c.id === st.open); const n = all[(i + step + all.length) % all.length]; const t = st.ltab; openC(n.id); if (t !== 'quiz') { st.ltab = t; render(); } }
+function skipQ() { if (st.picked !== null || st.done) return; stopVoice(); const q = st.order[st.qi]; if (!q._again) st.order = st.order.concat([Object.assign({}, q, { _again: true })]); st.skipped = (st.skipped || 0) + 1; if (st.qi + 1 >= st.order.length) { st.done = true; st.mood = 'happy'; st.picked = null; } else { st.qi++; st.picked = null; st.mood = 'idle'; autoSay(st.order[st.qi]); } render(); }
 function quizPanel() {
-  const order = st.order || []; let right = '', line = '';
-    if (st.done) { const r = order.length ? st.score / order.length : 0; line = '¡Muy bien, Martín!';
-      right = `<div class="card" style="padding:24px;gap:12px;align-items:flex-start"><h2 style="font-size:34px;color:#1F4E79">Vége! · ¡Fin!</h2><p style="margin:0;font-size:22px;font-weight:800">${st.score} / ${order.length} jó válasz</p><p style="margin:0;font-size:18px">${r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.'}</p><button class="open-btn" ${h(() => startQuiz(st.quizUnit))}>Újra játszom</button></div>`;
+  const order = st.order || []; const tot = order.filter(q => !q._again).length; let right = '', line = '';
+    if (st.done) { const r = tot ? st.score / tot : 0; line = '¡Muy bien, Martín!';
+      right = `<div class="card" style="padding:24px;gap:12px;align-items:flex-start"><h2 style="font-size:34px;color:#1F4E79">Vége! · ¡Fin!</h2><p style="margin:0;font-size:22px;font-weight:800">${st.score} / ${tot} jó válasz${st.skipped ? ' · passz: ' + st.skipped : ''}</p><p style="margin:0;font-size:18px">${r >= 0.9 ? 'Szuper! Szinte mindent tudsz. ¡Excelente!' : r >= 0.6 ? 'Ügyes vagy! Nézd át még egyszer a hibás leckéket.' : 'Semmi baj! Nézd meg a leckéket, és próbáld újra.'}</p><button class="open-btn" ${h(() => startQuiz(st.quizUnit))}>Újra játszom</button></div>`;
     } else if (order.length) {
       const q = order[st.qi]; const answered = st.picked !== null; const ok = answered && st.picked === q.answer;
       line = !answered ? 'Gondolkodj, Martin!' : ok ? 'Hihihi! Talált!' : 'Buuu… nem talált.';
@@ -211,7 +212,7 @@ function quizPanel() {
         <h2 style="font-size:30px"><button class="wb" ${h(() => speak(LANG, q.sayEs[0] || 'lq', q.sayEs[1]))}>${esc(q.q_es)}</button></h2><p style="margin:0;font-size:19px;font-weight:700;color:#22603C"><button class="wb" ${h(() => speak('hu', q.sayHu[0] || 'lq', q.sayHu[1]))}>${esc(q.q_hu)}</button></p>
         <div style="display:flex;gap:10px;flex-wrap:wrap">${sayBtn(LANG, q.sayEs[0] || 'lq', q.sayEs[1], 'say', T.LANGLABEL, 'Kérdés ' + T.LANGNAME)}${sayBtn('hu', q.sayHu[0] || 'lq', q.sayHu[1], 'say', 'Magyarul', 'Kérdés magyarul')}</div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">${opts}</div>` +
-        (answered ? `<div style="border-radius:16px;padding:14px 16px;background:#F4F7FB;display:flex;flex-direction:column;gap:6px"><p style="margin:0;font-weight:800;font-size:20px;color:${ok ? '#1D5233' : '#8E2A1F'}">${ok ? 'Ügyes! ¡Muy bien!' : 'Hoppá! A jó válasz: ' + esc(q.options[q.answer])}</p><p style="margin:0;font-size:17px">${esc(q.explain)}</p><p style="margin:0;font-size:14px;color:#4A5562">Nézd meg a könyvben: ${esc(q.page)}. oldal</p></div><button class="open-btn" ${h(next)} style="align-self:flex-start">${st.qi + 1 >= order.length ? 'Eredmény' : 'Következő kérdés →'}</button>` : '') + `</div>`;
+        (answered ? `<div style="border-radius:16px;padding:14px 16px;background:#F4F7FB;display:flex;flex-direction:column;gap:6px"><p style="margin:0;font-weight:800;font-size:20px;color:${ok ? '#1D5233' : '#8E2A1F'}">${ok ? 'Ügyes! ¡Muy bien!' : 'Hoppá! A jó válasz: ' + esc(q.options[q.answer])}</p><p style="margin:0;font-size:17px">${esc(q.explain)}</p><p style="margin:0;font-size:14px;color:#4A5562">Nézd meg a könyvben: ${esc(q.page)}. oldal</p></div><button class="open-btn" ${h(next)} style="align-self:flex-start">${st.qi + 1 >= order.length ? 'Eredmény' : 'Következő kérdés →'}</button>` : `<button class="chip" ${h(skipQ)} style="align-self:flex-start">⏭ Passz · Paso</button>`) + `</div>`;
     }
   return { right: right, line: line, order: order };
 }
@@ -258,7 +259,7 @@ function renderAll() {
   if (st.view === 'quiz') {
     const scU0 = st.quizUnit.indexOf('c:') === 0 ? (D.units.find(u => u.concepts.some(c => 'c:' + c.id === st.quizUnit)) || {}).id : st.quizUnit; const chips = [['all', 'Mind']].concat(D.units.map(x => [x.id, x.num + '. fejezet'])).map(x => `<button class="chip${scU0 === x[0] ? ' on' : ''}" ${h(() => startQuiz(x[0]))}>${esc(x[1])}</button>`).join('');
     const qp = quizPanel(); const right = qp.right, line = qp.line, order = qp.order;
-    m += `<section style="display:flex;flex-direction:column;gap:14px"><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">Melyik fejezetből?</span>${chips}</div>${quizChipsHtml(false)}
+    m += `<section style="display:flex;flex-direction:column;gap:14px">` + ('__SUBJ__' === 'mat' && window.MQ ? `<button class="open-btn" ${h(() => { try { window.Plus.open('mq'); } catch (e) { } setView('plus'); })} style="align-self:flex-start;background:#3B82C4">🔢 Új Matek-kvíz: számokkal, minden témára, passzolható →</button>` : '') + `<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">Melyik fejezetből?</span>${chips}</div>${quizChipsHtml(false)}
       <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start"><div class="card" style="flex:1 1 220px;max-width:300px;padding:16px;align-items:center;gap:8px"><div style="width:200px;height:200px">${kitty(st.mood)}</div><p style="margin:0;font-size:22px;font-weight:800;color:#1F4E79;text-align:center">${line}</p><p style="margin:0;font-weight:800;font-size:18px">Pont: ${st.score} / ${order.length}</p></div>
       <div style="flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:14px">${right}</div></div></section>`;
   }

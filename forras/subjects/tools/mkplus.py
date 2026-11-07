@@ -80,6 +80,6 @@ if data['pages'].get('pages'):
         else: miss.append(g)
     data['pages']['emo'] = emo; print('emoji SVG:', len(emo), 'hiányzó:', ''.join(miss[:30]), sum(len(v) for v in emo.values()) // 1024, 'KB')
 json.dump(data, open(folder + '/out/plus_data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
-open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/lessonquiz.js').read() + '\n' + open(T + '/plus.js').read())
+open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/mathquiz.js').read() + '\n' + open(T + '/lessonquiz.js').read() + '\n' + open(T + '/plus.js').read())
 open(folder + '/out/plus.css', 'w').write(open(T + '/plus.css').read())
 print('plus_data', len(json.dumps(data)) // 1024, 'KB; ikonok:', len(icons), 'szó-kulcs-példák:', list(icons)[:5])
