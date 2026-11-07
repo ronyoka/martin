@@ -34,6 +34,13 @@ def blank(o):  # aláhúzás-sorok (kitöltendő hely) -> „…” (a sablonok 
     if isinstance(o, dict): return {k: blank(v) for k, v in o.items()}
     return o
 pages = blank(pages)
+# oldalképek mérete (a kivágáshoz) – subjects/<subj>/pgimg/<img>.jpg; a kép NEM kerül a nyilvános GitHub-másolatba
+from PIL import Image
+imgs = {}
+for p in pages:
+    f = f"{folder}/pgimg/{p.get('img', '')}.jpg"
+    if p.get('img') and os.path.exists(f): imgs[p['img']] = list(Image.open(f).size)
+    elif p.get('img'): bad.append('noimg:' + p['img'])
 pages.sort(key=lambda p: ([b[0] for b in BOOKS].index(p['book']), p['page']))
-json.dump({'books': [dict(id=a, title=b, title_hu=c) for a, b, c in BOOKS], 'pages': pages}, open(folder + '/pages.json', 'w'), ensure_ascii=False, indent=0)
+json.dump({'books': [dict(id=a, title=b, title_hu=c) for a, b, c in BOOKS], 'imgsize': imgs, 'pages': pages}, open(folder + '/pages.json', 'w'), ensure_ascii=False, indent=0)
 print(subj, len(pages), 'oldal;', sum(len(t['items']) for p in pages for t in p['tasks']), 'item; lecke-link:', sum(1 for p in pages if p.get('lesson')), '; hibák:', bad[:10])

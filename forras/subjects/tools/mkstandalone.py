@@ -44,6 +44,14 @@ if PLUS.get('pages', {}).get('audio'):  # könyvoldalak hangja: offline a fájl 
             src = f'{folder}/out/pg_{u}_{l}.mp4'; dst = f'{subj}_pg_{u}_{l}.mp4'
             if os.path.exists(src): shutil.copy(src, f'{outdir}/{dst}')
             m[l] = dst
+if 'pages' in PLUS:  # könyvlap-képek: csak a privát (Drive) másolatba – PGIMG=1; a nyilvános GitHub-másolatba NEM
+    PLUS['pages']['imgs'] = {}
+    if os.environ.get('PGIMG') == '1':
+        os.makedirs(f'{outdir}/pgimg', exist_ok=True)
+        for p in PLUS['pages'].get('pages', []):
+            src = f"{folder}/pgimg/{p.get('img', '')}.jpg"
+            if p.get('img') and os.path.exists(src):
+                shutil.copy(src, f"{outdir}/pgimg/{p['img']}.jpg"); PLUS['pages']['imgs'][p['img']] = f"pgimg/{p['img']}.jpg"
 PLUSJS = open(f'{folder}/out/plus.bundle.js', encoding='utf-8').read()
 PLUSCSS = open(f'{folder}/out/plus.css', encoding='utf-8').read()
 XAUDIO = {}

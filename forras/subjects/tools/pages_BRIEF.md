@@ -46,3 +46,49 @@ Szabályok:
 - Ha egy oldal csak kép / fejezetnyitó: akkor is legyen bejegyzés (cím, summary_hu, words, és a nyitóoldal kérdései `open` vagy `choice` itemként).
 
 A végén: futtass egy ellenőrzést Pythonban (json betölthető, minden id egyedi, choice answer index érvényes, num answer csak számjegy), és a válaszodban írd meg röviden: hány oldal, hány feladat, hány item (kind szerint), és ha valamit nem tudtál elolvasni.
+
+
+# Könyvoldalak – 2. kör: MAGYARÁZAT, képek, játék
+
+(Ugyanabban a menetben is elvégezhető: az 1. kör sémájához ezek a mezők is kellenek.) Robert (az apa) azt kérte: a könyvoldalakon ne csak feladatok legyenek, hanem az oldal MINDEN tartalmát magyarázzuk el, idegen nyelven ÉS magyar fordítással, játékosan, képekkel.
+
+## Feladat
+Olvasd be a bemeneti JSON-t, nézd meg újra MINDEN oldalképet (Read tool; nagyíts, ha kell), és minden oldalhoz add hozzá a `learn` mezőt, a szavakhoz pedig a `pic` mezőt. A meglévő mezőket (title, words w/hu, tasks…) NE változtasd meg (kivéve nyilvánvaló hibát – azt írd meg a jelentésben). A kimenetet a megadott kimeneti fájlba írd (ugyanaz a szerkezet, kiegészítve).
+
+```json
+"learn": {
+  "intro": {"es": "¡Hoy aprendemos a leer números de cuatro cifras!", "hu": "Ma megtanuljuk kiolvasni a négyjegyű számokat!"},
+  "sentences": [
+    {"es": "Un número de cuatro cifras tiene unidades de millar, centenas, decenas y unidades.", "hu": "A négyjegyű számnak vannak ezresei, százasai, tízesei és egyesei.", "pic": "🔢", "vis": {"type": "digits", "n": "2785"}},
+    {"es": "Diez centenas forman una unidad de millar.", "hu": "Tíz százas egy ezrest ad ki.", "vis": {"type": "blocks", "um": 1, "c": 0, "d": 0, "u": 0}}
+  ],
+  "remember": [{"es": "1 UM = 10 C = 100 D = 1000 U", "hu": "1 ezres = 10 százas = 100 tízes = 1000 egyes"}],
+  "dialogue": [
+    {"who": "Gatito", "es": "Martín, ¿cuántas cifras tiene el 2785?", "hu": "Martin, hány számjegye van a 2785-nek?"},
+    {"who": "Martín", "es": "¡Tiene cuatro cifras!", "hu": "Négy számjegye van!"}
+  ],
+  "tf": [
+    {"es": "El número 3108 tiene tres cifras.", "hu": "A 3108-nak három számjegye van.", "answer": false, "why_es": "Tiene cuatro cifras: 3, 1, 0 y 8.", "why_hu": "Négy számjegye van: 3, 1, 0 és 8."}
+  ]
+}
+```
+
+- `sentences` (6–20 oldalanként): az oldal TELJES tananyaga rövid, egyszerű mondatokban (≤ 20 szó), sorrendben: a cím/bevezető, minden elméleti doboz, szabály, definíció, a kidolgozott példák LÉPÉSENKÉNT, a „Recuerda/Fíjate” dobozok, az olvasmány/kép tartalma mondatonként elmesélve (nem szó szerinti másolás), a feladatok mögötti tudás. A cél: Martin a mondatok meghallgatásával mindent megértsen, ami az oldalon van. Pontos, természetes spanyol (a könyv szóhasználatával), gyereknyelvű pontos magyar fordítás.
+- `pic`: EGY Unicode emoji, ami a mondatot/szót szemlélteti (pl. 🏛️ ayuntamiento, 🚦 semáforo, 🧺 cesta, 🍎 manzana, 🔢 számok). Csak ha tényleg illik; ne erőltesd. A szavaknál (`words[i].pic`) is, ahol van illő emoji.
+- `vis` (csak matekhoz, ahol segít; opcionális): `{"type":"digits","n":"2785"}` helyiérték-táblázat · `{"type":"blocks","um":1,"c":3,"d":2,"u":4}` számolókockák (ezres lap, százas, tízes rúd, egyes kocka; mindegyik 0–9) · `{"type":"groups","n":3,"size":4}` n csoport, mindegyikben size db (szorzás = ismételt összeadás) · `{"type":"numline","min":900,"max":1200,"step":50,"marks":[920,1040]}` számegyenes (max 25 lépés) · `{"type":"roundline","lo":2700,"n":2745,"hi":2800}` kerekítés két kerek szám között. A vis adatai legyenek pontosak (Pythonnal ellenőrizd).
+- `remember` (1–4): a legfontosabb szabályok, „Jegyezd meg!” dobozba.
+- `dialogue` (4–8 sor): vidám, rövid párbeszéd az oldal tananyagáról. Szereplők: "Gatito" (a cica kabala), "Martín", és ha az oldalon van, a könyv kitalált szereplője (pl. Nadia, Lucía). A cica kérdez, Martín válaszol, néha téved és a cica kijavítja.
+- `tf` (4–8): igaz/hamis állítások az oldal tananyagából (vegyesen igaz és hamis), indoklással (es + hu). A számolást ellenőrizd.
+- Ne kerüljön bele valós személy-, település- vagy iskolanév.
+
+A végén Pythonnal ellenőrizd: minden oldalnak van learn-je, sentences ≥ 6, tf ≥ 4, dialogue ≥ 4, a vis-ek érvényesek (blocks 0–9, numline ≤ 25 lépés, groups n·size ≤ 100), a JSON betölthető, a meglévő tasks/words szövegek nem változtak (hasonlítsd össze a bemenettel). A jelentésben írd meg: oldalak, mondatok, tf, dialógus-sorok, emojis szavak száma, és amit javítottál.
+
+## A FELADATOK JAVÍTÁSA (Robert: „a feladatok rész nem jó, mert nem lehet tudni, miről szól a lap; képek sincsenek benne; rögtönözz a feladatokkal is jobban”)
+Az oldal eredeti képe meg fog jelenni a feladatok mellett (a feladat kivágott részével), ezért add meg a helyeket:
+- Oldalszinten: `"img": "<képfájl neve kiterjesztés nélkül>"` és `"page_box": [x0, y0, x1, y1]` – az oldal helye a képen, 0–1 közötti arányokban (bal-felső, jobb-alsó). Egyoldalas képnél [0,0,1,1]; kétoldalas fotónál a bal vagy jobb oldal tényleges helye (a fotón a gerinc nem pontosan középen van – nézd meg!).
+- Feladatonként: `"box": [x0, y0, x1, y1]` – a feladat (utasítás + rajz + üres helyek) helye UGYANAZON a képen, arányokban, kicsit bővebben, hogy semmi ne lógjon le. Ellenőrizd: vágd ki PIL-lel és nézd meg a Read toollal legalább minden második feladatnál.
+- Feladatonként: `"context": {"es": "...", "hu": "..."}` – 1–3 mondat: mit látunk a feladat képén (szereplők, tárgyak, számok, táblázat), és mire kell figyelni. Ebből érti meg Martin, miről szól a feladat. + `"pic"`: 1–3 illő emoji egy stringben (pl. "🧸🧸🧸").
+- Feladatonként: `"help": {"es": "...", "hu": "..."}` – egy rövid tipp/első lépés (pl. „Számold meg, hány maci van egy dobozban, aztán szorozd meg a dobozok számával.”).
+- Az itemek (alpontok) is kapjanak `pic`-et (emoji), és matekban, ahol a kérdés egy képre épül, `vis`-t (groups / blocks / digits / numline / roundline), hogy Martin LÁSSA, amit számolnia kell (pl. 4 doboz × 3 maci → {"type":"groups","n":4,"size":3}).
+- Rögtönözz: ha egy feladat így nehezen érthető vagy túl egyhangú, írd át az itemeket érthetőbbre és játékosabbra (rövidebb kérdés, a kép leírása a kérdésben, choice helyett num ahol jobb, stb.), de a könyv feladatának tartalma és a helyes válasz maradjon. A `text`/`text_hu` (eredeti utasítás) maradjon.
+- A mentés előtti ellenőrzésnél a box-ok legyenek érvényesek (0 ≤ x0 < x1 ≤ 1, a page_box-on belül).

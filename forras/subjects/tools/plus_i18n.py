@@ -142,3 +142,12 @@ T.update({
 'pg_none':("Ezen az oldalon nincs gépen ellenőrizhető feladat.","There are no checkable exercises on this page.","En esta página no hay actividades para comprobar."),
 'pg_empty':("Ehhez a tantárgyhoz még nincsenek feldolgozva a könyvoldalak.","The book pages for this subject are not ready yet.","Las páginas de este libro todavía no están preparadas."),
 })
+T.update({
+'pg_tab_learn':("Magyarázat","Explanation","Explicación"),'pg_tab_play':("Játék","Play","Jugar"),
+'pg_read_all':("Mind felolvasása","Read everything","Leer todo"),'pg_only_lang':("Csak idegen nyelven","Only the foreign language","Solo en español"),
+'pg_remember':("Jegyezd meg!","Remember!","¡Recuerda!"),'pg_dialogue':("Beszélgetés a cicával","Chat with the kitty","Charla con el gatito"),
+'pg_go_play':("Játsszunk vele!","Let's play!","¡A jugar!"),'pg_wordgame':("Szójáték","Word game","Juego de palabras"),
+'pg_tf':("Igaz vagy hamis?","True or false?","¿Verdadero o falso?"),'pg_tf_q':("Igaz vagy hamis?","True or false?","¿Verdadero o falso?"),
+'pg_true':("Igaz","True","Verdadero"),'pg_false':("Hamis","False","Falso"),'pg_mix':("Vegyes kihívás","Mixed challenge","Reto mixto"),
+'pg_help':("Segítség","Help","Ayuda"),'pg_show_page':("A könyvlap megmutatása","Show the book page","Ver la página del libro"),'pg_hide_page':("A könyvlap elrejtése","Hide the book page","Ocultar la página"),
+})

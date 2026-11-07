@@ -44,6 +44,41 @@ pgs = folder + '/out/pg_sprite.json'
 if os.path.exists(pgs):
     g = json.load(open(pgs)); pb = json.load(open(folder + '/pg_blobs.json')) if os.path.exists(folder + '/pg_blobs.json') else {}
     data['pages']['sprite'] = g['sprite']; data['pages']['audio'] = {u: {l: ('/_blob/' + pb[f] if f in pb else f) for l, f in m.items()} for u, m in g['audio'].items()}
+    data['pages']['pchunk'] = g.get('pchunk', {})
+if data['pages'].get('pages'):
+    # oldalképek: csak ha van asset-id (pg_blobs.json „img:<név>”); offline a mkstandalone teszi be (GitHubra nem)
+    pb = json.load(open(folder + '/pg_blobs.json')) if os.path.exists(folder + '/pg_blobs.json') else {}
+    data['pages']['imgs'] = {k[4:]: '/_blob/' + v for k, v in pb.items() if k.startswith('img:')}
+    # emojik -> OpenMoji SVG (CC BY-SA 4.0)
+    OM = '/home/claude/om/package/color/svg'
+    def mini(svg):
+        svg = re.sub(r'\s+id="[^"]*"', '', svg); svg = re.sub(r'>\s+<', '><', svg).strip(); svg = re.sub(r'(\d+\.\d)\d+', r'\1', svg)
+        return svg.replace('<svg ', '<svg aria-hidden="true" ', 1)
+    def graphemes(t):
+        out = []; cur = ''
+        for ch in t:
+            o = ord(ch)
+            if cur and (o in (0xFE0F, 0x200D, 0x20E3) or 0x1F3FB <= o <= 0x1F3FF or (cur.endswith('\u200d'))): cur += ch
+            else:
+                if cur: out.append(cur)
+                cur = ch
+        if cur: out.append(cur)
+        return [g for g in out if ord(g[0]) > 0x2000]
+    pics = set()
+    def walk(o):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k == 'pic' and isinstance(v, str): pics.update(graphemes(v))
+                else: walk(v)
+        elif isinstance(o, list):
+            for x in o: walk(x)
+    walk(data['pages']['pages']); emo = {}; miss = []
+    for g in pics:
+        hx = '-'.join('%04X' % ord(c) for c in g); hx2 = '-'.join('%04X' % ord(c) for c in g if ord(c) != 0xFE0F)
+        f = next((f'{OM}/{h}.svg' for h in (hx, hx2) if os.path.exists(f'{OM}/{h}.svg')), None)
+        if f: emo[hx2] = mini(open(f).read())
+        else: miss.append(g)
+    data['pages']['emo'] = emo; print('emoji SVG:', len(emo), 'hiányzó:', ''.join(miss[:30]), sum(len(v) for v in emo.values()) // 1024, 'KB')
 json.dump(data, open(folder + '/out/plus_data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 open(folder + '/out/plus.bundle.js', 'w').write(open(T + '/mathgen.js').read() + '\n' + open(T + '/lessonquiz.js').read() + '\n' + open(T + '/plus.js').read())
 open(folder + '/out/plus.css', 'w').write(open(T + '/plus.css').read())
