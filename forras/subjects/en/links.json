@@ -117,6 +117,26 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "ps_ws_pdf",
+   "kind": "pdf",
+   "title": "Present Simple worksheet – study guide",
+   "title_hu": "Present Simple felkészítő (PDF)",
+   "drive": "1vgwLzR9UVkrPJyf6fCyHv4-30ooT9haO",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ps_ws_video",
+   "kind": "video",
+   "title": "Present Simple – video",
+   "title_hu": "Present Simple felkészítő videó",
+   "drive": "13f0rzGsBJP_UUQnqcgTFjUg6y_pfBrnV",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

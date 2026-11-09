@@ -2,26 +2,6 @@
  "_doc": "Napi ellenőrzés: ide kerülnek a közelgő dolgozatok/házik. date=YYYY-MM-DD; type=spelling|control|test|homework; units=a fejezet-id-k (u0..u8); spelling_week=a spelling.json hetének id-ja; link_ids=a links.json elemei. A 'recurring' szabály minden megadott hétköznapra (1=hétfő..7=vasárnap) virtuális eseményt ad az 'after' dátum után. Módosítás után: python3 tools/mkplus.py en (a hang miatt: python3 tools/mkxaudio.py en) és újrapublikálás.",
  "events": [
   {
-   "id": "en-control1-1104",
-   "date": "2026-11-04",
-   "type": "control",
-   "title": "Control 1 – Hello + Unit 1–2 + worksheets",
-   "title_hu": "1. dolgozat – Hello + 1–2. fejezet + füzetbe ragasztott lapok",
-   "units": [
-    "u0",
-    "u1",
-    "u2"
-   ],
-   "link_ids": [
-    "control1_pdf",
-    "control1_video",
-    "hb_solved",
-    "hb_prep",
-    "hb_video",
-    "worksheet01"
-   ]
-  },
-  {
    "id": "en-spelling-1110",
    "date": "2026-11-10",
    "type": "spelling",
@@ -34,6 +14,20 @@
    "link_ids": [
     "spelling_u3_pdf",
     "spelling_u3_video"
+   ]
+  },
+  {
+   "id": "en-hw-presentsimple-1110",
+   "date": "2026-11-10",
+   "type": "homework",
+   "title": "Homework – Present Simple worksheet (Unit 3)",
+   "title_hu": "Házi – Present Simple feladatlap befejezése (3. fejezet)",
+   "units": [
+    "u3"
+   ],
+   "link_ids": [
+    "ps_ws_pdf",
+    "ps_ws_video"
    ]
   }
  ],
