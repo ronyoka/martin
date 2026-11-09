@@ -224,7 +224,7 @@ function renderAll() {
   const ovOld = document.querySelector('#overlay .overlay'); const ovTop = ovOld ? ovOld.scrollTop : 0; const winY = window.scrollY;
   for (const k in H) delete H[k]; hid = 0;
   document.getElementById('headKitty').innerHTML = kitty(st.mood);
-  const tabDefs = [['plus', 'Mai küldetés']].concat(D.units.map(u => [u.id, u.num + '. ' + u.es])).concat([['dict', 'Szótár A–Z'], ['quiz', 'Kvíz']]);
+  const tabDefs = [['plus', 'Teendők és gyakorlás']].concat(D.units.map(u => [u.id, u.num + '. ' + u.es])).concat([['dict', 'Szótár A–Z'], ['quiz', 'Kvíz']]);
   document.getElementById('tabs').innerHTML = tabDefs.map(t => `<button class="tab${st.view === t[0] ? ' on' : ''}" ${h(() => setView(t[0]))}>${esc(t[1])}</button>`).join('');
   let m = '';
   const u = D.units.find(x => x.id === st.view);

@@ -773,6 +773,15 @@
       (u0 ? '<button type="button" class="pbtn l" data-a="gounit" data-u="' + u0 + '"><span>' + esc(hu('b_goto')) + '</span>' + ICO.next + '</button>' : '') + '</div>' +
       (links.length ? '<div class="px-links">' + links.map(l => '<a class="px-link" target="_blank" rel="noopener" href="' + esc(l.url) + '">' + ICO.link + '<span>' + esc(l.hu) + '</span></a>').join('') + '</div>' : '') + '</div>';
   }
+  // ---- elkövetkező teendők (2 hét előre, minden esemény)
+  const UPC = { hu: 'Elkövetkező teendők – 2 hét', es: 'Próximas tareas y exámenes – 2 semanas', en: 'Upcoming homework and tests – 2 weeks' };
+  function upcoming() { return events().filter(e => e._days >= 0 && e._days <= 14); }
+  function upcomingHtml(ev) {
+    const ups = upcoming(); const sub = C.lang === 'es' ? UPC.es : UPC.en;
+    const head = '<style>.px-up .px-cd{font-size:28px}.px-up .px-evt{font-size:21px}.px-h small{display:block;font-size:15px;font-weight:700;color:#6B7785}</style><h3 class="px-h">' + esc(UPC.hu) + '<small>' + esc(sub) + (ups.length ? ' · ' + ups.length + ' db' : '') + '</small></h3>';
+    if (!ups.length) return head + eventCard(null);
+    return head + ups.map((e, i) => { const h = eventCard(e); return i ? h.replace('px-card px-mission', 'px-card px-mission px-up') : h; }).join('');
+  }
   function vHome() {
     const ev = nextEvent(); ST.curEvent = ev; const done = !!P.mission[today()];
     const tiles = mqOn() ? [['mq', 't_mq', 'T10']] : []; if (pgData().length) tiles.push(['pages', 't_pages', 'T5']); tiles.push(['map', 't_map', 'T9'], ['blitz', 't_blitz', 'T10'], ['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ['duel', 't_duel', 'T11'], ['space', 't_space', 'T12']);
@@ -782,7 +791,7 @@
     const gs = globalStreak(); const tot = totalStars(); const soon = ev && ev._days >= 0 && ev._days <= 2;
     return '<div class="px-hero">' + kitty(ST.mood, 120, 'hero') + '<div><h1>' + esc(hu('hello')) + '</h1><div class="px-stat big">' + ICO.star + '<b>' + P.stars + '</b>' + ICO.flame + '<b>' + gs.n + '</b><span class="px-sub">' + esc(hu('streak_days')) + (gs.rest ? ' · ' + esc(hu('rest_day')) : '') + '</span></div>' + (tot !== P.stars ? '<div class="px-sub">' + ICO.star + ' <b>' + tot + '</b> ' + esc(hu('stars_total')) + '</div>' : '') + '</div>' +
       '<button type="button" class="pbtn o" data-a="instr" data-k="home_intro">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button></div>' +
-      rewardHtml() + weeklyHtml() + '<h3 class="px-h">' + esc(hu('today_mission')) + '</h3>' + eventCard(ev) + (ev ? readyHtml(ev) : '') +
+      rewardHtml() + weeklyHtml() + upcomingHtml(ev) + (ev ? readyHtml(ev) : '') +
       (soon ? '<div class="px-card px-final"><div class="px-final-cars">' + carSvg('#3B82C4', 70) + carSvg('#D9362B', 70) + '</div><h2>' + esc(hu('race_final')) + '</h2><p class="px-evh">' + esc(hu('race_sub')) + '</p><button type="button" class="pbtn b xl" data-a="race">' + ICO.next + '<span>' + esc(hu('b_race')) + '</span></button></div>' : '') +
       qnChips() + '<button type="button" class="pbtn g xl" data-a="mission">' + (done ? ICO.ok : ICO.next) + '<span>' + esc(hu(done ? 'b_mission_again' : 'b_mission')) + '</span><small>' + esc(hu(ev ? 'mission_sub' : 'mission_sub_review')) + '</small></button>' +
       '<div class="px-tiles">' + tiles.map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="' + (['blitz', 'duel', 'space', 'bingo', 'bubble', 'build'].indexOf(t[0]) >= 0 ? t[0] : 'go') + '" data-v="' + t[0] + '"><span class="ic">' + tileIcon(t[0]) + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>';

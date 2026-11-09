@@ -501,7 +501,7 @@ class Component extends DCLogic {
   }
   renderVals() {
     const st = this.state; const d = st.data;
-    const tabDefs = [['plus', 'Mai küldetés']].concat(d ? d.units.map(u => [u.id, u.num + '. ' + u.es]) : [['u1', '1.']]).concat([['dict', 'Szótár A–Z'], ['quiz', 'Kvíz']]);
+    const tabDefs = [['plus', 'Teendők és gyakorlás']].concat(d ? d.units.map(u => [u.id, u.num + '. ' + u.es]) : [['u1', '1.']]).concat([['dict', 'Szótár A–Z'], ['quiz', 'Kvíz']]);
     const tabs = tabDefs.map(t => ({ label: t[1], cls: 'tab' + (st.view === t[0] ? ' on' : ''), go: () => this.setView(t[0]) }));
     const base = { tabs, loading: !d, errText: st.err, headMood: st.mood, plusRef: this.plusRef, isPlus: st.view === 'plus', isUnit: false, isDict: false, isQuiz: false, hasOpen: false, isMat: !!(window.Plus && window.Plus.open) && /subj: 'mat'/.test(String(this.mountPlus)), goMq: () => { try { window.Plus.open('mq'); } catch (e) {} this.setView('plus'); try { window.scrollTo(0, 0); } catch (e) {} },
       unit: {}, unitSay: {}, unitT: {}, ocT: {}, concepts: [], q: st.q, dictChips: [], letters: [], groups: [], dictCount: 0, dictEmpty: false,
