@@ -61,7 +61,8 @@
    "drive": "1dGkMzvA0-JyJLL0w5Jz_casNkaNzxVOB",
    "units": [
     "u1",
-    "u2"
+    "u2",
+    "u3"
    ],
    "global": true
   },
@@ -95,6 +96,36 @@
    "folder": "1zqENDycJyvxq9Iv42KtSrCV_AD5efOiB",
    "units": [],
    "global": true
+  },
+  {
+   "id": "plantas_pdf",
+   "kind": "pdf",
+   "title": "Plantas para todo (págs. 58–61) – guía",
+   "title_hu": "„Plantas para todo” 58–61. o. – felkészítő (PDF)",
+   "drive": "1rtKtIYClKpAcztrS-lC1TpLI3kC5FNIN",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "plantas_video",
+   "kind": "video",
+   "title": "Plantas para todo – vídeo",
+   "title_hu": "„Plantas para todo” – videó",
+   "drive": "1DmpprnurNsP4E1Ol1z7XFH05VwBF_h_G",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "plantas_solved",
+   "kind": "solved",
+   "title": "Plantas para todo – páginas resueltas",
+   "title_hu": "„Plantas para todo” – megoldott könyvlapok",
+   "drive": "1g6uXkJeQGSMDO2HQSLDHa3jacRXu7RCI",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

@@ -137,6 +137,26 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "spelling_1117_pdf",
+   "kind": "pdf",
+   "title": "Spelling – days and time (guide)",
+   "title_hu": "Spelling: napok és óra – felkészítő (PDF)",
+   "drive": "1Yc1Oml5Gpl5DF95VZ-DUqz-cQiKH7ika",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "spelling_1117_video",
+   "kind": "video",
+   "title": "Spelling – days and time (video)",
+   "title_hu": "Spelling: napok és óra – videó",
+   "drive": "1HM-1HvFMg1EnJ_Q4GlWl-zgPuBeq1fYV",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

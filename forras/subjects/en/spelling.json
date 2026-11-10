@@ -196,6 +196,75 @@
      "hu": "gyakran"
     }
    ]
+  },
+  {
+   "id": "2026-11-17",
+   "test_date": "2026-11-17",
+   "title": "Days and time",
+   "title_hu": "A hét napjai és az óra",
+   "unit": "u3",
+   "words": [
+    {
+     "w": "Thursday",
+     "hu": "csütörtök",
+     "ex": "I have English on Thursday.",
+     "ex_hu": "Csütörtökön van angolom."
+    },
+    {
+     "w": "Wednesday",
+     "hu": "szerda",
+     "ex": "Today is Wednesday.",
+     "ex_hu": "Ma szerda van."
+    },
+    {
+     "w": "quarter",
+     "hu": "negyed",
+     "ex": "It is quarter past seven.",
+     "ex_hu": "Negyed nyolc van."
+    },
+    {
+     "w": "o'clock",
+     "hu": "óra (egész órakor)",
+     "ex": "I get up at seven o'clock.",
+     "ex_hu": "Hét órakor kelek fel."
+    },
+    {
+     "w": "half",
+     "hu": "fél",
+     "ex": "It is half past eight.",
+     "ex_hu": "Fél kilenc van."
+    },
+    {
+     "w": "never",
+     "hu": "soha",
+     "ex": "I never eat breakfast in bed.",
+     "ex_hu": "Soha nem reggelizem az ágyban."
+    },
+    {
+     "w": "always",
+     "hu": "mindig",
+     "ex": "I always brush my teeth.",
+     "ex_hu": "Mindig megmosom a fogam."
+    },
+    {
+     "w": "night",
+     "hu": "éjszaka, este",
+     "ex": "I go to bed at nine at night.",
+     "ex_hu": "Este kilenckor fekszem le."
+    },
+    {
+     "w": "dinner",
+     "hu": "vacsora",
+     "ex": "We have dinner at eight o'clock.",
+     "ex_hu": "Nyolc órakor vacsorázunk."
+    },
+    {
+     "w": "before",
+     "hu": "előtt, mielőtt",
+     "ex": "I wash my hands before dinner.",
+     "ex_hu": "Vacsora előtt kezet mosok."
+    }
+   ]
   }
  ]
 }

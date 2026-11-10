@@ -29,6 +29,21 @@
     "ps_ws_pdf",
     "ps_ws_video"
    ]
+  },
+  {
+   "id": "en-spelling-1117",
+   "date": "2026-11-17",
+   "type": "spelling",
+   "title": "Spelling test – Unit 3 (days and time)",
+   "title_hu": "Spelling teszt – 3. fejezet (napok, óra)",
+   "units": [
+    "u3"
+   ],
+   "spelling_week": "2026-11-17",
+   "link_ids": [
+    "spelling_1117_pdf",
+    "spelling_1117_video"
+   ]
   }
  ],
  "recurring": [
@@ -38,7 +53,7 @@
    "type": "spelling",
    "title": "Weekly spelling test",
    "title_hu": "Heti spelling teszt (kedd)",
-   "after": "2026-11-10",
+   "after": "2026-11-17",
    "units": [
     "u3"
    ]
