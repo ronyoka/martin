@@ -111,3 +111,6 @@ SZABÁLY: minden új dolgozatnál a dolgozat fejezeteinek minden könyvoldala (t
 - plus.js: upcoming()/upcomingHtml() – a nyitóoldalon a schedule.json MINDEN eseménye a következő 14 napból (házi, dolgozat, spelling, ismétlődő is), mindegyik saját kártyával (visszaszámlálás, hang, ugrás a fejezetre, linkek); a régi „Mai küldetés” fejléc helyett. A fül neve: „Teendők és gyakorlás” (Main.template.html + mkstandalone.py tabDefs; a régi Main.dc.html-ekben/offline index.html-ekben szöveges csere).
 - Bundle mind a 6 oldalon új plus_js (lásd <subj>/plus_blobs.json); offline: swapbundle.py + fülnév-csere (Drive 5 Interaktiv + C:\works\martin\<almappa>). Előző plus.js: tools/plus.v10-elotte-upcoming.js.
 - en: plus_data 29ed395c13255445cce52c3db6cb2bfd (Present Simple házi, nov. 10.).
+
+## 2026-11-11 – Külső linkek (Wordwall) a links.json-ban
+- links.json elem kaphat `url` mezőt (külső link, pl. Wordwall); a plus.js linksFor/Plus.linksFor ezt használja a drive/folder helyett. en: 10 Unit 3 Wordwall-játék (kind "game", units u3), a nov. 17-i spelling eseményhez is kötve (link_ids). en új assetek: plus_data 887b7d34afd1bc1d016566f90607e4a8, plus_js 984cedc3c08289c26cd8143f604eb7d1 (a többi tantárgy bundle-je még a régi, url-mező nélküli – új külső linknél nekik is új plus_js kell).

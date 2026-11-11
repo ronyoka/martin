@@ -1,5 +1,5 @@
 {
- "_doc": "Linkek a fejezetek fülén és a Mai küldetésben. drive=Google Drive fájl-id (https://drive.google.com/file/d/<ID>/view); folder=mappa-id; kind=pdf|video|solved|worksheet|folder; units=melyik fejezetekhez; global=true: minden fejezetnél látszik.",
+ "_doc": "Linkek a fejezetek fülén és a Mai küldetésben. drive=Google Drive fájl-id (https://drive.google.com/file/d/<ID>/view); folder=mappa-id; kind=pdf|video|solved|worksheet|folder; units=melyik fejezetekhez; global=true: minden fejezetnél látszik. url=külső link (pl. Wordwall), ha meg van adva, azt használja.",
  "items": [
   {
    "id": "control1_pdf",
@@ -154,6 +154,106 @@
    "title": "Spelling – days and time (video)",
    "title_hu": "Spelling: napok és óra – videó",
    "drive": "1HM-1HvFMg1EnJ_Q4GlWl-zgPuBeq1fYV",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_routines1",
+   "kind": "game",
+   "title": "Wordwall: Daily routines 1",
+   "title_hu": "🎮 Online játék (Wordwall): Napirend 1 – daily routines",
+   "url": "https://wordwall.net/es/resource/27668106/english/daily-routines",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_routines2",
+   "kind": "game",
+   "title": "Wordwall: Daily routines 2",
+   "title_hu": "🎮 Online játék (Wordwall): Napirend 2 – daily routines",
+   "url": "https://wordwall.net/es/resource/23057528/esl/daily-routines",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_routines3",
+   "kind": "game",
+   "title": "Wordwall: Daily routines 3",
+   "title_hu": "🎮 Online játék (Wordwall): Napirend 3 – daily routines",
+   "url": "https://wordwall.net/es/resource/59071027/daily-routines",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_routines4",
+   "kind": "game",
+   "title": "Wordwall: Daily routines 4",
+   "title_hu": "🎮 Online játék (Wordwall): Napirend 4 – daily routines",
+   "url": "https://wordwall.net/es/resource/14044917/daily-routines",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_oclock",
+   "kind": "game",
+   "title": "Wordwall: Time – o'clock",
+   "title_hu": "🎮 Online játék (Wordwall): Az óra – egész órák (o'clock)",
+   "url": "https://wordwall.net/es/resource/35733856/time-oclock",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_time",
+   "kind": "game",
+   "title": "Wordwall: Telling the time",
+   "title_hu": "🎮 Online játék (Wordwall): Hány óra van? (telling the time)",
+   "url": "https://wordwall.net/es/resource/37518428/ingl%C3%A9s/telling-the-time",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_ps_forms",
+   "kind": "game",
+   "title": "Wordwall: Present Simple – all forms",
+   "title_hu": "🎮 Online játék (Wordwall): Present Simple – minden alak (egyes szám)",
+   "url": "https://wordwall.net/es/resource/73830214/ingl%C3%A9s/present-simple-all-forms-singular",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_ps_daily",
+   "kind": "game",
+   "title": "Wordwall: Present Simple – daily activities",
+   "title_hu": "🎮 Online játék (Wordwall): Present Simple – napi tevékenységek",
+   "url": "https://wordwall.net/es/resource/75124425/ingl%C3%A9s/simple-present-daily-activities-affirmative-and",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_ps_verbs",
+   "kind": "game",
+   "title": "Wordwall: Present Simple – basic verbs",
+   "title_hu": "🎮 Online játék (Wordwall): Present Simple – alap igék",
+   "url": "https://wordwall.net/es/resource/75133986/ingl%C3%A9s/present-simple-basic-verbs",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ww_beforeafter",
+   "kind": "game",
+   "title": "Wordwall: Before and after",
+   "title_hu": "🎮 Online játék (Wordwall): Előtte és utána (before / after)",
+   "url": "https://wordwall.net/es/resource/3055464/before-and-after",
    "units": [
     "u3"
    ]
