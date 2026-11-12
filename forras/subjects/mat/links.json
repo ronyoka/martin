@@ -162,6 +162,26 @@
    "folder": "1G2EHHUHHmt6hA8qmmLT2Nk8B0QRKyg7D",
    "units": [],
    "global": true
+  },
+  {
+   "id": "tablasall_pdf",
+   "kind": "pdf",
+   "title": "Prep guide: all times tables (PDF)",
+   "title_hu": "Felkészítő: minden szorzótábla (PDF)",
+   "drive": "1wzd4iC4lDY1MlmzFLDvzgk7PMduoYOEV",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "tablasall_video",
+   "kind": "video",
+   "title": "Prep video: all times tables",
+   "title_hu": "Felkészítő videó: minden szorzótábla",
+   "drive": "1iaoPi4ZA-vJniXNKSps8W_KU4hZ4SEHd",
+   "units": [
+    "u2"
+   ]
   }
  ]
 }

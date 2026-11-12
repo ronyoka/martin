@@ -114,3 +114,11 @@ SZABÁLY: minden új dolgozatnál a dolgozat fejezeteinek minden könyvoldala (t
 
 ## 2026-11-11 – Külső linkek (Wordwall) a links.json-ban
 - links.json elem kaphat `url` mezőt (külső link, pl. Wordwall); a plus.js linksFor/Plus.linksFor ezt használja a drive/folder helyett. en: 10 Unit 3 Wordwall-játék (kind "game", units u3), a nov. 17-i spelling eseményhez is kötve (link_ids). en új assetek: plus_data 887b7d34afd1bc1d016566f90607e4a8, plus_js 984cedc3c08289c26cd8143f604eb7d1 (a többi tantárgy bundle-je még a régi, url-mező nélküli – új külső linknél nekik is új plus_js kell).
+
+## 2026-11-12 – napi ellenőrzés: mat tablas nov. 18. + ns control Unit 2 nov. 20.
+- mat/schedule.json: mat-tablas-1118 (minden tábla; a cím szándékosan NEM tartalmaz számot, mert a focusTables() a címből szedi ki a táblákat – így az alapértelmezett 2–9 a fókusz); links: tablasall_pdf/video.
+- ns/schedule.json: ns-control-u2-1120 (default_units u2); links: u2ctl_pdf/video, u2_notes, u2_mp3.
+- Figyelem: mkplus.py után MINDIG addicons.py <subj> (különben az OpenMoji-ikonok kimaradnak a plus_data-ból), és mkxaudio.py után újra mkplus.py + addicons.py (az x_sprite a plus_data-ba kerül). mkxaudio-hoz: pip install num2words; hangok /home/claude/vid/voices; OpenMoji: npm pack openmoji@17.0.0 → /home/claude/om; /home/claude/subjects → symlink a kicsomagolt subjects mappára.
+- Publikálás: a Main.dc.html-ben csak a blob-id-k cseréje (plus_data, x_lang, x_hu) – Artifact read (url, path nélkül!) után publish root=<mappa>, file_path=<mappa>/project/Main.dc.html.
+- Új asset-id-k: ns plus_data 038d74e90bf2d26b1ed077d2a3557ceb, x_en 5529ee972793b9a927547c30f987d44f, x_hu cab150d99956b9e086a55b41cb58c4de · mat plus_data a0d8a97f5c1642e7e98c7e6a4018f5d6, x_es 48d14e1ca9084c05f514187d4e9b6a4b, x_hu f45b1cf1d86ff3e67553fe5769c7072f.
+- Offline: a fő hang és a pg_*.mp4 / pgimg csak üres helyőrzővel (nem változtak), csak index.html + x_*.mp4 felírva.

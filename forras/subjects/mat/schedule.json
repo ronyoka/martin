@@ -2,22 +2,6 @@
  "_doc": "Napi ellenőrzés: közelgő dolgozatok/házik. date=YYYY-MM-DD; type=homework|control|test; units=fejezet-id-k (u1..u9); link_ids=a links.json elemei. Módosítás után: python3 tools/mkplus.py mat (és mkxaudio.py mat) és újrapublikálás.",
  "events": [
   {
-   "id": "mat-tablas-1109",
-   "date": "2026-11-09",
-   "type": "test",
-   "title": "Mini test: tablas del 3, 6, 9, 0 y 7",
-   "title_hu": "Szorzótábla mini-teszt: 3-as, 6-os, 9-es, 0-s, 7-es",
-   "units": [
-    "u2"
-   ],
-   "link_ids": [
-    "tablas369_pdf",
-    "tablas369_video",
-    "tablas_pdf",
-    "tablas_video"
-   ]
-  },
-  {
    "id": "mat-control-1111",
    "date": "2026-11-11",
    "type": "control",
@@ -32,6 +16,22 @@
     "control12_video",
     "tablas_pdf",
     "tablas_video"
+   ]
+  },
+  {
+   "id": "mat-tablas-1118",
+   "date": "2026-11-18",
+   "type": "test",
+   "title": "Mini test: todas las tablas de multiplicar",
+   "title_hu": "Szorzótábla mini-teszt: minden tábla",
+   "units": [
+    "u2"
+   ],
+   "link_ids": [
+    "tablasall_pdf",
+    "tablasall_video",
+    "tablas369_pdf",
+    "tablas_pdf"
    ]
   }
  ],

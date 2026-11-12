@@ -18,6 +18,46 @@
    "folder": "1IoKJsrWTN_Y7RB5IllnAglsYFcUdE7cW",
    "units": [],
    "global": true
+  },
+  {
+   "id": "u2ctl_pdf",
+   "kind": "pdf",
+   "title": "Prep guide: control unit 2 (PDF)",
+   "title_hu": "Felkészítő: 2. fejezet dolgozat (PDF)",
+   "drive": "1fy3TsxALfV6NPTf62nAH2zYK_eEWjXXe",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "u2ctl_video",
+   "kind": "video",
+   "title": "Prep video: control unit 2",
+   "title_hu": "Felkészítő videó: 2. fejezet dolgozat",
+   "drive": "1hPVcKfhetBL699bb4XKSRswkeQpVF-wN",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "u2_notes",
+   "kind": "pdf",
+   "title": "Hungarian notes: Unit 2",
+   "title_hu": "Magyar jegyzet: 2. fejezet",
+   "drive": "1uaSgHGqhqNQwOIFc4QQcABDFfqHmovHV",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "u2_mp3",
+   "kind": "audio",
+   "title": "Word MP3: Unit 2",
+   "title_hu": "Szó-MP3: 2. fejezet",
+   "drive": "154Gu3dctggLXonYefe8O8VOQ1DxsflOu",
+   "units": [
+    "u2"
+   ]
   }
  ]
 }

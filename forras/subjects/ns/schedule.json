@@ -1,8 +1,25 @@
 {
  "_doc": "Napi ellenőrzés: ide kerülnek a közelgő dolgozatok/házik. date=YYYY-MM-DD; type=control|test|homework; units=a fejezet-id-k; link_ids=a links.json elemei; default_units=ha nincs közelgő esemény, ebből a fejezetből ismétlünk. A 'recurring' szabály minden megadott hétköznapra (1=hétfő..7=vasárnap) virtuális eseményt ad az 'after' dátum után. Módosítás után: python3 tools/mkplus.py <tantárgy> és python3 tools/mkxaudio.py <tantárgy> (új cím hangja miatt), majd újrapublikálás.",
  "default_units": [
-  "u1"
+  "u2"
  ],
- "events": [],
+ "events": [
+  {
+   "id": "ns-control-u2-1120",
+   "date": "2026-11-20",
+   "type": "control",
+   "title": "Natural Science control unit 2 – We protect animals",
+   "title_hu": "Természetismeret dolgozat – 2. fejezet: Védjük az állatokat",
+   "units": [
+    "u2"
+   ],
+   "link_ids": [
+    "u2ctl_pdf",
+    "u2ctl_video",
+    "u2_notes",
+    "u2_mp3"
+   ]
+  }
+ ],
  "recurring": []
 }
