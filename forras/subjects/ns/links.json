@@ -58,6 +58,56 @@
    "units": [
     "u2"
    ]
+  },
+  {
+   "id": "rev_qa_pdf",
+   "kind": "pdf",
+   "title": "Q&A + explanation Unit 2 (PDF)",
+   "title_hu": "Kérdezz-felelek + magyarázat (PDF)",
+   "drive": "1P9sY6k2-pufii5HoyJDafxJ9fLYzUMxW",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "rev_qa_video",
+   "kind": "video",
+   "title": "Q&A video Unit 2",
+   "title_hu": "Kérdezz-felelek videó",
+   "drive": "1nPjcP2TQ3h8vAVYCyyZg1jFtVZHNiKUo",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "rev_pdf",
+   "kind": "pdf",
+   "title": "Revision worksheet prep (PDF)",
+   "title_hu": "Ismétlő lap felkészítő (PDF)",
+   "drive": "1OVFjmRJ98yT8lZE3gXegpVUpPT2YSUB0",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "rev_video",
+   "kind": "video",
+   "title": "Revision worksheet video",
+   "title_hu": "Ismétlő lap videó",
+   "drive": "1VZva6pDuTcJuTGddS05TrT8ME-hJwtqL",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "rev_solved",
+   "kind": "solved",
+   "title": "Revision worksheet solved",
+   "title_hu": "Ismétlő lap megoldva",
+   "drive": "1QKzE6WOGj-8kRXoPW2KkmgSVeQhdzrPD",
+   "units": [
+    "u2"
+   ]
   }
  ]
 }

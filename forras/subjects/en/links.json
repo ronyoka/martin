@@ -257,6 +257,56 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "ab31_pdf",
+   "kind": "pdf",
+   "title": "Prep guide: AB p31 ex2 (PDF)",
+   "title_hu": "Felkészítő: AB 31. o. 2. feladat (PDF)",
+   "drive": "1vKGuTgLNGkrkiOsUIer1RsgSnoUEQVq2",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ab31_video",
+   "kind": "video",
+   "title": "Prep video: AB p31 ex2",
+   "title_hu": "Felkészítő videó: AB 31. o. 2. feladat",
+   "drive": "1mlR8Sutuo7diiqsOA9GxV4F2Ef_ArNwm",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ab31_solved",
+   "kind": "solved",
+   "title": "AB p31 solved",
+   "title_hu": "AB 31. o. megoldva",
+   "drive": "1vUE04NiyPT9JgoeBt5XBrF3HEBo5yIZD",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "spelling_1124_pdf",
+   "kind": "pdf",
+   "title": "Prep guide: spelling In the city (PDF)",
+   "title_hu": "Felkészítő: spelling – a városban (PDF)",
+   "drive": "19OpmSV7ypzuErXThhsRw9DYP60Fh-1E0",
+   "units": [
+    "u4"
+   ]
+  },
+  {
+   "id": "spelling_1124_video",
+   "kind": "video",
+   "title": "Prep video: spelling In the city",
+   "title_hu": "Felkészítő videó: spelling – a városban",
+   "drive": "1W8Kn0i9d5xMZn1fCSXmlxZEzmvIV0KxE",
+   "units": [
+    "u4"
+   ]
   }
  ]
 }

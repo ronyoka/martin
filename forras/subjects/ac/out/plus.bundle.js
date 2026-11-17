@@ -188,6 +188,184 @@
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.MathGen = api;
 })(typeof window !== 'undefined' ? window : globalThis);
 
+/* Matek-kvíz (Robert 2026-11-07: „sokkal matek-specifikusabb… gyorsan lehessen haladni számokkal… lehessen passzolni”).
+   Generátorok fejezetenként; minden feladat: {gid, unit, level, kind:'num'|'choice'|'multi'|'order'|'col', text:{es,hu}, audio:[{l,k,t}],
+   answer (string), options:[{v,label,sm}], fields:[{es,hu,ans}], items:[label], col:{a,b,op}, vis, explain:{es,hu}}
+   Hang: x:mq_<kulcs> (MQ.PH, a tools/mkxaudio.py veszi fel) + számok n:… (MathGen.numKeys). UMD: window.MQ / node. */
+(function (root) {
+  'use strict';
+  const PH = {
+    place_um: ['¿Cuántas unidades de millar hay en este número?', 'Hány ezres van ebben a számban?'],
+    place_c: ['¿Cuántas centenas hay en este número?', 'Hány százas van ebben a számban?'],
+    place_d: ['¿Cuántas decenas hay en este número?', 'Hány tízes van ebben a számban?'],
+    place_u: ['¿Cuántas unidades hay en este número?', 'Hány egyes van ebben a számban?'],
+    place_val: ['¿Cuánto vale la cifra marcada?', 'Mennyit ér a kiemelt számjegy?'],
+    compose: ['¿Qué número es?', 'Melyik szám ez?'],
+    hear: ['Escucha y escribe el número.', 'Hallgasd meg, és írd le számmal!'],
+    compare: ['¿Qué signo va en medio?', 'Melyik jel kerül középre?'],
+    order_asc: ['Ordena de menor a mayor.', 'Rakd sorba a legkisebbtől a legnagyobbig!'],
+    order_desc: ['Ordena de mayor a menor.', 'Rakd sorba a legnagyobbtól a legkisebbig!'],
+    neigh: ['Escribe el número anterior y el posterior.', 'Írd be, melyik szám van előtte és utána!'],
+    round10: ['Redondea a la decena.', 'Kerekítsd tízesre!'], round100: ['Redondea a la centena.', 'Kerekítsd százasra!'], round1000: ['Redondea a la unidad de millar.', 'Kerekítsd ezresre!'],
+    line: ['¿Qué número marca la flecha?', 'Melyik számot mutatja a nyíl?'],
+    coladd: ['Suma en columna.', 'Add össze oszlopban!'], colsub: ['Resta en columna.', 'Vond ki oszlopban!'], colmul: ['Multiplica en columna.', 'Szorozd meg oszlopban!'],
+    missing: ['¿Qué número falta?', 'Melyik szám hiányzik?'],
+    word: ['Lee el problema y calcula.', 'Olvasd el a feladatot, és számold ki!'],
+    cuanto: ['¿Cuánto es', 'Mennyi'], por: ['por', 'szorozva'],
+    factor: ['¿Por cuánto hay que multiplicar?', 'Hánnyal kell szorozni?'],
+    rep: ['¿Cuántas veces se suma el mismo número?', 'Hányszor adtuk össze ugyanazt a számot?'],
+    groups: ['¿Cuántos hay en total?', 'Hány van összesen?'],
+    seq: ['¿Qué número falta en la serie?', 'Melyik szám hiányzik a sorból?'],
+    tf: ['¿Verdadero o falso?', 'Igaz vagy hamis?'],
+    double: ['¿Cuál es el doble?', 'Mennyi a duplája?'], half: ['¿Cuál es la mitad?', 'Mennyi a fele?'],
+    comm: ['Completa la igualdad.', 'Egészítsd ki az egyenlőséget!'],
+    x10: ['Multiplica por diez.', 'Szorozd meg tízzel!'], x100: ['Multiplica por cien.', 'Szorozd meg százzal!'],
+    ops: ['Primero la multiplicación, después la suma.', 'Először a szorzás, utána az összeadás!'], ops_par: ['Primero el paréntesis.', 'Először a zárójel!'],
+    share: ['Repartimos en partes iguales. ¿Cuánto le toca a cada uno?', 'Egyenlően osztjuk szét. Mennyi jut egynek?'],
+    div: ['¿Cuál es el resultado de la división?', 'Mennyi az osztás eredménye?'],
+    rem: ['Divide. Escribe el cociente y el resto.', 'Oszd el! Írd be a hányadost és a maradékot!'],
+    parity: ['¿Es par o impar?', 'Páros vagy páratlan?'],
+    frac_pic: ['¿Qué fracción está coloreada?', 'Mekkora rész van kiszínezve?'],
+    frac_name: ['¿Qué fracción es?', 'Melyik tört ez?'],
+    part: ['Calcula la parte.', 'Számold ki a részt!'],
+    conv: ['Cambia la unidad.', 'Váltsd át!'],
+    clock: ['¿Qué hora es?', 'Hány óra van?'],
+    money: ['¿Cuánto dinero hay en total?', 'Mennyi pénz van összesen?'],
+    unit: ['¿Qué unidad usamos para medirlo?', 'Melyik mértékegységgel mérjük?'],
+    lineobj: ['¿Es una recta, una semirrecta o un segmento?', 'Egyenes, félegyenes vagy szakasz?'],
+    angle: ['¿Cómo es este ángulo?', 'Milyen ez a szög?'],
+    grid: ['¿En qué casilla está?', 'Melyik mezőben van?'],
+    sides: ['¿Cuántos lados tiene?', 'Hány oldala van?'],
+    tri: ['¿Qué tipo de triángulo es?', 'Milyen háromszög ez?'],
+    solid: ['¿Qué cuerpo geométrico es?', 'Melyik test ez?'],
+    bars: ['Mira el gráfico y responde.', 'Nézd meg a diagramot, és válaszolj!'],
+    prob: ['¿Es seguro, posible o imposible?', 'Biztos, lehetséges vagy lehetetlen?'],
+    ui_intro: ['Elige el modo y los temas, y ¡a por ello!', 'Válassz módot és témát, aztán rajta! Ha nem tudod, nyomd meg a Passz gombot.'],
+    ui_again: ['Las preguntas que has pasado, otra vez.', 'A passzolt kérdések jönnek még egyszer!'],
+    ui_rocket: ['¡Diez seguidas! ¡Cohete!', 'Tíz jó egymás után! Rakéta!'],
+    ui_villam: ['¡Un minuto! ¡Rápido!', 'Egy perc! Gyorsan, csak számok!'],
+    ui_fix: ['Vamos a corregir los errores.', 'Javítsuk ki, ami eddig nem ment!'],
+    ui_exam: ['Prueba del examen: preguntas variadas.', 'Dolgozat-próba: vegyes feladatok a dolgozat anyagából.'],
+    ui_record: ['¡Nuevo récord!', 'Új rekord!']
+  };
+  const rnd = (r, a, b) => a + Math.floor(r() * (b - a + 1));
+  const pick = (r, a) => a[Math.floor(r() * a.length)];
+  const shuf = (r, a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+  const NK = (n, l) => (root.MathGen && root.MathGen.numKeys && n >= 0 && n <= 9999 && n === Math.floor(n)) ? root.MathGen.numKeys(n, l) : [];
+  const nAud = (n, l) => NK(n, l).map(k => ({ l, k, t: String(n), gap: 20 }));
+  function aud(key, nums) { const a = [{ l: 'es', k: 'x:mq_' + key, t: PH[key][0], gap: 150 }]; (nums || []).forEach(n => a.push.apply(a, nAud(n, 'es'))); a.push({ l: 'hu', k: 'x:mq_' + key, t: PH[key][1], gap: 100 }); (nums || []).forEach(n => a.push.apply(a, nAud(n, 'hu'))); return a; }
+  const T = (key, es, hu) => ({ es: es || PH[key][0], hu: hu || PH[key][1] });
+  function choices(r, correct, cands, n) { const s = [correct]; shuf(r, cands).forEach(c => { if (s.length < n && c >= 0 && s.indexOf(c) < 0) s.push(c); }); let k = 1; while (s.length < n && k < 60) { const c = correct + k * (k % 2 ? 1 : -1); if (c >= 0 && s.indexOf(c) < 0) s.push(c); k++; } return shuf(r, s).map(v => ({ v: String(v), label: String(v) })); }
+  const tri = (labels) => labels.map(o => ({ v: o[0], label: o[1], sm: o[2] || '' }));
+  const range = L => L === 1 ? [10, 99] : L === 2 ? [100, 999] : [1000, 9999];
+  const G = {};
+  const def = (gid, unit, es, hu, fn) => { G[gid] = { gid, unit, name: [es, hu], fn }; };
+  const mk = (o) => Object.assign({ level: 1 }, o, { answer: String(o.answer) });
+  // ================= 1. Números de 4 cifras =================
+  def('place', 'u1', 'Valor posicional', 'Helyiérték', (L, r) => { const n = rnd(r, 1000, 9999); const pos = pick(r, L === 1 ? ['um', 'c', 'u'] : ['um', 'c', 'd', 'u']); const ds = String(n).split('').map(Number); const ans = { um: ds[0], c: ds[1], d: ds[2], u: ds[3] }[pos];
+    if (L === 3 && r() < .5) { const i = rnd(r, 0, 3); const v = ds[i] * Math.pow(10, 3 - i); return mk({ kind: 'num', text: { es: '¿Cuánto vale la cifra ' + ds[i] + ' en ' + n + '?', hu: 'Mennyit ér a(z) ' + ds[i] + ' számjegy a(z) ' + n + ' számban?' }, audio: aud('place_val', [n]), answer: v, vis: { type: 'digits', n: String(n), hl: i }, explain: { es: ds[i] + ' × ' + Math.pow(10, 3 - i) + ' = ' + v, hu: 'A helyén ' + ['ezres', 'százas', 'tízes', 'egyes'][i] + ' áll.' } }); }
+    return mk({ kind: 'num', text: { es: PH['place_' + pos][0].replace('este número', String(n)), hu: PH['place_' + pos][1].replace('ebben a számban', 'a(z) ' + n + ' számban') }, audio: aud('place_' + pos, [n]), answer: ans, vis: { type: 'digits', n: String(n) }, explain: { es: n + ' = ' + ds[0] + ' UM + ' + ds[1] + ' C + ' + ds[2] + ' D + ' + ds[3] + ' U', hu: '' } }); });
+  def('compose', 'u1', 'Componer números', 'Számkirakás', (L, r) => { const um = rnd(r, 1, 9), c = rnd(r, 0, 9), d = rnd(r, 0, 9), u = rnd(r, 0, 9); const parts = [[um, 'UM'], [c, 'C'], [d, 'D'], [u, 'U']].filter(x => x[0] || L === 1); const n = um * 1000 + c * 100 + d * 10 + u;
+    const sh = L === 3 ? shuf(r, parts) : parts; return mk({ kind: 'num', text: { es: sh.map(x => x[0] + ' ' + x[1]).join(' + ') + ' = ?', hu: sh.map(x => x[0] + ' ' + { UM: 'ezres', C: 'százas', D: 'tízes', U: 'egyes' }[x[1]]).join(' + ') + ' = ?' }, audio: aud('compose'), answer: n, vis: L < 3 ? { type: 'blocks', um, c, d, u } : null, explain: { es: um * 1000 + ' + ' + c * 100 + ' + ' + d * 10 + ' + ' + u + ' = ' + n, hu: '' } }); });
+  def('hear', 'u1', 'Dictado de números', 'Szám hallás után', (L, r) => { const [a, b] = range(L); const n = rnd(r, Math.max(a, L === 3 ? 1000 : a), b);
+    return mk({ kind: 'num', hear: true, text: T('hear'), audio: [{ l: 'hu', k: 'x:mq_hear', t: PH.hear[1], gap: 300 }].concat(nAud(n, 'es')), answer: n, explain: { es: String(n), hu: '' } }); });
+  def('compare', 'u1', 'Comparar', 'Összehasonlítás', (L, r) => { const [a0, b0] = range(L); const a = rnd(r, a0, b0); let b = r() < .15 ? a : (L === 3 && r() < .6 ? Number(String(a).split('').map((d, i) => i === rnd(r, 1, 3) ? String((+d + rnd(r, 1, 8)) % 10) : d).join('')) : rnd(r, a0, b0)); const s = a > b ? '>' : a < b ? '<' : '=';
+    return mk({ kind: 'choice', text: { es: a + '  ☐  ' + b, hu: PH.compare[1] }, audio: aud('compare', [a, b]), answer: s, options: tri([['<', '<', 'kisebb'], ['=', '=', 'egyenlő'], ['>', '>', 'nagyobb']]), explain: { es: a + ' ' + s + ' ' + b, hu: 'Balról jobbra hasonlítsd a számjegyeket.' } }); });
+  def('order', 'u1', 'Ordenar', 'Sorba rendezés', (L, r) => { const [a0, b0] = range(L); const base = rnd(r, a0, b0 - 999 > a0 ? b0 - 999 : b0); const set = new Set(); while (set.size < 4) set.add(L === 3 ? Number(String(rnd(r, 1, 9)) + shuf(r, ['0', String(rnd(r, 1, 9)), String(rnd(r, 0, 9))]).join('')) : rnd(r, a0, b0)); const items = Array.from(set); const desc = r() < .3;
+    const sorted = items.slice().sort((x, y) => desc ? y - x : x - y); return mk({ kind: 'order', text: T(desc ? 'order_desc' : 'order_asc'), audio: aud(desc ? 'order_desc' : 'order_asc'), items: items.map(String), answer: sorted.join('|'), explain: { es: sorted.join(desc ? ' > ' : ' < '), hu: '' } }); });
+  def('neigh', 'u1', 'Anterior y posterior', 'Szomszédok', (L, r) => { const [a0, b0] = range(L); let n = rnd(r, a0 + 1, b0 - 1); if (L === 3 && r() < .5) n = rnd(r, 1, 9) * 1000 + pick(r, [0, 999, 100, 990]); n = Math.min(9998, Math.max(1, n));
+    return mk({ kind: 'multi', text: { es: '? ← ' + n + ' → ?', hu: PH.neigh[1] }, audio: aud('neigh', [n]), fields: [{ es: 'anterior', hu: 'előtte', ans: String(n - 1) }, { es: 'posterior', hu: 'utána', ans: String(n + 1) }], answer: (n - 1) + '|' + (n + 1), explain: { es: (n - 1) + ' · ' + n + ' · ' + (n + 1), hu: '' } }); });
+  def('round', 'u1', 'Aproximar', 'Kerekítés', (L, r) => { const to = L === 1 ? 10 : L === 2 ? pick(r, [10, 100]) : pick(r, [10, 100, 1000]); const n = to === 10 ? rnd(r, 11, L === 1 ? 99 : 999) : to === 100 ? rnd(r, 101, 9899) : rnd(r, 1001, 8999); const lo = Math.floor(n / to) * to, hi = lo + to; const ans = (n - lo) >= to / 2 ? hi : lo; const k = { 10: 'round10', 100: 'round100', 1000: 'round1000' }[to];
+    return mk({ kind: 'num', text: { es: PH[k][0] + '  ' + n, hu: PH[k][1] + '  ' + n }, audio: aud(k, [n]), answer: ans, vis: { type: 'roundline', lo, n, hi }, explain: { es: n + ' ≈ ' + ans, hu: (n - lo) >= to / 2 ? 'Közelebb van a nagyobbhoz (vagy pont a közepén) → felfelé.' : 'Közelebb van a kisebbhez → lefelé.' } }); });
+  def('line', 'u1', 'Recta numérica', 'Számegyenes', (L, r) => { const step = L === 1 ? pick(r, [1, 2, 5]) : L === 2 ? pick(r, [5, 10, 20]) : pick(r, [50, 100, 250]); const start = L === 1 ? rnd(r, 0, 5) * step : rnd(r, 1, L === 2 ? 40 : 30) * step; const max = start + step * 10; const v = start + rnd(r, 1, 9) * step;
+    return mk({ kind: 'choice', text: T('line'), audio: aud('line'), answer: v, options: choices(r, v, [v + step, v - step, v + 2 * step, v + step / 2 | 0], 3), vis: { type: 'numline', min: start, max, step, marks: [v], hide: true }, explain: { es: 'Cada rayita = ' + step, hu: 'Minden osztás ' + step + '-et ér.' } }); });
+  def('coladd', 'u1', 'Suma en columna', 'Írásbeli összeadás', (L, r) => { const [a0, b0] = L === 1 ? [10, 89] : L === 2 ? [100, 899] : [1000, 8999]; const a = rnd(r, a0, b0), b = rnd(r, a0 > 99 ? a0 : 10, Math.min(b0, 9999 - a)); return mk({ kind: 'col', text: T('coladd'), audio: aud('coladd'), col: { a, b, op: '+' }, answer: a + b, explain: { es: a + ' + ' + b + ' = ' + (a + b), hu: 'Jobbról kezdj: egyesek, tízesek, százasok… ha 10 vagy több, 1 megy tovább.' } }); });
+  def('colsub', 'u1', 'Resta en columna', 'Írásbeli kivonás', (L, r) => { const [a0, b0] = L === 1 ? [20, 99] : L === 2 ? [200, 999] : [2000, 9999]; const a = rnd(r, a0, b0), b = rnd(r, Math.floor(a0 / 2), a - 1); return mk({ kind: 'col', text: T('colsub'), audio: aud('colsub'), col: { a, b, op: '−' }, answer: a - b, explain: { es: a + ' − ' + b + ' = ' + (a - b) + '   (' + (a - b) + ' + ' + b + ' = ' + a + ')', hu: 'Ellenőrzés: az eredmény + a kivonandó = a kisebbítendő.' } }); });
+  def('missing', 'u1', 'Número que falta', 'Hiányzó szám', (L, r) => { const [a0, b0] = range(L); const a = rnd(r, a0, b0), c = rnd(r, a, Math.min(9999, a + b0)); const t = rnd(r, 0, 2);
+    if (t === 0) return mk({ kind: 'num', text: { es: a + ' + ? = ' + c, hu: PH.missing[1] }, audio: aud('missing'), answer: c - a, explain: { es: c + ' − ' + a + ' = ' + (c - a), hu: 'Kivonással megtalálod.' } });
+    if (t === 1) return mk({ kind: 'num', text: { es: '? − ' + a + ' = ' + (c - a), hu: PH.missing[1] }, audio: aud('missing'), answer: c, explain: { es: (c - a) + ' + ' + a + ' = ' + c, hu: 'Összeadással megtalálod.' } });
+    return mk({ kind: 'num', text: { es: c + ' − ? = ' + a, hu: PH.missing[1] }, audio: aud('missing'), answer: c - a, explain: { es: c + ' − ' + a + ' = ' + (c - a), hu: '' } }); });
+  def('word1', 'u1', 'Problemas de sumar y restar', 'Szöveges feladat (+ −)', (L, r) => { const [a0, b0] = L === 1 ? [10, 60] : L === 2 ? [100, 600] : [1000, 5000]; const a = rnd(r, a0, b0), b = rnd(r, Math.floor(a0 / 2), Math.floor(b0 / 2)); const t = rnd(r, 0, 3);
+    const P = [[`Nadia tiene ${a + b} € y gasta ${b} €. ¿Cuánto le queda?`, `Nadiának ${a + b} €-ja van, és elkölt ${b} €-t. Mennyi marad?`, a],
+      [`En el colegio hay ${a} niños y ${b} niñas. ¿Cuántos alumnos hay?`, `Az iskolában ${a} fiú és ${b} lány van. Hány tanuló van összesen?`, a + b],
+      [`Martín lee ${a} páginas el lunes y ${b} el martes. ¿Cuántas páginas lee?`, `Martin hétfőn ${a} oldalt olvas, kedden ${b}-t. Hány oldalt olvas összesen?`, a + b],
+      [`Un camión lleva ${a + b} kg. Descarga ${a} kg. ¿Cuántos kg quedan?`, `Egy teherautón ${a + b} kg van. Lepakolnak ${a} kg-ot. Hány kg marad?`, b]][t];
+    return mk({ kind: 'num', text: { es: P[0], hu: P[1] }, audio: aud('word'), answer: P[2], explain: { es: '= ' + P[2], hu: t === 0 || t === 3 ? 'Kivonás: elvesszük.' : 'Összeadás: összesen.' } }); });
+  // ================= 2. La multiplicación =================
+  let FOCUS = null;
+  const tabs = L => (FOCUS && FOCUS.length) ? FOCUS : L === 1 ? [1, 2, 5, 10] : L === 2 ? [3, 4, 6, 8, 9] : [2, 3, 4, 5, 6, 7, 8, 9, 0];
+  def('table', 'u2', 'Tablas de multiplicar', 'Szorzótábla', (L, r) => { const a = pick(r, tabs(L)), b = rnd(r, 0, 10); return mk({ kind: 'num', fast: true, text: { es: a + ' × ' + b + ' = ?', hu: 'Mennyi ' + a + ' × ' + b + '?' }, audio: [{ l: 'es', k: 'x:mq_cuanto', t: PH.cuanto[0] }].concat(nAud(a, 'es'), [{ l: 'es', k: 'x:mq_por', t: 'por' }], nAud(b, 'es')), answer: a * b, explain: { es: a + ' × ' + b + ' = ' + a * b, hu: b ? b + '-szer ' + a + ': ' + Array(Math.min(b, 10)).fill(a).join(' + ') : 'Nullával szorozva mindig 0.' } }); });
+  def('factor', 'u2', 'Factor que falta', 'Hiányzó tényező', (L, r) => { const a = pick(r, tabs(L).filter(x => x > 0)), b = rnd(r, 1, 10); const left = r() < .5; return mk({ kind: 'num', fast: true, text: { es: left ? '? × ' + a + ' = ' + a * b : a + ' × ? = ' + a * b, hu: PH.factor[1] }, audio: aud('factor'), answer: b, explain: { es: a + ' × ' + b + ' = ' + a * b, hu: 'Keresd a ' + a + '-es táblában a ' + a * b + '-t!' } }); });
+  def('rep', 'u2', 'Suma repetida', 'Összeadásból szorzás', (L, r) => { const n = rnd(r, 2, L === 1 ? 4 : 6), s = rnd(r, 2, L === 1 ? 5 : 9); const askN = r() < .5; return mk({ kind: 'num', text: { es: Array(n).fill(s).join(' + ') + ' = ' + (askN ? '? × ' + s : n + ' × ' + s + ' = ?'), hu: askN ? PH.rep[1] : 'Mennyi összesen?' }, audio: aud(askN ? 'rep' : 'groups'), answer: askN ? n : n * s, vis: { type: 'groups', n, size: s }, explain: { es: n + ' × ' + s + ' = ' + n * s, hu: n + '-szor adtuk össze a ' + s + '-öt.' } }); });
+  def('groups', 'u2', 'Grupos en la imagen', 'Csoportok a képen', (L, r) => { const n = rnd(r, 2, L === 1 ? 4 : 6), s = rnd(r, 2, L === 1 ? 5 : 8); const thing = pick(r, [['cajas', 'huevos', 'doboz', 'tojás'], ['bolsas', 'canicas', 'zacskó', 'golyó'], ['platos', 'galletas', 'tányér', 'keksz'], ['coches', 'ruedas', 'autó', 'kerék']]);
+    return mk({ kind: 'num', text: { es: n + ' ' + thing[0] + ' con ' + s + ' ' + thing[1] + ' cada una. ¿Cuántos ' + thing[1] + ' hay?', hu: n + ' ' + thing[2] + ', mindegyikben ' + s + ' ' + thing[3] + '. Hány ' + thing[3] + ' van összesen?' }, audio: aud('groups'), answer: n * s, vis: { type: 'groups', n, size: s }, explain: { es: n + ' × ' + s + ' = ' + n * s, hu: '' } }); });
+  def('seq', 'u2', 'Series', 'Ugrás a számegyenesen', (L, r) => { const s = pick(r, tabs(L).filter(x => x > 1)); const st = L === 3 ? rnd(r, 1, 5) * s : 0; const arr = []; for (let i = 1; i <= 6; i++) arr.push(st + i * s); const h = rnd(r, 2, 5); const ans = arr[h]; const show = arr.map((x, i) => i === h ? '?' : x);
+    return mk({ kind: 'num', text: { es: show.join(', '), hu: PH.seq[1] }, audio: aud('seq'), answer: ans, explain: { es: '+' + s, hu: 'Mindig ' + s + '-et ugrik.' } }); });
+  def('tf', 'u2', 'Verdadero o falso', 'Igaz vagy hamis', (L, r) => { const a = pick(r, tabs(L).filter(x => x > 0)), b = rnd(r, 1, 10); const ok = r() < .5; const shown = ok ? a * b : a * b + pick(r, [a, -a, 1, -1, 2, 10]).valueOf(); const v = shown === a * b;
+    return mk({ kind: 'choice', fast: true, text: { es: a + ' × ' + b + ' = ' + shown, hu: PH.tf[1] }, audio: aud('tf'), answer: v ? 'T' : 'F', options: tri([['T', 'Igaz', 'Verdadero'], ['F', 'Hamis', 'Falso']]), explain: { es: a + ' × ' + b + ' = ' + a * b, hu: '' } }); });
+  def('double', 'u2', 'Doble y mitad', 'Dupla és fél', (L, r) => { const dbl = r() < .5; const n = dbl ? rnd(r, 2, L === 1 ? 20 : L === 2 ? 50 : 500) : rnd(r, 1, L === 1 ? 10 : L === 2 ? 50 : 250) * 2;
+    return mk({ kind: 'num', text: { es: (dbl ? 'El doble de ' : 'La mitad de ') + n, hu: (dbl ? 'Mennyi a duplája: ' : 'Mennyi a fele: ') + n }, audio: aud(dbl ? 'double' : 'half', [n]), answer: dbl ? n * 2 : n / 2, explain: { es: dbl ? n + ' × 2 = ' + n * 2 : n + ' : 2 = ' + n / 2, hu: '' } }); });
+  def('word2', 'u2', 'Problemas de multiplicar', 'Szöveges szorzás', (L, r) => { const a = rnd(r, 2, L === 1 ? 5 : 9), b = pick(r, tabs(L).filter(x => x > 1)); const t = rnd(r, 0, 2);
+    const P = [[`Martín tiene ${a} cajas. En cada caja hay ${b} coches. ¿Cuántos coches tiene?`, `Martinnak ${a} doboza van, mindegyikben ${b} autó. Hány autója van?`],
+      [`Una semana tiene 7 días. ¿Cuántos días hay en ${a} semanas?`, `Egy hét 7 nap. Hány nap van ${a} hétben?`, 7],
+      [`Cada entrada cuesta ${b} €. ¿Cuánto cuestan ${a} entradas?`, `Egy jegy ${b} €. Mennyibe kerül ${a} jegy?`]][t]; const bb = P[2] || b;
+    return mk({ kind: 'num', text: { es: P[0], hu: P[1] }, audio: aud('word'), answer: a * bb, vis: a * bb <= 60 ? { type: 'groups', n: a, size: bb } : null, explain: { es: a + ' × ' + bb + ' = ' + a * bb, hu: '' } }); });
+  // ================= 3. Propiedades / multiplicar por una cifra =================
+  def('comm', 'u3', 'Propiedad conmutativa', 'Felcserélés', (L, r) => { const a = rnd(r, 2, 9), b = rnd(r, 2, 9); return mk({ kind: 'num', text: { es: a + ' × ' + b + ' = ' + b + ' × ?', hu: PH.comm[1] }, audio: aud('comm'), answer: a, explain: { es: a + ' × ' + b + ' = ' + b + ' × ' + a + ' = ' + a * b, hu: 'A tényezők felcserélhetők.' } }); });
+  def('x10', 'u3', 'Por 10 y por 100', 'Szorzás 10-zel, 100-zal', (L, r) => { const by = L === 1 ? 10 : pick(r, [10, 100]); const n = by === 10 ? rnd(r, 2, L === 3 ? 999 : 99) : rnd(r, 2, L === 3 ? 99 : 30); return mk({ kind: 'num', fast: true, text: { es: n + ' × ' + by + ' = ?', hu: by === 10 ? PH.x10[1] : PH.x100[1] }, audio: aud(by === 10 ? 'x10' : 'x100', [n]), answer: n * by, explain: { es: n + ' → ' + n * by, hu: by === 10 ? 'Írj egy 0-t a végére!' : 'Írj két 0-t a végére!' } }); });
+  def('colmul', 'u3', 'Multiplicar en columna', 'Írásbeli szorzás', (L, r) => { const a = L === 1 ? rnd(r, 11, 49) : L === 2 ? rnd(r, 12, 99) : rnd(r, 102, 999), b = rnd(r, 2, L === 1 ? 5 : 9); return mk({ kind: 'col', text: T('colmul'), audio: aud('colmul'), col: { a, b, op: '×' }, answer: a * b, explain: { es: a + ' × ' + b + ' = ' + a * b, hu: 'Jobbról: az egyeseket szorozd, ami 10 fölött van, vidd tovább.' } }); });
+  def('ops', 'u3', 'Operaciones combinadas', 'Műveleti sorrend', (L, r) => { const a = rnd(r, 1, 20), b = rnd(r, 2, 9), c = rnd(r, 2, 9); const par = L > 1 && r() < .5;
+    return mk({ kind: 'num', text: { es: par ? '(' + a + ' + ' + b + ') × ' + c + ' = ?' : a + ' + ' + b + ' × ' + c + ' = ?', hu: par ? PH.ops_par[1] : PH.ops[1] }, audio: aud(par ? 'ops_par' : 'ops'), answer: par ? (a + b) * c : a + b * c, explain: { es: par ? (a + b) + ' × ' + c + ' = ' + (a + b) * c : a + ' + ' + b * c + ' = ' + (a + b * c), hu: '' } }); });
+  // ================= 4. La división =================
+  def('share', 'u4', 'Repartir', 'Igazságos elosztás', (L, r) => { const k = rnd(r, 2, L === 1 ? 4 : 6), e = rnd(r, 2, L === 1 ? 5 : 9); const th = pick(r, [['manzanas', 'niños', 'alma', 'gyerek'], ['caramelos', 'amigos', 'cukor', 'barát'], ['cromos', 'hermanos', 'matrica', 'testvér']]);
+    return mk({ kind: 'num', text: { es: k * e + ' ' + th[0] + ' para ' + k + ' ' + th[1] + '. ¿Cuántas para cada uno?', hu: k * e + ' ' + th[2] + ' ' + k + ' ' + th[3] + ' között. Mennyi jut egynek?' }, audio: aud('share'), answer: e, vis: { type: 'groups', n: k, size: e }, explain: { es: k * e + ' : ' + k + ' = ' + e, hu: 'Mert ' + k + ' × ' + e + ' = ' + k * e + '.' } }); });
+  def('div', 'u4', 'División exacta', 'Osztás', (L, r) => { const d = rnd(r, 2, L === 1 ? 5 : 9), q = rnd(r, 1, 10); return mk({ kind: 'num', fast: true, text: { es: d * q + ' : ' + d + ' = ?', hu: PH.div[1] }, audio: aud('div'), answer: q, explain: { es: d * q + ' : ' + d + ' = ' + q + '   (' + d + ' × ' + q + ' = ' + d * q + ')', hu: 'Az osztás a szorzás fordítottja.' } }); });
+  def('rem', 'u4', 'División con resto', 'Maradékos osztás', (L, r) => { const d = rnd(r, 2, L === 1 ? 5 : 9), q = rnd(r, 1, 9), m = rnd(r, 1, d - 1), n = d * q + m; return mk({ kind: 'multi', text: { es: n + ' : ' + d, hu: PH.rem[1] }, audio: aud('rem'), fields: [{ es: 'cociente', hu: 'hányados', ans: String(q) }, { es: 'resto', hu: 'maradék', ans: String(m) }], answer: q + '|' + m, explain: { es: d + ' × ' + q + ' = ' + d * q + ',  ' + n + ' − ' + d * q + ' = ' + m, hu: 'A maradék mindig kisebb, mint az osztó.' } }); });
+  def('parity', 'u4', 'Par o impar', 'Páros vagy páratlan', (L, r) => { const n = rnd(r, 1, L === 1 ? 99 : 9999); return mk({ kind: 'choice', fast: true, text: { es: String(n), hu: PH.parity[1] }, audio: aud('parity', [n]), answer: n % 2 ? 'I' : 'P', options: tri([['P', 'páros', 'par'], ['I', 'páratlan', 'impar']]), explain: { es: 'La última cifra: ' + (n % 10), hu: 'Az utolsó számjegy dönt: 0, 2, 4, 6, 8 → páros.' } }); });
+  // ================= 5. Las fracciones =================
+  const FR = { 2: ['un medio', 'egy ketted (fél)'], 3: ['un tercio', 'egy harmad'], 4: ['un cuarto', 'egy negyed'], 5: ['un quinto', 'egy ötöd'], 6: ['un sexto', 'egy hatod'], 8: ['un octavo', 'egy nyolcad'], 10: ['un décimo', 'egy tized'] };
+  def('fpic', 'u5', 'Fracción coloreada', 'Kép → tört', (L, r) => { const d = pick(r, L === 1 ? [2, 3, 4] : [3, 4, 5, 6, 8]), n = rnd(r, 1, d - 1); return mk({ kind: 'multi', text: T('frac_pic'), audio: aud('frac_pic'), vis: { type: 'frac', n, d, shape: pick(r, ['circle', 'rect']) }, fields: [{ es: 'numerador', hu: 'számláló', ans: String(n) }, { es: 'denominador', hu: 'nevező', ans: String(d) }], answer: n + '|' + d, explain: { es: n + '/' + d, hu: d + ' egyenlő részből ' + n + ' színes.' } }); });
+  def('fname', 'u5', 'Leer fracciones', 'Tört kiolvasása', (L, r) => { const ds = Object.keys(FR).map(Number); const d = pick(r, ds); const opts = shuf(r, ds.filter(x => x !== d)).slice(0, 2).concat([d]);
+    return mk({ kind: 'choice', text: { es: '«' + FR[d][0] + '»', hu: FR[d][1] + ' – ' + PH.frac_name[1] }, audio: aud('frac_name'), answer: '1/' + d, options: shuf(r, opts).map(x => ({ v: '1/' + x, label: '1/' + x })), explain: { es: FR[d][0] + ' = 1/' + d, hu: '' } }); });
+  def('fcmp', 'u5', 'Comparar fracciones', 'Törtek összehasonlítása', (L, r) => { const d = pick(r, [3, 4, 5, 6, 8]); const a = rnd(r, 1, d - 1); let b = rnd(r, 1, d - 1); const s = a > b ? '>' : a < b ? '<' : '=';
+    return mk({ kind: 'choice', text: { es: a + '/' + d + '  ☐  ' + b + '/' + d, hu: PH.compare[1] }, audio: aud('compare'), answer: s, options: tri([['<', '<', 'kisebb'], ['=', '=', 'egyenlő'], ['>', '>', 'nagyobb']]), vis: { type: 'frac2', a, b, d }, explain: { es: a + '/' + d + ' ' + s + ' ' + b + '/' + d, hu: 'Azonos nevezőnél a nagyobb számláló a nagyobb.' } }); });
+  def('fpart', 'u5', 'Mitad, tercio, cuarto de un número', 'Egy szám fele, harmada…', (L, r) => { const d = pick(r, [2, 3, 4, 5]), q = rnd(r, 1, L === 1 ? 5 : 10), n = d * q;
+    return mk({ kind: 'num', text: { es: ({ 2: 'La mitad', 3: 'La tercera parte', 4: 'La cuarta parte', 5: 'La quinta parte' })[d] + ' de ' + n, hu: n + ' ' + ({ 2: 'fele', 3: 'harmada', 4: 'negyede', 5: 'ötöde' })[d] + ' = ?' }, audio: aud('part', [n]), answer: q, vis: n <= 40 ? { type: 'groups', n: d, size: q } : null, explain: { es: n + ' : ' + d + ' = ' + q, hu: '' } }); });
+  // ================= 6. La medida =================
+  def('conv', 'u6', 'Cambio de unidades', 'Átváltás', (L, r) => { const c = pick(r, L === 1 ? [['m', 'cm', 100], ['€', 'céntimos', 100], ['h', 'min', 60]] : [['m', 'cm', 100], ['km', 'm', 1000], ['kg', 'g', 1000], ['l', 'ml', 1000], ['h', 'min', 60]]); const n = rnd(r, 1, L === 3 ? 9 : 5);
+    return mk({ kind: 'num', text: { es: n + ' ' + c[0] + ' = ? ' + c[1], hu: PH.conv[1] + ' ' + n + ' ' + c[0] + ' = ? ' + c[1] }, audio: aud('conv'), answer: n * c[2], explain: { es: '1 ' + c[0] + ' = ' + c[2] + ' ' + c[1], hu: n + ' × ' + c[2] + ' = ' + n * c[2] } }); });
+  def('clock', 'u6', 'Leer la hora', 'Óra leolvasása', (L, r) => { const h = rnd(r, 1, 12), m = L === 1 ? pick(r, [0, 30]) : L === 2 ? pick(r, [0, 15, 30, 45]) : rnd(r, 0, 11) * 5;
+    return mk({ kind: 'multi', text: T('clock'), audio: aud('clock'), vis: { type: 'clock', h, m }, fields: [{ es: 'hora', hu: 'óra', ans: String(h) }, { es: 'minutos', hu: 'perc', ans: String(m) }], answer: h + '|' + m, explain: { es: h + ':' + String(m).padStart(2, '0'), hu: 'A kis mutató az óra, a nagy a perc (minden szám 5 perc).' } }); });
+  def('money', 'u6', 'Contar dinero', 'Pénz számolása', (L, r) => { const coins = L === 1 ? [1, 2, 5, 10] : [5, 10, 20, 50, 100, 200]; const list = []; for (let i = 0; i < rnd(r, 3, L === 1 ? 4 : 6); i++) list.push(pick(r, coins)); const sum = list.reduce((a, b) => a + b, 0);
+    return mk({ kind: 'num', text: { es: PH.money[0] + ' (en céntimos)', hu: PH.money[1] + ' (centben)' }, audio: aud('money'), answer: sum, vis: { type: 'coins', list }, explain: { es: list.join(' + ') + ' = ' + sum + ' c', hu: '1 € = 100 cent' } }); });
+  def('unit', 'u6', 'Unidad adecuada', 'Mértékegység', (L, r) => { const it = pick(r, [['la altura de una puerta', 'egy ajtó magassága', 'm'], ['el peso de una sandía', 'egy görögdinnye súlya', 'kg'], ['el agua de una botella', 'egy palack víz', 'l'], ['el largo de un lápiz', 'egy ceruza hossza', 'cm'], ['el peso de una carta', 'egy levél súlya', 'g'], ['la distancia entre dos ciudades', 'két város távolsága', 'km']]);
+    const all = ['m', 'kg', 'l', 'cm', 'g', 'km']; const opts = shuf(r, all.filter(x => x !== it[2])).slice(0, 2).concat([it[2]]); return mk({ kind: 'choice', text: { es: it[0], hu: it[1] + ' – ' + PH.unit[1] }, audio: aud('unit'), answer: it[2], options: shuf(r, opts).map(x => ({ v: x, label: x })), explain: { es: it[2], hu: '' } }); });
+  // ================= 7. Elementos del plano =================
+  def('lineobj', 'u7', 'Recta, semirrecta, segmento', 'Egyenes, félegyenes, szakasz', (L, r) => { const t = pick(r, ['recta', 'semirrecta', 'segmento']); return mk({ kind: 'choice', text: T('lineobj'), audio: aud('lineobj'), vis: { type: 'lineobj', t }, answer: t, options: tri([['recta', 'egyenes', 'recta'], ['semirrecta', 'félegyenes', 'semirrecta'], ['segmento', 'szakasz', 'segmento']]), explain: { es: t, hu: { recta: 'Két irányban végtelen.', semirrecta: 'Egy pontból indul, egy irányban végtelen.', segmento: 'Két végpontja van.' }[t] } }); });
+  def('angle', 'u7', 'Tipos de ángulos', 'Szögek', (L, r) => { const t = pick(r, ['recto', 'agudo', 'obtuso']); const deg = t === 'recto' ? 90 : t === 'agudo' ? rnd(r, 25, 70) : rnd(r, 110, 160);
+    return mk({ kind: 'choice', text: T('angle'), audio: aud('angle'), vis: { type: 'angle', deg }, answer: t, options: tri([['agudo', 'hegyesszög', 'agudo'], ['recto', 'derékszög', 'recto'], ['obtuso', 'tompaszög', 'obtuso']]), explain: { es: t, hu: { recto: 'Pont mint a füzetlap sarka.', agudo: 'Kisebb a derékszögnél.', obtuso: 'Nagyobb a derékszögnél.' }[t] } }); });
+  def('grid', 'u7', 'Coordenadas', 'Hol van a négyzethálón?', (L, r) => { const cols = 'ABCD', c = rnd(r, 0, 3), w = rnd(r, 1, 4); const ans = cols[c] + w; const em = pick(r, ['⭐', '🍎', '🚗', '🐱']); const opts = new Set([ans]); while (opts.size < 3) opts.add(cols[rnd(r, 0, 3)] + rnd(r, 1, 4));
+    return mk({ kind: 'choice', text: T('grid'), audio: aud('grid'), vis: { type: 'grid', c, w, em }, answer: ans, options: shuf(r, Array.from(opts)).map(x => ({ v: x, label: x })), explain: { es: ans, hu: 'Előbb az oszlop betűje, aztán a sor száma.' } }); });
+  // ================= 8. Figuras y cuerpos =================
+  def('sides', 'u8', 'Lados de los polígonos', 'Sokszögek oldalai', (L, r) => { const p = pick(r, [[3, 'triángulo', 'háromszög'], [4, 'cuadrilátero', 'négyszög'], [5, 'pentágono', 'ötszög'], [6, 'hexágono', 'hatszög'], [8, 'octógono', 'nyolcszög']]); return mk({ kind: 'num', fast: true, text: { es: '¿Cuántos lados tiene un ' + p[1] + '?', hu: 'Hány oldala van: ' + p[2] + '?' }, audio: aud('sides'), answer: p[0], vis: { type: 'poly', n: p[0] }, explain: { es: p[1] + ': ' + p[0] + ' lados', hu: '' } }); });
+  def('tri', 'u8', 'Clases de triángulos', 'Háromszögek', (L, r) => { const t = pick(r, ['equilátero', 'isósceles', 'escaleno']); const a = rnd(r, 3, 9); const s = t === 'equilátero' ? [a, a, a] : t === 'isósceles' ? [a, a, a + rnd(r, 1, 3)] : [a, a + 1, a + 3];
+    return mk({ kind: 'choice', text: { es: 'Lados: ' + s.join(' cm, ') + ' cm', hu: PH.tri[1] + ' Oldalai: ' + s.join(', ') + ' cm' }, audio: aud('tri'), answer: t, options: tri([['equilátero', 'egyenlő oldalú', 'equilátero'], ['isósceles', 'egyenlő szárú', 'isósceles'], ['escaleno', 'különböző oldalú', 'escaleno']]), explain: { es: t, hu: { 'equilátero': 'Mind a 3 oldal egyforma.', 'isósceles': '2 oldal egyforma.', 'escaleno': 'Mindhárom oldal különböző.' }[t] } }); });
+  def('solid', 'u8', 'Cuerpos geométricos', 'Testek', (L, r) => { const t = pick(r, ['cubo', 'esfera', 'cilindro', 'cono', 'pirámide']); const all = ['cubo', 'esfera', 'cilindro', 'cono', 'pirámide']; const opts = shuf(r, all.filter(x => x !== t)).slice(0, 2).concat([t]); const HU = { cubo: 'kocka', esfera: 'gömb', cilindro: 'henger', cono: 'kúp', 'pirámide': 'gúla' };
+    return mk({ kind: 'choice', text: T('solid'), audio: aud('solid'), vis: { type: 'solid', t }, answer: t, options: shuf(r, opts).map(x => ({ v: x, label: x, sm: HU[x] })), explain: { es: t, hu: HU[t] } }); });
+  // ================= 9. Estadística y probabilidad =================
+  def('bars', 'u9', 'Leer gráficos', 'Diagram leolvasása', (L, r) => { const cats = shuf(r, [['fútbol', 'foci'], ['baloncesto', 'kosárlabda'], ['natación', 'úszás'], ['tenis', 'tenisz']]).slice(0, L === 1 ? 3 : 4); const vals = cats.map(() => rnd(r, 1, L === 1 ? 6 : 10)); const i = rnd(r, 0, cats.length - 1); const askMax = L > 1 && r() < .4;
+    if (askMax) { const mx = Math.max.apply(null, vals); const wi = vals.indexOf(mx); if (vals.filter(v => v === mx).length === 1) return mk({ kind: 'choice', text: { es: '¿Qué deporte prefieren más niños?', hu: 'Melyik sportot szeretik a legtöbben?' }, audio: aud('bars'), vis: { type: 'bars', cats: cats.map(c => c[0]), vals }, answer: cats[wi][0], options: cats.map(c => ({ v: c[0], label: c[0], sm: c[1] })), explain: { es: cats[wi][0] + ': ' + mx, hu: 'A legmagasabb oszlop.' } }); }
+    return mk({ kind: 'num', text: { es: '¿Cuántos niños prefieren ' + cats[i][0] + '?', hu: 'Hány gyerek szereti: ' + cats[i][1] + '?' }, audio: aud('bars'), vis: { type: 'bars', cats: cats.map(c => c[0]), vals }, answer: vals[i], explain: { es: cats[i][0] + ': ' + vals[i], hu: '' } }); });
+  def('prob', 'u9', 'Sucesos', 'Biztos, lehetséges, lehetetlen', (L, r) => { const e = pick(r, [['Sacar una bola roja de una bolsa con bolas rojas', 'Piros golyót húzni egy csak piros golyós zacskóból', 'seguro'], ['Sacar una bola azul de una bolsa con bolas rojas', 'Kék golyót húzni egy csak piros golyós zacskóból', 'imposible'], ['Sacar un 6 al tirar un dado', 'Hatost dobni egy dobókockával', 'posible'], ['Sacar un 7 al tirar un dado', 'Hetest dobni egy dobókockával', 'imposible'], ['Que mañana salga el sol por el este', 'Hogy holnap keleten kel fel a nap', 'seguro'], ['Sacar cara al lanzar una moneda', 'Fejet dobni egy pénzérmével', 'posible']]);
+    return mk({ kind: 'choice', text: { es: e[0], hu: e[1] + ' – ' + PH.prob[1] }, audio: aud('prob'), answer: e[2], options: tri([['seguro', 'biztos', 'seguro'], ['posible', 'lehetséges', 'posible'], ['imposible', 'lehetetlen', 'imposible']]), explain: { es: e[2], hu: '' } }); });
+
+  function rngFrom(seed) { if (seed == null) return Math.random; let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+  function make(gid, L, seed) { const g = G[gid]; if (!g) throw new Error('nincs ilyen: ' + gid); const t = g.fn(L || 1, rngFrom(seed)); t.gid = gid; t.unit = g.unit; t.level = L || 1; t.name = g.name; return t; }
+  function byUnit(u) { return Object.keys(G).filter(k => G[k].unit === u); }
+  const MQ = { PH, G, make, byUnit, setFocus: f => { FOCUS = f && f.length ? f.slice() : null; }, units: () => Array.from(new Set(Object.keys(G).map(k => G[k].unit))) };
+  if (typeof module !== 'undefined' && module.exports) module.exports = MQ; else root.MQ = MQ;
+})(typeof window !== 'undefined' ? window : globalThis);
+
 /* Leckénkénti kvíz-generátor (Robert, 2026-11-05): minden lecke kvíze legalább 50 véletlenszerű kérdés
    a lecke szavaiból, mondataiból, párbeszédéből, példáiból, a fejezet szótárából és a fejezet kvízéből.
    Minden indításkor új sorrend, új rossz válaszok, új válaszsorrend. Közös: Main.template.html + mkstandalone.py. */
@@ -403,8 +581,10 @@ var LQ = (function () {
       if (type === 'w') { const w = pool().find(x => x.id === id); if (w) { const pp = poolFor([w.unit]); return vocabQ(w, 'tr', pp.length > 3 ? pp : pool()); } }
       if (type === 'q') { const q = H.D.quiz.find(x => 'q' + x.i === id); if (q) return quizQ(q); }
       if (type === 'sp') { const o = weeks().flatMap(w => w.words.map(y => ({ y, u: w.unit }))).find(o2 => o2.y.w === id); if (o && X.xsprite[C.lang]['x:sp:' + o.y.w]) return spellQ(o.y, o.u); }
+      if (type === 'pg') { const o = pgItem(id); if (o) return pgQ(o.p, o.t, o.it, true); }
       if (type === 'tk') { const t = tasksAll().find(x => x.id === id); if (t) return taskQ(t); }
       if (type === 'dc') { for (const u of unitsList()) { const x = dictWords(u).find(y => norm(y.w) === id); if (x) return dictQ(x, u); } }
+      if (type === 'mq' && root.MQ) { const pr = id.split(':'); return mqMake(pr[0], +pr[1], +pr[2]); }
       if (type === 'g') { const topic = id.split(':')[0]; if (MG && MG.TOPICS.indexOf(topic) >= 0) return genQ(topic, level(topic)); }
     } catch (e) { }
     return null;
@@ -438,7 +618,7 @@ var LQ = (function () {
       Object.keys(C.xAudio).forEach(l => { if (!xbuf[l] && xctx && !xbuf['_p' + l]) { xbuf['_p' + l] = 1; fetch(C.xAudio[l]).then(r => r.arrayBuffer()).then(ab => xctx.decodeAudioData(ab)).then(b => { xbuf[l] = b; }).catch(() => { xbuf['_p' + l] = 0; }); } });
     } else Object.keys(C.xAudio).forEach(l => { if (!xel[l]) { const a = new Audio(C.xAudio[l]); a.preload = 'auto'; xel[l] = a; } });
   }
-  function segOf(lang, key) { if (key.indexOf('x:') === 0 || key.indexOf('n:') === 0) return X.xsprite[lang] && X.xsprite[lang][key]; return H.D.sprite[lang] && H.D.sprite[lang][key]; }
+  function segOf(lang, key) { if (key.indexOf('p:') === 0) return pgSeg(lang, key); if (key.indexOf('x:') === 0 || key.indexOf('n:') === 0) return X.xsprite[lang] && X.xsprite[lang][key]; return H.D.sprite[lang] && H.D.sprite[lang][key]; }
   function xplay(lang, key, text, done) {
     const seg = X.xsprite[lang] && X.xsprite[lang][key];
     if (C.xMode === 'ctx' && xctx && xbuf[lang] && seg) {
@@ -454,7 +634,7 @@ var LQ = (function () {
   }
   function stopX() { if (xsrc) { try { xsrc.stop(); } catch (e) { } xsrc = null; } if (xcur) { try { xcur.pause(); } catch (e) { } xcur = null; } clearTimeout(xtimer); }
   function stopAll() { tok++; stopX(); try { H.stop(); } catch (e) { } if (root.speechSynthesis) { try { root.speechSynthesis.cancel(); } catch (e) { } } }
-  function playOne(it, done) { const k = it.k; if (k.indexOf('x:') === 0 || k.indexOf('n:') === 0) xplay(it.l, k, it.t, done); else H.speak(it.l, k, it.t, done); }
+  function playOne(it, done) { const k = it.k; if (k.indexOf('p:') === 0) { pgPlay(it.l, k, it.t, done); return; } if (k.indexOf('x:') === 0 || k.indexOf('n:') === 0) xplay(it.l, k, it.t, done); else H.speak(it.l, k, it.t, done); }
   function say(items, then) { // items: [{l,k,t}]
     stopAll(); xEnsure(); const my = ++tok; let i = 0;
     const next = () => { if (my !== tok) return; if (i >= items.length) { if (then) then(); return; } const it = items[i++]; let fired = false; const seg = segOf(it.l, it.k);
@@ -484,7 +664,7 @@ var LQ = (function () {
   // utolsó tanult fejezet(ek): schedule.default_units, különben az utolsó 2 olyan fejezet, ahol már van párbeszéd
   function fallbackUnits() { const all = unitsList(); const du = ((X.schedule && X.schedule.default_units) || []).filter(u => all.indexOf(u) >= 0); if (du.length) return du;
     const st = H.D.units.filter(u => u.concepts.some(c => (c.dialogue || []).length)).map(u => u.id); return st.length ? st.slice(-2) : all.slice(0, 2); }
-  function extraKind() { return C.subj === 'en' ? 'spelling' : C.subj === 'mat' ? 'gen' : C.subj === 'lengua' ? 'dictado' : (['cs', 'ns', 'ac'].indexOf(C.subj) >= 0 && tasksAll().length) ? 'tasks' : null; }
+  function extraKind() { return C.subj === 'en' ? 'spelling' : C.subj === 'mat' ? (root.MQ ? null : 'gen') : C.subj === 'lengua' ? 'dictado' : (['cs', 'ns', 'ac'].indexOf(C.subj) >= 0 && tasksAll().length) ? 'tasks' : null; }
   function tasksAll() { return (X.tasks && X.tasks.tasks) || []; }
   function events() {
     const sc = X.schedule, out = (sc.events || []).map(e => Object.assign({}, e)); const t = today();
@@ -525,12 +705,22 @@ var LQ = (function () {
     const others = shuffle(ppool.filter(x => x.id !== w.id && x.hu !== w.hu && x.es !== w.es && !(x.icon && x.icon === w.icon))).slice(0, 2);
     const opts = shuffle([w].concat(others)); const rec = { type: 'w', id: w.id, label: w.es, hu: w.hu, unit: w.unit };
     if (mode === 'hear') return { kind: 'choice', part: 'vocab', unit: w.unit, page: w.page, rec, prompt: 'q_hear', audio: [{ l: C.lang, k: w.id, t: w.es }], hearOnly: true, answer: w.id,
-      options: opts.map(o => ({ v: o.id, label: o.es, icon: o.icon, sub: '' })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
+      options: opts.map(o => ({ v: o.id, label: o.es, sub: '', say: [{ l: C.lang, k: o.id, t: o.es }] })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
     if (mode === 'tr') return { kind: 'choice', part: 'vocab', unit: w.unit, page: w.page, rec, prompt: 'q_find', big: w.hu, audio: [{ l: 'hu', k: w.id, t: w.hu }], answer: w.id,
-      options: opts.map(o => ({ v: o.id, label: o.es, icon: o.icon })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
+      options: opts.map(o => ({ v: o.id, label: o.es, say: [{ l: C.lang, k: o.id, t: o.es }] })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
     return { kind: 'choice', part: 'vocab', unit: w.unit, page: w.page, rec, prompt: 'q_meaning', big: w.es, audio: [{ l: C.lang, k: w.id, t: w.es }], answer: w.id,
-      options: opts.map(o => ({ v: o.id, label: o.hu })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
+      options: opts.map(o => ({ v: o.id, label: o.hu, say: [{ l: 'hu', k: o.id, t: o.hu }] })), explain: w.es + ' = ' + w.hu, reveal: wordItems(w) };
   }
+  // ---- válaszlehetőségek felolvasása (Robert 2026-11-07: „a választások szövegét is fel lehessen olvasni”)
+  let _osIdx = null;
+  function osIndex() { if (_osIdx) return _osIdx; const m = {}; const n = s => String(s || '').toLowerCase().replace(/[✔✘]/g, '').replace(/\s*\([^)]*\)/g, '').trim();
+    (H.D.glossary || []).forEach(g => { if (!m[n(g.es)]) m[n(g.es)] = { l: C.lang, k: 'g:' + g.i }; if (!m['hu|' + n(g.hu)]) m['hu|' + n(g.hu)] = { l: 'hu', k: 'g:' + g.i }; });
+    const W = H.D.words || {}; Object.keys(W).forEach(w => { if (!m[n(w)]) m[n(w)] = { l: C.lang, k: 'w:' + w }; const h = n(String(W[w]).split(/[,;/]/)[0]); if (h && !m['hu|' + h]) m['hu|' + h] = { l: 'hu', k: 'w:' + w }; });
+    return (_osIdx = m); }
+  function looksHu(t) { return /[őűŐŰ]|[öüÖÜ]|\b(a|az|egy|és|nem|van|igen|igaz|hamis|melyik|hány|mint|vagy|ezres|százas|tízes|egyes)\b/i.test(t); }
+  function optSay(o) { if (o.say && o.say.length) return o.say; const n = s => String(s || '').toLowerCase().replace(/[✔✘]/g, '').replace(/\s*\([^)]*\)/g, '').trim(); const I = osIndex(); const lab = String(o.label || '');
+    const one = (t, prefHu) => { const k = n(t); const hit = (prefHu ? I['hu|' + k] || I[k] : I[k] || I['hu|' + k]); if (hit) return { l: hit.l, k: hit.k, t: t }; return { l: (prefHu || looksHu(t)) ? 'hu' : C.lang, k: 'x:?' + k.slice(0, 20), t: t.replace(/[✔✘]/g, '') }; };
+    const out = [one(lab, looksHu(lab))]; if (o.sm && o.sm !== lab) out.push(one(o.sm, true)); else if (o.es && o.hu) { out.push(one(o.es, false)); out.push(one(o.hu, true)); } return out.map(x => Object.assign(x, { gap: 150 })); }
   function quizQ(q) { return { kind: 'choice', part: 'quiz', unit: q.unit, page: q.page, rec: { type: 'q', id: 'q' + q.i, label: q.q_es, hu: q.q_hu, unit: q.unit }, prompt: null, big: q.q_es, small: q.q_hu,
     audio: [{ l: C.lang, k: 'q:' + q.i, t: q.q_es }, { l: 'hu', k: 'q:' + q.i, t: q.q_hu }], answer: q.answer, options: q.options.map((o, i) => ({ v: i, label: o })), explain: q.explain, quizPage: q.page }; }
   function spellQ(w, unit) { return { kind: 'type', part: 'spell', unit: unit || 'u2', page: '', rec: { type: 'sp', id: w.w, label: w.w, hu: w.hu, unit: unit || '' }, prompt: 'q_write', big: w.hu, audio: [{ l: C.lang, k: 'x:sp:' + w.w, t: w.w }, { l: 'hu', k: 'x:sph:' + w.w, t: w.hu }], answer: w.w, explain: w.w, w }; }
@@ -551,7 +741,8 @@ var LQ = (function () {
   function autoAudio() { const q = ST.run && curQ(); if (!q) return; if (q.fix && !ST.run.fixSaid && q.audio) { ST.run.fixSaid = 1; say([sx('i_fix')].concat(q.audio)); return; } if (q.kind === 'flash') { say(q.items.slice(0, 1)); return; } if (q.task) { sayTask(q.task); return; } if (q.audio) say(q.audio); }
   function startTimer() { clearInterval(timerIv); timerIv = setInterval(() => { const R = ST.run; if (!R || !R.end || R.done || ST.view !== 'run') { clearInterval(timerIv); return; } const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); const t = el && el.querySelector('#px-timer'); if (t) t.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (left <= 0) { clearInterval(timerIv); finishRun(true); } }, 500); }
   function answerRun(resp, extra) {
-    const R = ST.run, q = curQ(); if (R.ans !== null && R.mode !== 'test') return; touch();
+    const R = ST.run, q = curQ(); if (R.ans !== null && R.mode !== 'test') return; touch(); resp = mqNorm(q, resp); clearTimeout(R.autoT);
+    if (q.orig) { const r0 = R.res.find(r => r.skip && r.q === q.orig && !r.resolved); if (r0) r0.resolved = true; }
     let ok;
     if (q.kind === 'type') ok = norm(String(resp)) === norm(q.answer) || (q.alts || []).some(a => norm(a) === norm(String(resp))); else ok = String(resp) === String(q.answer);
     if (q.kind === 'type' && !ok && R.tries < 1 && R.mode !== 'test') { R.tries++; R.ok = 'retry'; sayHu('fb_retry'); try { H.sfxBad(); } catch (e) { } ST.mood = 'sad'; render(); return; }
@@ -559,39 +750,474 @@ var LQ = (function () {
     R.ans = resp; R.ok = ok; if (!R.duel) R.score += ok ? 1 : 0; R.res.push({ q, ok, resp });
     if (R.duel) { R.duel.score[R.i % 2] += ok ? 1 : 0; if (!dadTurn) R.score += ok ? 1 : 0; }
     if (R.boss) { if (ok) { R.boss.hp = Math.max(0, R.boss.hp - 1); R.boss.hit = 1; } else { R.boss.hearts = Math.max(0, R.boss.hearts - 1); R.boss.hit = 0; } }
-    if (!dadTurn) record(q.rec, ok); if (q.topic) genAdapt(q.topic, ok); if (ok && q.rec && q.rec.type === 'tk') { P.tkok = P.tkok || {}; P.tkok[q.rec.id] = today(); }
+    if (!dadTurn) record(q.rec, ok); if (q.topic) genAdapt(q.topic, ok); mqTrack(q, ok); if (ok && q.rec && q.rec.type === 'tk') { P.tkok = P.tkok || {}; P.tkok[q.rec.id] = today(); }
     if (R.mode === 'test') { nextRun(); return; }
-    const cst = dadTurn ? 0 : comboHit(R, ok);
-    if (R.fast) { try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { } if (cst) award(cst); R.flashOk = ok; nextRun(); return; }
+    const cst = dadTurn ? 0 : comboHit(R, ok); if (ok && !dadTurn) goodFx(R);
+    if (R.fast) { try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { } if (cst) award(cst); if (!ok && q.mq) toast('✘ ' + (q.big || '').replace('?', mqAnsLabel(q)).slice(0, 60)); R.flashOk = ok; nextRun(); return; }
     ST.mood = ok ? 'happy' : 'sad'; try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { }
     if (cst) award(cst);
-    render(); const fb = ok ? pickPraise() : 'fb_bad';
-    setTimeout(() => { if (ST.view === 'run' && ST.run === R) { const it = [sx(fb)]; if (!ok && q.reveal) it.push.apply(it, q.reveal); if (ok && q.kind === 'type') it.push(q.audio[0]); say(it); } }, ok ? 900 : 1200);
+    render(); const fb = ok ? pickPraise() : 'fb_bad'; const i0 = R.i;
+    if (ok && R.auto) { R.autoT = setTimeout(() => { if (ST.view === 'run' && ST.run === R && R.i === i0 && !R.done) nextRun(); }, 850); return; }
+    setTimeout(() => { if (ST.view === 'run' && ST.run === R && R.i === i0) { const it = [sx(fb)]; if (!ok && q.reveal) it.push.apply(it, q.reveal); if (ok && q.kind === 'type') it.push(q.audio[0]); say(it); } }, ok ? 900 : 1200);
   }
   function pickPraise() { return ['fb_ok1', 'fb_ok2', 'fb_ok3', 'fb_ok4'][Math.floor(Math.random() * 4)]; }
   function nextRun() {
     const R = ST.run; ST.mood = 'idle'; ST.levelUp = null;
     let more = R.gen ? (R.i + 1 < (R.limit || 9999)) : (R.i + 1 < R.qs.length);
     if (R.boss && (R.boss.hp <= 0 || R.boss.hearts <= 0)) more = false;
+    if (!more && runRequeue(R)) more = true;
     if (!more) { finishRun(false); return; }
-    R.i++; R.ans = null; R.ok = null; R.num = ''; R.typed = ''; R.tries = 0; R.flipped = false; if (R.boss) R.boss.hit = 0; ST.kanim = ''; render({ top: !R.fast }); if (!R.fast) autoAudio(); else { const q2 = curQ(); if (q2 && q2.hearOnly) autoAudio(); } duelTick();
+    R.i++; R.ans = null; R.ok = null; R.num = ''; R.typed = ''; R.tries = 0; R.mv = null; R.mf = null; R.ord = null; clearTimeout(R.autoT); R.flipped = false; if (R.boss) R.boss.hit = 0; ST.kanim = ''; render({ top: !R.fast }); if (!R.fast) autoAudio(); else { const q2 = curQ(); if (q2 && q2.hearOnly) autoAudio(); } duelTick();
   }
   function finishRun(timeUp) {
-    const R = ST.run; clearInterval(timerIv); stopAll(); R.done = true; R.timeUp = !!timeUp; const total = R.res.length || 1; const pct = R.score / (R.mode === 'test' ? R.qs.length : total);
+    const R = ST.run; clearInterval(timerIv); stopAll(); R.done = true; R.timeUp = !!timeUp; const total = nAns(R) || 1; const pct = R.score / (R.mode === 'test' ? R.qs.length : total);
     ST.mood = pct >= .6 ? 'happy' : 'idle'; let bonus = 0;
     if (R.mode === 'mission') { bonus = 5; P.mission[today()] = true; markActive(); }
     if (R.mode === 'test') { bonus = Math.round(pct * 10); const parts = {}; R.qs.forEach((q, i) => { const r = R.res[i]; const p = parts[q.part] || (parts[q.part] = { n: 0, ok: 0 }); p.n++; if (r && r.ok) p.ok++; });
       P.tests.push({ ts: Date.now(), unit: R.unit, units: R.units || [R.unit], score: R.score, total: R.qs.length, secs: Math.round((Date.now() - R.start) / 1000), parts }); P.tests = P.tests.slice(-30); markActive();
       R.win = pct >= 0.75; if (R.win) { bonus += 5; const cert = { ts: Date.now(), subj: subjTitle(), units: (R.units || [R.unit]).map(unitTitle), pct: Math.round(pct * 100), score: R.score, total: R.qs.length }; P.certs = (P.certs || []).concat([cert]).slice(-20); R.cert = cert; } }
-    if (R.mode === 'lesson') { const n = R.res.length || 1; const pc = Math.round(R.score / n * 100); P.lq = P.lq || {}; const old = P.lq[R.lesson] || 0; const s0 = starsOf(old), s1 = starsOf(pc); if (pc > old) P.lq[R.lesson] = pc; R.lessonPct = pc; R.newStars = Math.max(0, s1 - s0); bonus += R.newStars * 2; markActive(); if (s1 >= 2) celebrate(s1 === 3); }
+    if (R.mode === 'lesson') { const n = nAns(R) || 1; const pc = Math.round(R.score / n * 100); P.lq = P.lq || {}; const old = P.lq[R.lesson] || 0; const s0 = starsOf(old), s1 = starsOf(pc); if (pc > old) P.lq[R.lesson] = pc; R.lessonPct = pc; R.newStars = Math.max(0, s1 - s0); bonus += R.newStars * 2; markActive(); if (s1 >= 2) celebrate(s1 === 3); }
     if (R.mode === 'boss') { R.win = R.boss.hp <= 0; markActive(); if (R.win) { bonus += 10; P.bossWin = P.bossWin || {}; P.bossWin[R.unit] = today(); celebrate(true); } }
     if (R.mode === 'blitz') { P.blitz = P.blitz || {}; R.record = R.score > (P.blitz.best || 0); if (R.record) { P.blitz.best = R.score; celebrate(true); } bonus += Math.min(10, Math.round(R.score / 3)); markActive(); }
     if (R.mode === 'duel') { const sc = R.duel.score; R.duelRes = sc[0] > sc[1] ? 'm' : sc[0] < sc[1] ? 'd' : 't'; if (R.duelRes !== 'd') celebrate(R.duelRes === 'm'); bonus += R.duelRes === 'm' ? 5 : 2; markActive(); }
+    if (R.mode === 'page' || R.mode === 'pgame') bonus += pgFinish(R);
+    if (R.mode === 'mq') bonus += mqFinish(R);
     if (R.mode === 'mission' && pct >= .8) celebrate();
     if (R.mode === 'test' && R.win) celebrate(true);
     if (bonus) award(bonus); R.bonus = bonus; Store.save(); Store.writeLocal();
     try { pct >= .6 ? H.sfxGood() : null; } catch (e) { }
     render({ top: true }); setTimeout(() => { if (ST.view === 'run') sayHu(R.mode === 'test' ? (R.win ? 'fb_race_win' : 'fb_race_lose') : R.mode === 'boss' ? (R.win ? 'boss_win' : 'boss_lose') : R.mode === 'duel' ? ({ m: 'duel_m_win', d: 'duel_d_win', t: 'duel_tie' })[R.duelRes] : R.record ? 'blitz_record' : 'fb_end'); }, 800);
+  }
+  // ================= MATEK-KVÍZ (Robert 2026-11-07: matek-specifikus, gyors számos válaszok, minden témára, passz mindenhol, játékos animációk) =================
+  // adat: root.MQ (tools/mathquiz.js). Hang: x:mq_<kulcs> (mkxaudio mat) + számok n:…  Állapot: P.mq (beállítás), P.mqw[gid] (jó/rossz/passz/sorozat), P.skips (minden tantárgy passzai)
+  function mqOn() { return C.subj === 'mat' && !!root.MQ; }
+  function mqS() { P.mq = P.mq || { mode: 'practice', units: null, gids: [], lvl: 1, vis: true, sw: false, best: 0 }; P.mqw = P.mqw || {}; P.skips = P.skips || {}; return P.mq; }
+  function mqName(gid) { const g = root.MQ && root.MQ.G[gid]; return g ? g.name : [gid, gid]; }
+  const ML = (h, s) => ({ hu: h, l: s });
+  const MQT = {
+    title: ML('Matek-kvíz', 'Quiz de mates'), m_practice: ML('Gyakorló', 'Practicar'), m_villam: ML('Villám 60 mp', 'Relámpago 60 s'), m_exam: ML('Dolgozat-próba', 'Prueba del examen'), m_fix: ML('Hibajavító', 'Corregir errores'),
+    d_practice: ML('saját tempó, magyarázattal', 'a tu ritmo'), d_villam: ML('csak számok, 1 perc, rekord', 'solo números, 1 minuto'), d_exam: ML('a következő dolgozat fejezeteiből', 'temas del próximo examen'), d_fix: ML('ami eddig nem ment vagy passzoltad', 'lo que falló o pasaste'),
+    units: ML('Fejezetek', 'Unidades'), topics: ML('Témák', 'Temas'), all: ML('Mind', 'Todo'), lvl: ML('Szint', 'Nivel'), vis: ML('Rajz-segítség', 'Dibujo de ayuda'), sw: ML('Stopper', 'Cronómetro'), on: ML('be', 'sí'), off: ML('ki', 'no'),
+    start: ML('Indulás!', '¡Empezar!'), skip: ML('Passz', 'Paso'), again: ML('Passzolt kérdés – most visszajött', 'Pregunta pasada – otra vez'), good: ML('jó', 'bien'), bad: ML('rossz', 'mal'), pass: ML('passz', 'paso'),
+    skipagain: ML('A passzoltak újra', 'Repetir las pasadas'), bytopic: ML('Témánként', 'Por temas'), nofix: ML('Nincs javítanivaló – szuper! 🎉', '¡No hay errores!'), rec: ML('Rekord', 'Récord'), rtl: ML('jobbról balra írd: előbb az egyesek', 'de derecha a izquierda'),
+    tapord: ML('Koppints sorban a számokra!', 'Toca los números en orden'), undo: ML('Vissza', 'Atrás'), ev: ML('dolgozat', 'examen'), secs: ML('mp', 's'), fixn: ML('db', ''),
+    lv1: ML('100-ig', 'hasta 100'), lv2: ML('1000-ig', 'hasta 1000'), lv3: ML('9999-ig', 'hasta 9999'), parent: ML('Matek-kvíz témánként', 'Quiz de mates por temas'), skipsP: ML('Leggyakrabban passzolt kérdések (minden tantárgy)', 'Preguntas más pasadas')
+  };
+  const mt = k => MQT[k].hu, mtl = k => MQT[k].l;
+  function mqSay(k) { const ph = root.MQ.PH[k]; if (ph) say([{ l: 'hu', k: 'x:mq_' + k, t: ph[1] }]); }
+  function mqEvUnits() { let u = []; try { events().filter(e => e._days >= 0 && e._days <= 10).forEach(e => (e.units || []).forEach(x => { if (u.indexOf(x) < 0) u.push(x); })); } catch (e) { } if (!u.length) { const ev = nextEvent(); u = ev && ev.units ? ev.units.slice() : []; } return u.length ? u.sort() : null; }
+  function mqFocus() { const ev = nextEvent(); const isTab = ev && /tabla|tables|szorzótábla|×/i.test((ev.title || '') + ' ' + (ev.title_hu || '')); try { root.MQ.setFocus(isTab ? focusTables() : null); } catch (e) { } }
+  function mqMake(gid, L, seed) { if (seed == null) seed = Math.floor(Math.random() * 1e9); let t; try { t = root.MQ.make(gid, L, seed); } catch (e) { return null; } return mqQ(t, seed); }
+  function mqQ(t, seed) {
+    const ex = t.explain ? [t.explain.es, t.explain.hu].filter(Boolean).join(' · ') : '';
+    const numSay = v => (/^\d{1,4}$/.test(String(v)) && MG && MG.numKeys) ? MG.numKeys(+v, 'es').map(k => ({ l: 'es', k, t: String(v), gap: 20 })) : null;
+    return { kind: t.kind, part: 'math', unit: t.unit, page: '', mq: t, gid: t.gid, rec: { type: 'mq', id: t.gid + ':' + t.level + ':' + seed, label: t.hear ? '🔊 ' + t.answer : t.text.es, hu: t.text.hu, unit: t.unit },
+      prompt: null, big: t.hear ? '🔊 ? ' : t.text.es, small: t.text.hu, audio: t.audio, answer: t.answer, explain: ex, fast: !!t.fast,
+      options: t.options ? t.options.map(o => { const ns = numSay(o.v); return Object.assign({ v: o.v, label: o.label, sm: o.sm }, ns ? { say: ns } : {}); }) : null };
+  }
+  function mqAnsLabel(q) { const t = q.mq; if (!t) return String(q.answer); if (t.kind === 'multi') return t.fields.map(f => f.hu + ': ' + f.ans).join(' · '); if (t.kind === 'order') return String(t.answer).split('|').join(' → '); if (t.kind === 'choice') { const o = (t.options || []).find(x => String(x.v) === String(t.answer)); return o ? o.label + (o.sm ? ' (' + o.sm + ')' : '') : t.answer; } return String(t.answer); }
+  function mqNorm(q, resp) { if (!q.mq) return resp; if (q.kind === 'num' || q.kind === 'col') return String(resp).replace(/^0+(?=\d)/, ''); if (q.kind === 'multi') return String(resp).split('|').map(x => x.replace(/^0+(?=\d)/, '')).join('|'); return resp; }
+  function mqTrack(q, ok, skip) { if (!q || !q.mq) return; mqS(); const w = P.mqw[q.gid] || (P.mqw[q.gid] = { n: 0, ok: 0, bad: 0, skip: 0, run: 0 }); if (skip) { w.skip++; w.run = 0; w.flag = 1; return; } w.n++; if (ok) { w.ok++; w.run++; if (w.run >= 3) w.flag = 0; } else { w.bad++; w.run = 0; w.flag = 1; } }
+  // ---- kérdés-forrás
+  function mqUnitsSel() { const s = mqS(); const all = root.MQ.units(); return (s.units && s.units.length ? s.units : (mqEvUnits() || all)).filter(u => all.indexOf(u) >= 0); }
+  function mqGidsFor(units, gids) { const all = units.flatMap(u => root.MQ.byUnit(u)); const sel = (gids || []).filter(g => all.indexOf(g) >= 0); return sel.length ? sel : all; }
+  const MQFAST = ['table', 'factor', 'div', 'x10', 'double', 'compare', 'parity', 'tf', 'sides', 'missing', 'round', 'place', 'comm', 'fpart'];
+  function mqPick(gids) { const w = gids.map(g => { const x = P.mqw[g]; return 1 + (x && x.flag ? 2 : 0) + (x && x.n > 3 ? (1 - x.ok / x.n) * 2 : 0); }); let r = Math.random() * w.reduce((a, b) => a + b, 0); for (let i = 0; i < gids.length; i++) { r -= w[i]; if (r <= 0) return gids[i]; } return gids[0]; }
+  function mqGenFn(gids, lvl) { let last = null; return () => { let q = null, n = 0; while (!q && n++ < 8) { let g = mqPick(gids); if (g === last && gids.length > 2) g = mqPick(gids); last = g; q = mqMake(g, lvl); } return q || mqMake('table', 1); }; }
+  function mqFixQs(n) { mqS(); const t = today(); const out = []; const seen = {};
+    Object.keys(P.miss).filter(k => k.indexOf('mq:') === 0 && (P.miss[k].ok || 0) < 2).sort((a, b) => (P.miss[b].last || '') > (P.miss[a].last || '') ? 1 : -1).forEach(k => { if (out.length >= n) return; const q = qFromMiss(k, P.miss[k]); if (q) { q.fix = true; out.push(q); seen[k] = 1; } });
+    Object.keys(P.skips).filter(k => k.indexOf('mq:') === 0 && !seen[k] && !P.skips[k].done).forEach(k => { if (out.length >= n) return; const q = qFromMiss(k, P.skips[k]); if (q) { q.fix = true; out.push(q); } });
+    const fl = Object.keys(P.mqw).filter(g => P.mqw[g].flag && root.MQ.G[g]); let i = 0; while (fl.length && out.length < n && i++ < 200) { const q = mqMake(fl[i % fl.length], mqS().lvl); if (q) out.push(q); }
+    return out; }
+  function startMq(mode) {
+    const s = mqS(); mode = mode || s.mode; s.mode = mode; Store.save(); mqFocus(); const lvl = s.lvl || 1; const base = { mode: 'mq', mqmode: mode, mqr: true, auto: true, back: 'mq', sw: !!s.sw, title: mt('title') + ' · ' + mt('m_' + mode) };
+    if (mode === 'villam') { let gids = mqGidsFor(mqUnitsSel(), s.gids).filter(g => MQFAST.indexOf(g) >= 0); if (!gids.length) gids = ['table', 'factor', 'double', 'compare']; startRun(Object.assign(base, { gen: mqGenFn(gids, lvl), qs: [], limit: 999, endless: true, fast: true, secs: 60, sw: false })); mqSay('ui_villam'); return; }
+    if (mode === 'fix') { const qs = mqFixQs(QN()); if (!qs.length) { toast(mt('nofix')); return; } startRun(Object.assign(base, { qs })); return; }
+    if (mode === 'exam') { const units = mqEvUnits() || mqUnitsSel(); const gids = shuffle(units.flatMap(u => root.MQ.byUnit(u))); const qs = []; let i = 0; while (qs.length < QN() && i < QN() * 3) { const q = mqMake(gids[i % gids.length], Math.max(2, lvl)); if (q) qs.push(q); i++; } startRun(Object.assign(base, { qs: shuffle(qs), units })); return; }
+    startRun(Object.assign(base, { gen: mqGenFn(mqGidsFor(mqUnitsSel(), s.gids), lvl), qs: [], limit: QN() }));
+  }
+  let mqSwIv = null;
+  function mqSwStart() { clearInterval(mqSwIv); mqSwIv = setInterval(() => { const R = ST.run; if (!R || !R.sw || R.done || ST.view !== 'run') { clearInterval(mqSwIv); return; } const t = el && el.querySelector('#px-sw'); if (t) t.textContent = mqFmt((Date.now() - R.start) / 1000); }, 500); }
+  function mqFmt(sec) { sec = Math.round(sec); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); }
+  // ---- beállító nézet
+  function vMq() {
+    const s = mqS(); const evU = mqEvUnits(); const units = root.MQ.units(); const selU = s.units && s.units.length ? s.units : (evU || []); const gids = mqGidsFor(mqUnitsSel(), []);
+    const fixN = mqFixQs(99).length; const chip = (on, a, attrs, lab) => '<button type="button" class="chip' + (on ? ' on' : '') + '" data-a="' + a + '" ' + attrs + '>' + lab + '</button>';
+    const modes = ['practice', 'villam', 'exam', 'fix'].map(m => '<button type="button" class="mq-mode' + (s.mode === m ? ' on' : '') + '" data-a="mqmode" data-m="' + m + '"><b>' + esc(mt('m_' + m)) + '</b><small>' + esc(mt('d_' + m)) + (m === 'villam' && s.best ? ' · ' + esc(mt('rec')) + ': ' + s.best : '') + (m === 'fix' ? ' · ' + fixN + ' ' + esc(mt('fixn')) : '') + (m === 'exam' && evU ? ' · ' + evU.map(u => u.replace('u', '')).join(', ') + '. fej.' : '') + '</small></button>').join('');
+    let h = topbar(mt('title')) + '<div class="px-row"><button type="button" class="pbtn o" data-a="mqintro">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button></div><div class="mq-modes">' + modes + '</div>';
+    if (s.mode !== 'fix' && s.mode !== 'exam') {
+      h += '<h3 class="px-h">' + esc(mt('units')) + ' <small>· ' + esc(mtl('units')) + '</small></h3><div class="px-chips">' + chip(!(s.units && s.units.length), 'mqunit', 'data-u=""', esc(mt('all')) + (evU ? ' (' + esc(mt('ev')) + ')' : '')) + units.map(u => chip(selU.indexOf(u) >= 0 && s.units && s.units.length, 'mqunit', 'data-u="' + u + '"', esc(unitTitle(u)) + (evU && evU.indexOf(u) >= 0 ? ' ★' : ''))).join('') + '</div>';
+      h += '<h3 class="px-h">' + esc(mt('topics')) + ' <small>· ' + esc(mtl('topics')) + '</small></h3><div class="px-chips">' + chip(!(s.gids || []).filter(g => gids.indexOf(g) >= 0).length, 'mqgid', 'data-g=""', esc(mt('all'))) + gids.map(g => { const w = P.mqw[g]; return chip((s.gids || []).indexOf(g) >= 0, 'mqgid', 'data-g="' + g + '"', esc(mqName(g)[1]) + '<small> · ' + esc(mqName(g)[0]) + '</small>' + (w && w.flag ? ' <i class="mq-flag">!</i>' : '')); }).join('') + '</div>';
+    }
+    h += '<div class="px-chips"><span class="px-sub" style="font-weight:800">' + esc(mt('lvl')) + '</span>' + [1, 2, 3].map(l => chip(s.lvl === l, 'mqlvl', 'data-l="' + l + '"', '★'.repeat(l) + ' <small>' + esc(mt('lv' + l)) + '</small>')).join('') + '</div>';
+    if (s.mode !== 'villam') h += qnChips();
+    h += '<div class="px-chips"><span class="px-sub" style="font-weight:800">' + esc(mt('vis')) + '</span>' + chip(s.vis !== false, 'mqvis', 'data-v="1"', esc(mt('on'))) + chip(s.vis === false, 'mqvis', 'data-v="0"', esc(mt('off'))) + '<span class="px-sub" style="font-weight:800;margin-left:12px">' + esc(mt('sw')) + '</span>' + chip(!!s.sw, 'mqsw', 'data-v="1"', esc(mt('on'))) + chip(!s.sw, 'mqsw', 'data-v="0"', esc(mt('off'))) + '</div>';
+    h += '<button type="button" class="pbtn g xl" data-a="mqstart">' + ICO.next + '<span>' + esc(mt('start')) + '</span><small>' + esc(mtl('start')) + '</small></button>';
+    return h;
+  }
+  // ---- rajzok
+  function mqVis(v, q) {
+    if (!v) return ''; const s = mqS(); const helper = ['groups', 'blocks', 'roundline', 'digits'].indexOf(v.type) >= 0; if (helper && s.vis === false && !(v.type === 'digits' && v.hl != null)) return '';
+    const svg = (w, h, inner, lab) => '<svg class="px-vis mq-vis" viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="' + esc(lab || v.type) + '">' + inner + '</svg>';
+    const T = (x, y, t, sz, c, w) => '<text x="' + x + '" y="' + y + '" font-size="' + (sz || 22) + '" font-weight="' + (w || 800) + '" text-anchor="middle" fill="' + (c || '#1E2A38') + '">' + esc(t) + '</text>';
+    if (v.type === 'digits') { const ds = String(v.n).padStart(4, ' ').split(''); const nm = ['UM', 'C', 'D', 'U']; return '<div class="px-digits">' + ds.map((d, i) => '<div' + (v.hl === i ? ' class="hl"' : '') + '><small>' + nm[i] + '</small><b>' + (d.trim() ? d : '') + '</b></div>').join('') + '</div>'; }
+    if (v.type === 'numline') { const mn = +v.min, mx = +v.max, st = +v.step || 1; const n = Math.round((mx - mn) / st); const W = 640, pad = 30, sx = x => pad + (x - mn) / (mx - mn) * (W - 2 * pad); let g = '<line x1="' + pad + '" y1="60" x2="' + (W - pad) + '" y2="60" stroke="#1E2A38" stroke-width="3"/>';
+      for (let i = 0; i <= n; i++) { const x = sx(mn + i * st); const lab = i === 0 || i === n || (!v.hide && (n <= 10 || i % 2 === 0)); g += '<line x1="' + x + '" y1="48" x2="' + x + '" y2="72" stroke="#1E2A38" stroke-width="2"/>' + (lab ? T(x, 102, mn + i * st, 20, '#1E2A38', 700) : ''); }
+      (v.marks || []).forEach(m => { const x = sx(+m); g += '<path d="M' + x + ' 46 l-10 -18 h20z" fill="#E86A7A" stroke="#8E2A1F" stroke-width="2"/>' + T(x, 20, v.hide ? '?' : m, 24, '#8E2A1F', 900); });
+      return svg(W, 112, g, 'számegyenes'); }
+    if (v.type === 'frac') { const n = v.n, d = v.d; let g = ''; if (v.shape === 'circle') { const cx = 80, cy = 80, r = 70; if (d === 1) g = '<circle cx="80" cy="80" r="70" fill="#F2891F"/>'; for (let i = 0; i < d; i++) { const a0 = -Math.PI / 2 + i * 2 * Math.PI / d, a1 = a0 + 2 * Math.PI / d; const p = 'M' + cx + ' ' + cy + ' L' + (cx + r * Math.cos(a0)).toFixed(1) + ' ' + (cy + r * Math.sin(a0)).toFixed(1) + ' A' + r + ' ' + r + ' 0 ' + (d === 2 ? 1 : 0) + ' 1 ' + (cx + r * Math.cos(a1)).toFixed(1) + ' ' + (cy + r * Math.sin(a1)).toFixed(1) + 'Z'; g += '<path d="' + p + '" fill="' + (i < n ? '#F2891F' : '#fff') + '" stroke="#B85A12" stroke-width="3"/>'; } return svg(160, 160, g, n + '/' + d); }
+      const W = Math.min(60 * d, 480), cw = W / d; for (let i = 0; i < d; i++) g += '<rect x="' + (2 + i * cw) + '" y="2" width="' + cw + '" height="70" fill="' + (i < n ? '#3B82C4' : '#fff') + '" stroke="#1F4E79" stroke-width="3"/>'; return svg(W + 4, 74, g, n + '/' + d); }
+    if (v.type === 'frac2') { const d = v.d, W = 360, cw = W / d; let g = ''; [v.a, v.b].forEach((n, r) => { for (let i = 0; i < d; i++) g += '<rect x="' + (50 + i * cw) + '" y="' + (4 + r * 56) + '" width="' + cw + '" height="44" fill="' + (i < n ? (r ? '#6BBF59' : '#F2891F') : '#fff') + '" stroke="#555" stroke-width="2"/>'; g += T(22, 34 + r * 56, n + '/' + d, 20); }); return svg(W + 56, 116, g, v.a + '/' + d + ' ' + v.b + '/' + d); }
+    if (v.type === 'clock') { let g = '<circle cx="100" cy="100" r="92" fill="#fff" stroke="#1F4E79" stroke-width="6"/>'; for (let i = 1; i <= 12; i++) { const a = i * Math.PI / 6 - Math.PI / 2; g += T(100 + 72 * Math.cos(a), 108 + 72 * Math.sin(a), i, 22, '#1F4E79', 900); }
+      for (let i = 0; i < 60; i++) { const a = i * Math.PI / 30; const r0 = i % 5 ? 86 : 82; g += '<line x1="' + (100 + r0 * Math.sin(a)).toFixed(1) + '" y1="' + (100 - r0 * Math.cos(a)).toFixed(1) + '" x2="' + (100 + 90 * Math.sin(a)).toFixed(1) + '" y2="' + (100 - 90 * Math.cos(a)).toFixed(1) + '" stroke="#1F4E79" stroke-width="' + (i % 5 ? 1 : 3) + '"/>'; }
+      const am = v.m / 60 * 2 * Math.PI, ah = ((v.h % 12) + v.m / 60) / 12 * 2 * Math.PI; g += '<line x1="100" y1="100" x2="' + (100 + 46 * Math.sin(ah)).toFixed(1) + '" y2="' + (100 - 46 * Math.cos(ah)).toFixed(1) + '" stroke="#D9362B" stroke-width="9" stroke-linecap="round"/><line x1="100" y1="100" x2="' + (100 + 74 * Math.sin(am)).toFixed(1) + '" y2="' + (100 - 74 * Math.cos(am)).toFixed(1) + '" stroke="#1E2A38" stroke-width="5" stroke-linecap="round"/><circle cx="100" cy="100" r="7" fill="#1E2A38"/>';
+      return svg(200, 200, g, 'óra'); }
+    if (v.type === 'coins') { const C2 = c => c >= 100 ? ['#E8C35A', '#B8B8B8'] : c >= 10 ? ['#F2C94C', '#B8860B'] : ['#D9893B', '#8E4A1F']; let x = 0, g = ''; v.list.forEach(c => { const r = c >= 100 ? 34 : c >= 10 ? 30 : 24; const cl = C2(c); g += '<circle cx="' + (x + r + 2) + '" cy="40" r="' + r + '" fill="' + cl[0] + '" stroke="' + cl[1] + '" stroke-width="5"/>' + T(x + r + 2, 47, c >= 100 ? (c / 100) + '€' : c + 'c', c >= 100 ? 20 : 18, '#3A2A10', 900); x += 2 * r + 10; }); return svg(x + 4, 80, g, 'pénz'); }
+    if (v.type === 'lineobj') { const y = 50; let g = ''; const arr = (x, dir) => '<path d="M' + x + ' ' + y + ' l' + (-16 * dir) + ' -10 v20z" fill="#1E2A38"/>'; const dot = x => '<circle cx="' + x + '" cy="' + y + '" r="8" fill="#E86A7A" stroke="#8E2A1F" stroke-width="2"/>';
+      g += '<line x1="' + (v.t === 'segmento' ? 80 : v.t === 'semirrecta' ? 80 : 20) + '" y1="' + y + '" x2="' + (v.t === 'segmento' ? 320 : 380) + '" y2="' + y + '" stroke="#1E2A38" stroke-width="4"/>';
+      if (v.t === 'recta') g += arr(20, -1) + arr(380, 1); if (v.t === 'semirrecta') g += dot(80) + arr(380, 1); if (v.t === 'segmento') g += dot(80) + dot(320); return svg(400, 100, g, v.t); }
+    if (v.type === 'angle') { const a = v.deg * Math.PI / 180, L = 150, ox = 60, oy = 160; let g = '<line x1="' + ox + '" y1="' + oy + '" x2="' + (ox + L) + '" y2="' + oy + '" stroke="#1E2A38" stroke-width="5" stroke-linecap="round"/><line x1="' + ox + '" y1="' + oy + '" x2="' + (ox + L * Math.cos(a)).toFixed(1) + '" y2="' + (oy - L * Math.sin(a)).toFixed(1) + '" stroke="#1E2A38" stroke-width="5" stroke-linecap="round"/>';
+      g += v.deg === 90 ? '<path d="M' + (ox + 26) + ' ' + oy + ' v-26 h-26" fill="none" stroke="#D9362B" stroke-width="3"/>' : '<path d="M' + (ox + 36) + ' ' + oy + ' A36 36 0 0 0 ' + (ox + 36 * Math.cos(a)).toFixed(1) + ' ' + (oy - 36 * Math.sin(a)).toFixed(1) + '" fill="none" stroke="#D9362B" stroke-width="3"/>'; return svg(240, 180, g, 'szög'); }
+    if (v.type === 'grid') { const cs = 56, ox = 40, oy = 10; let g = ''; for (let c = 0; c < 4; c++) { g += T(ox + c * cs + cs / 2, oy + 4 * cs + 26, 'ABCD'[c], 22, '#1F4E79', 900); for (let r = 0; r < 4; r++) g += '<rect x="' + (ox + c * cs) + '" y="' + (oy + r * cs) + '" width="' + cs + '" height="' + cs + '" fill="#fff" stroke="#9AA7B4" stroke-width="2"/>'; }
+      for (let r = 0; r < 4; r++) g += T(20, oy + (3 - r) * cs + cs / 2 + 8, r + 1, 22, '#1F4E79', 900); g += '<text x="' + (ox + v.c * cs + cs / 2) + '" y="' + (oy + (4 - v.w) * cs + cs / 2 + 12) + '" font-size="34" text-anchor="middle">' + esc(v.em) + '</text>'; return svg(ox + 4 * cs + 6, oy + 4 * cs + 36, g, 'négyzetháló'); }
+    if (v.type === 'poly') { const n = v.n, r = 70; let p = ''; for (let i = 0; i < n; i++) { const a = -Math.PI / 2 + i * 2 * Math.PI / n; p += (i ? ' L' : 'M') + (80 + r * Math.cos(a)).toFixed(1) + ' ' + (82 + r * Math.sin(a)).toFixed(1); } return svg(160, 160, '<path d="' + p + 'Z" fill="#FFF1E4" stroke="#B85A12" stroke-width="5" stroke-linejoin="round"/>', 'sokszög'); }
+    if (v.type === 'solid') { const S2 = { cubo: '<path d="M30 60 h80 v80 h-80z" fill="#7FB3E0" stroke="#1F4E79" stroke-width="4"/><path d="M30 60 l30 -30 h80 l-30 30z" fill="#BFD9F0" stroke="#1F4E79" stroke-width="4"/><path d="M110 60 l30 -30 v80 l-30 30z" fill="#5B93C7" stroke="#1F4E79" stroke-width="4"/>',
+        esfera: '<circle cx="85" cy="85" r="62" fill="#F2891F" stroke="#B85A12" stroke-width="4"/><ellipse cx="85" cy="85" rx="62" ry="18" fill="none" stroke="#B85A12" stroke-width="2" stroke-dasharray="6 5"/><circle cx="62" cy="60" r="12" fill="#FFD2A6"/>',
+        cilindro: '<path d="M40 40 v90 a45 14 0 0 0 90 0 v-90" fill="#6BBF59" stroke="#22603C" stroke-width="4"/><ellipse cx="85" cy="40" rx="45" ry="14" fill="#A8DE9B" stroke="#22603C" stroke-width="4"/>',
+        cono: '<path d="M85 20 L40 135 a45 14 0 0 0 90 0z" fill="#E86A7A" stroke="#8E2A1F" stroke-width="4" stroke-linejoin="round"/><path d="M40 135 a45 14 0 0 1 90 0" fill="none" stroke="#8E2A1F" stroke-width="2" stroke-dasharray="6 5"/>',
+        'pirámide': '<path d="M85 18 L30 130 L110 148z" fill="#F7C948" stroke="#B8860B" stroke-width="4" stroke-linejoin="round"/><path d="M85 18 L110 148 L145 120z" fill="#D9A520" stroke="#B8860B" stroke-width="4" stroke-linejoin="round"/>' };
+      return svg(170, 165, S2[v.t] || '', 'test'); }
+    if (v.type === 'bars') { const mx = Math.max(...v.vals, 5); const top = Math.ceil(mx / 2) * 2; const H2 = 180, bw = 64, gap = 26, ox = 40; let g = ''; for (let i = 0; i <= top; i += (top > 10 ? 2 : 1)) { const y = 10 + H2 - i / top * H2; g += '<line x1="' + ox + '" y1="' + y + '" x2="' + (ox + v.cats.length * (bw + gap) + 10) + '" y2="' + y + '" stroke="#E2E8EE" stroke-width="2"/>' + T(ox - 16, y + 7, i, 18, '#4A5562', 700); }
+      const cols = ['#3B82C4', '#F2891F', '#6BBF59', '#E86A7A']; v.cats.forEach((c, i) => { const hh = v.vals[i] / top * H2, x = ox + 12 + i * (bw + gap); g += '<rect x="' + x + '" y="' + (10 + H2 - hh) + '" width="' + bw + '" height="' + hh + '" rx="6" fill="' + cols[i % 4] + '"/>' + T(x + bw / 2, H2 + 36, c, 16, '#1E2A38', 800); });
+      return svg(ox + v.cats.length * (bw + gap) + 20, H2 + 46, g, 'diagram'); }
+    return visMore(v);
+  }
+  // ---- bevitel (multi / order / col) + számbillentyűzet
+  function npOnly(answered) { return '<div class="px-numpad">' + ['1', '2', '3', '4', '5', '6', '7', '8', '9', '⌫', '0', '✓'].map(k => '<button type="button" class="np ' + (k === '✓' ? 'go' : '') + '" data-a="np" data-k="' + k + '"' + (answered ? ' disabled' : '') + '>' + k + '</button>').join('') + '</div>'; }
+  function colCells(q) { const c = q.mq.col, la = String(c.a).length, lb = String(c.b).length; return Math.max(String(q.answer).length, c.op === '+' ? Math.max(la, lb) + 1 : c.op === '×' ? la + 1 : Math.max(la, lb)); }
+  function mqInput(R, q, answered) {
+    const t = q.mq;
+    if (t.kind === 'multi') { R.mv = R.mv || t.fields.map(() => ''); if (R.mf == null) R.mf = 0;
+      return '<div class="mq-fields">' + t.fields.map((f, i) => '<button type="button" class="mq-f' + (i === R.mf && !answered ? ' on' : '') + (answered ? (String(+R.mv[i]) === f.ans ? ' ok' : ' bad') : '') + '" data-a="mqf" data-i="' + i + '"><small>' + esc(f.hu) + ' · ' + esc(f.es) + '</small><b>' + esc(R.mv[i] || '…') + '</b></button>' + (i < t.fields.length - 1 ? '<span class="mq-sep">' + (t.gid === 'clock' ? ':' : t.gid === 'fpic' ? '/' : t.gid === 'rem' ? 'm.' : '·') + '</span>' : '')).join('') + '</div>' + npOnly(answered); }
+    if (t.kind === 'order') { R.ord = R.ord || []; const items = t.items;
+      return '<div class="mq-slots">' + items.map((_, i) => '<span class="mq-slot' + (R.ord[i] != null ? ' f' : '') + '">' + (R.ord[i] != null ? esc(items[R.ord[i]]) : (i + 1) + '.') + '</span>').join('<i>' + (/desc/.test((t.audio[0] || {}).k || '') ? '>' : '<') + '</i>') + '</div>' +
+        '<div class="mq-items">' + items.map((it, i) => '<button type="button" class="mq-it' + (R.ord.indexOf(i) >= 0 ? ' used' : '') + '" data-a="mqo" data-i="' + i + '"' + (answered || R.ord.indexOf(i) >= 0 ? ' disabled' : '') + '>' + esc(it) + '</button>').join('') + '</div>' +
+        (answered ? '' : '<div class="px-row center"><span class="px-sub">' + esc(mt('tapord')) + '</span>' + (R.ord.length ? '<button type="button" class="pbtn l sm" data-a="mqou"><span>⌫ ' + esc(mt('undo')) + '</span></button>' : '') + '</div>'); }
+    if (t.kind === 'col') { const c = t.col, n = colCells(q); const pad = x => String(x).padStart(n, ' ').split('');
+      const typed = (R.num || '').split(''); const res = []; for (let i = 0; i < n; i++) { const fromR = n - 1 - i; res.push(typed[fromR] != null ? typed[fromR] : ''); }
+      const next = typed.length < n ? n - 1 - typed.length : -1;
+      const row = (arr, cls) => '<div class="mq-crow ' + (cls || '') + '">' + arr.map((d, i) => '<span class="' + (cls === 'res' ? 'cell' + (i === next && !answered ? ' nx' : '') : '') + '">' + esc(d.trim()) + '</span>').join('') + '</div>';
+      return '<div class="mq-col"><div class="mq-op">' + esc(c.op) + '</div><div>' + row(pad(c.a)) + row(pad(c.b)) + '<div class="mq-bar"></div>' + row(res, 'res') + '</div></div>' + (answered ? '' : '<div class="px-sub center">← ' + esc(mt('rtl')) + '</div>') + npOnly(answered); }
+    return '';
+  }
+  function mqNp(k) { const R = ST.run, q = curQ(); if (!R || !q || !q.mq) return false; const t = q.mq; if (R.ans !== null && R.mode !== 'test') return true;
+    if (t.kind === 'multi') { R.mv = R.mv || t.fields.map(() => ''); R.mf = R.mf || 0;
+      if (k === '⌫') { if (R.mv[R.mf]) R.mv[R.mf] = R.mv[R.mf].slice(0, -1); else if (R.mf > 0) R.mf--; }
+      else if (k === '✓') { if (R.mv.every(x => x !== '')) { answerRun(R.mv.join('|')); return true; } if (R.mv[R.mf] !== '') R.mf = Math.min(t.fields.length - 1, R.mf + 1); else { const e = R.mv.findIndex(x => x === ''); if (e >= 0) R.mf = e; } }
+      else if (R.mv[R.mf].length < 4) { R.mv[R.mf] += k; if (R.mv[R.mf].length >= String(t.fields[R.mf].ans).length && R.mf < t.fields.length - 1 && R.mv[R.mf + 1] === '') R.mf++; }
+      render(); return true; }
+    if (t.kind === 'col') { const n = colCells(q);
+      if (k === '⌫') R.num = (R.num || '').slice(0, -1); else if (k === '✓') { if (R.num) { answerRun(R.num.split('').reverse().join('')); return true; } } else if ((R.num || '').length < n) R.num = (R.num || '') + k;
+      render(); return true; }
+    return false; }
+  function mqKey(e) { try {
+    if (!ST || ST.view !== 'run' || !ST.run || ST.run.done) return; const tg = e.target; if (tg && (tg.tagName === 'INPUT' || tg.tagName === 'TEXTAREA' || tg.isContentEditable)) return; if (e.ctrlKey || e.metaKey || e.altKey) return;
+    const R = ST.run, q = curQ(); if (!q) return; const answered = R.ans !== null && R.mode !== 'test'; let k = e.key;
+    if (k === 'Enter') { e.preventDefault(); if (answered) act('next', {}); else if (q.kind === 'num' || q.kind === 'multi' || q.kind === 'col') act('np', { k: '✓' }); return; }
+    if (answered) return;
+    if (/^[0-9]$/.test(k)) { if (q.kind === 'num' || q.kind === 'multi' || q.kind === 'col') { e.preventDefault(); act('np', { k }); return; } if (q.kind === 'choice' && +k >= 1 && +k <= q.options.length) { e.preventDefault(); act('pick', { i: String(+k - 1) }); return; } }
+    if (k === 'Backspace') { if (q.kind === 'num' || q.kind === 'multi' || q.kind === 'col') { e.preventDefault(); act('np', { k: '⌫' }); } else if (q.kind === 'order') { e.preventDefault(); act('mqou', {}); } return; }
+    if (k === 'Tab' && q.kind === 'multi') { e.preventDefault(); R.mf = ((R.mf || 0) + 1) % q.mq.fields.length; render(); }
+  } catch (er) { } }
+  // ---- passz (minden futtatásban, minden tantárgyban)
+  function nAns(R) { return R.res.filter(r => !r.skip).length; }
+  function skipRec(q) { if (!q || !q.rec) return; P.skips = P.skips || {}; const k = q.rec.type + ':' + q.rec.id; const m = P.skips[k] || (P.skips[k] = { n: 0, type: q.rec.type, label: q.rec.label, hu: q.rec.hu || '', unit: q.rec.unit || '' }); m.n++; m.last = today(); m.done = 0; mqTrack(q, false, true); Store.save(); }
+  function runSkip() { const R = ST.run; if (!R || R.done) return; const q = curQ(); if (!q) return; if (R.ans !== null && R.mode !== 'test') { nextRun(); return; }
+    stopAll(); clearTimeout(R.autoT); if (q.orig) { const r0 = R.res.find(r => r.skip && r.q === q.orig && !r.resolved); if (r0) r0.resolved = true; }
+    R.res.push({ q, ok: false, skip: true, resp: null }); skipRec(q); if (R.mode === 'test') { nextRun(); return; }
+    if (!q.again && !R.endless && !R.fast) (R.later = R.later || []).push(q);
+    try { H.sfxBad && 0; } catch (e) { } toast('⏭ ' + mt('skip')); nextRun(); }
+  function runRequeue(R) { if (!R.later || !R.later.length || R.endless || R.end || R.boss || R.duel || R.mode === 'test') return false; const L = R.later; R.later = [];
+    if (R.gen) R.qs.length = R.i + 1; L.forEach(q => R.qs.push(Object.assign({}, q, { again: true, orig: q, fix: false }))); if (R.gen) R.limit = R.qs.length; toast('↻ ' + mt('again')); try { if (root.MQ) mqSay('ui_again'); } catch (e) { } return true; }
+  function skipBtn(R) { return '<div class="px-row center mq-skiprow"><button type="button" class="pbtn l" data-a="skip"><span>⏭ ' + esc(mt('skip')) + '</span><small>' + esc(mtl('skip')) + '</small></button></div>'; }
+  function tallyHtml(R) { if (R.mode === 'duel') return ''; const sk = R.res.filter(r => r.skip && !r.resolved).length; const good = R.res.filter(r => r.ok).length, bad = R.res.filter(r => !r.ok && !r.skip).length; if (!sk && !R.mqr) return '';
+    let h = '<div class="mq-tally"><div class="g"><b>' + good + '</b><span>' + esc(mt('good')) + '</span></div><div class="b"><b>' + bad + '</b><span>' + esc(mt('bad')) + '</span></div><div class="s"><b>' + sk + '</b><span>' + esc(mt('pass')) + '</span></div></div>';
+    if (R.mqr) { const by = {}; R.res.forEach(r => { if (!r.q.gid) return; const b = by[r.q.gid] || (by[r.q.gid] = { n: 0, ok: 0, sk: 0 }); if (r.skip) { if (!r.resolved) b.sk++; } else { b.n++; if (r.ok) b.ok++; } });
+      const ks = Object.keys(by); if (ks.length) h += '<div class="px-card"><h3>' + esc(mt('bytopic')) + '</h3>' + ks.map(g => { const b = by[g]; const pc = b.n ? b.ok / b.n : 0; return '<div class="mq-trow"><span>' + esc(mqName(g)[1]) + ' <small>' + esc(mqName(g)[0]) + '</small></span><b style="color:' + (pc >= .8 ? '#22603C' : pc >= .5 ? '#B85A12' : '#8E2A1F') + '">' + b.ok + ' / ' + b.n + (b.sk ? ' · ⏭' + b.sk : '') + '</b></div>'; }).join('') + '</div>';
+      if (R.sw || R.mqmode === 'exam') h += '<p class="px-note center">⏱ ' + mqFmt((Date.now() - R.start) / 1000) + '</p>'; }
+    if (sk) h += '<div class="px-row center"><button type="button" class="pbtn o" data-a="skipagain"><span>↻ ' + esc(mt('skipagain')) + ' (' + sk + ')</span></button></div>';
+    return h; }
+  function skipAgain() { const R = ST.run; if (!R) return; const qs = R.res.filter(r => r.skip && !r.resolved).map(r => Object.assign({}, r.q.orig || r.q, { again: true, orig: null, fix: false })); if (!qs.length) return;
+    startRun({ mode: R.mqr ? 'mq' : 'practice', mqr: R.mqr, mqmode: 'practice', auto: R.auto, title: R.title, qs, back: R.back || 'home' }); }
+  function mqFinish(R) { if (R.mode !== 'mq') return 0; markActive(); if (R.mqmode === 'villam') { const s = mqS(); R.record = R.score > (s.best || 0); if (R.record) { s.best = R.score; celebrate(true); setTimeout(() => mqSay('ui_record'), 900); } return Math.min(10, Math.round(R.score / 3)); }
+    const n = nAns(R) || 1; const pc = R.score / n; if (pc >= .9 && n >= 8) celebrate(true); else if (pc >= .7) confetti(60); return Math.min(10, Math.round(R.score / 4) + (pc >= .9 ? 3 : 0)); }
+  // ---- jó válasz animációk (minden futtatás)
+  function goodFx(R) { try {
+    if (matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return; const b = document.createElement('div'); b.className = 'mq-burst'; const em = ['★', '✦', '●', '★', '✚', '★']; const cols = ['#F7C948', '#6BBF59', '#E86A7A', '#5DADE2', '#F2891F', '#7D3C98'];
+    for (let i = 0; i < 14; i++) { const s = document.createElement('i'); const a = i / 14 * 2 * Math.PI; s.textContent = em[i % em.length]; s.style.color = cols[i % cols.length]; s.style.setProperty('--dx', Math.round(Math.cos(a) * (90 + Math.random() * 60)) + 'px'); s.style.setProperty('--dy', Math.round(Math.sin(a) * (90 + Math.random() * 60)) + 'px'); b.appendChild(s); }
+    const fly = document.createElement('div'); fly.className = 'mq-fly'; fly.textContent = '★'; document.body.appendChild(b); document.body.appendChild(fly); setTimeout(() => { b.remove(); fly.remove(); }, 1300);
+    if (R && R.combo > 0 && R.combo % 10 === 0) { const r = document.createElement('div'); r.className = 'mq-rocket'; r.innerHTML = '<svg viewBox="0 0 64 120" width="80" height="150" aria-hidden="true"><path d="M32 4 C48 20 52 44 50 76 H14 C12 44 16 20 32 4z" fill="#fff" stroke="#1F4E79" stroke-width="4"/><circle cx="32" cy="40" r="9" fill="#5DADE2" stroke="#1F4E79" stroke-width="3"/><path d="M14 60 L2 84 L14 80z M50 60 L62 84 L50 80z" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M20 78 Q32 118 44 78z" fill="#F2891F"/><path d="M26 78 Q32 102 38 78z" fill="#F7C948"/></svg>'; document.body.appendChild(r); setTimeout(() => r.remove(), 2600); confetti(120); fanfare(); ST.kanim = 'k-dance'; toast('🚀 ' + R.combo + '×', 'c5'); try { if (root.MQ && C.subj === 'mat') setTimeout(() => mqSay('ui_rocket'), 600); } catch (e) { } }
+  } catch (e) { } }
+  function mqParent() { mqS(); const gs = Object.keys(P.mqw).filter(g => root.MQ && root.MQ.G[g]); const sk = Object.values(P.skips || {}).sort((a, b) => b.n - a.n).slice(0, 10); let h = '';
+    if (gs.length) h += '<div class="px-card"><h3>' + esc(mt('parent')) + '</h3><table class="px-tab"><tr><th>Téma</th><th>Jó / összes</th><th>Rossz</th><th>Passz</th><th>Állapot</th></tr>' + gs.sort((a, b) => (P.mqw[b].bad + P.mqw[b].skip) - (P.mqw[a].bad + P.mqw[a].skip)).map(g => { const w = P.mqw[g]; return '<tr><td><b>' + esc(mqName(g)[1]) + '</b><br><small>' + esc(mqName(g)[0]) + '</small></td><td>' + w.ok + ' / ' + w.n + '</td><td>' + w.bad + '</td><td>' + w.skip + '</td><td>' + (w.flag ? 'gyakorolni (' + w.run + '/3)' : 'megy ✔') + '</td></tr>'; }).join('') + '</table>' + (P.mq && P.mq.best ? '<p class="px-note">Villám-rekord: <b>' + P.mq.best + '</b> jó válasz / perc</p>' : '') + '</div>';
+    if (sk.length) h += '<div class="px-card"><h3>' + esc(mt('skipsP')) + '</h3><table class="px-tab"><tr><th>Kérdés</th><th>Magyarul</th><th>Passz</th></tr>' + sk.map(m => '<tr><td><b>' + esc(m.label) + '</b><br><small>' + esc(missType(m.type)) + '</small></td><td>' + esc(m.hu) + '</td><td><b>' + m.n + '×</b></td></tr>').join('') + '</table><p class="px-note">A passz nem számít rossz válasznak és csillagot sem vesz el; a Matek-kvíz „Hibajavító” módja ezeket hozza elő először.</p></div>';
+    return h; }
+  function mqAct(a, d) {
+    switch (a) {
+      case 'mqmode': mqS().mode = d.m; Store.save(); render(); return true;
+      case 'mqunit': { const s = mqS(); if (!d.u) s.units = null; else { const cur = s.units && s.units.length ? s.units.slice() : []; const i = cur.indexOf(d.u); if (i >= 0) cur.splice(i, 1); else cur.push(d.u); s.units = cur.length ? cur : null; } s.gids = []; Store.save(); render(); return true; }
+      case 'mqgid': { const s = mqS(); if (!d.g) s.gids = []; else { const i = s.gids.indexOf(d.g); if (i >= 0) s.gids.splice(i, 1); else s.gids.push(d.g); } Store.save(); render(); return true; }
+      case 'mqlvl': mqS().lvl = +d.l; Store.save(); render(); return true;
+      case 'mqvis': mqS().vis = d.v === '1'; Store.save(); render(); return true;
+      case 'mqsw': mqS().sw = d.v === '1'; Store.save(); render(); return true;
+      case 'mqstart': startMq(); if (ST.run && ST.run.sw) mqSwStart(); return true;
+      case 'mqintro': mqSay('ui_intro'); return true;
+      case 'mqf': { const R = ST.run; if (!R || (R.ans !== null && R.mode !== 'test')) return true; R.mf = +d.i; render(); return true; }
+      case 'mqo': { const R = ST.run, q = curQ(); if (!R || !q || (R.ans !== null && R.mode !== 'test')) return true; R.ord = R.ord || []; const i = +d.i; if (R.ord.indexOf(i) < 0) R.ord.push(i); if (R.ord.length === q.mq.items.length) answerRun(R.ord.map(j => q.mq.items[j]).join('|')); else render(); return true; }
+      case 'mqou': { const R = ST.run; if (R && R.ord && R.ord.length && R.ans === null) { R.ord.pop(); render(); } return true; }
+      case 'skip': runSkip(); return true;
+      case 'skipagain': skipAgain(); return true;
+    }
+    return false;
+  }
+  const MQCSS = `
+.mq-modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:8px 0}
+.mq-mode{border:4px solid #C9D3DD;background:#fff;border-radius:18px;padding:12px;text-align:left;font:inherit;cursor:pointer;display:flex;flex-direction:column;gap:2px;color:#1E2A38}
+.mq-mode b{font-size:20px;font-weight:900}.mq-mode small{font-size:14px;color:#4A5562}.mq-mode.on{border-color:#F2891F;background:#FFF1E4;box-shadow:0 4px 0 #F2891F}
+.mq-flag{display:inline-block;background:#E86A7A;color:#fff;border-radius:10px;padding:0 6px;font-style:normal;font-weight:900}
+.mq-vis{max-width:100%;height:auto;display:block;margin:6px auto}
+.px-digits .hl{background:#FFE08A;border-color:#F2B705!important;box-shadow:0 0 0 3px #F2B705}
+.mq-fields{display:flex;justify-content:center;align-items:center;gap:8px;margin:6px 0;flex-wrap:wrap}
+.mq-f{min-width:120px;border:4px solid #C9D3DD;background:#fff;border-radius:16px;padding:6px 10px;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;color:#1E2A38}
+.mq-f small{font-size:13px;font-weight:800;color:#4A5562}.mq-f b{font-size:34px;font-weight:900;min-height:42px;letter-spacing:2px}.mq-f.on{border-color:#3B82C4;box-shadow:0 0 0 3px #BFD9F0}.mq-f.ok{border-color:#6BBF59;background:#E3F5DC}.mq-f.bad{border-color:#E86A7A;background:#FDE2E0}
+.mq-sep{font-size:34px;font-weight:900;color:#4A5562}
+.mq-slots{display:flex;justify-content:center;align-items:center;gap:4px;flex-wrap:wrap;margin:6px 0}.mq-slots i{font-style:normal;font-weight:900;font-size:24px;color:#B85A12}
+.mq-slot{min-width:74px;min-height:52px;border:3px dashed #E8D5B0;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:#9AA7B4;background:#fff}.mq-slot.f{border-style:solid;border-color:#3B82C4;color:#1E2A38;animation:mqpop .25s ease-out}
+.mq-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:8px 0}
+.mq-it{min-height:64px;border:4px solid #1F4E79;border-radius:18px;background:#fff;font:inherit;font-size:30px;font-weight:900;color:#1F4E79;cursor:pointer}.mq-it.used{opacity:.25}
+.mq-col{display:flex;justify-content:center;gap:8px;font-variant-numeric:tabular-nums;margin:6px 0}
+.mq-op{font-size:40px;font-weight:900;color:#B85A12;align-self:center;margin-top:-30px}
+.mq-crow{display:flex;gap:4px}.mq-crow span{box-sizing:border-box;width:46px;height:52px;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:900;color:#1E2A38}
+.mq-crow.res span{border:3px solid #C9D3DD;border-radius:10px;background:#fff;color:#3B82C4}.mq-crow.res span.nx{border-color:#F2891F;box-shadow:0 0 0 3px #FFD2A6;animation:mqblink 1s ease-in-out infinite}
+.mq-bar{height:4px;background:#1E2A38;border-radius:2px;margin:4px 0}
+.center{text-align:center}.px-sub.center{display:block;margin:2px 0 6px}
+.mq-skiprow{margin-top:6px}
+.mq-tally{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0;text-align:center}.mq-tally div{border-radius:16px;padding:10px}.mq-tally b{display:block;font-size:34px;font-weight:900}.mq-tally span{font-weight:800}
+.mq-tally .g{background:#E3F5DC;color:#22603C}.mq-tally .b{background:#FDE2E0;color:#8E2A1F}.mq-tally .s{background:#EEF1F4;color:#4A5562}
+.mq-trow{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid #F3E3C3;font-size:17px}.mq-trow small{color:#4A5562}
+.px-q.okfx{animation:mqok .5s ease-out}.px-q.badfx{animation:mqshake .4s ease-in-out}
+.mq-burst{position:fixed;left:50%;top:42%;width:0;height:0;pointer-events:none;z-index:9998}.mq-burst i{position:absolute;left:-12px;top:-14px;font-style:normal;font-size:26px;font-weight:900;animation:mqburst .9s ease-out forwards}
+.mq-fly{position:fixed;left:50%;top:42%;font-size:46px;color:#F7C948;text-shadow:0 2px 0 #B8860B;pointer-events:none;z-index:9999;animation:mqfly 1.1s cubic-bezier(.5,-.3,.7,1) forwards}
+.mq-rocket{position:fixed;left:calc(50% - 40px);bottom:-160px;pointer-events:none;z-index:9999;animation:mqrocket 2.4s ease-in forwards}
+@keyframes mqburst{0%{transform:translate(0,0) scale(.4);opacity:1}100%{transform:translate(var(--dx),var(--dy)) scale(1.1) rotate(200deg);opacity:0}}
+@keyframes mqfly{0%{transform:translate(-50%,-50%) scale(.6);opacity:0}25%{transform:translate(-50%,-80%) scale(1.4);opacity:1}100%{transform:translate(-45vw,-45vh) scale(.5);opacity:0}}
+@keyframes mqrocket{0%{transform:translateY(0) rotate(0)}20%{transform:translateY(-20vh) rotate(-4deg)}100%{transform:translateY(-130vh) rotate(6deg)}}
+@keyframes mqok{0%{box-shadow:0 0 0 0 rgba(107,191,89,.9)}100%{box-shadow:0 0 0 22px rgba(107,191,89,0)}}
+@keyframes mqshake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+@keyframes mqpop{0%{transform:scale(.6)}100%{transform:scale(1)}}
+@keyframes mqblink{50%{box-shadow:0 0 0 6px #FFD2A6}}
+@media (prefers-reduced-motion:reduce){.mq-burst,.mq-fly,.mq-rocket{display:none}.px-q.okfx,.px-q.badfx,.mq-crow.res span.nx{animation:none}}
+@media (max-width:520px){.mq-crow span{width:38px;height:46px;font-size:32px}.mq-f{min-width:100px}.mq-it{font-size:24px}}
+`;
+  function mqCss() { try { if (document.getElementById('mq-css')) return; const s = document.createElement('style'); s.id = 'mq-css'; s.textContent = MQCSS; document.head.appendChild(s); } catch (e) { } }
+  Plus.open = v => { stopAll(); ST.view = v; if (el && el.isConnected) render({ top: true }); };
+  // ================= /MATEK-KVÍZ =================
+  // ================= KÖNYVOLDALAK (Robert 2026-11-06: oldalanként minden szó, magyarázat, feladat – játékosan, képekkel) =================
+  // adat: X.pages = {books, imgsize:{img:[w,h]}, imgs:{img:url}, emo:{hex:svg}, sprite:{lang:{kulcs:[kezdet,hossz,darab]}}, audio:{darab:{lang:url}}, pchunk:{oldal:darab},
+  //   pages:[{id,book,page,unit,lesson,title,title_hu,summary_hu,img,page_box,words:[{w,hu,pic}],learn:{intro,sentences,remember,dialogue,tf},tasks:[{id,n,text,text_hu,box,context,help,pic,items:[{id,q,q_hu,kind,answer,alts,answer_hu,options,pic,vis}]}]}]}
+  // hang-kulcsok: p:t/th cím, p:sum összefoglaló, p:w/wh szó, p:i/ih bevezető, p:s/sh mondat, p:r/rh jegyezd meg, p:d/dh párbeszéd, p:f/fh igaz-hamis, p:y/yh indoklás, p:k/kh utasítás, p:c/ch kép-leírás, p:h/hh tipp, p:q/qh alpont
+  function pgData() { return (X.pages && X.pages.pages) || []; }
+  function pgBooks() { const b = (X.pages && X.pages.books) || []; return b.filter(x => pgData().some(p => p.book === x.id)); }
+  function pgFind(id) { return pgData().find(p => p.id === id); }
+  function pgCheckable(it) { return it.kind === 'num' || it.kind === 'type' || it.kind === 'choice'; }
+  function pgPct(pid) { return ((P.pg || {})[pid]) || 0; }
+  function pgStars(pid) { const p = pgPct(pid); return p ? [0, 1, 2].map(i => i < starsOf(p) ? '★' : '☆').join('') : ''; }
+  function pgUnits(book) { return unitsList().filter(u => pgData().some(p => p.book === book && p.unit === u)); }
+  function bookName(id) { const b = pgBooks().find(x => x.id === id); return b ? b.title_hu : id; }
+  // ---- képek: emoji -> OpenMoji SVG; könyvlap-kivágás (csak ha az oldalkép elérhető)
+  function emSplit(t) { const out = []; let cur = ''; for (const ch of Array.from(String(t || ''))) { const o = ch.codePointAt(0); if (cur && (o === 0xFE0F || o === 0x200D || o === 0x20E3 || (o >= 0x1F3FB && o <= 0x1F3FF) || cur.endsWith('‍'))) cur += ch; else { if (cur) out.push(cur); cur = ch; } } if (cur) out.push(cur); return out.filter(g => g.codePointAt(0) > 0x2000); }
+  function em(t, sz) { const E = (X.pages && X.pages.emo) || {}; return emSplit(t).map(g => { const hx = Array.from(g).filter(c => c.codePointAt(0) !== 0xFE0F).map(c => c.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')).join('-'); return '<span class="pgem" style="width:' + (sz || 40) + 'px;height:' + (sz || 40) + 'px">' + (E[hx] || '<span class="pgemt" style="font-size:' + Math.round((sz || 40) * .8) + 'px">' + esc(g) + '</span>') + '</span>'; }).join(''); }
+  function pgImgUrl(p) { const m = X.pages && X.pages.imgs; return p && p.img && m ? m[p.img] : null; }
+  function crop(p, box, cls) { const url = pgImgUrl(p); const sz = X.pages.imgsize && X.pages.imgsize[p.img]; if (!url || !sz || !box) return '';
+    const [x0, y0, x1, y1] = box; const bw = x1 - x0, bh = y1 - y0; if (bw <= 0 || bh <= 0) return ''; const ratio = (bh * sz[1]) / (bw * sz[0]) * 100;
+    return '<div class="pgcrop ' + (cls || '') + '" style="padding-bottom:' + ratio.toFixed(2) + '%"><img alt="" loading="lazy" src="' + esc(url) + '" style="width:' + (100 / bw).toFixed(3) + '%;left:' + (-x0 / bw * 100).toFixed(3) + '%;top:' + (-y0 / bh * 100).toFixed(3) + '%"></div>'; }
+  function visMore(v) {
+    if (!v) return ''; if (v.type === 'groups' || v.type === 'digits' || v.type === 'roundline') return visHtml(v, {});
+    if (v.type === 'blocks') { const part = (n, f) => Array.from({ length: Math.max(0, Math.min(9, n | 0)) }, () => f).join(''); const W = (n, w) => n ? '<g>' + n + '</g>' : '';
+      const um = '<svg viewBox="0 0 46 46" width="40" height="40" aria-hidden="true"><rect x="3" y="9" width="34" height="34" fill="#3B82C4" stroke="#1F4E79" stroke-width="2"/><path d="M3 9 l8 -6 h34 l-8 6z M37 9 l8 -6 v34 l-8 6z" fill="#7FB3E0" stroke="#1F4E79" stroke-width="2"/></svg>';
+      const c = '<svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect x="2" y="2" width="36" height="36" fill="#F2891F" stroke="#B85A12" stroke-width="2"/><path d="M2 14h36M2 26h36M14 2v36M26 2v36" stroke="#B85A12" stroke-width="1"/></svg>';
+      const d = '<svg viewBox="0 0 10 40" width="9" height="34" aria-hidden="true"><rect x="1" y="1" width="8" height="38" fill="#6BBF59" stroke="#22603C" stroke-width="1.5"/><path d="M1 9h8M1 17h8M1 24h8M1 32h8" stroke="#22603C"/></svg>';
+      const u = '<svg viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><rect x="1" y="1" width="8" height="8" fill="#F7C948" stroke="#B8860B" stroke-width="1.5"/></svg>';
+      const col = (lab, n, f) => '<div class="bk"><div class="bi">' + part(n, f) + '</div><small>' + lab + ' · ' + (n | 0) + '</small></div>';
+      return '<div class="px-blocks">' + col('UM', v.um, um) + col('C', v.c, c) + col('D', v.d, d) + col('U', v.u, u) + '</div>'; }
+    if (v.type === 'numline') { const mn = +v.min, mx = +v.max, st = +v.step || 1; const n = Math.round((mx - mn) / st); if (!(n > 0 && n <= 40)) return ''; const W = 600, pad = 24, sx = x => pad + (x - mn) / (mx - mn) * (W - 2 * pad); let s = '<line x1="' + pad + '" y1="50" x2="' + (W - pad) + '" y2="50" stroke="#1E2A38" stroke-width="3"/>';
+      for (let i = 0; i <= n; i++) { const x = sx(mn + i * st); s += '<line x1="' + x + '" y1="40" x2="' + x + '" y2="60" stroke="#1E2A38" stroke-width="2"/>' + (n <= 8 || i % Math.ceil(n / 6) === 0 ? '<text x="' + x + '" y="92" font-size="24" text-anchor="middle" fill="#1E2A38">' + (mn + i * st) + '</text>' : ''); }
+      (v.marks || []).forEach(m => { const x = sx(+m); s += '<circle cx="' + x + '" cy="50" r="11" fill="#E86A7A" stroke="#8E2A1F" stroke-width="2"/><text x="' + x + '" y="26" font-size="24" font-weight="800" text-anchor="middle" fill="#8E2A1F">' + m + '</text>'; });
+      return '<svg class="px-vis" viewBox="0 0 ' + W + ' 100" role="img" aria-label="számegyenes">' + s + '</svg>'; }
+    return '';
+  }
+  function spk(a, attrs, lab) { return '<button type="button" class="pbtn o xs" data-a="' + a + '" ' + attrs + ' aria-label="' + esc(lab || hu('b_listen')) + '">' + ICO.spk + '</button>'; }
+  // ---- hang
+  function pgSay(pid, pre, i, es, hut) { const k = pid + (i == null ? '' : ':' + i); return [{ l: C.lang, k: 'p:' + pre + ':' + k, t: es, gap: 150 }, { l: 'hu', k: 'p:' + pre + 'h:' + k, t: hut }]; }
+  // ---- futás-kérdések
+  function pgQ(p, t, it, first) {
+    const audio = []; if (first) audio.push({ l: C.lang, k: 'p:k:' + t.id, t: t.text, gap: 250 });
+    audio.push({ l: C.lang, k: 'p:q:' + it.id, t: it.q }); if (first) audio.push({ l: 'hu', k: 'p:kh:' + t.id, t: t.text_hu, gap: 250 }); audio.push({ l: 'hu', k: 'p:qh:' + it.id, t: it.q_hu });
+    const q = { kind: it.kind, part: 'page', unit: p.unit, page: String(p.page), rec: { type: 'pg', id: it.id, label: it.q, hu: it.q_hu, unit: p.unit }, prompt: null,
+      ctx: { n: t.n, es: t.text, hu: t.text_hu, crop: crop(p, t.box, 'run'), pic: it.pic || t.pic || '', vis: it.vis || null, help: t.help || null, tid: t.id }, big: it.q, small: it.q_hu !== it.q ? it.q_hu : '', audio, answer: String(it.answer), alts: it.alts || [],
+      explain: it.answer_hu ? it.answer_hu : '', accent: C.lang === 'es' };
+    if (it.kind === 'choice') { q.options = (it.options || []).map((o, i) => ({ v: i, label: o.t, sm: o.hu && o.hu !== o.t ? o.hu : '', say: [{ l: C.lang, k: 'p:o:' + it.id + ':' + i, t: o.t, gap: 150 }].concat(o.hu && o.hu !== o.t ? [{ l: 'hu', k: 'p:oh:' + it.id + ':' + i, t: o.hu }] : []) })); q.answer = String(it.answer); const o = (it.options || [])[it.answer]; if (o) q.explain = o.t + (o.hu && o.hu !== o.t ? ' – ' + o.hu : '') + (it.answer_hu && it.answer_hu !== o.hu ? ' · ' + it.answer_hu : ''); }
+    if (it.kind === 'type') q.explain = (it.answer_hu || '');
+    return q;
+  }
+  function pgQs(p, tid) { const qs = []; p.tasks.forEach(t => { if (tid && t.id !== tid) return; let first = true; t.items.forEach(it => { if (!pgCheckable(it)) return; qs.push(pgQ(p, t, it, first)); first = false; }); }); return qs; }
+  function tfQ(p, x, i) { return { kind: 'choice', part: 'page', unit: p.unit, page: String(p.page), rec: { type: 'pgf', id: p.id + ':' + i, label: x.es, hu: x.hu, unit: p.unit }, prompt: 'pg_tf_q', big: x.es, small: x.hu,
+    ctx: { pic: '', n: '?', es: hu('pg_tf'), hu: S('pg_tf').l }, audio: pgSay(p.id, 'f', i, x.es, x.hu), answer: x.answer ? '1' : '0', options: [{ v: 1, label: hu('pg_true'), sm: S('pg_true').l, say: [sx('pg_true'), sx('pg_true', C.lang)] }, { v: 0, label: hu('pg_false'), sm: S('pg_false').l, say: [sx('pg_false'), sx('pg_false', C.lang)] }],
+    explain: (x.why_es || '') + (x.why_hu ? ' – ' + x.why_hu : ''), reveal: pgSay(p.id, 'y', i, x.why_es || '', x.why_hu || '') }; }
+  function pgWordQ(p, w, i, mode, all) { const others = shuffle(all.filter(o => o.w !== w.w)).slice(0, 3); const opts = shuffle([w].concat(others));
+    if (mode === 'hear') return { kind: 'choice', part: 'page', unit: p.unit, page: String(p.page), rec: { type: 'pgw', id: p.id + ':' + i, label: w.w, hu: w.hu, unit: p.unit }, prompt: 'q_hear', audio: [{ l: C.lang, k: 'p:w:' + p.id + ':' + i, t: w.w }], hearOnly: true, answer: w.w,
+      options: opts.map(o => ({ v: o.w, label: o.w, say: [{ l: C.lang, k: 'p:w:' + p.id + ':' + o._i, t: o.w }] })), explain: w.w + ' – ' + w.hu };
+    return { kind: 'choice', part: 'page', unit: p.unit, page: String(p.page), rec: { type: 'pgw', id: p.id + ':' + i, label: w.w, hu: w.hu, unit: p.unit }, prompt: 'q_meaning', big: w.w, audio: [{ l: C.lang, k: 'p:w:' + p.id + ':' + i, t: w.w }], answer: w.w,
+      options: opts.map(o => ({ v: o.w, label: o.hu, say: [{ l: 'hu', k: 'p:wh:' + p.id + ':' + o._i, t: o.hu }] })), explain: w.w + ' – ' + w.hu }; }
+  function pgGameQs(p, game) { const ws = (p.words || []).map((w, i) => Object.assign({ _i: i }, w)); const lr = p.learn || {}; let qs = [];
+    if (game === 'tf' || game === 'mix') qs = qs.concat((lr.tf || []).map((x, i) => tfQ(p, x, i)));
+    if ((game === 'words' || game === 'mix') && ws.length >= 2) ws.forEach(w => { qs.push(pgWordQ(p, w, w._i, 'see', ws)); if (game === 'words') qs.push(pgWordQ(p, w, w._i, 'hear', ws)); });
+    if (game === 'mix') qs = qs.concat(pgQs(p).slice(0, 8));
+    return shuffle(qs); }
+  function startPage(pid, tid) { const p = pgFind(pid); if (!p) return; pgPreload(pid); const qs = pgQs(p, tid); if (!qs.length) { toast(hu('pg_none')); return; } ST.pid = pid;
+    startRun({ mode: 'page', title: bookName(p.book) + ' · ' + p.page + '. ' + hu('pg_page'), qs, back: 'page', pid, tid: tid || null, instr: 'i_page_run' }); }
+  function startPgGame(pid, game) { const p = pgFind(pid); if (!p) return; pgPreload(pid); const qs = pgGameQs(p, game); if (!qs.length) { toast(hu('pg_none')); return; } ST.pid = pid;
+    startRun({ mode: 'pgame', title: p.page + '. ' + hu('pg_page') + ' · ' + hu({ tf: 'pg_tf', words: 'pg_wordgame', mix: 'pg_mix' }[game]), qs, back: 'page', pid, game, instr: 'i_page_run' }); }
+  // ---- nézetek
+  function vPages() {
+    const books = pgBooks(); if (!books.length) return topbar(hu('t_pages')) + '<div class="px-card">' + esc(hu('pg_empty')) + '</div>';
+    const bk = ST.pgbook && books.some(b => b.id === ST.pgbook) ? ST.pgbook : books[0].id; ST.pgbook = bk;
+    const us = pgUnits(bk); const au = activeUnits().filter(u => us.indexOf(u) >= 0); const un = ST.pgunit && us.indexOf(ST.pgunit) >= 0 ? ST.pgunit : (au[0] || us[0]); ST.pgunit = un;
+    const ps = pgData().filter(p => p.book === bk && p.unit === un).sort((a, b) => a.page - b.page);
+    return topbar(hu('t_pages')) + '<div class="px-row">' + instrBtn('i_pages') + '</div>' +
+      '<div class="px-chips">' + books.map(b => '<button type="button" class="chip' + (b.id === bk ? ' on' : '') + '" data-a="pgbook" data-b="' + b.id + '">' + esc(b.title_hu) + '</button>').join('') + '</div>' +
+      '<div class="px-chips">' + us.map(u => '<button type="button" class="chip' + (u === un ? ' on' : '') + '" data-a="pgunit" data-u="' + u + '">' + esc(unitTitle(u).length > 24 ? unitTitle(u).slice(0, 22) + '…' : unitTitle(u)) + '</button>').join('') + '</div>' +
+      '<div class="px-pgrid">' + ps.map(p => { const pc = pgPct(p.id); const pic = (p.learn && p.learn.sentences || []).map(s => s.pic).filter(Boolean).slice(0, 3).join('') || (p.words || []).map(w => w.pic).filter(Boolean).slice(0, 3).join('');
+        return '<button type="button" class="px-pg' + (pc >= 80 ? ' done' : '') + '" data-a="pgopen" data-p="' + p.id + '"><span class="top"><b>' + p.page + '.</b><span class="ics">' + em(pic, 30) + '</span></span><span class="t">' + esc(p.title) + '</span><small>' + esc(p.title_hu) + '</small><span class="m">' + p.tasks.length + ' ' + esc(hu('pg_tasks')) + (pc ? ' · <em>' + pgStars(p.id) + ' ' + pc + '%</em>' : '') + '</span></button>'; }).join('') + '</div>';
+  }
+  function tabBtn(k, lab, ico) { return '<button type="button" class="ltab' + (ST.pgtab === k ? ' on' : '') + '" data-a="pgtab" data-t="' + k + '">' + em(ico, 30) + '<span>' + esc(lab) + '</span></button>'; }
+  function vPage() {
+    const p = pgFind(ST.pid); if (!p) return vPages(); const same = pgData().filter(x => x.book === p.book).sort((a, b) => a.page - b.page); const ix = same.indexOf(p);
+    const prev = same[ix - 1], next = same[ix + 1]; const lr = p.learn || {}; if (!ST.pgtab) ST.pgtab = lr.sentences ? 'learn' : 'tasks'; const pc = pgPct(p.id);
+    const lesson = p.lesson ? '<button type="button" class="pbtn l sm" data-a="openc" data-u="' + p.unit + '" data-c="' + p.lesson + '"><span>' + esc(hu('pg_lesson')) + '</span>' + ICO.next + '</button>' : '';
+    let h = topbar(bookName(p.book) + ' · ' + p.page + '. ' + hu('pg_page')) +
+      '<div class="px-row"><button type="button" class="pbtn l sm" data-a="go" data-v="pages"><span>← ' + esc(hu('t_pages')) + '</span></button>' + (prev ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + prev.id + '"><span>← ' + prev.page + '.</span></button>' : '') + (next ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + next.id + '"><span>' + next.page + '. →</span></button>' : '') + lesson + '</div>' +
+      '<div class="px-card px-pghead"><div class="px-row" style="flex-wrap:nowrap">' + kitty(ST.mood, 70) + '<div style="flex:1;min-width:0"><h2 class="px-evt">' + esc(p.title) + ' ' + spk('pgsayt', 'data-p="' + p.id + '"') + '</h2><p class="px-evh">' + esc(p.title_hu) + '</p>' + (pc ? '<p class="px-note" style="margin:2px 0">' + pgStars(p.id) + ' ' + pc + '%</p>' : '') + '</div></div>' +
+      (p.summary_hu ? '<p class="px-pgsum">' + esc(p.summary_hu) + ' ' + spk('pgsaysum', 'data-p="' + p.id + '"') + '</p>' : '') +
+      (pgImgUrl(p) ? '<button type="button" class="chip' + (ST.pgshow ? ' on' : '') + '" data-a="pgshow">' + esc(hu(ST.pgshow ? 'pg_hide_page' : 'pg_show_page')) + '</button>' + (ST.pgshow ? crop(p, p.page_box || [0, 0, 1, 1], 'full') : '') : '') + '</div>' +
+      '<div class="px-ltabs">' + (lr.sentences ? tabBtn('learn', hu('pg_tab_learn'), '💡') : '') + tabBtn('words', hu('pg_words'), '🔤') + tabBtn('tasks', hu('pg_tasks_h'), '✏️') + tabBtn('play', hu('pg_tab_play'), '🎲') + '</div>';
+    if (ST.pgtab === 'learn') h += vPgLearn(p); else if (ST.pgtab === 'words') h += vPgWords(p); else if (ST.pgtab === 'play') h += vPgPlay(p); else h += vPgTasks(p);
+    return h;
+  }
+  function vPgLearn(p) { const lr = p.learn || {}; let h = '';
+    if (lr.intro) h += '<div class="px-card pgintro">' + em('🐱', 46) + '<div><b>' + esc(lr.intro.es) + '</b><small>' + esc(lr.intro.hu) + '</small></div>' + spk('pgsayi', 'data-p="' + p.id + '"') + '</div>';
+    h += '<div class="px-row"><button type="button" class="pbtn g" data-a="pgall2" data-p="' + p.id + '" data-w="s">' + ICO.spk + '<span>' + esc(hu('pg_read_all')) + '</span></button><button type="button" class="pbtn o" data-a="pgall2" data-p="' + p.id + '" data-w="s" data-o="es"><span>' + esc(hu('pg_only_lang')) + '</span></button></div>';
+    h += '<ol class="pgsent">' + (lr.sentences || []).map((s, i) => '<li class="' + (ST.pgcur === 's' + i ? 'cur' : '') + '">' + (s.pic ? '<span class="pp">' + em(s.pic, 46) + '</span>' : '<span class="pp n">' + (i + 1) + '</span>') + '<div class="tx"><div class="es"><button type="button" class="wb" data-a="pgsay1" data-p="' + p.id + '" data-k="s" data-i="' + i + '" data-l="es">' + esc(s.es) + '</button></div><div class="hu"><button type="button" class="wb" data-a="pgsay1" data-p="' + p.id + '" data-k="s" data-i="' + i + '" data-l="hu">' + esc(s.hu) + '</button></div>' + (s.vis ? visMore(s.vis) : '') + '</div>' + spk('pgsay2', 'data-p="' + p.id + '" data-k="s" data-i="' + i + '"') + '</li>').join('') + '</ol>';
+    if ((lr.remember || []).length) h += '<div class="px-card pgrem"><h3>' + em('📌', 28) + ' ' + esc(hu('pg_remember')) + '</h3>' + lr.remember.map((r, i) => '<div class="rr"><div><b>' + esc(r.es) + '</b><small>' + esc(r.hu) + '</small></div>' + spk('pgsay2', 'data-p="' + p.id + '" data-k="r" data-i="' + i + '"') + '</div>').join('') + '</div>';
+    if ((lr.dialogue || []).length) h += '<h3 class="px-h">' + em('💬', 28) + ' ' + esc(hu('pg_dialogue')) + ' <button type="button" class="pbtn o sm" data-a="pgall2" data-p="' + p.id + '" data-w="d">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button></h3><div class="pgchat">' +
+      lr.dialogue.map((d, i) => { const cat = /gat/i.test(d.who); return '<div class="bub ' + (cat ? 'l' : 'r') + (ST.pgcur === 'd' + i ? ' cur' : '') + '"><span class="who">' + (cat ? em('🐱', 26) : em(/mart/i.test(d.who) ? '👦' : '🧒', 26)) + esc(d.who) + '</span><button type="button" class="wb" data-a="pgsay2" data-p="' + p.id + '" data-k="d" data-i="' + i + '"><b>' + esc(d.es) + '</b><small>' + esc(d.hu) + '</small></button></div>'; }).join('') + '</div>';
+    h += '<div class="px-row center"><button type="button" class="pbtn b xl" data-a="pgtab" data-t="play">' + em('🎲', 30) + '<span>' + esc(hu('pg_go_play')) + '</span></button></div>';
+    return h; }
+  function vPgWords(p) { return '<div class="pgwords">' + (p.words || []).map((w, i) => '<button type="button" class="pgw" data-a="pgsayw" data-p="' + p.id + '" data-i="' + i + '">' + (w.pic ? em(w.pic, 54) : '<span class="pgem" style="width:54px;height:54px"><span class="pgemt" style="font-size:30px">🔤</span></span>') + '<b>' + esc(w.w) + '</b><small>' + esc(w.hu) + '</small></button>').join('') + '</div>' +
+      '<div class="px-row center"><button type="button" class="pbtn g xl" data-a="pggame" data-p="' + p.id + '" data-g="words">' + em('🎯', 30) + '<span>' + esc(hu('pg_wordgame')) + '</span></button></div>'; }
+  function itemHtml(it, show) {
+    const ans = it.kind === 'choice' ? ((it.options || [])[it.answer] || {}) : null;
+    const a = it.kind === 'choice' ? (ans.t || '') + (ans.hu && ans.hu !== ans.t ? ' – ' + ans.hu : '') : String(it.answer || '');
+    const opts = it.kind === 'choice' ? '<div class="px-pgopts">' + (it.options || []).map(o => '<span>' + esc(o.t) + (o.hu && o.hu !== o.t ? ' <small>' + esc(o.hu) + '</small>' : '') + '</span>').join('') + '</div>' : '';
+    return '<li class="px-pgi k-' + it.kind + '"><div class="qq">' + (it.pic ? '<span class="ip">' + em(it.pic, 34) + '</span>' : '') + '<div><b>' + esc(it.q) + '</b>' + (it.q_hu && it.q_hu !== it.q ? '<small>' + esc(it.q_hu) + '</small>' : '') + opts + (it.vis ? visMore(it.vis) : '') + '</div>' + spk('pgsayi2', 'data-i="' + esc(it.id) + '"') + '</div>' +
+      (show || (ST.pgsol && ST.pgsol[it.id]) ? '<div class="sol"><span>' + esc(hu('pg_solution')) + ':</span> <b>' + esc(a) + '</b>' + (it.answer_hu && it.answer_hu !== a ? '<small>' + esc(it.answer_hu) + '</small>' : '') + '</div>' :
+        it.kind === 'open' ? '<button type="button" class="chip" data-a="pgsol" data-i="' + esc(it.id) + '">' + esc(hu('pg_show_sol')) + '</button>' : '') + '</li>';
+  }
+  function vPgTasks(p) { const show = !!ST.pgall; const nq = pgQs(p).length;
+    let h = (nq ? '<button type="button" class="pbtn g xl" data-a="pgstart" data-p="' + p.id + '">' + ICO.next + '<span>' + esc(hu('pg_solve_all')) + '</span><small>' + nq + '</small></button>' : '') +
+      '<div class="px-row"><button type="button" class="chip' + (show ? ' on' : '') + '" data-a="pgall">' + esc(hu('pg_parent_sol')) + '</button></div>';
+    p.tasks.forEach(t => { const nc = t.items.filter(pgCheckable).length; const helpOn = ST.pghelp && ST.pghelp[t.id];
+      h += '<div class="px-card px-pgtask"><div class="px-row" style="flex-wrap:nowrap"><span class="px-pgn">' + esc(t.n) + '</span>' + (t.pic ? '<span class="tp">' + em(t.pic, 34) + '</span>' : '') + '<div class="tt"><b>' + esc(t.text) + '</b><small>' + esc(t.text_hu) + '</small></div>' + spk('pgsayk', 'data-t="' + esc(t.id) + '"') + '</div>' +
+        crop(p, t.box, 'task') +
+        (t.context ? '<div class="pgctx">' + em('👀', 26) + '<div><b>' + esc(t.context.es) + '</b><small>' + esc(t.context.hu) + '</small></div>' + spk('pgsayc', 'data-t="' + esc(t.id) + '"') + '</div>' : '') +
+        (t.help ? (helpOn ? '<div class="pghelp">' + em('💡', 26) + '<div><b>' + esc(t.help.es) + '</b><small>' + esc(t.help.hu) + '</small></div></div>' : '<button type="button" class="chip" data-a="pghelp" data-t="' + esc(t.id) + '">' + em('💡', 20) + ' ' + esc(hu('pg_help')) + '</button>') : '') +
+        '<ol class="px-pgis">' + t.items.map(it => itemHtml(it, show)).join('') + '</ol>' +
+        (nc ? '<button type="button" class="pbtn g" data-a="pgstart" data-p="' + p.id + '" data-t="' + esc(t.id) + '">' + ICO.next + '<span>' + esc(hu('pg_solve_task')) + '</span><small>' + nc + '</small></button>' : '') + '</div>'; });
+    return h; }
+  function vPgPlay(p) { const lr = p.learn || {}; const g = (k, ico, lab, sub, n) => n ? '<button type="button" class="px-tile pgtile" data-a="pggame" data-p="' + p.id + '" data-g="' + k + '"><span class="ic">' + em(ico, 50) + '</span><span>' + esc(lab) + '</span><small>' + esc(sub || '') + ' · ' + n + '</small></button>' : '';
+    return '<div class="px-tiles">' + g('tf', '✅❌', hu('pg_tf'), S('pg_tf').l, (lr.tf || []).length) + g('words', '🎯', hu('pg_wordgame'), S('pg_wordgame').l, (p.words || []).length * 2) +
+      g('mix', '🌈', hu('pg_mix'), S('pg_mix').l, (lr.tf || []).length + (p.words || []).length + Math.min(8, pgQs(p).length)) +
+      (pgQs(p).length ? '<button type="button" class="px-tile pgtile" data-a="pgstart" data-p="' + p.id + '"><span class="ic">' + em('✏️', 50) + '</span><span>' + esc(hu('pg_solve_all')) + '</span><small>' + pgQs(p).length + '</small></button>' : '') + '</div>'; }
+  function pgItem(iid) { for (const p of pgData()) for (const t of p.tasks) for (const it of t.items) if (it.id === iid) return { p, t, it }; return null; }
+  function pgTask(tid) { for (const p of pgData()) for (const t of p.tasks) if (t.id === tid) return { p, t }; return null; }
+  function sayLearnAll(p, w, only) { const lr = p.learn || {}; const list = w === 'd' ? (lr.dialogue || []) : (lr.sentences || []); const items = [];
+    list.forEach((x, i) => { items.push({ l: C.lang, k: 'p:' + w + ':' + p.id + ':' + i, t: x.es, gap: 250, cur: w + i }); if (!only) items.push({ l: 'hu', k: 'p:' + w + 'h:' + p.id + ':' + i, t: x.hu, gap: 450, cur: w + i }); });
+    // a kiemelést lépésenként frissítjük (csak a kártyán)
+    let i = 0; const step = () => { if (i >= items.length) { ST.pgcur = null; hl(); return; } const it = items[i++]; ST.pgcur = it.cur; hl(); say([it], step); }; step(); }
+  function hl() { try { el.querySelectorAll('.pgsent li, .pgchat .bub').forEach((n, idx) => n.classList.remove('cur')); if (!ST.pgcur) return; const w = ST.pgcur[0], i = +ST.pgcur.slice(1); const list = el.querySelectorAll(w === 'd' ? '.pgchat .bub' : '.pgsent li'); if (list[i]) { list[i].classList.add('cur'); } } catch (e) { } }
+  function pgAct(a, d) {
+    switch (a) {
+      case 'pgbook': ST.pgbook = d.b; ST.pgunit = null; render(); return true;
+      case 'pgunit': ST.pgunit = d.u; render(); return true;
+      case 'pgopen': { pgPreload(d.p); const keep = ST.pid === d.p; go('page', { pid: d.p, pgsol: keep ? ST.pgsol : {}, pghelp: keep ? ST.pghelp : {}, pgtab: keep ? ST.pgtab : null, pgshow: false }); return true; }
+      case 'pgtab': ST.pgtab = d.t; stopAll(); render({ top: false }); return true;
+      case 'pgshow': ST.pgshow = !ST.pgshow; render(); return true;
+      case 'pgall': ST.pgall = !ST.pgall; render(); return true;
+      case 'pgsol': ST.pgsol = ST.pgsol || {}; ST.pgsol[d.i] = 1; render(); return true;
+      case 'pghelp': { ST.pghelp = ST.pghelp || {}; ST.pghelp[d.t] = 1; render(); const o = pgTask(d.t); if (o && o.t.help) say([{ l: 'hu', k: 'p:hh:' + o.t.id, t: o.t.help.hu, gap: 200 }, { l: C.lang, k: 'p:h:' + o.t.id, t: o.t.help.es }]); return true; }
+      case 'pgstart': startPage(d.p, d.t); return true;
+      case 'pggame': startPgGame(d.p, d.g); return true;
+      case 'pgsayt': { const p = pgFind(d.p); if (p) say([{ l: C.lang, k: 'p:t:' + p.id, t: p.title }, { l: 'hu', k: 'p:th:' + p.id, t: p.title_hu }]); return true; }
+      case 'pgsaysum': { const p = pgFind(d.p); if (p) say([{ l: 'hu', k: 'p:sum:' + p.id, t: p.summary_hu }]); return true; }
+      case 'pgsayi': { const p = pgFind(d.p); if (p && p.learn && p.learn.intro) say(pgSay(p.id, 'i', null, p.learn.intro.es, p.learn.intro.hu)); return true; }
+      case 'pgsay1': { const p = pgFind(d.p); const x = p && (p.learn || {})[{ s: 'sentences', r: 'remember', d: 'dialogue' }[d.k]][+d.i]; if (!x) return true; const es = { l: C.lang, k: 'p:' + d.k + ':' + p.id + ':' + d.i, t: x.es, gap: 200 }, h2 = { l: 'hu', k: 'p:' + d.k + 'h:' + p.id + ':' + d.i, t: x.hu, gap: 200 }; say(d.l === 'hu' ? [h2, es] : [es, h2]); return true; }
+      case 'pgsay2': { const p = pgFind(d.p); const x = p && (p.learn || {})[{ s: 'sentences', r: 'remember', d: 'dialogue' }[d.k]][+d.i]; if (x) say(pgSay(p.id, d.k, d.i, x.es, x.hu)); return true; }
+      case 'pgall2': { const p = pgFind(d.p); if (p) sayLearnAll(p, d.w, !!d.o); return true; }
+      case 'pgsayw': { const p = pgFind(d.p); const w = p && p.words[+d.i]; if (w) say([{ l: C.lang, k: 'p:w:' + p.id + ':' + d.i, t: w.w }, { l: 'hu', k: 'p:wh:' + p.id + ':' + d.i, t: w.hu }]); return true; }
+      case 'pgsayk': { const o = pgTask(d.t); if (o) say([{ l: C.lang, k: 'p:k:' + o.t.id, t: o.t.text }, { l: 'hu', k: 'p:kh:' + o.t.id, t: o.t.text_hu }]); return true; }
+      case 'pgsayc': { const o = pgTask(d.t); if (o && o.t.context) say([{ l: C.lang, k: 'p:c:' + o.t.id, t: o.t.context.es }, { l: 'hu', k: 'p:ch:' + o.t.id, t: o.t.context.hu }]); return true; }
+      case 'pgsayi2': { const o = pgItem(d.i); if (o) say([{ l: C.lang, k: 'p:q:' + o.it.id, t: o.it.q }, { l: 'hu', k: 'p:qh:' + o.it.id, t: o.it.q_hu }]); return true; }
+      case 'pgrunhelp': { const q = curQ(); if (q && q.ctx && q.ctx.help) { ST.run.showHelp = true; render(); say([{ l: 'hu', k: 'p:hh:' + q.ctx.tid, t: q.ctx.help.hu, gap: 200 }, { l: C.lang, k: 'p:h:' + q.ctx.tid, t: q.ctx.help.es }]); } return true; }
+    }
+    return false;
+  }
+  function pgFinish(R) { const n = nAns(R) || 1; const pc = Math.round(R.score / n * 100); if (R.mode === 'page' && !R.tid) { P.pg = P.pg || {}; const old = P.pg[R.pid] || 0; const s0 = starsOf(old), s1 = starsOf(pc); if (pc > old) P.pg[R.pid] = pc; R.lessonPct = pc; R.newStars = Math.max(0, s1 - s0); markActive(); if (s1 >= 2) celebrate(s1 === 3); return R.newStars * 2 + 2; } R.lessonPct = pc; markActive(); if (pc >= 80) celebrate(pc >= 95); return pc >= 80 ? 2 : pc >= 50 ? 1 : 0; }
+  function ctxHtml(q) { if (!q.ctx) return ''; const c = q.ctx; const R = ST.run;
+    return (c.es ? '<div class="px-ctx"><span class="px-pgn">' + esc(c.n) + '</span><div><b>' + esc(c.es) + '</b><small>' + esc(c.hu) + '</small></div></div>' : '') + (c.crop || '') +
+      (c.pic || c.vis ? '<div class="px-ctxpic">' + (c.pic ? em(c.pic, 56) : '') + (c.vis ? visMore(c.vis) : '') + '</div>' : '') +
+      (c.help ? (R && R.showHelp ? '<div class="pghelp">' + em('💡', 24) + '<div><b>' + esc(c.help.es) + '</b><small>' + esc(c.help.hu) + '</small></div></div>' : '<button type="button" class="chip" data-a="pgrunhelp">' + em('💡', 20) + ' ' + esc(hu('pg_help')) + '</button>') : ''); }
+  const PGCSS = '.optw{position:relative;display:flex;min-width:0}.optw>.opt{flex:1;width:100%;padding-right:46px}.optw .osay{position:absolute;top:6px;right:6px;width:40px;height:40px;border-radius:20px;border:2px solid #B85A12;background:#FFF1E4;color:#B85A12;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}.optw .osay svg{width:20px;height:20px}.optw>.opt{word-break:normal;overflow-wrap:break-word;hyphens:auto}@media (max-width:520px){.optw>.opt{font-size:20px;padding:10px 40px 10px 10px}.optw .osay{width:34px;height:34px;top:4px;right:4px}}.px-pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:10px 0}.px-pg{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;background:#fff;border:2px solid #F2C98F;border-radius:16px;padding:10px;cursor:pointer;font:inherit;color:#3A2A12;min-height:110px}.px-pg .top{display:flex;width:100%;justify-content:space-between;align-items:center}.px-pg b{font-size:22px;color:#B85A12}.px-pg .t{font-weight:800;font-size:14px;line-height:1.2}.px-pg small{color:#6B5A44;font-size:12.5px;line-height:1.2}.px-pg .m{margin-top:auto;font-size:11.5px;color:#22603C}.px-pg .m em{color:#B8860B;font-style:normal;font-weight:800}.px-pg.done{border-color:#6BBF59;background:#F1FAEE}.px-pg:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(0,0,0,.08)}' +
+    '.pgem{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;flex:0 0 auto}.pgem svg{width:100%;height:100%}.pgemt{line-height:1}' +
+    '.px-pghead h2{margin:0}.px-pgsum{margin:8px 0;color:#4A3B26;line-height:1.45}.px-pgtask .tt{display:flex;flex-direction:column;flex:1;min-width:0}.px-pgtask .tt small,.px-ctx small,.pgctx small,.pghelp small{color:#6B5A44;font-size:14px}.px-pgn{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 6px;border-radius:16px;background:#F2891F;color:#fff;font-weight:900;font-size:15px;flex:0 0 auto}' +
+    '.px-pgis{list-style:none;margin:8px 0;padding:0;display:flex;flex-direction:column;gap:6px}.px-pgi{background:#FFF9EC;border-radius:12px;padding:8px}.px-pgi .qq{display:flex;gap:8px;align-items:flex-start}.px-pgi .qq>div{display:flex;flex-direction:column;min-width:0;overflow-wrap:anywhere;flex:1}.px-pgi small{color:#6B5A44}.px-pgi .sol{margin-top:4px;color:#8E2A1F;display:flex;flex-direction:column}.px-pgi .sol span{font-size:12px;font-weight:800}.px-pgopts{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}.px-pgopts span{background:#fff;border:1px solid #E8D5B0;border-radius:8px;padding:1px 6px;font-size:13px}' +
+    '.pbtn.xs{min-width:36px;min-height:36px;padding:4px;flex:0 0 auto}.pbtn.xs svg{width:18px;height:18px}.px-ctx{display:flex;gap:8px;align-items:flex-start;background:#FFF1E4;border-radius:12px;padding:8px 10px;margin:6px 0}.px-ctx>div,.pgctx>div,.pghelp>div,.pgintro>div,.pgrem .rr>div{display:flex;flex-direction:column;min-width:0;flex:1}.px-ctxpic{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin:6px 0}.px-pg .t,.px-pg small{overflow-wrap:anywhere}' +
+    '.pgcrop{position:relative;overflow:hidden;border-radius:12px;border:2px solid #E8D5B0;background:#fff;margin:8px 0;height:0}.pgcrop img{position:absolute;max-width:none;height:auto}.pgcrop.run{max-width:640px;margin:8px auto}.pgcrop.task{max-width:720px}.pgcrop.full{margin-top:10px;max-width:900px}' +
+    '.pgctx,.pghelp,.pgintro{display:flex;gap:8px;align-items:flex-start;border-radius:12px;padding:8px 10px;margin:6px 0}.pgctx{background:#EAF4FB}.pghelp{background:#FFF6D6;border:2px dashed #F2C94C}.pgintro{background:#fff;border:3px solid #F7C948}.pgintro b{font-size:18px}' +
+    '.px-ltabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.px-ltabs .ltab{display:inline-flex;align-items:center;gap:6px;border:2px solid #F2891F;background:#fff;color:#B85A12;border-radius:999px;padding:6px 14px;font:inherit;font-weight:800;cursor:pointer;min-height:44px}.px-ltabs .ltab.on{background:#F2891F;color:#fff}' +
+    '.pgsent{list-style:none;margin:8px 0;padding:0;display:flex;flex-direction:column;gap:8px}.pgsent li{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:14px;padding:10px;border:2px solid #F3E3C3;transition:background .2s}.pgsent li.cur,.pgchat .bub.cur{background:#FFF1B8;border-color:#F2C94C}.pgsent .pp{flex:0 0 52px;display:flex;justify-content:center}.pgsent .pp.n{width:40px;height:40px;border-radius:20px;background:#6BBF59;color:#fff;font-weight:900;align-items:center;flex:0 0 40px}.pgsent .tx{flex:1;min-width:0}.pgsent .es .wb{font-weight:800;font-size:17px;text-align:left}.pgsent .hu .wb{color:#22603C;font-weight:700;text-align:left}' +
+    '.wb{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-align:left}.wb:hover{text-decoration:underline dotted}' +
+    '.pgrem{background:#FFFBEA;border:3px solid #F7C948}.pgrem h3{margin:0 0 6px;display:flex;align-items:center;gap:6px}.pgrem .rr{display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-top:1px dashed #E8D5B0}.pgrem .rr:first-of-type{border-top:0}' +
+    '.pgchat{display:flex;flex-direction:column;gap:8px;margin:8px 0}.pgchat .bub{max-width:85%;border-radius:18px;padding:8px 12px;border:2px solid #E8D5B0;background:#fff}.pgchat .bub.l{align-self:flex-start;border-bottom-left-radius:4px}.pgchat .bub.r{align-self:flex-end;background:#EAF7E6;border-bottom-right-radius:4px}.pgchat .who{display:flex;align-items:center;gap:4px;font-size:12px;font-weight:800;color:#6B5A44}.pgchat .wb{display:flex;flex-direction:column}.pgchat small{color:#22603C}' +
+    '.pgwords{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:10px 0}.pgw{display:flex;flex-direction:column;align-items:center;gap:4px;background:#fff;border:2px solid #F3E3C3;border-radius:16px;padding:10px;font:inherit;cursor:pointer;text-align:center}.pgw b{font-size:16px}.pgw small{color:#22603C;font-weight:700}.pgw:hover{transform:scale(1.04)}' +
+    '.px-blocks{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin:6px 0}.px-blocks .bk{display:flex;flex-direction:column;align-items:center;gap:2px}.px-blocks .bi{display:flex;flex-wrap:wrap;gap:2px;max-width:150px;align-items:flex-end}.px-blocks small{font-weight:800;color:#1F4E79}' +
+    '.pgtile .ic{height:56px}.ip,.tp{flex:0 0 auto}.px-opts .oi .pgem{margin:0 auto}';
+  function pgCss() { try { if (document.getElementById('pg-css')) return; const s = document.createElement('style'); s.id = 'pg-css'; s.textContent = PGCSS; document.head.appendChild(s); } catch (e) { } }
+  // ---- hang-sprite (darabonként; X.pages.pchunk[oldal] = darab)
+  const pgbuf = {}, pgel = {};
+  function pgSeg(lang, key) { const sp = X.pages && X.pages.sprite && X.pages.sprite[lang]; return sp ? sp[key] : null; }
+  function pgUrl(ch, lang) { const a = X.pages && X.pages.audio && X.pages.audio[ch]; return a ? a[lang] : null; }
+  function pgPreload(pidOrChunk) { const ch = (X.pages && X.pages.pchunk && X.pages.pchunk[pidOrChunk]) || pidOrChunk; [C.lang, 'hu'].forEach(l => { const u = pgUrl(ch, l); const id = ch + ':' + l; if (!u) return;
+    if (C.xMode === 'ctx') { try { xctx = (H.ctx && H.ctx()) || xctx || new (root.AudioContext || root.webkitAudioContext)(); } catch (e) { } if (xctx && !pgbuf[id] && !pgbuf['_p' + id]) { pgbuf['_p' + id] = 1; fetch(u).then(r => r.arrayBuffer()).then(ab => xctx.decodeAudioData(ab)).then(b => { pgbuf[id] = b; }).catch(() => { pgbuf['_p' + id] = 0; }); } }
+    else if (!pgel[id]) { const a = new Audio(u); a.preload = 'auto'; pgel[id] = a; } }); }
+  function pgPlay(lang, key, text, done) {
+    const seg = pgSeg(lang, key); const id = seg ? seg[2] + ':' + lang : '';
+    if (seg && C.xMode === 'ctx' && xctx && pgbuf[id]) { try { if (xctx.state === 'suspended') xctx.resume(); const s = xctx.createBufferSource(); s.buffer = pgbuf[id]; s.connect(xctx.destination); s.start(0, seg[0], seg[1] + 0.1); xsrc = s; s.onended = () => { if (xsrc === s) xsrc = null; done(); }; return; } catch (e) { } }
+    if (seg && C.xMode === 'el') { if (!pgel[id]) pgPreload(seg[2]); const a = pgel[id]; if (a) { const stopAt = seg[0] + seg[1] + 0.1; xcur = a;
+      const go2 = () => { try { a.currentTime = seg[0]; a.play().catch(() => { }); } catch (e) { } const tick = () => { if (xcur !== a) return; if (a.currentTime >= stopAt || (a.paused && a.currentTime > seg[0] + 0.3)) { a.pause(); xcur = null; done(); } else xtimer = setTimeout(tick, 50); }; xtimer = setTimeout(tick, 50); };
+      if (a.readyState >= 1) go2(); else { a.addEventListener('loadedmetadata', go2, { once: true }); a.load(); } return; } }
+    if (seg && C.xMode === 'ctx') pgPreload(seg[2]);
+    if (root.speechSynthesis && text) { try { const u = new SpeechSynthesisUtterance(text.replace(/[\u{1F000}-\u{1FAFF}☀-➿️]/gu, '')); u.lang = lang === 'es' ? 'es-ES' : lang === 'en' ? 'en-GB' : 'hu-HU'; u.onend = () => done(); u.onerror = () => done(); root.speechSynthesis.speak(u); return; } catch (e) { } }
+    setTimeout(done, 300);
   }
   // ================= nézetek =================
   function kitty(mood, size, cls) { mood = mood || 'idle'; let s = C.kitty[mood] || ''; const acc = Object.keys(P.worn).map(slot => X.acc.find(a => a.id === P.worn[slot])).filter(Boolean).map(a => a.svg).join('');
@@ -619,7 +1245,7 @@ var LQ = (function () {
   }
   function vHome() {
     const ev = nextEvent(); ST.curEvent = ev; const done = !!P.mission[today()];
-    const tiles = [['map', 't_map', 'T9'], ['blitz', 't_blitz', 'T10'], ['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ['duel', 't_duel', 'T11'], ['space', 't_space', 'T12']];
+    const tiles = mqOn() ? [['mq', 't_mq', 'T10']] : []; if (pgData().length) tiles.push(['pages', 't_pages', 'T5']); tiles.push(['map', 't_map', 'T9'], ['blitz', 't_blitz', 'T10'], ['cards', 't_cards', 'T1'], ['games', 't_games', 'T2'], ['duel', 't_duel', 'T11'], ['space', 't_space', 'T12']);
     if (C.subj === 'mat') tiles.push(['bingo', 't_bingo', 'T13']); tiles.push(['bubble', 't_bubble', 'T14'], ['build', 't_builder', 'T15'], ['room', 't_room', 'T16']);
     if (extraKind()) { const ek = extraKind(); tiles.push([ek, { spelling: 't_spelling', gen: 't_gen', dictado: 't_dictado', tasks: 't_tasks' }[ek], 'T3']); }
     if (Plus.speechOK()) tiles.push(['speak', 't_speak', 'T4']); tiles.push(['testmenu', 't_test', 'T5'], ['album', 't_album', 'T8'], ['shop', 't_shop', 'T6'], ['parent', 't_parent', 'T7']);
@@ -631,7 +1257,7 @@ var LQ = (function () {
       qnChips() + '<button type="button" class="pbtn g xl" data-a="mission">' + (done ? ICO.ok : ICO.next) + '<span>' + esc(hu(done ? 'b_mission_again' : 'b_mission')) + '</span><small>' + esc(hu(ev ? 'mission_sub' : 'mission_sub_review')) + '</small></button>' +
       '<div class="px-tiles">' + tiles.map(t => '<button type="button" class="px-tile ' + t[2] + '" data-a="' + (['blitz', 'duel', 'space', 'bingo', 'bubble', 'build'].indexOf(t[0]) >= 0 ? t[0] : 'go') + '" data-v="' + t[0] + '"><span class="ic">' + tileIcon(t[0]) + '</span><span>' + esc(hu(t[1])) + '</span><small>' + esc(S(t[1]).l) + '</small></button>').join('') + '</div>';
   }
-  function tileIcon(k) { const m = { cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || FUNICO[k] || '') + '</svg>'; }
+  function tileIcon(k) { if (k === 'pages' && X.pages && X.pages.emo && X.pages.emo['1F4D6']) return '<span class="pgem" style="width:56px;height:56px">' + X.pages.emo['1F4D6'] + '</span>'; const m = { mq: '<rect x="8" y="8" width="48" height="48" rx="12" fill="#3B82C4" stroke="#1F4E79" stroke-width="3"/><text x="32" y="30" font-size="20" font-weight="900" text-anchor="middle" fill="#fff">7×8</text><text x="32" y="50" font-size="18" font-weight="900" text-anchor="middle" fill="#F7C948">=56</text>', pages: '<path d="M8 14 q12 -6 24 0 v38 q-12 -6 -24 0z" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M32 14 q12 -6 24 0 v38 q-12 -6 -24 0z" fill="#FFF1E4" stroke="#1F4E79" stroke-width="3"/><path d="M14 24 h12 M14 32 h12 M38 24 h12 M38 32 h8" stroke="#F2891F" stroke-width="3"/>', cards: '<rect x="10" y="22" width="40" height="30" rx="5" fill="#fff" stroke="#B85A12" stroke-width="3"/><rect x="22" y="12" width="40" height="30" rx="5" fill="#FFF1E4" stroke="#B85A12" stroke-width="3"/>', games: '<rect x="10" y="22" width="44" height="26" rx="13" fill="#6BBF59" stroke="#22603C" stroke-width="3"/><path d="M22 35 h12 M28 29 v12" stroke="#fff" stroke-width="4"/><circle cx="42" cy="32" r="3" fill="#fff"/><circle cx="48" cy="38" r="3" fill="#fff"/>', dictado: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/><path d="M40 52 h20" stroke="#B85A12" stroke-width="3"/>', tasks: '<rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#22603C" stroke-width="3"/><path d="M20 24 l5 5 9 -10 M20 42 l5 5 9 -10" stroke="#6BBF59" stroke-width="4" fill="none"/><path d="M38 26 h8 M38 44 h8" stroke="#22603C" stroke-width="3"/>', album: '<rect x="8" y="10" width="48" height="44" rx="6" fill="#FFF1E4" stroke="#7D3C98" stroke-width="3"/><circle cx="22" cy="26" r="7" fill="#F7C948"/><rect x="34" y="19" width="14" height="14" rx="3" fill="#6BBF59"/><path d="M16 44 h32" stroke="#7D3C98" stroke-width="3"/>', spelling: '<path d="M14 48 l6 -22 l24 10 z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/><path d="M20 26 L50 12" stroke="#B85A12" stroke-width="5"/>', gen: '<text x="32" y="46" font-size="40" font-weight="900" text-anchor="middle" fill="#B85A12">×</text>', speak: '<rect x="25" y="8" width="14" height="28" rx="7" fill="#E86A7A" stroke="#8E2A1F" stroke-width="3"/><path d="M16 30 a16 16 0 0 0 32 0 M32 46 v10" stroke="#8E2A1F" stroke-width="3" fill="none"/>', testmenu: '<rect x="14" y="8" width="36" height="46" rx="4" fill="#fff" stroke="#1F4E79" stroke-width="3"/><path d="M20 20 h24 M20 30 h24 M20 40 h14" stroke="#1F4E79" stroke-width="3"/>', shop: '<path d="M32 10 l6 14 15 2 -11 10 3 15 -13 -8 -13 8 3 -15 -11 -10 15 -2z" fill="#F7C948" stroke="#B8860B" stroke-width="3"/>', parent: '<circle cx="32" cy="22" r="10" fill="#9AA7B4"/><path d="M12 54 q0 -20 20 -20 q20 0 20 20z" fill="#9AA7B4"/>' }; return '<svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">' + (m[k] || FUNICO[k] || '') + '</svg>'; }
   // ---- szókártyák
   function vCards() {
     const units = activeUnits(); const p = poolFor(units); const cnt = [0, 0, 0, 0, 0, 0]; p.forEach(w => cnt[boxOf(w.id)]++);
@@ -798,26 +1424,30 @@ var LQ = (function () {
   function vRun() {
     const R = ST.run; if (!R) return ''; if (R.done) return vRunDone();
     const q = curQ(); const n = R.gen ? (R.limit || R.qs.length) : R.qs.length; const prog = R.endless ? (R.i + 1) + '.' : (R.i + 1) + ' / ' + n;
-    let h = topbar(R.title) + '<div class="px-row"><span class="px-prog">' + esc(prog) + '</span>' + comboBadge(R) + (R.end ? '<span class="px-timer" id="px-timer">' + (function () { const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); return Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); })() + '</span>' : '') +
+    let h = topbar(R.title) + '<div class="px-row"><span class="px-prog">' + esc(prog) + '</span>' + comboBadge(R) + (R.end ? '<span class="px-timer" id="px-timer">' + (function () { const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); return Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); })() + '</span>' : '') + (R.sw ? '<span class="px-timer" id="px-sw">⏱ ' + mqFmt((Date.now() - R.start) / 1000) + '</span>' : '') +
       (q.audio || q.task || q.items ? '<button type="button" class="pbtn o sm" data-a="qsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button>' : '') + (R.instr && R.mode !== 'test' ? instrBtn(R.instr) : '') + '</div>';
     const showFb = R.ans !== null && R.mode !== 'test'; const answered = showFb;
     if (R.boss) h += bossHtml(R); if (R.duel) h += duelHtml(R); if (R.fast && R.flashOk != null) { h += '<div class="fx-flash ' + (R.flashOk ? 'ok' : 'bad') + '">' + (R.flashOk ? '✔' : '✘') + '</div>'; R.flashOk = null; }
     if (R.mode === 'test') { const n2 = R.qs.length || 1; const me = R.score / n2, riv = Math.min(1, R.res.length * 0.75 / n2);
       h += '<div class="px-race" aria-hidden="true"><div class="lane me"><span class="fin"></span><span class="car" style="left:calc(' + (me * 100) + '% - ' + Math.round(me * 56) + 'px)">' + carSvg('#3B82C4') + '</span></div><div class="lane"><span class="fin"></span><span class="car" style="left:calc(' + (riv * 100) + '% - ' + Math.round(riv * 56) + 'px)">' + carSvg('#D9362B') + '</span></div></div>'; }
+    h += ctxHtml(q);
     if (q.fix && R.mode !== 'test') h += '<div class="px-fix">' + esc(hu('fix_badge')) + '</div>';
-    h += '<div class="px-q">' + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96, showFb && R.ok ? (ST.kanim || 'k-jump') : '') + '</div>' : '') + '<div class="px-qb">';
+    h += '<div class="px-q' + (showFb ? (R.ok ? ' okfx' : ' badfx') : '') + '">' + (q.again ? '<div class="px-fix">↻ ' + esc(mt('again')) + '</div>' : '') + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96, showFb && R.ok ? (ST.kanim || 'k-jump') : '') + '</div>' : '') + '<div class="px-qb">';
     if (q.prompt) h += '<div class="px-prompt">' + bi(q.prompt) + '</div>';
     if (q.big) h += '<div class="px-bigq' + (q.part === 'math' ? ' math' : '') + '">' + esc(q.big) + '</div>'; if (q.small) h += '<div class="px-smallq">' + esc(q.small) + '</div>';
     if (q.task && q.task.vis) h += visHtml(q.task.vis, q.task);
+    if (q.mq && q.mq.vis) h += mqVis(q.mq.vis, q);
     h += '</div></div>';
     if (q.kind === 'choice') h += '<div class="px-opts n' + q.options.length + '">' + q.options.map((o, i) => { let cls = 'opt big'; if (answered) { if (String(o.v) === String(q.answer)) cls += ' correct'; else if (String(o.v) === String(R.ans)) cls += ' wrong'; else cls += ' dim'; }
-      return '<button type="button" class="' + cls + '" data-a="pick" data-i="' + i + '">' + (o.icon ? '<span class="oi">' + o.icon + '</span>' : '') + '<span>' + esc(o.label) + '</span>' + (o.es ? '<small>' + esc(o.es) + ' · ' + esc(o.hu) + '</small>' : o.sm ? '<small>' + esc(o.sm) + '</small>' : '') + '</button>'; }).join('') + '</div>';
+      return '<div class="optw"><button type="button" class="' + cls + '" data-a="pick" data-i="' + i + '">' + (o.icon ? '<span class="oi">' + o.icon + '</span>' : '') + '<span>' + esc(o.label) + '</span>' + (o.es ? '<small>' + esc(o.es) + ' · ' + esc(o.hu) + '</small>' : o.sm ? '<small>' + esc(o.sm) + '</small>' : '') + '</button>' + (o.icon && !o.label ? '' : '<button type="button" class="osay" data-a="osay" data-i="' + i + '" aria-label="' + esc(hu('b_listen')) + ': ' + esc(o.label) + '">' + ICO.spk + '</button>') + '</div>'; }).join('') + '</div>';
     else if (q.kind === 'type') h += '<div class="px-type"><input id="px-input" class="px-input" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" value="' + esc(R.typed) + '" ' + (answered ? 'disabled' : '') + ' placeholder="' + esc(hu('type_here')) + '" aria-label="' + esc(hu('type_here')) + '"><button type="button" class="pbtn g" data-a="check"' + (answered ? ' disabled' : '') + '>' + ICO.ok + '<span>' + esc(hu('b_check')) + '</span></button></div>' + (C.lang === 'es' && !answered ? '<div class="px-chars">' + ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü'].map(c => '<button type="button" class="chip" data-a="ch" data-c="' + c + '">' + c + '</button>').join('') + '</div>' : '') + (R.ok === 'retry' ? '<div class="px-fb bad">' + esc(hu('fb_retry')) + '</div>' : '');
     else if (q.kind === 'num') h += numpadHtml(R, answered);
     else if (q.kind === 'line') h += lineHtml(R, q, answered);
+    else if (q.mq) h += mqInput(R, q, answered);
+    if (!showFb && q.kind !== 'flash' && !R.duel) h += skipBtn(R);
     if (showFb) {
       const lowOk = String(R.ans == null ? '' : R.ans).trim().toLowerCase(); const accent = q.accent && R.ok && q.kind === 'type' && lowOk !== q.answer.toLowerCase() && !(q.alts || []).some(a => a.toLowerCase() === lowOk);
-      const hint = ((!R.ok && q.kind === 'type') || accent) ? (accent ? '<span class="px-exp">' + esc(hu('accent_note')) + '</span> ' : '') + '<b class="px-answer">' + esc(q.answer) + '</b>' : '';
+      const hint = (q.mq && !R.ok) ? '<b class="px-answer">' + esc(mqAnsLabel(q)) + '</b>' : ((!R.ok && q.kind === 'type') || accent) ? (accent ? '<span class="px-exp">' + esc(hu('accent_note')) + '</span> ' : '') + '<b class="px-answer">' + esc(q.answer) + '</b>' : '';
       h += '<div class="px-fb ' + (R.ok ? 'good' : 'bad') + '"><b>' + esc(hu(R.ok ? 'fb_ok_title' : 'fb_bad_title')) + '</b> ' + hint + (q.explain && q.kind !== 'type' ? '<span class="px-exp">' + esc(q.explain) + '</span>' : '') + (ST.levelUp ? '<span class="px-lvl">' + esc(hu('level_up')) + ' ★</span>' : '') + '</div>' +
         '<div class="px-row"><button type="button" class="pbtn g xl" data-a="next">' + ICO.next + '<span>' + esc(hu(R.endless || R.i + 1 < n ? 'b_next' : 'b_result')) + '</span></button>' + (R.endless ? '<button type="button" class="pbtn l" data-a="finish"><span>' + esc(hu('b_done')) + '</span></button>' : '') + '</div>';
     }
@@ -843,12 +1473,13 @@ var LQ = (function () {
   function vFlashRun() { const R = ST.run, q = curQ(); const w = q.w; return topbar(R.title) + '<div class="px-prog">' + (R.i + 1) + ' / ' + R.qs.length + '</div><div class="px-flash' + (R.flipped ? ' flip' : '') + '">' + (w.icon ? '<div class="px-ico">' + w.icon + '</div>' : '') + '<div class="px-fw">' + esc(w.es) + '</div>' + (R.flipped ? '<div class="px-fh">' + esc(w.hu) + '</div>' : '') + '<div class="px-row center"><button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="' + C.lang + '">' + ICO.spk + '<span>' + esc(C.lang.toUpperCase()) + '</span></button>' + (R.flipped ? '<button type="button" class="pbtn o" data-a="cardsay" data-w="' + w.id + '" data-l="hu">' + ICO.spk + '<span>HU</span></button>' : '') + '</div></div>' +
     (!R.flipped ? '<button type="button" class="pbtn b xl" data-a="flipm"><span>' + esc(hu('b_flip')) + '</span></button>' : '<div class="px-row center"><button type="button" class="pbtn g xl" data-a="gradem" data-ok="1">' + ICO.ok + '<span>' + esc(hu('b_knew')) + '</span></button><button type="button" class="pbtn r xl" data-a="gradem" data-ok="0">' + ICO.no + '<span>' + esc(hu('b_notyet')) + '</span></button></div>'); }
   function vRunDone() {
-    const R = ST.run; const n = R.mode === 'test' ? R.qs.length : R.res.length; const pct = n ? R.score / n : 0;
+    const R = ST.run; const n = R.mode === 'test' ? R.qs.length : nAns(R); const pct = n ? R.score / n : 0;
     let h = topbar(R.title) + '<div class="px-card center">' + (R.mode === 'test' ? '<div class="px-final-cars">' + (R.win ? carSvg('#3B82C4', 90) + carSvg('#D9362B', 60) : carSvg('#D9362B', 90) + carSvg('#3B82C4', 60)) + '</div>' : '') + kitty(pct >= .6 ? 'happy' : 'idle', 130) + (R.mode === 'boss' ? '<div class="fx-mon' + (R.win ? ' hit' : '') + '" style="text-align:center">' + monsterSvg(R.boss.num, 120) + '</div>' : '') + '<h2>' + esc(hu(R.mode === 'test' ? (R.win ? 'race_win' : 'race_lose') : R.mode === 'boss' ? (R.win ? 'boss_win' : 'boss_lose') : R.mode === 'duel' ? ({ m: 'duel_m_win', d: 'duel_d_win', t: 'duel_tie' })[R.duelRes] : R.record ? 'blitz_record' : 'run_done')) + '</h2>' +
       (R.mode === 'duel' ? '<p class="px-big">' + esc(R.duel.names[0]) + ' ' + R.duel.score[0] + ' : ' + R.duel.score[1] + ' ' + esc(R.duel.names[1]) + '</p>' : R.mode === 'blitz' ? '<p class="px-big">' + R.score + ' ✔ · ' + esc(L3('rekord', 'record', 'récord').hu) + ': ' + ((P.blitz || {}).best || 0) + '</p>' : '<p class="px-big">' + R.score + ' / ' + n + '</p>') +
-      (R.mode === 'lesson' ? '<p class="px-big" style="color:#F2B705">' + [0, 1, 2].map(i => i < starsOf(R.lessonPct) ? '★' : '☆').join('') + ' <small>' + R.lessonPct + '%</small></p>' : '') + (R.bestCombo >= 3 ? '<p class="px-note">' + esc(L3('Legjobb kombó', 'Best combo', 'Mejor combo').hu) + ': ' + R.bestCombo + '×</p>' : '') + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
+      ((R.mode === 'lesson' || R.mode === 'page' || R.mode === 'pgame') && R.lessonPct != null ? '<p class="px-big" style="color:#F2B705">' + [0, 1, 2].map(i => i < starsOf(R.lessonPct) ? '★' : '☆').join('') + ' <small>' + R.lessonPct + '%</small></p>' : '') + (R.bestCombo >= 3 ? '<p class="px-note">' + esc(L3('Legjobb kombó', 'Best combo', 'Mejor combo').hu) + ': ' + R.bestCombo + '×</p>' : '') + (R.bonus ? '<p class="px-note">+' + R.bonus + ' ' + ICO.star + '</p>' : '') + (R.timeUp ? '<p class="px-note">' + esc(hu('time_up')) + '</p>' : '') + '</div>';
+    h += tallyHtml(R);
     if (R.mode === 'test') h += evalHtml(R);
-    h += '<div class="px-row center">' + (R.cert ? '<button type="button" class="pbtn b" data-a="cert" data-i="' + ((P.certs || []).length - 1) + '">' + ICO.star + '<span>' + esc(hu('b_cert')) + '</span></button>' : '') + '<button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button>' +
+    h += '<div class="px-row center">' + (R.cert ? '<button type="button" class="pbtn b" data-a="cert" data-i="' + ((P.certs || []).length - 1) + '">' + ICO.star + '<span>' + esc(hu('b_cert')) + '</span></button>' : '') + (R.mode === 'page' || R.mode === 'pgame' ? '<button type="button" class="pbtn o" data-a="pgopen" data-p="' + esc(R.pid) + '"><span>' + esc(hu('pg_back')) + '</span></button>' : '') + '<button type="button" class="pbtn g" data-a="rerun">' + esc(hu('b_again')) + '</button><button type="button" class="pbtn l" data-a="home">' + esc(hu('b_home')) + '</button>' +
       (ST.fromHub ? '<a class="pbtn o" href="../">' + esc(hu('b_back_plan')) + '</a>' : '') + '</div>';
     return h;
   }
@@ -903,13 +1534,16 @@ var LQ = (function () {
     return topbar('Szülő · Padres · Parent') + weeklyParentHtml() + readyCard + '<div class="px-card"><h3>Gyakorlás az elmúlt 14 napban</h3><div class="px-bars">' + bars + '</div><p class="px-note">Összesen: <b>' + Math.ceil(tot.sec / 60) + ' perc</b> · <b>' + tot.items + '</b> feladat, ebből <b>' + tot.ok + '</b> jó (' + (tot.items ? Math.round(tot.ok / tot.items * 100) : 0) + '%) · napi sorozat: <b>' + P.streak.n + '</b> (rekord: ' + P.streak.best + ') · csillagok: <b>' + P.stars + '</b></p></div>' +
       '<div class="px-card"><h3>Leggyakrabban hibázott szavak / feladatok</h3>' + (miss.length ? '<table class="px-tab"><tr><th>Tétel</th><th>Jelentés / megoldás</th><th>Hiba</th><th>Lecke</th></tr>' + miss.map(m => '<tr><td><b>' + esc(m.label) + '</b><br><small>' + esc(missType(m.type)) + '</small></td><td>' + esc(m.hu) + '</td><td><b>' + m.n + '×</b></td><td>' + esc(m.unit ? unitTitle(m.unit) : '') + '</td></tr>').join('') + '</table>' : '<p>Még nincs hibás tétel.</p>') + '</div>' +
       (gens.length ? '<div class="px-card"><h3>Matek-generátor szintek</h3><table class="px-tab"><tr><th>Téma</th><th>Szint</th><th>Jó / összes</th></tr>' + gens.map(x => '<tr><td>' + esc(MG.TOPIC_NAME[x.t][1]) + '</td><td>' + '★'.repeat(x.g.lvl) + '</td><td>' + x.g.ok + ' / ' + x.g.n + '</td></tr>').join('') + '</table></div>' : '') +
-      '<div class="px-card"><h3>Utolsó próbadolgozatok</h3>' + (P.tests.length ? '<table class="px-tab"><tr><th>Dátum</th><th>Fejezet</th><th>Eredmény</th><th>Idő</th><th>Részletek</th></tr>' + P.tests.slice(-6).reverse().map(t => '<tr><td>' + new Date(t.ts).toLocaleDateString('hu-HU') + '</td><td>' + esc(unitTitle(t.unit)) + '</td><td><b>' + t.score + ' / ' + t.total + '</b></td><td>' + Math.floor(t.secs / 60) + ':' + String(t.secs % 60).padStart(2, '0') + '</td><td>' + Object.keys(t.parts || {}).map(k => esc(hu('part_' + k)) + ' ' + t.parts[k].ok + '/' + t.parts[k].n).join(', ') + '</td></tr>').join('') + '</table>' : '<p>Még nem volt próbadolgozat.</p>') + '</div>' +
+      mqParent() + '<div class="px-card"><h3>Utolsó próbadolgozatok</h3>' + (P.tests.length ? '<table class="px-tab"><tr><th>Dátum</th><th>Fejezet</th><th>Eredmény</th><th>Idő</th><th>Részletek</th></tr>' + P.tests.slice(-6).reverse().map(t => '<tr><td>' + new Date(t.ts).toLocaleDateString('hu-HU') + '</td><td>' + esc(unitTitle(t.unit)) + '</td><td><b>' + t.score + ' / ' + t.total + '</b></td><td>' + Math.floor(t.secs / 60) + ':' + String(t.secs % 60).padStart(2, '0') + '</td><td>' + Object.keys(t.parts || {}).map(k => esc(hu('part_' + k)) + ' ' + t.parts[k].ok + '/' + t.parts[k].n).join(', ') + '</td></tr>').join('') + '</table>' : '<p>Még nem volt próbadolgozat.</p>') + '</div>' +
       '<p class="px-note">Mentés helye: <b>' + esc(Store.mode) + '</b>. Ha Martin több eszközön gyakorol, az adatok nincsenek összefésülve (a legutóbb mentett példány győz).</p>';
   }
-  function missType(t) { return { w: 'szó', sp: 'spelling', dc: 'dictado', tk: 'tantárgyi feladat', q: 'kvíz', pr: 'kiejtés' }[t] || (t.indexOf('g:') === 0 ? 'matek: ' + (MG.TOPIC_NAME[t.slice(2)] || ['', ''])[1] : t); }
+  function missType(t) { if (t === 'mq') return 'matek-kvíz'; return { w: 'szó', sp: 'spelling', dc: 'dictado', tk: 'tantárgyi feladat', q: 'kvíz', pr: 'kiejtés' }[t] || (t.indexOf('g:') === 0 ? 'matek: ' + (MG.TOPIC_NAME[t.slice(2)] || ['', ''])[1] : t); }
   // ================= render + események =================
   function html() {
+    pgCss(); mqCss();
     switch (ST.view) {
+      case 'mq': return vMq();
+      case 'pages': return vPages(); case 'page': return vPage();
       case 'home': return vHome(); case 'cards': return vCards(); case 'cardrun': return vCardRun(); case 'games': return vGames(); case 'memory': return vMemory(); case 'drag': return vDrag();
       case 'spelling': return vSpelling(); case 'dictado': return vDictado(); case 'tasks': return vTasks(); case 'gen': return vGen(); case 'speak': return vSpeak(); case 'testmenu': return vTestMenu(); case 'run': return vRun(); case 'shop': return vShop(); case 'parent': return vParent(); case 'album': return vAlbum(); case 'cert': return vCert(); case 'start': return vStart(); case 'map': return vMap(); case 'space': return vSpace(); case 'bingo': return vBingo(); case 'bubble': return vBubble(); case 'build': return vBuild(); case 'room': return vRoom();
     }
@@ -923,9 +1557,9 @@ var LQ = (function () {
     requestAnimationFrame(() => { if (el) el.style.minHeight = ''; });
     const inp = el.querySelector('#px-input'); if (inp && !inp.disabled && o && o.top) { try { inp.focus({ preventScroll: true }); } catch (e) { } }
   }
-  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', map: 'i_map', room: 'i_room', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
+  function go(v, extra) { stopAll(); clearInterval(timerIv); ST.view = v; ST.mood = 'idle'; Object.assign(ST, extra || {}); render({ top: true }); const ins = { pages: 'i_pages', cards: 'i_cards', games: 'i_games', spelling: 'i_spelling', dictado: 'i_dictado', tasks: 'i_tasks', gen: 'i_gen', speak: 'i_speak', testmenu: 'i_test', shop: 'i_shop', album: 'i_album', map: 'i_map', room: 'i_room', home: null }[v]; if (v === 'speak') nextSpeak(); else if (ins) sayK(ins); }
   function act(a, d, node) {
-    touch();
+    touch(); if (pgAct(a, d)) return; if (mqAct(a, d)) return;
     switch (a) {
       case 'home': go('home'); break;
       case 'go': go(d.v); break;
@@ -963,13 +1597,14 @@ var LQ = (function () {
       case 'speaknext': nextSpeak(); break;
       case 'starttest': startTest(d.u); break;
       case 'pick': { const q = curQ(); answerRun(q.options[+d.i].v); break; }
+      case 'osay': { const q = curQ(); const o = q && q.options && q.options[+d.i]; if (o) say(optSay(o)); break; }
       case 'check': { const inp = el.querySelector('#px-input'); const v = inp ? inp.value.trim() : ''; if (!v) return; ST.run.typed = v; answerRun(v); break; }
-      case 'np': { const R = ST.run; const k = d.k; if (R.ans !== null && R.mode !== 'test') return; if (k === '⌫') R.num = R.num.slice(0, -1); else if (k === '✓') { if (R.num) answerRun(R.num); return; } else if (R.num.length < 5) R.num += k; render(); break; }
+      case 'np': { if (mqNp(d.k)) break; const R = ST.run; const k = d.k; if (R.ans !== null && R.mode !== 'test') return; if (k === '⌫') R.num = R.num.slice(0, -1); else if (k === '✓') { if (R.num) answerRun(R.num); return; } else if (R.num.length < 5) R.num += k; render(); break; }
       case 'linego': { const R = ST.run; answerRun(R.lineV == null ? ST.run.qs[R.i].task.p.min : R.lineV); break; }
       case 'next': nextRun(); break;
       case 'finish': finishRun(false); break;
       case 'qsay': { const q = curQ(); if (q.task) sayTask(q.task); else if (q.items) say(q.items); else if (q.audio) say(q.audio); break; }
-      case 'rerun': { const R = ST.run; if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else if (R.mode === 'lesson') startLesson(R.unit, R.lesson); else if (R.mode === 'boss') startBoss(R.unit); else if (R.mode === 'blitz') startBlitz(); else if (R.mode === 'duel') startDuel(); else go(R.back || 'home'); break; }
+      case 'rerun': { const R = ST.run; if (R.mode === 'mq') { startMq(R.mqmode); if (ST.run && ST.run.sw) mqSwStart(); } else if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else if (R.mode === 'lesson') startLesson(R.unit, R.lesson); else if (R.mode === 'page') startPage(R.pid, R.tid); else if (R.mode === 'pgame') startPgGame(R.pid, R.game); else if (R.mode === 'boss') startBoss(R.unit); else if (R.mode === 'blitz') startBlitz(); else if (R.mode === 'duel') startDuel(); else go(R.back || 'home'); break; }
       case 'lesson': startLesson(d.u, d.c); break;
       case 'locked': toast(L3('Még zárva – előbb az előző állomás!', '', '').hu); try { H.sfxBad(); } catch (e) { } break;
       case 'boss': startBoss(d.u || (activeUnits()[0])); break;
@@ -1004,6 +1639,7 @@ var LQ = (function () {
     pickCards(units, 4).forEach(w => qs.push({ kind: 'flash', part: 'vocab', w, items: wordItems(w), unit: w.unit, page: w.page, rec: { type: 'w', id: w.id, label: w.es, hu: w.hu, unit: w.unit } }));
     if (C.subj === 'en') { const wk = weekFor(ev); if (wk && (ev.type === 'spelling' || !ev.type)) pickN(wk.words, 3).forEach(x => qs.push(spellQ(x, wk.unit))); else pickN(p, 3).forEach(w => qs.push(vocabQ(w, 'hear', p))); }
     else if (C.subj === 'lengua') { const dw = units.flatMap(u => dictWords(u).map(x => ({ x, u }))); pickN(dw, 3).forEach(o => qs.push(dictQ(o.x, o.u))); }
+    else if (C.subj === 'mat' && root.MQ) { mqFocus(); const gs = shuffle(units.flatMap(u => root.MQ.byUnit(u))); for (let i = 0; i < 5 && gs.length; i++) { const q = mqMake(gs[i % gs.length], mqS().lvl || 1); if (q) qs.push(q); } }
     else if (C.subj === 'mat') { const ts = topicsForUnits(units); for (let i = 0; i < 3; i++) { const t = ts[i % ts.length]; qs.push(genQ(t, level(t))); } }
     else { const tk = tasksAll().filter(t => units.indexOf(t.unit) >= 0); if (tk.length >= 3) pickN(tk, 4).forEach(t => qs.push(taskQ(t))); else pickN(p, 3).forEach((w, i) => qs.push(vocabQ(w, ['hear', 'tr', 'see'][i % 3], p))); }
     const quiz = H.D.quiz.filter(q => units.indexOf(q.unit) >= 0); pickN(quiz, Math.max(3, Math.round(QN() / 5))).forEach(q => qs.push(quizQ(q)));
@@ -1247,6 +1883,7 @@ var LQ = (function () {
     if (!P) { P = Object.assign(defP(), Store.readLocal() || {}); Store.mode = Store.readLocal() ? 'ez az eszköz (localStorage)' : 'csak memória'; Store.connect(); }
     if (!el._px) { el._px = 1;
       el.addEventListener('click', e => { if (ST.suppressClick) return; const b = e.target.closest('[data-a]'); if (!b || !el.contains(b)) return; try { act(b.dataset.a, b.dataset, b); } catch (er) { if (root.console) console.error(er); } });
+      try { if (!root.pxMqKey) { root.pxMqKey = 1; document.addEventListener('keydown', mqKey); } } catch (e) { }
       el.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'px-input') { e.preventDefault(); act('check', {}, e.target); } });
       el.addEventListener('pointerdown', onPointerDown); el.addEventListener('pointermove', onPointerMove, { passive: false }); el.addEventListener('pointerup', onPointerUp); el.addEventListener('pointercancel', onPointerUp);
       el.addEventListener('input', e => { if (e.target.id === 'px-input' && ST.run) ST.run.typed = e.target.value; });

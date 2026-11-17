@@ -14,6 +14,11 @@
     "u2"
    ],
    "link_ids": [
+    "rev_qa_pdf",
+    "rev_qa_video",
+    "rev_solved",
+    "rev_pdf",
+    "rev_video",
     "u2ctl_pdf",
     "u2ctl_video",
     "u2_notes",

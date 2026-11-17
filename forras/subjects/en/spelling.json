@@ -265,6 +265,55 @@
      "ex_hu": "Vacsora előtt kezet mosok."
     }
    ]
+  },
+  {
+   "id": "2026-11-24",
+   "test_date": "2026-11-24",
+   "title": "In the city",
+   "title_hu": "A városban",
+   "unit": "u4",
+   "words": [
+    {
+     "w": "street",
+     "hu": "utca"
+    },
+    {
+     "w": "station",
+     "hu": "állomás"
+    },
+    {
+     "w": "where",
+     "hu": "hol"
+    },
+    {
+     "w": "library",
+     "hu": "könyvtár"
+    },
+    {
+     "w": "shopping centre",
+     "hu": "bevásárlóközpont"
+    },
+    {
+     "w": "must",
+     "hu": "kell"
+    },
+    {
+     "w": "bakery",
+     "hu": "pékség"
+    },
+    {
+     "w": "bus stop",
+     "hu": "buszmegálló"
+    },
+    {
+     "w": "market",
+     "hu": "piac"
+    },
+    {
+     "w": "butcher's",
+     "hu": "hentesbolt"
+    }
+   ]
   }
  ]
 }

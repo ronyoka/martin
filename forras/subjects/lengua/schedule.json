@@ -19,6 +19,17 @@
     "plantas_solved",
     "libro"
    ]
+  },
+  {
+   "id": "lengua-hw-complect1-1123",
+   "date": "2026-11-23",
+   "type": "homework",
+   "title": "Deberes: Comprensión lectora, lectura 1 (págs. 4–9)",
+   "title_hu": "Házi: Comprensión lectora füzet, 1. olvasmány (4–9. o.)",
+   "units": [
+    "u3"
+   ],
+   "link_ids": []
   }
  ],
  "recurring": []

@@ -70,6 +70,36 @@
    "folder": "1v9zjbtL3mDKpmVKwDNzkvkh0gfubVtpx",
    "units": [],
    "global": true
+  },
+  {
+   "id": "p37_pdf",
+   "kind": "pdf",
+   "title": "Prep guide: page 37 (PDF)",
+   "title_hu": "Felkészítő: 37. oldal (PDF)",
+   "drive": "1ZSuvgV3eYIDCZcH6cUOAQJVd8k2OB_A6",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "p37_video",
+   "kind": "video",
+   "title": "Prep video: page 37",
+   "title_hu": "Felkészítő videó: 37. oldal",
+   "drive": "1qhRRFLQUp0j5Zl1I8WwPSSukQOw_v1ot",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "p37_solved",
+   "kind": "solved",
+   "title": "Page 37 solved",
+   "title_hu": "37. oldal megoldva",
+   "drive": "1PVYp1bMID4qcgFGUCMgthjY4B8Eq27nx",
+   "units": [
+    "u2"
+   ]
   }
  ]
 }

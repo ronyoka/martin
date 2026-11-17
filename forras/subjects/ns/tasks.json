@@ -752,6 +752,650 @@
    "explain": "The screen shows information.",
    "explain_hu": "A képernyő megjeleníti az adatot.",
    "id": "ns31"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "An elephant",
+   "q_hu": "elefánt",
+   "options": [
+    {
+     "t": "herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "carnivore",
+     "hu": "húsevő"
+    },
+    {
+     "t": "omnivore",
+     "hu": "mindenevő"
+    }
+   ],
+   "answer": 0,
+   "explain": "An elephant only eats plants: it is a herbivore.",
+   "explain_hu": "Az elefánt csak növényt eszik: növényevő.",
+   "id": "ns100"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A fox",
+   "q_hu": "róka",
+   "options": [
+    {
+     "t": "herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "carnivore",
+     "hu": "húsevő"
+    },
+    {
+     "t": "omnivore",
+     "hu": "mindenevő"
+    }
+   ],
+   "answer": 1,
+   "explain": "A fox eats other animals: it is a carnivore.",
+   "explain_hu": "A róka más állatokat eszik: húsevő.",
+   "id": "ns101"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A bear",
+   "q_hu": "medve",
+   "options": [
+    {
+     "t": "herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "carnivore",
+     "hu": "húsevő"
+    },
+    {
+     "t": "omnivore",
+     "hu": "mindenevő"
+    }
+   ],
+   "answer": 2,
+   "explain": "A bear eats plants and animals: it is an omnivore.",
+   "explain_hu": "A medve növényt és állatot is eszik: mindenevő.",
+   "id": "ns102"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They only eat plants.",
+   "q_hu": "Csak növényt esznek.",
+   "options": [
+    {
+     "t": "herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "carnivore",
+     "hu": "húsevő"
+    },
+    {
+     "t": "omnivore",
+     "hu": "mindenevő"
+    }
+   ],
+   "answer": 0,
+   "explain": "Herbivores eat only plants.",
+   "explain_hu": "A növényevők csak növényt esznek.",
+   "id": "ns103"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They eat plants and other animals.",
+   "q_hu": "Növényt és más állatot is esznek.",
+   "options": [
+    {
+     "t": "herbivore",
+     "hu": "növényevő"
+    },
+    {
+     "t": "carnivore",
+     "hu": "húsevő"
+    },
+    {
+     "t": "omnivore",
+     "hu": "mindenevő"
+    }
+   ],
+   "answer": 2,
+   "explain": "Omnivores eat both plants and animals.",
+   "explain_hu": "A mindenevők mindkettőt eszik.",
+   "id": "ns104"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A turtle",
+   "q_hu": "teknős",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 0,
+   "explain": "A turtle lays eggs: it is oviparous.",
+   "explain_hu": "A teknős tojást rak: tojásrakó.",
+   "id": "ns105"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A lion",
+   "q_hu": "oroszlán",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 1,
+   "explain": "Lion babies are born from their mother's womb.",
+   "explain_hu": "Az oroszlánkölyök az anyja méhéből születik.",
+   "id": "ns106"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A spider",
+   "q_hu": "pók",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 0,
+   "explain": "A spider lays eggs.",
+   "explain_hu": "A pók tojást rak.",
+   "id": "ns107"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A bird",
+   "q_hu": "madár",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 0,
+   "explain": "Birds lay eggs.",
+   "explain_hu": "A madarak tojást raknak.",
+   "id": "ns108"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A rabbit",
+   "q_hu": "nyúl",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 1,
+   "explain": "A rabbit gives birth to live young.",
+   "explain_hu": "A nyúl élő kicsinyeket szül.",
+   "id": "ns109"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A sheep",
+   "q_hu": "bárány / juh",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 1,
+   "explain": "A sheep is viviparous.",
+   "explain_hu": "A juh elevenszülő.",
+   "id": "ns110"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They live in the sea. They cannot move about.",
+   "q_hu": "A tengerben élnek, nem tudnak mozogni.",
+   "options": [
+    {
+     "t": "Sponges",
+     "hu": "szivacsok"
+    },
+    {
+     "t": "Jellyfish",
+     "hu": "medúzák"
+    },
+    {
+     "t": "Worms",
+     "hu": "férgek"
+    },
+    {
+     "t": "Molluscs",
+     "hu": "puhatestűek"
+    },
+    {
+     "t": "Arthropods",
+     "hu": "ízeltlábúak"
+    },
+    {
+     "t": "Echinoderms",
+     "hu": "tüskésbőrűek"
+    }
+   ],
+   "answer": 0,
+   "explain": "Sponges cannot move about.",
+   "explain_hu": "A szivacsok nem mozognak.",
+   "id": "ns111"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They float in the sea and sting with their tentacles.",
+   "q_hu": "Lebegnek a tengerben, csápjukkal csípnek.",
+   "options": [
+    {
+     "t": "Sponges",
+     "hu": "szivacsok"
+    },
+    {
+     "t": "Jellyfish",
+     "hu": "medúzák"
+    },
+    {
+     "t": "Worms",
+     "hu": "férgek"
+    },
+    {
+     "t": "Molluscs",
+     "hu": "puhatestűek"
+    },
+    {
+     "t": "Arthropods",
+     "hu": "ízeltlábúak"
+    },
+    {
+     "t": "Echinoderms",
+     "hu": "tüskésbőrűek"
+    }
+   ],
+   "answer": 1,
+   "explain": "Jellyfish sting with their tentacles.",
+   "explain_hu": "A medúza a csápjával csíp.",
+   "id": "ns112"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They have a long soft body and no legs.",
+   "q_hu": "Hosszú puha testük van, lábuk nincs.",
+   "options": [
+    {
+     "t": "Sponges",
+     "hu": "szivacsok"
+    },
+    {
+     "t": "Jellyfish",
+     "hu": "medúzák"
+    },
+    {
+     "t": "Worms",
+     "hu": "férgek"
+    },
+    {
+     "t": "Molluscs",
+     "hu": "puhatestűek"
+    },
+    {
+     "t": "Arthropods",
+     "hu": "ízeltlábúak"
+    },
+    {
+     "t": "Echinoderms",
+     "hu": "tüskésbőrűek"
+    }
+   ],
+   "answer": 2,
+   "explain": "Worms have no legs.",
+   "explain_hu": "A férgeknek nincs lábuk.",
+   "id": "ns113"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They have a soft body. Most of them have a shell.",
+   "q_hu": "Puha a testük, a legtöbbnek háza van.",
+   "options": [
+    {
+     "t": "Sponges",
+     "hu": "szivacsok"
+    },
+    {
+     "t": "Jellyfish",
+     "hu": "medúzák"
+    },
+    {
+     "t": "Worms",
+     "hu": "férgek"
+    },
+    {
+     "t": "Molluscs",
+     "hu": "puhatestűek"
+    },
+    {
+     "t": "Arthropods",
+     "hu": "ízeltlábúak"
+    },
+    {
+     "t": "Echinoderms",
+     "hu": "tüskésbőrűek"
+    }
+   ],
+   "answer": 3,
+   "explain": "Molluscs have a soft body.",
+   "explain_hu": "A puhatestűek teste puha.",
+   "id": "ns114"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They have legs and a hard case to protect their body.",
+   "q_hu": "Lábuk és kemény páncéljuk van.",
+   "options": [
+    {
+     "t": "Sponges",
+     "hu": "szivacsok"
+    },
+    {
+     "t": "Jellyfish",
+     "hu": "medúzák"
+    },
+    {
+     "t": "Worms",
+     "hu": "férgek"
+    },
+    {
+     "t": "Molluscs",
+     "hu": "puhatestűek"
+    },
+    {
+     "t": "Arthropods",
+     "hu": "ízeltlábúak"
+    },
+    {
+     "t": "Echinoderms",
+     "hu": "tüskésbőrűek"
+    }
+   ],
+   "answer": 4,
+   "explain": "Arthropods, like the crab.",
+   "explain_hu": "Ízeltlábúak, mint a rák.",
+   "id": "ns115"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "They have hard, spiny skin.",
+   "q_hu": "Kemény, tüskés a bőrük.",
+   "options": [
+    {
+     "t": "Sponges",
+     "hu": "szivacsok"
+    },
+    {
+     "t": "Jellyfish",
+     "hu": "medúzák"
+    },
+    {
+     "t": "Worms",
+     "hu": "férgek"
+    },
+    {
+     "t": "Molluscs",
+     "hu": "puhatestűek"
+    },
+    {
+     "t": "Arthropods",
+     "hu": "ízeltlábúak"
+    },
+    {
+     "t": "Echinoderms",
+     "hu": "tüskésbőrűek"
+    }
+   ],
+   "answer": 5,
+   "explain": "Echinoderms, like the sea urchin.",
+   "explain_hu": "Tüskésbőrűek, mint a tengeri sün.",
+   "id": "ns116"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A mussel",
+   "q_hu": "kékkagyló",
+   "options": [
+    {
+     "t": "Bivalve",
+     "hu": "kagyló"
+    },
+    {
+     "t": "Gastropod",
+     "hu": "csiga"
+    },
+    {
+     "t": "Cephalopod",
+     "hu": "fejlábú"
+    }
+   ],
+   "answer": 0,
+   "explain": "Bivalves have two shells.",
+   "explain_hu": "A kagylónak két héja van.",
+   "id": "ns117"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "A snail",
+   "q_hu": "csiga",
+   "options": [
+    {
+     "t": "Bivalve",
+     "hu": "kagyló"
+    },
+    {
+     "t": "Gastropod",
+     "hu": "csiga"
+    },
+    {
+     "t": "Cephalopod",
+     "hu": "fejlábú"
+    }
+   ],
+   "answer": 1,
+   "explain": "Gastropods have a spiral shell.",
+   "explain_hu": "A csigának csavart háza van.",
+   "id": "ns118"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "An octopus",
+   "q_hu": "polip",
+   "options": [
+    {
+     "t": "Bivalve",
+     "hu": "kagyló"
+    },
+    {
+     "t": "Gastropod",
+     "hu": "csiga"
+    },
+    {
+     "t": "Cephalopod",
+     "hu": "fejlábú"
+    }
+   ],
+   "answer": 2,
+   "explain": "Cephalopods have arms with suction pads.",
+   "explain_hu": "A fejlábúaknak tapadókorongos karjuk van.",
+   "id": "ns119"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "The middle part of an insect, where the legs and wings are",
+   "q_hu": "A rovar középső része, ahol a lábak és szárnyak vannak",
+   "options": [
+    {
+     "t": "Head",
+     "hu": "fej"
+    },
+    {
+     "t": "Thorax",
+     "hu": "tor"
+    },
+    {
+     "t": "Abdomen",
+     "hu": "potroh"
+    }
+   ],
+   "answer": 1,
+   "explain": "The thorax.",
+   "explain_hu": "A tor.",
+   "id": "ns120"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "The back part of an insect's body",
+   "q_hu": "A rovar testének hátsó része",
+   "options": [
+    {
+     "t": "Head",
+     "hu": "fej"
+    },
+    {
+     "t": "Thorax",
+     "hu": "tor"
+    },
+    {
+     "t": "Abdomen",
+     "hu": "potroh"
+    }
+   ],
+   "answer": 2,
+   "explain": "The abdomen.",
+   "explain_hu": "A potroh.",
+   "id": "ns121"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "How many legs does an insect have?",
+   "q_hu": "Hány lába van egy rovarnak?",
+   "options": [
+    {
+     "t": "Six",
+     "hu": "hat"
+    },
+    {
+     "t": "Eight",
+     "hu": "nyolc"
+    },
+    {
+     "t": "Four",
+     "hu": "négy"
+    }
+   ],
+   "answer": 0,
+   "explain": "Insects have six legs.",
+   "explain_hu": "A rovaroknak hat lábuk van.",
+   "id": "ns122"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "How many antennae does an insect have?",
+   "q_hu": "Hány csápja van egy rovarnak?",
+   "options": [
+    {
+     "t": "Two",
+     "hu": "kettő"
+    },
+    {
+     "t": "Six",
+     "hu": "hat"
+    },
+    {
+     "t": "One",
+     "hu": "egy"
+    }
+   ],
+   "answer": 0,
+   "explain": "Insects have two antennae.",
+   "explain_hu": "A rovaroknak két csápjuk van.",
+   "id": "ns123"
+  },
+  {
+   "unit": "u2",
+   "kind": "sort",
+   "q": "Invertebrates are all…",
+   "q_hu": "A gerinctelenek mind…",
+   "options": [
+    {
+     "t": "Oviparous",
+     "hu": "tojásrakó"
+    },
+    {
+     "t": "Viviparous",
+     "hu": "elevenszülő"
+    }
+   ],
+   "answer": 0,
+   "explain": "All invertebrates are oviparous and have no backbone.",
+   "explain_hu": "Minden gerinctelen tojásrakó, és nincs gerince.",
+   "id": "ns124"
   }
  ]
 }
