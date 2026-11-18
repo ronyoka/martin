@@ -182,6 +182,56 @@
    "units": [
     "u2"
    ]
+  },
+  {
+   "id": "p65_pdf",
+   "kind": "pdf",
+   "title": "Felkészítő: 65. o. 2. feladat",
+   "title_hu": "Felkészítő: 65. o. 2. feladat (műveleti sorrend)",
+   "drive": "16Ot0j-gKdk1RnTtoZgy9hIPzZWQfl4lV",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "p65_video",
+   "kind": "video",
+   "title": "Vídeo: pág. 65 ej. 2",
+   "title_hu": "Videó: 65. o. 2. feladat",
+   "drive": "14OBqHZaMscw4g1DH28USTqokDGefLLvw",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "p65_solved",
+   "kind": "pdf",
+   "title": "Página 65 resuelta",
+   "title_hu": "Megoldott könyvlap: 65. o.",
+   "drive": "1fNGecs5q-CrC3qwKwnaCqz6bIz_QwPVJ",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ctlu3_pdf",
+   "kind": "pdf",
+   "title": "Preparación control unidad 3",
+   "title_hu": "Felkészítő: Matek dolgozat 3. fejezet",
+   "drive": "1W5lvQ5bn6kfzqysV6GxwXHiawZSfw_bq",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ctlu3_video",
+   "kind": "video",
+   "title": "Vídeo control unidad 3",
+   "title_hu": "Videó: Matek dolgozat 3. fejezet",
+   "drive": "1QtHMhf0hbaf64ni9nBalKjiM4fBYSjno",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

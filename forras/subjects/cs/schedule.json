@@ -18,6 +18,23 @@
     "p37_video",
     "p37_solved"
    ]
+  },
+  {
+   "id": "cs-control-u2-1210",
+   "date": "2026-12-10",
+   "type": "control",
+   "title": "Control de Sociales (unidad 2)",
+   "title_hu": "Sociales dolgozat (2. fejezet: A Föld és a térképek)",
+   "units": [
+    "u2"
+   ],
+   "link_ids": [
+    "ctlu2_pdf",
+    "ctlu2_video",
+    "p37_pdf",
+    "p37_video",
+    "p37_solved"
+   ]
   }
  ],
  "recurring": []

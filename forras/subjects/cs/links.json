@@ -100,6 +100,26 @@
    "units": [
     "u2"
    ]
+  },
+  {
+   "id": "ctlu2_pdf",
+   "kind": "pdf",
+   "title": "Preparación control unidad 2",
+   "title_hu": "Felkészítő: Sociales dolgozat 2. fejezet",
+   "drive": "1Y2VGG1JyzfEokMq5Bt9xvgb_83_C2zcp",
+   "units": [
+    "u2"
+   ]
+  },
+  {
+   "id": "ctlu2_video",
+   "kind": "video",
+   "title": "Vídeo control unidad 2",
+   "title_hu": "Videó: Sociales dolgozat 2. fejezet",
+   "drive": "1YDepFoPuERBlBuMSlKjpZVMaqlEs0RJx",
+   "units": [
+    "u2"
+   ]
   }
  ]
 }

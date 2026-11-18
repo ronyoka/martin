@@ -1,0 +1,4121 @@
+{
+ "pages": [
+  {
+   "id": "cu27",
+   "book": "cu",
+   "page": 27,
+   "unit": "u3",
+   "title": "Propiedades de la multiplicación",
+   "title_hu": "A szorzás tulajdonságai",
+   "summary_hu": "Új fejezet (3.): a szorzás két tulajdonsága. A felcserélhetőség: a tényezők sorrendje nem változtatja a szorzatot. A csoportosíthatóság: három tényezőnél a zárójel helye nem változtat az eredményen. Feladatok: igaz/hamis, felcserélés, kétféle csoportosítás.",
+   "words": [
+    {
+     "w": "la propiedad",
+     "hu": "tulajdonság"
+    },
+    {
+     "w": "conmutativa",
+     "hu": "felcserélhetőségi",
+     "pic": "🔄"
+    },
+    {
+     "w": "asociativa",
+     "hu": "csoportosíthatósági",
+     "pic": "🧩"
+    },
+    {
+     "w": "el factor",
+     "hu": "tényező"
+    },
+    {
+     "w": "el producto",
+     "hu": "szorzat",
+     "pic": "✖️"
+    },
+    {
+     "w": "el orden",
+     "hu": "sorrend"
+    },
+    {
+     "w": "el paréntesis",
+     "hu": "zárójel"
+    },
+    {
+     "w": "verdadero",
+     "hu": "igaz",
+     "pic": "✅"
+    },
+    {
+     "w": "falso",
+     "hu": "hamis",
+     "pic": "❌"
+    },
+    {
+     "w": "altera",
+     "hu": "megváltoztat"
+    },
+    {
+     "w": "aplicar",
+     "hu": "alkalmazni"
+    },
+    {
+     "w": "el resultado",
+     "hu": "eredmény"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu27_1",
+     "n": "1",
+     "text": "Escribe V si es verdadero y F si es falso.",
+     "text_hu": "Írj V-t, ha igaz, és F-et, ha hamis.",
+     "items": [
+      {
+       "id": "cu27_1a",
+       "q": "El orden de los factores altera el producto.",
+       "q_hu": "A tényezők sorrendje megváltoztatja a szorzatot.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "pic": "❌",
+       "answer_hu": "Hamis: a sorrend nem változtatja meg a szorzatot."
+      },
+      {
+       "id": "cu27_1b",
+       "q": "El resultado de 4 × 7 es el mismo que el de 7 × 4.",
+       "q_hu": "A 4 × 7 eredménye ugyanaz, mint a 7 × 4-é.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "pic": "✅",
+       "answer_hu": "Igaz"
+      },
+      {
+       "id": "cu27_1c",
+       "q": "La propiedad asociativa se utiliza con dos números.",
+       "q_hu": "A csoportosíthatósági tulajdonságot két számnál használjuk.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "pic": "❌",
+       "answer_hu": "Hamis: legalább három számnál használjuk."
+      },
+      {
+       "id": "cu27_1d",
+       "q": "El resultado de (2 × 5) × 3 es el mismo que el de 2 × (5 × 3).",
+       "q_hu": "A (2 × 5) × 3 eredménye ugyanaz, mint a 2 × (5 × 3)-é.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "pic": "✅",
+       "answer_hu": "Igaz"
+      },
+      {
+       "id": "cu27_1e",
+       "q": "La igualdad de 5 × (2 × 8) = (5 × 2) × 8 es un ejemplo de la propiedad conmutativa.",
+       "q_hu": "Az 5 × (2 × 8) = (5 × 2) × 8 egyenlőség a felcserélhetőségi tulajdonság példája.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Verdadero",
+         "hu": "Igaz"
+        },
+        {
+         "t": "Falso",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 1,
+       "pic": "❌",
+       "answer_hu": "Hamis: ez a csoportosíthatósági (asszociatív) tulajdonság."
+      }
+     ],
+     "box": [
+      0.5475,
+      0.3693,
+      0.85,
+      0.5719
+     ],
+     "context": {
+      "es": "Hay cinco frases sobre las propiedades conmutativa y asociativa. Cada una tiene una casilla para V o F.",
+      "hu": "Öt mondat van a felcserélhetőségi és a csoportosíthatósági tulajdonságról. Mindegyik mellett egy négyzet van a V vagy F betűnek."
+     },
+     "help": {
+      "es": "Mira el cuadro «Recuerda»: conmutativa = cambiar el orden; asociativa = agrupar con paréntesis.",
+      "hu": "Nézd a „Recuerda” dobozt: felcserélhetőség = a sorrend változik; csoportosítás = zárójellel."
+     },
+     "pic": "✅❌"
+    },
+    {
+     "id": "cu27_2",
+     "n": "2",
+     "text": "Completa estas igualdades aplicando la propiedad conmutativa.",
+     "text_hu": "Egészítsd ki az egyenlőségeket a felcserélhetőségi tulajdonság alkalmazásával.",
+     "items": [
+      {
+       "id": "cu27_2a",
+       "q": "6 × 8 = ___ × 6",
+       "q_hu": "6 × 8 = ___ × 6",
+       "kind": "num",
+       "answer": "8",
+       "pic": "🔄"
+      },
+      {
+       "id": "cu27_2b",
+       "q": "6 × 8 = ___",
+       "q_hu": "6 × 8 = ___",
+       "kind": "num",
+       "answer": "48",
+       "pic": "✖️",
+       "vis": {
+        "type": "groups",
+        "n": 6,
+        "size": 8
+       }
+      },
+      {
+       "id": "cu27_2c",
+       "q": "9 × ___ = 2 × 9",
+       "q_hu": "9 × ___ = 2 × 9",
+       "kind": "num",
+       "answer": "2",
+       "pic": "🔄"
+      },
+      {
+       "id": "cu27_2d",
+       "q": "2 × 9 = ___",
+       "q_hu": "2 × 9 = ___",
+       "kind": "num",
+       "answer": "18",
+       "pic": "✖️",
+       "vis": {
+        "type": "groups",
+        "n": 2,
+        "size": 9
+       }
+      }
+     ],
+     "box": [
+      0.5475,
+      0.5842,
+      0.855,
+      0.674
+     ],
+     "context": {
+      "es": "Hay dos filas: 6 × 8 = ___ × ___ = ___ y 9 × ___ = 2 × ___ = ___. Hay que cambiar el orden de los factores.",
+      "hu": "Két sor van: 6 × 8 = ___ × ___ = ___ és 9 × ___ = 2 × ___ = ___. A tényezők sorrendjét kell felcserélni."
+     },
+     "help": {
+      "es": "Cambia el orden: 6 × 8 es igual a 8 × 6. Después calcula el producto.",
+      "hu": "Cseréld fel a sorrendet: a 6 × 8 ugyanannyi, mint a 8 × 6. Aztán számold ki a szorzatot."
+     },
+     "pic": "🔄"
+    },
+    {
+     "id": "cu27_3",
+     "n": "3",
+     "text": "Multiplica los factores de dos maneras diferentes.",
+     "text_hu": "Szorozd össze a tényezőket kétféleképpen.",
+     "items": [
+      {
+       "id": "cu27_3a",
+       "q": "(3 × 2) × 5 = ?",
+       "q_hu": "(3 × 2) × 5 = ?",
+       "kind": "num",
+       "answer": "30",
+       "pic": "1️⃣",
+       "vis": {
+        "type": "groups",
+        "n": 6,
+        "size": 5
+       }
+      },
+      {
+       "id": "cu27_3b",
+       "q": "3 × (2 × 5) = ?",
+       "q_hu": "3 × (2 × 5) = ?",
+       "kind": "num",
+       "answer": "30",
+       "pic": "2️⃣",
+       "vis": {
+        "type": "groups",
+        "n": 3,
+        "size": 10
+       }
+      },
+      {
+       "id": "cu27_3c",
+       "q": "¿Has obtenido el mismo resultado en las dos maneras?",
+       "q_hu": "Ugyanazt az eredményt kaptad a két módon?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🟰",
+       "answer_hu": "Igen, mindkétszer 30."
+      },
+      {
+       "id": "cu27_3d",
+       "q": "¿Qué propiedad has aplicado al agrupar los factores de dos maneras?",
+       "q_hu": "Melyik tulajdonságot alkalmaztad, amikor kétféleképpen csoportosítottad a tényezőket?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőségi tulajdonság"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatósági tulajdonság"
+        }
+       ],
+       "answer": 1,
+       "pic": "🧩",
+       "answer_hu": "Csoportosíthatósági (asszociatív) tulajdonság."
+      }
+     ],
+     "box": [
+      0.5475,
+      0.6904,
+      0.9525,
+      0.9395
+     ],
+     "context": {
+      "es": "Hay dos cuadros con 3 × 2 × 5. En uno agrupas 3 × 2 primero; en el otro, 2 × 5 primero. Debajo hay dos preguntas.",
+      "hu": "Két keretben ott a 3 × 2 × 5. Az egyikben először a 3 × 2-t, a másikban a 2 × 5-öt számolod. Alatta két kérdés van."
+     },
+     "help": {
+      "es": "Haz primero lo que está dentro del paréntesis y después lo que queda.",
+      "hu": "Először a zárójelben lévőt számold ki, utána a maradékot."
+     },
+     "pic": "🧩"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos dos propiedades de la multiplicación!",
+     "hu": "Ma két szorzási tulajdonságot tanulunk!"
+    },
+    "sentences": [
+     {
+      "es": "Esta es la Ficha 1 de la situación de aprendizaje 3: las propiedades de la multiplicación.",
+      "hu": "Ez a 3. témakör 1. lapja: a szorzás tulajdonságai.",
+      "pic": "📘"
+     },
+     {
+      "es": "La propiedad conmutativa dice: si cambiamos el orden de los factores, el producto no cambia.",
+      "hu": "A felcserélhetőségi tulajdonság: ha felcseréljük a tényezők sorrendjét, a szorzat nem változik.",
+      "pic": "🔄"
+     },
+     {
+      "es": "Por ejemplo, 5 × 8 es igual a 8 × 5. Los dos dan 40.",
+      "hu": "Például az 5 × 8 ugyanannyi, mint a 8 × 5. Mindkettő 40.",
+      "pic": "🟰",
+      "vis": {
+       "type": "groups",
+       "n": 5,
+       "size": 8
+      }
+     },
+     {
+      "es": "La propiedad asociativa se usa cuando multiplicamos tres números o más.",
+      "hu": "A csoportosíthatósági tulajdonságot három vagy több szám szorzásánál használjuk.",
+      "pic": "🧩"
+     },
+     {
+      "es": "Podemos agrupar los factores de distintas maneras con paréntesis, y el producto es el mismo.",
+      "hu": "A tényezőket zárójellel többféleképpen csoportosíthatjuk, és a szorzat ugyanaz marad.",
+      "pic": "🔗"
+     },
+     {
+      "es": "Ejemplo: (6 × 3) × 4. Primero 6 × 3 = 18, y después 18 × 4 = 72.",
+      "hu": "Példa: (6 × 3) × 4. Először 6 × 3 = 18, utána 18 × 4 = 72.",
+      "pic": "1️⃣"
+     },
+     {
+      "es": "Ahora al revés: 6 × (3 × 4). Primero 3 × 4 = 12, y después 6 × 12 = 72.",
+      "hu": "Most fordítva: 6 × (3 × 4). Először 3 × 4 = 12, utána 6 × 12 = 72.",
+      "pic": "2️⃣"
+     },
+     {
+      "es": "Los dos resultados son 72, por eso (6 × 3) × 4 = 6 × (3 × 4).",
+      "hu": "Mindkét eredmény 72, ezért (6 × 3) × 4 = 6 × (3 × 4).",
+      "pic": "🟰"
+     },
+     {
+      "es": "Los paréntesis nos dicen qué operación hacemos primero.",
+      "hu": "A zárójel megmondja, melyik műveletet végezzük el először.",
+      "pic": "➗"
+     },
+     {
+      "es": "Con 3 × 2 × 5 podemos hacer (3 × 2) × 5 o 3 × (2 × 5). En los dos casos sale 30.",
+      "hu": "A 3 × 2 × 5-nél lehet (3 × 2) × 5 vagy 3 × (2 × 5). Mindkét esetben 30 jön ki.",
+      "pic": "🔢",
+      "vis": {
+       "type": "groups",
+       "n": 6,
+       "size": 5
+      }
+     }
+    ],
+    "remember": [
+     {
+      "es": "Conmutativa: a × b = b × a",
+      "hu": "Felcserélhetőség: a × b = b × a"
+     },
+     {
+      "es": "Asociativa: (a × b) × c = a × (b × c)",
+      "hu": "Csoportosítás: (a × b) × c = a × (b × c)"
+     },
+     {
+      "es": "La asociativa se usa con tres o más factores.",
+      "hu": "A csoportosítást három vagy több tényezőnél használjuk."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿5 × 8 es igual a 8 × 5?",
+      "hu": "Martin, az 5 × 8 ugyanannyi, mint a 8 × 5?"
+     },
+     {
+      "who": "Martín",
+      "es": "Creo que no, porque el orden es distinto.",
+      "hu": "Szerintem nem, mert a sorrend más."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Miau! Mira: los dos dan 40. El orden no cambia el producto.",
+      "hu": "Miau! Nézd: mindkettő 40. A sorrend nem változtatja a szorzatot."
+     },
+     {
+      "who": "Martín",
+      "es": "¡Ah! Es la propiedad conmutativa.",
+      "hu": "Ja! Ez a felcserélhetőségi tulajdonság."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y con tres números, como 3 × 2 × 5?",
+      "hu": "És három számnál, például 3 × 2 × 5-nél?"
+     },
+     {
+      "who": "Martín",
+      "es": "Puedo agrupar con paréntesis y sale 30 siempre.",
+      "hu": "Zárójellel csoportosíthatok, és mindig 30 jön ki."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Muy bien! Esa es la propiedad asociativa.",
+      "hu": "Nagyon jó! Ez a csoportosíthatósági tulajdonság."
+     }
+    ],
+    "tf": [
+     {
+      "es": "5 × 8 y 8 × 5 dan el mismo resultado.",
+      "hu": "Az 5 × 8 és a 8 × 5 eredménye ugyanaz.",
+      "answer": true,
+      "why_es": "Los dos dan 40.",
+      "why_hu": "Mindkettő 40."
+     },
+     {
+      "es": "La propiedad asociativa se usa con solo dos números.",
+      "hu": "A csoportosíthatósági tulajdonságot csak két számnál használjuk.",
+      "answer": false,
+      "why_es": "Se usa con tres o más números.",
+      "why_hu": "Három vagy több számnál használjuk."
+     },
+     {
+      "es": "(6 × 3) × 4 es igual a 6 × (3 × 4).",
+      "hu": "A (6 × 3) × 4 egyenlő a 6 × (3 × 4)-gyel.",
+      "answer": true,
+      "why_es": "Los dos son 72.",
+      "why_hu": "Mindkettő 72."
+     },
+     {
+      "es": "Si cambio el orden de los factores, el producto cambia.",
+      "hu": "Ha felcserélem a tényezők sorrendjét, a szorzat megváltozik.",
+      "answer": false,
+      "why_es": "El producto no cambia.",
+      "why_hu": "A szorzat nem változik."
+     },
+     {
+      "es": "(3 × 2) × 5 y 3 × (2 × 5) dan 30.",
+      "hu": "A (3 × 2) × 5 és a 3 × (2 × 5) is 30.",
+      "answer": true,
+      "why_es": "6 × 5 = 30 y 3 × 10 = 30.",
+      "why_hu": "6 × 5 = 30 és 3 × 10 = 30."
+     },
+     {
+      "es": "5 × (2 × 8) = (5 × 2) × 8 es un ejemplo de propiedad conmutativa.",
+      "hu": "Az 5 × (2 × 8) = (5 × 2) × 8 a felcserélhetőségi tulajdonság példája.",
+      "answer": false,
+      "why_es": "Es propiedad asociativa: cambian los paréntesis.",
+      "why_hu": "Ez csoportosítás: a zárójel változik."
+     }
+    ]
+   },
+   "img": "mat_cu_s26-27",
+   "page_box": [
+    0.52,
+    0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "id": "cu28",
+   "book": "cu",
+   "page": 28,
+   "unit": "u3",
+   "title": "Propiedades de la multiplicación",
+   "title_hu": "A szorzás tulajdonságai",
+   "summary_hu": "Összekötés: melyik művelet melyik tulajdonságot mutatja. Két szöveges feladat: almák kosarakban (3 × 4 = 4 × 3, felcserélhetőség) és játékok dobozokban polcokon (3 × 4 × 2).",
+   "words": [
+    {
+     "w": "relaciona",
+     "hu": "kösd össze"
+    },
+    {
+     "w": "la propiedad",
+     "hu": "tulajdonság"
+    },
+    {
+     "w": "el cesto",
+     "hu": "kosár",
+     "pic": "🧺"
+    },
+    {
+     "w": "la manzana",
+     "hu": "alma",
+     "pic": "🍎"
+    },
+    {
+     "w": "averigua",
+     "hu": "derítsd ki"
+    },
+    {
+     "w": "la tienda",
+     "hu": "bolt",
+     "pic": "🏪"
+    },
+    {
+     "w": "el estante",
+     "hu": "polc"
+    },
+    {
+     "w": "la caja",
+     "hu": "doboz",
+     "pic": "📦"
+    },
+    {
+     "w": "el juguete",
+     "hu": "játék",
+     "pic": "🧸"
+    },
+    {
+     "w": "calcula",
+     "hu": "számold ki"
+    },
+    {
+     "w": "más",
+     "hu": "több"
+    },
+    {
+     "w": "su amiga",
+     "hu": "barátnője",
+     "pic": "👧"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu28_4",
+     "n": "4",
+     "text": "Relaciona cada operación con la propiedad que se aplica.",
+     "text_hu": "Kösd össze mindegyik műveletet a megfelelő tulajdonsággal.",
+     "items": [
+      {
+       "id": "cu28_4a",
+       "q": "¿Qué propiedad se aplica en 5 × 9 = 9 × 5?",
+       "q_hu": "Melyik tulajdonságot alkalmazzuk itt: 5 × 9 = 9 × 5?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőségi tulajdonság"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatósági tulajdonság"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔗",
+       "answer_hu": "Felcserélhetőségi"
+      },
+      {
+       "id": "cu28_4b",
+       "q": "¿Qué propiedad se aplica en (7 × 2) × 3 = 7 × (2 × 3)?",
+       "q_hu": "Melyik tulajdonságot alkalmazzuk itt: (7 × 2) × 3 = 7 × (2 × 3)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőségi tulajdonság"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatósági tulajdonság"
+        }
+       ],
+       "answer": 1,
+       "pic": "🔗",
+       "answer_hu": "Csoportosíthatósági"
+      },
+      {
+       "id": "cu28_4c",
+       "q": "¿Qué propiedad se aplica en 1 × 8 = 8 × 1?",
+       "q_hu": "Melyik tulajdonságot alkalmazzuk itt: 1 × 8 = 8 × 1?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőségi tulajdonság"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatósági tulajdonság"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔗",
+       "answer_hu": "Felcserélhetőségi"
+      },
+      {
+       "id": "cu28_4d",
+       "q": "¿Qué propiedad se aplica en 4 × (2 × 6) = (4 × 2) × 6?",
+       "q_hu": "Melyik tulajdonságot alkalmazzuk itt: 4 × (2 × 6) = (4 × 2) × 6?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőségi tulajdonság"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatósági tulajdonság"
+        }
+       ],
+       "answer": 1,
+       "pic": "🔗",
+       "answer_hu": "Csoportosíthatósági"
+      }
+     ],
+     "box": [
+      0.0375,
+      0.0731,
+      0.3725,
+      0.28
+     ],
+     "context": {
+      "es": "A la izquierda hay cuatro igualdades; a la derecha, dos propiedades: conmutativa y asociativa.",
+      "hu": "Balra négy egyenlőség van, jobbra két tulajdonság: felcserélhetőségi és csoportosíthatósági."
+     },
+     "help": {
+      "es": "Si cambia el orden de dos factores, es conmutativa. Si cambian los paréntesis, es asociativa.",
+      "hu": "Ha két tényező sorrendje változik: felcserélhetőség. Ha a zárójel változik: csoportosítás."
+     },
+     "pic": "🔗"
+    },
+    {
+     "id": "cu28_5",
+     "n": "5",
+     "text": "María tiene 3 cestos con 4 manzanas cada uno. Su amiga Ana tiene 4 cestos con 3 manzanas cada uno. Averigua quién de las dos tiene más manzanas.",
+     "text_hu": "Máriának 3 kosara van, mindegyikben 4 alma. Barátnőjének, Annának 4 kosara van, mindegyikben 3 alma. Derítsd ki, melyiküknek van több almája.",
+     "items": [
+      {
+       "id": "cu28_5a",
+       "q": "María tiene 3 cestos con 4 manzanas cada uno. ¿Cuántas manzanas tiene?",
+       "q_hu": "Máriának 3 kosara van, mindegyikben 4 alma. Hány almája van?",
+       "kind": "num",
+       "answer": "12",
+       "pic": "🍎",
+       "vis": {
+        "type": "groups",
+        "n": 3,
+        "size": 4
+       }
+      },
+      {
+       "id": "cu28_5b",
+       "q": "Ana tiene 4 cestos con 3 manzanas cada uno. ¿Cuántas manzanas tiene?",
+       "q_hu": "Annának 4 kosara van, mindegyikben 3 alma. Hány almája van?",
+       "kind": "num",
+       "answer": "12",
+       "pic": "🍏",
+       "vis": {
+        "type": "groups",
+        "n": 4,
+        "size": 3
+       }
+      },
+      {
+       "id": "cu28_5c",
+       "q": "María tiene ___ manzanas que Ana.",
+       "q_hu": "Mária ___ almája van, mint Annának.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "más",
+         "hu": "több"
+        },
+        {
+         "t": "menos",
+         "hu": "kevesebb"
+        },
+        {
+         "t": "las mismas",
+         "hu": "ugyanannyi"
+        }
+       ],
+       "answer": 2,
+       "pic": "🟰",
+       "answer_hu": "Ugyanannyi (12 és 12)."
+      },
+      {
+       "id": "cu28_5d",
+       "q": "¿Qué propiedad de la multiplicación observas?",
+       "q_hu": "Melyik szorzási tulajdonságot figyeled meg?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Propiedad conmutativa",
+         "hu": "Felcserélhetőségi tulajdonság"
+        },
+        {
+         "t": "Propiedad asociativa",
+         "hu": "Csoportosíthatósági tulajdonság"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔄",
+       "answer_hu": "Felcserélhetőségi: 3 × 4 = 4 × 3."
+      }
+     ],
+     "box": [
+      0.0375,
+      0.3003,
+      0.35,
+      0.6412
+     ],
+     "context": {
+      "es": "No hay dibujo, solo un espacio para calcular. María: 3 cestos de 4 manzanas. Ana: 4 cestos de 3 manzanas.",
+      "hu": "Nincs rajz, csak hely a számoláshoz. Mária: 3 kosár × 4 alma. Anna: 4 kosár × 3 alma."
+     },
+     "help": {
+      "es": "Calcula 3 × 4 y 4 × 3 y compara.",
+      "hu": "Számold ki a 3 × 4-et és a 4 × 3-at, aztán hasonlítsd össze."
+     },
+     "pic": "🍎🧺"
+    },
+    {
+     "id": "cu28_6",
+     "n": "6",
+     "text": "En una tienda hay 3 estantes con 4 cajas de juguetes cada uno. Cada caja contiene 2 juguetes. Calcula cuántos juguetes hay en los estantes.",
+     "text_hu": "Egy boltban 3 polc van, mindegyiken 4 játékos doboz. Minden dobozban 2 játék van. Számold ki, hány játék van a polcokon.",
+     "items": [
+      {
+       "id": "cu28_6a",
+       "q": "Hay 3 estantes con 4 cajas cada uno. ¿Cuántas cajas hay?",
+       "q_hu": "3 polc van, mindegyiken 4 doboz. Hány doboz van?",
+       "kind": "num",
+       "answer": "12",
+       "pic": "📦",
+       "vis": {
+        "type": "groups",
+        "n": 3,
+        "size": 4
+       }
+      },
+      {
+       "id": "cu28_6b",
+       "q": "Cada caja contiene 2 juguetes. ¿Cuántos juguetes hay en los estantes?",
+       "q_hu": "Minden dobozban 2 játék van. Hány játék van a polcokon?",
+       "kind": "num",
+       "answer": "24",
+       "pic": "🧸",
+       "vis": {
+        "type": "groups",
+        "n": 12,
+        "size": 2
+       }
+      }
+     ],
+     "box": [
+      0.0375,
+      0.6575,
+      0.44,
+      0.9334
+     ],
+     "context": {
+      "es": "El dibujo muestra 3 estantes con 4 cajas de colores cada uno, llenas de juguetes.",
+      "hu": "A rajzon 3 polc van, mindegyiken 4 színes doboz tele játékkal."
+     },
+     "help": {
+      "es": "Primero cuenta las cajas (3 × 4) y luego multiplica por 2. Es la propiedad asociativa: 3 × 4 × 2.",
+      "hu": "Előbb számold meg a dobozokat (3 × 4), aztán szorozd 2-vel. Ez a csoportosítás: 3 × 4 × 2."
+     },
+     "pic": "🧸📦"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Seguimos con las propiedades de la multiplicación! Hoy las usamos en problemas.",
+     "hu": "Folytatjuk a szorzás tulajdonságait! Ma feladatokban használjuk őket.",
+     "pic": "🧮"
+    },
+    "sentences": [
+     {
+      "es": "Para relacionar una operación con su propiedad, miramos qué cambia.",
+      "hu": "Hogy egy műveletet a tulajdonságához kössünk, megnézzük, mi változik.",
+      "pic": "🔍"
+     },
+     {
+      "es": "Si cambia el orden de dos factores, es la propiedad conmutativa: 5 × 9 = 9 × 5.",
+      "hu": "Ha két tényező sorrendje változik, az a felcserélhetőség: 5 × 9 = 9 × 5.",
+      "pic": "🔄",
+      "vis": {
+       "type": "groups",
+       "n": 5,
+       "size": 9
+      }
+     },
+     {
+      "es": "Si cambian los paréntesis entre tres factores, es la propiedad asociativa.",
+      "hu": "Ha három tényező közt a zárójel változik, az a csoportosítás.",
+      "pic": "🧩"
+     },
+     {
+      "es": "(7 × 2) × 3 = 7 × (2 × 3) es asociativa. Los dos lados dan 42.",
+      "hu": "A (7 × 2) × 3 = 7 × (2 × 3) csoportosítás. Mindkét oldal 42.",
+      "pic": "🟰"
+     },
+     {
+      "es": "María tiene 3 cestos con 4 manzanas cada uno: 3 × 4 = 12 manzanas.",
+      "hu": "Máriának 3 kosara van, 4-4 almával: 3 × 4 = 12 alma.",
+      "pic": "🍎",
+      "vis": {
+       "type": "groups",
+       "n": 3,
+       "size": 4
+      }
+     },
+     {
+      "es": "Ana tiene 4 cestos con 3 manzanas cada uno: 4 × 3 = 12 manzanas.",
+      "hu": "Annának 4 kosara van, 3-3 almával: 4 × 3 = 12 alma.",
+      "pic": "🍏",
+      "vis": {
+       "type": "groups",
+       "n": 4,
+       "size": 3
+      }
+     },
+     {
+      "es": "Las dos tienen las mismas manzanas, porque 3 × 4 = 4 × 3. Es la propiedad conmutativa.",
+      "hu": "Mindkettőjüknek ugyanannyi almája van, mert 3 × 4 = 4 × 3. Ez a felcserélhetőség.",
+      "pic": "🟰"
+     },
+     {
+      "es": "En la tienda hay 3 estantes con 4 cajas cada uno: 3 × 4 = 12 cajas.",
+      "hu": "A boltban 3 polc van, 4-4 dobozzal: 3 × 4 = 12 doboz.",
+      "pic": "📦",
+      "vis": {
+       "type": "groups",
+       "n": 3,
+       "size": 4
+      }
+     },
+     {
+      "es": "Cada caja tiene 2 juguetes, así que 12 × 2 = 24 juguetes.",
+      "hu": "Minden dobozban 2 játék van, tehát 12 × 2 = 24 játék.",
+      "pic": "🧸",
+      "vis": {
+       "type": "groups",
+       "n": 12,
+       "size": 2
+      }
+     }
+    ],
+    "remember": [
+     {
+      "es": "Cambia el orden → conmutativa.",
+      "hu": "Változik a sorrend → felcserélhetőség."
+     },
+     {
+      "es": "Cambian los paréntesis → asociativa.",
+      "hu": "Változik a zárójel → csoportosítás."
+     },
+     {
+      "es": "3 × 4 = 4 × 3 = 12",
+      "hu": "3 × 4 = 4 × 3 = 12"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, María tiene 3 cestos con 4 manzanas. ¿Cuántas son?",
+      "hu": "Martin, Máriának 3 kosara van 4 almával. Hány alma ez?"
+     },
+     {
+      "who": "Martín",
+      "es": "3 por 4 son 12 manzanas.",
+      "hu": "3-szor 4 az 12 alma."
+     },
+     {
+      "who": "Gatito",
+      "es": "Y Ana tiene 4 cestos con 3 manzanas. ¿Quién tiene más?",
+      "hu": "Annának 4 kosara van 3 almával. Kinek van több?"
+     },
+     {
+      "who": "Martín",
+      "es": "Ana, porque tiene más cestos.",
+      "hu": "Annának, mert több kosara van."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Miau, cuidado! 4 × 3 también es 12.",
+      "hu": "Miau, vigyázz! A 4 × 3 is 12."
+     },
+     {
+      "who": "Martín",
+      "es": "¡Es verdad! Tienen las mismas manzanas.",
+      "hu": "Igaz! Ugyanannyi almájuk van."
+     },
+     {
+      "who": "Gatito",
+      "es": "Eso es la propiedad conmutativa.",
+      "hu": "Ez a felcserélhetőségi tulajdonság."
+     }
+    ],
+    "tf": [
+     {
+      "es": "María y Ana tienen las mismas manzanas.",
+      "hu": "Máriának és Annának ugyanannyi almája van.",
+      "answer": true,
+      "why_es": "3 × 4 = 12 y 4 × 3 = 12.",
+      "why_hu": "3 × 4 = 12 és 4 × 3 = 12."
+     },
+     {
+      "es": "5 × 9 = 9 × 5 es un ejemplo de propiedad asociativa.",
+      "hu": "Az 5 × 9 = 9 × 5 a csoportosítás példája.",
+      "answer": false,
+      "why_es": "Es conmutativa: solo cambia el orden.",
+      "why_hu": "Felcserélhetőség: csak a sorrend változik."
+     },
+     {
+      "es": "(7 × 2) × 3 = 7 × (2 × 3) es un ejemplo de propiedad asociativa.",
+      "hu": "A (7 × 2) × 3 = 7 × (2 × 3) a csoportosítás példája.",
+      "answer": true,
+      "why_es": "Cambian los paréntesis.",
+      "why_hu": "A zárójel változik."
+     },
+     {
+      "es": "En los estantes hay 24 juguetes.",
+      "hu": "A polcokon 24 játék van.",
+      "answer": true,
+      "why_es": "3 × 4 × 2 = 24.",
+      "why_hu": "3 × 4 × 2 = 24."
+     },
+     {
+      "es": "1 × 8 = 8 × 1 es propiedad asociativa.",
+      "hu": "Az 1 × 8 = 8 × 1 csoportosítás.",
+      "answer": false,
+      "why_es": "Es conmutativa.",
+      "why_hu": "Felcserélhetőség."
+     },
+     {
+      "es": "En la tienda hay 12 cajas.",
+      "hu": "A boltban 12 doboz van.",
+      "answer": true,
+      "why_es": "3 × 4 = 12.",
+      "why_hu": "3 × 4 = 12."
+     }
+    ]
+   },
+   "img": "mat_cu_s28-29",
+   "page_box": [
+    0,
+    0,
+    0.49,
+    1.0
+   ]
+  },
+  {
+   "id": "cu29",
+   "book": "cu",
+   "page": 29,
+   "unit": "u3",
+   "title": "Multiplicación por una cifra",
+   "title_hu": "Szorzás egyjegyű számmal",
+   "summary_hu": "Háromjegyű szám szorzása egyjegyűvel, függőlegesen: jobbról balra szorzunk (egyesek, tízesek, százasok), és ha 9 fölé megyünk, átviszünk. Hat szorzást kell megoldani.",
+   "words": [
+    {
+     "w": "multiplicar",
+     "hu": "szorozni",
+     "pic": "✖️"
+    },
+    {
+     "w": "una cifra",
+     "hu": "egyjegyű"
+    },
+    {
+     "w": "resuelve",
+     "hu": "oldd meg"
+    },
+    {
+     "w": "las unidades",
+     "hu": "egyesek"
+    },
+    {
+     "w": "las decenas",
+     "hu": "tízesek"
+    },
+    {
+     "w": "las centenas",
+     "hu": "százasok"
+    },
+    {
+     "w": "llevar",
+     "hu": "átvinni"
+    },
+    {
+     "w": "de derecha a izquierda",
+     "hu": "jobbról balra",
+     "pic": "⬅️"
+    },
+    {
+     "w": "el producto",
+     "hu": "szorzat"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu29_1",
+     "n": "1",
+     "text": "Resuelve estas multiplicaciones.",
+     "text_hu": "Oldd meg ezeket a szorzásokat.",
+     "items": [
+      {
+       "id": "cu29_1a",
+       "q": "132 × 2 = ?",
+       "q_hu": "132 × 2 = ?",
+       "kind": "num",
+       "answer": "264",
+       "pic": "✖️",
+       "vis": {
+        "type": "digits",
+        "n": "132"
+       }
+      },
+      {
+       "id": "cu29_1b",
+       "q": "305 × 3 = ?",
+       "q_hu": "305 × 3 = ?",
+       "kind": "num",
+       "answer": "915",
+       "pic": "✖️",
+       "vis": {
+        "type": "digits",
+        "n": "305"
+       }
+      },
+      {
+       "id": "cu29_1c",
+       "q": "412 × 4 = ?",
+       "q_hu": "412 × 4 = ?",
+       "kind": "num",
+       "answer": "1648",
+       "pic": "✖️",
+       "vis": {
+        "type": "digits",
+        "n": "412"
+       }
+      },
+      {
+       "id": "cu29_1d",
+       "q": "215 × 5 = ?",
+       "q_hu": "215 × 5 = ?",
+       "kind": "num",
+       "answer": "1075",
+       "pic": "✖️",
+       "vis": {
+        "type": "digits",
+        "n": "215"
+       }
+      },
+      {
+       "id": "cu29_1e",
+       "q": "184 × 6 = ?",
+       "q_hu": "184 × 6 = ?",
+       "kind": "num",
+       "answer": "1104",
+       "pic": "✖️",
+       "vis": {
+        "type": "digits",
+        "n": "184"
+       }
+      },
+      {
+       "id": "cu29_1f",
+       "q": "241 × 7 = ?",
+       "q_hu": "241 × 7 = ?",
+       "kind": "num",
+       "answer": "1687",
+       "pic": "✖️",
+       "vis": {
+        "type": "digits",
+        "n": "241"
+       }
+      }
+     ],
+     "box": [
+      0.5475,
+      0.3856,
+      0.9525,
+      0.9375
+     ],
+     "context": {
+      "es": "Hay seis multiplicaciones escritas en vertical: un número de tres cifras por un número de una cifra.",
+      "hu": "Hat függőlegesen felírt szorzás van: háromjegyű szám szorozva egyjegyűvel."
+     },
+     "help": {
+      "es": "Multiplica de derecha a izquierda: primero las unidades, luego las decenas, luego las centenas. Si pasas de 9, te llevas.",
+      "hu": "Jobbról balra szorozz: előbb az egyesek, aztán a tízesek, végül a százasok. Ha 9 fölé mész, átviszel."
+     },
+     "pic": "✖️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy multiplicamos números de tres cifras por una cifra!",
+     "hu": "Ma háromjegyű számokat szorzunk egyjegyűvel!",
+     "pic": "✖️"
+    },
+    "sentences": [
+     {
+      "es": "Esta es la Ficha 2: multiplicación por una cifra.",
+      "hu": "Ez a 2. lap: szorzás egyjegyű számmal.",
+      "pic": "📘"
+     },
+     {
+      "es": "Escribimos los números uno debajo del otro, con las columnas C, D y U bien alineadas.",
+      "hu": "A számokat egymás alá írjuk, a százas, tízes, egyes oszlopokat egymás alá igazítva.",
+      "pic": "🔢",
+      "vis": {
+       "type": "digits",
+       "n": "247"
+      }
+     },
+     {
+      "es": "Ejemplo: 247 × 2. Empezamos por las unidades: 7 × 2 = 14.",
+      "hu": "Példa: 247 × 2. Az egyesekkel kezdünk: 7 × 2 = 14.",
+      "pic": "1️⃣"
+     },
+     {
+      "es": "Escribimos el 4 y nos llevamos 1 a las decenas.",
+      "hu": "Leírjuk a 4-et, az 1-et pedig átvisszük a tízesekhez.",
+      "pic": "⬆️"
+     },
+     {
+      "es": "Ahora las decenas: 4 × 2 = 8, y sumamos la que nos llevamos: 8 + 1 = 9.",
+      "hu": "Most a tízesek: 4 × 2 = 8, és hozzáadjuk az átvitt egyet: 8 + 1 = 9.",
+      "pic": "2️⃣"
+     },
+     {
+      "es": "Por último las centenas: 2 × 2 = 4.",
+      "hu": "Végül a százasok: 2 × 2 = 4.",
+      "pic": "3️⃣"
+     },
+     {
+      "es": "El resultado es 494.",
+      "hu": "Az eredmény 494.",
+      "pic": "✅",
+      "vis": {
+       "type": "digits",
+       "n": "494"
+      }
+     },
+     {
+      "es": "Siempre multiplicamos de derecha a izquierda: unidades, decenas y centenas.",
+      "hu": "Mindig jobbról balra szorzunk: egyesek, tízesek, százasok.",
+      "pic": "⬅️"
+     },
+     {
+      "es": "Si el producto de una columna pasa de 9, escribimos las unidades y llevamos las decenas.",
+      "hu": "Ha egy oszlop szorzata 9-nél nagyobb, leírjuk az egyeseket és átvisszük a tízeseket.",
+      "pic": "🎒"
+     },
+     {
+      "es": "Con 132 × 2: 2 × 2 = 4, 3 × 2 = 6 y 1 × 2 = 2. Sale 264.",
+      "hu": "A 132 × 2-nél: 2 × 2 = 4, 3 × 2 = 6, 1 × 2 = 2. Eredmény: 264.",
+      "pic": "🧮"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Se multiplica de derecha a izquierda.",
+      "hu": "Jobbról balra szorzunk."
+     },
+     {
+      "es": "Si pasa de 9: escribo las unidades y me llevo las decenas.",
+      "hu": "Ha 9 fölé megy: leírom az egyeseket, a tízeseket átviszem."
+     },
+     {
+      "es": "C = centenas, D = decenas, U = unidades",
+      "hu": "C = százasok, D = tízesek, U = egyesek"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, vamos a hacer 247 × 2. ¿Por dónde empezamos?",
+      "hu": "Martin, kiszámoljuk a 247 × 2-t. Hol kezdjük?"
+     },
+     {
+      "who": "Martín",
+      "es": "¿Por las centenas, el 2?",
+      "hu": "A százasokkal, a 2-vel?"
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, no. Empezamos por las unidades, a la derecha.",
+      "hu": "Miau, nem. Az egyesekkel kezdjük, jobbra."
+     },
+     {
+      "who": "Martín",
+      "es": "7 × 2 = 14. Escribo 4 y me llevo 1.",
+      "hu": "7 × 2 = 14. Leírom a 4-et, és átviszek 1-et."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Muy bien! ¿Y las decenas?",
+      "hu": "Nagyon jó! És a tízesek?"
+     },
+     {
+      "who": "Martín",
+      "es": "4 × 2 = 8, más 1 son 9. Y 2 × 2 = 4. ¡494!",
+      "hu": "4 × 2 = 8, meg 1 az 9. És 2 × 2 = 4. 494!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Multiplicamos de izquierda a derecha.",
+      "hu": "Balról jobbra szorzunk.",
+      "answer": false,
+      "why_es": "Se empieza por las unidades, a la derecha.",
+      "why_hu": "Az egyesekkel kezdjük, jobbról."
+     },
+     {
+      "es": "247 × 2 = 494.",
+      "hu": "247 × 2 = 494.",
+      "answer": true,
+      "why_es": "14 unidades, 8 + 1 decenas, 4 centenas.",
+      "why_hu": "4 egyes (1 átvitel), 9 tízes, 4 százas."
+     },
+     {
+      "es": "7 × 2 = 14: escribimos 4 y llevamos 1.",
+      "hu": "7 × 2 = 14: leírjuk a 4-et és átviszünk 1-et.",
+      "answer": true,
+      "why_es": "Las decenas se llevan a la columna siguiente.",
+      "why_hu": "A tízeseket a következő oszlopba visszük."
+     },
+     {
+      "es": "132 × 2 = 246.",
+      "hu": "132 × 2 = 246.",
+      "answer": false,
+      "why_es": "Es 264.",
+      "why_hu": "264 az eredmény."
+     },
+     {
+      "es": "305 × 3 = 915.",
+      "hu": "305 × 3 = 915.",
+      "answer": true,
+      "why_es": "5 × 3 = 15, 0 × 3 = 0 más 1, 3 × 3 = 9.",
+      "why_hu": "5 × 3 = 15, 0 × 3 = 0 meg 1, 3 × 3 = 9."
+     },
+     {
+      "es": "En C D U, la D son las decenas.",
+      "hu": "A C D U-ban a D a tízeseket jelenti.",
+      "answer": true,
+      "why_es": "D = decenas.",
+      "why_hu": "D = tízesek."
+     }
+    ]
+   },
+   "img": "mat_cu_s28-29",
+   "page_box": [
+    0.52,
+    0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "id": "cu30",
+   "book": "cu",
+   "page": 30,
+   "unit": "u3",
+   "title": "Multiplicación por una cifra",
+   "title_hu": "Szorzás egyjegyű számmal",
+   "summary_hu": "Szorzás felbontással (214 × 3 és 478 × 5), valamint három szöveges feladat: busz utasai (45 × 5), ünnepség költsége (256 × 5) és eperdobozok (8 × 5).",
+   "words": [
+    {
+     "w": "descomponer",
+     "hu": "felbontani",
+     "pic": "🧩"
+    },
+    {
+     "w": "el autobús",
+     "hu": "autóbusz",
+     "pic": "🚌"
+    },
+    {
+     "w": "el pasajero",
+     "hu": "utas"
+    },
+    {
+     "w": "el viaje",
+     "hu": "út, utazás"
+    },
+    {
+     "w": "lleno",
+     "hu": "tele"
+    },
+    {
+     "w": "el colegio",
+     "hu": "iskola",
+     "pic": "🏫"
+    },
+    {
+     "w": "la fiesta de fin de curso",
+     "hu": "tanévzáró ünnepség",
+     "pic": "🎉"
+    },
+    {
+     "w": "el alumno",
+     "hu": "diák"
+    },
+    {
+     "w": "el euro",
+     "hu": "euró",
+     "pic": "💶"
+    },
+    {
+     "w": "la frutería",
+     "hu": "gyümölcsbolt"
+    },
+    {
+     "w": "la tarrina",
+     "hu": "tálka"
+    },
+    {
+     "w": "la fresa",
+     "hu": "eper",
+     "pic": "🍓"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu30_2",
+     "n": "2",
+     "text": "Descompón el primer factor y resuelve.",
+     "text_hu": "Bontsd fel az első tényezőt, és old meg.",
+     "items": [
+      {
+       "id": "cu30_2a",
+       "q": "214 = 200 + 10 + 4. ¿Cuánto es 200 × 3?",
+       "q_hu": "214 = 200 + 10 + 4. Mennyi 200 × 3?",
+       "kind": "num",
+       "answer": "600",
+       "pic": "2️⃣"
+      },
+      {
+       "id": "cu30_2b",
+       "q": "¿Cuánto es 10 × 3?",
+       "q_hu": "Mennyi 10 × 3?",
+       "kind": "num",
+       "answer": "30",
+       "pic": "1️⃣"
+      },
+      {
+       "id": "cu30_2c",
+       "q": "¿Cuánto es 4 × 3?",
+       "q_hu": "Mennyi 4 × 3?",
+       "kind": "num",
+       "answer": "12",
+       "pic": "4️⃣"
+      },
+      {
+       "id": "cu30_2d",
+       "q": "214 × 3 = 600 + 30 + 12 = ?",
+       "q_hu": "214 × 3 = 600 + 30 + 12 = ?",
+       "kind": "num",
+       "answer": "642",
+       "pic": "✅"
+      },
+      {
+       "id": "cu30_2e",
+       "q": "478 = 400 + 70 + 8. ¿Cuánto es 400 × 5?",
+       "q_hu": "478 = 400 + 70 + 8. Mennyi 400 × 5?",
+       "kind": "num",
+       "answer": "2000",
+       "pic": "4️⃣"
+      },
+      {
+       "id": "cu30_2f",
+       "q": "¿Cuánto es 70 × 5?",
+       "q_hu": "Mennyi 70 × 5?",
+       "kind": "num",
+       "answer": "350",
+       "pic": "7️⃣"
+      },
+      {
+       "id": "cu30_2g",
+       "q": "¿Cuánto es 8 × 5?",
+       "q_hu": "Mennyi 8 × 5?",
+       "kind": "num",
+       "answer": "40",
+       "pic": "8️⃣"
+      },
+      {
+       "id": "cu30_2h",
+       "q": "478 × 5 = 2000 + 350 + 40 = ?",
+       "q_hu": "478 × 5 = 2000 + 350 + 40 = ?",
+       "kind": "num",
+       "answer": "2390",
+       "pic": "✅"
+      }
+     ],
+     "box": [
+      0.0425,
+      0.0772,
+      0.4475,
+      0.2886
+     ],
+     "context": {
+      "es": "Hay dos cuadros vacíos con 214 × 3 y 478 × 5. Hay que partir el primer número en centenas, decenas y unidades.",
+      "hu": "Két üres keret van: 214 × 3 és 478 × 5. Az első számot százasokra, tízesekre és egyesekre kell bontani."
+     },
+     "help": {
+      "es": "Parte 214 en 200 + 10 + 4, multiplica cada parte por 3 y suma los resultados.",
+      "hu": "Bontsd a 214-et 200 + 10 + 4-re, szorozd mindegyiket 3-mal, és add össze."
+     },
+     "pic": "🧩"
+    },
+    {
+     "id": "cu30_3",
+     "n": "3",
+     "text": "Un autobús tiene capacidad para 45 pasajeros. Si en un día hace 5 viajes con el autobús lleno, calcula cuántos pasajeros transporta en un día.",
+     "text_hu": "Egy autóbusz 45 utast tud szállítani. Ha egy nap 5 utat tesz meg teli busszal, számold ki, hány utast szállít egy nap.",
+     "items": [
+      {
+       "id": "cu30_3a",
+       "q": "Un autobús lleva 45 pasajeros cuando va lleno. Hace 5 viajes llenos en un día. ¿Cuántos pasajeros transporta en total?",
+       "q_hu": "Egy autóbuszba 45 utas fér. Egy nap 5 telt utat tesz meg. Hány utast szállít összesen?",
+       "kind": "num",
+       "answer": "225",
+       "pic": "🚌"
+      }
+     ],
+     "box": [
+      0.0425,
+      0.313,
+      0.35,
+      0.5122
+     ],
+     "context": {
+      "es": "No hay dibujo. Un autobús lleva 45 pasajeros y hace 5 viajes.",
+      "hu": "Nincs rajz. Egy busz 45 utast visz, és 5 utat tesz meg."
+     },
+     "help": {
+      "es": "Multiplica los pasajeros de un viaje por los viajes: 45 × 5.",
+      "hu": "Szorozd az egy úton lévő utasokat az utak számával: 45 × 5."
+     },
+     "pic": "🚌"
+    },
+    {
+     "id": "cu30_4",
+     "n": "4",
+     "text": "En el colegio de Gema se va a celebrar la fiesta de fin de curso. Cada alumno pondrá 5 euros. Si van a acudir 256 alumnos, halla cuánto costará la celebración en total.",
+     "text_hu": "Gema iskolájában tanévzáró ünnepséget tartanak. Minden diák 5 eurót ad. Ha 256 diák megy el, találd meg, mennyibe kerül összesen az ünnepség.",
+     "items": [
+      {
+       "id": "cu30_4a",
+       "q": "Cada alumno pone 5 euros. Van a acudir 256 alumnos. ¿Cuántos euros cuesta la celebración en total?",
+       "q_hu": "Minden diák 5 eurót ad. 256 diák megy el. Hány euróba kerül összesen az ünnepség?",
+       "kind": "num",
+       "answer": "1280",
+       "pic": "💶"
+      }
+     ],
+     "box": [
+      0.0425,
+      0.5325,
+      0.35,
+      0.7358
+     ],
+     "context": {
+      "es": "No hay dibujo. Cada uno de 256 alumnos pone 5 euros.",
+      "hu": "Nincs rajz. 256 diák mindegyike 5 eurót ad."
+     },
+     "help": {
+      "es": "Multiplica el dinero de cada alumno por el número de alumnos: 256 × 5.",
+      "hu": "Szorozd az egy diák pénzét a diákok számával: 256 × 5."
+     },
+     "pic": "💶🎉"
+    },
+    {
+     "id": "cu30_5",
+     "n": "5",
+     "text": "A la frutería de Rocío han llegado 8 cajas con 5 tarrinas de fresas cada una. Determina cuántas tarrinas de fresas han llegado en total.",
+     "text_hu": "Rocío gyümölcsboltjába 8 doboz érkezett, mindegyikben 5 tálka eper. Határozd meg, hány tálka eper érkezett összesen.",
+     "items": [
+      {
+       "id": "cu30_5a",
+       "q": "Han llegado 8 cajas con 5 tarrinas de fresas cada una. ¿Cuántas tarrinas han llegado en total?",
+       "q_hu": "8 doboz érkezett, mindegyikben 5 tálka eper. Hány tálka érkezett összesen?",
+       "kind": "num",
+       "answer": "40",
+       "pic": "🍓",
+       "vis": {
+        "type": "groups",
+        "n": 8,
+        "size": 5
+       }
+      }
+     ],
+     "box": [
+      0.0425,
+      0.7561,
+      0.45,
+      0.939
+     ],
+     "context": {
+      "es": "En el dibujo se ve una tarrina de fresas rojas. Llegan 8 cajas con 5 tarrinas cada una.",
+      "hu": "A képen egy tálka piros eper látszik. 8 doboz jött, mindegyikben 5 tálka."
+     },
+     "help": {
+      "es": "Cajas × tarrinas en cada caja: 8 × 5.",
+      "hu": "Dobozok × tálkák egy dobozban: 8 × 5."
+     },
+     "pic": "🍓📦"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy descomponemos números y resolvemos problemas de multiplicar!",
+     "hu": "Ma számokat bontunk fel, és szorzós szöveges feladatokat oldunk meg!",
+     "pic": "🧩"
+    },
+    "sentences": [
+     {
+      "es": "Descomponer un número es partirlo en centenas, decenas y unidades.",
+      "hu": "Egy számot felbontani annyi, mint százasokra, tízesekre és egyesekre osztani.",
+      "pic": "🧩"
+     },
+     {
+      "es": "214 es 200 + 10 + 4.",
+      "hu": "A 214 az 200 + 10 + 4.",
+      "pic": "🔢",
+      "vis": {
+       "type": "blocks",
+       "um": 0,
+       "c": 2,
+       "d": 1,
+       "u": 4
+      }
+     },
+     {
+      "es": "Multiplicamos cada parte por 3: 200 × 3 = 600, 10 × 3 = 30 y 4 × 3 = 12.",
+      "hu": "Mindegyik részt szorozzuk 3-mal: 200 × 3 = 600, 10 × 3 = 30, 4 × 3 = 12.",
+      "pic": "✖️"
+     },
+     {
+      "es": "Sumamos: 600 + 30 + 12 = 642. Entonces 214 × 3 = 642.",
+      "hu": "Összeadjuk: 600 + 30 + 12 = 642. Tehát 214 × 3 = 642.",
+      "pic": "➕"
+     },
+     {
+      "es": "478 es 400 + 70 + 8. Multiplicamos por 5: 2000, 350 y 40.",
+      "hu": "A 478 az 400 + 70 + 8. Szorozzuk 5-tel: 2000, 350 és 40.",
+      "pic": "4️⃣"
+     },
+     {
+      "es": "2000 + 350 + 40 = 2390.",
+      "hu": "2000 + 350 + 40 = 2390.",
+      "pic": "✅"
+     },
+     {
+      "es": "En un problema, primero entendemos la historia y luego elegimos la operación.",
+      "hu": "Egy szöveges feladatban előbb megértjük a történetet, aztán kiválasztjuk a műveletet.",
+      "pic": "📖"
+     },
+     {
+      "es": "Un autobús lleva 45 pasajeros y hace 5 viajes: 45 × 5 = 225 pasajeros.",
+      "hu": "Egy busz 45 utast visz és 5 utat tesz meg: 45 × 5 = 225 utas.",
+      "pic": "🚌"
+     },
+     {
+      "es": "256 alumnos ponen 5 euros cada uno: 256 × 5 = 1280 euros.",
+      "hu": "256 diák ad 5-5 eurót: 256 × 5 = 1280 euró.",
+      "pic": "💶"
+     },
+     {
+      "es": "8 cajas con 5 tarrinas de fresas cada una: 8 × 5 = 40 tarrinas.",
+      "hu": "8 doboz 5-5 tálka eperrel: 8 × 5 = 40 tálka.",
+      "pic": "🍓",
+      "vis": {
+       "type": "groups",
+       "n": 8,
+       "size": 5
+      }
+     },
+     {
+      "es": "Cuando hay grupos iguales, multiplicamos.",
+      "hu": "Ha egyforma csoportok vannak, szorzunk.",
+      "pic": "🧺"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Descomponer: 214 = 200 + 10 + 4",
+      "hu": "Felbontás: 214 = 200 + 10 + 4"
+     },
+     {
+      "es": "Grupos iguales → multiplicación.",
+      "hu": "Egyforma csoportok → szorzás."
+     },
+     {
+      "es": "Escribe la respuesta con su unidad (pasajeros, euros, tarrinas).",
+      "hu": "Írd le a választ a mértékegységgel (utas, euró, tálka)."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cómo descomponemos 214?",
+      "hu": "Martin, hogyan bontjuk fel a 214-et?"
+     },
+     {
+      "who": "Martín",
+      "es": "200 más 10 más 4.",
+      "hu": "200 meg 10 meg 4."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Miau! Y ahora cada parte por 3.",
+      "hu": "Miau! És most mindegyik rész szorozva 3-mal."
+     },
+     {
+      "who": "Martín",
+      "es": "600, 30 y 12. Sumo: 642.",
+      "hu": "600, 30 és 12. Összeadom: 642."
+     },
+     {
+      "who": "Gatito",
+      "es": "Un autobús lleva 45 pasajeros y hace 5 viajes. ¿Qué hacemos?",
+      "hu": "Egy busz 45 utast visz, és 5 utat tesz meg. Mit csinálunk?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡Multiplicar! 45 × 5 = 225.",
+      "hu": "Szorozni! 45 × 5 = 225."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Perfecto, campeón!",
+      "hu": "Tökéletes, bajnok!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "214 × 3 = 642.",
+      "hu": "214 × 3 = 642.",
+      "answer": true,
+      "why_es": "600 + 30 + 12 = 642.",
+      "why_hu": "600 + 30 + 12 = 642."
+     },
+     {
+      "es": "478 se descompone en 400 + 70 + 8.",
+      "hu": "A 478 felbontása 400 + 70 + 8.",
+      "answer": true,
+      "why_es": "Son centenas, decenas y unidades.",
+      "why_hu": "Százasok, tízesek és egyesek."
+     },
+     {
+      "es": "45 × 5 = 215.",
+      "hu": "45 × 5 = 215.",
+      "answer": false,
+      "why_es": "Es 225.",
+      "why_hu": "225 az eredmény."
+     },
+     {
+      "es": "La celebración costará 1280 euros.",
+      "hu": "Az ünnepség 1280 euróba kerül.",
+      "answer": true,
+      "why_es": "256 × 5 = 1280.",
+      "why_hu": "256 × 5 = 1280."
+     },
+     {
+      "es": "Han llegado 45 tarrinas de fresas.",
+      "hu": "45 tálka eper érkezett.",
+      "answer": false,
+      "why_es": "Son 8 × 5 = 40.",
+      "why_hu": "8 × 5 = 40."
+     },
+     {
+      "es": "70 × 5 = 350.",
+      "hu": "70 × 5 = 350.",
+      "answer": true,
+      "why_es": "7 × 5 = 35, y con el cero 350.",
+      "why_hu": "7 × 5 = 35, a nullával 350."
+     }
+    ]
+   },
+   "img": "mat_cu_s30-31",
+   "page_box": [
+    0,
+    0,
+    0.49,
+    1.0
+   ]
+  },
+  {
+   "id": "cu31",
+   "book": "cu",
+   "page": 31,
+   "unit": "u3",
+   "title": "Operaciones combinadas",
+   "title_hu": "Összetett műveletek",
+   "summary_hu": "Összetett műveletek sorrendje: 1. zárójel, 2. szorzás, 3. összeadás és kivonás balról jobbra. Feladatok: négy művelet kiszámítása, majd a hiányzó +, −, × jelek beírása.",
+   "words": [
+    {
+     "w": "la operación combinada",
+     "hu": "összetett művelet",
+     "pic": "🧮"
+    },
+    {
+     "w": "el paréntesis",
+     "hu": "zárójel"
+    },
+    {
+     "w": "la suma",
+     "hu": "összeadás",
+     "pic": "➕"
+    },
+    {
+     "w": "la resta",
+     "hu": "kivonás",
+     "pic": "➖"
+    },
+    {
+     "w": "la multiplicación",
+     "hu": "szorzás",
+     "pic": "✖️"
+    },
+    {
+     "w": "realiza",
+     "hu": "végezd el"
+    },
+    {
+     "w": "coloca",
+     "hu": "helyezd el"
+    },
+    {
+     "w": "el signo",
+     "hu": "jel"
+    },
+    {
+     "w": "la igualdad",
+     "hu": "egyenlőség",
+     "pic": "🟰"
+    },
+    {
+     "w": "correcto",
+     "hu": "helyes",
+     "pic": "✅"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu31_1",
+     "n": "1",
+     "text": "Realiza estas operaciones combinadas.",
+     "text_hu": "Végezd el ezeket az összetett műveleteket.",
+     "items": [
+      {
+       "id": "cu31_1a",
+       "q": "2 + 3 × 5 = ?",
+       "q_hu": "2 + 3 × 5 = ?",
+       "kind": "num",
+       "answer": "17",
+       "pic": "🧮"
+      },
+      {
+       "id": "cu31_1b",
+       "q": "10 − 2 × 4 = ?",
+       "q_hu": "10 − 2 × 4 = ?",
+       "kind": "num",
+       "answer": "2",
+       "pic": "🧮"
+      },
+      {
+       "id": "cu31_1c",
+       "q": "6 × 3 + 7 = ?",
+       "q_hu": "6 × 3 + 7 = ?",
+       "kind": "num",
+       "answer": "25",
+       "pic": "🧮"
+      },
+      {
+       "id": "cu31_1d",
+       "q": "15 + 4 × 2 − 3 = ?",
+       "q_hu": "15 + 4 × 2 − 3 = ?",
+       "kind": "num",
+       "answer": "20",
+       "pic": "🧮"
+      }
+     ],
+     "box": [
+      0.5475,
+      0.3659,
+      0.95,
+      0.8618
+     ],
+     "context": {
+      "es": "Hay cuatro cuadros, cada uno con una operación con sumas, restas y multiplicaciones mezcladas.",
+      "hu": "Négy keret van, mindegyikben egy művelet, ahol az összeadás, kivonás és szorzás keveredik."
+     },
+     "help": {
+      "es": "Primero las multiplicaciones, después las sumas y restas de izquierda a derecha.",
+      "hu": "Előbb a szorzások, utána az összeadások és kivonások balról jobbra."
+     },
+     "pic": "🧮"
+    },
+    {
+     "id": "cu31_2",
+     "n": "2",
+     "text": "Coloca los signos de +, – o × para que las igualdades sean correctas.",
+     "text_hu": "Írd be a +, – vagy × jeleket, hogy az egyenlőségek igazak legyenek.",
+     "items": [
+      {
+       "id": "cu31_2a1",
+       "q": "4 ○ 2 ○ 3 = 11. ¿Qué signo va en el círculo primero?",
+       "q_hu": "4 ○ 2 ○ 3 = 11. Melyik jel kerül az első körbe?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "+",
+         "hu": "+"
+        },
+        {
+         "t": "−",
+         "hu": "−"
+        },
+        {
+         "t": "×",
+         "hu": "×"
+        }
+       ],
+       "answer": 2,
+       "pic": "⭕"
+      },
+      {
+       "id": "cu31_2a2",
+       "q": "4 ○ 2 ○ 3 = 11. ¿Qué signo va en el círculo segundo?",
+       "q_hu": "4 ○ 2 ○ 3 = 11. Melyik jel kerül az második körbe?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "+",
+         "hu": "+"
+        },
+        {
+         "t": "−",
+         "hu": "−"
+        },
+        {
+         "t": "×",
+         "hu": "×"
+        }
+       ],
+       "answer": 0,
+       "pic": "⭕"
+      },
+      {
+       "id": "cu31_2b1",
+       "q": "10 ○ 2 ○ 3 = 16. ¿Qué signo va en el círculo primero?",
+       "q_hu": "10 ○ 2 ○ 3 = 16. Melyik jel kerül az első körbe?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "+",
+         "hu": "+"
+        },
+        {
+         "t": "−",
+         "hu": "−"
+        },
+        {
+         "t": "×",
+         "hu": "×"
+        }
+       ],
+       "answer": 0,
+       "pic": "⭕"
+      },
+      {
+       "id": "cu31_2b2",
+       "q": "10 ○ 2 ○ 3 = 16. ¿Qué signo va en el círculo segundo?",
+       "q_hu": "10 ○ 2 ○ 3 = 16. Melyik jel kerül az második körbe?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "+",
+         "hu": "+"
+        },
+        {
+         "t": "−",
+         "hu": "−"
+        },
+        {
+         "t": "×",
+         "hu": "×"
+        }
+       ],
+       "answer": 2,
+       "pic": "⭕"
+      },
+      {
+       "id": "cu31_2c1",
+       "q": "5 ○ 2 ○ 4 = 6. ¿Qué signo va en el círculo primero?",
+       "q_hu": "5 ○ 2 ○ 4 = 6. Melyik jel kerül az első körbe?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "+",
+         "hu": "+"
+        },
+        {
+         "t": "−",
+         "hu": "−"
+        },
+        {
+         "t": "×",
+         "hu": "×"
+        }
+       ],
+       "answer": 2,
+       "pic": "⭕"
+      },
+      {
+       "id": "cu31_2c2",
+       "q": "5 ○ 2 ○ 4 = 6. ¿Qué signo va en el círculo segundo?",
+       "q_hu": "5 ○ 2 ○ 4 = 6. Melyik jel kerül az második körbe?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "+",
+         "hu": "+"
+        },
+        {
+         "t": "−",
+         "hu": "−"
+        },
+        {
+         "t": "×",
+         "hu": "×"
+        }
+       ],
+       "answer": 1,
+       "pic": "⭕"
+      }
+     ],
+     "box": [
+      0.5475,
+      0.878,
+      0.95,
+      0.939
+     ],
+     "context": {
+      "es": "Hay tres igualdades con dos círculos vacíos cada una: 4 ○ 2 ○ 3 = 11, 10 ○ 2 ○ 3 = 16 y 5 ○ 2 ○ 4 = 6.",
+      "hu": "Három egyenlőség van, mindegyikben két üres kör: 4 ○ 2 ○ 3 = 11, 10 ○ 2 ○ 3 = 16 és 5 ○ 2 ○ 4 = 6."
+     },
+     "help": {
+      "es": "Prueba combinaciones de signos y recuerda: primero se multiplica.",
+      "hu": "Próbálj ki jelkombinációkat, és ne felejtsd: előbb szorzunk."
+     },
+     "pic": "⭕➕✖️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos a resolver operaciones combinadas!",
+     "hu": "Ma megtanuljuk az összetett műveleteket megoldani!",
+     "pic": "🧮"
+    },
+    "sentences": [
+     {
+      "es": "Una operación combinada tiene sumas, restas y multiplicaciones juntas.",
+      "hu": "Az összetett műveletben összeadás, kivonás és szorzás van együtt.",
+      "pic": "🧮"
+     },
+     {
+      "es": "Hay un orden para resolverla, y siempre lo seguimos.",
+      "hu": "Van egy sorrend a megoldáshoz, és mindig követjük.",
+      "pic": "📋"
+     },
+     {
+      "es": "Primero, las operaciones que hay dentro del paréntesis, si los hay.",
+      "hu": "Először a zárójelben lévő műveletek, ha vannak.",
+      "pic": "1️⃣"
+     },
+     {
+      "es": "Segundo, las multiplicaciones.",
+      "hu": "Másodszor a szorzások.",
+      "pic": "2️⃣"
+     },
+     {
+      "es": "Tercero, las sumas y las restas, de izquierda a derecha.",
+      "hu": "Harmadszor az összeadások és kivonások, balról jobbra.",
+      "pic": "3️⃣"
+     },
+     {
+      "es": "Ejemplo: 4 × (6 + 18) − 5. Primero el paréntesis: 6 + 18 = 24.",
+      "hu": "Példa: 4 × (6 + 18) − 5. Előbb a zárójel: 6 + 18 = 24.",
+      "pic": "🔢"
+     },
+     {
+      "es": "Después la multiplicación: 4 × 24 = 96.",
+      "hu": "Aztán a szorzás: 4 × 24 = 96.",
+      "pic": "✖️"
+     },
+     {
+      "es": "Por último la resta: 96 − 5 = 91.",
+      "hu": "Végül a kivonás: 96 − 5 = 91.",
+      "pic": "➖"
+     },
+     {
+      "es": "Ejemplo sin paréntesis: 2 + 3 × 5. Primero 3 × 5 = 15 y luego 2 + 15 = 17.",
+      "hu": "Példa zárójel nélkül: 2 + 3 × 5. Előbb 3 × 5 = 15, aztán 2 + 15 = 17.",
+      "pic": "✅"
+     },
+     {
+      "es": "En el ejercicio 2 probamos signos hasta que la igualdad sea verdadera: 4 × 2 + 3 = 11.",
+      "hu": "A 2. feladatban jeleket próbálgatunk, míg igaz lesz az egyenlőség: 4 × 2 + 3 = 11.",
+      "pic": "⭕"
+     }
+    ],
+    "remember": [
+     {
+      "es": "1.º paréntesis, 2.º multiplicaciones, 3.º sumas y restas.",
+      "hu": "1. zárójel, 2. szorzás, 3. összeadás és kivonás."
+     },
+     {
+      "es": "Sin paréntesis, la multiplicación va antes que la suma y la resta.",
+      "hu": "Zárójel nélkül a szorzás előbb jön, mint az összeadás és kivonás."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cuánto es 2 + 3 × 5?",
+      "hu": "Martin, mennyi 2 + 3 × 5?"
+     },
+     {
+      "who": "Martín",
+      "es": "2 + 3 = 5, y 5 × 5 = 25.",
+      "hu": "2 + 3 = 5, és 5 × 5 = 25."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Miau, no! ¿Qué va primero?",
+      "hu": "Miau, nem! Mi jön előbb?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡La multiplicación! 3 × 5 = 15.",
+      "hu": "A szorzás! 3 × 5 = 15."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y luego?",
+      "hu": "És aztán?"
+     },
+     {
+      "who": "Martín",
+      "es": "2 + 15 = 17.",
+      "hu": "2 + 15 = 17."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Perfecto! Primero se multiplica.",
+      "hu": "Tökéletes! Előbb szorzunk."
+     }
+    ],
+    "tf": [
+     {
+      "es": "En 2 + 3 × 5 se suma primero.",
+      "hu": "A 2 + 3 × 5-nél előbb összeadunk.",
+      "answer": false,
+      "why_es": "Primero se multiplica: 3 × 5 = 15.",
+      "why_hu": "Előbb szorzunk: 3 × 5 = 15."
+     },
+     {
+      "es": "2 + 3 × 5 = 17.",
+      "hu": "2 + 3 × 5 = 17.",
+      "answer": true,
+      "why_es": "2 + 15 = 17.",
+      "why_hu": "2 + 15 = 17."
+     },
+     {
+      "es": "Se resuelve primero lo que está dentro del paréntesis.",
+      "hu": "Előbb a zárójelben lévőt oldjuk meg.",
+      "answer": true,
+      "why_es": "El paréntesis va primero.",
+      "why_hu": "A zárójel az első."
+     },
+     {
+      "es": "10 − 2 × 4 = 32.",
+      "hu": "10 − 2 × 4 = 32.",
+      "answer": false,
+      "why_es": "Es 10 − 8 = 2.",
+      "why_hu": "10 − 8 = 2."
+     },
+     {
+      "es": "6 × 3 + 7 = 25.",
+      "hu": "6 × 3 + 7 = 25.",
+      "answer": true,
+      "why_es": "18 + 7 = 25.",
+      "why_hu": "18 + 7 = 25."
+     },
+     {
+      "es": "4 × (6 + 18) − 5 = 91.",
+      "hu": "4 × (6 + 18) − 5 = 91.",
+      "answer": true,
+      "why_es": "4 × 24 = 96 y 96 − 5 = 91.",
+      "why_hu": "4 × 24 = 96 és 96 − 5 = 91."
+     }
+    ]
+   },
+   "img": "mat_cu_s30-31",
+   "page_box": [
+    0.52,
+    0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "id": "cu32",
+   "book": "cu",
+   "page": 32,
+   "unit": "u3",
+   "title": "Operaciones combinadas",
+   "title_hu": "Összetett műveletek",
+   "summary_hu": "Három összetett művelet eredményének ellenőrzése (Jó/Rossz, és a helyes megoldás), majd egy matricás szöveges feladat: 3 × 6 − 4 = 14.",
+   "words": [
+    {
+     "w": "comprueba",
+     "hu": "ellenőrizd",
+     "pic": "🔍"
+    },
+    {
+     "w": "bien",
+     "hu": "jó",
+     "pic": "✅"
+    },
+    {
+     "w": "mal",
+     "hu": "rossz",
+     "pic": "❌"
+    },
+    {
+     "w": "la solución",
+     "hu": "megoldás"
+    },
+    {
+     "w": "en caso contrario",
+     "hu": "ellenkező esetben"
+    },
+    {
+     "w": "lee",
+     "hu": "olvasd el"
+    },
+    {
+     "w": "elige",
+     "hu": "válaszd ki"
+    },
+    {
+     "w": "el cromo",
+     "hu": "matrica",
+     "pic": "🃏"
+    },
+    {
+     "w": "el paquete",
+     "hu": "csomag",
+     "pic": "📦"
+    },
+    {
+     "w": "regalar",
+     "hu": "ajándékozni",
+     "pic": "🎁"
+    },
+    {
+     "w": "el hermano",
+     "hu": "testvér (fiú)"
+    },
+    {
+     "w": "quedar",
+     "hu": "megmaradni"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu32_3",
+     "n": "3",
+     "text": "Comprueba si el resultado es correcto y, en caso contrario, escribe la solución correcta.",
+     "text_hu": "Ellenőrizd, hogy az eredmény helyes-e, és ha nem, írd le a helyes megoldást.",
+     "items": [
+      {
+       "id": "cu32_3a",
+       "q": "3 + 4 × 2 = 14. ¿Está bien o mal el resultado?",
+       "q_hu": "3 + 4 × 2 = 14. Jó vagy rossz az eredmény?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Bien",
+         "hu": "Jó"
+        },
+        {
+         "t": "Mal",
+         "hu": "Rossz"
+        }
+       ],
+       "answer": 1,
+       "pic": "🔍",
+       "answer_hu": "Rossz: 3 + 8 = 11."
+      },
+      {
+       "id": "cu32_3b",
+       "q": "Si 3 + 4 × 2 = 14 está mal, ¿cuál es la solución correcta?",
+       "q_hu": "Ha a 3 + 4 × 2 = 14 rossz, mi a helyes megoldás?",
+       "kind": "num",
+       "answer": "11",
+       "pic": "✏️"
+      },
+      {
+       "id": "cu32_3c",
+       "q": "5 × 2 − 1 = 9. ¿Está bien o mal el resultado?",
+       "q_hu": "5 × 2 − 1 = 9. Jó vagy rossz az eredmény?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Bien",
+         "hu": "Jó"
+        },
+        {
+         "t": "Mal",
+         "hu": "Rossz"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔍",
+       "answer_hu": "Jó: 10 − 1 = 9."
+      },
+      {
+       "id": "cu32_3d",
+       "q": "8 − 2 × 3 = 2. ¿Está bien o mal el resultado?",
+       "q_hu": "8 − 2 × 3 = 2. Jó vagy rossz az eredmény?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Bien",
+         "hu": "Jó"
+        },
+        {
+         "t": "Mal",
+         "hu": "Rossz"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔍",
+       "answer_hu": "Jó: 8 − 6 = 2."
+      }
+     ],
+     "box": [
+      0.04,
+      0.0729,
+      0.445,
+      0.5992
+     ],
+     "context": {
+      "es": "Hay tres cuadros con una operación y un resultado: 3 + 4 × 2 = 14, 5 × 2 − 1 = 9 y 8 − 2 × 3 = 2. En cada uno hay círculos «Bien» y «Mal» y un hueco para la solución.",
+      "hu": "Három keretben egy-egy művelet és eredmény van. Mindegyiknél „Bien” (jó) és „Mal” (rossz) kör, és hely a megoldásnak."
+     },
+     "help": {
+      "es": "Calcula tú la operación (primero la multiplicación) y compara con el resultado escrito.",
+      "hu": "Számold ki magad (előbb a szorzás), és hasonlítsd az odaírt eredményhez."
+     },
+     "pic": "🔍"
+    },
+    {
+     "id": "cu32_4",
+     "n": "4",
+     "text": "Lee y elige la operación correcta. Laura tiene 3 paquetes con 6 cromos cada uno. Si le regala 4 cromos a su hermano, ¿cuántos cromos le quedan a Laura? Resuelve el problema.",
+     "text_hu": "Olvasd el, és válaszd ki a helyes műveletet. Laurának 3 csomagja van, mindegyikben 6 matrica. Ha 4 matricát odaad a testvérének, hány matrica marad Laurának? Old meg a feladatot.",
+     "items": [
+      {
+       "id": "cu32_4a",
+       "q": "Laura tiene 3 paquetes con 6 cromos cada uno. Si regala 4 cromos a su hermano, ¿cuál es la operación correcta?",
+       "q_hu": "Laurának 3 csomagja van, mindegyikben 6 matrica. Ha 4 matricát odaad a testvérének, melyik a helyes művelet?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a. 3 + 6 − 4",
+         "hu": "a. 3 + 6 − 4"
+        },
+        {
+         "t": "b. 3 × 6 + 4",
+         "hu": "b. 3 × 6 + 4"
+        },
+        {
+         "t": "c. 3 × 6 − 4",
+         "hu": "c. 3 × 6 − 4"
+        },
+        {
+         "t": "d. 6 − 3 × 4",
+         "hu": "d. 6 − 3 × 4"
+        }
+       ],
+       "answer": 2,
+       "pic": "🃏",
+       "answer_hu": "c: 3 × 6 − 4."
+      },
+      {
+       "id": "cu32_4b",
+       "q": "¿Cuántos cromos le quedan a Laura?",
+       "q_hu": "Hány matrica marad Laurának?",
+       "kind": "num",
+       "answer": "14",
+       "pic": "🃏",
+       "vis": {
+        "type": "groups",
+        "n": 3,
+        "size": 6
+       }
+      }
+     ],
+     "box": [
+      0.0375,
+      0.617,
+      0.35,
+      0.9312
+     ],
+     "context": {
+      "es": "No hay dibujo. Laura tiene 3 paquetes de 6 cromos y regala 4. Hay cuatro operaciones posibles: a, b, c y d.",
+      "hu": "Nincs rajz. Laurának 3 csomag × 6 matricája van, és 4-et odaad. Négy lehetséges művelet van: a, b, c, d."
+     },
+     "help": {
+      "es": "Primero cuántos cromos tiene en total (multiplicación) y luego quita los que regala.",
+      "hu": "Előbb számold ki, mennyi matricája van összesen (szorzás), aztán vond le az ajándékba adottakat."
+     },
+     "pic": "🃏"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy comprobamos operaciones combinadas y resolvemos un problema!",
+     "hu": "Ma összetett műveleteket ellenőrzünk, és egy feladatot oldunk meg!",
+     "pic": "🔍"
+    },
+    "sentences": [
+     {
+      "es": "Para comprobar un resultado, hacemos la operación nosotros y comparamos.",
+      "hu": "Egy eredmény ellenőrzéséhez magunk is kiszámoljuk a műveletet és összehasonlítjuk.",
+      "pic": "🔍"
+     },
+     {
+      "es": "Recuerda el orden: primero las multiplicaciones y después las sumas y restas.",
+      "hu": "Emlékezz a sorrendre: előbb a szorzások, aztán az összeadások és kivonások.",
+      "pic": "📋"
+     },
+     {
+      "es": "3 + 4 × 2: primero 4 × 2 = 8 y luego 3 + 8 = 11. El resultado 14 está mal.",
+      "hu": "3 + 4 × 2: előbb 4 × 2 = 8, aztán 3 + 8 = 11. A 14 rossz.",
+      "pic": "❌"
+     },
+     {
+      "es": "La solución correcta de esa operación es 11.",
+      "hu": "Ennek a műveletnek a helyes megoldása 11.",
+      "pic": "✏️"
+     },
+     {
+      "es": "5 × 2 − 1: 5 × 2 = 10 y 10 − 1 = 9. Está bien.",
+      "hu": "5 × 2 − 1: 5 × 2 = 10 és 10 − 1 = 9. Jó.",
+      "pic": "✅"
+     },
+     {
+      "es": "8 − 2 × 3: 2 × 3 = 6 y 8 − 6 = 2. También está bien.",
+      "hu": "8 − 2 × 3: 2 × 3 = 6 és 8 − 6 = 2. Ez is jó.",
+      "pic": "✅"
+     },
+     {
+      "es": "En el problema, Laura tiene 3 paquetes con 6 cromos cada uno.",
+      "hu": "A feladatban Laurának 3 csomagja van, mindegyikben 6 matrica.",
+      "pic": "🃏",
+      "vis": {
+       "type": "groups",
+       "n": 3,
+       "size": 6
+      }
+     },
+     {
+      "es": "Regala 4 cromos, así que hay que restar.",
+      "hu": "4 matricát odaad, ezért kivonni kell.",
+      "pic": "🎁"
+     },
+     {
+      "es": "La operación correcta es 3 × 6 − 4.",
+      "hu": "A helyes művelet 3 × 6 − 4.",
+      "pic": "🧮"
+     },
+     {
+      "es": "3 × 6 = 18 y 18 − 4 = 14. A Laura le quedan 14 cromos.",
+      "hu": "3 × 6 = 18 és 18 − 4 = 14. Laurának 14 matricája marad.",
+      "pic": "✅"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Para comprobar: calcula tú y compara.",
+      "hu": "Ellenőrzéshez: számold ki magad és hasonlítsd össze."
+     },
+     {
+      "es": "Multiplicar va antes que sumar o restar.",
+      "hu": "A szorzás előbb jön, mint az összeadás vagy kivonás."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, alguien escribió 3 + 4 × 2 = 14. ¿Está bien?",
+      "hu": "Martin, valaki azt írta, hogy 3 + 4 × 2 = 14. Jó ez?"
+     },
+     {
+      "who": "Martín",
+      "es": "3 + 4 = 7, 7 × 2 = 14. ¡Sí!",
+      "hu": "3 + 4 = 7, 7 × 2 = 14. Igen!"
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, ¿qué va primero?",
+      "hu": "Miau, mi jön előbb?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡La multiplicación! 4 × 2 = 8 y 3 + 8 = 11. Está mal.",
+      "hu": "A szorzás! 4 × 2 = 8 és 3 + 8 = 11. Rossz."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Muy bien! Ahora Laura: 3 paquetes de 6 cromos y regala 4.",
+      "hu": "Nagyon jó! Most Laura: 3 csomag 6 matricával, és 4-et odaad."
+     },
+     {
+      "who": "Martín",
+      "es": "3 × 6 − 4 = 14 cromos.",
+      "hu": "3 × 6 − 4 = 14 matrica."
+     }
+    ],
+    "tf": [
+     {
+      "es": "3 + 4 × 2 = 14 está bien.",
+      "hu": "A 3 + 4 × 2 = 14 jó.",
+      "answer": false,
+      "why_es": "Es 11.",
+      "why_hu": "11 az eredmény."
+     },
+     {
+      "es": "5 × 2 − 1 = 9.",
+      "hu": "5 × 2 − 1 = 9.",
+      "answer": true,
+      "why_es": "10 − 1 = 9.",
+      "why_hu": "10 − 1 = 9."
+     },
+     {
+      "es": "8 − 2 × 3 = 2.",
+      "hu": "8 − 2 × 3 = 2.",
+      "answer": true,
+      "why_es": "8 − 6 = 2.",
+      "why_hu": "8 − 6 = 2."
+     },
+     {
+      "es": "La operación del problema de Laura es 3 + 6 − 4.",
+      "hu": "Laura feladatának művelete 3 + 6 − 4.",
+      "answer": false,
+      "why_es": "Es 3 × 6 − 4.",
+      "why_hu": "3 × 6 − 4."
+     },
+     {
+      "es": "A Laura le quedan 14 cromos.",
+      "hu": "Laurának 14 matricája marad.",
+      "answer": true,
+      "why_es": "18 − 4 = 14.",
+      "why_hu": "18 − 4 = 14."
+     },
+     {
+      "es": "Para comprobar un resultado hay que calcular la operación.",
+      "hu": "Egy eredmény ellenőrzéséhez ki kell számolni a műveletet.",
+      "answer": true,
+      "why_es": "Después se compara.",
+      "why_hu": "Aztán összehasonlítjuk."
+     }
+    ]
+   },
+   "img": "mat_cu_s32-33",
+   "page_box": [
+    0,
+    0,
+    0.49,
+    1.0
+   ]
+  },
+  {
+   "id": "cu33",
+   "book": "cu",
+   "page": 33,
+   "unit": "u3",
+   "title": "Números romanos",
+   "title_hu": "Római számok",
+   "summary_hu": "A római számok betűi (I V X L C D M), az összeadás és kivonás szabálya, az ismétlés és a bal oldali betű szabályai. Feladatok: számok leírása rómaiul, két átírás ellenőrzése.",
+   "words": [
+    {
+     "w": "el número romano",
+     "hu": "római szám",
+     "pic": "🏛️"
+    },
+    {
+     "w": "la letra",
+     "hu": "betű"
+    },
+    {
+     "w": "el valor",
+     "hu": "érték"
+    },
+    {
+     "w": "a la derecha",
+     "hu": "jobb oldalon",
+     "pic": "➡️"
+    },
+    {
+     "w": "a la izquierda",
+     "hu": "bal oldalon",
+     "pic": "⬅️"
+    },
+    {
+     "w": "se suman",
+     "hu": "összeadódnak",
+     "pic": "➕"
+    },
+    {
+     "w": "se resta",
+     "hu": "kivonódik",
+     "pic": "➖"
+    },
+    {
+     "w": "repetir",
+     "hu": "ismételni"
+    },
+    {
+     "w": "tres veces seguidas",
+     "hu": "háromszor egymás után"
+    },
+    {
+     "w": "mayor",
+     "hu": "nagyobb"
+    },
+    {
+     "w": "igual",
+     "hu": "egyenlő"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu33_1",
+     "n": "1",
+     "text": "Escribe con números romanos.",
+     "text_hu": "Írd le római számokkal.",
+     "items": [
+      {
+       "id": "cu33_1a",
+       "q": "Escribe con números romanos: 25",
+       "q_hu": "Írd római számmal: 25",
+       "kind": "type",
+       "answer": "XXV",
+       "alts": [],
+       "answer_hu": "XXV",
+       "pic": "🏛️"
+      },
+      {
+       "id": "cu33_1b",
+       "q": "Escribe con números romanos: 72",
+       "q_hu": "Írd római számmal: 72",
+       "kind": "type",
+       "answer": "LXXII",
+       "alts": [],
+       "answer_hu": "LXXII",
+       "pic": "🏛️"
+      },
+      {
+       "id": "cu33_1c",
+       "q": "Escribe con números romanos: 41",
+       "q_hu": "Írd római számmal: 41",
+       "kind": "type",
+       "answer": "XLI",
+       "alts": [],
+       "answer_hu": "XLI",
+       "pic": "🏛️"
+      },
+      {
+       "id": "cu33_1d",
+       "q": "Escribe con números romanos: 92",
+       "q_hu": "Írd római számmal: 92",
+       "kind": "type",
+       "answer": "XCII",
+       "alts": [],
+       "answer_hu": "XCII",
+       "pic": "🏛️"
+      },
+      {
+       "id": "cu33_1e",
+       "q": "Escribe con números romanos: 231",
+       "q_hu": "Írd római számmal: 231",
+       "kind": "type",
+       "answer": "CCXXXI",
+       "alts": [],
+       "answer_hu": "CCXXXI",
+       "pic": "🏛️"
+      },
+      {
+       "id": "cu33_1f",
+       "q": "Escribe con números romanos: 452",
+       "q_hu": "Írd római számmal: 452",
+       "kind": "type",
+       "answer": "CDLII",
+       "alts": [],
+       "answer_hu": "CDLII",
+       "pic": "🏛️"
+      }
+     ],
+     "box": [
+      0.5425,
+      0.5789,
+      0.85,
+      0.7004
+     ],
+     "context": {
+      "es": "Hay seis números normales (25, 72, 41, 92, 231, 452) y hay que escribirlos con letras romanas.",
+      "hu": "Hat szokásos szám van (25, 72, 41, 92, 231, 452), ezeket római betűkkel kell leírni."
+     },
+     "help": {
+      "es": "Descompón: 25 = 10 + 10 + 5 = XXV. Mira la tabla de arriba.",
+      "hu": "Bontsd fel: 25 = 10 + 10 + 5 = XXV. Nézd a fenti táblázatot."
+     },
+     "pic": "🏛️"
+    },
+    {
+     "id": "cu33_2",
+     "n": "2",
+     "text": "Comprueba si el resultado es correcto y, en caso contrario, escribe la solución correcta.",
+     "text_hu": "Ellenőrizd, helyes-e az eredmény, és ha nem, írd le a helyes megoldást.",
+     "items": [
+      {
+       "id": "cu33_2a",
+       "q": "XXVII → 27. ¿Está bien o mal?",
+       "q_hu": "XXVII → 27. Jó vagy rossz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Bien",
+         "hu": "Jó"
+        },
+        {
+         "t": "Mal",
+         "hu": "Rossz"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔍",
+       "answer_hu": "Jó: XXVII = 27."
+      },
+      {
+       "id": "cu33_2b",
+       "q": "XLIX → 69. ¿Está bien o mal?",
+       "q_hu": "XLIX → 69. Jó vagy rossz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Bien",
+         "hu": "Jó"
+        },
+        {
+         "t": "Mal",
+         "hu": "Rossz"
+        }
+       ],
+       "answer": 1,
+       "pic": "🔍",
+       "answer_hu": "Rossz: XLIX = 49."
+      },
+      {
+       "id": "cu33_2c",
+       "q": "Solución correcta: XLIX = ?",
+       "q_hu": "Helyes megoldás: XLIX = ?",
+       "kind": "num",
+       "answer": "49",
+       "pic": "✏️"
+      }
+     ],
+     "box": [
+      0.5425,
+      0.7166,
+      0.945,
+      0.9312
+     ],
+     "context": {
+      "es": "Hay dos cuadros: XXVII → 27 y XLIX → 69. Cada uno tiene círculos «bien» y «mal» y un hueco para la solución.",
+      "hu": "Két keret van: XXVII → 27 és XLIX → 69. Mindegyiknél „bien” (jó) és „mal” (rossz) kör, és hely a megoldásnak."
+     },
+     "help": {
+      "es": "XL = 40 (X antes de L se resta) y IX = 9.",
+      "hu": "XL = 40 (az L előtti X kivonódik) és IX = 9."
+     },
+     "pic": "🔍"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos los números romanos!",
+     "hu": "Ma megtanuljuk a római számokat!",
+     "pic": "🏛️"
+    },
+    "sentences": [
+     {
+      "es": "Los números romanos se escriben con letras: I, V, X, L, C, D y M.",
+      "hu": "A római számokat betűkkel írjuk: I, V, X, L, C, D és M.",
+      "pic": "🔤"
+     },
+     {
+      "es": "I vale 1, V vale 5, X vale 10 y L vale 50.",
+      "hu": "Az I 1, a V 5, az X 10, az L 50.",
+      "pic": "🔢"
+     },
+     {
+      "es": "C vale 100, D vale 500 y M vale 1000.",
+      "hu": "A C 100, a D 500, az M 1000.",
+      "pic": "💯"
+     },
+     {
+      "es": "Si una letra está a la derecha de otra igual o mayor, los valores se suman: XI = 11.",
+      "hu": "Ha egy betű egy vele egyenlő vagy nagyobb betű jobb oldalán áll, az értékek összeadódnak: XI = 11.",
+      "pic": "➕"
+     },
+     {
+      "es": "Si una letra está a la izquierda de otra mayor, se resta: IX = 9.",
+      "hu": "Ha egy betű egy nagyobb betű bal oldalán áll, kivonódik: IX = 9.",
+      "pic": "➖"
+     },
+     {
+      "es": "I, X, C y M se pueden repetir hasta tres veces seguidas: XXX = 30.",
+      "hu": "Az I, X, C és M legfeljebb háromszor ismételhető egymás után: XXX = 30.",
+      "pic": "3️⃣"
+     },
+     {
+      "es": "V, L y D no se pueden repetir.",
+      "hu": "A V, L és D nem ismételhető.",
+      "pic": "🚫"
+     },
+     {
+      "es": "I solo se escribe a la izquierda de V y X: IV = 4 y IX = 9.",
+      "hu": "Az I csak a V és X bal oldalán állhat: IV = 4 és IX = 9.",
+      "pic": "⬅️"
+     },
+     {
+      "es": "X solo se escribe a la izquierda de L y C: XL = 40 y XC = 90.",
+      "hu": "Az X csak az L és C bal oldalán állhat: XL = 40 és XC = 90.",
+      "pic": "⬅️"
+     },
+     {
+      "es": "C solo se escribe a la izquierda de D y M: CD = 400 y CM = 900.",
+      "hu": "A C csak a D és M bal oldalán állhat: CD = 400 és CM = 900.",
+      "pic": "⬅️"
+     },
+     {
+      "es": "Para escribir 25: dos X y una V, así que XXV.",
+      "hu": "A 25 leírásához: két X és egy V, tehát XXV.",
+      "pic": "✏️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "I=1, V=5, X=10, L=50, C=100, D=500, M=1000",
+      "hu": "I=1, V=5, X=10, L=50, C=100, D=500, M=1000"
+     },
+     {
+      "es": "Derecha: suma. Izquierda (de una mayor): resta.",
+      "hu": "Jobbra: összeadás. Balra (nagyobb előtt): kivonás."
+     },
+     {
+      "es": "I, X, C, M: hasta 3 veces. V, L, D: nunca se repiten.",
+      "hu": "I, X, C, M: legfeljebb 3-szor. V, L, D: sosem ismétlődik."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cuánto vale la X?",
+      "hu": "Martin, mennyit ér az X?"
+     },
+     {
+      "who": "Martín",
+      "es": "10.",
+      "hu": "10."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y cómo escribimos 25?",
+      "hu": "És hogyan írjuk a 25-öt?"
+     },
+     {
+      "who": "Martín",
+      "es": "10 + 10 + 5: XXV.",
+      "hu": "10 + 10 + 5: XXV."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Miau! ¿Y IX?",
+      "hu": "Miau! És az IX?"
+     },
+     {
+      "who": "Martín",
+      "es": "La I está a la izquierda de la X: 10 − 1 = 9.",
+      "hu": "Az I az X bal oldalán áll: 10 − 1 = 9."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Excelente!",
+      "hu": "Kiváló!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "La V vale 5.",
+      "hu": "A V értéke 5.",
+      "answer": true,
+      "why_es": "V = 5.",
+      "why_hu": "V = 5."
+     },
+     {
+      "es": "La V se puede repetir tres veces.",
+      "hu": "A V háromszor ismételhető.",
+      "answer": false,
+      "why_es": "V, L y D no se repiten.",
+      "why_hu": "V, L és D nem ismételhető."
+     },
+     {
+      "es": "IX es 9.",
+      "hu": "Az IX 9.",
+      "answer": true,
+      "why_es": "10 − 1 = 9.",
+      "why_hu": "10 − 1 = 9."
+     },
+     {
+      "es": "XLIX es 69.",
+      "hu": "Az XLIX 69.",
+      "answer": false,
+      "why_es": "Es 40 + 9 = 49.",
+      "why_hu": "40 + 9 = 49."
+     },
+     {
+      "es": "XXV es 25.",
+      "hu": "Az XXV 25.",
+      "answer": true,
+      "why_es": "10 + 10 + 5.",
+      "why_hu": "10 + 10 + 5."
+     },
+     {
+      "es": "La I se puede escribir a la izquierda de la C.",
+      "hu": "Az I a C bal oldalán állhat.",
+      "answer": false,
+      "why_es": "La I solo va a la izquierda de V y X.",
+      "why_hu": "Az I csak a V és X előtt állhat."
+     }
+    ]
+   },
+   "img": "mat_cu_s32-33",
+   "page_box": [
+    0.52,
+    0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "id": "cu34",
+   "book": "cu",
+   "page": 34,
+   "unit": "u3",
+   "title": "Números romanos",
+   "title_hu": "Római számok",
+   "summary_hu": "Római számok összekötése a hagyományos számokkal (MCMLV = 1955 stb.), majd négy katedrális befejezési évének leírása rómaiul.",
+   "words": [
+    {
+     "w": "relaciona",
+     "hu": "kösd össze"
+    },
+    {
+     "w": "representa",
+     "hu": "jelöl, képvisel"
+    },
+    {
+     "w": "la catedral",
+     "hu": "katedrális",
+     "pic": "⛪"
+    },
+    {
+     "w": "el año",
+     "hu": "év",
+     "pic": "📅"
+    },
+    {
+     "w": "la finalización",
+     "hu": "befejezés"
+    },
+    {
+     "w": "el número romano",
+     "hu": "római szám",
+     "pic": "🏛️"
+    },
+    {
+     "w": "escribe",
+     "hu": "írd le"
+    },
+    {
+     "w": "el mil",
+     "hu": "ezer"
+    },
+    {
+     "w": "la foto",
+     "hu": "fénykép",
+     "pic": "📷"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu34_3",
+     "n": "3",
+     "text": "Relaciona cada número romano con el número que representa.",
+     "text_hu": "Kösd össze mindegyik római számot a számmal, amelyet jelöl.",
+     "items": [
+      {
+       "id": "cu34_3a",
+       "q": "¿Qué número representa MCMLV?",
+       "q_hu": "Melyik számot jelöli az MCMLV?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "976",
+         "hu": "976"
+        },
+        {
+         "t": "1955",
+         "hu": "1955"
+        },
+        {
+         "t": "1701",
+         "hu": "1701"
+        },
+        {
+         "t": "1666",
+         "hu": "1666"
+        },
+        {
+         "t": "1444",
+         "hu": "1444"
+        }
+       ],
+       "answer": 1,
+       "pic": "🔗",
+       "answer_hu": "1955"
+      },
+      {
+       "id": "cu34_3b",
+       "q": "¿Qué número representa MDCCI?",
+       "q_hu": "Melyik számot jelöli az MDCCI?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "976",
+         "hu": "976"
+        },
+        {
+         "t": "1955",
+         "hu": "1955"
+        },
+        {
+         "t": "1701",
+         "hu": "1701"
+        },
+        {
+         "t": "1666",
+         "hu": "1666"
+        },
+        {
+         "t": "1444",
+         "hu": "1444"
+        }
+       ],
+       "answer": 2,
+       "pic": "🔗",
+       "answer_hu": "1701"
+      },
+      {
+       "id": "cu34_3c",
+       "q": "¿Qué número representa CMLXXVI?",
+       "q_hu": "Melyik számot jelöli az CMLXXVI?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "976",
+         "hu": "976"
+        },
+        {
+         "t": "1955",
+         "hu": "1955"
+        },
+        {
+         "t": "1701",
+         "hu": "1701"
+        },
+        {
+         "t": "1666",
+         "hu": "1666"
+        },
+        {
+         "t": "1444",
+         "hu": "1444"
+        }
+       ],
+       "answer": 0,
+       "pic": "🔗",
+       "answer_hu": "976"
+      },
+      {
+       "id": "cu34_3d",
+       "q": "¿Qué número representa MCDXLIV?",
+       "q_hu": "Melyik számot jelöli az MCDXLIV?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "976",
+         "hu": "976"
+        },
+        {
+         "t": "1955",
+         "hu": "1955"
+        },
+        {
+         "t": "1701",
+         "hu": "1701"
+        },
+        {
+         "t": "1666",
+         "hu": "1666"
+        },
+        {
+         "t": "1444",
+         "hu": "1444"
+        }
+       ],
+       "answer": 4,
+       "pic": "🔗",
+       "answer_hu": "1444"
+      },
+      {
+       "id": "cu34_3e",
+       "q": "¿Qué número representa MDCLXVI?",
+       "q_hu": "Melyik számot jelöli az MDCLXVI?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "976",
+         "hu": "976"
+        },
+        {
+         "t": "1955",
+         "hu": "1955"
+        },
+        {
+         "t": "1701",
+         "hu": "1701"
+        },
+        {
+         "t": "1666",
+         "hu": "1666"
+        },
+        {
+         "t": "1444",
+         "hu": "1444"
+        }
+       ],
+       "answer": 3,
+       "pic": "🔗",
+       "answer_hu": "1666"
+      }
+     ],
+     "box": [
+      0.0375,
+      0.0769,
+      0.33,
+      0.3277
+     ],
+     "context": {
+      "es": "A la izquierda hay cinco números romanos; a la derecha, cinco números: 976, 1955, 1701, 1666 y 1444.",
+      "hu": "Balra öt római szám van; jobbra öt szám: 976, 1955, 1701, 1666 és 1444."
+     },
+     "help": {
+      "es": "Empieza por las letras grandes: M = 1000, CM = 900, CD = 400...",
+      "hu": "Kezdd a nagy betűkkel: M = 1000, CM = 900, CD = 400..."
+     },
+     "pic": "🔗"
+    },
+    {
+     "id": "cu34_4",
+     "n": "4",
+     "text": "Escribe el año de finalización de estas catedrales en números romanos.",
+     "text_hu": "Írd le római számokkal ezeknek a katedrálisoknak a befejezési évét.",
+     "items": [
+      {
+       "id": "cu34_4a",
+       "q": "Escribe en números romanos el año 1506 (catedral de la foto arriba a la izquierda).",
+       "q_hu": "Írd rómaiul az 1506-es évet (bal felső fotó katedrálisa).",
+       "kind": "type",
+       "answer": "MDVI",
+       "alts": [],
+       "answer_hu": "MDVI",
+       "pic": "⛪"
+      },
+      {
+       "id": "cu34_4b",
+       "q": "Escribe en números romanos el año 1493 (catedral de la foto arriba a la derecha).",
+       "q_hu": "Írd rómaiul az 1493-es évet (jobb felső fotó katedrálisa).",
+       "kind": "type",
+       "answer": "MCDXCIII",
+       "alts": [],
+       "answer_hu": "MCDXCIII",
+       "pic": "⛪"
+      },
+      {
+       "id": "cu34_4c",
+       "q": "Escribe en números romanos el año 1302 (catedral de la foto abajo a la izquierda).",
+       "q_hu": "Írd rómaiul az 1302-es évet (bal alsó fotó katedrálisa).",
+       "kind": "type",
+       "answer": "MCCCII",
+       "alts": [],
+       "answer_hu": "MCCCII",
+       "pic": "⛪"
+      },
+      {
+       "id": "cu34_4d",
+       "q": "Escribe en números romanos el año 1601 (catedral de la foto abajo a la derecha).",
+       "q_hu": "Írd rómaiul az 1601-es évet (jobb alsó fotó katedrálisa).",
+       "kind": "type",
+       "answer": "MDCI",
+       "alts": [],
+       "answer_hu": "MDCI",
+       "pic": "⛪"
+      }
+     ],
+     "box": [
+      0.0375,
+      0.3479,
+      0.445,
+      0.9345
+     ],
+     "context": {
+      "es": "Hay cuatro fotos de catedrales con su año de finalización: 1506, 1493, 1302 y 1601. Debajo de cada foto hay una línea.",
+      "hu": "Négy katedrális fotója van a befejezés évével: 1506, 1493, 1302 és 1601. Mindegyik fotó alatt egy vonal van."
+     },
+     "help": {
+      "es": "Escribe el año por partes: 1506 = 1000 + 500 + 5 + 1 = M D V I.",
+      "hu": "Írd le részenként az évet: 1506 = 1000 + 500 + 5 + 1 = M D V I."
+     },
+     "pic": "⛪"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Seguimos con los números romanos! Hoy leemos y escribimos años.",
+     "hu": "Folytatjuk a római számokat! Ma éveket olvasunk és írunk.",
+     "pic": "🏛️"
+    },
+    "sentences": [
+     {
+      "es": "Para leer un número romano, sumamos o restamos las letras de izquierda a derecha.",
+      "hu": "Egy római szám kiolvasásához balról jobbra összeadjuk vagy kivonjuk a betűket.",
+      "pic": "🔍"
+     },
+     {
+      "es": "MCMLV: M = 1000, CM = 900 y LV = 55. Total: 1955.",
+      "hu": "MCMLV: M = 1000, CM = 900 és LV = 55. Összesen: 1955.",
+      "pic": "1️⃣"
+     },
+     {
+      "es": "MDCCI: M = 1000, D = 500, CC = 200 e I = 1. Total: 1701.",
+      "hu": "MDCCI: M = 1000, D = 500, CC = 200 és I = 1. Összesen: 1701.",
+      "pic": "2️⃣"
+     },
+     {
+      "es": "CMLXXVI: CM = 900, L = 50, XX = 20 y VI = 6. Total: 976.",
+      "hu": "CMLXXVI: CM = 900, L = 50, XX = 20 és VI = 6. Összesen: 976.",
+      "pic": "3️⃣"
+     },
+     {
+      "es": "MCDXLIV: M = 1000, CD = 400, XL = 40 e IV = 4. Total: 1444.",
+      "hu": "MCDXLIV: M = 1000, CD = 400, XL = 40 és IV = 4. Összesen: 1444.",
+      "pic": "4️⃣"
+     },
+     {
+      "es": "MDCLXVI: M = 1000, D = 500, C = 100, L = 50, X = 10, V = 5 e I = 1. Total: 1666.",
+      "hu": "MDCLXVI: M = 1000, D = 500, C = 100, L = 50, X = 10, V = 5 és I = 1. Összesen: 1666.",
+      "pic": "5️⃣"
+     },
+     {
+      "es": "Para escribir un año, lo partimos en miles, centenas, decenas y unidades.",
+      "hu": "Egy évszám leírásához ezresekre, százasokra, tízesekre és egyesekre bontjuk.",
+      "pic": "✏️"
+     },
+     {
+      "es": "En el ejercicio 4 hay cuatro catedrales con su año de finalización.",
+      "hu": "A 4. feladatban négy katedrális van a befejezési évével.",
+      "pic": "⛪"
+     },
+     {
+      "es": "1506 se escribe MDVI: M = 1000, D = 500, V = 5 e I = 1.",
+      "hu": "Az 1506 így írandó: MDVI: M = 1000, D = 500, V = 5 és I = 1.",
+      "pic": "📅"
+     },
+     {
+      "es": "1493 se escribe MCDXCIII: M, CD = 400, XC = 90 y III = 3.",
+      "hu": "Az 1493: MCDXCIII: M, CD = 400, XC = 90 és III = 3.",
+      "pic": "📅"
+     },
+     {
+      "es": "1302 es MCCCII y 1601 es MDCI.",
+      "hu": "Az 1302 MCCCII, az 1601 pedig MDCI.",
+      "pic": "📅"
+     }
+    ],
+    "remember": [
+     {
+      "es": "CM = 900, CD = 400, XC = 90, XL = 40, IX = 9, IV = 4",
+      "hu": "CM = 900, CD = 400, XC = 90, XL = 40, IX = 9, IV = 4"
+     },
+     {
+      "es": "Escribe el número por partes: miles, centenas, decenas, unidades.",
+      "hu": "Írd le a számot részenként: ezresek, százasok, tízesek, egyesek."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cuánto es MCMLV?",
+      "hu": "Martin, mennyi az MCMLV?"
+     },
+     {
+      "who": "Martín",
+      "es": "M es 1000. Luego CM es 900.",
+      "hu": "Az M 1000. Aztán a CM 900."
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, ¿y LV?",
+      "hu": "Miau, és az LV?"
+     },
+     {
+      "who": "Martín",
+      "es": "L = 50 y V = 5: 55. Total 1955.",
+      "hu": "L = 50 és V = 5: 55. Összesen 1955."
+     },
+     {
+      "who": "Gatito",
+      "es": "Ahora el año 1601.",
+      "hu": "Most az 1601-es év."
+     },
+     {
+      "who": "Martín",
+      "es": "M, D, C, I: MDCI.",
+      "hu": "M, D, C, I: MDCI."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Fantástico!",
+      "hu": "Fantasztikus!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "MCMLV es 1955.",
+      "hu": "Az MCMLV 1955.",
+      "answer": true,
+      "why_es": "1000 + 900 + 55.",
+      "why_hu": "1000 + 900 + 55."
+     },
+     {
+      "es": "CMLXXVI es 976.",
+      "hu": "A CMLXXVI 976.",
+      "answer": true,
+      "why_es": "900 + 50 + 20 + 6.",
+      "why_hu": "900 + 50 + 20 + 6."
+     },
+     {
+      "es": "MDCLXVI es 1444.",
+      "hu": "Az MDCLXVI 1444.",
+      "answer": false,
+      "why_es": "Es 1666. El 1444 es MCDXLIV.",
+      "why_hu": "1666. Az 1444 MCDXLIV."
+     },
+     {
+      "es": "1506 se escribe MDVI.",
+      "hu": "Az 1506 MDVI.",
+      "answer": true,
+      "why_es": "1000 + 500 + 5 + 1.",
+      "why_hu": "1000 + 500 + 5 + 1."
+     },
+     {
+      "es": "CM vale 600.",
+      "hu": "A CM értéke 600.",
+      "answer": false,
+      "why_es": "CM = 1000 − 100 = 900.",
+      "why_hu": "CM = 1000 − 100 = 900."
+     },
+     {
+      "es": "1601 se escribe MDCI.",
+      "hu": "Az 1601 MDCI.",
+      "answer": true,
+      "why_es": "1000 + 500 + 100 + 1.",
+      "why_hu": "1000 + 500 + 100 + 1."
+     }
+    ]
+   },
+   "img": "mat_cu_s34-35",
+   "page_box": [
+    0,
+    0,
+    0.49,
+    1.0
+   ]
+  },
+  {
+   "id": "cu35",
+   "book": "cu",
+   "page": 35,
+   "unit": "u3",
+   "title": "Números ordinales",
+   "title_hu": "Sorszámnevek",
+   "summary_hu": "A sorszámnevek 1.º-tól 20.º-ig (primero ... vigésimo). Feladatok: állatsor sorszámai, sorszámok kiolvasása, rosszul írt sorszámnév javítása.",
+   "words": [
+    {
+     "w": "el número ordinal",
+     "hu": "sorszám",
+     "pic": "🥇"
+    },
+    {
+     "w": "el orden",
+     "hu": "sorrend"
+    },
+    {
+     "w": "la posición",
+     "hu": "hely, pozíció"
+    },
+    {
+     "w": "la fila",
+     "hu": "sor"
+    },
+    {
+     "w": "la oveja",
+     "hu": "birka",
+     "pic": "🐑"
+    },
+    {
+     "w": "el pollito",
+     "hu": "csibe",
+     "pic": "🐥"
+    },
+    {
+     "w": "el conejo",
+     "hu": "nyuszi",
+     "pic": "🐰"
+    },
+    {
+     "w": "el pato",
+     "hu": "kacsa",
+     "pic": "🦆"
+    },
+    {
+     "w": "el cerdo",
+     "hu": "malac",
+     "pic": "🐷"
+    },
+    {
+     "w": "primero",
+     "hu": "első",
+     "pic": "1️⃣"
+    },
+    {
+     "w": "décimo",
+     "hu": "tizedik",
+     "pic": "🔟"
+    },
+    {
+     "w": "vigésimo",
+     "hu": "huszadik"
+    },
+    {
+     "w": "corrige",
+     "hu": "javítsd ki"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu35_1",
+     "n": "1",
+     "text": "Completa con los ordinales que correspondan.",
+     "text_hu": "Egészítsd ki a megfelelő sorszámnevekkel.",
+     "items": [
+      {
+       "id": "cu35_1a",
+       "q": "Fila de animales: oveja, pollito, conejo, pato, cerdo. La oveja es la ___ de la fila.",
+       "q_hu": "Állatok sora: birka, csibe, nyuszi, kacsa, malac. A birka a sor ___.",
+       "kind": "type",
+       "answer": "primera",
+       "alts": [
+        "primero",
+        "1.ª",
+        "1.º",
+        "la primera"
+       ],
+       "answer_hu": "első",
+       "pic": "🐑"
+      },
+      {
+       "id": "cu35_1b",
+       "q": "El cerdo está en la ___ posición.",
+       "q_hu": "A malac az ___ helyen áll.",
+       "kind": "type",
+       "answer": "quinta",
+       "alts": [
+        "quinto",
+        "5.ª",
+        "5.º"
+       ],
+       "answer_hu": "ötödik",
+       "pic": "🐷"
+      },
+      {
+       "id": "cu35_1c",
+       "q": "El tercero es ___ (¿qué animal?).",
+       "q_hu": "A harmadik a ___ (melyik állat?).",
+       "kind": "type",
+       "answer": "conejo",
+       "alts": [
+        "el conejo"
+       ],
+       "answer_hu": "nyuszi",
+       "pic": "🐰"
+      }
+     ],
+     "box": [
+      0.545,
+      0.4733,
+      0.8725,
+      0.6877
+     ],
+     "context": {
+      "es": "En la imagen hay cinco animales en fila, de izquierda a derecha: una oveja, un pollito, un conejo, un pato y un cerdo.",
+      "hu": "A képen öt állat áll sorban balról jobbra: birka, csibe, nyuszi, kacsa és malac."
+     },
+     "help": {
+      "es": "Cuenta de izquierda a derecha: 1.º oveja, 2.º pollito...",
+      "hu": "Számolj balról jobbra: 1. birka, 2. csibe..."
+     },
+     "pic": "🐑🐥🐰🦆🐷"
+    },
+    {
+     "id": "cu35_2",
+     "n": "2",
+     "text": "Escribe cómo se leen estos números ordinales.",
+     "text_hu": "Írd le, hogyan kell kiolvasni ezeket a sorszámokat.",
+     "items": [
+      {
+       "id": "cu35_2a",
+       "q": "¿Cómo se lee 11.º?",
+       "q_hu": "Hogyan kell kiolvasni: 11.º?",
+       "kind": "type",
+       "answer": "undécimo",
+       "alts": [],
+       "answer_hu": "tizenegyedik",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu35_2b",
+       "q": "¿Cómo se lee 9.º?",
+       "q_hu": "Hogyan kell kiolvasni: 9.º?",
+       "kind": "type",
+       "answer": "noveno",
+       "alts": [],
+       "answer_hu": "kilencedik",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu35_2c",
+       "q": "¿Cómo se lee 20.º?",
+       "q_hu": "Hogyan kell kiolvasni: 20.º?",
+       "kind": "type",
+       "answer": "vigésimo",
+       "alts": [],
+       "answer_hu": "huszadik",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu35_2d",
+       "q": "¿Cómo se lee 6.º?",
+       "q_hu": "Hogyan kell kiolvasni: 6.º?",
+       "kind": "type",
+       "answer": "sexto",
+       "alts": [],
+       "answer_hu": "hatodik",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu35_2e",
+       "q": "¿Cómo se lee 1.º?",
+       "q_hu": "Hogyan kell kiolvasni: 1.º?",
+       "kind": "type",
+       "answer": "primero",
+       "alts": [],
+       "answer_hu": "első",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu35_2f",
+       "q": "¿Cómo se lee 13.º?",
+       "q_hu": "Hogyan kell kiolvasni: 13.º?",
+       "kind": "type",
+       "answer": "decimotercero",
+       "alts": [],
+       "answer_hu": "tizenharmadik",
+       "pic": "🔢"
+      }
+     ],
+     "box": [
+      0.545,
+      0.7039,
+      0.95,
+      0.8333
+     ],
+     "context": {
+      "es": "Hay seis ordinales escritos con cifras: 11.º, 9.º, 20.º, 6.º, 1.º y 13.º.",
+      "hu": "Hat számjeggyel írt sorszám van: 11.º, 9.º, 20.º, 6.º, 1.º és 13.º."
+     },
+     "help": {
+      "es": "Mira la tabla de arriba: 11.º undécimo, 12.º duodécimo, 13.º decimotercero.",
+      "hu": "Nézd a fenti táblázatot: 11.º undécimo, 12.º duodécimo, 13.º decimotercero."
+     },
+     "pic": "🔢"
+    },
+    {
+     "id": "cu35_3",
+     "n": "3",
+     "text": "Corrige los ordinales que están mal escritos.",
+     "text_hu": "Javítsd ki a rosszul írt sorszámneveket.",
+     "items": [
+      {
+       "id": "cu35_3a",
+       "q": "Corrige este ordinal mal escrito: Dieciseisavo",
+       "q_hu": "Javítsd ki ezt a rosszul írt sorszámnevet: Dieciseisavo",
+       "kind": "type",
+       "answer": "decimosexto",
+       "alts": [
+        "decimosexto (16.º)"
+       ],
+       "answer_hu": "tizenhatodik",
+       "pic": "✏️"
+      },
+      {
+       "id": "cu35_3b",
+       "q": "¿Está bien escrito «Vigésimo»?",
+       "q_hu": "Jól van írva a „Vigésimo”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí, está bien",
+         "hu": "Igen, jó"
+        },
+        {
+         "t": "No, está mal",
+         "hu": "Nem, rossz"
+        }
+       ],
+       "answer": 0,
+       "pic": "✅",
+       "answer_hu": "Jó: vigésimo = 20.º."
+      }
+     ],
+     "box": [
+      0.545,
+      0.8455,
+      0.855,
+      0.9385
+     ],
+     "context": {
+      "es": "Hay dos palabras: «Dieciseisavo» y «Vigésimo». Una está mal escrita; la otra puede estar bien.",
+      "hu": "Két szó van: „Dieciseisavo” és „Vigésimo”. Az egyik rossz, a másik lehet, hogy jó."
+     },
+     "help": {
+      "es": "Busca 16.º y 20.º en la tabla.",
+      "hu": "Keresd meg a 16.º-t és a 20.º-t a táblázatban."
+     },
+     "pic": "✏️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos los números ordinales!",
+     "hu": "Ma megtanuljuk a sorszámneveket!",
+     "pic": "🥇"
+    },
+    "sentences": [
+     {
+      "es": "Los números ordinales sirven para indicar un orden o una posición.",
+      "hu": "A sorszámnevek sorrendet vagy helyet jelölnek.",
+      "pic": "🥇"
+     },
+     {
+      "es": "1.º primero, 2.º segundo, 3.º tercero, 4.º cuarto y 5.º quinto.",
+      "hu": "1. első, 2. második, 3. harmadik, 4. negyedik, 5. ötödik.",
+      "pic": "🔢"
+     },
+     {
+      "es": "6.º sexto, 7.º séptimo, 8.º octavo, 9.º noveno y 10.º décimo.",
+      "hu": "6. hatodik, 7. hetedik, 8. nyolcadik, 9. kilencedik, 10. tizedik.",
+      "pic": "🔢"
+     },
+     {
+      "es": "11.º undécimo, 12.º duodécimo, 13.º decimotercero, 14.º decimocuarto y 15.º decimoquinto.",
+      "hu": "11. tizenegyedik, 12. tizenkettedik, 13. tizenharmadik, 14. tizennegyedik, 15. tizenötödik.",
+      "pic": "🔢"
+     },
+     {
+      "es": "16.º decimosexto, 17.º decimoséptimo, 18.º decimoctavo, 19.º decimonoveno y 20.º vigésimo.",
+      "hu": "16. tizenhatodik, 17. tizenhetedik, 18. tizennyolcadik, 19. tizenkilencedik, 20. huszadik.",
+      "pic": "🔢"
+     },
+     {
+      "es": "En el ejercicio 1 hay cinco animales en fila: oveja, pollito, conejo, pato y cerdo.",
+      "hu": "Az 1. feladatban öt állat áll sorban: birka, csibe, nyuszi, kacsa és malac.",
+      "pic": "🐑"
+     },
+     {
+      "es": "La oveja es la primera y el cerdo está en la quinta posición.",
+      "hu": "A birka az első, a malac az ötödik helyen áll.",
+      "pic": "🐷"
+     },
+     {
+      "es": "El tercero de la fila es el conejo.",
+      "hu": "A sor harmadik tagja a nyuszi.",
+      "pic": "🐰"
+     },
+     {
+      "es": "Los ordinales se escriben con un número y una «o» pequeña, como 6.º.",
+      "hu": "A sorszámokat számmal és kis „o”-val írjuk, például 6.º.",
+      "pic": "✏️"
+     },
+     {
+      "es": "Cuidado con la ortografía: el 16.º es «decimosexto», todo junto.",
+      "hu": "Figyelj a helyesírásra: a 16.º „decimosexto”, egybe írva.",
+      "pic": "⚠️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Los ordinales indican orden o posición.",
+      "hu": "A sorszámnevek sorrendet vagy helyet jelölnek."
+     },
+     {
+      "es": "Se escribe 1.º primero, 13.º decimotercero, 20.º vigésimo.",
+      "hu": "Így írjuk: 1.º primero, 13.º decimotercero, 20.º vigésimo."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿quién es el primero de la fila de animales?",
+      "hu": "Martin, ki az első az állatok sorában?"
+     },
+     {
+      "who": "Martín",
+      "es": "La oveja.",
+      "hu": "A birka."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y el tercero?",
+      "hu": "És a harmadik?"
+     },
+     {
+      "who": "Martín",
+      "es": "El conejo. El pollito es el segundo.",
+      "hu": "A nyuszi. A csibe a második."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y el cerdo?",
+      "hu": "És a malac?"
+     },
+     {
+      "who": "Martín",
+      "es": "Es el quinto, el último.",
+      "hu": "Az ötödik, az utolsó."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Miau! ¿Cómo se lee 11.º?",
+      "hu": "Miau! Hogyan olvassuk a 11.º-t?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡Undécimo!",
+      "hu": "Undécimo!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Los ordinales indican un orden o una posición.",
+      "hu": "A sorszámnevek sorrendet vagy helyet jelölnek.",
+      "answer": true,
+      "why_es": "Por ejemplo, primero o quinto.",
+      "why_hu": "Például: első vagy ötödik."
+     },
+     {
+      "es": "El 9.º se lee «noveno».",
+      "hu": "A 9.º „noveno”.",
+      "answer": true,
+      "why_es": "9.º = noveno.",
+      "why_hu": "9.º = noveno."
+     },
+     {
+      "es": "El 16.º se escribe «dieciseisavo».",
+      "hu": "A 16.º így írandó: „dieciseisavo”.",
+      "answer": false,
+      "why_es": "Se escribe «decimosexto».",
+      "why_hu": "„Decimosexto”."
+     },
+     {
+      "es": "El 20.º es «vigésimo».",
+      "hu": "A 20.º „vigésimo”.",
+      "answer": true,
+      "why_es": "Vigésimo = 20.º.",
+      "why_hu": "Vigésimo = 20.º."
+     },
+     {
+      "es": "El cerdo está en la tercera posición.",
+      "hu": "A malac a harmadik helyen áll.",
+      "answer": false,
+      "why_es": "Está en la quinta.",
+      "why_hu": "Az ötödik helyen áll."
+     },
+     {
+      "es": "El 13.º es «decimotercero».",
+      "hu": "A 13.º „decimotercero”.",
+      "answer": true,
+      "why_es": "Decimotercero = 13.º.",
+      "why_hu": "Decimotercero = 13.º."
+     }
+    ]
+   },
+   "img": "mat_cu_s34-35",
+   "page_box": [
+    0.52,
+    0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "id": "cu36",
+   "book": "cu",
+   "page": 36,
+   "unit": "u3",
+   "title": "Uso de la calculadora",
+   "title_hu": "A számológép használata",
+   "summary_hu": "A számológép részei (kijelző, számbillentyűzet, műveleti gombok, zárójel, C nullázó gomb, ON/OFF). Feladat: tíz összetett művelet kiszámítása számológéppel.",
+   "words": [
+    {
+     "w": "la calculadora",
+     "hu": "számológép",
+     "pic": "🧮"
+    },
+    {
+     "w": "la pantalla",
+     "hu": "kijelző",
+     "pic": "🖥️"
+    },
+    {
+     "w": "el teclado numérico",
+     "hu": "számbillentyűzet"
+    },
+    {
+     "w": "el botón de encendido y apagado",
+     "hu": "be/ki gomb",
+     "pic": "🔌"
+    },
+    {
+     "w": "el paréntesis",
+     "hu": "zárójel"
+    },
+    {
+     "w": "las operaciones",
+     "hu": "műveletek"
+    },
+    {
+     "w": "el resultado",
+     "hu": "eredmény"
+    },
+    {
+     "w": "poner a cero",
+     "hu": "nullázni"
+    },
+    {
+     "w": "utiliza",
+     "hu": "használd"
+    },
+    {
+     "w": "completa",
+     "hu": "egészítsd ki"
+    }
+   ],
+   "tasks": [
+    {
+     "id": "cu36_1",
+     "n": "1",
+     "text": "Utiliza la calculadora y completa.",
+     "text_hu": "Használd a számológépet, és egészítsd ki.",
+     "items": [
+      {
+       "id": "cu36_1a",
+       "q": "2 + 5 − 4 = ?",
+       "q_hu": "2 + 5 − 4 = ?",
+       "kind": "num",
+       "answer": "3",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1b",
+       "q": "5 × 8 − 6 = ?",
+       "q_hu": "5 × 8 − 6 = ?",
+       "kind": "num",
+       "answer": "34",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1c",
+       "q": "90 : 3 − 7 × 4 = ?",
+       "q_hu": "90 : 3 − 7 × 4 = ?",
+       "kind": "num",
+       "answer": "2",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1d",
+       "q": "63 : 3 × 0 = ?",
+       "q_hu": "63 : 3 × 0 = ?",
+       "kind": "num",
+       "answer": "0",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1e",
+       "q": "25 × (250 : 10) = ?",
+       "q_hu": "25 × (250 : 10) = ?",
+       "kind": "num",
+       "answer": "625",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1f",
+       "q": "6 × (8 : 2) = ?",
+       "q_hu": "6 × (8 : 2) = ?",
+       "kind": "num",
+       "answer": "24",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1g",
+       "q": "675 : 5 + 40 = ?",
+       "q_hu": "675 : 5 + 40 = ?",
+       "kind": "num",
+       "answer": "175",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1h",
+       "q": "(5 × 5) + (8 : 2) = ?",
+       "q_hu": "(5 × 5) + (8 : 2) = ?",
+       "kind": "num",
+       "answer": "29",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1i",
+       "q": "974 − 124 + 49 : 7 = ?",
+       "q_hu": "974 − 124 + 49 : 7 = ?",
+       "kind": "num",
+       "answer": "857",
+       "pic": "🔢"
+      },
+      {
+       "id": "cu36_1j",
+       "q": "(4 × 0) + (30 : 3) = ?",
+       "q_hu": "(4 × 0) + (30 : 3) = ?",
+       "kind": "num",
+       "answer": "10",
+       "pic": "🔢"
+      }
+     ],
+     "box": [
+      0.035,
+      0.7449,
+      0.4425,
+      0.9352
+     ],
+     "context": {
+      "es": "Hay diez operaciones combinadas con +, −, × y ÷ (dos puntos). Se calculan con la calculadora.",
+      "hu": "Tíz összetett művelet van +, −, × és : jelekkel. Számológéppel számold ki őket."
+     },
+     "help": {
+      "es": "Teclea la operación tal como está escrita, con los paréntesis, y pulsa =. Usa «:» para dividir.",
+      "hu": "Üsd be a műveletet úgy, ahogy le van írva, zárójelekkel, és nyomd meg az = gombot. Az osztás jele a „:”."
+     },
+     "pic": "🧮"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos a usar la calculadora!",
+     "hu": "Ma megtanuljuk használni a számológépet!",
+     "pic": "🧮"
+    },
+    "sentences": [
+     {
+      "es": "Esta es la Ficha 6: uso de la calculadora.",
+      "hu": "Ez a 6. lap: a számológép használata.",
+      "pic": "📘"
+     },
+     {
+      "es": "La pantalla es donde aparecen los números y el resultado.",
+      "hu": "A kijelzőn jelennek meg a számok és az eredmény.",
+      "pic": "🖥️"
+     },
+     {
+      "es": "El teclado numérico tiene las teclas del 0 al 9.",
+      "hu": "A számbillentyűzeten a 0-tól 9-ig számok vannak.",
+      "pic": "🔢"
+     },
+     {
+      "es": "Las teclas de operaciones son suma, resta, multiplicación y división.",
+      "hu": "A műveleti gombok: összeadás, kivonás, szorzás és osztás.",
+      "pic": "➕"
+     },
+     {
+      "es": "La tecla de igual (=) nos da el resultado.",
+      "hu": "Az egyenlőségjel (=) gomb megadja az eredményt.",
+      "pic": "🟰"
+     },
+     {
+      "es": "Los paréntesis ( y ) sirven para indicar qué operación se hace primero.",
+      "hu": "A zárójelek ( és ) megmutatják, melyik műveletet kell előbb elvégezni.",
+      "pic": "🔗"
+     },
+     {
+      "es": "La tecla C pone la calculadora a cero para empezar de nuevo.",
+      "hu": "A C gomb nullázza a számológépet, hogy újra kezdhessük.",
+      "pic": "🔄"
+     },
+     {
+      "es": "La tecla ON/OFF enciende y apaga la calculadora.",
+      "hu": "Az ON/OFF gomb be- és kikapcsolja a számológépet.",
+      "pic": "🔌"
+     },
+     {
+      "es": "La calculadora sigue el orden de las operaciones: paréntesis, multiplicar y dividir, y luego sumar y restar.",
+      "hu": "A számológép követi a műveleti sorrendet: zárójel, szorzás és osztás, aztán összeadás és kivonás.",
+      "pic": "📋"
+     },
+     {
+      "es": "Ejemplo: 2 + 5 − 4 da 3.",
+      "hu": "Példa: 2 + 5 − 4 az 3.",
+      "pic": "✅"
+     }
+    ],
+    "remember": [
+     {
+      "es": "C = poner a cero; = muestra el resultado.",
+      "hu": "C = nullázás; = megmutatja az eredményt."
+     },
+     {
+      "es": "Teclea la operación igual que está escrita.",
+      "hu": "Úgy üsd be a műveletet, ahogy le van írva."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿qué botón enciende la calculadora?",
+      "hu": "Martin, melyik gomb kapcsolja be a számológépet?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡ON/OFF!",
+      "hu": "ON/OFF!"
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y si me equivoco?",
+      "hu": "És ha hibázom?"
+     },
+     {
+      "who": "Martín",
+      "es": "Pulso la C y empiezo de nuevo.",
+      "hu": "Megnyomom a C-t, és újrakezdem."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Cuánto es 2 + 5 − 4?",
+      "hu": "Mennyi 2 + 5 − 4?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡3! Y 5 × 8 − 6 son 34.",
+      "hu": "3! És 5 × 8 − 6 az 34."
+     }
+    ],
+    "tf": [
+     {
+      "es": "La pantalla muestra los números y el resultado.",
+      "hu": "A kijelző mutatja a számokat és az eredményt.",
+      "answer": true,
+      "why_es": "Ahí aparece todo.",
+      "why_hu": "Ott jelenik meg minden."
+     },
+     {
+      "es": "La tecla C enciende la calculadora.",
+      "hu": "A C gomb bekapcsolja a számológépet.",
+      "answer": false,
+      "why_es": "La C la pone a cero; ON/OFF la enciende.",
+      "why_hu": "A C nulláz; az ON/OFF kapcsolja be."
+     },
+     {
+      "es": "Los paréntesis indican qué operación se hace primero.",
+      "hu": "A zárójelek megmutatják, melyik műveletet végezzük előbb.",
+      "answer": true,
+      "why_es": "Va primero lo de dentro.",
+      "why_hu": "Előbb a belül lévő."
+     },
+     {
+      "es": "2 + 5 − 4 = 3.",
+      "hu": "2 + 5 − 4 = 3.",
+      "answer": true,
+      "why_es": "7 − 4 = 3.",
+      "why_hu": "7 − 4 = 3."
+     },
+     {
+      "es": "La tecla = da el resultado.",
+      "hu": "Az = gomb megadja az eredményt.",
+      "answer": true,
+      "why_es": "Se pulsa al final.",
+      "why_hu": "A végén nyomjuk meg."
+     },
+     {
+      "es": "5 × 8 − 6 = 46.",
+      "hu": "5 × 8 − 6 = 46.",
+      "answer": false,
+      "why_es": "Es 40 − 6 = 34.",
+      "why_hu": "40 − 6 = 34."
+     }
+    ]
+   },
+   "img": "mat_cu_s36-37",
+   "page_box": [
+    0,
+    0,
+    0.49,
+    1.0
+   ]
+  }
+ ]
+}

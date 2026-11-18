@@ -1,0 +1,5762 @@
+{
+ "pages": [
+  {
+   "id": "cu23",
+   "book": "cu",
+   "page": 23,
+   "unit": "u3",
+   "title": "FICHA 1. El adjetivo",
+   "title_hu": "1. lap: A melléknév",
+   "summary_hu": "A melléknév megmondja, milyen a főnév, amiről szó van (pl. csillagos ég, hatalmas rét). Be kell karikázni a mellékneveket, képeket leírni velük, és a főnévhez illő, vele egyező melléknevet választani.",
+   "words": [
+    {
+     "w": "el adjetivo",
+     "hu": "a melléknév",
+     "pic": "🧐"
+    },
+    {
+     "w": "el nombre",
+     "hu": "a főnév"
+    },
+    {
+     "w": "estrellado",
+     "hu": "csillagos",
+     "pic": "🌌"
+    },
+    {
+     "w": "la pradera",
+     "hu": "a rét",
+     "pic": "🌾"
+    },
+    {
+     "w": "inmenso",
+     "hu": "hatalmas"
+    },
+    {
+     "w": "extraño",
+     "hu": "furcsa"
+    },
+    {
+     "w": "increíble",
+     "hu": "hihetetlen"
+    },
+    {
+     "w": "invencible",
+     "hu": "legyőzhetetlen",
+     "pic": "🏆"
+    },
+    {
+     "w": "enorme",
+     "hu": "óriási, hatalmas"
+    },
+    {
+     "w": "el guepardo",
+     "hu": "a gepárd",
+     "pic": "🐆"
+    },
+    {
+     "w": "la sabana",
+     "hu": "a szavanna"
+    },
+    {
+     "w": "la corbata",
+     "hu": "a nyakkendő",
+     "pic": "👔"
+    },
+    {
+     "w": "las amapolas",
+     "hu": "a pipacsok",
+     "pic": "🌺"
+    },
+    {
+     "w": "el guiso",
+     "hu": "a főtt étel (ragu)",
+     "pic": "🍲"
+    },
+    {
+     "w": "vacío",
+     "hu": "üres"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy conocemos los adjetivos, las palabras que dicen cómo son las cosas!",
+     "hu": "Ma megismerjük a mellékneveket, azokat a szavakat, amelyek megmondják, milyenek a dolgok!"
+    },
+    "sentences": [
+     {
+      "es": "Esta ficha trata sobre el adjetivo.",
+      "hu": "Ez a lap a melléknévről szól.",
+      "pic": "📘"
+     },
+     {
+      "es": "El adjetivo expresa cómo es o cómo está el nombre al que se refiere.",
+      "hu": "A melléknév megmondja, milyen a főnév, amire vonatkozik.",
+      "pic": "🧐"
+     },
+     {
+      "es": "En «el cielo estrellado», la palabra «estrellado» dice cómo es el cielo.",
+      "hu": "Az „el cielo estrellado” (csillagos ég) kifejezésben az „estrellado” megmondja, milyen az ég.",
+      "pic": "🌌"
+     },
+     {
+      "es": "En «la inmensa pradera», el adjetivo es «inmensa». Dice que la pradera es muy grande.",
+      "hu": "A „la inmensa pradera” (hatalmas rét) kifejezésben a melléknév az „inmensa”. Azt mondja, hogy a rét nagyon nagy.",
+      "pic": "🌾"
+     },
+     {
+      "es": "El adjetivo puede ir antes o después del nombre: una extraña visita, un equipo invencible.",
+      "hu": "A melléknév állhat a főnév előtt vagy után: una extraña visita (furcsa látogatás), un equipo invencible (legyőzhetetlen csapat).",
+      "pic": "↔️"
+     },
+     {
+      "es": "Podemos describir una imagen con adjetivos: un limón amarillo y ácido.",
+      "hu": "Egy képet leírhatunk melléknevekkel: egy sárga és savanyú citrom.",
+      "pic": "🍋"
+     },
+     {
+      "es": "El adjetivo debe coincidir con el nombre en género y número: amapolas rojas.",
+      "hu": "A melléknévnek a főnévvel nemben és számban egyeznie kell: amapolas rojas (piros pipacsok).",
+      "pic": "🌺"
+     },
+     {
+      "es": "Un guiso salado, una habitación vacía: cada adjetivo va con su nombre.",
+      "hu": "Un guiso salado (sós étel), una habitación vacía (üres szoba): minden melléknév a saját főneve mellé kerül.",
+      "pic": "🍲"
+     }
+    ],
+    "remember": [
+     {
+      "es": "El adjetivo dice cómo es o cómo está el nombre.",
+      "hu": "A melléknév megmondja, milyen a főnév."
+     },
+     {
+      "es": "El adjetivo coincide con el nombre en género y número.",
+      "hu": "A melléknév nemben és számban egyezik a főnévvel."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿qué palabra dice cómo es el cielo en «el cielo estrellado»?",
+      "hu": "Martin, melyik szó mondja meg, milyen az ég az „el cielo estrellado” kifejezésben?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡«Cielo»!",
+      "hu": "Az „cielo”!"
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, «cielo» es el nombre. Prueba otra vez.",
+      "hu": "Miau, a „cielo” a főnév. Próbáld újra."
+     },
+     {
+      "who": "Martín",
+      "es": "¡Ah, es «estrellado»! Es el adjetivo.",
+      "hu": "Ja, az „estrellado”! Az a melléknév."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Muy bien! ¿Y cómo es un limón?",
+      "hu": "Nagyon jó! És milyen a citrom?"
+     },
+     {
+      "who": "Martín",
+      "es": "Un limón es amarillo y ácido.",
+      "hu": "A citrom sárga és savanyú."
+     }
+    ],
+    "tf": [
+     {
+      "es": "«Inmensa» es un adjetivo.",
+      "hu": "Az „inmensa” melléknév.",
+      "answer": true,
+      "why_es": "Dice cómo es la pradera: muy grande.",
+      "why_hu": "Megmondja, milyen a rét: nagyon nagy."
+     },
+     {
+      "es": "«Pradera» es un adjetivo.",
+      "hu": "A „pradera” melléknév.",
+      "answer": false,
+      "why_es": "Pradera es un nombre.",
+      "why_hu": "A pradera főnév."
+     },
+     {
+      "es": "El adjetivo expresa cómo es o está el nombre.",
+      "hu": "A melléknév megmondja, milyen a főnév.",
+      "answer": true,
+      "why_es": "Esa es la regla de la ficha.",
+      "why_hu": "Ez a lap szabálya."
+     },
+     {
+      "es": "«Amapolas rojas»: rojas coincide con amapolas.",
+      "hu": "„Amapolas rojas”: a rojas egyezik az amapolas szóval.",
+      "answer": true,
+      "why_es": "Las dos palabras son femeninas y plurales.",
+      "why_hu": "Mindkét szó nőnemű és többes számú."
+     },
+     {
+      "es": "El adjetivo siempre va detrás del nombre.",
+      "hu": "A melléknév mindig a főnév után áll.",
+      "answer": false,
+      "why_es": "También puede ir delante: la inmensa pradera.",
+      "why_hu": "Előtte is állhat: la inmensa pradera."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-14",
+   "page_box": [
+    0.52,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu23_1",
+     "n": "1",
+     "text": "RODEA el adjetivo en cada grupo de palabras.",
+     "text_hu": "Karikázd be a melléknevet minden szócsoportban.",
+     "box": [
+      0.545,
+      0.29,
+      0.96,
+      0.42
+     ],
+     "context": {
+      "es": "Hay seis grupos de palabras: el cielo estrellado, la inmensa pradera, una historia increíble, una extraña visita, un equipo invencible y el enorme lago. En cada grupo hay un adjetivo que hay que rodear.",
+      "hu": "Hat szócsoport van: csillagos ég, hatalmas rét, hihetetlen történet, furcsa látogatás, legyőzhetetlen csapat, hatalmas tó. Mindegyikben egy melléknevet kell bekarikázni."
+     },
+     "pic": "⭕🔍",
+     "help": {
+      "es": "Busca la palabra que dice cómo es el nombre. No es «el» ni «la» ni «una».",
+      "hu": "Keresd meg azt a szót, ami megmondja, milyen a főnév. Nem a „el”, „la” vagy „una”."
+     },
+     "items": [
+      {
+       "q": "«el cielo estrellado»: ¿cuál es el adjetivo?",
+       "q_hu": "„el cielo estrellado”: melyik a melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "el",
+         "hu": "el"
+        },
+        {
+         "t": "cielo",
+         "hu": "ég"
+        },
+        {
+         "t": "estrellado",
+         "hu": "csillagos"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "estrellado = csillagos",
+       "pic": "🌌",
+       "id": "cu23_1a"
+      },
+      {
+       "q": "«la inmensa pradera»: ¿cuál es el adjetivo?",
+       "q_hu": "„la inmensa pradera”: melyik a melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "la",
+         "hu": "la"
+        },
+        {
+         "t": "inmensa",
+         "hu": "hatalmas"
+        },
+        {
+         "t": "pradera",
+         "hu": "rét"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "inmensa = hatalmas",
+       "pic": "🌾",
+       "id": "cu23_1b"
+      },
+      {
+       "q": "«una historia increíble»: ¿cuál es el adjetivo?",
+       "q_hu": "„una historia increíble”: melyik a melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "una",
+         "hu": "egy"
+        },
+        {
+         "t": "historia",
+         "hu": "történet"
+        },
+        {
+         "t": "increíble",
+         "hu": "hihetetlen"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "increíble = hihetetlen",
+       "pic": "📖",
+       "id": "cu23_1c"
+      },
+      {
+       "q": "«una extraña visita»: ¿cuál es el adjetivo?",
+       "q_hu": "„una extraña visita”: melyik a melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "una",
+         "hu": "egy"
+        },
+        {
+         "t": "extraña",
+         "hu": "furcsa"
+        },
+        {
+         "t": "visita",
+         "hu": "látogatás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "extraña = furcsa",
+       "pic": "🚪",
+       "id": "cu23_1d"
+      },
+      {
+       "q": "«un equipo invencible»: ¿cuál es el adjetivo?",
+       "q_hu": "„un equipo invencible”: melyik a melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "un",
+         "hu": "egy"
+        },
+        {
+         "t": "equipo",
+         "hu": "csapat"
+        },
+        {
+         "t": "invencible",
+         "hu": "legyőzhetetlen"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "invencible = legyőzhetetlen",
+       "pic": "🏆",
+       "id": "cu23_1e"
+      },
+      {
+       "q": "«el enorme lago»: ¿cuál es el adjetivo?",
+       "q_hu": "„el enorme lago”: melyik a melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "el",
+         "hu": "el"
+        },
+        {
+         "t": "enorme",
+         "hu": "hatalmas"
+        },
+        {
+         "t": "lago",
+         "hu": "tó"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "enorme = hatalmas",
+       "pic": "🏞️",
+       "id": "cu23_1f"
+      }
+     ]
+    },
+    {
+     "id": "cu23_2",
+     "n": "2",
+     "text": "DESCRIBE cada imagen con dos adjetivos.",
+     "text_hu": "Írd le mindegyik képet két melléknévvel.",
+     "box": [
+      0.545,
+      0.415,
+      0.96,
+      0.615
+     ],
+     "context": {
+      "es": "Hay dos imágenes: una rodaja de limón amarilla y un puf azul y mullido (un sillón redondo para sentarse). Debajo de cada una hay dos rayas para escribir dos adjetivos.",
+      "hu": "Két kép van: egy sárga citromszelet és egy kék, puha babzsákfotel. Mindegyik alatt két vonal van két melléknévnek."
+     },
+     "pic": "🍋🔵",
+     "help": {
+      "es": "Piensa en el color, el sabor o cómo es al tocarlo.",
+      "hu": "Gondolj a színére, ízére vagy arra, milyen megfogni."
+     },
+     "items": [
+      {
+       "q": "Rodaja de limón: escribe dos adjetivos.",
+       "q_hu": "Citromszelet: írj két melléknevet.",
+       "kind": "open",
+       "answer": "amarilla, ácida (también: jugosa, fresca)",
+       "answer_hu": "sárga, savanyú (még: lédús, friss)",
+       "pic": "🍋",
+       "id": "cu23_2a"
+      },
+      {
+       "q": "Puf azul: escribe dos adjetivos.",
+       "q_hu": "Kék babzsákfotel: írj két melléknevet.",
+       "kind": "open",
+       "answer": "azul, cómodo (también: blando, redondo)",
+       "answer_hu": "kék, kényelmes (még: puha, kerek)",
+       "pic": "🔵",
+       "id": "cu23_2b"
+      }
+     ]
+    },
+    {
+     "id": "cu23_3",
+     "n": "3",
+     "text": "ESCRIBE un adjetivo para cada nombre.",
+     "text_hu": "Írj egy melléknevet minden főnév mellé.",
+     "box": [
+      0.545,
+      0.62,
+      0.96,
+      0.765
+     ],
+     "context": {
+      "es": "Tres frases con un hueco: un guepardo que corre por la sabana, unos paisajes que adoras y una corbata que hace juego con una chaqueta. En cada hueco va un adjetivo.",
+      "hu": "Három mondat egy-egy hellyel: egy gepárd, ami a szavannán fut; tájak, amiket imádsz; egy nyakkendő, ami illik a zakóhoz. Minden helyre melléknév kerül."
+     },
+     "pic": "✍️🐆",
+     "help": {
+      "es": "Mira si el nombre es masculino o femenino, singular o plural: el adjetivo debe coincidir.",
+      "hu": "Nézd meg, hogy a főnév hím- vagy nőnemű, egyes vagy többes számú: a melléknévnek egyeznie kell vele."
+     },
+     "items": [
+      {
+       "q": "El ___ guepardo corre por la sabana. (guepardo es masculino singular)",
+       "q_hu": "A ___ gepárd fut a szavannán. (a guepardo hímnemű, egyes szám)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "rápido",
+         "hu": "gyors (hímnem, egyes)"
+        },
+        {
+         "t": "rápida",
+         "hu": "gyors (nőnem)"
+        },
+        {
+         "t": "rápidos",
+         "hu": "gyors (többes)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "El rápido guepardo / el veloz guepardo",
+       "pic": "🐆",
+       "id": "cu23_3a"
+      },
+      {
+       "q": "Adoro los paisajes ___. (paisajes es masculino plural)",
+       "q_hu": "Imádom a ___ tájakat. (a paisajes hímnemű, többes szám)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "hermosos",
+         "hu": "szép (hímnem, többes)"
+        },
+        {
+         "t": "hermosa",
+         "hu": "szép (nőnem, egyes)"
+        },
+        {
+         "t": "hermoso",
+         "hu": "szép (hímnem, egyes)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "hermosos = szép (többes)",
+       "pic": "🏞️",
+       "id": "cu23_3b"
+      },
+      {
+       "q": "Esta corbata ___ hace juego con tu chaqueta. (corbata es femenino singular)",
+       "q_hu": "Ez a ___ nyakkendő illik a zakódhoz. (a corbata nőnemű, egyes szám)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "elegante",
+         "hu": "elegáns"
+        },
+        {
+         "t": "elegantes",
+         "hu": "elegáns (többes)"
+        },
+        {
+         "t": "rojos",
+         "hu": "piros (hímnem, többes)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "elegante = elegáns (más is jó: azul, bonita)",
+       "pic": "👔",
+       "id": "cu23_3c"
+      }
+     ]
+    },
+    {
+     "id": "cu23_4",
+     "n": "4",
+     "text": "UNE cada nombre con un adjetivo adecuado.",
+     "text_hu": "Kösd össze mindegyik főnevet egy hozzá illő melléknévvel.",
+     "box": [
+      0.545,
+      0.765,
+      0.96,
+      0.94
+     ],
+     "context": {
+      "es": "A la izquierda hay tres nombres: amapolas, guiso y habitación. A la derecha hay tres adjetivos: vacía, rojas y salado. Hay que unir cada nombre con el adjetivo que le va bien.",
+      "hu": "Balra három főnév: amapolas (pipacsok), guiso (főtt étel), habitación (szoba). Jobbra három melléknév: vacía (üres), rojas (piros), salado (sós). Mindegyik főnevet a hozzá illő melléknévvel kell összekötni."
+     },
+     "pic": "🔗🌺",
+     "help": {
+      "es": "Fíjate en el género y el número: amapolas es femenino plural.",
+      "hu": "Figyeld a nemet és a számot: az amapolas nőnemű többes szám."
+     },
+     "items": [
+      {
+       "q": "amapolas → ¿qué adjetivo?",
+       "q_hu": "amapolas (pipacsok) → melyik melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "vacía",
+         "hu": "üres"
+        },
+        {
+         "t": "rojas",
+         "hu": "piros"
+        },
+        {
+         "t": "salado",
+         "hu": "sós"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "las amapolas rojas = a piros pipacsok",
+       "pic": "🌺",
+       "id": "cu23_4a"
+      },
+      {
+       "q": "guiso → ¿qué adjetivo?",
+       "q_hu": "guiso (főtt étel) → melyik melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "vacía",
+         "hu": "üres"
+        },
+        {
+         "t": "rojas",
+         "hu": "piros"
+        },
+        {
+         "t": "salado",
+         "hu": "sós"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "el guiso salado = a sós étel",
+       "pic": "🍲",
+       "id": "cu23_4b"
+      },
+      {
+       "q": "habitación → ¿qué adjetivo?",
+       "q_hu": "habitación (szoba) → melyik melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "vacía",
+         "hu": "üres"
+        },
+        {
+         "t": "rojas",
+         "hu": "piros"
+        },
+        {
+         "t": "salado",
+         "hu": "sós"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "la habitación vacía = az üres szoba",
+       "pic": "🛏️",
+       "id": "cu23_4c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu24",
+   "book": "cu",
+   "page": 24,
+   "unit": "u3",
+   "title": "FICHA 1. El adjetivo (continuación)",
+   "title_hu": "1. lap: A melléknév (folytatás)",
+   "summary_hu": "Főnevek és hozzájuk tartozó melléknevek keresése mondatokban, a melléknevek osztályozása nem és szám szerint, mondatok átírása egyesből többesbe és fordítva, és a lemezjátszóhoz illő melléknevek kiválasztása.",
+   "words": [
+    {
+     "w": "nuevo",
+     "hu": "új"
+    },
+    {
+     "w": "rojo",
+     "hu": "piros"
+    },
+    {
+     "w": "mojado",
+     "hu": "nedves, vizes"
+    },
+    {
+     "w": "hermoso",
+     "hu": "szép",
+     "pic": "🌷"
+    },
+    {
+     "w": "largo",
+     "hu": "hosszú"
+    },
+    {
+     "w": "rico",
+     "hu": "gazdag, finom"
+    },
+    {
+     "w": "suave",
+     "hu": "puha, sima",
+     "pic": "🪶"
+    },
+    {
+     "w": "húmedo",
+     "hu": "nyirkos, nedves"
+    },
+    {
+     "w": "las raíces",
+     "hu": "a gyökerek",
+     "pic": "🌱"
+    },
+    {
+     "w": "el musgo",
+     "hu": "a moha"
+    },
+    {
+     "w": "el nutriente",
+     "hu": "a tápanyag"
+    },
+    {
+     "w": "valiente",
+     "hu": "bátor"
+    },
+    {
+     "w": "la gruta",
+     "hu": "a barlang",
+     "pic": "🕳️"
+    },
+    {
+     "w": "el tocadiscos",
+     "hu": "a lemezjátszó",
+     "pic": "🎶"
+    },
+    {
+     "w": "favorito",
+     "hu": "kedvenc",
+     "pic": "⭐"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Seguimos con los adjetivos! Hoy vemos cómo cambian según el nombre.",
+     "hu": "Folytatjuk a mellékneveket! Ma azt nézzük, hogyan változnak a főnévhez igazodva.",
+     "pic": "🌿"
+    },
+    "sentences": [
+     {
+      "es": "Un adjetivo acompaña a un nombre y dice cómo es.",
+      "hu": "A melléknév egy főnév mellett áll, és megmondja, milyen.",
+      "pic": "🌸"
+     },
+     {
+      "es": "En «frutos rojos», «frutos» es el nombre y «rojos» es el adjetivo.",
+      "hu": "A „frutos rojos” (piros gyümölcsök) kifejezésben a „frutos” a főnév, a „rojos” a melléknév.",
+      "pic": "🍓"
+     },
+     {
+      "es": "En «hermosa flor», el adjetivo «hermosa» es femenino singular, igual que «flor».",
+      "hu": "A „hermosa flor” (szép virág) kifejezésben a „hermosa” nőnemű egyes szám, mint a „flor”.",
+      "pic": "🌷"
+     },
+     {
+      "es": "Los adjetivos acabados en -o cambian a -a para el femenino: nuevo, nueva.",
+      "hu": "Az -o végű melléknevek nőnemben -a végűek lesznek: nuevo, nueva (új).",
+      "pic": "🔁"
+     },
+     {
+      "es": "Para el plural, añadimos -s o -es: nueva, nuevas; azul, azules.",
+      "hu": "Többes számhoz -s vagy -es végződést adunk: nueva, nuevas; azul, azules (kék).",
+      "pic": "➕"
+     },
+     {
+      "es": "Algunos adjetivos, como «suave», no cambian entre masculino y femenino.",
+      "hu": "Néhány melléknév, például a „suave” (puha), hím- és nőnemben nem változik.",
+      "pic": "🪶"
+     },
+     {
+      "es": "Si cambiamos el nombre al plural, el adjetivo también cambia: las rocas húmedas.",
+      "hu": "Ha a főnevet többes számba tesszük, a melléknév is változik: las rocas húmedas (a nedves sziklák).",
+      "pic": "🪨"
+     },
+     {
+      "es": "Al cambiar el número de una frase también cambia el verbo: abrió, abrieron.",
+      "hu": "Ha egy mondat számát megváltoztatjuk, az ige is változik: abrió (kinyitotta), abrieron (kinyitották).",
+      "pic": "🔄"
+     },
+     {
+      "es": "Un tocadiscos antiguo es bonito. Los adjetivos tienen que ser verdad y coincidir.",
+      "hu": "Egy régi lemezjátszó szép. A mellékneveknek igaznak kell lenniük és egyezniük kell.",
+      "pic": "🎶"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Género: masculino (-o) o femenino (-a). Número: singular o plural (-s).",
+      "hu": "Nem: hímnem (-o) vagy nőnem (-a). Szám: egyes vagy többes (-s)."
+     },
+     {
+      "es": "Al cambiar el número del nombre, cambia el adjetivo.",
+      "hu": "Ha a főnév száma változik, a melléknév is változik."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cómo se dice «nuevo» en femenino?",
+      "hu": "Martin, hogyan mondjuk nőnemben, hogy „nuevo”?"
+     },
+     {
+      "who": "Martín",
+      "es": "¿Nuevo?",
+      "hu": "Nuevo?"
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, piensa en «la planta ___».",
+      "hu": "Miau, gondolj a „la planta ___” kifejezésre."
+     },
+     {
+      "who": "Martín",
+      "es": "¡Nueva! La planta nueva.",
+      "hu": "Nueva! La planta nueva."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y en plural?",
+      "hu": "És többes számban?"
+     },
+     {
+      "who": "Martín",
+      "es": "Las plantas nuevas.",
+      "hu": "Las plantas nuevas."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Perfecto! Has cambiado el género y el número.",
+      "hu": "Tökéletes! Megváltoztattad a nemet és a számot."
+     }
+    ],
+    "tf": [
+     {
+      "es": "«Rojos» es masculino plural.",
+      "hu": "A „rojos” hímnem, többes szám.",
+      "answer": true,
+      "why_es": "Termina en -o y en -s.",
+      "why_hu": "-o és -s végű."
+     },
+     {
+      "es": "«Hermosa» es masculino.",
+      "hu": "A „hermosa” hímnem.",
+      "answer": false,
+      "why_es": "Es femenino singular, porque termina en -a.",
+      "why_hu": "Nőnemű egyes szám, mert -a végű."
+     },
+     {
+      "es": "El plural de «larga» es «largas».",
+      "hu": "A „larga” többes száma „largas”.",
+      "answer": true,
+      "why_es": "Se añade una -s.",
+      "why_hu": "Egy -s-t teszünk hozzá."
+     },
+     {
+      "es": "«Suave» cambia a «suava» en femenino.",
+      "hu": "A „suave” nőnemben „suava” lesz.",
+      "answer": false,
+      "why_es": "«Suave» no cambia: musgo suave, hoja suave.",
+      "why_hu": "A „suave” nem változik: musgo suave, hoja suave."
+     },
+     {
+      "es": "«Unas puertas» en singular es «una puerta».",
+      "hu": "Az „unas puertas” egyes számban „una puerta”.",
+      "answer": true,
+      "why_es": "Cambian el artículo y el nombre.",
+      "why_hu": "A névelő és a főnév is változik."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-15",
+   "page_box": [
+    0.0,
+    0.0,
+    0.49,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu24_5",
+     "n": "5",
+     "text": "SUBRAYA los nombres y RODEA los adjetivos que lo califican. / CLASIFICA los adjetivos.",
+     "text_hu": "Húzd alá a főneveket és karikázd be a hozzájuk tartozó mellékneveket. / OSZTÁLYOZD a mellékneveket.",
+     "box": [
+      0.02,
+      0.06,
+      0.49,
+      0.46
+     ],
+     "context": {
+      "es": "Hay cuatro frases sobre plantas (nueva planta, frutos rojos, hermosa flor, largas raíces, suave musgo…). Después hay una tabla con columnas masculino y femenino y filas singular y plural, donde se colocan los adjetivos.",
+      "hu": "Négy mondat van növényekről (új növény, piros gyümölcsök, szép virág, hosszú gyökerek, puha moha…). Utána egy táblázat: hímnem és nőnem oszlop, egyes és többes szám sor, ide kerülnek a melléknevek."
+     },
+     "pic": "🌱🔍",
+     "help": {
+      "es": "Primero busca el nombre y mira qué adjetivo va con él. Luego fíjate en la terminación: -o masculino, -a femenino, -s plural.",
+      "hu": "Először keresd meg a főnevet, és nézd, melyik melléknév tartozik hozzá. Aztán figyeld a végződést: -o hímnem, -a nőnem, -s többes szám."
+     },
+     "items": [
+      {
+       "q": "«Esta nueva planta da frutos rojos.» ¿Qué adjetivo acompaña al nombre «planta»?",
+       "q_hu": "„Esta nueva planta da frutos rojos.” (Ez az új növény piros gyümölcsöket terem.) Melyik melléknév tartozik a „planta” (növény) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "nueva",
+         "hu": "új"
+        },
+        {
+         "t": "rojos",
+         "hu": "piros"
+        },
+        {
+         "t": "planta",
+         "hu": "növény"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "nueva = új",
+       "pic": "🌱",
+       "id": "cu24_5a"
+      },
+      {
+       "q": "«Esta nueva planta da frutos rojos.» ¿Qué adjetivo acompaña al nombre «frutos»?",
+       "q_hu": "„Esta nueva planta da frutos rojos.” (Ez az új növény piros gyümölcsöket terem.) Melyik melléknév tartozik a „frutos” (gyümölcsök) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "nueva",
+         "hu": "új"
+        },
+        {
+         "t": "rojos",
+         "hu": "piros"
+        },
+        {
+         "t": "frutos",
+         "hu": "gyümölcsök"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "rojos = piros",
+       "pic": "🌱",
+       "id": "cu24_5b"
+      },
+      {
+       "q": "«En el suelo mojado surgió una hermosa flor.» ¿Qué adjetivo acompaña al nombre «suelo»?",
+       "q_hu": "„En el suelo mojado surgió una hermosa flor.” (A nedves talajban szép virág nőtt.) Melyik melléknév tartozik a „suelo” (talaj) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "mojado",
+         "hu": "nedves"
+        },
+        {
+         "t": "hermosa",
+         "hu": "szép"
+        },
+        {
+         "t": "suelo",
+         "hu": "talaj"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "mojado = nedves",
+       "pic": "🌱",
+       "id": "cu24_5c"
+      },
+      {
+       "q": "«En el suelo mojado surgió una hermosa flor.» ¿Qué adjetivo acompaña al nombre «flor»?",
+       "q_hu": "„En el suelo mojado surgió una hermosa flor.” (A nedves talajban szép virág nőtt.) Melyik melléknév tartozik a „flor” (virág) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "mojado",
+         "hu": "nedves"
+        },
+        {
+         "t": "hermosa",
+         "hu": "szép"
+        },
+        {
+         "t": "flor",
+         "hu": "virág"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "hermosa = szép",
+       "pic": "🌱",
+       "id": "cu24_5d"
+      },
+      {
+       "q": "«Las largas raíces buscan ricos nutrientes.» ¿Qué adjetivo acompaña al nombre «raíces»?",
+       "q_hu": "„Las largas raíces buscan ricos nutrientes.” (A hosszú gyökerek finom tápanyagokat keresnek.) Melyik melléknév tartozik a „raíces” (gyökerek) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "largas",
+         "hu": "hosszú"
+        },
+        {
+         "t": "ricos",
+         "hu": "gazdag, finom"
+        },
+        {
+         "t": "raíces",
+         "hu": "gyökerek"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "largas = hosszú",
+       "pic": "🌱",
+       "id": "cu24_5e"
+      },
+      {
+       "q": "«Las largas raíces buscan ricos nutrientes.» ¿Qué adjetivo acompaña al nombre «nutrientes»?",
+       "q_hu": "„Las largas raíces buscan ricos nutrientes.” (A hosszú gyökerek finom tápanyagokat keresnek.) Melyik melléknév tartozik a „nutrientes” (tápanyagok) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "largas",
+         "hu": "hosszú"
+        },
+        {
+         "t": "ricos",
+         "hu": "gazdag, finom"
+        },
+        {
+         "t": "nutrientes",
+         "hu": "tápanyagok"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "ricos = gazdag, finom",
+       "pic": "🌱",
+       "id": "cu24_5f"
+      },
+      {
+       "q": "«Un suave musgo cubría las rocas húmedas.» ¿Qué adjetivo acompaña al nombre «musgo»?",
+       "q_hu": "„Un suave musgo cubría las rocas húmedas.” (Egy puha moha borította a nedves sziklákat.) Melyik melléknév tartozik a „musgo” (moha) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "suave",
+         "hu": "puha"
+        },
+        {
+         "t": "húmedas",
+         "hu": "nedves"
+        },
+        {
+         "t": "musgo",
+         "hu": "moha"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "suave = puha",
+       "pic": "🌱",
+       "id": "cu24_5g"
+      },
+      {
+       "q": "«Un suave musgo cubría las rocas húmedas.» ¿Qué adjetivo acompaña al nombre «rocas»?",
+       "q_hu": "„Un suave musgo cubría las rocas húmedas.” (Egy puha moha borította a nedves sziklákat.) Melyik melléknév tartozik a „rocas” (sziklák) főnévhez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "suave",
+         "hu": "puha"
+        },
+        {
+         "t": "húmedas",
+         "hu": "nedves"
+        },
+        {
+         "t": "rocas",
+         "hu": "sziklák"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "húmedas = nedves",
+       "pic": "🌱",
+       "id": "cu24_5h"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «nueva»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „nueva” (új) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "nőnem, egyes",
+       "pic": "🗂️",
+       "id": "cu24_5i"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «rojos»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „rojos” (piros) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "hímnem, többes",
+       "pic": "🗂️",
+       "id": "cu24_5j"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «mojado»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „mojado” (nedves) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "hímnem, egyes",
+       "pic": "🗂️",
+       "id": "cu24_5k"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «hermosa»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „hermosa” (szép) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "nőnem, egyes",
+       "pic": "🗂️",
+       "id": "cu24_5l"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «largas»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „largas” (hosszú) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "nőnem, többes",
+       "pic": "🗂️",
+       "id": "cu24_5m"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «ricos»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „ricos” (finom) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "hímnem, többes",
+       "pic": "🗂️",
+       "id": "cu24_5n"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «suave»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „suave” (puha) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "hímnem, egyes",
+       "pic": "🗂️",
+       "id": "cu24_5o"
+      },
+      {
+       "q": "CLASIFICA el adjetivo «húmedas»: ¿en qué casilla va?",
+       "q_hu": "OSZTÁLYOZD: a „húmedas” (nedves) melyik rubrikába kerül?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "masculino singular",
+         "hu": "hímnem, egyes"
+        },
+        {
+         "t": "femenino singular",
+         "hu": "nőnem, egyes"
+        },
+        {
+         "t": "masculino plural",
+         "hu": "hímnem, többes"
+        },
+        {
+         "t": "femenino plural",
+         "hu": "nőnem, többes"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "nőnem, többes",
+       "pic": "🗂️",
+       "id": "cu24_5p"
+      }
+     ]
+    },
+    {
+     "id": "cu24_6",
+     "n": "6",
+     "text": "CAMBIA el número de los adjetivos como en el ejemplo.",
+     "text_hu": "Változtasd meg a melléknevek számát a példa szerint.",
+     "box": [
+      0.02,
+      0.47,
+      0.49,
+      0.75
+     ],
+     "context": {
+      "es": "El ejemplo cambia de singular a plural: «El valiente caballero entró en la oscura gruta» pasa a «Los valientes caballeros entraron en las oscuras grutas». Hay tres frases en plural o singular que cambiar igual.",
+      "hu": "A példa egyesből többesbe vált: „El valiente caballero entró en la oscura gruta” → „Los valientes caballeros entraron en las oscuras grutas”. Három mondatot kell hasonlóan átírni."
+     },
+     "pic": "🔄",
+     "help": {
+      "es": "Cambia todo a la vez: el artículo, el nombre, el adjetivo y el verbo.",
+      "hu": "Egyszerre változtass mindent: a névelőt, a főnevet, a melléknevet és az igét."
+     },
+     "items": [
+      {
+       "q": "Pasa al singular: «Unas ráfagas de viento abrieron las puertas de golpe.»",
+       "q_hu": "Írd egyes számba: „Unas ráfagas de viento abrieron las puertas de golpe.”",
+       "kind": "type",
+       "answer": "Una ráfaga de viento abrió la puerta de golpe.",
+       "alts": [
+        "Una ráfaga de viento abrió la puerta de golpe"
+       ],
+       "answer_hu": "Egy széllökés hirtelen kinyitotta az ajtót.",
+       "pic": "💨",
+       "id": "cu24_6a"
+      },
+      {
+       "q": "Pasa al plural: «Mi mejor amiga juega conmigo a mi juego favorito.»",
+       "q_hu": "Írd többes számba: „Mi mejor amiga juega conmigo a mi juego favorito.”",
+       "kind": "type",
+       "answer": "Mis mejores amigas juegan conmigo a mis juegos favoritos.",
+       "alts": [
+        "Mis mejores amigas juegan conmigo a mis juegos favoritos"
+       ],
+       "answer_hu": "A legjobb barátnőim velem játszanak a kedvenc játékaimmal.",
+       "pic": "👭",
+       "id": "cu24_6b"
+      },
+      {
+       "q": "Pasa al singular: «Estos animales salvajes viven en unos paisajes maravillosos.»",
+       "q_hu": "Írd egyes számba: „Estos animales salvajes viven en unos paisajes maravillosos.”",
+       "kind": "type",
+       "answer": "Este animal salvaje vive en un paisaje maravilloso.",
+       "alts": [
+        "Este animal salvaje vive en un paisaje maravilloso"
+       ],
+       "answer_hu": "Ez a vad állat egy csodálatos tájban él.",
+       "pic": "🦁",
+       "id": "cu24_6c"
+      }
+     ]
+    },
+    {
+     "id": "cu24_7",
+     "n": "7",
+     "text": "RODEA solo los adjetivos adecuados para este objeto.",
+     "text_hu": "Csak az ehhez a tárgyhoz illő mellékneveket karikázd be.",
+     "box": [
+      0.02,
+      0.75,
+      0.49,
+      0.94
+     ],
+     "context": {
+      "es": "Se ve un tocadiscos antiguo, con forma de arco y luces. Alrededor hay nueve palabras: alucinante, divertidos, conocido, tocadiscos, antiguo, extrañas, silencioso, moderno y bonito. Solo algunas sirven.",
+      "hu": "Egy régi, íves, világító lemezjátszót (jukebox) látunk. Körülötte kilenc szó van: alucinante, divertidos, conocido, tocadiscos, antiguo, extrañas, silencioso, moderno, bonito. Csak néhány illik."
+     },
+     "pic": "🎶📻",
+     "help": {
+      "es": "El tocadiscos es singular y masculino. Descarta los plurales, los nombres y los adjetivos que no son verdad.",
+      "hu": "A tocadiscos egyes szám és hímnem. Dobd ki a többes számúakat, a főneveket és azokat a mellékneveket, amik nem igazak."
+     },
+     "items": [
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«alucinante» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „alucinante” (fantasztikus, elképesztő) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen, illik rá.",
+       "pic": "🎶",
+       "id": "cu24_7a"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«divertidos» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „divertidos” (vicces (többes)) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, nem illik rá (nem egyezik vagy nem igaz).",
+       "pic": "🎶",
+       "id": "cu24_7b"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«conocido» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „conocido” (ismert) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen, illik rá.",
+       "pic": "🎶",
+       "id": "cu24_7c"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«tocadiscos» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „tocadiscos” (lemezjátszó (ez főnév!)) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, nem illik rá (nem egyezik vagy nem igaz).",
+       "pic": "🎶",
+       "id": "cu24_7d"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«antiguo» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „antiguo” (régi) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen, illik rá.",
+       "pic": "🎶",
+       "id": "cu24_7e"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«extrañas» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „extrañas” (furcsa (nőnem, többes)) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, nem illik rá (nem egyezik vagy nem igaz).",
+       "pic": "🎶",
+       "id": "cu24_7f"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«silencioso» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „silencioso” (csendes) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, nem illik rá (nem egyezik vagy nem igaz).",
+       "pic": "🎶",
+       "id": "cu24_7g"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«moderno» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „moderno” (modern) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, nem illik rá (nem egyezik vagy nem igaz).",
+       "pic": "🎶",
+       "id": "cu24_7h"
+      },
+      {
+       "q": "El objeto es un tocadiscos antiguo (singular, masculino, suena música). ¿«bonito» es un adjetivo adecuado?",
+       "q_hu": "A tárgy egy régi lemezjátszó (egyes szám, hímnem, zenél). A „bonito” (szép) odaillő melléknév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Sí",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen, illik rá.",
+       "pic": "🎶",
+       "id": "cu24_7i"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu25",
+   "book": "cu",
+   "page": 25,
+   "unit": "u3",
+   "title": "FICHA 2. Los sinónimos",
+   "title_hu": "2. lap: A szinonimák (rokon értelmű szavak)",
+   "summary_hu": "A szinonimák egyező vagy hasonló jelentésű szavak. Szópárokat kell összekötni, szavakat szinonimával helyettesíteni, mondatokat szinonimával kiegészíteni, és kiválasztani a kiemelt szó szinonimáját.",
+   "words": [
+    {
+     "w": "el sinónimo",
+     "hu": "a szinonima, rokon értelmű szó",
+     "pic": "🔁"
+    },
+    {
+     "w": "buscar",
+     "hu": "keresni",
+     "pic": "🔍"
+    },
+    {
+     "w": "explorar",
+     "hu": "felfedezni"
+    },
+    {
+     "w": "el comienzo",
+     "hu": "a kezdet",
+     "pic": "🏁"
+    },
+    {
+     "w": "el inicio",
+     "hu": "a kezdet"
+    },
+    {
+     "w": "arriba",
+     "hu": "fent",
+     "pic": "⬆️"
+    },
+    {
+     "w": "abajo",
+     "hu": "lent",
+     "pic": "⬇️"
+    },
+    {
+     "w": "diminuto",
+     "hu": "parányi"
+    },
+    {
+     "w": "veloz",
+     "hu": "gyors"
+    },
+    {
+     "w": "la leona",
+     "hu": "az oroszlánnő",
+     "pic": "🦁"
+    },
+    {
+     "w": "responsable",
+     "hu": "felelősségteljes"
+    },
+    {
+     "w": "firme",
+     "hu": "szilárd, erős"
+    },
+    {
+     "w": "el tallo",
+     "hu": "a szár",
+     "pic": "🌱"
+    },
+    {
+     "w": "robusto",
+     "hu": "erős, tagbaszakadt"
+    },
+    {
+     "w": "la semilla",
+     "hu": "a mag"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos los sinónimos: palabras distintas que dicen casi lo mismo!",
+     "hu": "Ma a szinonimákat tanuljuk: különböző szavakat, amik majdnem ugyanazt jelentik!",
+     "pic": "🔁"
+    },
+    "sentences": [
+     {
+      "es": "Los sinónimos son palabras que tienen un significado igual o parecido.",
+      "hu": "A szinonimák olyan szavak, amelyeknek ugyanaz vagy hasonló a jelentésük.",
+      "pic": "🔁"
+     },
+     {
+      "es": "«Comienzo» e «inicio» son sinónimos: los dos significan el principio.",
+      "hu": "A „comienzo” és az „inicio” szinonimák: mindkettő kezdetet jelent.",
+      "pic": "🏁"
+     },
+     {
+      "es": "«Buscar» y «explorar» también son sinónimos, porque significan casi lo mismo.",
+      "hu": "A „buscar” (keresni) és az „explorar” (felfedezni) szintén szinonimák, mert majdnem ugyanazt jelentik.",
+      "pic": "🔍"
+     },
+     {
+      "es": "«Arriba» y «abajo» son contrarios, no sinónimos.",
+      "hu": "Az „arriba” (fent) és az „abajo” (lent) ellentétek, nem szinonimák.",
+      "pic": "↕️"
+     },
+     {
+      "es": "Podemos cambiar una palabra por su sinónimo y la frase sigue diciendo lo mismo.",
+      "hu": "Kicserélhetünk egy szót a szinonimájára, és a mondat ugyanazt mondja.",
+      "pic": "✍️"
+     },
+     {
+      "es": "En vez de «pequeño» podemos decir «diminuto».",
+      "hu": "A „pequeño” (kicsi) helyett mondhatjuk azt, hogy „diminuto” (parányi).",
+      "pic": "🥚"
+     },
+     {
+      "es": "En vez de «agitaban» podemos decir «movían».",
+      "hu": "Az „agitaban” (ráztak) helyett mondhatjuk azt, hogy „movían” (mozgattak).",
+      "pic": "🌳"
+     },
+     {
+      "es": "«Rápida» y «veloz» son sinónimos: una leona rápida es una leona veloz.",
+      "hu": "A „rápida” (gyors) és a „veloz” szinonimák: egy gyors oroszlánnő veloz oroszlánnő.",
+      "pic": "🦁"
+     },
+     {
+      "es": "«Necesitar» y «requerir» dicen lo mismo; «estudiar» y «examinar» también.",
+      "hu": "A „necesitar” (szükségelni) és a „requerir” ugyanazt jelenti; az „estudiar” (tanulmányozni) és az „examinar” (megvizsgálni) szintén.",
+      "pic": "📖"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Sinónimos: palabras con significado igual o parecido (comienzo = inicio).",
+      "hu": "Szinonimák: egyező vagy hasonló jelentésű szavak (comienzo = inicio)."
+     },
+     {
+      "es": "Los sinónimos no son contrarios: arriba ≠ abajo.",
+      "hu": "A szinonimák nem ellentétek: arriba ≠ abajo."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿qué significa «comienzo»?",
+      "hu": "Martin, mit jelent a „comienzo”?"
+     },
+     {
+      "who": "Martín",
+      "es": "Significa el principio.",
+      "hu": "A kezdetet jelenti."
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau. ¿Y qué palabra es su sinónimo?",
+      "hu": "Miau. És melyik szó a szinonimája?"
+     },
+     {
+      "who": "Martín",
+      "es": "«Inicio». ¡Los dos dicen lo mismo!",
+      "hu": "Az „inicio”! Mindkettő ugyanazt jelenti!"
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y «arriba» con «abajo»?",
+      "hu": "És az „arriba” az „abajo”-val?"
+     },
+     {
+      "who": "Martín",
+      "es": "Son sinónimos, ¿no?",
+      "hu": "Szinonimák, ugye?"
+     },
+     {
+      "who": "Gatito",
+      "es": "No, miau. Son contrarios. ¡Fíjate bien!",
+      "hu": "Nem, miau. Ellentétek. Figyelj jól!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Los sinónimos tienen un significado igual o parecido.",
+      "hu": "A szinonimáknak egyező vagy hasonló a jelentésük.",
+      "answer": true,
+      "why_es": "Esa es la definición.",
+      "why_hu": "Ez a meghatározás."
+     },
+     {
+      "es": "«Veloz» es un sinónimo de «rápida».",
+      "hu": "A „veloz” szinonimája a „rápida” szónak.",
+      "answer": true,
+      "why_es": "Las dos significan que va deprisa.",
+      "why_hu": "Mindkettő azt jelenti, hogy gyorsan megy."
+     },
+     {
+      "es": "«Abajo» es un sinónimo de «arriba».",
+      "hu": "Az „abajo” szinonimája az „arriba” szónak.",
+      "answer": false,
+      "why_es": "Son palabras contrarias.",
+      "why_hu": "Ellentétes szavak."
+     },
+     {
+      "es": "«Examinó» es un sinónimo de «estudió».",
+      "hu": "Az „examinó” szinonimája az „estudió” szónak.",
+      "answer": true,
+      "why_es": "Las dos dicen que miró algo con atención.",
+      "why_hu": "Mindkettő azt mondja, hogy valamit figyelmesen megnézett."
+     },
+     {
+      "es": "«Robusto» es un sinónimo de «feo».",
+      "hu": "A „robusto” szinonimája a „feo” szónak.",
+      "answer": false,
+      "why_es": "«Robusto» es como «fuerte»; «feo» es lo contrario de «bonito».",
+      "why_hu": "A „robusto” olyan, mint a „fuerte” (erős); a „feo” (csúnya) a „bonito” ellentéte."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-15",
+   "page_box": [
+    0.52,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu25_1",
+     "n": "1",
+     "text": "UNE cada palabra con su sinónimo.",
+     "text_hu": "Kösd össze mindegyik szót a rokon értelmű párjával.",
+     "box": [
+      0.55,
+      0.295,
+      0.97,
+      0.475
+     ],
+     "context": {
+      "es": "A la izquierda hay tres palabras: buscar, arriba y comienzo. A la derecha hay otras tres: inicio, explorar y abajo. Hay que unir cada una con su pareja.",
+      "hu": "Balra három szó: buscar (keresni), arriba (fent), comienzo (kezdet). Jobbra három: inicio (kezdet), explorar (felfedezni), abajo (lent). Mindegyiket össze kell kötni a párjával."
+     },
+     "pic": "🔗",
+     "help": {
+      "es": "Comienzo e inicio significan casi lo mismo. Buscar y explorar también. Te queda una pareja.",
+      "hu": "A comienzo és az inicio majdnem ugyanazt jelenti. A buscar és az explorar is. Egy pár marad."
+     },
+     "items": [
+      {
+       "q": "buscar → ¿cuál es su sinónimo?",
+       "q_hu": "buscar (keresni) → melyik a rokon értelmű szava?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "kezdet"
+        },
+        {
+         "t": "explorar",
+         "hu": "felfedezni"
+        },
+        {
+         "t": "abajo",
+         "hu": "lent"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "buscar = explorar",
+       "pic": "🔍",
+       "id": "cu25_1a"
+      },
+      {
+       "q": "arriba → ¿con cuál se une?",
+       "q_hu": "arriba (fent) → melyikkel kell összekötni?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "kezdet"
+        },
+        {
+         "t": "explorar",
+         "hu": "felfedezni"
+        },
+        {
+         "t": "abajo",
+         "hu": "lent"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "A könyv szerint az abajo marad; de figyelem: az arriba és az abajo valójában ellentétek (antónimos).",
+       "pic": "⬆️",
+       "id": "cu25_1b"
+      },
+      {
+       "q": "comienzo → ¿cuál es su sinónimo?",
+       "q_hu": "comienzo (kezdet) → melyik a rokon értelmű szava?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "kezdet"
+        },
+        {
+         "t": "explorar",
+         "hu": "felfedezni"
+        },
+        {
+         "t": "abajo",
+         "hu": "lent"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "comienzo = inicio",
+       "pic": "🏁",
+       "id": "cu25_1c"
+      }
+     ]
+    },
+    {
+     "id": "cu25_2",
+     "n": "2",
+     "text": "SUSTITUYE la palabra entre paréntesis por un sinónimo.",
+     "text_hu": "Helyettesítsd a zárójelben lévő szót egy rokon értelmű szóval.",
+     "box": [
+      0.55,
+      0.48,
+      0.97,
+      0.625
+     ],
+     "context": {
+      "es": "Tres frases con un hueco: un huevo de codorniz que se cayó, unos árboles que se movían con el viento y una leona que se escondió. Entre paréntesis hay una palabra: pequeño, agitaban, rápida.",
+      "hu": "Három mondat egy-egy hellyel: egy fürjtojás, ami leesett; fák, amik mozogtak a szélben; egy oroszlánnő, aki elbújt. Zárójelben egy-egy szó: pequeño (kicsi), agitaban (ráztak), rápida (gyors)."
+     },
+     "pic": "🔄",
+     "help": {
+      "es": "Busca una palabra que signifique lo mismo y que encaje en la frase.",
+      "hu": "Keress egy szót, ami ugyanazt jelenti, és beleillik a mondatba."
+     },
+     "items": [
+      {
+       "q": "El ___ (pequeño) huevo de codorniz se cayó al suelo.",
+       "q_hu": "A ___ (kicsi) fürjtojás leesett a földre.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "diminuto",
+         "hu": "parányi"
+        },
+        {
+         "t": "enorme",
+         "hu": "óriási"
+        },
+        {
+         "t": "caliente",
+         "hu": "forró"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "pequeño = diminuto (minúsculo)",
+       "pic": "🥚",
+       "id": "cu25_2a"
+      },
+      {
+       "q": "Los árboles se ___ (agitaban) con el viento.",
+       "q_hu": "A fák ___ (agitaban) a széllel.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "movían",
+         "hu": "mozogtak"
+        },
+        {
+         "t": "dormían",
+         "hu": "aludtak"
+        },
+        {
+         "t": "comían",
+         "hu": "ettek"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "agitaban = movían, sacudían",
+       "pic": "🌳",
+       "id": "cu25_2b"
+      },
+      {
+       "q": "La leona ___ (rápida) se escondió entre las hojas.",
+       "q_hu": "A ___ (gyors) oroszlánnő elbújt a levelek közé.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "lenta",
+         "hu": "lassú"
+        },
+        {
+         "t": "veloz",
+         "hu": "gyors"
+        },
+        {
+         "t": "grande",
+         "hu": "nagy"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "rápida = veloz, ágil",
+       "pic": "🦁",
+       "id": "cu25_2c"
+      }
+     ]
+    },
+    {
+     "id": "cu25_3",
+     "n": "3",
+     "text": "COMPLETA las oraciones usando un sinónimo de estas palabras.",
+     "text_hu": "Egészítsd ki a mondatokat ezeknek a szavaknak a rokon értelmű párjával.",
+     "box": [
+      0.55,
+      0.625,
+      0.97,
+      0.81
+     ],
+     "context": {
+      "es": "Hay tres palabras: responsable, preciosas y firme. En las frases faltan sus sinónimos: unas flores que llenaban el jardín, una alumna que entregó la tarea a tiempo y un tallo que sostenía la flor.",
+      "hu": "Három szó van: responsable (felelősségteljes), preciosas (gyönyörű), firme (szilárd). A mondatokból hiányoznak a rokon értelmű szavaik: virágok, amik megtöltötték a kertet; egy diák, aki időben leadta a feladatot; egy szár, ami tartotta a virágot."
+     },
+     "pic": "✍️",
+     "help": {
+      "es": "Cada hueco lleva un sinónimo de una de las palabras del recuadro. Piensa cuál encaja.",
+      "hu": "Minden helyre a keretben lévő egyik szó rokon értelmű párja kerül. Gondold végig, melyik illik oda."
+     },
+     "items": [
+      {
+       "q": "Las ___ flores llenaban el jardín. (sinónimo de «preciosas»)",
+       "q_hu": "A ___ virágok megtöltötték a kertet. (az „preciosas” rokon értelmű szava)",
+       "kind": "type",
+       "answer": "hermosas",
+       "alts": [
+        "bonitas",
+        "bellas",
+        "lindas",
+        "preciosas"
+       ],
+       "answer_hu": "hermosas = szép, gyönyörű",
+       "pic": "🌸",
+       "id": "cu25_3a"
+      },
+      {
+       "q": "La alumna ___ entregó la tarea a tiempo. (sinónimo de «responsable»)",
+       "q_hu": "A ___ diák időben leadta a feladatot. (a „responsable” rokon értelmű szava)",
+       "kind": "type",
+       "answer": "cumplidora",
+       "alts": [
+        "seria",
+        "formal",
+        "aplicada",
+        "cuidadosa",
+        "trabajadora"
+       ],
+       "answer_hu": "cumplidora = megbízható, kötelességtudó",
+       "pic": "📚",
+       "id": "cu25_3b"
+      },
+      {
+       "q": "El tallo ___ sostenía la flor. (sinónimo de «firme»)",
+       "q_hu": "A ___ szár tartotta a virágot. (a „firme” rokon értelmű szava)",
+       "kind": "type",
+       "answer": "fuerte",
+       "alts": [
+        "resistente",
+        "robusto",
+        "duro",
+        "sólido"
+       ],
+       "answer_hu": "fuerte = erős",
+       "pic": "🌱",
+       "id": "cu25_3c"
+      }
+     ]
+    },
+    {
+     "id": "cu25_4",
+     "n": "4",
+     "text": "MARCA la palabra que sea un sinónimo de la destacada en cada caso.",
+     "text_hu": "Jelöld meg azt a szót, ami rokon értelmű a kiemelttel.",
+     "box": [
+      0.55,
+      0.81,
+      0.97,
+      0.95
+     ],
+     "context": {
+      "es": "Tres frases con una palabra destacada: «necesitan», «robusto» y «estudió». Al lado hay dos opciones y una sola es sinónimo.",
+      "hu": "Három mondat egy-egy kiemelt szóval: „necesitan”, „robusto”, „estudió”. Mellette két lehetőség van, és csak az egyik rokon értelmű."
+     },
+     "pic": "☑️",
+     "help": {
+      "es": "Cambia la palabra destacada por cada opción y mira cuál dice lo mismo.",
+      "hu": "Cseréld ki a kiemelt szót mindkét lehetőségre, és nézd meg, melyik mond ugyanazt."
+     },
+     "items": [
+      {
+       "q": "Las plantas «necesitan» agua para vivir.",
+       "q_hu": "A növényeknek vízre van szükségük az élethez.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "rechaza",
+         "hu": "elutasít"
+        },
+        {
+         "t": "requieren",
+         "hu": "igényelnek"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "necesitan = requieren",
+       "pic": "💧",
+       "id": "cu25_4a"
+      },
+      {
+       "q": "El árbol «robusto» se movía con el viento.",
+       "q_hu": "Az „robusto” fa mozgott a szélben.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuerte",
+         "hu": "erős"
+        },
+        {
+         "t": "feo",
+         "hu": "csúnya"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "robusto = fuerte",
+       "pic": "🌳",
+       "id": "cu25_4b"
+      },
+      {
+       "q": "La bióloga «estudió» la semilla.",
+       "q_hu": "A biológus „estudió” a magot.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "escondió",
+         "hu": "elrejtette"
+        },
+        {
+         "t": "examinó",
+         "hu": "megvizsgálta"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "estudió = examinó",
+       "pic": "🔬",
+       "id": "cu25_4c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu26",
+   "book": "cu",
+   "page": 26,
+   "unit": "u3",
+   "title": "FICHA 3. Las palabras con c, con z y con s",
+   "title_hu": "3. lap: A c-vel, z-vel és s-sel írt szavak",
+   "summary_hu": "Za, zo, zu z-vel, ce és ci c-vel íródik. Hasonlóan hangzó, de másként írt és más jelentésű szavakat (taza/tasa, riza/risa, coser/cocer) kell megkülönböztetni, szavakat kiegészíteni c-vel vagy z-vel, és mondatokat képekhez rendelni.",
+   "words": [
+    {
+     "w": "la taza",
+     "hu": "a csésze",
+     "pic": "☕"
+    },
+    {
+     "w": "la tasa",
+     "hu": "a díj, az arány"
+    },
+    {
+     "w": "la risa",
+     "hu": "a nevetés",
+     "pic": "😂"
+    },
+    {
+     "w": "rizar",
+     "hu": "göndöríteni"
+    },
+    {
+     "w": "coser",
+     "hu": "varrni",
+     "pic": "🧵"
+    },
+    {
+     "w": "cocer",
+     "hu": "főzni, sütni",
+     "pic": "🍞"
+    },
+    {
+     "w": "la danza",
+     "hu": "a tánc",
+     "pic": "💃"
+    },
+    {
+     "w": "la maceta",
+     "hu": "a virágcserép",
+     "pic": "🪴"
+    },
+    {
+     "w": "el zueco",
+     "hu": "a facipő"
+    },
+    {
+     "w": "el cine",
+     "hu": "a mozi",
+     "pic": "🎬"
+    },
+    {
+     "w": "la cesta",
+     "hu": "a kosár",
+     "pic": "🧺"
+    },
+    {
+     "w": "el brazo",
+     "hu": "a kar",
+     "pic": "💪"
+    },
+    {
+     "w": "empezar",
+     "hu": "elkezdeni"
+    },
+    {
+     "w": "la piscina",
+     "hu": "az uszoda",
+     "pic": "🏊"
+    },
+    {
+     "w": "el lazo",
+     "hu": "a masni",
+     "pic": "🎀"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy practicamos las palabras con c, con z y con s!",
+     "hu": "Ma gyakoroljuk a c-vel, z-vel és s-sel írt szavakat!",
+     "pic": "🔤"
+    },
+    "sentences": [
+     {
+      "es": "En esta ficha aprendemos a escribir palabras con c, con z y con s.",
+      "hu": "Ezen a lapon megtanuljuk, hogyan írjunk c-vel, z-vel és s-sel szavakat.",
+      "pic": "🔤"
+     },
+     {
+      "es": "Za, zo y zu se escriben con z: danza, zueco, brazo.",
+      "hu": "A za, zo és zu z-vel íródik: danza (tánc), zueco (facipő), brazo (kar).",
+      "pic": "💃"
+     },
+     {
+      "es": "Ce y ci se escriben con c: cine, cesta, piscina.",
+      "hu": "A ce és ci c-vel íródik: cine (mozi), cesta (kosár), piscina (uszoda).",
+      "pic": "🎬"
+     },
+     {
+      "es": "En España la z y la c suenan como la «th» en inglés; la s suena como una s.",
+      "hu": "Spanyolországban a z és a c úgy hangzik, mint az angol „th”; az s pedig egyszerű s-hang.",
+      "pic": "👅"
+     },
+     {
+      "es": "Hay palabras que suenan casi igual, pero se escriben distinto y significan otra cosa.",
+      "hu": "Vannak szavak, amelyek majdnem egyformán hangzanak, de másként írjuk őket, és mást jelentenek.",
+      "pic": "👂"
+     },
+     {
+      "es": "La taza es para beber; la tasa es un precio o una cantidad.",
+      "hu": "A taza csésze, amiből iszunk; a tasa díj vagy arány.",
+      "pic": "☕"
+     },
+     {
+      "es": "La risa sale cuando algo es gracioso; el pelo se riza cuando se hace rizos.",
+      "hu": "A risa nevetés, ami akkor jön, ha valami vicces; a haj riza, vagyis göndörödik.",
+      "pic": "😂"
+     },
+     {
+      "es": "Coser es unir con aguja e hilo; cocer es cocinar con calor.",
+      "hu": "A coser azt jelenti: tűvel és cérnával összeölt; a cocer azt: hővel megfőz vagy megsüt.",
+      "pic": "🧵"
+     },
+     {
+      "es": "«Me caso» es de boda; «me abraso» es de quemarse; «abrazo» es un cariño.",
+      "hu": "A „me caso” esküvőről szól; a „me abraso” megégésről; az „abrazo” ölelés.",
+      "pic": "💍"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Za, zo, zu se escriben con z.",
+      "hu": "Za, zo, zu z-vel írandó."
+     },
+     {
+      "es": "Ce, ci se escriben con c.",
+      "hu": "Ce, ci c-vel írandó."
+     },
+     {
+      "es": "Taza/tasa, risa/riza, coser/cocer: ¡cuidado con su significado!",
+      "hu": "Taza/tasa, risa/riza, coser/cocer: vigyázz a jelentésükre!"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cómo se escribe «dan_a»?",
+      "hu": "Martin, hogyan írjuk: „dan_a”?"
+     },
+     {
+      "who": "Martín",
+      "es": "¿Con c?",
+      "hu": "C-vel?"
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau. Recuerda: za, zo, zu con z.",
+      "hu": "Miau. Emlékezz: za, zo, zu z-vel."
+     },
+     {
+      "who": "Martín",
+      "es": "¡Entonces es danza, con z!",
+      "hu": "Akkor danza, z-vel!"
+     },
+     {
+      "who": "Gatito",
+      "es": "Muy bien. ¿Y «_ine»?",
+      "hu": "Nagyon jó. És a „_ine”?"
+     },
+     {
+      "who": "Martín",
+      "es": "Ci se escribe con c: ¡cine!",
+      "hu": "Ci c-vel íródik: cine!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "«Brazo» se escribe con z.",
+      "hu": "A „brazo” z-vel íródik.",
+      "answer": true,
+      "why_es": "Es «zo»: za, zo, zu con z.",
+      "why_hu": "„zo”: za, zo, zu z-vel."
+     },
+     {
+      "es": "«Cine» se escribe con z: «zine».",
+      "hu": "A „cine” z-vel íródik: „zine”.",
+      "answer": false,
+      "why_es": "Ce y ci se escriben con c.",
+      "why_hu": "Ce és ci c-vel íródik."
+     },
+     {
+      "es": "«Taza» y «tasa» significan lo mismo.",
+      "hu": "A „taza” és a „tasa” ugyanazt jelenti.",
+      "answer": false,
+      "why_es": "Taza es para beber; tasa es un precio.",
+      "why_hu": "A taza csésze; a tasa díj."
+     },
+     {
+      "es": "«Coser» es unir con aguja e hilo.",
+      "hu": "A „coser” tűvel és cérnával összeölni.",
+      "answer": true,
+      "why_es": "Se cosen los botones.",
+      "why_hu": "A gombokat felvarrjuk."
+     },
+     {
+      "es": "«Cocer» es lo mismo que «coser».",
+      "hu": "A „cocer” ugyanaz, mint a „coser”.",
+      "answer": false,
+      "why_es": "Cocer es cocinar; coser es usar aguja e hilo.",
+      "why_hu": "Cocer = főzni; coser = varrni."
+     },
+     {
+      "es": "«Empezar» se escribe con z.",
+      "hu": "Az „empezar” z-vel íródik.",
+      "answer": true,
+      "why_es": "Es «ze»: empe-zar lleva z.",
+      "why_hu": "Az „empezar” z-t tartalmaz."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-16",
+   "page_box": [
+    0.0,
+    0.0,
+    0.49,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu26_1",
+     "n": "1",
+     "text": "ESCRIBE la palabra correcta en cada caso.",
+     "text_hu": "Írd be a helyes szót minden esetben.",
+     "box": [
+      0.03,
+      0.31,
+      0.49,
+      0.585
+     ],
+     "context": {
+      "es": "Arriba hay seis palabras para elegir: tasa, riza, coser, taza, risa y cocer. Debajo hay seis frases con un hueco (el pelo, el chocolate caliente, la masa del pan, la risa, el agua, los botones).",
+      "hu": "Fent hat szó közül lehet választani: tasa, riza, coser, taza, risa, cocer. Alatta hat mondat van egy-egy hellyel (haj, forró csokoládé, kenyértészta, nevetés, víz, gombok)."
+     },
+     "pic": "📝",
+     "help": {
+      "es": "Las palabras suenan parecido pero significan cosas distintas. Lee la frase y piensa qué tiene sentido.",
+      "hu": "A szavak hasonlóan hangzanak, de mást jelentenek. Olvasd el a mondatot, és gondold végig, melyiknek van értelme."
+     },
+     "items": [
+      {
+       "q": "Mi abuela se ___ el pelo cada mañana. (tasa, riza, coser, taza, risa, cocer)",
+       "q_hu": "A nagyi minden reggel ___ a haját. (tasa, riza, coser, taza, risa, cocer)",
+       "kind": "type",
+       "answer": "riza",
+       "alts": [],
+       "answer_hu": "riza = (hullámosra) göndöríti",
+       "pic": "👵",
+       "id": "cu26_1a"
+      },
+      {
+       "q": "Me apetece una ___ de chocolate caliente. (tasa, riza, coser, taza, risa, cocer)",
+       "q_hu": "Kedvem van egy ___ forró csokoládéhoz. (tasa, riza, coser, taza, risa, cocer)",
+       "kind": "type",
+       "answer": "taza",
+       "alts": [],
+       "answer_hu": "taza = csésze",
+       "pic": "☕",
+       "id": "cu26_1b"
+      },
+      {
+       "q": "Vamos a ___ la masa para hacer pan. (tasa, riza, coser, taza, risa, cocer)",
+       "q_hu": "Megyünk, hogy ___ a kenyér tésztáját. (tasa, riza, coser, taza, risa, cocer)",
+       "kind": "type",
+       "answer": "cocer",
+       "alts": [],
+       "answer_hu": "cocer = főzni, sütni",
+       "pic": "🍞",
+       "id": "cu26_1c"
+      },
+      {
+       "q": "¡Ay, que me da la ___! ¡Me has alegrado el día! (tasa, riza, coser, taza, risa, cocer)",
+       "q_hu": "Jaj, rámjön a ___! Felvidítottad a napom! (tasa, riza, coser, taza, risa, cocer)",
+       "kind": "type",
+       "answer": "risa",
+       "alts": [],
+       "answer_hu": "risa = nevetés",
+       "pic": "😂",
+       "id": "cu26_1d"
+      },
+      {
+       "q": "¿Cuál es la ___ del agua que consumimos? (tasa, riza, coser, taza, risa, cocer)",
+       "q_hu": "Mekkora a fogyasztott víz ___? (tasa, riza, coser, taza, risa, cocer)",
+       "kind": "type",
+       "answer": "tasa",
+       "alts": [],
+       "answer_hu": "tasa = díj, arány",
+       "pic": "💧",
+       "id": "cu26_1e"
+      },
+      {
+       "q": "He aprendido a ___ los botones. (tasa, riza, coser, taza, risa, cocer)",
+       "q_hu": "Megtanultam ___ a gombokat. (tasa, riza, coser, taza, risa, cocer)",
+       "kind": "type",
+       "answer": "coser",
+       "alts": [],
+       "answer_hu": "coser = varrni",
+       "pic": "🧵",
+       "id": "cu26_1f"
+      }
+     ]
+    },
+    {
+     "id": "cu26_2",
+     "n": "2",
+     "text": "COMPLETA las palabras con c o z.",
+     "text_hu": "Egészítsd ki a szavakat c-vel vagy z-vel.",
+     "box": [
+      0.03,
+      0.59,
+      0.49,
+      0.7
+     ],
+     "context": {
+      "es": "Hay diez palabras incompletas: dan_a, ma_eta, _ueco, _ine, pe_e_ito, _esta, bra_o, empe_ar, pis_ina y la_o. En cada hueco va una c o una z (en pe_e_ito van dos).",
+      "hu": "Tíz hiányos szó van: dan_a, ma_eta, _ueco, _ine, pe_e_ito, _esta, bra_o, empe_ar, pis_ina, la_o. Minden helyre c vagy z kerül (a pe_e_ito szóban kettő)."
+     },
+     "pic": "🔤",
+     "help": {
+      "es": "Za, zo, zu se escriben con z. Ce y ci se escriben con c.",
+      "hu": "Za, zo, zu z-vel írandó. Ce és ci c-vel írandó."
+     },
+     "items": [
+      {
+       "q": "Escribe la palabra completa: dan_a",
+       "q_hu": "Írd le a teljes szót: dan_a",
+       "kind": "type",
+       "answer": "danza",
+       "alts": [],
+       "answer_hu": "danza = tánc",
+       "pic": "💃",
+       "id": "cu26_2a"
+      },
+      {
+       "q": "Escribe la palabra completa: ma_eta",
+       "q_hu": "Írd le a teljes szót: ma_eta",
+       "kind": "type",
+       "answer": "maceta",
+       "alts": [],
+       "answer_hu": "maceta = virágcserép",
+       "pic": "🪴",
+       "id": "cu26_2b"
+      },
+      {
+       "q": "Escribe la palabra completa: _ueco",
+       "q_hu": "Írd le a teljes szót: _ueco",
+       "kind": "type",
+       "answer": "zueco",
+       "alts": [],
+       "answer_hu": "zueco = facipő",
+       "pic": "👞",
+       "id": "cu26_2c"
+      },
+      {
+       "q": "Escribe la palabra completa: _ine",
+       "q_hu": "Írd le a teljes szót: _ine",
+       "kind": "type",
+       "answer": "cine",
+       "alts": [],
+       "answer_hu": "cine = mozi",
+       "pic": "🎬",
+       "id": "cu26_2d"
+      },
+      {
+       "q": "Escribe la palabra completa: pe_e_ito",
+       "q_hu": "Írd le a teljes szót: pe_e_ito",
+       "kind": "type",
+       "answer": "pececito",
+       "alts": [],
+       "answer_hu": "pececito = kis hal",
+       "pic": "🐟",
+       "id": "cu26_2e"
+      },
+      {
+       "q": "Escribe la palabra completa: _esta",
+       "q_hu": "Írd le a teljes szót: _esta",
+       "kind": "type",
+       "answer": "cesta",
+       "alts": [],
+       "answer_hu": "cesta = kosár",
+       "pic": "🧺",
+       "id": "cu26_2f"
+      },
+      {
+       "q": "Escribe la palabra completa: bra_o",
+       "q_hu": "Írd le a teljes szót: bra_o",
+       "kind": "type",
+       "answer": "brazo",
+       "alts": [],
+       "answer_hu": "brazo = kar",
+       "pic": "💪",
+       "id": "cu26_2g"
+      },
+      {
+       "q": "Escribe la palabra completa: empe_ar",
+       "q_hu": "Írd le a teljes szót: empe_ar",
+       "kind": "type",
+       "answer": "empezar",
+       "alts": [],
+       "answer_hu": "empezar = elkezdeni",
+       "pic": "▶️",
+       "id": "cu26_2h"
+      },
+      {
+       "q": "Escribe la palabra completa: pis_ina",
+       "q_hu": "Írd le a teljes szót: pis_ina",
+       "kind": "type",
+       "answer": "piscina",
+       "alts": [],
+       "answer_hu": "piscina = uszoda, medence",
+       "pic": "🏊",
+       "id": "cu26_2i"
+      },
+      {
+       "q": "Escribe la palabra completa: la_o",
+       "q_hu": "Írd le a teljes szót: la_o",
+       "kind": "type",
+       "answer": "lazo",
+       "alts": [],
+       "answer_hu": "lazo = masni",
+       "pic": "🎀",
+       "id": "cu26_2j"
+      }
+     ]
+    },
+    {
+     "id": "cu26_3",
+     "n": "3",
+     "text": "ESCRIBE el número de la escena a la que corresponde cada oración.",
+     "text_hu": "Írd be annak a jelenetnek a számát, amelyikhez az egyes mondatok tartoznak.",
+     "box": [
+      0.03,
+      0.7,
+      0.49,
+      0.945
+     ],
+     "context": {
+      "es": "Hay dos oraciones: 1. «¡Hoy me caso! ¡Dame un abrazo!» y 2. «¡Ay, que me abraso! ¡Cómo quema el cazo!». Debajo hay dos dibujos: a la izquierda dos personas vestidas de fiesta que se abrazan; a la derecha un cocinero que se quema con un cazo en la cocina.",
+      "hu": "Két mondat van: 1. „¡Hoy me caso! ¡Dame un abrazo!” (Ma megházasodom! Ölelj meg!) és 2. „¡Ay, que me abraso! ¡Cómo quema el cazo!” (Jaj, megégek! Úgy éget a lábos!). Alatta két rajz: balra két ünneplő ruhás ember ölelkezik; jobbra egy szakács megég a konyhában a lábossal."
+     },
+     "pic": "💍🍳",
+     "help": {
+      "es": "Fíjate en las palabras caso/cazo y abrazo/abraso: suenan casi igual, pero una habla de una boda y otra de quemarse.",
+      "hu": "Figyeld a caso/cazo és abrazo/abraso szavakat: majdnem egyformán hangzanak, de az egyik esküvőről, a másik megégésről szól."
+     },
+     "items": [
+      {
+       "q": "Dibujo de la izquierda: dos personas elegantes se abrazan (¡hoy se casan!). ¿Qué oración es: 1 o 2?",
+       "q_hu": "Bal oldali rajz: két elegáns ember ölelkezik (ma házasodnak!). Melyik mondat: 1 vagy 2?",
+       "kind": "num",
+       "answer": "1",
+       "pic": "💍",
+       "id": "cu26_3a"
+      },
+      {
+       "q": "Dibujo de la derecha: un cocinero se quema con el cazo caliente. ¿Qué oración es: 1 o 2?",
+       "q_hu": "Jobb oldali rajz: egy szakács megégeti magát a forró lábossal. Melyik mondat: 1 vagy 2?",
+       "kind": "num",
+       "answer": "2",
+       "pic": "🍳",
+       "id": "cu26_3b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu27",
+   "book": "cu",
+   "page": 27,
+   "unit": "u3",
+   "title": "FICHA 4. La narración literaria",
+   "title_hu": "4. lap: Az irodalmi elbeszélés",
+   "summary_hu": "Az elbeszélés szereplőkkel történő eseményeket mesél el egy helyen és időben; három része van: inicio (bevezetés), nudo (bonyodalom), desenlace (megoldás). Egy összekevert, Lidia felfedezőről szóló szöveg négy bekezdését kell sorba rakni, és a részek szerint kiszínezni.",
+   "words": [
+    {
+     "w": "la narración",
+     "hu": "az elbeszélés",
+     "pic": "📖"
+    },
+    {
+     "w": "el inicio",
+     "hu": "a bevezetés"
+    },
+    {
+     "w": "el nudo",
+     "hu": "a bonyodalom"
+    },
+    {
+     "w": "el desenlace",
+     "hu": "a megoldás, befejezés"
+    },
+    {
+     "w": "el personaje",
+     "hu": "a szereplő"
+    },
+    {
+     "w": "la protagonista",
+     "hu": "a főszereplő (nő)"
+    },
+    {
+     "w": "el párrafo",
+     "hu": "a bekezdés"
+    },
+    {
+     "w": "la exploradora",
+     "hu": "a női felfedező",
+     "pic": "🧭"
+    },
+    {
+     "w": "el bosque",
+     "hu": "az erdő",
+     "pic": "🌲"
+    },
+    {
+     "w": "la cueva",
+     "hu": "a barlang",
+     "pic": "🕳️"
+    },
+    {
+     "w": "el muro",
+     "hu": "a fal",
+     "pic": "🧱"
+    },
+    {
+     "w": "el sendero",
+     "hu": "az ösvény"
+    },
+    {
+     "w": "el símbolo",
+     "hu": "a jel, szimbólum"
+    },
+    {
+     "w": "la estrella",
+     "hu": "a csillag",
+     "pic": "⭐"
+    },
+    {
+     "w": "sana y salva",
+     "hu": "épen és egészségesen"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos a ordenar una historia: inicio, nudo y desenlace!",
+     "hu": "Ma megtanuljuk sorba rakni egy történetet: bevezetés, bonyodalom és megoldás!",
+     "pic": "📖"
+    },
+    "sentences": [
+     {
+      "es": "Una narración relata los hechos que les ocurren a unos personajes.",
+      "hu": "Az elbeszélés olyan eseményeket mesél el, amelyek a szereplőkkel történnek.",
+      "pic": "📖"
+     },
+     {
+      "es": "La historia sucede en un lugar y en un tiempo concretos.",
+      "hu": "A történet egy meghatározott helyen és időben játszódik.",
+      "pic": "🕰️"
+     },
+     {
+      "es": "La narración se divide en inicio, nudo y desenlace.",
+      "hu": "Az elbeszélés három részre oszlik: inicio (bevezetés), nudo (bonyodalom) és desenlace (megoldás).",
+      "pic": "🔢"
+     },
+     {
+      "es": "En el inicio conocemos a la protagonista, el lugar y el momento.",
+      "hu": "Az inicióban megismerjük a főszereplőt, a helyet és az időpontot.",
+      "pic": "🧭"
+     },
+     {
+      "es": "En el nudo aparece el problema: ¡un muro de piedra bloquea la salida!",
+      "hu": "A nudóban megjelenik a probléma: egy kőfal elzárja a kijáratot!",
+      "pic": "🧱"
+     },
+     {
+      "es": "En el desenlace se resuelve el problema: el muro se abre y Lidia escapa.",
+      "hu": "A desenlace-ben megoldódik a probléma: a fal kinyílik, és Lidia kijut.",
+      "pic": "🔓"
+     },
+     {
+      "es": "En este texto, Lidia Estopernius es una joven exploradora que sigue unas marcas secretas.",
+      "hu": "Ebben a szövegben Lidia egy fiatal felfedező, aki titkos jeleket követ.",
+      "pic": "🧭"
+     },
+     {
+      "es": "Para ordenar los párrafos, pregúntate qué pasa primero, qué pasa después y cómo acaba.",
+      "hu": "A bekezdések sorba rakásához kérdezd meg magadtól: mi történik először, aztán és hogyan végződik.",
+      "pic": "❓"
+     },
+     {
+      "es": "En la ficha coloreamos el inicio de verde, el nudo de azul y el desenlace de rojo.",
+      "hu": "A lapon az iniciót zöldre, a nudót kékre, a desenlace-t pirosra színezzük.",
+      "pic": "🎨"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Narración = hechos + personajes + lugar + tiempo.",
+      "hu": "Elbeszélés = események + szereplők + hely + idő."
+     },
+     {
+      "es": "Inicio, nudo y desenlace.",
+      "hu": "Bevezetés, bonyodalom és megoldás."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿cómo empieza una historia?",
+      "hu": "Martin, hogyan kezdődik egy történet?"
+     },
+     {
+      "who": "Martín",
+      "es": "Con el desenlace.",
+      "hu": "A megoldással."
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, no. El desenlace es el final.",
+      "hu": "Miau, nem. A desenlace a vége."
+     },
+     {
+      "who": "Martín",
+      "es": "Entonces empieza con el inicio.",
+      "hu": "Akkor az inicióval kezdődik."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y qué ocurre en el nudo?",
+      "hu": "És mi történik a nudóban?"
+     },
+     {
+      "who": "Martín",
+      "es": "Hay un problema. ¡El muro bloquea la salida!",
+      "hu": "Probléma van. A fal elzárja a kijáratot!"
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Muy bien, explorador!",
+      "hu": "Nagyon jó, felfedező!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Una narración tiene inicio, nudo y desenlace.",
+      "hu": "Egy elbeszélésnek van bevezetése, bonyodalma és megoldása.",
+      "answer": true,
+      "why_es": "Son las tres partes.",
+      "why_hu": "Ez a három rész."
+     },
+     {
+      "es": "El desenlace es el principio de la historia.",
+      "hu": "A desenlace a történet eleje.",
+      "answer": false,
+      "why_es": "El desenlace es el final: resuelve el problema.",
+      "why_hu": "A desenlace a vége: megoldja a problémát."
+     },
+     {
+      "es": "En el nudo aparece el problema.",
+      "hu": "A nudóban jelenik meg a probléma.",
+      "answer": true,
+      "why_es": "Por ejemplo, el muro bloquea la salida.",
+      "why_hu": "Például a fal elzárja a kijáratot."
+     },
+     {
+      "es": "En el inicio se presenta a la protagonista.",
+      "hu": "Az inicióban bemutatják a főszereplőt.",
+      "answer": true,
+      "why_es": "También se dice dónde y cuándo ocurre.",
+      "why_hu": "Azt is elmondják, hol és mikor történik."
+     },
+     {
+      "es": "Solo importa el lugar; el tiempo no importa.",
+      "hu": "Csak a hely számít; az idő nem.",
+      "answer": false,
+      "why_es": "La narración ocurre en un lugar y en un tiempo.",
+      "why_hu": "Az elbeszélés egy helyen és egy időben játszódik."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-16",
+   "page_box": [
+    0.52,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu27_1",
+     "n": "1",
+     "text": "NUMERA cada párrafo según el orden lógico de la narración. / COLOREA los recuadros numerados según el código.",
+     "text_hu": "Számozd meg a bekezdéseket az elbeszélés logikus sorrendje szerint. / SZÍNEZD ki a megszámozott négyzeteket a kód szerint.",
+     "box": [
+      0.55,
+      0.32,
+      0.97,
+      0.95
+     ],
+     "context": {
+      "es": "Hay un texto con cuatro párrafos desordenados sobre la exploradora Lidia (bosque, cueva, muro de piedra, estrella de ocho puntas). Cada párrafo tiene un cuadrito para el número. Abajo, el código de colores: inicio verde, nudo azul, desenlace rojo.",
+      "hu": "Egy szöveg négy összekevert bekezdéssel Lidia felfedezőről (erdő, barlang, kőfal, nyolcágú csillag). Minden bekezdésnek van egy kis négyzete a számnak. Alul a színkód: inicio zöld, nudo kék, desenlace piros."
+     },
+     "pic": "🔢🎨",
+     "help": {
+      "es": "El inicio presenta a la protagonista y dice dónde y cuándo ocurre. Después viene el problema (nudo) y al final su solución (desenlace).",
+      "hu": "Az inicio bemutatja a főszereplőt, és megmondja, hol és mikor történik. Aztán jön a probléma (nudo), a végén a megoldás (desenlace)."
+     },
+     "items": [
+      {
+       "q": "Párrafo A: «Al internarse entre los pinos, Lidia descubre marcas en una roca, las sigue y llega a una cueva; allí un muro de piedra bloquea la salida.» ¿Qué número le corresponde en el orden lógico (1 a 4)?",
+       "q_hu": "A bekezdés: „Amikor behatol a fenyők közé, Lidia jeleket fedez fel egy sziklán, követi őket, és egy barlanghoz ér; ott egy kőfal elzárja a kijáratot.” Hányadik a logikus sorrendben (1–4)?",
+       "kind": "num",
+       "answer": "2",
+       "pic": "🔢",
+       "id": "cu27_1a"
+      },
+      {
+       "q": "Párrafo B: «Esta primavera, la joven exploradora Lidia entra al amanecer en un bosque cerca de un antiguo poblado, decidida a investigar un sendero que no sale en ningún mapa.» ¿Qué número le corresponde en el orden lógico (1 a 4)?",
+       "q_hu": "B bekezdés: „Ezen a tavaszon a fiatal felfedező, Lidia, hajnalban belép egy erdőbe egy ősi település közelében, és elhatározza, hogy kivizsgál egy ösvényt, ami egyik térképen sincs rajta.” Hányadik a logikus sorrendben (1–4)?",
+       "kind": "num",
+       "answer": "1",
+       "pic": "🔢",
+       "id": "cu27_1b"
+      },
+      {
+       "q": "Párrafo C: «El muro se abre despacio, Lidia escapa sana y salva y apunta todos los detalles: una nueva historia está a punto de comenzar.» ¿Qué número le corresponde en el orden lógico (1 a 4)?",
+       "q_hu": "C bekezdés: „A fal lassan kinyílik, Lidia épségben kijut, és feljegyez minden részletet: egy új történet kezdődik.” Hányadik a logikus sorrendben (1–4)?",
+       "kind": "num",
+       "answer": "4",
+       "pic": "🔢",
+       "id": "cu27_1c"
+      },
+      {
+       "q": "Párrafo D: «Lidia respira hondo y examina las paredes hasta encontrar un símbolo igual al de su cuaderno, una estrella de ocho puntas; lo presiona y la maquinaria se para.» ¿Qué número le corresponde en el orden lógico (1 a 4)?",
+       "q_hu": "D bekezdés: „Lidia mélyet lélegzik, és addig vizsgálja a falakat, míg talál egy jelet, ami olyan, mint amit a füzetébe rajzolt: egy nyolcágú csillag; megnyomja, és a gépezet leáll.” Hányadik a logikus sorrendben (1–4)?",
+       "kind": "num",
+       "answer": "3",
+       "pic": "🔢",
+       "id": "cu27_1d"
+      },
+      {
+       "q": "Párrafo A: «Al internarse entre los pinos, Lidia descubre marcas en una roca, las sigue y llega a una cueva; allí un muro de piedra bloquea la salida.» ¿Es inicio, nudo o desenlace?",
+       "q_hu": "A bekezdés: „Amikor behatol a fenyők közé, Lidia jeleket fedez fel egy sziklán, követi őket, és egy barlanghoz ér; ott egy kőfal elzárja a kijáratot.” Bevezetés, bonyodalom vagy megoldás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "nudo (kék)",
+       "pic": "🎨",
+       "id": "cu27_1e"
+      },
+      {
+       "q": "Párrafo B: «Esta primavera, la joven exploradora Lidia entra al amanecer en un bosque cerca de un antiguo poblado, decidida a investigar un sendero que no sale en ningún mapa.» ¿Es inicio, nudo o desenlace?",
+       "q_hu": "B bekezdés: „Ezen a tavaszon a fiatal felfedező, Lidia, hajnalban belép egy erdőbe egy ősi település közelében, és elhatározza, hogy kivizsgál egy ösvényt, ami egyik térképen sincs rajta.” Bevezetés, bonyodalom vagy megoldás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "inicio (zöld)",
+       "pic": "🎨",
+       "id": "cu27_1f"
+      },
+      {
+       "q": "Párrafo C: «El muro se abre despacio, Lidia escapa sana y salva y apunta todos los detalles: una nueva historia está a punto de comenzar.» ¿Es inicio, nudo o desenlace?",
+       "q_hu": "C bekezdés: „A fal lassan kinyílik, Lidia épségben kijut, és feljegyez minden részletet: egy új történet kezdődik.” Bevezetés, bonyodalom vagy megoldás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "desenlace (piros)",
+       "pic": "🎨",
+       "id": "cu27_1g"
+      },
+      {
+       "q": "Párrafo D: «Lidia respira hondo y examina las paredes hasta encontrar un símbolo igual al de su cuaderno, una estrella de ocho puntas; lo presiona y la maquinaria se para.» ¿Es inicio, nudo o desenlace?",
+       "q_hu": "D bekezdés: „Lidia mélyet lélegzik, és addig vizsgálja a falakat, míg talál egy jelet, ami olyan, mint amit a füzetébe rajzolt: egy nyolcágú csillag; megnyomja, és a gépezet leáll.” Bevezetés, bonyodalom vagy megoldás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "nudo (kék)",
+       "pic": "🎨",
+       "id": "cu27_1h"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu28",
+   "book": "cu",
+   "page": 28,
+   "unit": "u3",
+   "title": "FICHA 4. La narración literaria (continuación)",
+   "title_hu": "4. lap: Az irodalmi elbeszélés (folytatás)",
+   "summary_hu": "Kérdések a Lidia-történetről (hol, mikor, ki, mi történik, hogyan végződik); az elbeszélés elemeinek (hol, mikor, események, főszereplő, megoldás) hozzárendelése az inicio, nudo, desenlace részekhez; képek hozzárendelése a részekhez.",
+   "words": [
+    {
+     "w": "¿Dónde?",
+     "hu": "Hol?"
+    },
+    {
+     "w": "¿Cuándo?",
+     "hu": "Mikor?"
+    },
+    {
+     "w": "¿Qué personaje?",
+     "hu": "Melyik szereplő?"
+    },
+    {
+     "w": "¿Qué le sucede?",
+     "hu": "Mi történik vele?"
+    },
+    {
+     "w": "¿Cómo termina?",
+     "hu": "Hogyan végződik?"
+    },
+    {
+     "w": "se resuelve",
+     "hu": "megoldódik"
+    },
+    {
+     "w": "se presenta",
+     "hu": "bemutatják"
+    },
+    {
+     "w": "los hechos",
+     "hu": "az események"
+    },
+    {
+     "w": "el protagonista",
+     "hu": "a főszereplő"
+    },
+    {
+     "w": "la cueva",
+     "hu": "a barlang",
+     "pic": "🕳️"
+    },
+    {
+     "w": "el bosque",
+     "hu": "az erdő",
+     "pic": "🌲"
+    },
+    {
+     "w": "la entrada",
+     "hu": "a bejárat",
+     "pic": "🚪"
+    },
+    {
+     "w": "la pared",
+     "hu": "a fal (belső)"
+    },
+    {
+     "w": "el misterio",
+     "hu": "a rejtély"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Vamos a responder preguntas sobre la historia de Lidia!",
+     "hu": "Válaszoljunk kérdésekre Lidia történetéről!",
+     "pic": "🧭"
+    },
+    "sentences": [
+     {
+      "es": "Para entender una narración, nos preguntamos: ¿dónde?, ¿cuándo?, ¿quién? y ¿qué pasa?",
+      "hu": "Ahhoz, hogy megértsünk egy elbeszélést, ezeket kérdezzük: hol? mikor? ki? mi történik?",
+      "pic": "❓"
+     },
+     {
+      "es": "La historia ocurre en un bosque, cerca de un antiguo poblado, y luego en una cueva.",
+      "hu": "A történet egy erdőben játszódik, egy ősi település közelében, aztán egy barlangban.",
+      "pic": "🌲"
+     },
+     {
+      "es": "Ocurre esta primavera, al amanecer.",
+      "hu": "Ezen a tavaszon játszódik, hajnalban.",
+      "pic": "🌅"
+     },
+     {
+      "es": "El personaje es Lidia, una joven exploradora.",
+      "hu": "A szereplő Lidia, egy fiatal felfedező.",
+      "pic": "🧭"
+     },
+     {
+      "es": "En el inicio se presenta al protagonista y se dice dónde y cuándo ocurre la historia.",
+      "hu": "Az inicióban bemutatják a főszereplőt, és elmondják, hol és mikor játszódik a történet.",
+      "pic": "🏁"
+     },
+     {
+      "es": "En el nudo se cuentan los hechos: las marcas, la cueva y el muro que bloquea la salida.",
+      "hu": "A nudóban elmesélik az eseményeket: a jeleket, a barlangot és a falat, ami elzárja a kijáratot.",
+      "pic": "🧱"
+     },
+     {
+      "es": "En el desenlace se resuelve el problema: Lidia presiona el símbolo y sale de la cueva.",
+      "hu": "A desenlace-ben megoldódik a probléma: Lidia megnyomja a jelet, és kijut a barlangból.",
+      "pic": "🔓"
+     },
+     {
+      "es": "Las imágenes también cuentan la historia: bosque, cueva y símbolo en la pared.",
+      "hu": "A képek is elmesélik a történetet: erdő, barlang és jel a falon.",
+      "pic": "🖼️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Inicio: quién, dónde y cuándo. Nudo: el problema. Desenlace: la solución.",
+      "hu": "Inicio: ki, hol és mikor. Nudo: a probléma. Desenlace: a megoldás."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿dónde ocurre la historia de Lidia?",
+      "hu": "Martin, hol játszódik Lidia története?"
+     },
+     {
+      "who": "Martín",
+      "es": "En un bosque y en una cueva.",
+      "hu": "Egy erdőben és egy barlangban."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y cuándo?",
+      "hu": "És mikor?"
+     },
+     {
+      "who": "Martín",
+      "es": "Esta primavera, al amanecer.",
+      "hu": "Ezen a tavaszon, hajnalban."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Cuál es el problema?",
+      "hu": "Mi a probléma?"
+     },
+     {
+      "who": "Martín",
+      "es": "Un muro de piedra bloquea la salida.",
+      "hu": "Egy kőfal elzárja a kijáratot."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y cómo se resuelve?",
+      "hu": "És hogyan oldódik meg?"
+     },
+     {
+      "who": "Martín",
+      "es": "Lidia presiona el símbolo y el muro se abre.",
+      "hu": "Lidia megnyomja a jelet, és a fal kinyílik."
+     }
+    ],
+    "tf": [
+     {
+      "es": "La historia ocurre en una cueva y en un bosque.",
+      "hu": "A történet egy barlangban és egy erdőben játszódik.",
+      "answer": true,
+      "why_es": "Primero el bosque y luego la cueva.",
+      "why_hu": "Először az erdő, aztán a barlang."
+     },
+     {
+      "es": "En el nudo se cuenta el problema.",
+      "hu": "A nudóban a problémát mesélik el.",
+      "answer": true,
+      "why_es": "El muro bloquea la salida.",
+      "why_hu": "A fal elzárja a kijáratot."
+     },
+     {
+      "es": "El desenlace presenta a la protagonista.",
+      "hu": "A desenlace bemutatja a főszereplőt.",
+      "answer": false,
+      "why_es": "La protagonista se presenta en el inicio.",
+      "why_hu": "A főszereplőt az inicióban mutatják be."
+     },
+     {
+      "es": "«Se dice cuándo ocurre la historia» es del inicio.",
+      "hu": "A „megmondják, mikor játszódik a történet” az inicióhoz tartozik.",
+      "answer": true,
+      "why_es": "En el inicio: quién, dónde y cuándo.",
+      "why_hu": "Az inicióban: ki, hol és mikor."
+     },
+     {
+      "es": "«Se resuelve el problema» es del nudo.",
+      "hu": "A „megoldódik a probléma” a nudóhoz tartozik.",
+      "answer": false,
+      "why_es": "Es del desenlace.",
+      "why_hu": "A desenlace-hez tartozik."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-17",
+   "page_box": [
+    0.0,
+    0.0,
+    0.49,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu28_2",
+     "n": "2",
+     "text": "RESPONDE a las preguntas sobre el texto anterior.",
+     "text_hu": "Válaszolj a kérdésekre az előző szöveg alapján.",
+     "box": [
+      0.02,
+      0.07,
+      0.49,
+      0.42
+     ],
+     "context": {
+      "es": "Hay cinco preguntas sobre la historia de Lidia: dónde ocurre, cuándo, qué personaje aparece, qué le sucede y cómo termina. Algunas tienen varias rayas porque la respuesta es más larga.",
+      "hu": "Öt kérdés van Lidia történetéről: hol történik, mikor, melyik szereplő jelenik meg, mi történik vele és hogyan végződik. Néhánynak több vonala van, mert hosszabb válasz kell."
+     },
+     "pic": "❓📖",
+     "help": {
+      "es": "Vuelve a leer el texto de la página anterior. La respuesta está allí.",
+      "hu": "Olvasd el újra az előző oldal szövegét. A válasz ott van."
+     },
+     "items": [
+      {
+       "q": "¿Dónde ocurre?",
+       "q_hu": "Hol történik?",
+       "kind": "type",
+       "answer": "en un bosque",
+       "alts": [
+        "en un bosque cercano a un antiguo poblado",
+        "en el bosque",
+        "bosque",
+        "en un bosque y una cueva",
+        "en una cueva"
+       ],
+       "answer_hu": "Egy erdőben (egy ősi település közelében), majd egy barlangban.",
+       "pic": "🌲",
+       "id": "cu28_2a"
+      },
+      {
+       "q": "¿Cuándo?",
+       "q_hu": "Mikor?",
+       "kind": "type",
+       "answer": "esta primavera",
+       "alts": [
+        "en primavera",
+        "al amanecer",
+        "esta primavera al amanecer",
+        "primavera"
+       ],
+       "answer_hu": "Ezen a tavaszon, hajnalban.",
+       "pic": "🌅",
+       "id": "cu28_2b"
+      },
+      {
+       "q": "¿Qué personaje aparece?",
+       "q_hu": "Melyik szereplő jelenik meg?",
+       "kind": "type",
+       "answer": "Lidia",
+       "alts": [
+        "Lidia Estopernius",
+        "la exploradora Lidia",
+        "una exploradora",
+        "la exploradora"
+       ],
+       "answer_hu": "Lidia, a fiatal felfedező.",
+       "pic": "🧭",
+       "id": "cu28_2c"
+      },
+      {
+       "q": "¿Qué le sucede?",
+       "q_hu": "Mi történik vele?",
+       "kind": "open",
+       "answer": "Descubre unas marcas en una roca, las sigue hasta una cueva y un muro de piedra bloquea la salida.",
+       "answer_hu": "Jeleket talál egy sziklán, követi őket egy barlangig, és egy kőfal elzárja a kijáratot.",
+       "pic": "🧱",
+       "id": "cu28_2d"
+      },
+      {
+       "q": "¿Cómo termina?",
+       "q_hu": "Hogyan végződik?",
+       "kind": "open",
+       "answer": "Lidia encuentra un símbolo, lo presiona, la maquinaria se detiene, el muro se abre y ella escapa sana y salva.",
+       "answer_hu": "Lidia talál egy jelet, megnyomja, a gépezet leáll, a fal kinyílik, és ő épségben kijut.",
+       "pic": "🔓",
+       "id": "cu28_2e"
+      }
+     ]
+    },
+    {
+     "id": "cu28_3",
+     "n": "3",
+     "text": "UNE cada elemento con la parte de la narración donde se cuenta.",
+     "text_hu": "Kösd össze az elemeket azzal az elbeszélés-résszel, ahol elmondják őket.",
+     "box": [
+      0.02,
+      0.43,
+      0.49,
+      0.69
+     ],
+     "context": {
+      "es": "A la izquierda hay cinco frases (se dice dónde, se cuentan los hechos, se presenta al protagonista, se resuelve el problema, se dice cuándo) y a la derecha las tres partes: inicio, nudo y desenlace.",
+      "hu": "Balra öt mondat (elmondják, hol; elmesélik az eseményeket; bemutatják a főszereplőt; megoldódik a probléma; elmondják, mikor), jobbra a három rész: inicio, nudo, desenlace."
+     },
+     "pic": "🔗",
+     "help": {
+      "es": "En el inicio: quién, dónde y cuándo. En el nudo: los hechos y el problema. En el desenlace: la solución.",
+      "hu": "Az inicióban: ki, hol és mikor. A nudóban: az események és a probléma. A desenlace-ben: a megoldás."
+     },
+     "items": [
+      {
+       "q": "«Se dice dónde ocurre la historia.»",
+       "q_hu": "„Se dice dónde ocurre la historia.” – Elmondják, hol játszódik a történet.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "inicio",
+       "pic": "🔗",
+       "id": "cu28_3a"
+      },
+      {
+       "q": "«Se cuentan los hechos.»",
+       "q_hu": "„Se cuentan los hechos.” – Elmesélik az eseményeket.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "nudo",
+       "pic": "🔗",
+       "id": "cu28_3b"
+      },
+      {
+       "q": "«Se presenta al protagonista.»",
+       "q_hu": "„Se presenta al protagonista.” – Bemutatják a főszereplőt.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "inicio",
+       "pic": "🔗",
+       "id": "cu28_3c"
+      },
+      {
+       "q": "«Se resuelve el problema.»",
+       "q_hu": "„Se resuelve el problema.” – Megoldódik a probléma.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "desenlace",
+       "pic": "🔗",
+       "id": "cu28_3d"
+      },
+      {
+       "q": "«Se dice cuándo ocurre la historia.»",
+       "q_hu": "„Se dice cuándo ocurre la historia.” – Elmondják, mikor játszódik a történet.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "inicio",
+       "pic": "🔗",
+       "id": "cu28_3e"
+      }
+     ]
+    },
+    {
+     "id": "cu28_4",
+     "n": "4",
+     "text": "UNE esta imagen con la oración que corresponde.",
+     "text_hu": "Kösd össze ezt a képet a hozzá tartozó résszel.",
+     "box": [
+      0.02,
+      0.705,
+      0.49,
+      0.945
+     ],
+     "context": {
+      "es": "Hay tres dibujos de la exploradora: en uno camina por el bosque, en otro está ante la entrada de una cueva y en el tercero, dentro de la cueva, toca un símbolo de la pared. Debajo hay tres etiquetas: inicio, nudo y desenlace.",
+      "hu": "Három rajz van a felfedezőről: az egyiken az erdőben sétál, a másikon egy barlang bejárata előtt áll, a harmadikon a barlang belsejében egy jelhez ér a falon. Alul három címke: inicio, nudo, desenlace."
+     },
+     "pic": "🖼️",
+     "help": {
+      "es": "Piensa en el orden de la historia: primero camina por el bosque, luego llega a la cueva y al final resuelve el misterio.",
+      "hu": "Gondolj a történet sorrendjére: először az erdőben megy, aztán a barlanghoz ér, végül megoldja a rejtélyt."
+     },
+     "items": [
+      {
+       "q": "Dibujo: Lidia camina por el bosque entre los árboles. ¿Qué parte es?",
+       "q_hu": "Rajz: Lidia az erdőben sétál a fák között. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Az erdő = inicio",
+       "pic": "🌲",
+       "id": "cu28_4a"
+      },
+      {
+       "q": "Dibujo: Lidia está ante la entrada de una cueva. ¿Qué parte es?",
+       "q_hu": "Rajz: Lidia egy barlang bejárata előtt áll. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "A barlang = nudo",
+       "pic": "🕳️",
+       "id": "cu28_4b"
+      },
+      {
+       "q": "Dibujo: Lidia, dentro de la cueva, toca un símbolo en la pared. ¿Qué parte es?",
+       "q_hu": "Rajz: Lidia a barlangban egy jelet érint a falon. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "inicio",
+         "hu": "bevezetés"
+        },
+        {
+         "t": "nudo",
+         "hu": "bonyodalom"
+        },
+        {
+         "t": "desenlace",
+         "hu": "megoldás"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "A jel megnyomása = desenlace",
+       "pic": "🔓",
+       "id": "cu28_4c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu29",
+   "book": "cu",
+   "page": 29,
+   "unit": "u3",
+   "title": "FICHA 5. La postal",
+   "title_hu": "5. lap: A képeslap",
+   "summary_hu": "A képeslap rövid üzenet egy távoli személynek: egyik oldalán kép, a másikon rövid szöveg, bélyeg és cím. Egy mintaképeslap részeit kell megnevezni (hely és dátum, köszöntés, üzenet, elköszönés, aláírás, cím), és kiválasztani a hátoldalhoz illő képet.",
+   "words": [
+    {
+     "w": "la postal",
+     "hu": "a képeslap",
+     "pic": "💌"
+    },
+    {
+     "w": "la tarjeta",
+     "hu": "a kártya"
+    },
+    {
+     "w": "el saludo",
+     "hu": "a köszöntés",
+     "pic": "👋"
+    },
+    {
+     "w": "la despedida",
+     "hu": "az elköszönés"
+    },
+    {
+     "w": "la firma",
+     "hu": "az aláírás",
+     "pic": "✍️"
+    },
+    {
+     "w": "la dirección",
+     "hu": "a cím",
+     "pic": "🏠"
+    },
+    {
+     "w": "el sello",
+     "hu": "a bélyeg"
+    },
+    {
+     "w": "el mensaje",
+     "hu": "az üzenet"
+    },
+    {
+     "w": "la fecha",
+     "hu": "a dátum",
+     "pic": "📅"
+    },
+    {
+     "w": "el lugar",
+     "hu": "a hely"
+    },
+    {
+     "w": "un beso grande",
+     "hu": "egy nagy puszi",
+     "pic": "😘"
+    },
+    {
+     "w": "a la vuelta",
+     "hu": "visszatértünkkor, hazatérve"
+    },
+    {
+     "w": "mojar",
+     "hu": "megnedvesíteni, belemártani"
+    },
+    {
+     "w": "la playa",
+     "hu": "a strand",
+     "pic": "🏖️"
+    },
+    {
+     "w": "la mariposa",
+     "hu": "a pillangó",
+     "pic": "🦋"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos a leer y a escribir una postal!",
+     "hu": "Ma megtanulunk képeslapot olvasni és írni!",
+     "pic": "💌"
+    },
+    "sentences": [
+     {
+      "es": "Una postal es una tarjeta para comunicarse con alguien que está lejos.",
+      "hu": "A képeslap olyan kártya, amivel valakivel tartjuk a kapcsolatot, aki messze van.",
+      "pic": "💌"
+     },
+     {
+      "es": "Por un lado tiene una imagen: una foto o un dibujo.",
+      "hu": "Az egyik oldalán kép van: fénykép vagy rajz.",
+      "pic": "🖼️"
+     },
+     {
+      "es": "Por el otro lado se escribe un breve texto.",
+      "hu": "A másik oldalára rövid szöveget írunk.",
+      "pic": "📝"
+     },
+     {
+      "es": "Arriba se escribe el lugar y la fecha.",
+      "hu": "Felül a helyet és a dátumot írjuk.",
+      "pic": "📅"
+     },
+     {
+      "es": "Después va el saludo, por ejemplo «¡Hola, Rafa!».",
+      "hu": "Ezután jön a köszöntés, például „¡Hola, Rafa!”.",
+      "pic": "👋"
+     },
+     {
+      "es": "Luego se cuenta el mensaje: qué has hecho y dónde has estado.",
+      "hu": "Aztán jön az üzenet: mit csináltál és hol voltál.",
+      "pic": "📝"
+     },
+     {
+      "es": "Al final se pone una despedida, como «Un beso grande», y la firma.",
+      "hu": "A végén elköszönés áll, például „Un beso grande”, és az aláírás.",
+      "pic": "😘"
+     },
+     {
+      "es": "A la derecha se escribe la dirección de la persona que recibe la postal, y se pega un sello.",
+      "hu": "Jobbra annak a címét írjuk, aki a képeslapot kapja, és bélyeget ragasztunk rá.",
+      "pic": "🏠"
+     },
+     {
+      "es": "La imagen de delante debe tener relación con el lugar del que hablas.",
+      "hu": "Az elülső képnek kapcsolatban kell lennie azzal a hellyel, amiről írsz.",
+      "pic": "🏙️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Postal: imagen por delante, breve texto por detrás.",
+      "hu": "Képeslap: elöl kép, hátul rövid szöveg."
+     },
+     {
+      "es": "Partes: lugar y fecha, saludo, mensaje, despedida, firma, dirección y sello.",
+      "hu": "Részei: hely és dátum, köszöntés, üzenet, elköszönés, aláírás, cím és bélyeg."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿para qué sirve una postal?",
+      "hu": "Martin, mire jó egy képeslap?"
+     },
+     {
+      "who": "Martín",
+      "es": "Para hablar con alguien que está lejos.",
+      "hu": "Hogy beszéljünk valakivel, aki messze van."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Con qué palabra empieza el mensaje, «Hola» o «Un beso»?",
+      "hu": "Melyik szóval kezdődik az üzenet: „Hola” vagy „Un beso”?"
+     },
+     {
+      "who": "Martín",
+      "es": "Con «Hola». Es el saludo.",
+      "hu": "A „Hola”-val. Az a köszöntés."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y «Un beso grande»?",
+      "hu": "És az „Un beso grande”?"
+     },
+     {
+      "who": "Martín",
+      "es": "Es la despedida. Después va la firma.",
+      "hu": "Az az elköszönés. Utána jön az aláírás."
+     }
+    ],
+    "tf": [
+     {
+      "es": "Una postal tiene una imagen por un lado.",
+      "hu": "A képeslap egyik oldalán kép van.",
+      "answer": true,
+      "why_es": "Y por el otro, un breve texto.",
+      "why_hu": "A másikon rövid szöveg."
+     },
+     {
+      "es": "La firma es el nombre de quien recibe la postal.",
+      "hu": "Az aláírás annak a neve, aki a képeslapot kapja.",
+      "answer": false,
+      "why_es": "La firma es el nombre de quien la escribe.",
+      "why_hu": "Az aláírás annak a neve, aki írja."
+     },
+     {
+      "es": "«Hola, Rafa» es el saludo.",
+      "hu": "A „Hola, Rafa” a köszöntés.",
+      "answer": true,
+      "why_es": "Empieza el mensaje.",
+      "why_hu": "Ez nyitja az üzenetet."
+     },
+     {
+      "es": "La dirección va a la izquierda, junto a la firma.",
+      "hu": "A cím balra van, az aláírás mellett.",
+      "answer": false,
+      "why_es": "La dirección va en la parte derecha, bajo el sello.",
+      "why_hu": "A cím jobb oldalon van, a bélyeg alatt."
+     },
+     {
+      "es": "«Un beso grande» es una despedida.",
+      "hu": "Az „Un beso grande” elköszönés.",
+      "answer": true,
+      "why_es": "Se pone antes de la firma.",
+      "why_hu": "Az aláírás előtt áll."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-17",
+   "page_box": [
+    0.52,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu29_1",
+     "n": "1",
+     "text": "LEE la postal y ESCRIBE el nombre de cada parte. / MARCA la imagen adecuada para la parte de atrás.",
+     "text_hu": "Olvasd el képeslapot és írd le minden rész nevét. / JELÖLD meg a hátoldalhoz illő képet.",
+     "box": [
+      0.55,
+      0.32,
+      0.97,
+      0.945
+     ],
+     "context": {
+      "es": "Se ve una postal escrita por Valentina a su amigo Rafa: arriba, la fecha y el lugar; luego «¡Hola, Rafa!», el mensaje sobre un paseo y la playa, «¡Nos vemos a la vuelta!», una despedida y la firma. A la derecha hay un sello con una mariposa y la dirección. Seis cuadros señalan las partes. Abajo hay dos fotos: una ciudad moderna junto al agua de noche y un campo verde con un pueblo.",
+      "hu": "Valentina képeslapja barátjának, Rafának: fent a dátum és a hely; aztán „¡Hola, Rafa!”, az üzenet egy sétáról és a strandról, „¡Nos vemos a la vuelta!”, egy elköszönés és az aláírás. Jobbra egy pillangós bélyeg és a cím. Hat négyzet mutat a részekre. Alul két fotó: egy modern város éjjel a víz mellett, és egy zöld mező egy faluval."
+     },
+     "pic": "💌🦋",
+     "help": {
+      "es": "Cada parte tiene su lugar: el saludo empieza la carta, la despedida la cierra y la firma es el nombre de quien escribe.",
+      "hu": "Minden résznek megvan a helye: a köszöntés nyitja a levelet, az elköszönés zárja, az aláírás az író neve."
+     },
+     "items": [
+      {
+       "q": "En la postal: «¡Hola, Rafa!». ¿Qué parte es?",
+       "q_hu": "A képeslapon: „¡Hola, Rafa!”. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "saludo",
+         "hu": "köszöntés"
+        },
+        {
+         "t": "lugar y fecha",
+         "hu": "hely és dátum"
+        },
+        {
+         "t": "mensaje (texto)",
+         "hu": "üzenet (szöveg)"
+        },
+        {
+         "t": "despedida",
+         "hu": "elköszönés"
+        },
+        {
+         "t": "firma",
+         "hu": "aláírás"
+        },
+        {
+         "t": "dirección",
+         "hu": "cím"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "saludo = köszöntés",
+       "pic": "👋",
+       "id": "cu29_1a"
+      },
+      {
+       "q": "En la postal, arriba a la derecha: «(ciudad), 7 de diciembre». ¿Qué parte es?",
+       "q_hu": "A képeslapon, jobbra fent: „(város), 7 de diciembre”. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "saludo",
+         "hu": "köszöntés"
+        },
+        {
+         "t": "lugar y fecha",
+         "hu": "hely és dátum"
+        },
+        {
+         "t": "mensaje (texto)",
+         "hu": "üzenet (szöveg)"
+        },
+        {
+         "t": "despedida",
+         "hu": "elköszönés"
+        },
+        {
+         "t": "firma",
+         "hu": "aláírás"
+        },
+        {
+         "t": "dirección",
+         "hu": "cím"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "lugar y fecha = hely és dátum",
+       "pic": "📅",
+       "id": "cu29_1b"
+      },
+      {
+       "q": "En la postal: «Estamos unos días en la ciudad. Hoy hemos paseado… y mojamos los pies en el agua». ¿Qué parte es?",
+       "q_hu": "A képeslapon: „Pár napot töltünk a városban. Ma sétáltunk… és belemártottuk a lábunkat a vízbe”. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "saludo",
+         "hu": "köszöntés"
+        },
+        {
+         "t": "lugar y fecha",
+         "hu": "hely és dátum"
+        },
+        {
+         "t": "mensaje (texto)",
+         "hu": "üzenet (szöveg)"
+        },
+        {
+         "t": "despedida",
+         "hu": "elköszönés"
+        },
+        {
+         "t": "firma",
+         "hu": "aláírás"
+        },
+        {
+         "t": "dirección",
+         "hu": "cím"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "mensaje = üzenet",
+       "pic": "📝",
+       "id": "cu29_1c"
+      },
+      {
+       "q": "En la postal: «Un beso grande,». ¿Qué parte es?",
+       "q_hu": "A képeslapon: „Un beso grande,” (Egy nagy puszi). Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "saludo",
+         "hu": "köszöntés"
+        },
+        {
+         "t": "lugar y fecha",
+         "hu": "hely és dátum"
+        },
+        {
+         "t": "mensaje (texto)",
+         "hu": "üzenet (szöveg)"
+        },
+        {
+         "t": "despedida",
+         "hu": "elköszönés"
+        },
+        {
+         "t": "firma",
+         "hu": "aláírás"
+        },
+        {
+         "t": "dirección",
+         "hu": "cím"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "despedida = elköszönés",
+       "pic": "😘",
+       "id": "cu29_1d"
+      },
+      {
+       "q": "En la postal, abajo a la izquierda: «Valentina». ¿Qué parte es?",
+       "q_hu": "A képeslapon, balra lent: „Valentina”. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "saludo",
+         "hu": "köszöntés"
+        },
+        {
+         "t": "lugar y fecha",
+         "hu": "hely és dátum"
+        },
+        {
+         "t": "mensaje (texto)",
+         "hu": "üzenet (szöveg)"
+        },
+        {
+         "t": "despedida",
+         "hu": "elköszönés"
+        },
+        {
+         "t": "firma",
+         "hu": "aláírás"
+        },
+        {
+         "t": "dirección",
+         "hu": "cím"
+        }
+       ],
+       "answer": 4,
+       "answer_hu": "firma = aláírás",
+       "pic": "✍️",
+       "id": "cu29_1e"
+      },
+      {
+       "q": "A la derecha, bajo el sello: nombre, calle, número y código postal de Rafael. ¿Qué parte es?",
+       "q_hu": "Jobbra, a bélyeg alatt: Rafael neve, utca, házszám és irányítószám. Melyik rész?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "saludo",
+         "hu": "köszöntés"
+        },
+        {
+         "t": "lugar y fecha",
+         "hu": "hely és dátum"
+        },
+        {
+         "t": "mensaje (texto)",
+         "hu": "üzenet (szöveg)"
+        },
+        {
+         "t": "despedida",
+         "hu": "elköszönés"
+        },
+        {
+         "t": "firma",
+         "hu": "aláírás"
+        },
+        {
+         "t": "dirección",
+         "hu": "cím"
+        }
+       ],
+       "answer": 5,
+       "answer_hu": "dirección = cím",
+       "pic": "🏠",
+       "id": "cu29_1f"
+      },
+      {
+       "q": "MARCA la imagen adecuada para la parte de atrás de esta postal (Valentina visita una ciudad y va a la playa).",
+       "q_hu": "JELÖLD meg a képeslap hátoldalához illő képet (Valentina egy városban jár és strandra megy).",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Un edificio moderno junto al agua, de noche (ciudad)",
+         "hu": "Modern épület a víz mellett, éjjel (város)"
+        },
+        {
+         "t": "Un campo verde con un pueblo",
+         "hu": "Zöld mező egy faluval"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Az első: a képeslap egy városi kirándulásról szól.",
+       "pic": "🖼️",
+       "id": "cu29_1g"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu30",
+   "book": "cu",
+   "page": 30,
+   "unit": "u3",
+   "title": "FICHA 5. La postal (continuación)",
+   "title_hu": "5. lap: A képeslap (folytatás)",
+   "summary_hu": "Egy nagyszülők által unokáiknak írt képeslap hiányzó részeit kell odamásolni (hely és dátum, köszöntés, elköszönés, aláírás), majd Martinnak saját képeslapot kell írnia egy tengerparti világítótornyos kép mellé.",
+   "words": [
+    {
+     "w": "los nietos",
+     "hu": "az unokák"
+    },
+    {
+     "w": "los abuelos",
+     "hu": "a nagyszülők",
+     "pic": "👴"
+    },
+    {
+     "w": "querido",
+     "hu": "kedves"
+    },
+    {
+     "w": "muchos besos",
+     "hu": "sok puszi",
+     "pic": "😘"
+    },
+    {
+     "w": "la jubilación",
+     "hu": "a nyugdíjba vonulás"
+    },
+    {
+     "w": "imaginar",
+     "hu": "elképzelni"
+    },
+    {
+     "w": "impresionante",
+     "hu": "lenyűgöző"
+    },
+    {
+     "w": "conocer",
+     "hu": "megismerni"
+    },
+    {
+     "w": "copiar",
+     "hu": "másolni"
+    },
+    {
+     "w": "el regalo",
+     "hu": "az ajándék",
+     "pic": "🎁"
+    },
+    {
+     "w": "el faro",
+     "hu": "a világítótorony",
+     "pic": "🗼"
+    },
+    {
+     "w": "la colina",
+     "hu": "a domb"
+    },
+    {
+     "w": "el correo",
+     "hu": "a posta",
+     "pic": "📮"
+    },
+    {
+     "w": "escribir",
+     "hu": "írni",
+     "pic": "✍️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy copiamos las partes de una postal y escribimos la nuestra!",
+     "hu": "Ma lemásoljuk egy képeslap részeit, és megírjuk a sajátunkat!",
+     "pic": "🗼"
+    },
+    "sentences": [
+     {
+      "es": "Esta postal la escriben unos abuelos a sus nietos desde una ciudad.",
+      "hu": "Ezt a képeslapot nagyszülők írják az unokáiknak egy városból.",
+      "pic": "👴"
+     },
+     {
+      "es": "Arriba se escribe el lugar y la fecha: «(ciudad), 12 de febrero».",
+      "hu": "Fent a hely és a dátum áll: „(város), 12 de febrero”.",
+      "pic": "📅"
+     },
+     {
+      "es": "Después va el saludo: «Queridos nietos».",
+      "hu": "Utána a köszöntés jön: „Queridos nietos” (Kedves unokáim).",
+      "pic": "👋"
+     },
+     {
+      "es": "El mensaje cuenta que están en una ciudad que siempre habían querido conocer.",
+      "hu": "Az üzenet elmondja, hogy egy olyan városban vannak, amit mindig is szerettek volna megismerni.",
+      "pic": "🏙️"
+     },
+     {
+      "es": "Dicen que es el mejor regalo de jubilación: ¡un viaje para celebrar!",
+      "hu": "Azt írják, hogy ez a legjobb nyugdíjba vonulási ajándék: egy utazás az ünneplésre!",
+      "pic": "🎁"
+     },
+     {
+      "es": "Abajo se pone la despedida: «Muchos besos».",
+      "hu": "Lent az elköszönés áll: „Muchos besos” (Sok puszi).",
+      "pic": "😘"
+     },
+     {
+      "es": "Después se firma: «Abuelos Carmen y Tomás».",
+      "hu": "Utána aláírjuk: „Abuelos Carmen y Tomás” (Carmen és Tomás nagyszülők).",
+      "pic": "✍️"
+     },
+     {
+      "es": "A la derecha se escribe la dirección y se pega el sello de correos.",
+      "hu": "Jobbra a címet írjuk, és felragasztjuk a postai bélyeget.",
+      "pic": "📮"
+     },
+     {
+      "es": "Para escribir tu postal, mira la foto: un faro en una colina junto al mar.",
+      "hu": "Hogy megírhasd a képeslapodat, nézd meg a fotót: egy világítótorony egy dombon a tenger mellett.",
+      "pic": "🗼"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Orden de la postal: lugar y fecha, saludo, mensaje, despedida y firma.",
+      "hu": "A képeslap sorrendje: hely és dátum, köszöntés, üzenet, elköszönés, aláírás."
+     },
+     {
+      "es": "Escribe frases cortas sobre lo que ves y haces.",
+      "hu": "Írj rövid mondatokat arról, amit látsz és csinálsz."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿qué va arriba en la postal?",
+      "hu": "Martin, mi áll fent a képeslapon?"
+     },
+     {
+      "who": "Martín",
+      "es": "El lugar y la fecha.",
+      "hu": "A hely és a dátum."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y después?",
+      "hu": "És utána?"
+     },
+     {
+      "who": "Martín",
+      "es": "El saludo, como «Queridos nietos».",
+      "hu": "A köszöntés, például „Queridos nietos”."
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Qué escribimos abajo?",
+      "hu": "Mit írunk lent?"
+     },
+     {
+      "who": "Martín",
+      "es": "La despedida, «Muchos besos», y la firma.",
+      "hu": "Az elköszönést, „Muchos besos”, és az aláírást."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Ahora escribe tu propia postal, Martín!",
+      "hu": "Most írd meg a saját képeslapodat, Martin!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "«Queridos nietos» es la despedida.",
+      "hu": "A „queridos nietos” az elköszönés.",
+      "answer": false,
+      "why_es": "Es el saludo.",
+      "why_hu": "Ez a köszöntés."
+     },
+     {
+      "es": "«Muchos besos» es una despedida.",
+      "hu": "A „muchos besos” elköszönés.",
+      "answer": true,
+      "why_es": "Se escribe antes de la firma.",
+      "why_hu": "Az aláírás előtt áll."
+     },
+     {
+      "es": "En la postal, la firma va antes del saludo.",
+      "hu": "A képeslapon az aláírás a köszöntés előtt áll.",
+      "answer": false,
+      "why_es": "El saludo va al principio y la firma al final.",
+      "why_hu": "A köszöntés az elején, az aláírás a végén áll."
+     },
+     {
+      "es": "La foto de tu postal debe tener relación con el lugar.",
+      "hu": "A képeslapod fényképének kapcsolatban kell lennie a hellyel.",
+      "answer": true,
+      "why_es": "Así el mensaje y la imagen se corresponden.",
+      "why_hu": "Így az üzenet és a kép összeillenek."
+     },
+     {
+      "es": "El mensaje de una postal es muy largo.",
+      "hu": "A képeslap üzenete nagyon hosszú.",
+      "answer": false,
+      "why_es": "Es un breve texto.",
+      "why_hu": "Rövid szöveg."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-18",
+   "page_box": [
+    0.0,
+    0.0,
+    0.49,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu30_2",
+     "n": "2",
+     "text": "COPIA donde corresponde.",
+     "text_hu": "Másold oda, ahová illik.",
+     "box": [
+      0.02,
+      0.07,
+      0.47,
+      0.545
+     ],
+     "context": {
+      "es": "Es una postal escrita a unos nietos desde una ciudad. El mensaje ya está escrito: «Os escribimos desde la ciudad. ¡Siempre había querido conocer esta ciudad! Es más impresionante aún de lo que me imaginaba. Este es el mejor regalo de jubilación que podíamos tener.» Faltan cuatro cosas: arriba, la fecha y el saludo; abajo, la despedida y la firma. Tienes cuatro recuadros: muchos besos, queridos nietos, Abuelos Carmen y Tomás y la ciudad con fecha.",
+      "hu": "Képeslap unokáknak egy városból. Az üzenet már megvan: „Egy városból írunk nektek. Mindig is szerettük volna megismerni ezt a várost! Még lenyűgözőbb, mint képzeltem. Ez a legjobb nyugdíjba vonulási ajándék, amit kaphattunk.” Négy dolog hiányzik: fent a hely/dátum és a köszöntés; lent az elköszönés és az aláírás. A négy szó/kifejezés: muchos besos, queridos nietos, Abuelos Carmen y Tomás és a (város), február 12."
+     },
+     "pic": "💌",
+     "help": {
+      "es": "Arriba va el lugar y la fecha, luego el saludo. Abajo va la despedida y después la firma.",
+      "hu": "Fent a hely és a dátum, utána a köszöntés. Lent az elköszönés, utána az aláírás."
+     },
+     "items": [
+      {
+       "q": "Primera raya de arriba (lugar y fecha): ¿qué copias?",
+       "q_hu": "Első vonal fent (hely és dátum): mit másolsz oda?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "muchos besos",
+         "hu": "sok puszi"
+        },
+        {
+         "t": "queridos nietos",
+         "hu": "kedves unokáim"
+        },
+        {
+         "t": "Abuelos Carmen y Tomás",
+         "hu": "Carmen és Tomás nagyszülők"
+        },
+        {
+         "t": "(ciudad), 12 de febrero",
+         "hu": "(város), február 12."
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "(város), 12 de febrero",
+       "pic": "📅",
+       "id": "cu30_2a"
+      },
+      {
+       "q": "Segunda raya de arriba (saludo): ¿qué copias?",
+       "q_hu": "Második vonal fent (köszöntés): mit másolsz oda?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "muchos besos",
+         "hu": "sok puszi"
+        },
+        {
+         "t": "queridos nietos",
+         "hu": "kedves unokáim"
+        },
+        {
+         "t": "Abuelos Carmen y Tomás",
+         "hu": "Carmen és Tomás nagyszülők"
+        },
+        {
+         "t": "(ciudad), 12 de febrero",
+         "hu": "(város), február 12."
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "queridos nietos",
+       "pic": "👋",
+       "id": "cu30_2b"
+      },
+      {
+       "q": "Primera raya de abajo (despedida): ¿qué copias?",
+       "q_hu": "Első vonal lent (elköszönés): mit másolsz oda?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "muchos besos",
+         "hu": "sok puszi"
+        },
+        {
+         "t": "queridos nietos",
+         "hu": "kedves unokáim"
+        },
+        {
+         "t": "Abuelos Carmen y Tomás",
+         "hu": "Carmen és Tomás nagyszülők"
+        },
+        {
+         "t": "(ciudad), 12 de febrero",
+         "hu": "(város), február 12."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "muchos besos",
+       "pic": "😘",
+       "id": "cu30_2c"
+      },
+      {
+       "q": "Última raya de abajo (firma): ¿qué copias?",
+       "q_hu": "Utolsó vonal lent (aláírás): mit másolsz oda?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "muchos besos",
+         "hu": "sok puszi"
+        },
+        {
+         "t": "queridos nietos",
+         "hu": "kedves unokáim"
+        },
+        {
+         "t": "Abuelos Carmen y Tomás",
+         "hu": "Carmen és Tomás nagyszülők"
+        },
+        {
+         "t": "(ciudad), 12 de febrero",
+         "hu": "(város), február 12."
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "Abuelos Carmen y Tomás",
+       "pic": "✍️",
+       "id": "cu30_2d"
+      }
+     ]
+    },
+    {
+     "id": "cu30_3",
+     "n": "3",
+     "text": "ESCRIBE una postal.",
+     "text_hu": "Írj egy képeslapot.",
+     "box": [
+      0.02,
+      0.56,
+      0.47,
+      0.95
+     ],
+     "context": {
+      "es": "Hay una postal en blanco con un hueco para pegar una foto: la foto muestra un faro sobre una colina verde junto al mar. A la izquierda hay rayas para tu mensaje y a la derecha, para la dirección.",
+      "hu": "Egy üres képeslap, amelyre fényképet lehet ragasztani: a fotó egy világítótornyot mutat egy zöld domb tetején a tenger mellett. Balra vonalak vannak az üzenetednek, jobbra a címnek."
+     },
+     "pic": "🗼✍️",
+     "help": {
+      "es": "Escribe: lugar y fecha, saludo, dos o tres frases sobre lo que ves y haces, despedida y firma. Pon la dirección a la derecha.",
+      "hu": "Írd le: hely és dátum, köszöntés, két-három mondat arról, amit látsz és csinálsz, elköszönés és aláírás. A címet jobbra írd."
+     },
+     "items": [
+      {
+       "q": "Escribe una postal con todas sus partes (lugar y fecha, saludo, mensaje, despedida, firma y dirección).",
+       "q_hu": "Írj egy képeslapot, minden részével (hely és dátum, köszöntés, üzenet, elköszönés, aláírás, cím).",
+       "kind": "open",
+       "answer": "Ciudad, 3 de agosto. Querida abuela: Estamos en la costa. Hay un faro muy bonito y el mar es azul. Hoy nos hemos bañado. ¡Te echamos de menos! Un beso grande, Martín.",
+       "answer_hu": "Város, augusztus 3. Kedves nagymama! A tengerparton vagyunk. Van egy nagyon szép világítótorony, és a tenger kék. Ma fürödtünk. Hiányzol! Egy nagy puszi, Martin.",
+       "pic": "💌",
+       "id": "cu30_3a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu31",
+   "book": "cu",
+   "page": 31,
+   "unit": "u3",
+   "title": "FICHA 6. Búsqueda de información",
+   "title_hu": "6. lap: Információkeresés",
+   "summary_hu": "Az információ kereséséhez kulcsszavakat választunk, és tudjuk, hogy a források nyomtatottak (papír) vagy digitálisak (képernyő). Az internet nem minden információja igaz. Feladatok: kulcsszavak, források osztályozása táblázatban, igaz/hamis és az információ-hely párosítás.",
+   "words": [
+    {
+     "w": "la búsqueda",
+     "hu": "a keresés",
+     "pic": "🔍"
+    },
+    {
+     "w": "la información",
+     "hu": "az információ"
+    },
+    {
+     "w": "la palabra clave",
+     "hu": "a kulcsszó",
+     "pic": "🔑"
+    },
+    {
+     "w": "el peligro de extinción",
+     "hu": "a kihalás veszélye",
+     "pic": "🐼"
+    },
+    {
+     "w": "la imprenta",
+     "hu": "a nyomda"
+    },
+    {
+     "w": "la fuente",
+     "hu": "a forrás"
+    },
+    {
+     "w": "impreso",
+     "hu": "nyomtatott",
+     "pic": "📰"
+    },
+    {
+     "w": "digital",
+     "hu": "digitális",
+     "pic": "💻"
+    },
+    {
+     "w": "el periódico",
+     "hu": "az újság"
+    },
+    {
+     "w": "la revista",
+     "hu": "a magazin"
+    },
+    {
+     "w": "la enciclopedia",
+     "hu": "az enciklopédia"
+    },
+    {
+     "w": "fiable",
+     "hu": "megbízható"
+    },
+    {
+     "w": "verdadero",
+     "hu": "igaz"
+    },
+    {
+     "w": "falso",
+     "hu": "hamis"
+    },
+    {
+     "w": "el atlas",
+     "hu": "az atlasz",
+     "pic": "🗺️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy aprendemos a buscar información de forma inteligente!",
+     "hu": "Ma megtanuljuk okosan keresni az információt!",
+     "pic": "🔍"
+    },
+    "sentences": [
+     {
+      "es": "Para buscar información, primero pensamos qué queremos saber.",
+      "hu": "Az információ kereséséhez először átgondoljuk, mit akarunk tudni.",
+      "pic": "🤔"
+     },
+     {
+      "es": "Después elegimos las palabras clave: las más importantes de la pregunta.",
+      "hu": "Utána kiválasztjuk a kulcsszavakat: a kérdés legfontosabb szavait.",
+      "pic": "🔑"
+     },
+     {
+      "es": "Para «animales en peligro de extinción», las palabras clave son animales, peligro y extinción.",
+      "hu": "Az „állatok kihalás szélén” kereséshez a kulcsszavak: animales (állatok), peligro (veszély), extinción (kihalás).",
+      "pic": "🐼"
+     },
+     {
+      "es": "Las fuentes de información pueden ser impresas, en papel, o digitales, en pantalla.",
+      "hu": "Az információforrások lehetnek nyomtatottak, papíron, vagy digitálisak, képernyőn.",
+      "pic": "📰"
+     },
+     {
+      "es": "El libro, el periódico y la revista son fuentes impresas.",
+      "hu": "A könyv, az újság és a magazin nyomtatott források.",
+      "pic": "📚"
+     },
+     {
+      "es": "La página web, el vídeo y la enciclopedia online son fuentes digitales.",
+      "hu": "A weboldal, a videó és az online enciklopédia digitális források.",
+      "pic": "💻"
+     },
+     {
+      "es": "No toda la información de Internet es verdadera: hay que comprobarla.",
+      "hu": "Az internet nem minden információja igaz: ellenőrizni kell.",
+      "pic": "⚠️"
+     },
+     {
+      "es": "Los libros y las revistas suelen tener información fiable.",
+      "hu": "A könyvek és a magazinok általában megbízható információt tartalmaznak.",
+      "pic": "✅"
+     },
+     {
+      "es": "Para saber si un texto sirve, lee primero su título.",
+      "hu": "Hogy kiderüljön, hasznos-e egy szöveg, olvasd el először a címét.",
+      "pic": "📄"
+     },
+     {
+      "es": "Cada información se busca en un lugar adecuado: mapas en un atlas, recetas en un blog de cocina.",
+      "hu": "Minden információt a megfelelő helyen keresünk: térképet atlaszban, receptet szakácsblogon.",
+      "pic": "🗺️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Busca con palabras clave, no con frases largas.",
+      "hu": "Kulcsszavakkal keress, ne hosszú mondatokkal."
+     },
+     {
+      "es": "Fuentes impresas (papel) y digitales (pantalla). Comprueba que la información sea fiable.",
+      "hu": "Nyomtatott (papír) és digitális (képernyő) források. Ellenőrizd, hogy az információ megbízható-e."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, quiero saber qué animales están en peligro. ¿Qué escribo en el buscador?",
+      "hu": "Martin, tudni akarom, mely állatok vannak veszélyben. Mit írjak a keresőbe?"
+     },
+     {
+      "who": "Martín",
+      "es": "«Animales peligro extinción».",
+      "hu": "„Animales peligro extinción”."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Palabras clave! ¿Y un periódico es una fuente impresa o digital?",
+      "hu": "Kulcsszavak! És az újság nyomtatott vagy digitális forrás?"
+     },
+     {
+      "who": "Martín",
+      "es": "Digital, porque sale la noticia.",
+      "hu": "Digitális, mert benne van a hír."
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, no. El periódico de papel es impreso.",
+      "hu": "Miau, nem. A papír újság nyomtatott."
+     },
+     {
+      "who": "Martín",
+      "es": "Y una página web es digital.",
+      "hu": "És a weboldal digitális."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Exacto!",
+      "hu": "Pontosan!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Una palabra clave es la más importante de la pregunta.",
+      "hu": "A kulcsszó a kérdés legfontosabb szava.",
+      "answer": true,
+      "why_es": "Ayuda a buscar mejor.",
+      "why_hu": "Segít jobban keresni."
+     },
+     {
+      "es": "Un libro es una fuente digital.",
+      "hu": "A könyv digitális forrás.",
+      "answer": false,
+      "why_es": "Un libro de papel es una fuente impresa.",
+      "why_hu": "A papírkönyv nyomtatott forrás."
+     },
+     {
+      "es": "Una página web es una fuente digital.",
+      "hu": "A weboldal digitális forrás.",
+      "answer": true,
+      "why_es": "Se ve en una pantalla.",
+      "why_hu": "Képernyőn látható."
+     },
+     {
+      "es": "Toda la información de Internet es verdadera.",
+      "hu": "Az internet minden információja igaz.",
+      "answer": false,
+      "why_es": "Puede haber información falsa.",
+      "why_hu": "Lehet hamis információ is."
+     },
+     {
+      "es": "Un mapa se busca en un atlas.",
+      "hu": "Térképet atlaszban keresünk.",
+      "answer": true,
+      "why_es": "Un atlas es un libro de mapas.",
+      "why_hu": "Az atlasz térképek könyve."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-18",
+   "page_box": [
+    0.52,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu31_1",
+     "n": "1",
+     "text": "ESCRIBE las palabras clave necesarias para buscar cada información.",
+     "text_hu": "Írd le a kulcsszavakat, amelyek kellenek az egyes információk kereséséhez.",
+     "box": [
+      0.55,
+      0.14,
+      0.97,
+      0.38
+     ],
+     "context": {
+      "es": "Hay tres preguntas: ¿Qué animales están en peligro de extinción?, ¿Qué plantas hay en el Polo Norte? y ¿Quién inventó la imprenta y cuándo? Debajo de cada una hay una raya para escribir las palabras clave que escribirías en un buscador.",
+      "hu": "Három kérdés van: Mely állatok vannak kihalás szélén? Milyen növények vannak az Északi-sarkon? Ki találta fel a nyomdát és mikor? Mindegyik alatt egy vonal van azoknak a kulcsszavaknak, amiket egy keresőbe írnál."
+     },
+     "pic": "🔑🔍",
+     "help": {
+      "es": "Una palabra clave es la más importante de la pregunta. No hace falta escribir toda la frase.",
+      "hu": "A kulcsszó a kérdés legfontosabb szava. Nem kell az egész mondatot leírni."
+     },
+     "items": [
+      {
+       "q": "¿Qué animales están en peligro de extinción? ¿Qué palabras clave usas?",
+       "q_hu": "Mely állatok vannak kihalás szélén? Melyik kulcsszavakat használod?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "animales peligro extinción",
+         "hu": "állatok veszély kihalás"
+        },
+        {
+         "t": "qué hay",
+         "hu": "mi van"
+        },
+        {
+         "t": "cómo son los animales",
+         "hu": "milyenek az állatok"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "animales, peligro, extinción",
+       "pic": "🐼",
+       "id": "cu31_1a"
+      },
+      {
+       "q": "¿Qué plantas hay en el Polo Norte? ¿Qué palabras clave usas?",
+       "q_hu": "Milyen növények vannak az Északi-sarkon? Melyik kulcsszavakat használod?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "plantas Polo Norte",
+         "hu": "növények Északi-sark"
+        },
+        {
+         "t": "qué son las plantas",
+         "hu": "mik a növények"
+        },
+        {
+         "t": "hay muchas cosas",
+         "hu": "sok minden van"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "plantas, Polo Norte",
+       "pic": "🌿",
+       "id": "cu31_1b"
+      },
+      {
+       "q": "¿Quién inventó la imprenta y cuándo? ¿Qué palabras clave usas?",
+       "q_hu": "Ki találta fel a nyomdát és mikor? Melyik kulcsszavakat használod?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "quién cuándo",
+         "hu": "ki mikor"
+        },
+        {
+         "t": "inventor imprenta año",
+         "hu": "feltaláló nyomda év"
+        },
+        {
+         "t": "libros y letras",
+         "hu": "könyvek és betűk"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "inventor, imprenta, año (vagy: inventó, imprenta, cuándo)",
+       "pic": "📜",
+       "id": "cu31_1c"
+      }
+     ]
+    },
+    {
+     "id": "cu31_2",
+     "n": "2",
+     "text": "CLASIFICA estas fuentes en la tabla.",
+     "text_hu": "Osztályozd ezeket a forrásokat a táblázatban.",
+     "box": [
+      0.55,
+      0.38,
+      0.97,
+      0.6
+     ],
+     "context": {
+      "es": "Hay seis fuentes: vídeo divulgativo, periódico, revista infantil, página web, libro y enciclopedia online. La tabla tiene dos columnas: fuentes impresas (en papel) y fuentes digitales (en pantalla).",
+      "hu": "Hat forrás van: vídeo divulgativo, periódico, revista infantil, página web, libro, enciclopedia online. A táblázatnak két oszlopa van: fuentes impresas (nyomtatott, papíron) és fuentes digitales (képernyőn)."
+     },
+     "pic": "📊",
+     "help": {
+      "es": "Si lo puedes tocar en papel, es impresa. Si lo ves en una pantalla, es digital.",
+      "hu": "Ha papíron megfogható, akkor nyomtatott. Ha képernyőn látod, akkor digitális."
+     },
+     "items": [
+      {
+       "q": "«vídeo divulgativo»: ¿fuente impresa o digital?",
+       "q_hu": "„vídeo divulgativo” (ismeretterjesztő videó): nyomtatott vagy digitális forrás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuente impresa",
+         "hu": "nyomtatott forrás"
+        },
+        {
+         "t": "fuente digital",
+         "hu": "digitális forrás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "digital = digitális",
+       "pic": "🎬",
+       "id": "cu31_2a"
+      },
+      {
+       "q": "«periódico»: ¿fuente impresa o digital?",
+       "q_hu": "„periódico” (újság): nyomtatott vagy digitális forrás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuente impresa",
+         "hu": "nyomtatott forrás"
+        },
+        {
+         "t": "fuente digital",
+         "hu": "digitális forrás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "impresa = nyomtatott",
+       "pic": "📰",
+       "id": "cu31_2b"
+      },
+      {
+       "q": "«revista infantil»: ¿fuente impresa o digital?",
+       "q_hu": "„revista infantil” (gyerekmagazin): nyomtatott vagy digitális forrás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuente impresa",
+         "hu": "nyomtatott forrás"
+        },
+        {
+         "t": "fuente digital",
+         "hu": "digitális forrás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "impresa = nyomtatott",
+       "pic": "📚",
+       "id": "cu31_2c"
+      },
+      {
+       "q": "«página web»: ¿fuente impresa o digital?",
+       "q_hu": "„página web” (weboldal): nyomtatott vagy digitális forrás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuente impresa",
+         "hu": "nyomtatott forrás"
+        },
+        {
+         "t": "fuente digital",
+         "hu": "digitális forrás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "digital = digitális",
+       "pic": "💻",
+       "id": "cu31_2d"
+      },
+      {
+       "q": "«libro»: ¿fuente impresa o digital?",
+       "q_hu": "„libro” (könyv): nyomtatott vagy digitális forrás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuente impresa",
+         "hu": "nyomtatott forrás"
+        },
+        {
+         "t": "fuente digital",
+         "hu": "digitális forrás"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "impresa = nyomtatott",
+       "pic": "📖",
+       "id": "cu31_2e"
+      },
+      {
+       "q": "«enciclopedia online»: ¿fuente impresa o digital?",
+       "q_hu": "„enciclopedia online” (online enciklopédia): nyomtatott vagy digitális forrás?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "fuente impresa",
+         "hu": "nyomtatott forrás"
+        },
+        {
+         "t": "fuente digital",
+         "hu": "digitális forrás"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "digital = digitális",
+       "pic": "🌐",
+       "id": "cu31_2f"
+      }
+     ]
+    },
+    {
+     "id": "cu31_3",
+     "n": "3",
+     "text": "ESCRIBE V si es verdadero y F si es falso.",
+     "text_hu": "Írj V-t, ha igaz, és F-et, ha hamis.",
+     "box": [
+      0.55,
+      0.6,
+      0.97,
+      0.775
+     ],
+     "context": {
+      "es": "Hay cuatro frases sobre la información: Internet, libros y revistas, el título de un texto y las noticias en los periódicos. A la derecha de cada una hay un cuadrito para la V o la F.",
+      "hu": "Négy mondat az információról: internet, könyvek és magazinok, egy szöveg címe, hírek az újságokban. Mindegyik mellett egy kis négyzet a V vagy F betűnek."
+     },
+     "pic": "✅❌",
+     "help": {
+      "es": "Piensa: ¿puede haber información falsa en Internet? ¿Todos los periódicos cuentan lo mismo?",
+      "hu": "Gondold meg: lehet-e hamis információ az interneten? Minden újság ugyanazt írja?"
+     },
+     "items": [
+      {
+       "q": "Toda la información de Internet es verdadera.",
+       "q_hu": "Az internet minden információja igaz.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "V (verdadero)",
+         "hu": "V (igaz)"
+        },
+        {
+         "t": "F (falso)",
+         "hu": "F (hamis)"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis.",
+       "pic": "🧐",
+       "id": "cu31_3a"
+      },
+      {
+       "q": "Puedo encontrar información fiable en libros y revistas.",
+       "q_hu": "Megbízható információt találhatok könyvekben és magazinokban.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "V (verdadero)",
+         "hu": "V (igaz)"
+        },
+        {
+         "t": "F (falso)",
+         "hu": "F (hamis)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz.",
+       "pic": "🧐",
+       "id": "cu31_3b"
+      },
+      {
+       "q": "Para saber si un texto me sirve debo leer su título.",
+       "q_hu": "Hogy kiderüljön, hasznos-e egy szöveg, el kell olvasnom a címét.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "V (verdadero)",
+         "hu": "V (igaz)"
+        },
+        {
+         "t": "F (falso)",
+         "hu": "F (hamis)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz.",
+       "pic": "🧐",
+       "id": "cu31_3c"
+      },
+      {
+       "q": "Las noticias son las mismas en todos los periódicos.",
+       "q_hu": "A hírek minden újságban ugyanazok.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "V (verdadero)",
+         "hu": "V (igaz)"
+        },
+        {
+         "t": "F (falso)",
+         "hu": "F (hamis)"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Hamis.",
+       "pic": "🧐",
+       "id": "cu31_3d"
+      }
+     ]
+    },
+    {
+     "id": "cu31_4",
+     "n": "4",
+     "text": "UNE cada información con el lugar donde podrías encontrarla.",
+     "text_hu": "Kösd össze az információt azzal a hellyel, ahol megtalálhatnád.",
+     "box": [
+      0.55,
+      0.775,
+      0.97,
+      0.95
+     ],
+     "context": {
+      "es": "A la izquierda hay tres informaciones: un mapa de tu comunidad autónoma, una receta de una ensalada e información sobre el cambio climático. A la derecha hay tres lugares: libro o web especializada, atlas o libro de geografía y blog de cocina.",
+      "hu": "Balra három információ: a te tartományod térképe, egy saláta receptje és információ az éghajlatváltozásról. Jobbra három hely: szakkönyv vagy szakmai weboldal, atlasz vagy földrajzkönyv, szakácsblog."
+     },
+     "pic": "🔗📚",
+     "help": {
+      "es": "Piensa dónde buscarías: mapas en un atlas, recetas en un blog de cocina, ciencia en un libro especializado.",
+      "hu": "Gondold meg, hol keresnéd: térképet atlaszban, receptet szakácsblogon, tudományt szakkönyvben."
+     },
+     "items": [
+      {
+       "q": "mapa de tu comunidad autónoma → ¿dónde lo encuentras?",
+       "q_hu": "a tartományod térképe → hol találod meg?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro o web especializada",
+         "hu": "szakkönyv vagy szakmai weboldal"
+        },
+        {
+         "t": "atlas o libro de geografía",
+         "hu": "atlasz vagy földrajzkönyv"
+        },
+        {
+         "t": "blog de cocina",
+         "hu": "szakácsblog"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "atlasz vagy földrajzkönyv",
+       "pic": "🗺️",
+       "id": "cu31_4a"
+      },
+      {
+       "q": "receta de una ensalada → ¿dónde la encuentras?",
+       "q_hu": "saláta receptje → hol találod meg?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro o web especializada",
+         "hu": "szakkönyv vagy szakmai weboldal"
+        },
+        {
+         "t": "atlas o libro de geografía",
+         "hu": "atlasz vagy földrajzkönyv"
+        },
+        {
+         "t": "blog de cocina",
+         "hu": "szakácsblog"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "szakácsblog",
+       "pic": "🥗",
+       "id": "cu31_4b"
+      },
+      {
+       "q": "información sobre el cambio climático → ¿dónde la encuentras?",
+       "q_hu": "információ az éghajlatváltozásról → hol találod meg?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro o web especializada",
+         "hu": "szakkönyv vagy szakmai weboldal"
+        },
+        {
+         "t": "atlas o libro de geografía",
+         "hu": "atlasz vagy földrajzkönyv"
+        },
+        {
+         "t": "blog de cocina",
+         "hu": "szakácsblog"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "szakkönyv vagy szakmai weboldal",
+       "pic": "🌡️",
+       "id": "cu31_4c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cu32",
+   "book": "cu",
+   "page": 32,
+   "unit": "u3",
+   "title": "FICHA 6. Búsqueda de información (continuación)",
+   "title_hu": "6. lap: Információkeresés (folytatás)",
+   "summary_hu": "A könyv, a magazin és az újság különböző információforrások; a könyvtárban a könyveket részlegek szerint rendezik, a gerincükön lévő címke (tejuelo) a jelzetet (signatura) tartalmazza. Feladatok: forrástípusok párosítása, a tejuelo kiegészítése, címek, részlegek és jelzetek összekötése, saját jelzet kitalálása.",
+   "words": [
+    {
+     "w": "el libro",
+     "hu": "a könyv",
+     "pic": "📖"
+    },
+    {
+     "w": "la revista",
+     "hu": "a magazin"
+    },
+    {
+     "w": "el periódico",
+     "hu": "az újság",
+     "pic": "📰"
+    },
+    {
+     "w": "la biblioteca",
+     "hu": "a könyvtár",
+     "pic": "🏛️"
+    },
+    {
+     "w": "el tejuelo",
+     "hu": "a gerincre ragasztott címke"
+    },
+    {
+     "w": "la signatura",
+     "hu": "a jelzet (a könyv kódja)",
+     "pic": "🔢"
+    },
+    {
+     "w": "el lomo",
+     "hu": "a könyv gerince"
+    },
+    {
+     "w": "el capítulo",
+     "hu": "a fejezet"
+    },
+    {
+     "w": "el autor",
+     "hu": "a szerző"
+    },
+    {
+     "w": "la portada",
+     "hu": "a borító"
+    },
+    {
+     "w": "la entrevista",
+     "hu": "az interjú"
+    },
+    {
+     "w": "el reportaje",
+     "hu": "a riport"
+    },
+    {
+     "w": "la sección",
+     "hu": "a részleg"
+    },
+    {
+     "w": "el género",
+     "hu": "a műfaj"
+    },
+    {
+     "w": "las noticias",
+     "hu": "a hírek"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "¡Hoy descubrimos cómo se ordenan los libros en una biblioteca!",
+     "hu": "Ma felfedezzük, hogyan vannak sorba rakva a könyvek a könyvtárban!",
+     "pic": "📚"
+    },
+    "sentences": [
+     {
+      "es": "El libro, la revista y el periódico son fuentes de información.",
+      "hu": "A könyv, a magazin és az újság információforrások.",
+      "pic": "📚"
+     },
+     {
+      "es": "El periódico publica noticias todos los días.",
+      "hu": "Az újság minden nap közöl híreket.",
+      "pic": "📰"
+     },
+     {
+      "es": "La revista publica artículos y fotos cada semana o cada mes.",
+      "hu": "A magazin hetente vagy havonta közöl cikkeket és fotókat.",
+      "pic": "🗞️"
+     },
+     {
+      "es": "El libro trata un tema dividido en capítulos y en la portada tiene el nombre del autor.",
+      "hu": "A könyv egy témát tárgyal, fejezetekre osztva, és a borítón rajta van a szerző neve.",
+      "pic": "📖"
+     },
+     {
+      "es": "En la biblioteca los libros están ordenados por secciones: Infantil, Ciencia, Narrativa…",
+      "hu": "A könyvtárban a könyvek részlegek szerint vannak rendezve: Infantil (gyerek), Ciencia (tudomány), Narrativa (elbeszélő)…",
+      "pic": "🏛️"
+     },
+     {
+      "es": "El tejuelo es la etiqueta que se pega en el lomo de cada libro.",
+      "hu": "A tejuelo a címke, amit minden könyv gerincére ragasztanak.",
+      "pic": "🏷️"
+     },
+     {
+      "es": "El tejuelo tiene un código que se llama signatura.",
+      "hu": "A tejuelón egy kód van, amelyet signaturának hívnak.",
+      "pic": "🔢"
+     },
+     {
+      "es": "La signatura dice dónde está el libro. Por ejemplo, N-CUE/tra es de Narrativa, Cuentos tradicionales.",
+      "hu": "A signatura megmondja, hol van a könyv. Például az N-CUE/tra az elbeszélő irodalom, hagyományos mesék.",
+      "pic": "🧭"
+     },
+     {
+      "es": "Un libro de plantas tiene un código de ciencia y naturaleza: C-NAT/pla.",
+      "hu": "Egy növényekről szóló könyv jelzete a tudomány és természet kódja: C-NAT/pla.",
+      "pic": "🌿"
+     },
+     {
+      "es": "Para inventar una signatura, pensamos en la sección, el género y el título.",
+      "hu": "Jelzet kitalálásához gondolunk a részlegre, a műfajra és a címre.",
+      "pic": "💡"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Tejuelo = etiqueta del lomo. Signatura = código del libro.",
+      "hu": "Tejuelo = a gerincen lévő címke. Signatura = a könyv kódja."
+     },
+     {
+      "es": "Libro: capítulos y autor. Revista: semanal o mensual. Periódico: diario.",
+      "hu": "Könyv: fejezetek és szerző. Magazin: heti vagy havi. Újság: napi."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Gatito",
+      "es": "Martín, ¿qué fuente publica noticias cada día?",
+      "hu": "Martin, melyik forrás közöl híreket minden nap?"
+     },
+     {
+      "who": "Martín",
+      "es": "¡El periódico!",
+      "hu": "Az újság!"
+     },
+     {
+      "who": "Gatito",
+      "es": "¿Y cuál tiene capítulos?",
+      "hu": "És melyiknek vannak fejezetei?"
+     },
+     {
+      "who": "Martín",
+      "es": "El libro.",
+      "hu": "A könyv."
+     },
+     {
+      "who": "Gatito",
+      "es": "Miau, ¿para qué sirve el tejuelo?",
+      "hu": "Miau, mire jó a tejuelo?"
+     },
+     {
+      "who": "Martín",
+      "es": "Es una etiqueta en el lomo y tiene la signatura.",
+      "hu": "Címke a gerincen, és rajta van a signatura."
+     },
+     {
+      "who": "Gatito",
+      "es": "¡Así encontramos cada libro en su sitio!",
+      "hu": "Így minden könyvet megtalálunk a helyén!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "El periódico se publica cada día.",
+      "hu": "Az újság minden nap megjelenik.",
+      "answer": true,
+      "why_es": "Trae noticias diarias.",
+      "why_hu": "Napi híreket hoz."
+     },
+     {
+      "es": "El tejuelo es un tipo de libro.",
+      "hu": "A tejuelo egy könyvtípus.",
+      "answer": false,
+      "why_es": "Es una etiqueta que se pega en el lomo.",
+      "why_hu": "Címke, amit a gerincre ragasztanak."
+     },
+     {
+      "es": "La signatura es un código.",
+      "hu": "A signatura egy kód.",
+      "answer": true,
+      "why_es": "Indica dónde está el libro.",
+      "why_hu": "Megmondja, hol van a könyv."
+     },
+     {
+      "es": "En la portada de un libro suele aparecer el autor.",
+      "hu": "A könyv borítóján általában szerepel a szerző.",
+      "answer": true,
+      "why_es": "Ahí está el nombre de quien lo escribió.",
+      "why_hu": "Ott áll az író neve."
+     },
+     {
+      "es": "«Cuentos tradicionales» va en la sección Ciencia.",
+      "hu": "A „Cuentos tradicionales” a Ciencia részlegbe tartozik.",
+      "answer": false,
+      "why_es": "Va en Narrativa: N-CUE/tra.",
+      "why_hu": "Az elbeszélő irodalomhoz (Narrativa) tartozik: N-CUE/tra."
+     }
+    ]
+   },
+   "img": "lengua_cu_photo-19",
+   "page_box": [
+    0.0,
+    0.0,
+    0.49,
+    1.0
+   ],
+   "tasks": [
+    {
+     "id": "cu32_5",
+     "n": "5",
+     "text": "COPIA cada tipo de fuente de información donde corresponde.",
+     "text_hu": "Másold oda minden információforrás-típust, ahová illik.",
+     "box": [
+      0.02,
+      0.07,
+      0.46,
+      0.306
+     ],
+     "context": {
+      "es": "Hay tres palabras: libro, revista y periódico. Debajo hay cinco frases sobre cómo es cada fuente; al final de cada una hay una raya para copiar la palabra que le corresponde.",
+      "hu": "Három szó van: libro, revista, periódico. Alatta öt mondat arról, milyen az egyes forrás; mindegyik végén egy vonal van, ahová a hozzá illő szót kell másolni."
+     },
+     "pic": "📰📚",
+     "help": {
+      "es": "El periódico trae noticias cada día. La revista sale cada semana o cada mes. El libro tiene capítulos y autor.",
+      "hu": "Az újság naponta hoz híreket. A magazin hetente vagy havonta jelenik meg. A könyvnek fejezetei és szerzője van."
+     },
+     "items": [
+      {
+       "q": "Publica noticias diariamente.",
+       "q_hu": "Naponta közöl híreket.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro",
+         "hu": "könyv"
+        },
+        {
+         "t": "revista",
+         "hu": "magazin"
+        },
+        {
+         "t": "periódico",
+         "hu": "újság"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "újság",
+       "pic": "📰",
+       "id": "cu32_5a"
+      },
+      {
+       "q": "Publica artículos y fotos cada semana o cada mes.",
+       "q_hu": "Hetente vagy havonta közöl cikkeket és fotókat.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro",
+         "hu": "könyv"
+        },
+        {
+         "t": "revista",
+         "hu": "magazin"
+        },
+        {
+         "t": "periódico",
+         "hu": "újság"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "magazin",
+       "pic": "📚",
+       "id": "cu32_5b"
+      },
+      {
+       "q": "Trata sobre un tema dividido en capítulos.",
+       "q_hu": "Egy témáról szól, fejezetekre osztva.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro",
+         "hu": "könyv"
+        },
+        {
+         "t": "revista",
+         "hu": "magazin"
+        },
+        {
+         "t": "periódico",
+         "hu": "újság"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "könyv",
+       "pic": "📖",
+       "id": "cu32_5c"
+      },
+      {
+       "q": "Suele tener entrevistas, reportajes y juegos.",
+       "q_hu": "Általában vannak benne interjúk, riportok és játékok.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro",
+         "hu": "könyv"
+        },
+        {
+         "t": "revista",
+         "hu": "magazin"
+        },
+        {
+         "t": "periódico",
+         "hu": "újság"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "magazin",
+       "pic": "🎮",
+       "id": "cu32_5d"
+      },
+      {
+       "q": "En la portada aparece el nombre del autor.",
+       "q_hu": "A borítón szerepel a szerző neve.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "libro",
+         "hu": "könyv"
+        },
+        {
+         "t": "revista",
+         "hu": "magazin"
+        },
+        {
+         "t": "periódico",
+         "hu": "újság"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "könyv",
+       "pic": "✍️",
+       "id": "cu32_5e"
+      }
+     ]
+    },
+    {
+     "id": "cu32_6",
+     "n": "6",
+     "text": "COMPLETA.",
+     "text_hu": "Egészítsd ki.",
+     "box": [
+      0.02,
+      0.315,
+      0.46,
+      0.41
+     ],
+     "context": {
+      "es": "Dos frases sobre el tejuelo: es la etiqueta que se pega en los lomos de los libros de la biblioteca, y contiene un código llamado signatura.",
+      "hu": "Két mondat a tejueloról (könyvtári címke): a könyvtár könyveinek gerincére ragasztott címke, és egy kódot tartalmaz, amelyet signaturának hívnak."
+     },
+     "pic": "🏷️📚",
+     "help": {
+      "es": "Piensa en dónde se pega una etiqueta en un libro de la biblioteca: en el lomo.",
+      "hu": "Gondold végig, hová ragasztanak címkét a könyvtári könyvön: a gerincére."
+     },
+     "items": [
+      {
+       "q": "El tejuelo es la etiqueta que se pone en los ___ de la biblioteca.",
+       "q_hu": "A tejuelo az a címke, amit a könyvtár ___-ra ragasztanak.",
+       "kind": "type",
+       "answer": "lomos",
+       "alts": [
+        "libros",
+        "los lomos",
+        "los libros",
+        "lomos de los libros"
+       ],
+       "answer_hu": "A könyvek gerincére (lomos), vagyis a könyvekre.",
+       "pic": "🏷️",
+       "id": "cu32_6a"
+      },
+      {
+       "q": "Contiene un código llamado ___.",
+       "q_hu": "Egy kódot tartalmaz, amelyet ___ nak hívnak.",
+       "kind": "type",
+       "answer": "signatura",
+       "alts": [
+        "signatura topográfica",
+        "la signatura"
+       ],
+       "answer_hu": "signatura = jelzet (a könyv helyének kódja)",
+       "pic": "🔢",
+       "id": "cu32_6b"
+      }
+     ]
+    },
+    {
+     "id": "cu32_7",
+     "n": "7",
+     "text": "UNE cada título con su sección, su género y su tejuelo.",
+     "text_hu": "Kösd össze mindegyik címet a részlegével, a műfajával és a jelzetével.",
+     "box": [
+      0.02,
+      0.424,
+      0.46,
+      0.646
+     ],
+     "context": {
+      "es": "Hay cuatro títulos de libros: Animales para niños, Cuentos tradicionales, Ellas inventan y Plantas del mundo. Cada uno se une a una sección (Biografías, Ciencia, Infantil, Narrativa), a un género (Naturaleza, Científicas, Cuentos, Poesía) y a un tejuelo (INF-P/ani, N-CUE/tra, BIO-CIE/inv, C-NAT/pla).",
+      "hu": "Négy könyvcím: Animales para niños (Állatok gyerekeknek), Cuentos tradicionales (Hagyományos mesék), Ellas inventan (Ők feltalálnak), Plantas del mundo (A világ növényei). Mindegyiket össze kell kötni egy részleggel (életrajzok, tudomány, gyerek, elbeszélő), egy műfajjal (természet, tudományos, mesék, költészet) és egy jelzettel."
+     },
+     "pic": "🔗📚",
+     "help": {
+      "es": "El tejuelo suele mezclar letras de la sección, del género y del título: N-CUE/tra = Narrativa, Cuentos, «tradicionales».",
+      "hu": "A jelzet a részleg, a műfaj és a cím betűit keveri: N-CUE/tra = Narrativa, Cuentos, „tradicionales”."
+     },
+     "items": [
+      {
+       "q": "«Animales para niños»: ¿en qué sección está?",
+       "q_hu": "„Animales para niños” (Állatok gyerekeknek): melyik részlegben van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Biografías",
+         "hu": "életrajzok"
+        },
+        {
+         "t": "Ciencia",
+         "hu": "tudomány"
+        },
+        {
+         "t": "Infantil",
+         "hu": "gyerek"
+        },
+        {
+         "t": "Narrativa",
+         "hu": "elbeszélő irodalom"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "gyerek",
+       "pic": "📚",
+       "id": "cu32_7a"
+      },
+      {
+       "q": "«Animales para niños»: ¿cuál es su género?",
+       "q_hu": "„Animales para niños”: melyik a műfaja/tárgya?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Naturaleza",
+         "hu": "természet"
+        },
+        {
+         "t": "Científicas",
+         "hu": "tudományos"
+        },
+        {
+         "t": "Cuentos",
+         "hu": "mesék"
+        },
+        {
+         "t": "Poesía",
+         "hu": "költészet"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "költészet",
+       "pic": "🏷️",
+       "id": "cu32_7b"
+      },
+      {
+       "q": "«Animales para niños»: ¿cuál es su tejuelo?",
+       "q_hu": "„Animales para niños”: melyik a jelzete?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "INF-P/ani",
+         "hu": "INF-P/ani"
+        },
+        {
+         "t": "N-CUE/tra",
+         "hu": "N-CUE/tra"
+        },
+        {
+         "t": "BIO-CIE/inv",
+         "hu": "BIO-CIE/inv"
+        },
+        {
+         "t": "C-NAT/pla",
+         "hu": "C-NAT/pla"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "INF-P/ani",
+       "pic": "🔢",
+       "id": "cu32_7c"
+      },
+      {
+       "q": "«Cuentos tradicionales»: ¿en qué sección está?",
+       "q_hu": "„Cuentos tradicionales” (Hagyományos mesék): melyik részlegben van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Biografías",
+         "hu": "életrajzok"
+        },
+        {
+         "t": "Ciencia",
+         "hu": "tudomány"
+        },
+        {
+         "t": "Infantil",
+         "hu": "gyerek"
+        },
+        {
+         "t": "Narrativa",
+         "hu": "elbeszélő irodalom"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "elbeszélő irodalom",
+       "pic": "📚",
+       "id": "cu32_7d"
+      },
+      {
+       "q": "«Cuentos tradicionales»: ¿cuál es su género?",
+       "q_hu": "„Cuentos tradicionales”: melyik a műfaja/tárgya?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Naturaleza",
+         "hu": "természet"
+        },
+        {
+         "t": "Científicas",
+         "hu": "tudományos"
+        },
+        {
+         "t": "Cuentos",
+         "hu": "mesék"
+        },
+        {
+         "t": "Poesía",
+         "hu": "költészet"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "mesék",
+       "pic": "🏷️",
+       "id": "cu32_7e"
+      },
+      {
+       "q": "«Cuentos tradicionales»: ¿cuál es su tejuelo?",
+       "q_hu": "„Cuentos tradicionales”: melyik a jelzete?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "INF-P/ani",
+         "hu": "INF-P/ani"
+        },
+        {
+         "t": "N-CUE/tra",
+         "hu": "N-CUE/tra"
+        },
+        {
+         "t": "BIO-CIE/inv",
+         "hu": "BIO-CIE/inv"
+        },
+        {
+         "t": "C-NAT/pla",
+         "hu": "C-NAT/pla"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "N-CUE/tra",
+       "pic": "🔢",
+       "id": "cu32_7f"
+      },
+      {
+       "q": "«Ellas inventan»: ¿en qué sección está?",
+       "q_hu": "„Ellas inventan” (Ők feltalálnak (nők a tudományban)): melyik részlegben van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Biografías",
+         "hu": "életrajzok"
+        },
+        {
+         "t": "Ciencia",
+         "hu": "tudomány"
+        },
+        {
+         "t": "Infantil",
+         "hu": "gyerek"
+        },
+        {
+         "t": "Narrativa",
+         "hu": "elbeszélő irodalom"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "életrajzok",
+       "pic": "📚",
+       "id": "cu32_7g"
+      },
+      {
+       "q": "«Ellas inventan»: ¿cuál es su género?",
+       "q_hu": "„Ellas inventan”: melyik a műfaja/tárgya?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Naturaleza",
+         "hu": "természet"
+        },
+        {
+         "t": "Científicas",
+         "hu": "tudományos"
+        },
+        {
+         "t": "Cuentos",
+         "hu": "mesék"
+        },
+        {
+         "t": "Poesía",
+         "hu": "költészet"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "tudományos",
+       "pic": "🏷️",
+       "id": "cu32_7h"
+      },
+      {
+       "q": "«Ellas inventan»: ¿cuál es su tejuelo?",
+       "q_hu": "„Ellas inventan”: melyik a jelzete?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "INF-P/ani",
+         "hu": "INF-P/ani"
+        },
+        {
+         "t": "N-CUE/tra",
+         "hu": "N-CUE/tra"
+        },
+        {
+         "t": "BIO-CIE/inv",
+         "hu": "BIO-CIE/inv"
+        },
+        {
+         "t": "C-NAT/pla",
+         "hu": "C-NAT/pla"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "BIO-CIE/inv",
+       "pic": "🔢",
+       "id": "cu32_7i"
+      },
+      {
+       "q": "«Plantas del mundo»: ¿en qué sección está?",
+       "q_hu": "„Plantas del mundo” (A világ növényei): melyik részlegben van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Biografías",
+         "hu": "életrajzok"
+        },
+        {
+         "t": "Ciencia",
+         "hu": "tudomány"
+        },
+        {
+         "t": "Infantil",
+         "hu": "gyerek"
+        },
+        {
+         "t": "Narrativa",
+         "hu": "elbeszélő irodalom"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "tudomány",
+       "pic": "📚",
+       "id": "cu32_7j"
+      },
+      {
+       "q": "«Plantas del mundo»: ¿cuál es su género?",
+       "q_hu": "„Plantas del mundo”: melyik a műfaja/tárgya?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Naturaleza",
+         "hu": "természet"
+        },
+        {
+         "t": "Científicas",
+         "hu": "tudományos"
+        },
+        {
+         "t": "Cuentos",
+         "hu": "mesék"
+        },
+        {
+         "t": "Poesía",
+         "hu": "költészet"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "természet",
+       "pic": "🏷️",
+       "id": "cu32_7k"
+      },
+      {
+       "q": "«Plantas del mundo»: ¿cuál es su tejuelo?",
+       "q_hu": "„Plantas del mundo”: melyik a jelzete?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "INF-P/ani",
+         "hu": "INF-P/ani"
+        },
+        {
+         "t": "N-CUE/tra",
+         "hu": "N-CUE/tra"
+        },
+        {
+         "t": "BIO-CIE/inv",
+         "hu": "BIO-CIE/inv"
+        },
+        {
+         "t": "C-NAT/pla",
+         "hu": "C-NAT/pla"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "C-NAT/pla",
+       "pic": "🔢",
+       "id": "cu32_7l"
+      }
+     ]
+    },
+    {
+     "id": "cu32_8",
+     "n": "8",
+     "text": "INVENTA una signatura para cada libro.",
+     "text_hu": "Találj ki jelzetet minden könyvhöz.",
+     "box": [
+      0.02,
+      0.654,
+      0.46,
+      0.936
+     ],
+     "context": {
+      "es": "Hay tres libros: «Aventura en Isla Fantasma» (portada verde con un fantasma), «50 animales sorprendentes» (portada con muchos gatos de colores) y «Un cerebro rápido y dos piernas lentas» (portada roja con un cerebro). Debajo de cada libro hay una raya para escribir su signatura.",
+      "hu": "Három könyv van: „Aventura en Isla Fantasma” (zöld borító szellemmel), „50 animales sorprendentes” (borító sok színes macskával) és „Un cerebro rápido y dos piernas lentas” (piros borító agyvel). Mindegyik alatt egy vonal van a jelzetnek."
+     },
+     "pic": "🏷️",
+     "help": {
+      "es": "Copia el modelo: letra de la sección, guion, tres letras del género, barra y tres letras del título.",
+      "hu": "Kövesd a mintát: a részleg betűje, kötőjel, a műfaj három betűje, perjel és a cím három betűje."
+     },
+     "items": [
+      {
+       "q": "«Aventura en Isla Fantasma»: inventa una signatura.",
+       "q_hu": "„Aventura en Isla Fantasma”: találj ki jelzetet.",
+       "kind": "open",
+       "answer": "N-AVE/ave (Narrativa, Aventuras, «aventura»)",
+       "answer_hu": "Pl. N-AVE/ave (elbeszélő irodalom, kalandok, „aventura”)",
+       "pic": "👻",
+       "id": "cu32_8a"
+      },
+      {
+       "q": "«50 animales sorprendentes»: inventa una signatura.",
+       "q_hu": "„50 animales sorprendentes”: találj ki jelzetet.",
+       "kind": "open",
+       "answer": "C-NAT/ani (Ciencia, Naturaleza, «animales»)",
+       "answer_hu": "Pl. C-NAT/ani (tudomány, természet, „animales”)",
+       "pic": "🐱",
+       "id": "cu32_8b"
+      },
+      {
+       "q": "«Un cerebro rápido y dos piernas lentas»: inventa una signatura.",
+       "q_hu": "„Un cerebro rápido y dos piernas lentas”: találj ki jelzetet.",
+       "kind": "open",
+       "answer": "C-CIE/cer (Ciencia, Científicas, «cerebro»)",
+       "answer_hu": "Pl. C-CIE/cer (tudomány, tudományos, „cerebro”)",
+       "pic": "🧠",
+       "id": "cu32_8c"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

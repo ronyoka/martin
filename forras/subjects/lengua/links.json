@@ -126,6 +126,26 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "ctlu3_pdf",
+   "kind": "pdf",
+   "title": "Preparación control unidad 3",
+   "title_hu": "Felkészítő: Lengua dolgozat 3. fejezet",
+   "drive": "1EiG37wkYoVzT8CrVPrMk5iW-f-C1J3ml",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "ctlu3_video",
+   "kind": "video",
+   "title": "Vídeo control unidad 3",
+   "title_hu": "Videó: Lengua dolgozat 3. fejezet",
+   "drive": "1gj4yeZddEjrWdRndmK_atr-t2d3pj6Sz",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

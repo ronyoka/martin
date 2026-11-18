@@ -2,23 +2,6 @@
  "_doc": "Napi ellenőrzés: közelgő dolgozatok/házik. date=YYYY-MM-DD; type=homework|control|test; units=fejezet-id-k (u1..u9); link_ids=a links.json elemei. Módosítás után: python3 tools/mkplus.py mat (és mkxaudio.py mat) és újrapublikálás.",
  "events": [
   {
-   "id": "mat-control-1111",
-   "date": "2026-11-11",
-   "type": "control",
-   "title": "Control de Matemáticas (unidades 1 y 2)",
-   "title_hu": "Matek dolgozat (1–2. fejezet)",
-   "units": [
-    "u1",
-    "u2"
-   ],
-   "link_ids": [
-    "control12_pdf",
-    "control12_video",
-    "tablas_pdf",
-    "tablas_video"
-   ]
-  },
-  {
    "id": "mat-tablas-1118",
    "date": "2026-11-18",
    "type": "test",
@@ -33,7 +16,54 @@
     "tablas369_pdf",
     "tablas_pdf"
    ]
+  },
+  {
+   "id": "mat-hw-p65-1119",
+   "date": "2026-11-19",
+   "type": "homework",
+   "title": "Deberes: ejercicio 2 de la página 65 (operaciones combinadas)",
+   "title_hu": "Házi: 65. oldal 2. feladat (műveleti sorrend)",
+   "units": [
+    "u3"
+   ],
+   "link_ids": [
+    "p65_pdf",
+    "p65_video",
+    "p65_solved"
+   ]
+  },
+  {
+   "id": "mat-tablas-1125",
+   "date": "2026-11-25",
+   "type": "test",
+   "title": "Test: tablas de multiplicar",
+   "title_hu": "Szorzótábla-dolgozat",
+   "units": [
+    "u2"
+   ],
+   "link_ids": [
+    "tablasall_pdf",
+    "tablasall_video"
+   ]
+  },
+  {
+   "id": "mat-control-u3-1204",
+   "date": "2026-12-04",
+   "type": "control",
+   "title": "Control de Matemáticas (unidad 3)",
+   "title_hu": "Matek dolgozat (3. fejezet)",
+   "units": [
+    "u3"
+   ],
+   "link_ids": [
+    "ctlu3_pdf",
+    "ctlu3_video",
+    "words_mp3"
+   ]
   }
  ],
- "recurring": []
+ "recurring": [],
+ "default_units": [
+  "u3"
+ ]
 }
