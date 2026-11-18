@@ -10719,8 +10719,8 @@
 "hu": "gömb"
 },
 {
-"t": "una superficie plana",
-"hu": "sík felület"
+"t": "plano",
+"hu": "lapos"
 },
 {
 "t": "un cuadrado",
@@ -10737,16 +10737,16 @@
 "kind": "choice",
 "options": [
 {
-"t": "un mapa que representa la Tierra en una superficie plana",
-"hu": "térkép, ami a Földet sík felületen ábrázolja"
+"t": "un mapa plano",
+"hu": "lapos térkép"
 },
 {
 "t": "una esfera",
 "hu": "gömb"
 },
 {
-"t": "un eje imaginario",
-"hu": "képzeletbeli tengely"
+"t": "un eje",
+"hu": "tengely"
 }
 ],
 "answer": 0,
@@ -10757,8 +10757,8 @@
 "q": "EXPLICA la principal diferencia entre un globo terráqueo y un planisferio.",
 "q_hu": "MAGYARÁZD EL a fő különbséget a földgömb és a síktérkép között.",
 "kind": "open",
-"answer": "El globo terráqueo es una esfera; el planisferio es un mapa plano de toda la Tierra.",
-"answer_hu": "A földgömb gömb; a síktérkép az egész Föld lapos térképe.",
+"answer": "El globo es redondo; el planisferio es plano.",
+"answer_hu": "A földgömb gömbölyű, a síktérkép lapos.",
 "pic": "✍️"
 }
 ],
@@ -10791,8 +10791,8 @@
 "kind": "choice",
 "options": [
 {
-"t": "Esférica",
-"hu": "Gömb alakú"
+"t": "Redonda",
+"hu": "Gömbölyű"
 },
 {
 "t": "Plana",
@@ -10800,7 +10800,7 @@
 },
 {
 "t": "Cuadrada",
-"hu": "Négyzet alakú"
+"hu": "Négyzet"
 }
 ],
 "answer": 0,
@@ -10813,12 +10813,12 @@
 "kind": "choice",
 "options": [
 {
-"t": "El globo terráqueo",
+"t": "El globo",
 "hu": "A földgömb"
 },
 {
-"t": "El mapa plano",
-"hu": "A lapos térkép"
+"t": "El mapa",
+"hu": "A térkép"
 }
 ],
 "answer": 0,
@@ -10829,8 +10829,8 @@
 "q": "JUSTIFICA tu respuesta con una frase.",
 "q_hu": "INDOKOLD MEG a válaszod egy mondattal.",
 "kind": "open",
-"answer": "Porque la Tierra es esférica y el globo también es una esfera, mientras que el mapa es plano.",
-"answer_hu": "Mert a Föld gömb alakú, és a földgömb is gömb, a térkép viszont lapos.",
+"answer": "Porque la Tierra es redonda, como el globo.",
+"answer_hu": "Mert a Föld gömbölyű, mint a földgömb.",
 "pic": "💬"
 }
 ],
@@ -10863,16 +10863,16 @@
 "kind": "choice",
 "options": [
 {
-"t": "…que la Tierra es esférica.",
-"hu": "…hogy a Föld gömb alakú."
+"t": "La Tierra es esférica.",
+"hu": "A Föld gömb alakú."
 },
 {
-"t": "…que la Tierra es cuadrada.",
-"hu": "…hogy a Föld négyzet alakú."
+"t": "La Tierra es cuadrada.",
+"hu": "A Föld négyzet alakú."
 },
 {
-"t": "…que la Tierra es un cilindro.",
-"hu": "…hogy a Föld henger."
+"t": "La Tierra es un cilindro.",
+"hu": "A Föld henger."
 }
 ],
 "answer": 0,
@@ -10885,16 +10885,16 @@
 "kind": "choice",
 "options": [
 {
-"t": "Los planisferios representan toda la superficie de la Tierra.",
-"hu": "A síktérképek a Föld egész felszínét ábrázolják."
+"t": "Representan toda la Tierra.",
+"hu": "Az egész Földet mutatják."
 },
 {
-"t": "Los planisferios representan solo un país.",
-"hu": "A síktérképek csak egy országot ábrázolnak."
+"t": "Solo un país.",
+"hu": "Csak egy országot."
 },
 {
-"t": "Los planisferios no representan la Tierra.",
-"hu": "A síktérképek nem a Földet ábrázolják."
+"t": "No representan la Tierra.",
+"hu": "Nem a Földet mutatják."
 }
 ],
 "answer": 0,
@@ -10907,20 +10907,20 @@
 "kind": "choice",
 "options": [
 {
-"t": "El ecuador es una línea imaginaria que divide la Tierra en dos partes iguales (hemisferios norte y sur).",
-"hu": "Az Egyenlítő képzeletbeli vonal, ami a Földet két egyenlő részre osztja (északi és déli félgömb)."
+"t": "Va de este a oeste.",
+"hu": "Keletről nyugatra megy körbe."
 },
 {
-"t": "El ecuador es una línea real.",
-"hu": "Az Egyenlítő valódi vonal."
+"t": "Es una línea real.",
+"hu": "Valódi vonal."
 },
 {
-"t": "El ecuador es un polo.",
-"hu": "Az Egyenlítő egy sark."
+"t": "Es un polo.",
+"hu": "Egy sark."
 }
 ],
 "answer": 0,
-"answer_hu": "Az Egyenlítő keletről nyugatra veszi körbe a Földet; az északról délre menő tengely a forgástengely.",
+"answer_hu": "Az Egyenlítő keletről nyugatra megy körbe a Föld közepén.",
 "pic": "〰️"
 },
 {
@@ -10930,16 +10930,16 @@
 "kind": "choice",
 "options": [
 {
-"t": "El eje de rotación es una línea imaginaria que atraviesa la Tierra de norte a sur.",
-"hu": "A forgástengely képzeletbeli vonal, ami északról délre szeli át a Földet."
+"t": "Es una línea imaginaria.",
+"hu": "Képzeletbeli vonal."
 },
 {
-"t": "El eje de rotación es una línea real de este a oeste.",
-"hu": "A forgástengely valódi vonal keletről nyugatra."
+"t": "Va de este a oeste.",
+"hu": "Keletről nyugatra megy."
 },
 {
-"t": "El eje de rotación no existe.",
-"hu": "A forgástengely nem létezik."
+"t": "No existe.",
+"hu": "Nem létezik."
 }
 ],
 "answer": 0,
