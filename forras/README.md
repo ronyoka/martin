@@ -138,3 +138,7 @@ SZABÁLY: minden új dolgozatnál a dolgozat fejezeteinek minden könyvoldala (t
 - Új assetek (plus_blobs.json / pg_blobs.json-ban is): mat plus_data 51eaeb9d2ca17c3910f88007be7e4cfd plus_js 9c2ffe9b2febe2e4644ba4785ed5abce x_es b71463f41b8408f98050d99b73d7aae0 x_hu e3021529055d5157acaf3a8c4dce17d8 · lengua plus_data 65d228ca6c220567abee2fa1414445ab plus_js 58da9089cee757f752b98d5e349c5fa6 x_es 13ebc3cab49dc2383cdafa1fa3959b19 x_hu 968736f4b5b623b43cb466916dbc65c5 · cs plus_data de6197961b2d3604fe26d51d9d4943d5 plus_js bd887998d3739cd0133b63b64fa5aff4 x_es bb86e9719676b91a981dcb37de0c67eb x_hu 23a53341d67ac8e5c56808a088d86685.
 - Lengua GitHub: továbbra is csak a `const PD = …` sor cseréje (a teljes kimenet egy valós helynevet tartalmaz).
 - Felkészítő-generátor fejezetdolgozathoz a pages.json-ból: /home/claude/felk/gen.py + vgen.py (a zipben: tools/felk_from_pages.py + tools/felk_video_from_pages.py; a minta a Drive „3 Dolgozatok” 2026-11-30/12-04/12-10 PDF-jei).
+
+## 2026-11-19 – napi ellenőrzés: English control Unit 2 (nov. 26.)
+- en/schedule.json: + en-control-u2-1126 („Why do we have hobbies?”, units u3), a nov. 17-i spelling kikerült; links.json: hobbies_1126_pdf/video. Nyitóoldal const D (en) frissítve.
+- Új en assetek: plus_data 612321194359b583d9ab08dcb9b743dd, x_en 57f6c8efcef94dd696fca30ec1fd90ff, x_hu 194b6e7ffba2986ad2fc0f1179d2112c. Offline: csak a `const PD = …` sor + en_x_*.mp4 csere.
