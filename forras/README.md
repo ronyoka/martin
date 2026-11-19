@@ -142,3 +142,4 @@ SZABÁLY: minden új dolgozatnál a dolgozat fejezeteinek minden könyvoldala (t
 ## 2026-11-19 – napi ellenőrzés: English control Unit 2 (nov. 26.)
 - en/schedule.json: + en-control-u2-1126 („Why do we have hobbies?”, units u3), a nov. 17-i spelling kikerült; links.json: hobbies_1126_pdf/video. Nyitóoldal const D (en) frissítve.
 - Új en assetek: plus_data 612321194359b583d9ab08dcb9b743dd, x_en 57f6c8efcef94dd696fca30ec1fd90ff, x_hu 194b6e7ffba2986ad2fc0f1179d2112c. Offline: csak a `const PD = …` sor + en_x_*.mp4 csere.
+- VISSZAVONVA (2026-11-19): csak az immerziós angol (Cristina, Kid's Box) vonatkozik Martinra; az en-control-u2-1126 esemény kikerült. en plus_data 286ff5e97232703ace96664bb15e230e.
