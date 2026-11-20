@@ -179,7 +179,20 @@
     if (n === 0) it.push(sx('cd_today')); else if (n === 1) it.push(sx('cd_tomorrow')); else if (n > 0 && n < 100) { it.push(sx('cd_prefix')); it.push({ l: 'hu', k: 'n:' + n, t: String(n) }); it.push(sx('cd_days')); }
     it.push({ l: 'hu', k: 'x:ev:' + (ev.rid || ev.id) + ':h', t: ev.title_hu }); say(it); }
   function sayEvent(ev) { say([{ l: C.lang, k: 'x:ev:' + (ev.rid || ev.id) + ':t', t: ev.title }, { l: 'hu', k: 'x:ev:' + (ev.rid || ev.id) + ':h', t: ev.title_hu }]); }
-  function sayTask(t, both) { const mk = l => t.say[l].map(k => ({ l, k, t: '', gap: 30 })); say(both === false ? mk('es') : mk('es').concat(mk('hu'))); }
+  function sayTask(t, both) { const mk = l => t.say[l].map(k => ({ l, k, t: '', gap: 30 })); say(both === false || P.huOff ? mk('es') : mk('es').concat(mk('hu'))); }
+  // ---- magyar kapcsoló + idegen nyelvű válasz kimondása (Robert, 2026-11-20)
+  function huF(items) { if (!P.huOff || !items) return items; const f = items.filter(x => x.l !== 'hu'); return f.length ? f : items; }
+  function biQ(k) { const s = S(k); return P.huOff && s.l ? '<span class="lg">' + esc(s.l) + '</span>' : bi(k); }
+  function numSay(v) { const t = String(v == null ? '' : v).trim(); if (!/^\d{1,4}$/.test(t)) return null; const n = +t; if (C.lang === 'es' && MG && MG.numKeys) return MG.numKeys(n, 'es').map(k => ({ l: 'es', k, t: '', gap: 20 })); return [{ l: C.lang, k: 'n:' + n, t: String(n) }]; }
+  function ansItems(q) { try {
+    const fo = a => (a || []).filter(x => x && x.l !== 'hu');
+    if (q.kind === 'choice' && q.options) { const o = q.options.find(x => String(x.v) === String(q.answer)); if (o) { const ns = numSay(o.label); if (ns) return ns; const s = fo(optSay(o)); if (s.length) return s; } }
+    if (q.mq && q.mq.kind === 'choice') { const o = (q.mq.options || []).find(x => String(x.v) === String(q.mq.answer)); if (o) { const ns = numSay(o.label); if (ns) return ns; const s = fo(optSay(o)); if (s.length) return s; } }
+    if (q.kind === 'num' || q.kind === 'line' || q.kind === 'col' || (q.mq && q.mq.kind === 'num')) { const ns = numSay(q.answer); if (ns) return ns; }
+    if (q.kind === 'type') { const a = fo(q.audio).slice(0, 1); if (a.length) return a; }
+    const r = fo(q.reveal); if (r.length) return r;
+    if (q.rec && q.rec.type === 'w') return [{ l: C.lang, k: q.rec.id, t: q.rec.label }];
+  } catch (e) { } return []; }
   // ================= szókincs, események =================
   let _pool = null;
   function iconOf(gi) { return X.icons[gi] || null; }
@@ -268,7 +281,7 @@
     render({ top: true }); autoAudio(); duelTick();
   }
   function curQ() { const R = ST.run; if (R.gen && !R.qs[R.i]) R.qs[R.i] = R.gen(); return R.qs[R.i]; }
-  function autoAudio() { const q = ST.run && curQ(); if (!q) return; if (q.fix && !ST.run.fixSaid && q.audio) { ST.run.fixSaid = 1; say([sx('i_fix')].concat(q.audio)); return; } if (q.kind === 'flash') { say(q.items.slice(0, 1)); return; } if (q.task) { sayTask(q.task); return; } if (q.audio) say(q.audio); }
+  function autoAudio() { const q = ST.run && curQ(); if (!q) return; if (q.fix && !ST.run.fixSaid && q.audio) { ST.run.fixSaid = 1; say([sx('i_fix')].concat(huF(q.audio))); return; } if (q.kind === 'flash') { say(q.items.slice(0, 1)); return; } if (q.task) { sayTask(q.task); return; } if (q.audio) say(huF(q.audio)); }
   function startTimer() { clearInterval(timerIv); timerIv = setInterval(() => { const R = ST.run; if (!R || !R.end || R.done || ST.view !== 'run') { clearInterval(timerIv); return; } const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); const t = el && el.querySelector('#px-timer'); if (t) t.textContent = Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); if (left <= 0) { clearInterval(timerIv); finishRun(true); } }, 500); }
   function answerRun(resp, extra) {
     const R = ST.run, q = curQ(); if (R.ans !== null && R.mode !== 'test') return; touch(); resp = mqNorm(q, resp); clearTimeout(R.autoT);
@@ -287,8 +300,9 @@
     ST.mood = ok ? 'happy' : 'sad'; try { ok ? H.sfxGood() : H.sfxBad(); } catch (e) { }
     if (cst) award(cst);
     render(); const fb = ok ? pickPraise() : 'fb_bad'; const i0 = R.i;
-    if (ok && R.auto) { R.autoT = setTimeout(() => { if (ST.view === 'run' && ST.run === R && R.i === i0 && !R.done) nextRun(); }, 850); return; }
-    setTimeout(() => { if (ST.view === 'run' && ST.run === R && R.i === i0) { const it = [sx(fb)]; if (!ok && q.reveal) it.push.apply(it, q.reveal); if (ok && q.kind === 'type') it.push(q.audio[0]); say(it); } }, ok ? 900 : 1200);
+    const fa = R.duel ? [] : ansItems(q); const same = () => ST.view === 'run' && ST.run === R && R.i === i0 && !R.done;
+    if (ok && R.auto) { if (fa.length) { R.autoT = setTimeout(() => { if (same()) say(fa, () => { if (same()) R.autoT = setTimeout(() => { if (same()) nextRun(); }, 250); }); }, 500); } else R.autoT = setTimeout(() => { if (same()) nextRun(); }, 850); return; }
+    setTimeout(() => { if (same()) { const it = [sx(fb)]; if (!ok && q.reveal) it.push.apply(it, huF(q.reveal)); if (ok && q.kind === 'type') it.push(q.audio[0]); fa.forEach(a => { if (!it.some(x => x.l === a.l && x.k === a.k)) it.push(a); }); say(it); } }, ok ? 900 : 1200);
   }
   function pickPraise() { return ['fb_ok1', 'fb_ok2', 'fb_ok3', 'fb_ok4'][Math.floor(Math.random() * 4)]; }
   function nextRun() {
@@ -713,9 +727,9 @@
   }
   function pgFinish(R) { const n = nAns(R) || 1; const pc = Math.round(R.score / n * 100); if (R.mode === 'page' && !R.tid) { P.pg = P.pg || {}; const old = P.pg[R.pid] || 0; const s0 = starsOf(old), s1 = starsOf(pc); if (pc > old) P.pg[R.pid] = pc; R.lessonPct = pc; R.newStars = Math.max(0, s1 - s0); markActive(); if (s1 >= 2) celebrate(s1 === 3); return R.newStars * 2 + 2; } R.lessonPct = pc; markActive(); if (pc >= 80) celebrate(pc >= 95); return pc >= 80 ? 2 : pc >= 50 ? 1 : 0; }
   function ctxHtml(q) { if (!q.ctx) return ''; const c = q.ctx; const R = ST.run;
-    return (c.es ? '<div class="px-ctx"><span class="px-pgn">' + esc(c.n) + '</span><div><b>' + esc(c.es) + '</b><small>' + esc(c.hu) + '</small></div></div>' : '') + (c.crop || '') +
+    return (c.es ? '<div class="px-ctx"><span class="px-pgn">' + esc(c.n) + '</span><div><b>' + esc(c.es) + '</b>' + (P.huOff ? '' : '<small>' + esc(c.hu) + '</small>') + '</div></div>' : '') + (c.crop || '') +
       (c.pic || c.vis ? '<div class="px-ctxpic">' + (c.pic ? em(c.pic, 56) : '') + (c.vis ? visMore(c.vis) : '') + '</div>' : '') +
-      (c.help ? (R && R.showHelp ? '<div class="pghelp">' + em('💡', 24) + '<div><b>' + esc(c.help.es) + '</b><small>' + esc(c.help.hu) + '</small></div></div>' : '<button type="button" class="chip" data-a="pgrunhelp">' + em('💡', 20) + ' ' + esc(hu('pg_help')) + '</button>') : ''); }
+      (c.help ? (R && R.showHelp ? '<div class="pghelp">' + em('💡', 24) + '<div><b>' + esc(c.help.es) + '</b>' + (P.huOff ? '' : '<small>' + esc(c.help.hu) + '</small>') + '</div></div>' : '<button type="button" class="chip" data-a="pgrunhelp">' + em('💡', 20) + ' ' + esc(hu('pg_help')) + '</button>') : ''); }
   const PGCSS = '.optw{position:relative;display:flex;min-width:0}.optw>.opt{flex:1;width:100%;padding-right:46px}.optw .osay{position:absolute;top:6px;right:6px;width:40px;height:40px;border-radius:20px;border:2px solid #B85A12;background:#FFF1E4;color:#B85A12;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}.optw .osay svg{width:20px;height:20px}.optw>.opt{word-break:normal;overflow-wrap:break-word;hyphens:auto}@media (max-width:520px){.optw>.opt{font-size:20px;padding:10px 40px 10px 10px}.optw .osay{width:34px;height:34px;top:4px;right:4px}}.px-pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:10px 0}.px-pg{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;background:#fff;border:2px solid #F2C98F;border-radius:16px;padding:10px;cursor:pointer;font:inherit;color:#3A2A12;min-height:110px}.px-pg .top{display:flex;width:100%;justify-content:space-between;align-items:center}.px-pg b{font-size:22px;color:#B85A12}.px-pg .t{font-weight:800;font-size:14px;line-height:1.2}.px-pg small{color:#6B5A44;font-size:12.5px;line-height:1.2}.px-pg .m{margin-top:auto;font-size:11.5px;color:#22603C}.px-pg .m em{color:#B8860B;font-style:normal;font-weight:800}.px-pg.done{border-color:#6BBF59;background:#F1FAEE}.px-pg:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(0,0,0,.08)}' +
     '.pgem{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;flex:0 0 auto}.pgem svg{width:100%;height:100%}.pgemt{line-height:1}' +
     '.px-pghead h2{margin:0}.px-pgsum{margin:8px 0;color:#4A3B26;line-height:1.45}.px-pgtask .tt{display:flex;flex-direction:column;flex:1;min-width:0}.px-pgtask .tt small,.px-ctx small,.pgctx small,.pghelp small{color:#6B5A44;font-size:14px}.px-pgn{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 6px;border-radius:16px;background:#F2891F;color:#fff;font-weight:900;font-size:15px;flex:0 0 auto}' +
@@ -964,7 +978,7 @@
     const R = ST.run; if (!R) return ''; if (R.done) return vRunDone();
     const q = curQ(); const n = R.gen ? (R.limit || R.qs.length) : R.qs.length; const prog = R.endless ? (R.i + 1) + '.' : (R.i + 1) + ' / ' + n;
     let h = topbar(R.title) + '<div class="px-row"><span class="px-prog">' + esc(prog) + '</span>' + comboBadge(R) + (R.end ? '<span class="px-timer" id="px-timer">' + (function () { const left = Math.max(0, Math.round((R.end - Date.now()) / 1000)); return Math.floor(left / 60) + ':' + String(left % 60).padStart(2, '0'); })() + '</span>' : '') + (R.sw ? '<span class="px-timer" id="px-sw">⏱ ' + mqFmt((Date.now() - R.start) / 1000) + '</span>' : '') +
-      (q.audio || q.task || q.items ? '<button type="button" class="pbtn o sm" data-a="qsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button>' : '') + (R.instr && R.mode !== 'test' ? instrBtn(R.instr) : '') + '</div>';
+      (q.audio || q.task || q.items ? '<button type="button" class="pbtn o sm" data-a="qsay">' + ICO.spk + '<span>' + esc(hu('b_again_listen')) + '</span></button>' : '') + (R.instr && R.mode !== 'test' ? instrBtn(R.instr) : '') + '<button type="button" class="pbtn ' + (P.huOff ? 'l' : 'g') + ' sm px-hutog" data-a="hutog" aria-pressed="' + (P.huOff ? 'false' : 'true') + '" title="Magyar felolvasás és magyar szövegek be/ki"><span>Magyarul: ' + (P.huOff ? 'KI' : 'BE') + '</span></button></div>';
     const showFb = R.ans !== null && R.mode !== 'test'; const answered = showFb;
     if (R.boss) h += bossHtml(R); if (R.duel) h += duelHtml(R); if (R.fast && R.flashOk != null) { h += '<div class="fx-flash ' + (R.flashOk ? 'ok' : 'bad') + '">' + (R.flashOk ? '✔' : '✘') + '</div>'; R.flashOk = null; }
     if (R.mode === 'test') { const n2 = R.qs.length || 1; const me = R.score / n2, riv = Math.min(1, R.res.length * 0.75 / n2);
@@ -972,13 +986,13 @@
     h += ctxHtml(q);
     if (q.fix && R.mode !== 'test') h += '<div class="px-fix">' + esc(hu('fix_badge')) + '</div>';
     h += '<div class="px-q' + (showFb ? (R.ok ? ' okfx' : ' badfx') : '') + '">' + (q.again ? '<div class="px-fix">↻ ' + esc(mt('again')) + '</div>' : '') + (R.mode !== 'test' || true ? '<div class="px-kit">' + kitty(showFb ? (R.ok ? 'happy' : 'sad') : (R.ok === 'retry' ? 'sad' : 'idle'), 96, showFb && R.ok ? (ST.kanim || 'k-jump') : '') + '</div>' : '') + '<div class="px-qb">';
-    if (q.prompt) h += '<div class="px-prompt">' + bi(q.prompt) + '</div>';
-    if (q.big) h += '<div class="px-bigq' + (q.part === 'math' ? ' math' : '') + '">' + esc(q.big) + '</div>'; if (q.small) h += '<div class="px-smallq">' + esc(q.small) + '</div>';
+    if (q.prompt) h += '<div class="px-prompt">' + biQ(q.prompt) + '</div>';
+    if (q.big) h += '<div class="px-bigq' + (q.part === 'math' ? ' math' : '') + '">' + esc(q.big) + '</div>'; if (q.small && !P.huOff) h += '<div class="px-smallq">' + esc(q.small) + '</div>';
     if (q.task && q.task.vis) h += visHtml(q.task.vis, q.task);
     if (q.mq && q.mq.vis) h += mqVis(q.mq.vis, q);
     h += '</div></div>';
     if (q.kind === 'choice') h += '<div class="px-opts n' + q.options.length + '">' + q.options.map((o, i) => { let cls = 'opt big'; if (answered) { if (String(o.v) === String(q.answer)) cls += ' correct'; else if (String(o.v) === String(R.ans)) cls += ' wrong'; else cls += ' dim'; }
-      return '<div class="optw"><button type="button" class="' + cls + '" data-a="pick" data-i="' + i + '">' + (o.icon ? '<span class="oi">' + o.icon + '</span>' : '') + '<span>' + esc(o.label) + '</span>' + (o.es ? '<small>' + esc(o.es) + ' · ' + esc(o.hu) + '</small>' : o.sm ? '<small>' + esc(o.sm) + '</small>' : '') + '</button>' + (o.icon && !o.label ? '' : '<button type="button" class="osay" data-a="osay" data-i="' + i + '" aria-label="' + esc(hu('b_listen')) + ': ' + esc(o.label) + '">' + ICO.spk + '</button>') + '</div>'; }).join('') + '</div>';
+      return '<div class="optw"><button type="button" class="' + cls + '" data-a="pick" data-i="' + i + '">' + (o.icon ? '<span class="oi">' + o.icon + '</span>' : '') + '<span>' + esc(o.label) + '</span>' + (o.es ? '<small>' + esc(o.es) + (P.huOff ? '' : ' · ' + esc(o.hu)) + '</small>' : o.sm && !(P.huOff && looksHu(o.sm)) ? '<small>' + esc(o.sm) + '</small>' : '') + '</button>' + (o.icon && !o.label ? '' : '<button type="button" class="osay" data-a="osay" data-i="' + i + '" aria-label="' + esc(hu('b_listen')) + ': ' + esc(o.label) + '">' + ICO.spk + '</button>') + '</div>'; }).join('') + '</div>';
     else if (q.kind === 'type') h += '<div class="px-type"><input id="px-input" class="px-input" type="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" value="' + esc(R.typed) + '" ' + (answered ? 'disabled' : '') + ' placeholder="' + esc(hu('type_here')) + '" aria-label="' + esc(hu('type_here')) + '"><button type="button" class="pbtn g" data-a="check"' + (answered ? ' disabled' : '') + '>' + ICO.ok + '<span>' + esc(hu('b_check')) + '</span></button></div>' + (C.lang === 'es' && !answered ? '<div class="px-chars">' + ['á', 'é', 'í', 'ó', 'ú', 'ñ', 'ü'].map(c => '<button type="button" class="chip" data-a="ch" data-c="' + c + '">' + c + '</button>').join('') + '</div>' : '') + (R.ok === 'retry' ? '<div class="px-fb bad">' + esc(hu('fb_retry')) + '</div>' : '');
     else if (q.kind === 'num') h += numpadHtml(R, answered);
     else if (q.kind === 'line') h += lineHtml(R, q, answered);
@@ -1142,7 +1156,8 @@
       case 'linego': { const R = ST.run; answerRun(R.lineV == null ? ST.run.qs[R.i].task.p.min : R.lineV); break; }
       case 'next': nextRun(); break;
       case 'finish': finishRun(false); break;
-      case 'qsay': { const q = curQ(); if (q.task) sayTask(q.task); else if (q.items) say(q.items); else if (q.audio) say(q.audio); break; }
+      case 'qsay': { const q = curQ(); if (q.task) sayTask(q.task); else if (q.items) say(q.items); else if (q.audio) say(huF(q.audio)); break; }
+      case 'hutog': { P.huOff = !P.huOff; Store.save(); render(); break; }
       case 'rerun': { const R = ST.run; if (R.mode === 'mq') { startMq(R.mqmode); if (ST.run && ST.run.sw) mqSwStart(); } else if (R.mission) startMission(); else if (R.mode === 'test') startTest(R.unit); else if (R.mode === 'lesson') startLesson(R.unit, R.lesson); else if (R.mode === 'page') startPage(R.pid, R.tid); else if (R.mode === 'pgame') startPgGame(R.pid, R.game); else if (R.mode === 'boss') startBoss(R.unit); else if (R.mode === 'blitz') startBlitz(); else if (R.mode === 'duel') startDuel(); else go(R.back || 'home'); break; }
       case 'lesson': startLesson(d.u, d.c); break;
       case 'locked': toast(L3('Még zárva – előbb az előző állomás!', '', '').hu); try { H.sfxBad(); } catch (e) { } break;
