@@ -17,7 +17,7 @@ R=ParagraphStyle('r',fontName='DB',fontSize=9.5,leading=12.5,textColor=colors.He
 EMO=re.compile('[\U0001F000-\U0001FAFF☀-➿️‍⬀-⯿]+')
 def e(t): return E_(EMO.sub('',str(t or ''))).strip()
 cfg=json.load(open(sys.argv[1]))
-pages=[p for p in json.load(open(cfg['pages']))['pages'] if p['unit']==cfg['unit']]
+pages=[p for p in json.load(open(cfg['pages']))['pages'] if p['unit']==cfg['unit'] and (not cfg.get('only') or [p['book'],p['page']] in cfg['only'])]
 BK={'tb':'Tankönyv','cu':'Munkafüzet','sb':'Saberes básicos'}
 s=[Paragraph(e(cfg['title']),H1),Paragraph(cfg['head'],P),Paragraph('A feladat (Esemtia)',H2),Paragraph(e(cfg['orig']),P),Paragraph(e(cfg['orig_hu']),I)]
 s.append(Paragraph('A fejezet magyarul – áttekintés',H2))

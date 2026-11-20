@@ -3,7 +3,7 @@ from mkvid2 import *
 cfg=json.load(open(sys.argv[1])); V=json.load(open(sys.argv[2]))
 EMO=re.compile('[\U0001F000-\U0001FAFF☀-➿️‍⬀-⯿]+')
 def c(t): return EMO.sub('',str(t)).strip()
-pages=[p for p in json.load(open(cfg['pages']))['pages'] if p['unit']==cfg['unit']]
+pages=[p for p in json.load(open(cfg['pages']))['pages'] if p['unit']==cfg['unit'] and (not cfg.get('only') or [p['book'],p['page']] in cfg['only'])]
 S=[]
 S.append(dict(steps=[dict(items=[dict(y=170,sz=48,b=True,text=V['t1'],c=BLUE),dict(y=260,sz=32,text=V['t2'])],say=[('hu',V['hello'])]),
  dict(items=[dict(y=370,sz=34,text=V['date'],c=RED)],say=[('hu',V['date_say'])]),

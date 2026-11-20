@@ -31,6 +31,17 @@
     "plantas_pdf",
     "plantas_video"
    ]
+  },
+  {
+   "id": "lengua-hw-refuerzo-1204",
+   "date": "2026-12-04",
+   "type": "homework",
+   "title": "Material de refuerzo de caligrafía y lectura",
+   "title_hu": "Szépírás- és olvasásgyakorló lapok leadása",
+   "units": [
+    "u3"
+   ],
+   "link_ids": []
   }
  ],
  "recurring": []

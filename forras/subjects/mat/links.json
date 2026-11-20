@@ -232,6 +232,36 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "cu2728_pdf",
+   "kind": "pdf",
+   "title": "Preparación: cuadernillo 27–28",
+   "title_hu": "Felkészítő: munkafüzet 27–28. o.",
+   "drive": "108YZo2ZKeNRraMPV3PsGvDLnswDOYGb7",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "cu2728_video",
+   "kind": "video",
+   "title": "Vídeo: cuadernillo 27–28",
+   "title_hu": "Videó: munkafüzet 27–28. o.",
+   "drive": "1SnknTtabhfIgqOaMcjBPQb1N3urldZOa",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "cu2728_solved",
+   "kind": "pdf",
+   "title": "Páginas resueltas: cuadernillo 27–28",
+   "title_hu": "Megoldott lapok: munkafüzet 27–28. o.",
+   "drive": "1z0hFmMKCl4WPUpgK74bP8xMTBOb7am6K",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

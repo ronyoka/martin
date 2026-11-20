@@ -2,22 +2,6 @@
  "_doc": "Napi ellenőrzés: közelgő dolgozatok/házik. date=YYYY-MM-DD; type=homework|control|test; units=fejezet-id-k (u1..u9); link_ids=a links.json elemei. Módosítás után: python3 tools/mkplus.py mat (és mkxaudio.py mat) és újrapublikálás.",
  "events": [
   {
-   "id": "mat-tablas-1118",
-   "date": "2026-11-18",
-   "type": "test",
-   "title": "Mini test: todas las tablas de multiplicar",
-   "title_hu": "Szorzótábla mini-teszt: minden tábla",
-   "units": [
-    "u2"
-   ],
-   "link_ids": [
-    "tablasall_pdf",
-    "tablasall_video",
-    "tablas369_pdf",
-    "tablas_pdf"
-   ]
-  },
-  {
    "id": "mat-hw-p65-1119",
    "date": "2026-11-19",
    "type": "homework",
@@ -30,6 +14,21 @@
     "p65_pdf",
     "p65_video",
     "p65_solved"
+   ]
+  },
+  {
+   "id": "mat-hw-cu27-1124",
+   "date": "2026-11-24",
+   "type": "homework",
+   "title": "Deberes: cuadernillo págs. 27 y 28 (propiedades de la multiplicación)",
+   "title_hu": "Házi: munkafüzet 27–28. oldal (a szorzás tulajdonságai)",
+   "units": [
+    "u3"
+   ],
+   "link_ids": [
+    "cu2728_pdf",
+    "cu2728_video",
+    "cu2728_solved"
    ]
   },
   {
