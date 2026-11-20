@@ -143,3 +143,9 @@ SZABÁLY: minden új dolgozatnál a dolgozat fejezeteinek minden könyvoldala (t
 - en/schedule.json: + en-control-u2-1126 („Why do we have hobbies?”, units u3), a nov. 17-i spelling kikerült; links.json: hobbies_1126_pdf/video. Nyitóoldal const D (en) frissítve.
 - Új en assetek: plus_data 612321194359b583d9ab08dcb9b743dd, x_en 57f6c8efcef94dd696fca30ec1fd90ff, x_hu 194b6e7ffba2986ad2fc0f1179d2112c. Offline: csak a `const PD = …` sor + en_x_*.mp4 csere.
 - VISSZAVONVA (2026-11-19): csak az immerziós angol (Cristina, Kid's Box) vonatkozik Martinra; az en-control-u2-1126 esemény kikerült. en plus_data 286ff5e97232703ace96664bb15e230e.
+
+## 2026-11-20 – napi ellenőrzés: mat házi nov. 24. (munkafüzet 27–28) + lengua refuerzo dec. 4.
+- mat/schedule.json: + mat-hw-cu27-1124 (cu2728_pdf/video/solved a links.json-ban); a nov. 18-i tablas kikerült. lengua/schedule.json: + lengua-hw-refuerzo-1204 (szépírás/olvasás – papír, nincs fotó). Robert: Martin spanyolból NEM immerziós → a nov. 30-i Lengua control rá is vonatkozik.
+- Új felkészítő-szűrő: /home/claude/felk/gen.py + vgen.py = tools/felk_from_pages.py / felk_video_from_pages.py + cfg "only": [[könyv, oldal], …] (csak a megadott oldalak).
+- Új assetek: mat plus_data 19ab63ef72b0cd375a2098e78ac7ac40 x_es 902edf2a337161e512e7c85b5e7fe320 x_hu 38e625c87ba80764859a1550b897214e (v33) · lengua plus_data 642ea8b6ce142f491e742bb43beb76fc x_es 7d045763523d0f862216912461b6ee4a x_hu 8b4d5b644a9e2208b0507dcbedfa8500 (v27).
+- Offline: a `const PD = …` sor cseréje (GitHub: imgs üres; Drive: imgs → pgimg/<img>.jpg) + <subj>_x_*.mp4.
