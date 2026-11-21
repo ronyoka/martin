@@ -146,6 +146,36 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "cl1_pdf",
+   "kind": "pdf",
+   "title": "Preparación: Comprensión lectora 1",
+   "title_hu": "Felkészítő: Comprensión lectora 1 (A béka álmai)",
+   "drive": "1iH6XtiTScW1LBJ6qqElFRuBAmkUI_e4F",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "cl1_video",
+   "kind": "video",
+   "title": "Vídeo: Los sueños del sapo",
+   "title_hu": "Videó: A béka álmai",
+   "drive": "1v3vhBWWkV88AOD2SCB3LoJe0gCccFoU2",
+   "units": [
+    "u3"
+   ]
+  },
+  {
+   "id": "cl1_solved",
+   "kind": "pdf",
+   "title": "Páginas resueltas: Comprensión lectora 4–9",
+   "title_hu": "Megoldott lapok: Comprensión lectora 4–9. o.",
+   "drive": "1bQyACTNOj8eXjTaOfsG78SBcLauR80_f",
+   "units": [
+    "u3"
+   ]
   }
  ]
 }

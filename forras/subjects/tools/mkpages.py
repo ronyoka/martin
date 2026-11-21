@@ -6,6 +6,7 @@ BOOKS = {'mat': [('tb', 'Matemáticas 3', 'Tankönyv'), ('cu', 'Cuaderno de acti
          'lengua': [('tb', 'Lengua 3', 'Tankönyv'), ('cu', 'Cuaderno', 'Munkafüzet'), ('sb', 'Saberes básicos', 'Saberes básicos')],
          'en': [('pb', "Pupil's Book", "Pupil's Book (tankönyv)"), ('ab', 'Activity Book', 'Activity Book (munkafüzet)'), ('hb', 'Home Booklet', 'Home Booklet')],
          'ns': [], 'ac': []}[subj]
+BOOKS = [('hw', 'Deberes', 'Házi feladatok')] + BOOKS  # 2026-11-21: házinként külön kérdéssor + szószedet
 spec = importlib.util.spec_from_file_location('content', folder + '/content.py'); C = importlib.util.module_from_spec(spec)
 try: spec.loader.exec_module(C)
 except SystemExit: pass
@@ -37,9 +38,12 @@ pages = blank(pages)
 # oldalképek mérete (a kivágáshoz) – subjects/<subj>/pgimg/<img>.jpg; a kép NEM kerül a nyilvános GitHub-másolatba
 from PIL import Image
 imgs = {}
+try: _old = json.load(open(folder + '/pages.json')).get('imgsize', {})
+except Exception: _old = {}
 for p in pages:
     f = f"{folder}/pgimg/{p.get('img', '')}.jpg"
     if p.get('img') and os.path.exists(f): imgs[p['img']] = list(Image.open(f).size)
+    elif p.get('img') and p['img'] in _old: imgs[p['img']] = _old[p['img']]  # pgimg nincs a zipben: a régi méret marad
     elif p.get('img'): bad.append('noimg:' + p['img'])
 pages.sort(key=lambda p: ([b[0] for b in BOOKS].index(p['book']), p['page']))
 json.dump({'books': [dict(id=a, title=b, title_hu=c) for a, b, c in BOOKS], 'imgsize': imgs, 'pages': pages}, open(folder + '/pages.json', 'w'), ensure_ascii=False, indent=0)

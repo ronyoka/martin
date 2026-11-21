@@ -13,7 +13,12 @@
    "units": [
     "u3"
    ],
-   "link_ids": []
+   "link_ids": [
+    "cl1_pdf",
+    "cl1_video",
+    "cl1_solved"
+   ],
+   "hw": "hw1123"
   },
   {
    "id": "lengua-control-u3-1130",

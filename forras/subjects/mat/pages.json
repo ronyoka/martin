@@ -1,6 +1,11 @@
 {
 "books": [
 {
+"id": "hw",
+"title": "Deberes",
+"title_hu": "Házi feladatok"
+},
+{
 "id": "tb",
 "title": "Matemáticas 3",
 "title_hu": "Tankönyv"
@@ -362,6 +367,874 @@
 ]
 },
 "pages": [
+{
+"id": "hw1124",
+"book": "hw",
+"page": 1124,
+"date": "2026-11-24",
+"unit": "u3",
+"title": "Deberes: cuadernillo págs. 27 y 28 – Propiedades de la multiplicación",
+"title_hu": "Házi: munkafüzet 27–28. o. – A szorzás tulajdonságai",
+"summary_hu": "Keddre (nov. 24.): a matek munkafüzet 27. és 28. oldala. Felcserélhetőség: a tényezők sorrendje nem számít (5 × 8 = 8 × 5). Csoportosíthatóság: három számnál a zárójel helye nem számít ((3 × 2) × 5 = 3 × (2 × 5)). Itt mind a 6 feladat gyakorolható.",
+"words": [
+{
+"w": "la propiedad",
+"hu": "tulajdonság",
+"pic": "🏷️"
+},
+{
+"w": "conmutativa",
+"hu": "felcserélhetőségi",
+"pic": "🔄"
+},
+{
+"w": "asociativa",
+"hu": "csoportosíthatósági",
+"pic": "🧩"
+},
+{
+"w": "el factor",
+"hu": "tényező",
+"pic": "🔢"
+},
+{
+"w": "el producto",
+"hu": "szorzat",
+"pic": "✖️"
+},
+{
+"w": "el orden",
+"hu": "sorrend",
+"pic": "🔀"
+},
+{
+"w": "el paréntesis",
+"hu": "zárójel",
+"pic": "🫷"
+},
+{
+"w": "verdadero",
+"hu": "igaz",
+"pic": "✅"
+},
+{
+"w": "falso",
+"hu": "hamis",
+"pic": "❌"
+},
+{
+"w": "altera",
+"hu": "megváltoztat",
+"pic": "🔄"
+},
+{
+"w": "aplicar",
+"hu": "alkalmazni",
+"pic": "🛠️"
+},
+{
+"w": "el resultado",
+"hu": "eredmény",
+"pic": "🎯"
+},
+{
+"w": "relaciona",
+"hu": "kösd össze",
+"pic": "🔗"
+},
+{
+"w": "el cesto",
+"hu": "kosár",
+"pic": "🧺"
+},
+{
+"w": "la manzana",
+"hu": "alma",
+"pic": "🍎"
+},
+{
+"w": "averigua",
+"hu": "derítsd ki",
+"pic": "🔍"
+},
+{
+"w": "la tienda",
+"hu": "bolt",
+"pic": "🏪"
+},
+{
+"w": "el estante",
+"hu": "polc",
+"pic": "🗄️"
+},
+{
+"w": "la caja",
+"hu": "doboz",
+"pic": "📦"
+},
+{
+"w": "el juguete",
+"hu": "játék",
+"pic": "🧸"
+},
+{
+"w": "calcula",
+"hu": "számold ki",
+"pic": "🧮"
+},
+{
+"w": "más",
+"hu": "több",
+"pic": "➕"
+},
+{
+"w": "su amiga",
+"hu": "barátnője",
+"pic": "👧"
+},
+{
+"w": "multiplicar",
+"hu": "szorozni",
+"pic": "✖️"
+},
+{
+"w": "la cesta",
+"hu": "kosár",
+"pic": "🧺"
+},
+{
+"w": "completa",
+"hu": "egészítsd ki",
+"pic": "✍️"
+}
+],
+"tasks": [
+{
+"id": "hw1124_1",
+"n": "1",
+"text": "(pág. 27) Escribe V si es verdadero y F si es falso.",
+"text_hu": "(27. o.) Írj V-t, ha igaz, és F-et, ha hamis.",
+"items": [
+{
+"id": "hw1124_1a",
+"q": "El orden de los factores altera el producto.",
+"q_hu": "A tényezők sorrendje megváltoztatja a szorzatot.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 1,
+"pic": "❌",
+"answer_hu": "Hamis: a sorrend nem változtatja meg a szorzatot."
+},
+{
+"id": "hw1124_1b",
+"q": "El resultado de 4 × 7 es el mismo que el de 7 × 4.",
+"q_hu": "A 4 × 7 eredménye ugyanaz, mint a 7 × 4-é.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0,
+"pic": "✅",
+"answer_hu": "Igaz"
+},
+{
+"id": "hw1124_1c",
+"q": "La propiedad asociativa se utiliza con dos números.",
+"q_hu": "A csoportosíthatósági tulajdonságot két számnál használjuk.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 1,
+"pic": "❌",
+"answer_hu": "Hamis: legalább három számnál használjuk."
+},
+{
+"id": "hw1124_1d",
+"q": "El resultado de (2 × 5) × 3 es el mismo que el de 2 × (5 × 3).",
+"q_hu": "A (2 × 5) × 3 eredménye ugyanaz, mint a 2 × (5 × 3)-é.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0,
+"pic": "✅",
+"answer_hu": "Igaz"
+},
+{
+"id": "hw1124_1e",
+"q": "La igualdad de 5 × (2 × 8) = (5 × 2) × 8 es un ejemplo de la propiedad conmutativa.",
+"q_hu": "Az 5 × (2 × 8) = (5 × 2) × 8 egyenlőség a felcserélhetőségi tulajdonság példája.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 1,
+"pic": "❌",
+"answer_hu": "Hamis: ez a csoportosíthatósági (asszociatív) tulajdonság."
+}
+],
+"context": {
+"es": "Hay cinco frases sobre las propiedades conmutativa y asociativa. Cada una tiene una casilla para V o F.",
+"hu": "Öt mondat van a felcserélhetőségi és a csoportosíthatósági tulajdonságról. Mindegyik mellett egy négyzet van a V vagy F betűnek."
+},
+"help": {
+"es": "Mira el cuadro «Recuerda»: conmutativa = cambiar el orden; asociativa = agrupar con paréntesis.",
+"hu": "Nézd a „Recuerda” dobozt: felcserélhetőség = a sorrend változik; csoportosítás = zárójellel."
+},
+"pic": "✅❌"
+},
+{
+"id": "hw1124_2",
+"n": "2",
+"text": "(pág. 27) Completa estas igualdades aplicando la propiedad conmutativa.",
+"text_hu": "(27. o.) Egészítsd ki az egyenlőségeket a felcserélhetőségi tulajdonság alkalmazásával.",
+"items": [
+{
+"id": "hw1124_2a",
+"q": "6 × 8 = … × 6",
+"q_hu": "6 × 8 = … × 6",
+"kind": "num",
+"answer": "8",
+"pic": "🔄"
+},
+{
+"id": "hw1124_2b",
+"q": "6 × 8 = …",
+"q_hu": "6 × 8 = …",
+"kind": "num",
+"answer": "48",
+"pic": "✖️",
+"vis": {
+"type": "groups",
+"n": 6,
+"size": 8
+}
+},
+{
+"id": "hw1124_2c",
+"q": "9 × … = 2 × 9",
+"q_hu": "9 × … = 2 × 9",
+"kind": "num",
+"answer": "2",
+"pic": "🔄"
+},
+{
+"id": "hw1124_2d",
+"q": "2 × 9 = …",
+"q_hu": "2 × 9 = …",
+"kind": "num",
+"answer": "18",
+"pic": "✖️",
+"vis": {
+"type": "groups",
+"n": 2,
+"size": 9
+}
+}
+],
+"context": {
+"es": "Hay dos filas: 6 × 8 = … × … = … y 9 × … = 2 × … = …. Hay que cambiar el orden de los factores.",
+"hu": "Két sor van: 6 × 8 = … × … = … és 9 × … = 2 × … = …. A tényezők sorrendjét kell felcserélni."
+},
+"help": {
+"es": "Cambia el orden: 6 × 8 es igual a 8 × 6. Después calcula el producto.",
+"hu": "Cseréld fel a sorrendet: a 6 × 8 ugyanannyi, mint a 8 × 6. Aztán számold ki a szorzatot."
+},
+"pic": "🔄"
+},
+{
+"id": "hw1124_3",
+"n": "3",
+"text": "(pág. 27) Multiplica los factores de dos maneras diferentes.",
+"text_hu": "(27. o.) Szorozd össze a tényezőket kétféleképpen.",
+"items": [
+{
+"id": "hw1124_3a",
+"q": "(3 × 2) × 5 = ?",
+"q_hu": "(3 × 2) × 5 = ?",
+"kind": "num",
+"answer": "30",
+"pic": "1️⃣",
+"vis": {
+"type": "groups",
+"n": 6,
+"size": 5
+}
+},
+{
+"id": "hw1124_3b",
+"q": "3 × (2 × 5) = ?",
+"q_hu": "3 × (2 × 5) = ?",
+"kind": "num",
+"answer": "30",
+"pic": "2️⃣",
+"vis": {
+"type": "groups",
+"n": 3,
+"size": 10
+}
+},
+{
+"id": "hw1124_3c",
+"q": "¿Has obtenido el mismo resultado en las dos maneras?",
+"q_hu": "Ugyanazt az eredményt kaptad a két módon?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0,
+"pic": "🟰",
+"answer_hu": "Igen, mindkétszer 30."
+},
+{
+"id": "hw1124_3d",
+"q": "¿Qué propiedad has aplicado al agrupar los factores de dos maneras?",
+"q_hu": "Melyik tulajdonságot alkalmaztad, amikor kétféleképpen csoportosítottad a tényezőket?",
+"kind": "choice",
+"options": [
+{
+"t": "Propiedad conmutativa",
+"hu": "Felcserélhetőségi tulajdonság"
+},
+{
+"t": "Propiedad asociativa",
+"hu": "Csoportosíthatósági tulajdonság"
+}
+],
+"answer": 1,
+"pic": "🧩",
+"answer_hu": "Csoportosíthatósági (asszociatív) tulajdonság."
+}
+],
+"context": {
+"es": "Hay dos cuadros con 3 × 2 × 5. En uno agrupas 3 × 2 primero; en el otro, 2 × 5 primero. Debajo hay dos preguntas.",
+"hu": "Két keretben ott a 3 × 2 × 5. Az egyikben először a 3 × 2-t, a másikban a 2 × 5-öt számolod. Alatta két kérdés van."
+},
+"help": {
+"es": "Haz primero lo que está dentro del paréntesis y después lo que queda.",
+"hu": "Először a zárójelben lévőt számold ki, utána a maradékot."
+},
+"pic": "🧩"
+},
+{
+"id": "hw1124_4",
+"n": "4",
+"text": "(pág. 28) Relaciona cada operación con la propiedad que se aplica.",
+"text_hu": "(28. o.) Kösd össze mindegyik műveletet a megfelelő tulajdonsággal.",
+"items": [
+{
+"id": "hw1124_4a",
+"q": "¿Qué propiedad se aplica en 5 × 9 = 9 × 5?",
+"q_hu": "Melyik tulajdonságot alkalmazzuk itt: 5 × 9 = 9 × 5?",
+"kind": "choice",
+"options": [
+{
+"t": "Propiedad conmutativa",
+"hu": "Felcserélhetőségi tulajdonság"
+},
+{
+"t": "Propiedad asociativa",
+"hu": "Csoportosíthatósági tulajdonság"
+}
+],
+"answer": 0,
+"pic": "🔗",
+"answer_hu": "Felcserélhetőségi"
+},
+{
+"id": "hw1124_4b",
+"q": "¿Qué propiedad se aplica en (7 × 2) × 3 = 7 × (2 × 3)?",
+"q_hu": "Melyik tulajdonságot alkalmazzuk itt: (7 × 2) × 3 = 7 × (2 × 3)?",
+"kind": "choice",
+"options": [
+{
+"t": "Propiedad conmutativa",
+"hu": "Felcserélhetőségi tulajdonság"
+},
+{
+"t": "Propiedad asociativa",
+"hu": "Csoportosíthatósági tulajdonság"
+}
+],
+"answer": 1,
+"pic": "🔗",
+"answer_hu": "Csoportosíthatósági"
+},
+{
+"id": "hw1124_4c",
+"q": "¿Qué propiedad se aplica en 1 × 8 = 8 × 1?",
+"q_hu": "Melyik tulajdonságot alkalmazzuk itt: 1 × 8 = 8 × 1?",
+"kind": "choice",
+"options": [
+{
+"t": "Propiedad conmutativa",
+"hu": "Felcserélhetőségi tulajdonság"
+},
+{
+"t": "Propiedad asociativa",
+"hu": "Csoportosíthatósági tulajdonság"
+}
+],
+"answer": 0,
+"pic": "🔗",
+"answer_hu": "Felcserélhetőségi"
+},
+{
+"id": "hw1124_4d",
+"q": "¿Qué propiedad se aplica en 4 × (2 × 6) = (4 × 2) × 6?",
+"q_hu": "Melyik tulajdonságot alkalmazzuk itt: 4 × (2 × 6) = (4 × 2) × 6?",
+"kind": "choice",
+"options": [
+{
+"t": "Propiedad conmutativa",
+"hu": "Felcserélhetőségi tulajdonság"
+},
+{
+"t": "Propiedad asociativa",
+"hu": "Csoportosíthatósági tulajdonság"
+}
+],
+"answer": 1,
+"pic": "🔗",
+"answer_hu": "Csoportosíthatósági"
+}
+],
+"context": {
+"es": "A la izquierda hay cuatro igualdades; a la derecha, dos propiedades: conmutativa y asociativa.",
+"hu": "Balra négy egyenlőség van, jobbra két tulajdonság: felcserélhetőségi és csoportosíthatósági."
+},
+"help": {
+"es": "Si cambia el orden de dos factores, es conmutativa. Si cambian los paréntesis, es asociativa.",
+"hu": "Ha két tényező sorrendje változik: felcserélhetőség. Ha a zárójel változik: csoportosítás."
+},
+"pic": "🔗"
+},
+{
+"id": "hw1124_5",
+"n": "5",
+"text": "(pág. 28) María tiene 3 cestos con 4 manzanas cada uno. Su amiga Ana tiene 4 cestos con 3 manzanas cada uno. Averigua quién de las dos tiene más manzanas.",
+"text_hu": "(28. o.) Máriának 3 kosara van, mindegyikben 4 alma. Barátnőjének, Annának 4 kosara van, mindegyikben 3 alma. Derítsd ki, melyiküknek van több almája.",
+"items": [
+{
+"id": "hw1124_5a",
+"q": "María tiene 3 cestos con 4 manzanas cada uno. ¿Cuántas manzanas tiene?",
+"q_hu": "Máriának 3 kosara van, mindegyikben 4 alma. Hány almája van?",
+"kind": "num",
+"answer": "12",
+"pic": "🍎",
+"vis": {
+"type": "groups",
+"n": 3,
+"size": 4
+}
+},
+{
+"id": "hw1124_5b",
+"q": "Ana tiene 4 cestos con 3 manzanas cada uno. ¿Cuántas manzanas tiene?",
+"q_hu": "Annának 4 kosara van, mindegyikben 3 alma. Hány almája van?",
+"kind": "num",
+"answer": "12",
+"pic": "🍏",
+"vis": {
+"type": "groups",
+"n": 4,
+"size": 3
+}
+},
+{
+"id": "hw1124_5c",
+"q": "María tiene … manzanas que Ana.",
+"q_hu": "Mária … almája van, mint Annának.",
+"kind": "choice",
+"options": [
+{
+"t": "más",
+"hu": "több"
+},
+{
+"t": "menos",
+"hu": "kevesebb"
+},
+{
+"t": "las mismas",
+"hu": "ugyanannyi"
+}
+],
+"answer": 2,
+"pic": "🟰",
+"answer_hu": "Ugyanannyi (12 és 12)."
+},
+{
+"id": "hw1124_5d",
+"q": "¿Qué propiedad de la multiplicación observas?",
+"q_hu": "Melyik szorzási tulajdonságot figyeled meg?",
+"kind": "choice",
+"options": [
+{
+"t": "Propiedad conmutativa",
+"hu": "Felcserélhetőségi tulajdonság"
+},
+{
+"t": "Propiedad asociativa",
+"hu": "Csoportosíthatósági tulajdonság"
+}
+],
+"answer": 0,
+"pic": "🔄",
+"answer_hu": "Felcserélhetőségi: 3 × 4 = 4 × 3."
+}
+],
+"context": {
+"es": "No hay dibujo, solo un espacio para calcular. María: 3 cestos de 4 manzanas. Ana: 4 cestos de 3 manzanas.",
+"hu": "Nincs rajz, csak hely a számoláshoz. Mária: 3 kosár × 4 alma. Anna: 4 kosár × 3 alma."
+},
+"help": {
+"es": "Calcula 3 × 4 y 4 × 3 y compara.",
+"hu": "Számold ki a 3 × 4-et és a 4 × 3-at, aztán hasonlítsd össze."
+},
+"pic": "🍎🧺"
+},
+{
+"id": "hw1124_6",
+"n": "6",
+"text": "(pág. 28) En una tienda hay 3 estantes con 4 cajas de juguetes cada uno. Cada caja contiene 2 juguetes. Calcula cuántos juguetes hay en los estantes.",
+"text_hu": "(28. o.) Egy boltban 3 polc van, mindegyiken 4 játékos doboz. Minden dobozban 2 játék van. Számold ki, hány játék van a polcokon.",
+"items": [
+{
+"id": "hw1124_6a",
+"q": "Hay 3 estantes con 4 cajas cada uno. ¿Cuántas cajas hay?",
+"q_hu": "3 polc van, mindegyiken 4 doboz. Hány doboz van?",
+"kind": "num",
+"answer": "12",
+"pic": "📦",
+"vis": {
+"type": "groups",
+"n": 3,
+"size": 4
+}
+},
+{
+"id": "hw1124_6b",
+"q": "Cada caja contiene 2 juguetes. ¿Cuántos juguetes hay en los estantes?",
+"q_hu": "Minden dobozban 2 játék van. Hány játék van a polcokon?",
+"kind": "num",
+"answer": "24",
+"pic": "🧸",
+"vis": {
+"type": "groups",
+"n": 12,
+"size": 2
+}
+}
+],
+"context": {
+"es": "El dibujo muestra 3 estantes con 4 cajas de colores cada uno, llenas de juguetes.",
+"hu": "A rajzon 3 polc van, mindegyiken 4 színes doboz tele játékkal."
+},
+"help": {
+"es": "Primero cuenta las cajas (3 × 4) y luego multiplica por 2. Es la propiedad asociativa: 3 × 4 × 2.",
+"hu": "Előbb számold meg a dobozokat (3 × 4), aztán szorozd 2-vel. Ez a csoportosítás: 3 × 4 × 2."
+},
+"pic": "🧸📦"
+}
+],
+"learn": {
+"intro": {
+"es": "¡Hoy practicamos las propiedades de la multiplicación!",
+"hu": "Ma a szorzás tulajdonságait gyakoroljuk!"
+},
+"sentences": [
+{
+"es": "Esta es la Ficha 1 de la situación de aprendizaje 3: las propiedades de la multiplicación.",
+"hu": "Ez a 3. témakör 1. lapja: a szorzás tulajdonságai.",
+"pic": "📘"
+},
+{
+"es": "La propiedad conmutativa dice: si cambiamos el orden de los factores, el producto no cambia.",
+"hu": "A felcserélhetőségi tulajdonság: ha felcseréljük a tényezők sorrendjét, a szorzat nem változik.",
+"pic": "🔄"
+},
+{
+"es": "Por ejemplo, 5 × 8 es igual a 8 × 5. Los dos dan 40.",
+"hu": "Például az 5 × 8 ugyanannyi, mint a 8 × 5. Mindkettő 40.",
+"pic": "🟰",
+"vis": {
+"type": "groups",
+"n": 5,
+"size": 8
+}
+},
+{
+"es": "La propiedad asociativa se usa cuando multiplicamos tres números o más.",
+"hu": "A csoportosíthatósági tulajdonságot három vagy több szám szorzásánál használjuk.",
+"pic": "🧩"
+},
+{
+"es": "Podemos agrupar los factores de distintas maneras con paréntesis, y el producto es el mismo.",
+"hu": "A tényezőket zárójellel többféleképpen csoportosíthatjuk, és a szorzat ugyanaz marad.",
+"pic": "🔗"
+},
+{
+"es": "Ejemplo: (6 × 3) × 4. Primero 6 × 3 = 18, y después 18 × 4 = 72.",
+"hu": "Példa: (6 × 3) × 4. Először 6 × 3 = 18, utána 18 × 4 = 72.",
+"pic": "1️⃣"
+},
+{
+"es": "Ahora al revés: 6 × (3 × 4). Primero 3 × 4 = 12, y después 6 × 12 = 72.",
+"hu": "Most fordítva: 6 × (3 × 4). Először 3 × 4 = 12, utána 6 × 12 = 72.",
+"pic": "2️⃣"
+},
+{
+"es": "Los dos resultados son 72, por eso (6 × 3) × 4 = 6 × (3 × 4).",
+"hu": "Mindkét eredmény 72, ezért (6 × 3) × 4 = 6 × (3 × 4).",
+"pic": "🟰"
+},
+{
+"es": "Los paréntesis nos dicen qué operación hacemos primero.",
+"hu": "A zárójel megmondja, melyik műveletet végezzük el először.",
+"pic": "➗"
+},
+{
+"es": "Con 3 × 2 × 5 podemos hacer (3 × 2) × 5 o 3 × (2 × 5). En los dos casos sale 30.",
+"hu": "A 3 × 2 × 5-nél lehet (3 × 2) × 5 vagy 3 × (2 × 5). Mindkét esetben 30 jön ki.",
+"pic": "🔢",
+"vis": {
+"type": "groups",
+"n": 6,
+"size": 5
+}
+},
+{
+"es": "Para relacionar una operación con su propiedad, miramos qué cambia.",
+"hu": "Hogy egy műveletet a tulajdonságához kössünk, megnézzük, mi változik.",
+"pic": "🔍"
+},
+{
+"es": "Si cambia el orden de dos factores, es la propiedad conmutativa: 5 × 9 = 9 × 5.",
+"hu": "Ha két tényező sorrendje változik, az a felcserélhetőség: 5 × 9 = 9 × 5.",
+"pic": "🔄",
+"vis": {
+"type": "groups",
+"n": 5,
+"size": 9
+}
+},
+{
+"es": "Si cambian los paréntesis entre tres factores, es la propiedad asociativa.",
+"hu": "Ha három tényező közt a zárójel változik, az a csoportosítás.",
+"pic": "🧩"
+},
+{
+"es": "(7 × 2) × 3 = 7 × (2 × 3) es asociativa. Los dos lados dan 42.",
+"hu": "A (7 × 2) × 3 = 7 × (2 × 3) csoportosítás. Mindkét oldal 42.",
+"pic": "🟰"
+},
+{
+"es": "María tiene 3 cestos con 4 manzanas cada uno: 3 × 4 = 12 manzanas.",
+"hu": "Máriának 3 kosara van, 4-4 almával: 3 × 4 = 12 alma.",
+"pic": "🍎",
+"vis": {
+"type": "groups",
+"n": 3,
+"size": 4
+}
+},
+{
+"es": "Ana tiene 4 cestos con 3 manzanas cada uno: 4 × 3 = 12 manzanas.",
+"hu": "Annának 4 kosara van, 3-3 almával: 4 × 3 = 12 alma.",
+"pic": "🍏",
+"vis": {
+"type": "groups",
+"n": 4,
+"size": 3
+}
+},
+{
+"es": "Las dos tienen las mismas manzanas, porque 3 × 4 = 4 × 3. Es la propiedad conmutativa.",
+"hu": "Mindkettőjüknek ugyanannyi almája van, mert 3 × 4 = 4 × 3. Ez a felcserélhetőség.",
+"pic": "🟰"
+},
+{
+"es": "En la tienda hay 3 estantes con 4 cajas cada uno: 3 × 4 = 12 cajas.",
+"hu": "A boltban 3 polc van, 4-4 dobozzal: 3 × 4 = 12 doboz.",
+"pic": "📦",
+"vis": {
+"type": "groups",
+"n": 3,
+"size": 4
+}
+},
+{
+"es": "Cada caja tiene 2 juguetes, así que 12 × 2 = 24 juguetes.",
+"hu": "Minden dobozban 2 játék van, tehát 12 × 2 = 24 játék.",
+"pic": "🧸",
+"vis": {
+"type": "groups",
+"n": 12,
+"size": 2
+}
+}
+],
+"remember": [
+{
+"es": "Conmutativa: a × b = b × a",
+"hu": "Felcserélhetőség: a × b = b × a"
+},
+{
+"es": "Asociativa: (a × b) × c = a × (b × c)",
+"hu": "Csoportosítás: (a × b) × c = a × (b × c)"
+},
+{
+"es": "La asociativa se usa con tres o más factores.",
+"hu": "A csoportosítást három vagy több tényezőnél használjuk."
+},
+{
+"es": "Cambia el orden → conmutativa.",
+"hu": "Változik a sorrend → felcserélhetőség."
+}
+],
+"dialogue": [
+{
+"who": "Gatito",
+"es": "Martín, ¿5 × 8 es igual a 8 × 5?",
+"hu": "Martin, az 5 × 8 ugyanannyi, mint a 8 × 5?"
+},
+{
+"who": "Martín",
+"es": "Creo que no, porque el orden es distinto.",
+"hu": "Szerintem nem, mert a sorrend más."
+},
+{
+"who": "Gatito",
+"es": "¡Miau! Mira: los dos dan 40. El orden no cambia el producto.",
+"hu": "Miau! Nézd: mindkettő 40. A sorrend nem változtatja a szorzatot."
+},
+{
+"who": "Martín",
+"es": "¡Ah! Es la propiedad conmutativa.",
+"hu": "Ja! Ez a felcserélhetőségi tulajdonság."
+},
+{
+"who": "Gatito",
+"es": "¿Y con tres números, como 3 × 2 × 5?",
+"hu": "És három számnál, például 3 × 2 × 5-nél?"
+},
+{
+"who": "Martín",
+"es": "Puedo agrupar con paréntesis y sale 30 siempre.",
+"hu": "Zárójellel csoportosíthatok, és mindig 30 jön ki."
+},
+{
+"who": "Gatito",
+"es": "¡Muy bien! Esa es la propiedad asociativa.",
+"hu": "Nagyon jó! Ez a csoportosíthatósági tulajdonság."
+}
+],
+"tf": [
+{
+"es": "5 × 8 y 8 × 5 dan el mismo resultado.",
+"hu": "Az 5 × 8 és a 8 × 5 eredménye ugyanaz.",
+"answer": true,
+"why_es": "Los dos dan 40.",
+"why_hu": "Mindkettő 40."
+},
+{
+"es": "La propiedad asociativa se usa con solo dos números.",
+"hu": "A csoportosíthatósági tulajdonságot csak két számnál használjuk.",
+"answer": false,
+"why_es": "Se usa con tres o más números.",
+"why_hu": "Három vagy több számnál használjuk."
+},
+{
+"es": "(6 × 3) × 4 es igual a 6 × (3 × 4).",
+"hu": "A (6 × 3) × 4 egyenlő a 6 × (3 × 4)-gyel.",
+"answer": true,
+"why_es": "Los dos son 72.",
+"why_hu": "Mindkettő 72."
+},
+{
+"es": "Si cambio el orden de los factores, el producto cambia.",
+"hu": "Ha felcserélem a tényezők sorrendjét, a szorzat megváltozik.",
+"answer": false,
+"why_es": "El producto no cambia.",
+"why_hu": "A szorzat nem változik."
+},
+{
+"es": "(3 × 2) × 5 y 3 × (2 × 5) dan 30.",
+"hu": "A (3 × 2) × 5 és a 3 × (2 × 5) is 30.",
+"answer": true,
+"why_es": "6 × 5 = 30 y 3 × 10 = 30.",
+"why_hu": "6 × 5 = 30 és 3 × 10 = 30."
+},
+{
+"es": "5 × (2 × 8) = (5 × 2) × 8 es un ejemplo de propiedad conmutativa.",
+"hu": "Az 5 × (2 × 8) = (5 × 2) × 8 a felcserélhetőségi tulajdonság példája.",
+"answer": false,
+"why_es": "Es propiedad asociativa: cambian los paréntesis.",
+"why_hu": "Ez csoportosítás: a zárójel változik."
+},
+{
+"es": "María y Ana tienen las mismas manzanas.",
+"hu": "Máriának és Annának ugyanannyi almája van.",
+"answer": true,
+"why_es": "3 × 4 = 12 y 4 × 3 = 12.",
+"why_hu": "3 × 4 = 12 és 4 × 3 = 12."
+},
+{
+"es": "5 × 9 = 9 × 5 es un ejemplo de propiedad asociativa.",
+"hu": "Az 5 × 9 = 9 × 5 a csoportosítás példája.",
+"answer": false,
+"why_es": "Es conmutativa: solo cambia el orden.",
+"why_hu": "Felcserélhetőség: csak a sorrend változik."
+}
+]
+}
+},
 {
 "id": "tb10",
 "book": "tb",

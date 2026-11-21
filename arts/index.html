@@ -1274,6 +1274,7 @@ var LQ = (function () {
   function pgPct(pid) { return ((P.pg || {})[pid]) || 0; }
   function pgStars(pid) { const p = pgPct(pid); return p ? [0, 1, 2].map(i => i < starsOf(p) ? '★' : '☆').join('') : ''; }
   function pgUnits(book) { return unitsList().filter(u => pgData().some(p => p.book === book && p.unit === u)); }
+  function pgLab(p) { return p.book === 'hw' ? String(p.date || '').slice(5).replace('-', '. ') + '.' : p.page + '.'; }
   function bookName(id) { const b = pgBooks().find(x => x.id === id); return b ? b.title_hu : id; }
   // ---- képek: emoji -> OpenMoji SVG; könyvlap-kivágás (csak ha az oldalkép elérhető)
   function emSplit(t) { const out = []; let cur = ''; for (const ch of Array.from(String(t || ''))) { const o = ch.codePointAt(0); if (cur && (o === 0xFE0F || o === 0x200D || o === 0x20E3 || (o >= 0x1F3FB && o <= 0x1F3FF) || cur.endsWith('‍'))) cur += ch; else { if (cur) out.push(cur); cur = ch; } } if (cur) out.push(cur); return out.filter(g => g.codePointAt(0) > 0x2000); }
@@ -1326,9 +1327,9 @@ var LQ = (function () {
     if (game === 'mix') qs = qs.concat(pgQs(p).slice(0, 8));
     return shuffle(qs); }
   function startPage(pid, tid) { const p = pgFind(pid); if (!p) return; pgPreload(pid); const qs = pgQs(p, tid); if (!qs.length) { toast(hu('pg_none')); return; } ST.pid = pid;
-    startRun({ mode: 'page', title: bookName(p.book) + ' · ' + p.page + '. ' + hu('pg_page'), qs, back: 'page', pid, tid: tid || null, instr: 'i_page_run' }); }
+    startRun({ mode: 'page', title: bookName(p.book) + ' · ' + (p.book === 'hw' ? pgLab(p) : p.page + '. ' + hu('pg_page')), qs, back: 'page', pid, tid: tid || null, instr: 'i_page_run' }); }
   function startPgGame(pid, game) { const p = pgFind(pid); if (!p) return; pgPreload(pid); const qs = pgGameQs(p, game); if (!qs.length) { toast(hu('pg_none')); return; } ST.pid = pid;
-    startRun({ mode: 'pgame', title: p.page + '. ' + hu('pg_page') + ' · ' + hu({ tf: 'pg_tf', words: 'pg_wordgame', mix: 'pg_mix' }[game]), qs, back: 'page', pid, game, instr: 'i_page_run' }); }
+    startRun({ mode: 'pgame', title: (p.book === 'hw' ? bookName(p.book) + ' ' + pgLab(p) : p.page + '. ' + hu('pg_page')) + ' · ' + hu({ tf: 'pg_tf', words: 'pg_wordgame', mix: 'pg_mix' }[game]), qs, back: 'page', pid, game, instr: 'i_page_run' }); }
   // ---- nézetek
   function vPages() {
     const books = pgBooks(); if (!books.length) return topbar(hu('t_pages')) + '<div class="px-card">' + esc(hu('pg_empty')) + '</div>';
@@ -1339,15 +1340,15 @@ var LQ = (function () {
       '<div class="px-chips">' + books.map(b => '<button type="button" class="chip' + (b.id === bk ? ' on' : '') + '" data-a="pgbook" data-b="' + b.id + '">' + esc(b.title_hu) + '</button>').join('') + '</div>' +
       '<div class="px-chips">' + us.map(u => '<button type="button" class="chip' + (u === un ? ' on' : '') + '" data-a="pgunit" data-u="' + u + '">' + esc(unitTitle(u).length > 24 ? unitTitle(u).slice(0, 22) + '…' : unitTitle(u)) + '</button>').join('') + '</div>' +
       '<div class="px-pgrid">' + ps.map(p => { const pc = pgPct(p.id); const pic = (p.learn && p.learn.sentences || []).map(s => s.pic).filter(Boolean).slice(0, 3).join('') || (p.words || []).map(w => w.pic).filter(Boolean).slice(0, 3).join('');
-        return '<button type="button" class="px-pg' + (pc >= 80 ? ' done' : '') + '" data-a="pgopen" data-p="' + p.id + '"><span class="top"><b>' + p.page + '.</b><span class="ics">' + em(pic, 30) + '</span></span><span class="t">' + esc(p.title) + '</span><small>' + esc(p.title_hu) + '</small><span class="m">' + p.tasks.length + ' ' + esc(hu('pg_tasks')) + (pc ? ' · <em>' + pgStars(p.id) + ' ' + pc + '%</em>' : '') + '</span></button>'; }).join('') + '</div>';
+        return '<button type="button" class="px-pg' + (pc >= 80 ? ' done' : '') + '" data-a="pgopen" data-p="' + p.id + '"><span class="top"><b>' + esc(pgLab(p)) + '</b><span class="ics">' + em(pic, 30) + '</span></span><span class="t">' + esc(p.title) + '</span><small>' + esc(p.title_hu) + '</small><span class="m">' + p.tasks.length + ' ' + esc(hu('pg_tasks')) + (pc ? ' · <em>' + pgStars(p.id) + ' ' + pc + '%</em>' : '') + '</span></button>'; }).join('') + '</div>';
   }
   function tabBtn(k, lab, ico) { return '<button type="button" class="ltab' + (ST.pgtab === k ? ' on' : '') + '" data-a="pgtab" data-t="' + k + '">' + em(ico, 30) + '<span>' + esc(lab) + '</span></button>'; }
   function vPage() {
     const p = pgFind(ST.pid); if (!p) return vPages(); const same = pgData().filter(x => x.book === p.book).sort((a, b) => a.page - b.page); const ix = same.indexOf(p);
     const prev = same[ix - 1], next = same[ix + 1]; const lr = p.learn || {}; if (!ST.pgtab) ST.pgtab = lr.sentences ? 'learn' : 'tasks'; const pc = pgPct(p.id);
     const lesson = p.lesson ? '<button type="button" class="pbtn l sm" data-a="openc" data-u="' + p.unit + '" data-c="' + p.lesson + '"><span>' + esc(hu('pg_lesson')) + '</span>' + ICO.next + '</button>' : '';
-    let h = topbar(bookName(p.book) + ' · ' + p.page + '. ' + hu('pg_page')) +
-      '<div class="px-row"><button type="button" class="pbtn l sm" data-a="go" data-v="pages"><span>← ' + esc(hu('t_pages')) + '</span></button>' + (prev ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + prev.id + '"><span>← ' + prev.page + '.</span></button>' : '') + (next ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + next.id + '"><span>' + next.page + '. →</span></button>' : '') + lesson + '</div>' +
+    let h = topbar(bookName(p.book) + ' · ' + (p.book === 'hw' ? pgLab(p) : p.page + '. ' + hu('pg_page'))) +
+      '<div class="px-row"><button type="button" class="pbtn l sm" data-a="go" data-v="pages"><span>← ' + esc(hu('t_pages')) + '</span></button>' + (prev ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + prev.id + '"><span>← ' + esc(pgLab(prev)) + '</span></button>' : '') + (next ? '<button type="button" class="pbtn l sm" data-a="pgopen" data-p="' + next.id + '"><span>' + esc(pgLab(next)) + ' →</span></button>' : '') + lesson + '</div>' +
       '<div class="px-card px-pghead"><div class="px-row" style="flex-wrap:nowrap">' + kitty(ST.mood, 70) + '<div style="flex:1;min-width:0"><h2 class="px-evt">' + esc(p.title) + ' ' + spk('pgsayt', 'data-p="' + p.id + '"') + '</h2><p class="px-evh">' + esc(p.title_hu) + '</p>' + (pc ? '<p class="px-note" style="margin:2px 0">' + pgStars(p.id) + ' ' + pc + '%</p>' : '') + '</div></div>' +
       (p.summary_hu ? '<p class="px-pgsum">' + esc(p.summary_hu) + ' ' + spk('pgsaysum', 'data-p="' + p.id + '"') + '</p>' : '') +
       (pgImgUrl(p) ? '<button type="button" class="chip' + (ST.pgshow ? ' on' : '') + '" data-a="pgshow">' + esc(hu(ST.pgshow ? 'pg_hide_page' : 'pg_show_page')) + '</button>' + (ST.pgshow ? crop(p, p.page_box || [0, 0, 1, 1], 'full') : '') : '') + '</div>' +
@@ -1481,7 +1482,8 @@ var LQ = (function () {
     return '<div class="px-card px-mission"><div class="px-row"><span class="px-chip ' + ev.type + '">' + esc(hu(evType(ev.type))) + '</span><span class="px-date">' + esc(ev.date.replace(/-/g, '. ') + '.') + '</span></div>' +
       '<div class="px-cd">' + esc(cd) + '</div><h2 class="px-evt">' + esc(ev.title) + '</h2><p class="px-evh">' + esc(ev.title_hu) + '</p>' +
       '<div class="px-row"><button type="button" class="pbtn o" data-a="sayev" data-id="' + esc(ev.id) + '">' + ICO.spk + '<span>' + esc(hu('b_listen')) + '</span></button>' +
-      (u0 ? '<button type="button" class="pbtn l" data-a="gounit" data-u="' + u0 + '"><span>' + esc(hu('b_goto')) + '</span>' + ICO.next + '</button>' : '') + '</div>' +
+      (u0 ? '<button type="button" class="pbtn l" data-a="gounit" data-u="' + u0 + '"><span>' + esc(hu('b_goto')) + '</span>' + ICO.next + '</button>' : '') +
+      (ev.hw && pgFind(ev.hw) ? '<button type="button" class="pbtn g" data-a="pgopen" data-p="' + esc(ev.hw) + '">' + em('✏️', 24) + '<span>Házi gyakorló: kérdések + szószedet</span></button>' : '') + '</div>' +
       (links.length ? '<div class="px-links">' + links.map(l => '<a class="px-link" target="_blank" rel="noopener" href="' + esc(l.url) + '">' + ICO.link + '<span>' + esc(l.hu) + '</span></a>').join('') + '</div>' : '') + '</div>';
   }
   // ---- elkövetkező teendők (2 hét előre, minden esemény)

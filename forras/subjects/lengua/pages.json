@@ -1,6 +1,11 @@
 {
 "books": [
 {
+"id": "hw",
+"title": "Deberes",
+"title_hu": "Házi feladatok"
+},
+{
 "id": "tb",
 "title": "Lengua 3",
 "title_hu": "Tankönyv"
@@ -131,6 +136,1294 @@
 ]
 },
 "pages": [
+{
+"id": "hw1123",
+"book": "hw",
+"page": 1123,
+"date": "2026-11-23",
+"unit": "u3",
+"title": "Deberes: Comprensión lectora 1 – Los sueños del sapo",
+"title_hu": "Házi: Comprensión lectora 1 – A béka álmai (4–9. o.)",
+"summary_hu": "Hétfőre (nov. 23.): a Comprensión lectora füzet 1. olvasmánya. Egy béka minden éjjel valami másnak álmodja magát: fának, folyónak, lónak – egyik sem tetszik neki. A végén azt álmodja, hogy béka, és boldog. Itt a füzet mind a 15 feladata gyakorolható.",
+"words": [
+{
+"w": "el sapo",
+"hu": "varangy, béka",
+"pic": "🐸"
+},
+{
+"w": "el sueño",
+"hu": "álom",
+"pic": "💭"
+},
+{
+"w": "soñar",
+"hu": "álmodni",
+"pic": "😴"
+},
+{
+"w": "dormir",
+"hu": "aludni",
+"pic": "🛏️"
+},
+{
+"w": "el cuento",
+"hu": "mese",
+"pic": "📖"
+},
+{
+"w": "el árbol",
+"hu": "fa",
+"pic": "🌳"
+},
+{
+"w": "el álamo",
+"hu": "nyárfa",
+"pic": "🌲"
+},
+{
+"w": "la rama",
+"hu": "ág",
+"pic": "🌿"
+},
+{
+"w": "la raíz",
+"hu": "gyökér",
+"pic": "🌱"
+},
+{
+"w": "hondo",
+"hu": "mély",
+"pic": "⬇️"
+},
+{
+"w": "sediento",
+"hu": "szomjas",
+"pic": "🥤"
+},
+{
+"w": "el nido",
+"hu": "fészek",
+"pic": "🪺"
+},
+{
+"w": "volar",
+"hu": "repülni",
+"pic": "🕊️"
+},
+{
+"w": "el otoño",
+"hu": "ősz",
+"pic": "🍂"
+},
+{
+"w": "la hoja",
+"hu": "levél (fáé)",
+"pic": "🍃"
+},
+{
+"w": "la lluvia",
+"hu": "eső",
+"pic": "🌧️"
+},
+{
+"w": "llorar",
+"hu": "sírni",
+"pic": "😢"
+},
+{
+"w": "la huerta",
+"hu": "veteményeskert",
+"pic": "🥬"
+},
+{
+"w": "descansar",
+"hu": "pihenni",
+"pic": "😌"
+},
+{
+"w": "el río",
+"hu": "folyó",
+"pic": "🏞️"
+},
+{
+"w": "la orilla",
+"hu": "part (folyóé)",
+"pic": "🏖️"
+},
+{
+"w": "el barco",
+"hu": "hajó",
+"pic": "⛵"
+},
+{
+"w": "callado",
+"hu": "csendes, hallgatag",
+"pic": "🤫"
+},
+{
+"w": "la sirena",
+"hu": "sellő",
+"pic": "🧜"
+},
+{
+"w": "el pez",
+"hu": "hal",
+"pic": "🐟"
+},
+{
+"w": "el caballo",
+"hu": "ló",
+"pic": "🐴"
+},
+{
+"w": "las riendas",
+"hu": "kantár, gyeplő",
+"pic": "🏇"
+},
+{
+"w": "el puente",
+"hu": "híd",
+"pic": "🌉"
+},
+{
+"w": "el pantano",
+"hu": "mocsár",
+"pic": "🌾"
+},
+{
+"w": "el látigo",
+"hu": "ostor",
+"pic": "🤠"
+},
+{
+"w": "el arroyo",
+"hu": "patak",
+"pic": "💧"
+},
+{
+"w": "atar",
+"hu": "megkötni",
+"pic": "🪢"
+},
+{
+"w": "el poste",
+"hu": "oszlop, cölöp",
+"pic": "🪵"
+},
+{
+"w": "feliz",
+"hu": "boldog",
+"pic": "😊"
+},
+{
+"w": "contento",
+"hu": "vidám",
+"pic": "😀"
+},
+{
+"w": "croar",
+"hu": "brekegni",
+"pic": "🗣️"
+},
+{
+"w": "saltar",
+"hu": "ugrani",
+"pic": "🦘"
+},
+{
+"w": "la mosca",
+"hu": "légy",
+"pic": "🪰"
+},
+{
+"w": "libre",
+"hu": "szabad",
+"pic": "🦅"
+},
+{
+"w": "verdadero / falso",
+"hu": "igaz / hamis",
+"pic": "✅"
+}
+],
+"tasks": [
+{
+"id": "hw1123_1",
+"n": "1",
+"text": "Marca los títulos de cuentos conocidos.",
+"text_hu": "Jelöld be az ismert mesék címét.",
+"items": [
+{
+"id": "hw1123_1a",
+"q": "¿«Normas para lavarse las manos» es un cuento?",
+"q_hu": "A „Kézmosási szabályok” mese?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_1b",
+"q": "¿«Caperucita Roja» es un cuento?",
+"q_hu": "A „Piroska” mese?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_1c",
+"q": "¿«Receta de pan con chocolate» es un cuento?",
+"q_hu": "A „Csokis kenyér receptje” mese?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_1d",
+"q": "¿«Hansel y Gretel» es un cuento?",
+"q_hu": "A „Jancsi és Juliska” mese?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_1e",
+"q": "¿«El mago de Oz» es un cuento?",
+"q_hu": "Az „Óz, a csodák csodája” mese?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "hw1123_2",
+"n": "2",
+"text": "Une con flechas.",
+"text_hu": "Kösd össze nyilakkal.",
+"items": [
+{
+"id": "hw1123_2a",
+"q": "En los cuentos de hadas…",
+"q_hu": "A tündérmesékben…",
+"kind": "choice",
+"options": [
+{
+"t": "…los personajes aparecen en lugares tenebrosos.",
+"hu": "…a szereplők sötét, ijesztő helyeken jelennek meg."
+},
+{
+"t": "…puede haber un hada, un mago, un príncipe.",
+"hu": "…lehet benne tündér, varázsló, herceg."
+},
+{
+"t": "…los personajes son animales que pueden hablar.",
+"hu": "…a szereplők beszélő állatok."
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_2b",
+"q": "En los cuentos de terror…",
+"q_hu": "A rémmesékben…",
+"kind": "choice",
+"options": [
+{
+"t": "…los personajes aparecen en lugares tenebrosos.",
+"hu": "…a szereplők sötét, ijesztő helyeken jelennek meg."
+},
+{
+"t": "…puede haber un hada, un mago, un príncipe.",
+"hu": "…lehet benne tündér, varázsló, herceg."
+},
+{
+"t": "…los personajes son animales que pueden hablar.",
+"hu": "…a szereplők beszélő állatok."
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_2c",
+"q": "En los cuentos de animales…",
+"q_hu": "Az állatmesékben…",
+"kind": "choice",
+"options": [
+{
+"t": "…los personajes aparecen en lugares tenebrosos.",
+"hu": "…a szereplők sötét, ijesztő helyeken jelennek meg."
+},
+{
+"t": "…puede haber un hada, un mago, un príncipe.",
+"hu": "…lehet benne tündér, varázsló, herceg."
+},
+{
+"t": "…los personajes son animales que pueden hablar.",
+"hu": "…a szereplők beszélő állatok."
+}
+],
+"answer": 2
+}
+]
+},
+{
+"id": "hw1123_3",
+"n": "3",
+"text": "Escribe V si es verdadero y F si es falso.",
+"text_hu": "Igaz vagy hamis?",
+"items": [
+{
+"id": "hw1123_3a",
+"q": "Los sapos croan.",
+"q_hu": "A békák brekegnek.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_3b",
+"q": "Los sapos viven un poco en el agua y un poco en la tierra.",
+"q_hu": "A békák kicsit vízben, kicsit szárazon élnek.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_3c",
+"q": "Los sapos son mascotas domésticas.",
+"q_hu": "A békák háziállatok.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_3d",
+"q": "Los sapos vuelan.",
+"q_hu": "A békák repülnek.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_3e",
+"q": "Los sapos saltan.",
+"q_hu": "A békák ugrálnak.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "hw1123_4",
+"n": "4",
+"text": "¿De qué crees que tratará el texto? Rodea.",
+"text_hu": "Szerinted miről szól a szöveg? Karikázd be.",
+"items": [
+{
+"id": "hw1123_4a",
+"q": "El título es «Los sueños del sapo». ¿De qué tratará?",
+"q_hu": "A cím: „A béka álmai”. Miről szól majd?",
+"kind": "choice",
+"options": [
+{
+"t": "De un sapo dormilón.",
+"hu": "Egy álomszuszék békáról."
+},
+{
+"t": "De los deseos de un sapo.",
+"hu": "Egy béka vágyairól."
+},
+{
+"t": "De un sapo y sus amigos.",
+"hu": "Egy békáról és a barátairól."
+},
+{
+"t": "De un sapo cuentacuentos.",
+"hu": "Egy mesemondó békáról."
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_5",
+"n": "5",
+"text": "Cuando el sapo sueña que es árbol, dice que tiene muchos brazos. ¿A qué parte de los árboles se refiere?",
+"text_hu": "Amikor fának álmodja magát, sok karja van. A fa melyik részére gondol?",
+"items": [
+{
+"id": "hw1123_5a",
+"q": "Los brazos del árbol son las…",
+"q_hu": "A fa karjai az…",
+"kind": "type",
+"answer": "ramas",
+"alts": [
+"las ramas"
+],
+"answer_hu": "ágak"
+}
+]
+},
+{
+"id": "hw1123_6",
+"n": "6",
+"text": "Si las riberas están a ambos lados del río, ¿qué otra palabra usarías? Subraya.",
+"text_hu": "A partok (riberas) a folyó két oldalán vannak. Melyik szót használnád helyette?",
+"items": [
+{
+"id": "hw1123_6a",
+"q": "Riberas = …",
+"q_hu": "Riberas (partok) = …",
+"kind": "choice",
+"options": [
+{
+"t": "olas",
+"hu": "hullámok"
+},
+{
+"t": "orillas",
+"hu": "partok"
+},
+{
+"t": "corriente",
+"hu": "sodrás"
+},
+{
+"t": "espuma",
+"hu": "hab"
+},
+{
+"t": "lecho",
+"hu": "meder"
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_7",
+"n": "7",
+"text": "¿Con qué soñó el sapo? Subraya.",
+"text_hu": "Mit álmodott a béka?",
+"items": [
+{
+"id": "hw1123_7a",
+"q": "¿Soñó con un árbol?",
+"q_hu": "Fával álmodott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_7b",
+"q": "¿Soñó con un rayo?",
+"q_hu": "Villámmal álmodott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_7c",
+"q": "¿Soñó con el río?",
+"q_hu": "Folyóval álmodott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_7d",
+"q": "¿Soñó con un caballo?",
+"q_hu": "Lóval álmodott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_7e",
+"q": "¿Soñó con la lluvia?",
+"q_hu": "Esővel álmodott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_7f",
+"q": "¿Soñó con un pantano?",
+"q_hu": "Mocsárral álmodott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_8",
+"n": "8",
+"text": "¿Cuál de estos árboles soñó el sapo que era? Rodea.",
+"text_hu": "Melyik fának álmodta magát? Karikázd be.",
+"items": [
+{
+"id": "hw1123_8a",
+"q": "Hay tres árboles: uno verde y alto, uno que camina y uno de otoño con hojas que caen, lluvia y raíces. ¿Cuál soñó el sapo?",
+"q_hu": "Három fa van: egy zöld, magas; egy, amelyik sétál; és egy őszi, hulló levelekkel, esővel és gyökerekkel. Melyiket álmodta a béka?",
+"kind": "choice",
+"options": [
+{
+"t": "El árbol verde y alto",
+"hu": "A zöld, magas fa"
+},
+{
+"t": "El árbol que camina",
+"hu": "A sétáló fa"
+},
+{
+"t": "El árbol de otoño, con hojas que caen",
+"hu": "Az őszi fa, hulló levelekkel"
+}
+],
+"answer": 2,
+"answer_hu": "Az őszi fa: az ősz vitte a leveleit, esett az eső, egy helyben állt."
+}
+]
+},
+{
+"id": "hw1123_9",
+"n": "9",
+"text": "¿Qué descubrió el sapo cuando soñó ser río? Marca las opciones correctas.",
+"text_hu": "Mire jött rá, amikor folyónak álmodta magát?",
+"items": [
+{
+"id": "hw1123_9a",
+"q": "¿Que no podía escucharse a sí mismo?",
+"q_hu": "Hogy nem hallotta önmagát?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_9b",
+"q": "¿Que siempre estaba en el mismo sitio?",
+"q_hu": "Hogy mindig ugyanott volt?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_9c",
+"q": "¿Que solamente veía peces?",
+"q_hu": "Hogy csak halakat látott?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_9d",
+"q": "¿Que podía detenerse a descansar en tierra?",
+"q_hu": "Hogy megállhatott pihenni a szárazon?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_10",
+"n": "10",
+"text": "Escribe V o F: cuando el sapo soñó ser caballo.",
+"text_hu": "Igaz vagy hamis – a ló-álomról.",
+"items": [
+{
+"id": "hw1123_10a",
+"q": "Llevaba barcos.",
+"q_hu": "Hajókat vitt.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_10b",
+"q": "Le daban con el látigo.",
+"q_hu": "Ostorral ütötték.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_10c",
+"q": "Iba por un camino largo.",
+"q_hu": "Hosszú úton ment.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_10d",
+"q": "Lo ataron a un poste.",
+"q_hu": "Kikötötték egy oszlophoz.",
+"kind": "choice",
+"options": [
+{
+"t": "Verdadero",
+"hu": "Igaz"
+},
+{
+"t": "Falso",
+"hu": "Hamis"
+}
+],
+"answer": 0
+}
+]
+},
+{
+"id": "hw1123_11",
+"n": "11",
+"text": "Une con flechas.",
+"text_hu": "Kösd össze nyilakkal.",
+"items": [
+{
+"id": "hw1123_11a",
+"q": "Cuando el sapo fue árbol descubrió…",
+"q_hu": "Amikor fa volt, rájött…",
+"kind": "choice",
+"options": [
+{
+"t": "…que no podía croar.",
+"hu": "…hogy nem tudott brekegni."
+},
+{
+"t": "…que no era libre.",
+"hu": "…hogy nem volt szabad."
+},
+{
+"t": "…que no se podía mover.",
+"hu": "…hogy nem tudott mozogni."
+}
+],
+"answer": 2
+},
+{
+"id": "hw1123_11b",
+"q": "Cuando el sapo fue río descubrió…",
+"q_hu": "Amikor folyó volt, rájött…",
+"kind": "choice",
+"options": [
+{
+"t": "…que no podía croar.",
+"hu": "…hogy nem tudott brekegni."
+},
+{
+"t": "…que no era libre.",
+"hu": "…hogy nem volt szabad."
+},
+{
+"t": "…que no se podía mover.",
+"hu": "…hogy nem tudott mozogni."
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_11c",
+"q": "Cuando el sapo fue caballo descubrió…",
+"q_hu": "Amikor ló volt, rájött…",
+"kind": "choice",
+"options": [
+{
+"t": "…que no podía croar.",
+"hu": "…hogy nem tudott brekegni."
+},
+{
+"t": "…que no era libre.",
+"hu": "…hogy nem volt szabad."
+},
+{
+"t": "…que no se podía mover.",
+"hu": "…hogy nem tudott mozogni."
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_12",
+"n": "12",
+"text": "La palabra sueño tiene varios significados. Rodea el que se usa en el cuento.",
+"text_hu": "A sueño szónak több jelentése van. Melyik szerepel a mesében?",
+"items": [
+{
+"id": "hw1123_12a",
+"q": "En el cuento, «sueño» significa…",
+"q_hu": "A mesében a „sueño” jelentése…",
+"kind": "choice",
+"options": [
+{
+"t": "Ganas de dormir.",
+"hu": "Álmosság."
+},
+{
+"t": "Deseo o anhelo.",
+"hu": "Vágy."
+},
+{
+"t": "Hechos o imágenes que vemos mientras dormimos.",
+"hu": "Amit alvás közben látunk (álom)."
+}
+],
+"answer": 2
+}
+]
+},
+{
+"id": "hw1123_13",
+"n": "13",
+"text": "¿Por qué dice «Anoche fui árbol» y no «Anoche soñé con un árbol»? Marca.",
+"text_hu": "Miért mondja, hogy „fa voltam”, és nem azt, hogy „fával álmodtam”?",
+"items": [
+{
+"id": "hw1123_13a",
+"q": "¿Por qué?",
+"q_hu": "Miért?",
+"kind": "choice",
+"options": [
+{
+"t": "Porque quiere decir lo mismo.",
+"hu": "Mert ugyanazt jelenti."
+},
+{
+"t": "Porque siente que en los sueños se convierte realmente en lo que sueña.",
+"hu": "Mert úgy érzi, álmában tényleg azzá válik."
+},
+{
+"t": "Porque quiere engañar a los demás sapos.",
+"hu": "Mert be akarja csapni a többi békát."
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_14",
+"n": "14",
+"text": "¿Qué acciones puede realizar el sapo? Subraya las adecuadas.",
+"text_hu": "Mit tud csinálni a béka? Húzd alá a megfelelőket.",
+"items": [
+{
+"id": "hw1123_14a",
+"q": "¿Un sapo puede galopar?",
+"q_hu": "Tud egy béka vágtatni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+},
+{
+"id": "hw1123_14b",
+"q": "¿Un sapo puede croar?",
+"q_hu": "Tud egy béka brekegni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_14c",
+"q": "¿Un sapo puede comer moscas?",
+"q_hu": "Tud egy béka legyet enni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_14d",
+"q": "¿Un sapo puede ir a donde quiera?",
+"q_hu": "Tud egy béka oda menni, ahová akar?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_14e",
+"q": "¿Un sapo puede saltar?",
+"q_hu": "Tud egy béka ugrani?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_14f",
+"q": "¿Un sapo puede estar en el agua y en la tierra?",
+"q_hu": "Tud egy béka vízben és szárazon lenni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_14g",
+"q": "¿Un sapo puede contar sus sueños?",
+"q_hu": "Tud egy béka elmesélni az álmait?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 0
+},
+{
+"id": "hw1123_14h",
+"q": "¿Un sapo puede ser una mascota?",
+"q_hu": "Tud egy béka háziállatnak lenni?",
+"kind": "choice",
+"options": [
+{
+"t": "Sí",
+"hu": "Igen"
+},
+{
+"t": "No",
+"hu": "Nem"
+}
+],
+"answer": 1
+}
+]
+},
+{
+"id": "hw1123_15",
+"n": "15",
+"text": "¿Crees que es importante quererse a sí mismo sin compararse con los demás? Explica tu respuesta.",
+"text_hu": "Fontos szeretni önmagunkat anélkül, hogy másokhoz hasonlítgatnánk magunkat? Indokold.",
+"items": [
+{
+"id": "hw1123_15a",
+"q": "Explica tu respuesta.",
+"q_hu": "Indokold a válaszod.",
+"kind": "open",
+"answer": "Sí, porque cada uno es especial. El sapo es feliz cuando es sapo.",
+"answer_hu": "Igen, mert mindenki különleges. A béka akkor boldog, amikor béka."
+}
+]
+}
+],
+"learn": {
+"intro": {
+"es": "¡Hoy leemos un cuento sobre un sapo que sueña!",
+"hu": "Ma egy álmodozó békáról olvasunk mesét!"
+},
+"sentences": [
+{
+"es": "Este es el cuento «Los sueños del sapo».",
+"hu": "Ez A béka álmai című mese.",
+"pic": "📖"
+},
+{
+"es": "Una tarde un sapo dijo: esta noche voy a soñar que soy árbol.",
+"hu": "Egy délután egy béka azt mondta: ma éjjel azt álmodom, hogy fa vagyok.",
+"pic": "🐸"
+},
+{
+"es": "Soñó que era un álamo, con nidos, raíces y muchas ramas.",
+"hu": "Azt álmodta, hogy nyárfa, fészkekkel, gyökerekkel és sok ággal.",
+"pic": "🌳"
+},
+{
+"es": "Pero no podía volar ni moverse. No le gustó ser árbol.",
+"hu": "De nem tudott repülni és mozogni. Nem tetszett neki fának lenni.",
+"pic": "🙁"
+},
+{
+"es": "Después soñó que era río y llevaba barcos.",
+"hu": "Aztán azt álmodta, hogy folyó, és hajókat vitt.",
+"pic": "⛵"
+},
+{
+"es": "El río siempre está callado y solo veía peces.",
+"hu": "A folyó mindig hallgat, és csak halakat látott.",
+"pic": "🐟"
+},
+{
+"es": "No le gustó ser río.",
+"hu": "Nem tetszett neki folyónak lenni.",
+"pic": "🙁"
+},
+{
+"es": "Luego soñó que era caballo y llevaba a un hombre.",
+"hu": "Aztán azt álmodta, hogy ló, és egy embert vitt.",
+"pic": "🐴"
+},
+{
+"es": "Le daban con el látigo y lo ataron a un poste. No era libre.",
+"hu": "Ostorral ütötték és kikötötték egy oszlophoz. Nem volt szabad.",
+"pic": "🪢"
+},
+{
+"es": "Una mañana el sapo estaba muy feliz.",
+"hu": "Egy reggel a béka nagyon boldog volt.",
+"pic": "😊"
+},
+{
+"es": "Soñó que era sapo. ¡Fue un sueño maravilloso!",
+"hu": "Azt álmodta, hogy béka. Csodálatos álom volt!",
+"pic": "🐸"
+},
+{
+"es": "Lo mejor es ser uno mismo y quererse.",
+"hu": "A legjobb önmagunknak lenni és szeretni magunkat.",
+"pic": "❤️"
+}
+],
+"remember": [
+{
+"es": "Un cuento es una historia breve de hechos imaginarios.",
+"hu": "A mese kitalált események rövid története."
+},
+{
+"es": "Árbol: no se podía mover. Río: no podía croar. Caballo: no era libre.",
+"hu": "Fa: nem tudott mozogni. Folyó: nem tudott brekegni. Ló: nem volt szabad."
+}
+],
+"dialogue": [
+{
+"who": "Gatito",
+"es": "Martín, ¿con qué soñó el sapo?",
+"hu": "Martin, mivel álmodott a béka?"
+},
+{
+"who": "Martín",
+"es": "Con un árbol, un río y un caballo.",
+"hu": "Egy fával, egy folyóval és egy lóval."
+},
+{
+"who": "Gatito",
+"es": "¿Le gustó ser caballo?",
+"hu": "Tetszett neki lónak lenni?"
+},
+{
+"who": "Martín",
+"es": "Sí, porque corría mucho.",
+"hu": "Igen, mert sokat futott."
+},
+{
+"who": "Gatito",
+"es": "¡Miau, no! Lo ataron a un poste. No era libre.",
+"hu": "Miau, nem! Kikötötték egy oszlophoz. Nem volt szabad."
+},
+{
+"who": "Martín",
+"es": "¡Es verdad! Al final fue feliz siendo sapo.",
+"hu": "Igaz! A végén béka-ként volt boldog."
+}
+],
+"tf": [
+{
+"es": "El sapo soñó que era un árbol.",
+"hu": "A béka azt álmodta, hogy fa.",
+"answer": true,
+"why_es": "Soñó que era un álamo.",
+"why_hu": "Azt álmodta, hogy nyárfa."
+},
+{
+"es": "Cuando fue río vio muchas sirenas.",
+"hu": "Amikor folyó volt, sok sellőt látott.",
+"answer": false,
+"why_es": "No vio ni una sirena, solo peces.",
+"why_hu": "Egy sellőt sem látott, csak halakat."
+},
+{
+"es": "Cuando fue caballo era libre.",
+"hu": "Amikor ló volt, szabad volt.",
+"answer": false,
+"why_es": "Lo ataron a un poste.",
+"why_hu": "Kikötötték egy oszlophoz."
+},
+{
+"es": "Al final el sapo soñó que era sapo.",
+"hu": "A végén a béka azt álmodta, hogy béka.",
+"answer": true,
+"why_es": "Fue un sueño maravilloso.",
+"why_hu": "Csodálatos álom volt."
+},
+{
+"es": "Las ramas son los brazos del árbol.",
+"hu": "Az ágak a fa karjai.",
+"answer": true,
+"why_es": "Así lo dice el sapo.",
+"why_hu": "Így mondja a béka."
+}
+]
+}
+},
 {
 "id": "tb54",
 "book": "tb",

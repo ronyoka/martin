@@ -30,8 +30,12 @@ def speak_text(t, l):
     return t or '...'
 P = json.load(open(folder + '/pages.json'))
 ONLY = set(os.environ.get('PG_UNITS','').split(',')) - {''}
-OLD = json.load(open(folder + '/out/pg_sprite.json')) if ONLY and os.path.exists(folder + '/out/pg_sprite.json') else None
+ONLYB = set(os.environ.get('PG_BOOKS','').split(',')) - {''}  # pl. PG_BOOKS=hw: csak a házi-lapok hangja (chunk-id: hwu3_1)
+OLD = json.load(open(folder + '/out/pg_sprite.json')) if (ONLY or ONLYB) and os.path.exists(folder + '/out/pg_sprite.json') else None
 if ONLY: P['pages'] = [p for p in P['pages'] if p['unit'] in ONLY]
+if ONLYB: P['pages'] = [p for p in P['pages'] if p['book'] in ONLYB]
+if ONLYB:
+    for p in P['pages']: p['unit'] = p['book'] + p['unit']
 items = {}  # page id -> lang -> [(key, text)]
 def add(pid, l, k, t):
     if not (str(t or '')).strip(): return
@@ -77,7 +81,7 @@ for pid in pages_order:
     cur.append(pid); cs += d; cu = units[pid]
 if cur: chunks.append(cur)
 for ci, grp in enumerate(chunks):
-    cid = f"{units[grp[0]]}_{ci + 1}" if not ONLY else f"{units[grp[0]]}_{sum(1 for g in chunks[:ci] if units[g[0]] == units[grp[0]]) + 1}"; audio[cid] = {}
+    cid = f"{units[grp[0]]}_{ci + 1}" if not (ONLY or ONLYB) else f"{units[grp[0]]}_{sum(1 for g in chunks[:ci] if units[g[0]] == units[grp[0]]) + 1}"; audio[cid] = {}
     for pid in grp: pchunk[pid] = cid
     for l in (L, 'hu'):
         parts = []; pos = 0.0; gap = np.zeros(int(SR * 0.25), np.int16); seen = {}
@@ -91,7 +95,8 @@ for ci, grp in enumerate(chunks):
         subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', wavp, '-ac', '1', '-ar', '22050', '-c:a', 'aac', '-b:a', '24k', '-movflags', '+faststart', f'{folder}/out/{mp4}'], check=True)
         os.remove(wavp); audio[cid][l] = mp4; print(subj, cid, l, len(grp), 'oldal', round(pos / 60, 1), 'perc', os.path.getsize(f'{folder}/out/{mp4}') // 1024, 'KB', flush=True)
 if OLD:
-    oldcid = {c for c in OLD['audio'] if c.split('_')[0] in ONLY}
+    PREF = set(units.values()) if ONLYB else ONLY
+    oldcid = {c for c in OLD['audio'] if c.split('_')[0] in PREF}
     for l in OLD['sprite']:
         for k, v in OLD['sprite'][l].items():
             if v[2] not in oldcid and k not in sprite[l]: sprite[l][k] = v
