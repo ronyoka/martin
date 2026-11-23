@@ -24,17 +24,20 @@
    "id": "lengua-control-u3-1130",
    "date": "2026-11-30",
    "type": "control",
-   "title": "Control de Lengua (unidad 3)",
-   "title_hu": "Lengua dolgozat (3. fejezet: Un día en el huerto)",
+   "title": "Control de Lengua: unidad 3 + repasar los sustantivos",
+   "title_hu": "Lengua dolgozat (3. fejezet: Un día en el huerto) + a főnevek ismétlése",
    "units": [
-    "u3"
+    "u3",
+    "u1"
    ],
    "link_ids": [
     "ctlu3_pdf",
     "ctlu3_video",
     "libro",
     "plantas_pdf",
-    "plantas_video"
+    "plantas_video",
+    "sust_pdf",
+    "sust_video"
    ]
   },
   {

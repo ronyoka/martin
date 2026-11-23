@@ -1,0 +1,2554 @@
+{
+ "pages": [
+  {
+   "id": "hb12",
+   "book": "hb",
+   "page": 12,
+   "unit": "u3",
+   "img": "en_hb_photo-08",
+   "page_box": [
+    0.0,
+    0.0,
+    0.505,
+    1.0
+   ],
+   "title": "A day in the life",
+   "title_hu": "Egy nap az életből",
+   "summary_hu": "Az oldal a napi teendőkről szól: Archie napirendjét olvassuk el, és válaszolunk a kérdésekre (mit csinál hány órakor). A nyelvtani doboz azt tanítja, hogyan kérdezzük meg, milyen gyakran csinál valaki valamit (How often…?), és hogyan válaszolunk: never, sometimes, always, every day. Egyes szám 3. személyben (he/she) az ige végére -s kerül.",
+   "words": [
+    {
+     "w": "wake up",
+     "hu": "felébred",
+     "pic": "⏰"
+    },
+    {
+     "w": "get up",
+     "hu": "felkel",
+     "pic": "🛏️"
+    },
+    {
+     "w": "have a shower",
+     "hu": "lezuhanyozik",
+     "pic": "🚿"
+    },
+    {
+     "w": "get dressed",
+     "hu": "felöltözik",
+     "pic": "👕"
+    },
+    {
+     "w": "have breakfast",
+     "hu": "reggelizik",
+     "pic": "🥣"
+    },
+    {
+     "w": "go to school",
+     "hu": "iskolába megy",
+     "pic": "🏫"
+    },
+    {
+     "w": "catch the bus",
+     "hu": "eléri / elkapja a buszt",
+     "pic": "🚌"
+    },
+    {
+     "w": "do homework",
+     "hu": "házi feladatot csinál",
+     "pic": "📝"
+    },
+    {
+     "w": "have dinner",
+     "hu": "vacsorázik",
+     "pic": "🍽️"
+    },
+    {
+     "w": "wash your face",
+     "hu": "megmossa az arcát",
+     "pic": "🧼"
+    },
+    {
+     "w": "get undressed",
+     "hu": "levetkőzik"
+    },
+    {
+     "w": "go to bed",
+     "hu": "lefekszik aludni",
+     "pic": "😴"
+    },
+    {
+     "w": "How often…?",
+     "hu": "Milyen gyakran…?",
+     "pic": "❓"
+    },
+    {
+     "w": "never",
+     "hu": "soha",
+     "pic": "🚫"
+    },
+    {
+     "w": "sometimes",
+     "hu": "néha",
+     "pic": "🤷"
+    },
+    {
+     "w": "always",
+     "hu": "mindig",
+     "pic": "♾️"
+    },
+    {
+     "w": "every day",
+     "hu": "minden nap",
+     "pic": "📅"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Today we learn about a day in the life: what we do and when we do it!",
+     "hu": "Ma a napirendről tanulunk: mit csinálunk és mikor!"
+    },
+    "sentences": [
+     {
+      "es": "This unit is called “A day in the life”.",
+      "hu": "Ennek a fejezetnek a címe: „Egy nap az életből”.",
+      "pic": "📖"
+     },
+     {
+      "es": "Archie writes about his day.",
+      "hu": "Archie leírja, hogyan telik a napja.",
+      "pic": "✏️"
+     },
+     {
+      "es": "At seven o'clock he wakes up, gets up and has a shower.",
+      "hu": "Hét órakor felébred, felkel és lezuhanyozik.",
+      "pic": "🚿"
+     },
+     {
+      "es": "Then he gets dressed.",
+      "hu": "Aztán felöltözik.",
+      "pic": "👕"
+     },
+     {
+      "es": "At eight o'clock he has breakfast and goes to school.",
+      "hu": "Nyolc órakor reggelizik, és elmegy az iskolába.",
+      "pic": "🥣"
+     },
+     {
+      "es": "After school, at three o'clock, he catches the bus.",
+      "hu": "Iskola után, három órakor felszáll a buszra.",
+      "pic": "🚌"
+     },
+     {
+      "es": "Then he does his homework.",
+      "hu": "Aztán megcsinálja a házi feladatát.",
+      "pic": "📝"
+     },
+     {
+      "es": "At six o'clock he has dinner.",
+      "hu": "Hat órakor vacsorázik.",
+      "pic": "🍽️"
+     },
+     {
+      "es": "After dinner he washes his face and gets undressed.",
+      "hu": "Vacsora után megmossa az arcát és levetkőzik.",
+      "pic": "🧼"
+     },
+     {
+      "es": "At nine o'clock he goes to bed.",
+      "hu": "Kilenc órakor lefekszik aludni.",
+      "pic": "😴"
+     },
+     {
+      "es": "We ask “How often do you play in the park?”",
+      "hu": "Így kérdezzük: „Milyen gyakran játszol a parkban?”",
+      "pic": "❓"
+     },
+     {
+      "es": "We answer: I never, sometimes or always play in the park.",
+      "hu": "Így válaszolunk: soha, néha vagy mindig játszom a parkban.",
+      "pic": "🌳"
+     },
+     {
+      "es": "Or we say: I play in the park every day.",
+      "hu": "Vagy azt mondjuk: minden nap játszom a parkban.",
+      "pic": "📅"
+     },
+     {
+      "es": "For he or she, we add -s: He plays, she plays.",
+      "hu": "Ha „ő”-ről beszélünk (he/she), az ige végére -s kerül: he plays, she plays.",
+      "pic": "➕"
+     },
+     {
+      "es": "In the question we use “does”: How often does he play?",
+      "hu": "A kérdésben „does”-t használunk: How often does he play?",
+      "pic": "🔤"
+     },
+     {
+      "es": "The pictures show things we do: play badminton, watch TV, read, eat chocolate, drink juice, ride a bike, listen to music, ride a horse.",
+      "hu": "A képeken tevékenységek vannak: tollaslabda, tévénézés, olvasás, csokievés, gyümölcslé, biciklizés, zenehallgatás, lovaglás.",
+      "pic": "🚲"
+     },
+     {
+      "es": "Listen to the story and tell it to your family in Hungarian.",
+      "hu": "Hallgasd meg a történetet, és meséld el a családodnak magyarul.",
+      "pic": "🎧"
+     }
+    ],
+    "remember": [
+     {
+      "es": "How often do you…? – I never / sometimes / always … / … every day.",
+      "hu": "Milyen gyakran…? – soha / néha / mindig … / minden nap."
+     },
+     {
+      "es": "He / She + verb + s: he wakes up, she plays.",
+      "hu": "He / She után az igére -s kerül: he wakes up, she plays."
+     },
+     {
+      "es": "How often does he/she play?",
+      "hu": "He/she-nél a kérdésben „does” van: How often does he/she play?"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, what time do you wake up?",
+      "hu": "Martin, hány órakor ébredsz?"
+     },
+     {
+      "who": "Martin",
+      "es": "I wake up at seven o'clock.",
+      "hu": "Hét órakor ébredek."
+     },
+     {
+      "who": "Kitty",
+      "es": "How often do you have a shower?",
+      "hu": "Milyen gyakran zuhanyozol?"
+     },
+     {
+      "who": "Martin",
+      "es": "I have a shower every day!",
+      "hu": "Minden nap zuhanyozom!"
+     },
+     {
+      "who": "Kitty",
+      "es": "And Archie? What does he do at nine o'clock?",
+      "hu": "És Archie? Mit csinál kilenc órakor?"
+     },
+     {
+      "who": "Martin",
+      "es": "He go to bed.",
+      "hu": "He go to bed."
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, almost! With “he” we say: he goes to bed.",
+      "hu": "Miaú, majdnem! A „he” után így mondjuk: he goes to bed."
+     },
+     {
+      "who": "Martin",
+      "es": "He goes to bed. Good night, Archie!",
+      "hu": "He goes to bed. Jó éjt, Archie!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Archie wakes up at seven o'clock.",
+      "hu": "Archie hét órakor ébred.",
+      "answer": true,
+      "why_es": "His day starts at 7.00: wake up.",
+      "why_hu": "A napja 7-kor kezdődik: felébred."
+     },
+     {
+      "es": "Archie has dinner at three o'clock.",
+      "hu": "Archie három órakor vacsorázik.",
+      "answer": false,
+      "why_es": "He has dinner at six o'clock. At three he catches the bus.",
+      "why_hu": "Hat órakor vacsorázik. Háromkor a buszra száll."
+     },
+     {
+      "es": "“Never” means “every day”.",
+      "hu": "A „never” azt jelenti: minden nap.",
+      "answer": false,
+      "why_es": "“Never” means not at all.",
+      "why_hu": "A „never” azt jelenti: soha."
+     },
+     {
+      "es": "We say: She plays in the park.",
+      "hu": "Így mondjuk: She plays in the park.",
+      "answer": true,
+      "why_es": "With she we add -s: plays.",
+      "why_hu": "A she után -s kerül az igére: plays."
+     },
+     {
+      "es": "Archie goes to bed at nine o'clock.",
+      "hu": "Archie kilenc órakor fekszik le.",
+      "answer": true,
+      "why_es": "9.00 go to bed.",
+      "why_hu": "9.00 – lefekvés."
+     },
+     {
+      "es": "The question is: How often do he play?",
+      "hu": "A kérdés így helyes: How often do he play?",
+      "answer": false,
+      "why_es": "With he we use does: How often does he play?",
+      "why_hu": "A he-nél does kell: How often does he play?"
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "hb12_1",
+     "n": "1",
+     "text": "Look, read and write the answers.",
+     "text_hu": "Nézd meg, olvasd el, és írd le a válaszokat.",
+     "box": [
+      0.04,
+      0.14,
+      0.48,
+      0.545
+     ],
+     "pic": "📒⏰🚌",
+     "context": {
+      "es": "Archie's notebook shows his day: 7.00 wake up, get up, have a shower, get dressed. 8.00 have breakfast, go to school. 3.00 catch the bus, do homework. 6.00 have dinner, wash face, get undressed. 9.00 go to bed.",
+      "hu": "Archie füzetében a napirendje van: 7.00 ébredés, felkelés, zuhany, öltözés. 8.00 reggeli, iskola. 3.00 busz, házi feladat. 6.00 vacsora, arcmosás, vetkőzés. 9.00 lefekvés."
+     },
+     "help": {
+      "es": "Find the time in the notebook, then write what he does. Add -s: He wakes up.",
+      "hu": "Keresd meg az időpontot a füzetben, és írd le, mit csinál. Ne felejtsd az -s-t: He wakes up."
+     },
+     "items": [
+      {
+       "id": "hb12_1_1",
+       "q": "What does Archie do at seven o'clock? (7.00: wake up)",
+       "q_hu": "Mit csinál Archie hét órakor? (7.00: ébredés)",
+       "kind": "type",
+       "answer": "He wakes up.",
+       "alts": [
+        "He wakes up",
+        "wakes up",
+        "He wakes up and gets up"
+       ],
+       "answer_hu": "Felébred.",
+       "pic": "⏰"
+      },
+      {
+       "id": "hb12_1_2",
+       "q": "What does he do after his shower? (shower → get dressed)",
+       "q_hu": "Mit csinál a zuhany után? (zuhany → öltözés)",
+       "kind": "type",
+       "answer": "He gets dressed.",
+       "alts": [
+        "He gets dressed",
+        "gets dressed"
+       ],
+       "answer_hu": "Felöltözik.",
+       "pic": "👕"
+      },
+      {
+       "id": "hb12_1_3",
+       "q": "What does he do at eight o'clock? (8.00: have breakfast, go to school)",
+       "q_hu": "Mit csinál nyolc órakor? (8.00: reggeli, iskola)",
+       "kind": "type",
+       "answer": "He has breakfast and goes to school.",
+       "alts": [
+        "He has breakfast and goes to school",
+        "He has breakfast",
+        "has breakfast",
+        "He has breakfast. He goes to school.",
+        "has breakfast and goes to school"
+       ],
+       "answer_hu": "Reggelizik, és iskolába megy.",
+       "pic": "🥣"
+      },
+      {
+       "id": "hb12_1_4",
+       "q": "What does he do at three o'clock? (3.00: catch the bus)",
+       "q_hu": "Mit csinál három órakor? (3.00: busz)",
+       "kind": "type",
+       "answer": "He catches the bus.",
+       "alts": [
+        "He catches the bus",
+        "catches the bus"
+       ],
+       "answer_hu": "Felszáll a buszra.",
+       "pic": "🚌"
+      },
+      {
+       "id": "hb12_1_5",
+       "q": "What does he do after dinner? (wash face, get undressed)",
+       "q_hu": "Mit csinál vacsora után? (arcmosás, vetkőzés)",
+       "kind": "type",
+       "answer": "He washes his face and gets undressed.",
+       "alts": [
+        "He washes his face and gets undressed",
+        "He washes his face",
+        "washes his face and gets undressed",
+        "He washes his face. He gets undressed."
+       ],
+       "answer_hu": "Megmossa az arcát és levetkőzik.",
+       "pic": "🧼"
+      },
+      {
+       "id": "hb12_1_6",
+       "q": "What does he do at nine o'clock? (9.00: go to bed)",
+       "q_hu": "Mit csinál kilenc órakor? (9.00: lefekvés)",
+       "kind": "type",
+       "answer": "He goes to bed.",
+       "alts": [
+        "He goes to bed",
+        "goes to bed"
+       ],
+       "answer_hu": "Lefekszik aludni.",
+       "pic": "🛏️"
+      }
+     ]
+    },
+    {
+     "id": "hb12_2",
+     "n": "2",
+     "text": "Study the box. Talk about your day.",
+     "text_hu": "Tanulmányozd a dobozt. Beszélj a napodról.",
+     "box": [
+      0.04,
+      0.54,
+      0.48,
+      0.89
+     ],
+     "pic": "🏸📺🚲",
+     "context": {
+      "es": "The grammar box shows: How often do you play in the park? I never / sometimes / always play. I play every day. Eight photos: badminton, a TV, a book, chocolate, orange juice, a bike, a phone with headphones, a girl on a horse.",
+      "hu": "A nyelvtani doboz: Milyen gyakran játszol a parkban? Soha / néha / mindig. Minden nap. Nyolc fotó: tollaslabda, tévé, könyv, csoki, narancslé, bicikli, telefon fülhallgatóval, lovagló lány."
+     },
+     "help": {
+      "es": "Find the right verb for each picture: play, watch, read, eat, drink, ride, listen.",
+      "hu": "Keresd meg minden képhez az igét: play (játszik), watch (néz), read (olvas), eat (eszik), drink (iszik), ride (lovagol/biciklizik), listen (hallgat)."
+     },
+     "items": [
+      {
+       "id": "hb12_2_1",
+       "q": "Picture 1 (badminton): I sometimes ___ badminton.",
+       "q_hu": "1. kép (tollaslabda): Néha ___ tollaslabdát.",
+       "kind": "type",
+       "answer": "play",
+       "alts": [
+        "play"
+       ],
+       "answer_hu": "játszom",
+       "pic": "🏸"
+      },
+      {
+       "id": "hb12_2_2",
+       "q": "Picture 2 (TV): I ___ TV every day.",
+       "q_hu": "2. kép (tévé): Minden nap ___ tévét.",
+       "kind": "type",
+       "answer": "watch",
+       "alts": [
+        "watch"
+       ],
+       "answer_hu": "nézek",
+       "pic": "📺"
+      },
+      {
+       "id": "hb12_2_3",
+       "q": "Picture 3 (a book): I always ___ books at bedtime.",
+       "q_hu": "3. kép (könyv): Lefekvéskor mindig ___ könyvet.",
+       "kind": "type",
+       "answer": "read",
+       "alts": [
+        "read"
+       ],
+       "answer_hu": "olvasok",
+       "pic": "📖"
+      },
+      {
+       "id": "hb12_2_4",
+       "q": "Picture 4 (chocolate): I sometimes ___ chocolate.",
+       "q_hu": "4. kép (csoki): Néha ___ csokit.",
+       "kind": "type",
+       "answer": "eat",
+       "alts": [
+        "eat",
+        "have"
+       ],
+       "answer_hu": "eszem",
+       "pic": "🍫"
+      },
+      {
+       "id": "hb12_2_5",
+       "q": "Picture 5 (orange juice): I ___ orange juice every day.",
+       "q_hu": "5. kép (narancslé): Minden nap ___ narancslevet.",
+       "kind": "type",
+       "answer": "drink",
+       "alts": [
+        "drink",
+        "have"
+       ],
+       "answer_hu": "iszom",
+       "pic": "🧃"
+      },
+      {
+       "id": "hb12_2_6",
+       "q": "Picture 6 (a bike): I always ___ my bike to the park.",
+       "q_hu": "6. kép (bicikli): Mindig ___ a parkba.",
+       "kind": "type",
+       "answer": "ride",
+       "alts": [
+        "ride"
+       ],
+       "answer_hu": "biciklizem (ride my bike)",
+       "pic": "🚲"
+      },
+      {
+       "id": "hb12_2_7",
+       "q": "Picture 7 (phone and headphones): I ___ to music every day.",
+       "q_hu": "7. kép (telefon, fülhallgató): Minden nap zenét ___.",
+       "kind": "type",
+       "answer": "listen",
+       "alts": [
+        "listen"
+       ],
+       "answer_hu": "hallgatok",
+       "pic": "🎧"
+      },
+      {
+       "id": "hb12_2_8",
+       "q": "Picture 8 (a horse): I never ___ a horse.",
+       "q_hu": "8. kép (ló): Soha nem ___ lovon.",
+       "kind": "type",
+       "answer": "ride",
+       "alts": [
+        "ride"
+       ],
+       "answer_hu": "lovagolok",
+       "pic": "🐴"
+      },
+      {
+       "id": "hb12_2_9",
+       "q": "How often ___ he play in the park?",
+       "q_hu": "Milyen gyakran játszik ő a parkban? Melyik szó kell?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "does",
+         "hu": "does"
+        },
+        {
+         "t": "do",
+         "hu": "do"
+        }
+       ],
+       "answer": 0,
+       "pic": "❓"
+      },
+      {
+       "id": "hb12_2_10",
+       "q": "She ___ in the park every day.",
+       "q_hu": "Ő minden nap a parkban játszik. Melyik a helyes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "play",
+         "hu": "play"
+        },
+        {
+         "t": "plays",
+         "hu": "plays"
+        }
+       ],
+       "answer": 1,
+       "pic": "🌳"
+      },
+      {
+       "id": "hb12_2_11",
+       "q": "Talk about your day: How often do you play in the park?",
+       "q_hu": "Beszélj a napodról: milyen gyakran játszol a parkban?",
+       "kind": "open",
+       "answer": "I sometimes play in the park. I play football every day.",
+       "answer_hu": "Néha játszom a parkban. Minden nap focizom.",
+       "pic": "🗣️"
+      }
+     ]
+    },
+    {
+     "id": "hb12_3",
+     "n": "3",
+     "text": "Listen or watch. Retell the story to your family in your home language.",
+     "text_hu": "Hallgasd meg vagy nézd meg. Meséld el a történetet a családodnak az anyanyelveden.",
+     "box": [
+      0.04,
+      0.88,
+      0.48,
+      0.965
+     ],
+     "pic": "🎧📺👨‍👩‍👦",
+     "context": {
+      "es": "This is the story of Unit 3 (track 36). There is no text on this page, only the instruction.",
+      "hu": "Ez a 3. fejezet története (36-os hanganyag). Az oldalon csak az utasítás van, szöveg nincs."
+     },
+     "help": {
+      "es": "Listen once, then say in Hungarian: who is in the story, what happens, how it ends.",
+      "hu": "Hallgasd meg egyszer, aztán mondd el magyarul: kik szerepelnek, mi történik, hogyan végződik."
+     },
+     "items": [
+      {
+       "id": "hb12_3_1",
+       "q": "Listen to the Unit 3 story and retell it in Hungarian.",
+       "q_hu": "Hallgasd meg a 3. fejezet történetét, és meséld el magyarul.",
+       "kind": "open",
+       "answer": "The child tells the story in Hungarian: the characters, what they do during the day and the ending.",
+       "answer_hu": "A gyerek magyarul elmeséli a történetet: a szereplőket, mit csinálnak a nap során, és a végét.",
+       "pic": "🎧"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hb13",
+   "book": "hb",
+   "page": 13,
+   "unit": "u3",
+   "img": "en_hb_photo-08",
+   "page_box": [
+    0.505,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "title": "Interesting facts about me",
+   "title_hu": "Érdekességek rólam",
+   "summary_hu": "Egy fiú leírja a szokásait (mit csinál mindig, néha, soha). El kell olvasni, és bekarikázni azokat a képeket, amiket tényleg csinál. Utána a saját szokásainkról írunk, a családdal összehasonlítva, végül a „My progress” részben felmérjük, mit tudunk már.",
+   "words": [
+    {
+     "w": "a bath",
+     "hu": "kád, kádfürdő",
+     "pic": "🛁"
+    },
+    {
+     "w": "a shower",
+     "hu": "zuhany",
+     "pic": "🚿"
+    },
+    {
+     "w": "a banana",
+     "hu": "banán",
+     "pic": "🍌"
+    },
+    {
+     "w": "an apple",
+     "hu": "alma",
+     "pic": "🍎"
+    },
+    {
+     "w": "glasses",
+     "hu": "szemüveg",
+     "pic": "👓"
+    },
+    {
+     "w": "hockey",
+     "hu": "hoki",
+     "pic": "🏑"
+    },
+    {
+     "w": "football",
+     "hu": "foci",
+     "pic": "⚽"
+    },
+    {
+     "w": "at the weekend",
+     "hu": "hétvégén",
+     "pic": "📆"
+    },
+    {
+     "w": "on Fridays",
+     "hu": "pénteken (minden pénteken)"
+    },
+    {
+     "w": "listen to music",
+     "hu": "zenét hallgat",
+     "pic": "🎵"
+    },
+    {
+     "w": "help",
+     "hu": "segít",
+     "pic": "🤝"
+    },
+    {
+     "w": "cook dinner",
+     "hu": "vacsorát főz",
+     "pic": "🍳"
+    },
+    {
+     "w": "habits",
+     "hu": "szokások"
+    },
+    {
+     "w": "compare",
+     "hu": "összehasonlít",
+     "pic": "⚖️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's read about a boy's habits and find the things he does!",
+     "hu": "Olvassunk egy fiú szokásairól, és keressük meg, mit csinál!"
+    },
+    "sentences": [
+     {
+      "es": "A boy writes “Interesting facts about me”.",
+      "hu": "Egy fiú leírja: „Érdekességek rólam”.",
+      "pic": "📝"
+     },
+     {
+      "es": "He doesn't like baths. He has a shower every day.",
+      "hu": "Nem szereti a kádfürdőt. Minden nap zuhanyozik.",
+      "pic": "🚿"
+     },
+     {
+      "es": "He never eats bananas, but he eats an apple every day.",
+      "hu": "Soha nem eszik banánt, de minden nap eszik egy almát.",
+      "pic": "🍎"
+     },
+     {
+      "es": "He always wears glasses.",
+      "hu": "Mindig szemüveget hord.",
+      "pic": "👓"
+     },
+     {
+      "es": "He sometimes plays hockey on Wednesdays.",
+      "hu": "Szerdánként néha hokizik.",
+      "pic": "🏑"
+     },
+     {
+      "es": "He always plays football at the weekend.",
+      "hu": "Hétvégén mindig focizik.",
+      "pic": "⚽"
+     },
+     {
+      "es": "He never does his homework on Fridays.",
+      "hu": "Pénteken soha nem csinálja a házi feladatát.",
+      "pic": "📝"
+     },
+     {
+      "es": "He listens to music every day.",
+      "hu": "Minden nap zenét hallgat.",
+      "pic": "🎵"
+     },
+     {
+      "es": "He sometimes helps to cook dinner on Saturdays.",
+      "hu": "Szombatonként néha segít vacsorát főzni.",
+      "pic": "🍳"
+     },
+     {
+      "es": "Circle the pictures of the things he does.",
+      "hu": "Karikázd be azokat a képeket, amiket csinál.",
+      "pic": "⭕"
+     },
+     {
+      "es": "Then write about your habits with always, every day, never and sometimes.",
+      "hu": "Aztán írj a saját szokásaidról az always, every day, never és sometimes szavakkal.",
+      "pic": "✍️"
+     },
+     {
+      "es": "You can write about food, home, school and sport.",
+      "hu": "Írhatsz ételről, otthonról, iskoláról és sportról.",
+      "pic": "🍽️"
+     },
+     {
+      "es": "Compare with your family: My mum never plays hockey.",
+      "hu": "Hasonlítsd össze a családoddal: Anya soha nem hokizik.",
+      "pic": "👨‍👩‍👦"
+     },
+     {
+      "es": "In “My progress” you draw a happy or a sad mouth on each face.",
+      "hu": "A „My progress” részben minden arcra vidám vagy szomorú szájat rajzolsz.",
+      "pic": "🙂"
+     }
+    ],
+    "remember": [
+     {
+      "es": "always > every day > sometimes > never",
+      "hu": "mindig > minden nap > néha > soha"
+     },
+     {
+      "es": "The frequency word goes before the verb: I never eat bananas.",
+      "hu": "A gyakoriság szava az ige elé kerül: I never eat bananas."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, does the boy eat bananas?",
+      "hu": "Martin, eszik a fiú banánt?"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes, every day!",
+      "hu": "Igen, minden nap!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! He never eats bananas. He eats an apple every day.",
+      "hu": "Miaú, nem! Soha nem eszik banánt. Almát eszik minden nap."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh yes! And he has a shower every day.",
+      "hu": "Ja, igen! És minden nap zuhanyozik."
+     },
+     {
+      "who": "Kitty",
+      "es": "Right! How often do you play football?",
+      "hu": "Úgy van! Te milyen gyakran focizol?"
+     },
+     {
+      "who": "Martin",
+      "es": "I play football every day!",
+      "hu": "Minden nap focizom!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "The boy has a shower every day.",
+      "hu": "A fiú minden nap zuhanyozik.",
+      "answer": true,
+      "why_es": "He says: I have a shower every day.",
+      "why_hu": "Azt írja: minden nap zuhanyozom."
+     },
+     {
+      "es": "The boy likes baths.",
+      "hu": "A fiú szereti a kádfürdőt.",
+      "answer": false,
+      "why_es": "He doesn't like baths.",
+      "why_hu": "Nem szereti a kádfürdőt."
+     },
+     {
+      "es": "He eats a banana every day.",
+      "hu": "Minden nap eszik egy banánt.",
+      "answer": false,
+      "why_es": "He never eats bananas. He eats an apple.",
+      "why_hu": "Soha nem eszik banánt. Almát eszik."
+     },
+     {
+      "es": "He plays football at the weekend.",
+      "hu": "Hétvégén focizik.",
+      "answer": true,
+      "why_es": "He always plays football at the weekend.",
+      "why_hu": "Hétvégén mindig focizik."
+     },
+     {
+      "es": "He does his homework on Fridays.",
+      "hu": "Pénteken megcsinálja a házi feladatát.",
+      "answer": false,
+      "why_es": "He never does homework on Fridays.",
+      "why_hu": "Pénteken soha nem csinál házit."
+     },
+     {
+      "es": "He listens to music every day.",
+      "hu": "Minden nap zenét hallgat.",
+      "answer": true,
+      "why_es": "He says so in his text.",
+      "why_hu": "Ezt írja a szövegében."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "hb13_4",
+     "n": "4",
+     "text": "Read and circle the things he does.",
+     "text_hu": "Olvasd el, és karikázd be, amiket csinál.",
+     "box": [
+      0.53,
+      0.04,
+      0.985,
+      0.395
+     ],
+     "pic": "⭕🍎🚿",
+     "context": {
+      "es": "There are 9 pictures of a boy and a text: Interesting facts about me. Pictures: 1 football, 2 a bath, 3 cooking, 4 eating an apple, 5 homework on Friday, 6 hockey, 7 eating a banana, 8 a shower, 9 listening to music.",
+      "hu": "9 kép van egy fiúról és egy szöveg. Képek: 1 foci, 2 kádfürdő, 3 főzés, 4 almaevés, 5 házi feladat pénteken, 6 hoki, 7 banánevés, 8 zuhany, 9 zenehallgatás."
+     },
+     "help": {
+      "es": "Read each sentence. “never” means he does NOT do it. “doesn't like” means no, too.",
+      "hu": "Olvasd el a mondatokat. A „never” azt jelenti, hogy NEM csinálja. A „doesn't like” is nemet jelent."
+     },
+     "items": [
+      {
+       "id": "hb13_4_1",
+       "q": "Picture 1: he plays football. Does he do it?",
+       "q_hu": "1. kép: focizik. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "⚽"
+      },
+      {
+       "id": "hb13_4_2",
+       "q": "Picture 2: he has a bath. Does he do it?",
+       "q_hu": "2. kép: kádban fürdik. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "pic": "🛁"
+      },
+      {
+       "id": "hb13_4_3",
+       "q": "Picture 3: he helps to cook dinner. Does he do it?",
+       "q_hu": "3. kép: segít vacsorát főzni. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🍳"
+      },
+      {
+       "id": "hb13_4_4",
+       "q": "Picture 4: he eats an apple. Does he do it?",
+       "q_hu": "4. kép: almát eszik. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🍎"
+      },
+      {
+       "id": "hb13_4_5",
+       "q": "Picture 5: he does homework on Friday. Does he do it?",
+       "q_hu": "5. kép: pénteken házi feladatot ír. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "pic": "📝"
+      },
+      {
+       "id": "hb13_4_6",
+       "q": "Picture 6: he plays hockey. Does he do it?",
+       "q_hu": "6. kép: hokizik. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🏑"
+      },
+      {
+       "id": "hb13_4_7",
+       "q": "Picture 7: he eats a banana. Does he do it?",
+       "q_hu": "7. kép: banánt eszik. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "pic": "🍌"
+      },
+      {
+       "id": "hb13_4_8",
+       "q": "Picture 8: he has a shower. Does he do it?",
+       "q_hu": "8. kép: zuhanyozik. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🚿"
+      },
+      {
+       "id": "hb13_4_9",
+       "q": "Picture 9: he listens to music. Does he do it?",
+       "q_hu": "9. kép: zenét hallgat. Csinálja ezt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, circle it",
+         "hu": "Igen, karikázd be"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🎵"
+      }
+     ]
+    },
+    {
+     "id": "hb13_5",
+     "n": "5",
+     "text": "Write about your habits. Compare with your family.",
+     "text_hu": "Írj a szokásaidról. Hasonlítsd össze a családodéval.",
+     "box": [
+      0.53,
+      0.4,
+      0.985,
+      0.61
+     ],
+     "pic": "✍️👨‍👩‍👦",
+     "context": {
+      "es": "Two word boxes help you: always, every day, never, sometimes – and food, home, school, sport. You start with “I …”.",
+      "hu": "Két szódoboz segít: always, every day, never, sometimes (mindig, minden nap, soha, néha) – és food, home, school, sport (étel, otthon, iskola, sport). „I …”-jel kezded."
+     },
+     "help": {
+      "es": "Write: I + always/never/sometimes + verb. Then: My dad + verb with -s.",
+      "hu": "Írd: I + always/never/sometimes + ige. Aztán: My dad + ige -s-sel."
+     },
+     "items": [
+      {
+       "id": "hb13_5_1",
+       "q": "Which word means „soha”?",
+       "q_hu": "Melyik szó jelenti azt, hogy „soha”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "always",
+         "hu": "mindig"
+        },
+        {
+         "t": "never",
+         "hu": "soha"
+        },
+        {
+         "t": "sometimes",
+         "hu": "néha"
+        }
+       ],
+       "answer": 1,
+       "pic": "🚫"
+      },
+      {
+       "id": "hb13_5_2",
+       "q": "Which word means „néha”?",
+       "q_hu": "Melyik szó jelenti azt, hogy „néha”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "sometimes",
+         "hu": "néha"
+        },
+        {
+         "t": "every day",
+         "hu": "minden nap"
+        },
+        {
+         "t": "always",
+         "hu": "mindig"
+        }
+       ],
+       "answer": 0,
+       "pic": "🤷"
+      },
+      {
+       "id": "hb13_5_3",
+       "q": "My dad ___ plays football.",
+       "q_hu": "Apa ___ focizik. Hová kerül a szó?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "My dad always plays football.",
+         "hu": "Apa mindig focizik."
+        },
+        {
+         "t": "My dad plays always football.",
+         "hu": "(rossz szórend)"
+        }
+       ],
+       "answer": 0,
+       "pic": "⚽"
+      },
+      {
+       "id": "hb13_5_4",
+       "q": "Write about your habits and your family's habits.",
+       "q_hu": "Írj a saját és a családod szokásairól.",
+       "kind": "open",
+       "answer": "I always eat fruit. I play football every day. I never cook dinner. My mum sometimes plays tennis. My dad never eats chocolate.",
+       "answer_hu": "Mindig eszem gyümölcsöt. Minden nap focizom. Soha nem főzök vacsorát. Anya néha teniszezik. Apa soha nem eszik csokit.",
+       "pic": "✍️"
+      }
+     ]
+    },
+    {
+     "id": "hb13_6",
+     "n": "6",
+     "text": "My progress. Draw the mouths and colour the faces.",
+     "text_hu": "Az én fejlődésem. Rajzold meg a szájakat, és színezd ki az arcokat.",
+     "box": [
+      0.53,
+      0.6,
+      0.985,
+      0.955
+     ],
+     "pic": "🙂📈",
+     "context": {
+      "es": "Eight sentences about what you can do after Unit 3. Next to each one there is a face without a mouth.",
+      "hu": "Nyolc mondat arról, mit tudsz a 3. fejezet után. Mindegyik mellett egy száj nélküli arc van."
+     },
+     "help": {
+      "es": "If you can do it, draw a smile. If not yet, practise again!",
+      "hu": "Ha tudod, rajzolj mosolyt. Ha még nem, gyakorold újra!"
+     },
+     "items": [
+      {
+       "id": "hb13_6_1",
+       "q": "Can you say: \"I can talk about daily routines and habits.\"?",
+       "q_hu": "Igaz rád ez: „Tudok beszélni a napirendemről és a szokásaimról.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_2",
+       "q": "Can you say: \"I can say the days of the week and times with o'clock.\"?",
+       "q_hu": "Igaz rád ez: „El tudom mondani a hét napjait és az egész órákat (o'clock).”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_3",
+       "q": "Can you say: \"I can say when and how frequently people do things.\"?",
+       "q_hu": "Igaz rád ez: „El tudom mondani, mikor és milyen gyakran csinálnak valamit az emberek.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_4",
+       "q": "Can you say: \"I can sing the song and read the story.\"?",
+       "q_hu": "Igaz rád ez: „El tudom énekelni a dalt és el tudom olvasni a történetet.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_5",
+       "q": "Can you say: \"I can talk about astronauts in space.\"?",
+       "q_hu": "Igaz rád ez: „Tudok beszélni az űrhajósokról az űrben.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_6",
+       "q": "Can you say: \"I can play games on Practice Extra.\"?",
+       "q_hu": "Igaz rád ez: „Tudok játszani a Practice Extra játékaival.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_7",
+       "q": "Can you say: \"I can use my Picture dictionary.\"?",
+       "q_hu": "Igaz rád ez: „Tudom használni a képes szótáramat.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb13_6_8",
+       "q": "Can you say: \"I can review my learning at home using my Home Booklet.\"?",
+       "q_hu": "Igaz rád ez: „Otthon át tudom ismételni a tanultakat a Home Bookletből.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hb14",
+   "book": "hb",
+   "page": 14,
+   "unit": "u4",
+   "img": "en_hb_photo-09",
+   "page_box": [
+    0.0,
+    0.0,
+    0.505,
+    1.0
+   ],
+   "title": "In the city",
+   "title_hu": "A városban",
+   "summary_hu": "Az oldal a város helyeiről szól: hová megyünk, ha pénzt, könyvet, ételt akarunk, vagy orvoshoz kell mennünk. A nyelvtani doboz a must (muszáj, kell) és a can (szabad, lehet) használatát mutatja kérdésben és válaszban.",
+   "words": [
+    {
+     "w": "a bus station",
+     "hu": "buszpályaudvar",
+     "pic": "🚌"
+    },
+    {
+     "w": "a bank",
+     "hu": "bank",
+     "pic": "🏦"
+    },
+    {
+     "w": "a library",
+     "hu": "könyvtár",
+     "pic": "📚"
+    },
+    {
+     "w": "a cinema",
+     "hu": "mozi",
+     "pic": "🎬"
+    },
+    {
+     "w": "a clothes shop",
+     "hu": "ruhabolt",
+     "pic": "👗"
+    },
+    {
+     "w": "a hospital",
+     "hu": "kórház",
+     "pic": "🏥"
+    },
+    {
+     "w": "a supermarket",
+     "hu": "szupermarket",
+     "pic": "🛒"
+    },
+    {
+     "w": "a sports centre",
+     "hu": "sportközpont",
+     "pic": "🏊"
+    },
+    {
+     "w": "a swimming pool",
+     "hu": "uszoda",
+     "pic": "🏊"
+    },
+    {
+     "w": "a hotel",
+     "hu": "szálloda",
+     "pic": "🏨"
+    },
+    {
+     "w": "a market",
+     "hu": "piac",
+     "pic": "🍉"
+    },
+    {
+     "w": "must",
+     "hu": "kell, muszáj",
+     "pic": "❗"
+    },
+    {
+     "w": "can",
+     "hu": "szabad, lehet; tud",
+     "pic": "✅"
+    },
+    {
+     "w": "money",
+     "hu": "pénz",
+     "pic": "💰"
+    },
+    {
+     "w": "a doctor",
+     "hu": "orvos",
+     "pic": "👩‍⚕️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's go to the city! Where do we go to buy, to learn and to play?",
+     "hu": "Menjünk a városba! Hová megyünk vásárolni, tanulni és játszani?"
+    },
+    "sentences": [
+     {
+      "es": "This unit is called “In the city”.",
+      "hu": "Ennek a fejezetnek a címe: „A városban”.",
+      "pic": "🏙️"
+     },
+     {
+      "es": "You go to a bus station to catch a bus.",
+      "hu": "A buszpályaudvarra azért mész, hogy buszra szállj.",
+      "pic": "🚌"
+     },
+     {
+      "es": "You go to a bank to get some money.",
+      "hu": "A bankba azért mész, hogy pénzt vegyél fel.",
+      "pic": "🏦"
+     },
+     {
+      "es": "You go to a library to get books.",
+      "hu": "A könyvtárba könyvekért mész.",
+      "pic": "📚"
+     },
+     {
+      "es": "You go to a cinema to watch films.",
+      "hu": "A moziba filmet nézni mész.",
+      "pic": "🎬"
+     },
+     {
+      "es": "You go to a clothes shop to buy clothes.",
+      "hu": "A ruhaboltba ruhát venni mész.",
+      "pic": "👗"
+     },
+     {
+      "es": "You go to a hospital to see a doctor.",
+      "hu": "A kórházba orvoshoz mész.",
+      "pic": "🏥"
+     },
+     {
+      "es": "You go to a supermarket to buy food.",
+      "hu": "A szupermarketbe ételt venni mész.",
+      "pic": "🛒"
+     },
+     {
+      "es": "You go to a sports centre to swim.",
+      "hu": "A sportközpontba úszni mész.",
+      "pic": "🏊"
+     },
+     {
+      "es": "“Must” means you have to do it: Must Suzy go to school? Yes, she must.",
+      "hu": "A „must” azt jelenti: muszáj. Suzynak muszáj iskolába mennie? Igen, muszáj.",
+      "pic": "❗"
+     },
+     {
+      "es": "“Can” means it is OK: Can Simon play football here? Yes, he can.",
+      "hu": "A „can” azt jelenti: szabad. Simon focizhat itt? Igen, szabad.",
+      "pic": "✅"
+     },
+     {
+      "es": "The photos show a swimming pool, a cinema, a library, a hotel, a market and a bus station.",
+      "hu": "A fotókon uszoda, mozi, könyvtár, szálloda, piac és buszpályaudvar van.",
+      "pic": "📷"
+     },
+     {
+      "es": "Ask and answer about the places with must and can.",
+      "hu": "Kérdezz és válaszolj a helyekről a must és a can szavakkal.",
+      "pic": "🗣️"
+     },
+     {
+      "es": "Then listen to the story and tell it to your family in Hungarian.",
+      "hu": "Aztán hallgasd meg a történetet, és meséld el a családodnak magyarul.",
+      "pic": "🎧"
+     }
+    ],
+    "remember": [
+     {
+      "es": "You go to a … to …: You go to a library to get books.",
+      "hu": "Elmész a …-ba, hogy …: a könyvtárba könyvekért mész."
+     },
+     {
+      "es": "must = muszáj, kell · can = szabad, lehet",
+      "hu": "must = muszáj, kell · can = szabad, lehet"
+     },
+     {
+      "es": "Must I …? Yes, you must. · Can I …? Yes, you can.",
+      "hu": "Muszáj …? Igen, muszáj. · Szabad …? Igen, szabad."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, where do you go to get books?",
+      "hu": "Martin, hová mész könyvekért?"
+     },
+     {
+      "who": "Martin",
+      "es": "To a bank!",
+      "hu": "A bankba!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! You go to a bank to get some money. Books are in a library.",
+      "hu": "Miaú, nem! A bankba pénzért mész. A könyvek a könyvtárban vannak."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh, a library! I go to a library to get books.",
+      "hu": "Ja, a könyvtárba! A könyvtárba megyek könyvekért."
+     },
+     {
+      "who": "Kitty",
+      "es": "Can you swim at the swimming pool?",
+      "hu": "Szabad úszni az uszodában?"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes, I can!",
+      "hu": "Igen, szabad!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Must you go to school?",
+      "hu": "Muszáj iskolába menned?"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes, I must. But I like it!",
+      "hu": "Igen, muszáj. De szeretem!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "You go to a hospital to see a doctor.",
+      "hu": "Kórházba orvoshoz mész.",
+      "answer": true,
+      "why_es": "Doctors work in hospitals.",
+      "why_hu": "Az orvosok kórházban dolgoznak."
+     },
+     {
+      "es": "You go to a cinema to buy food.",
+      "hu": "A moziba ételt venni mész.",
+      "answer": false,
+      "why_es": "You go to a cinema to watch films. You buy food at a supermarket.",
+      "why_hu": "A moziba filmet nézni mész. Ételt a szupermarketben veszel."
+     },
+     {
+      "es": "“Must” means „szabad”.",
+      "hu": "A „must” azt jelenti: szabad.",
+      "answer": false,
+      "why_es": "Must means „muszáj”. Can means „szabad”.",
+      "why_hu": "A must azt jelenti: muszáj. A can azt: szabad."
+     },
+     {
+      "es": "You go to a bank to get some money.",
+      "hu": "A bankba pénzért mész.",
+      "answer": true,
+      "why_es": "That is the match in activity 1.",
+      "why_hu": "Ez az 1. feladat párosítása."
+     },
+     {
+      "es": "Can Simon play football here? Yes, he can.",
+      "hu": "Fociznhat itt Simon? Igen, szabad.",
+      "answer": true,
+      "why_es": "This is from the grammar box.",
+      "why_hu": "Ez a nyelvtani dobozban van."
+     },
+     {
+      "es": "You go to a bus station to swim.",
+      "hu": "A buszpályaudvarra úszni mész.",
+      "answer": false,
+      "why_es": "You go to a bus station to catch a bus.",
+      "why_hu": "A buszpályaudvarra buszra szállni mész."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "hb14_1",
+     "n": "1",
+     "text": "Read and match.",
+     "text_hu": "Olvasd el és párosítsd.",
+     "box": [
+      0.04,
+      0.14,
+      0.47,
+      0.39
+     ],
+     "pic": "🏙️🔗",
+     "context": {
+      "es": "Eight places on the left (bus station, bank, library, cinema, clothes shop, hospital, supermarket, sports centre) and eight reasons on the right. The first one is done: bus station → to catch a bus.",
+      "hu": "Bal oldalon nyolc hely (buszpályaudvar, bank, könyvtár, mozi, ruhabolt, kórház, szupermarket, sportközpont), jobb oldalon nyolc cél. Az első kész: buszpályaudvar → buszra szállni."
+     },
+     "help": {
+      "es": "Think: what can you find in this place? Books are in a library.",
+      "hu": "Gondold végig: mi van ezen a helyen? A könyvek a könyvtárban vannak."
+     },
+     "items": [
+      {
+       "id": "hb14_1_1",
+       "q": "You go to a bus station…",
+       "q_hu": "A buszpályaudvarra azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to catch a bus.",
+         "hu": "hogy buszra szállj."
+        },
+        {
+         "t": "to swim.",
+         "hu": "hogy ússz."
+        },
+        {
+         "t": "to get books.",
+         "hu": "hogy könyvet vegyél ki."
+        }
+       ],
+       "answer": 0,
+       "pic": "🚌"
+      },
+      {
+       "id": "hb14_1_2",
+       "q": "You go to a bank…",
+       "q_hu": "A bankba azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to buy clothes.",
+         "hu": "hogy ruhát vegyél."
+        },
+        {
+         "t": "to get some money.",
+         "hu": "hogy pénzt vegyél fel."
+        },
+        {
+         "t": "to watch films.",
+         "hu": "hogy filmet nézz."
+        }
+       ],
+       "answer": 1,
+       "pic": "🏦"
+      },
+      {
+       "id": "hb14_1_3",
+       "q": "You go to a library…",
+       "q_hu": "A könyvtárba azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to buy food.",
+         "hu": "hogy ételt vegyél."
+        },
+        {
+         "t": "to see a doctor.",
+         "hu": "hogy orvoshoz menj."
+        },
+        {
+         "t": "to get books.",
+         "hu": "hogy könyvet vegyél ki."
+        }
+       ],
+       "answer": 2,
+       "pic": "📚"
+      },
+      {
+       "id": "hb14_1_4",
+       "q": "You go to a cinema…",
+       "q_hu": "A moziba azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to watch films.",
+         "hu": "hogy filmet nézz."
+        },
+        {
+         "t": "to catch a bus.",
+         "hu": "hogy buszra szállj."
+        },
+        {
+         "t": "to get some money.",
+         "hu": "hogy pénzt vegyél fel."
+        }
+       ],
+       "answer": 0,
+       "pic": "🎬"
+      },
+      {
+       "id": "hb14_1_5",
+       "q": "You go to a clothes shop…",
+       "q_hu": "A ruhaboltba azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to swim.",
+         "hu": "hogy ússz."
+        },
+        {
+         "t": "to buy clothes.",
+         "hu": "hogy ruhát vegyél."
+        },
+        {
+         "t": "to see a doctor.",
+         "hu": "hogy orvoshoz menj."
+        }
+       ],
+       "answer": 1,
+       "pic": "👗"
+      },
+      {
+       "id": "hb14_1_6",
+       "q": "You go to a hospital…",
+       "q_hu": "A kórházba azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to get books.",
+         "hu": "hogy könyvet vegyél ki."
+        },
+        {
+         "t": "to buy food.",
+         "hu": "hogy ételt vegyél."
+        },
+        {
+         "t": "to see a doctor.",
+         "hu": "hogy orvoshoz menj."
+        }
+       ],
+       "answer": 2,
+       "pic": "🏥"
+      },
+      {
+       "id": "hb14_1_7",
+       "q": "You go to a supermarket…",
+       "q_hu": "A szupermarketbe azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to buy food.",
+         "hu": "hogy ételt vegyél."
+        },
+        {
+         "t": "to watch films.",
+         "hu": "hogy filmet nézz."
+        },
+        {
+         "t": "to catch a bus.",
+         "hu": "hogy buszra szállj."
+        }
+       ],
+       "answer": 0,
+       "pic": "🛒"
+      },
+      {
+       "id": "hb14_1_8",
+       "q": "You go to a sports centre…",
+       "q_hu": "A sportközpontba azért mész…",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to get some money.",
+         "hu": "hogy pénzt vegyél fel."
+        },
+        {
+         "t": "to swim.",
+         "hu": "hogy ússz."
+        },
+        {
+         "t": "to buy clothes.",
+         "hu": "hogy ruhát vegyél."
+        }
+       ],
+       "answer": 1,
+       "pic": "🏊"
+      }
+     ]
+    },
+    {
+     "id": "hb14_2",
+     "n": "2",
+     "text": "Look at the places. Ask and answer using must and can.",
+     "text_hu": "Nézd meg a helyeket. Kérdezz és válaszolj a must és a can szavakkal.",
+     "box": [
+      0.04,
+      0.385,
+      0.48,
+      0.85
+     ],
+     "pic": "❗✅🏊",
+     "context": {
+      "es": "Grammar box: Must I / Simon / Suzy go to school? Yes, you / he / she must. Can I / Simon / Suzy play football here? Yes, you / he / she can. Six photos: 1 a swimming pool, 2 a cinema, 3 a library, 4 a hotel, 5 a market, 6 a bus station.",
+      "hu": "Nyelvtani doboz: Muszáj nekem / Simonnak / Suzynak iskolába menni? Igen, muszáj. Szabad itt focizni? Igen, szabad. Hat fotó: 1 uszoda, 2 mozi, 3 könyvtár, 4 szálloda, 5 piac, 6 buszpályaudvar."
+     },
+     "help": {
+      "es": "Use “can” for things that are OK, and “must” for rules.",
+      "hu": "A „can”-t használd arra, ami szabad, a „must”-ot a szabályokra."
+     },
+     "items": [
+      {
+       "id": "hb14_2_1",
+       "q": "Photo 1 (swimming pool): Can I swim here?",
+       "q_hu": "1. fotó (uszoda): Szabad itt úszni?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you can.",
+         "hu": "Igen, szabad."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem szabad."
+        }
+       ],
+       "answer": 0,
+       "pic": "🏊"
+      },
+      {
+       "id": "hb14_2_2",
+       "q": "Photo 2 (cinema): Can I watch a film here?",
+       "q_hu": "2. fotó (mozi): Szabad itt filmet nézni?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you can.",
+         "hu": "Igen, szabad."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem szabad."
+        }
+       ],
+       "answer": 0,
+       "pic": "🎬"
+      },
+      {
+       "id": "hb14_2_3",
+       "q": "Photo 3 (library): Can I play football here?",
+       "q_hu": "3. fotó (könyvtár): Szabad itt focizni?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you can.",
+         "hu": "Igen, szabad."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem szabad."
+        }
+       ],
+       "answer": 1,
+       "pic": "📚"
+      },
+      {
+       "id": "hb14_2_4",
+       "q": "Photo 3 (library): Must I be quiet here?",
+       "q_hu": "3. fotó (könyvtár): Muszáj itt csendben lenni?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you must.",
+         "hu": "Igen, muszáj."
+        },
+        {
+         "t": "No, you can play football.",
+         "hu": "Nem, focizhatsz."
+        }
+       ],
+       "answer": 0,
+       "pic": "🤫"
+      },
+      {
+       "id": "hb14_2_5",
+       "q": "Photo 4 (hotel): Can I sleep here?",
+       "q_hu": "4. fotó (szálloda): Szabad itt aludni?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you can.",
+         "hu": "Igen, szabad."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem szabad."
+        }
+       ],
+       "answer": 0,
+       "pic": "🏨"
+      },
+      {
+       "id": "hb14_2_6",
+       "q": "Photo 5 (market): Can I buy fruit here?",
+       "q_hu": "5. fotó (piac): Vehetek itt gyümölcsöt?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you can.",
+         "hu": "Igen, szabad."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem szabad."
+        }
+       ],
+       "answer": 0,
+       "pic": "🍉"
+      },
+      {
+       "id": "hb14_2_7",
+       "q": "Photo 6 (bus station): Must I buy a ticket for the bus?",
+       "q_hu": "6. fotó (buszpályaudvar): Muszáj jegyet venni a buszra?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you must.",
+         "hu": "Igen, muszáj."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem szabad."
+        }
+       ],
+       "answer": 0,
+       "pic": "🎫"
+      },
+      {
+       "id": "hb14_2_8",
+       "q": "___ Suzy go to school? Yes, she must.",
+       "q_hu": "___ Suzynak iskolába mennie? Igen, muszáj.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Must",
+         "hu": "Must (muszáj)"
+        },
+        {
+         "t": "Can",
+         "hu": "Can (szabad)"
+        }
+       ],
+       "answer": 0,
+       "pic": "🏫"
+      },
+      {
+       "id": "hb14_2_9",
+       "q": "___ Simon play football here? Yes, he can.",
+       "q_hu": "___ Simon itt focizni? Igen, szabad.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Must",
+         "hu": "Must (muszáj)"
+        },
+        {
+         "t": "Can",
+         "hu": "Can (szabad)"
+        }
+       ],
+       "answer": 1,
+       "pic": "⚽"
+      }
+     ]
+    },
+    {
+     "id": "hb14_3",
+     "n": "3",
+     "text": "Listen or watch. Retell the story to your family in your home language.",
+     "text_hu": "Hallgasd meg vagy nézd meg. Meséld el a történetet a családodnak az anyanyelveden.",
+     "box": [
+      0.03,
+      0.845,
+      0.47,
+      0.925
+     ],
+     "pic": "🎧📺👨‍👩‍👦",
+     "context": {
+      "es": "This is the story of Unit 4 (track 46). There is no text on this page, only the instruction.",
+      "hu": "Ez a 4. fejezet története (46-os hanganyag). Az oldalon csak az utasítás van."
+     },
+     "help": {
+      "es": "Listen once, then say in Hungarian: who is in the story, where they go in the city, how it ends.",
+      "hu": "Hallgasd meg, aztán mondd el magyarul: kik szerepelnek, hová mennek a városban, hogyan végződik."
+     },
+     "items": [
+      {
+       "id": "hb14_3_1",
+       "q": "Listen to the Unit 4 story and retell it in Hungarian.",
+       "q_hu": "Hallgasd meg a 4. fejezet történetét, és meséld el magyarul.",
+       "kind": "open",
+       "answer": "The child retells the story in Hungarian: the characters, the places in the city and the ending.",
+       "answer_hu": "A gyerek magyarul elmeséli: a szereplőket, a városi helyeket és a történet végét.",
+       "pic": "🎧"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hb15",
+   "book": "hb",
+   "page": 15,
+   "unit": "u4",
+   "img": "en_hb_photo-09",
+   "page_box": [
+    0.505,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "title": "Describing my town",
+   "title_hu": "A városom leírása",
+   "summary_hu": "Egy rövid leírás alapján ki kell találni, hol vannak az épületek a térképen (in front of = előtt, opposite = szemben, between = között, next to = mellett). Utána otthoni szabályokat írunk a must szóval, végül a „My progress” részben felmérjük, mit tudunk már.",
+   "words": [
+    {
+     "w": "in front of",
+     "hu": "előtt",
+     "pic": "⬆️"
+    },
+    {
+     "w": "opposite",
+     "hu": "szemben",
+     "pic": "↔️"
+    },
+    {
+     "w": "between",
+     "hu": "között"
+    },
+    {
+     "w": "next to",
+     "hu": "mellett",
+     "pic": "➡️"
+    },
+    {
+     "w": "the park",
+     "hu": "a park",
+     "pic": "🌳"
+    },
+    {
+     "w": "the swimming pool",
+     "hu": "az uszoda",
+     "pic": "🏊"
+    },
+    {
+     "w": "the library",
+     "hu": "a könyvtár",
+     "pic": "📚"
+    },
+    {
+     "w": "the supermarket",
+     "hu": "a szupermarket",
+     "pic": "🛒"
+    },
+    {
+     "w": "the sports centre",
+     "hu": "a sportközpont",
+     "pic": "🏟️"
+    },
+    {
+     "w": "the bus station",
+     "hu": "a buszpályaudvar",
+     "pic": "🚌"
+    },
+    {
+     "w": "the cinema",
+     "hu": "a mozi",
+     "pic": "🎬"
+    },
+    {
+     "w": "the hospital",
+     "hu": "a kórház",
+     "pic": "🏥"
+    },
+    {
+     "w": "a map",
+     "hu": "térkép",
+     "pic": "🗺️"
+    },
+    {
+     "w": "rules",
+     "hu": "szabályok",
+     "pic": "📋"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's read about a town and find the places on the map!",
+     "hu": "Olvassunk egy városról, és keressük meg a helyeket a térképen!"
+    },
+    "sentences": [
+     {
+      "es": "A child describes his town.",
+      "hu": "Egy gyerek leírja a városát.",
+      "pic": "🏘️"
+     },
+     {
+      "es": "The map has a road and some buildings with letters.",
+      "hu": "A térképen egy út és betűkkel jelölt épületek vannak.",
+      "pic": "🗺️"
+     },
+     {
+      "es": "L is the library, SC is the sports centre, SP is the swimming pool, C is the cinema.",
+      "hu": "L a könyvtár, SC a sportközpont, SP az uszoda, C a mozi.",
+      "pic": "🔤"
+     },
+     {
+      "es": "Four buildings have no letter. You must write the letters.",
+      "hu": "Négy épületen nincs betű. Neked kell beírni.",
+      "pic": "✏️"
+     },
+     {
+      "es": "The park is in front of the swimming pool.",
+      "hu": "A park az uszoda előtt van.",
+      "pic": "🌳"
+     },
+     {
+      "es": "The library is opposite the park.",
+      "hu": "A könyvtár a parkkal szemben van.",
+      "pic": "📚"
+     },
+     {
+      "es": "The supermarket is between the library and the sports centre.",
+      "hu": "A szupermarket a könyvtár és a sportközpont között van.",
+      "pic": "🛒"
+     },
+     {
+      "es": "Opposite the sports centre there is a bus station.",
+      "hu": "A sportközponttal szemben van egy buszpályaudvar.",
+      "pic": "🚌"
+     },
+     {
+      "es": "Next to the bus station there is a cinema.",
+      "hu": "A buszpályaudvar mellett van egy mozi.",
+      "pic": "🎬"
+     },
+     {
+      "es": "The cinema is in front of the hospital.",
+      "hu": "A mozi a kórház előtt van.",
+      "pic": "🏥"
+     },
+     {
+      "es": "Then make a list of rules at home with your family.",
+      "hu": "Aztán írj otthoni szabályokat a családoddal.",
+      "pic": "📋"
+     },
+     {
+      "es": "Start with “At home, I must…”: At home, I must tidy my room.",
+      "hu": "Így kezdd: „Otthon muszáj…”: Otthon muszáj rendet raknom a szobámban.",
+      "pic": "🧹"
+     },
+     {
+      "es": "In “My progress” you draw a mouth on each face.",
+      "hu": "A „My progress” részben minden arcra szájat rajzolsz.",
+      "pic": "🙂"
+     }
+    ],
+    "remember": [
+     {
+      "es": "in front of = előtt · opposite = szemben · between = között · next to = mellett",
+      "hu": "in front of = előtt · opposite = szemben · between = között · next to = mellett"
+     },
+     {
+      "es": "At home, I must … = Otthon muszáj …",
+      "hu": "At home, I must … = Otthon muszáj …"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, where is the park?",
+      "hu": "Martin, hol van a park?"
+     },
+     {
+      "who": "Martin",
+      "es": "It's next to the library.",
+      "hu": "A könyvtár mellett."
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, not quite! The library is opposite the park. The park is in front of the swimming pool.",
+      "hu": "Miaú, nem egészen! A könyvtár a parkkal szemben van. A park az uszoda előtt van."
+     },
+     {
+      "who": "Martin",
+      "es": "Ah, so box 1 is P!",
+      "hu": "Ó, akkor az 1-es doboz P!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Yes! And what must you do at home?",
+      "hu": "Igen! És mit kell csinálnod otthon?"
+     },
+     {
+      "who": "Martin",
+      "es": "At home, I must tidy my room.",
+      "hu": "Otthon rendet kell raknom a szobámban."
+     }
+    ],
+    "tf": [
+     {
+      "es": "The library is opposite the park.",
+      "hu": "A könyvtár a parkkal szemben van.",
+      "answer": true,
+      "why_es": "The text says so.",
+      "why_hu": "Ezt írja a szöveg."
+     },
+     {
+      "es": "The supermarket is next to the hospital.",
+      "hu": "A szupermarket a kórház mellett van.",
+      "answer": false,
+      "why_es": "It is between the library and the sports centre.",
+      "why_hu": "A könyvtár és a sportközpont között van."
+     },
+     {
+      "es": "The cinema is next to the bus station.",
+      "hu": "A mozi a buszpályaudvar mellett van.",
+      "answer": true,
+      "why_es": "Next to the bus station there is a cinema.",
+      "why_hu": "A buszpályaudvar mellett van egy mozi."
+     },
+     {
+      "es": "“Between” means „szemben”.",
+      "hu": "A „between” azt jelenti: szemben.",
+      "answer": false,
+      "why_es": "Between means „között”. Opposite means „szemben”.",
+      "why_hu": "A between: között. Az opposite: szemben."
+     },
+     {
+      "es": "Box 4 on the map is the hospital.",
+      "hu": "A térképen a 4-es doboz a kórház.",
+      "answer": true,
+      "why_es": "The cinema is in front of the hospital, so the hospital is behind C.",
+      "why_hu": "A mozi a kórház előtt van, tehát a kórház a C mögött."
+     },
+     {
+      "es": "Box 3 on the map is the park.",
+      "hu": "A térképen a 3-as doboz a park.",
+      "answer": false,
+      "why_es": "Box 3 is opposite the sports centre: it is the bus station.",
+      "why_hu": "A 3-as doboz a sportközponttal szemben van: a buszpályaudvar."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "hb15_4",
+     "n": "4",
+     "text": "Read. Write the missing letters on the map.",
+     "text_hu": "Olvasd el. Írd be a hiányzó betűket a térképre.",
+     "box": [
+      0.53,
+      0.04,
+      0.985,
+      0.39
+     ],
+     "pic": "🗺️🔤",
+     "context": {
+      "es": "A road goes across the map. Top row: SP (swimming pool) with box 1 under it, then box 3, then C (cinema) with box 4 above it. Bottom row: L (library), box 2, SC (sports centre). Letters: L, SC, BS, SM, SP, C, H, P.",
+      "hu": "A térképen egy út megy keresztül. Felső sor: SP (uszoda), alatta az 1-es doboz, aztán a 3-as doboz, aztán C (mozi), fölötte a 4-es doboz. Alsó sor: L (könyvtár), 2-es doboz, SC (sportközpont). Betűk: L, SC, BS, SM, SP, C, H, P."
+     },
+     "help": {
+      "es": "Read one sentence at a time and find the place it talks about on the map.",
+      "hu": "Egyszerre egy mondatot olvass el, és keresd meg a térképen, melyik helyről szól."
+     },
+     "items": [
+      {
+       "id": "hb15_4_1",
+       "q": "Box 1 is in front of the swimming pool and opposite the library. Which letter?",
+       "q_hu": "Az 1-es doboz az uszoda előtt és a könyvtárral szemben van. Melyik betű?",
+       "kind": "type",
+       "answer": "P",
+       "alts": [
+        "park"
+       ],
+       "answer_hu": "P = park",
+       "pic": "🌳"
+      },
+      {
+       "id": "hb15_4_2",
+       "q": "Box 2 is between the library and the sports centre. Which letter?",
+       "q_hu": "A 2-es doboz a könyvtár és a sportközpont között van. Melyik betű?",
+       "kind": "type",
+       "answer": "SM",
+       "alts": [
+        "supermarket"
+       ],
+       "answer_hu": "SM = szupermarket",
+       "pic": "🛒"
+      },
+      {
+       "id": "hb15_4_3",
+       "q": "Box 3 is opposite the sports centre and next to the cinema. Which letter?",
+       "q_hu": "A 3-as doboz a sportközponttal szemben és a mozi mellett van. Melyik betű?",
+       "kind": "type",
+       "answer": "BS",
+       "alts": [
+        "bus station"
+       ],
+       "answer_hu": "BS = buszpályaudvar",
+       "pic": "🚌"
+      },
+      {
+       "id": "hb15_4_4",
+       "q": "Box 4: the cinema is in front of it. Which letter?",
+       "q_hu": "4-es doboz: a mozi előtte van. Melyik betű?",
+       "kind": "type",
+       "answer": "H",
+       "alts": [
+        "hospital"
+       ],
+       "answer_hu": "H = kórház",
+       "pic": "🏥"
+      }
+     ]
+    },
+    {
+     "id": "hb15_5",
+     "n": "5",
+     "text": "Make a list of rules at home with your family.",
+     "text_hu": "Írj otthoni szabályokat a családoddal.",
+     "box": [
+      0.53,
+      0.39,
+      0.985,
+      0.61
+     ],
+     "pic": "🏠📋",
+     "context": {
+      "es": "There are empty lines. The first line starts: At home, I must…",
+      "hu": "Üres sorok vannak. Az első így kezdődik: At home, I must… (Otthon muszáj…)"
+     },
+     "help": {
+      "es": "Think of your home rules: teeth, room, homework, bed. Write: I must + verb.",
+      "hu": "Gondolj az otthoni szabályokra: fogmosás, szoba, házi, lefekvés. Írd: I must + ige."
+     },
+     "items": [
+      {
+       "id": "hb15_5_1",
+       "q": "At home, I must ___ my teeth before bed.",
+       "q_hu": "Otthon lefekvés előtt muszáj ___ a fogamat.",
+       "kind": "type",
+       "answer": "brush",
+       "alts": [
+        "clean",
+        "wash"
+       ],
+       "answer_hu": "megmosnom (brush)",
+       "pic": "🪥"
+      },
+      {
+       "id": "hb15_5_2",
+       "q": "At home, I must ___ my room.",
+       "q_hu": "Otthon muszáj ___ a szobámban.",
+       "kind": "type",
+       "answer": "tidy",
+       "alts": [
+        "clean"
+       ],
+       "answer_hu": "rendet raknom (tidy)",
+       "pic": "🧹"
+      },
+      {
+       "id": "hb15_5_3",
+       "q": "At home, I ___ do my homework before I play.",
+       "q_hu": "Otthon ___ megcsinálni a házit, mielőtt játszom.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "must",
+         "hu": "muszáj"
+        },
+        {
+         "t": "can",
+         "hu": "szabad"
+        }
+       ],
+       "answer": 0,
+       "pic": "📝"
+      },
+      {
+       "id": "hb15_5_4",
+       "q": "Write your list of rules at home.",
+       "q_hu": "Írd le az otthoni szabályaitokat.",
+       "kind": "open",
+       "answer": "At home, I must tidy my room. I must brush my teeth. I must do my homework. I must go to bed at nine o'clock. I must help my mum.",
+       "answer_hu": "Otthon muszáj rendet raknom a szobámban. Muszáj fogat mosnom. Muszáj megcsinálnom a házit. Kilenckor muszáj lefeküdnöm. Muszáj segítenem anyának.",
+       "pic": "✍️"
+      }
+     ]
+    },
+    {
+     "id": "hb15_6",
+     "n": "6",
+     "text": "My progress. Draw the mouths and colour the faces.",
+     "text_hu": "Az én fejlődésem. Rajzold meg a szájakat, és színezd ki az arcokat.",
+     "box": [
+      0.53,
+      0.605,
+      0.985,
+      0.96
+     ],
+     "pic": "🙂📈",
+     "context": {
+      "es": "Eight sentences about what you can do after Unit 4. Next to each one there is a face without a mouth.",
+      "hu": "Nyolc mondat arról, mit tudsz a 4. fejezet után. Mindegyik mellett egy száj nélküli arc van."
+     },
+     "help": {
+      "es": "If you can do it, draw a smile. If not yet, practise again!",
+      "hu": "Ha tudod, rajzolj mosolyt. Ha még nem, gyakorold újra!"
+     },
+     "items": [
+      {
+       "id": "hb15_6_1",
+       "q": "Can you say: \"I can say where things are in a town or city.\"?",
+       "q_hu": "Igaz rád ez: „El tudom mondani, hol vannak a dolgok egy városban.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_2",
+       "q": "Can you say: \"I can say where you go to do or buy something.\"?",
+       "q_hu": "Igaz rád ez: „El tudom mondani, hová megyünk, ha csinálni vagy venni akarunk valamit.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_3",
+       "q": "Can you say: \"I can talk about obligation and permission using must and can.\"?",
+       "q_hu": "Igaz rád ez: „Tudok beszélni arról, mi kötelező és mi szabad (must és can).”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_4",
+       "q": "Can you say: \"I can sing the song and read the story.\"?",
+       "q_hu": "Igaz rád ez: „El tudom énekelni a dalt és el tudom olvasni a történetet.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_5",
+       "q": "Can you say: \"I can talk about shops and shopping.\"?",
+       "q_hu": "Igaz rád ez: „Tudok beszélni a boltokról és a vásárlásról.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_6",
+       "q": "Can you say: \"I can play games on Practice Extra.\"?",
+       "q_hu": "Igaz rád ez: „Tudok játszani a Practice Extra játékaival.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_7",
+       "q": "Can you say: \"I can use my Picture dictionary.\"?",
+       "q_hu": "Igaz rád ez: „Tudom használni a képes szótáramat.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      },
+      {
+       "id": "hb15_6_8",
+       "q": "Can you say: \"I can review my learning at home using my Home Booklet.\"?",
+       "q_hu": "Igaz rád ez: „Otthon át tudom ismételni a tanultakat a Home Bookletből.”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "Not yet",
+         "hu": "Még nem"
+        }
+       ],
+       "answer": 0,
+       "pic": "🙂"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,5320 @@
+{
+ "pages": [
+  {
+   "id": "pb36",
+   "book": "pb",
+   "page": 36,
+   "unit": "u4",
+   "title": "In the city",
+   "title_hu": "A városban",
+   "summary_hu": "A 4. fejezet nyitóoldala: négy gyerek egy város térképét nézi. Megtanuljuk a városi helyek nevét (bank, buszpályaudvar, mozi, sportközpont, szupermarket, uszoda, könyvtár, piac) és azt, hogyan mondjuk meg, hol van valami: in front of (előtt), behind (mögött), next to (mellett), between (között), opposite (szemben).",
+   "img": "en_pb_photo-20",
+   "page_box": [
+    0.08,
+    0.0,
+    0.475,
+    0.98
+   ],
+   "words": [
+    {
+     "w": "the city",
+     "hu": "a város",
+     "pic": "🏙️"
+    },
+    {
+     "w": "the map",
+     "hu": "a térkép",
+     "pic": "🗺️"
+    },
+    {
+     "w": "the bank",
+     "hu": "a bank",
+     "pic": "🏦"
+    },
+    {
+     "w": "the bus station",
+     "hu": "a buszpályaudvar",
+     "pic": "🚌"
+    },
+    {
+     "w": "the cinema",
+     "hu": "a mozi",
+     "pic": "🎬"
+    },
+    {
+     "w": "the sports centre",
+     "hu": "a sportközpont",
+     "pic": "🏸"
+    },
+    {
+     "w": "the supermarket",
+     "hu": "a szupermarket (nagy élelmiszerbolt)",
+     "pic": "🛒"
+    },
+    {
+     "w": "the swimming pool",
+     "hu": "az uszoda",
+     "pic": "🏊"
+    },
+    {
+     "w": "the library",
+     "hu": "a könyvtár",
+     "pic": "📚"
+    },
+    {
+     "w": "the market",
+     "hu": "a piac",
+     "pic": "🧺"
+    },
+    {
+     "w": "the flat",
+     "hu": "a lakás",
+     "pic": "🏢"
+    },
+    {
+     "w": "in front of",
+     "hu": "előtt",
+     "pic": "⬇️"
+    },
+    {
+     "w": "behind",
+     "hu": "mögött"
+    },
+    {
+     "w": "next to",
+     "hu": "mellett",
+     "pic": "↔️"
+    },
+    {
+     "w": "between",
+     "hu": "között"
+    },
+    {
+     "w": "opposite",
+     "hu": "szemben",
+     "pic": "🔁"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Today we learn the names of places in the city!",
+     "hu": "Ma megtanuljuk a városi helyek nevét!"
+    },
+    "sentences": [
+     {
+      "es": "This unit is called 'In the city'.",
+      "hu": "Ez a fejezet címe: „A városban”.",
+      "pic": "🏙️"
+     },
+     {
+      "es": "Four children are looking at a town map.",
+      "hu": "Négy gyerek egy város térképét nézi.",
+      "pic": "🗺️"
+     },
+     {
+      "es": "They want to find Meera's flat.",
+      "hu": "Meg akarják találni Meera lakását.",
+      "pic": "🏢"
+     },
+     {
+      "es": "On the map there is a market, a bank and a sports centre.",
+      "hu": "A térképen van egy piac, egy bank és egy sportközpont.",
+      "pic": "🧺"
+     },
+     {
+      "es": "There is also a bus station, a swimming pool and a supermarket.",
+      "hu": "Van egy buszpályaudvar, egy uszoda és egy szupermarket is.",
+      "pic": "🚌"
+     },
+     {
+      "es": "The cinema and the library are in Park Road.",
+      "hu": "A mozi és a könyvtár a Park Roadon van.",
+      "pic": "🎬"
+     },
+     {
+      "es": "The market and the bank are in High Street.",
+      "hu": "A piac és a bank a High Streeten (Fő utcán) van.",
+      "pic": "🏦"
+     },
+     {
+      "es": "'In front of' means that something is before another thing.",
+      "hu": "Az „in front of” azt jelenti: valami előtt.",
+      "pic": "⬇️"
+     },
+     {
+      "es": "'Behind' means at the back of something.",
+      "hu": "A „behind” azt jelenti: valami mögött.",
+      "pic": "🔙"
+     },
+     {
+      "es": "'Next to' means very near, at the side.",
+      "hu": "A „next to” azt jelenti: valami mellett.",
+      "pic": "↔️"
+     },
+     {
+      "es": "'Between' means in the middle of two things.",
+      "hu": "A „between” azt jelenti: két dolog között.",
+      "pic": "🥪"
+     },
+     {
+      "es": "'Opposite' means on the other side of the street.",
+      "hu": "Az „opposite” azt jelenti: szemben, az utca másik oldalán.",
+      "pic": "🔁"
+     },
+     {
+      "es": "We ask: What's opposite the cinema? We answer: The bus station.",
+      "hu": "Így kérdezünk: Mi van a mozival szemben? Így felelünk: A buszpályaudvar.",
+      "pic": "💬"
+     }
+    ],
+    "remember": [
+     {
+      "es": "in front of = előtt · behind = mögött · next to = mellett",
+      "hu": "Helyhatározók: előtt, mögött, mellett"
+     },
+     {
+      "es": "between = között · opposite = szemben",
+      "hu": "között, szemben"
+     },
+     {
+      "es": "What's opposite the cinema? – The bus station.",
+      "hu": "Mi van a mozival szemben? – A buszpályaudvar."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, where do you go to swim?",
+      "hu": "Martin, hova mész úszni?"
+     },
+     {
+      "who": "Martin",
+      "es": "To the library!",
+      "hu": "A könyvtárba!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! No, in the library you read books. You swim in the swimming pool.",
+      "hu": "Miau! Nem, a könyvtárban könyveket olvasol. Úszni az uszodába mész."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh yes! The swimming pool!",
+      "hu": "Ja, persze! Az uszodába!"
+     },
+     {
+      "who": "Kitty",
+      "es": "And what's opposite the cinema on the map?",
+      "hu": "És mi van a térképen a mozival szemben?"
+     },
+     {
+      "who": "Martin",
+      "es": "The bus station!",
+      "hu": "A buszpályaudvar!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "'Behind' means 'mögött'.",
+      "hu": "A „behind” jelentése: mögött.",
+      "answer": true,
+      "why_es": "Yes, behind = mögött.",
+      "why_hu": "Igen, behind = mögött."
+     },
+     {
+      "es": "'Next to' means 'szemben'.",
+      "hu": "A „next to” jelentése: szemben.",
+      "answer": false,
+      "why_es": "'Next to' means 'mellett'. 'Opposite' means 'szemben'.",
+      "why_hu": "A „next to” = mellett. Az „opposite” = szemben."
+     },
+     {
+      "es": "You buy food at the supermarket.",
+      "hu": "A szupermarketben ételt veszel.",
+      "answer": true,
+      "why_es": "A supermarket sells food.",
+      "why_hu": "A szupermarket élelmiszert árul."
+     },
+     {
+      "es": "The library is a place with many books.",
+      "hu": "A könyvtár olyan hely, ahol sok könyv van.",
+      "answer": true,
+      "why_es": "Yes, you read books in the library.",
+      "why_hu": "Igen, a könyvtárban könyveket olvasunk."
+     },
+     {
+      "es": "On the map, the bus station is opposite the cinema.",
+      "hu": "A térképen a buszpályaudvar a mozival szemben van.",
+      "answer": true,
+      "why_es": "The book says: What's opposite the cinema? The bus station.",
+      "why_hu": "A könyv szerint: a mozival szemben a buszpályaudvar van."
+     },
+     {
+      "es": "You see films at the bank.",
+      "hu": "A bankban filmet nézel.",
+      "answer": false,
+      "why_es": "You see films at the cinema. At the bank you get money.",
+      "why_hu": "Filmet a moziban nézünk. A bankban pénzt veszünk fel."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb36_1",
+     "n": "1",
+     "text": "What are they looking at? Why?",
+     "text_hu": "Mit néznek a gyerekek? Miért?",
+     "box": [
+      0.12,
+      0.03,
+      0.475,
+      0.575
+     ],
+     "context": {
+      "es": "Four children stand around a big town map. On the map there are streets (High Street, Park Road) and buildings with numbers 1–8.",
+      "hu": "Négy gyerek egy nagy várostérkép körül áll. A térképen utcák (High Street, Park Road) és 1–8-ig számozott épületek vannak."
+     },
+     "pic": "🗺️👀",
+     "help": {
+      "es": "Look at the map in the middle of the picture.",
+      "hu": "Nézd meg a kép közepén lévő térképet."
+     },
+     "items": [
+      {
+       "q": "What are the children looking at?",
+       "q_hu": "Mit néznek a gyerekek?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a town map",
+         "hu": "egy várostérképet"
+        },
+        {
+         "t": "a film",
+         "hu": "egy filmet"
+        },
+        {
+         "t": "a football",
+         "hu": "egy focilabdát"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "egy várostérképet",
+       "pic": "🗺️",
+       "id": "pb36_1a"
+      },
+      {
+       "q": "Why are they looking at the map?",
+       "q_hu": "Miért nézik a térképet?",
+       "kind": "open",
+       "answer": "They want to find places in the city, for example Meera's flat.",
+       "answer_hu": "Helyeket akarnak megtalálni a városban, például Meera lakását.",
+       "pic": "🔍",
+       "id": "pb36_1b"
+      }
+     ]
+    },
+    {
+     "id": "pb36_2",
+     "n": "2",
+     "text": "Listen. Find Meera's flat. Look and match.",
+     "text_hu": "Hallgasd meg. Keresd meg Meera lakását. Nézd meg és párosítsd.",
+     "box": [
+      0.14,
+      0.03,
+      0.475,
+      0.675
+     ],
+     "context": {
+      "es": "On the map, buildings have numbers 1–8 and small pictures: 1 a food stall, 2 a purse with money, 3 tennis rackets, 4 a bus, 5 a towel, 6 a shopping trolley, 7 film and popcorn, 8 a book. The example is: market – 1.",
+      "hu": "A térképen az épületeken 1–8 számok és kis képek vannak: 1 piaci stand, 2 pénztárca pénzzel, 3 teniszütők, 4 busz, 5 törölköző, 6 bevásárlókocsi, 7 film és pattogatott kukorica, 8 könyv. A minta: market – 1."
+     },
+     "pic": "🔢🏙️",
+     "help": {
+      "es": "Think: which place goes with the little picture? A bus → bus station.",
+      "hu": "Gondold végig: melyik helyhez illik a kis kép? Busz → buszpályaudvar."
+     },
+     "items": [
+      {
+       "q": "Number 1: a food stall. Which place is it?",
+       "q_hu": "1-es: piaci stand. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "market",
+         "hu": "piac"
+        },
+        {
+         "t": "bank",
+         "hu": "bank"
+        },
+        {
+         "t": "library",
+         "hu": "könyvtár"
+        },
+        {
+         "t": "cinema",
+         "hu": "mozi"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "market = piac",
+       "pic": "🧺",
+       "id": "pb36_2a"
+      },
+      {
+       "q": "Number 2: a purse with money. Which place is it?",
+       "q_hu": "2-es: pénztárca pénzzel. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "swimming pool",
+         "hu": "uszoda"
+        },
+        {
+         "t": "bank",
+         "hu": "bank"
+        },
+        {
+         "t": "supermarket",
+         "hu": "szupermarket"
+        },
+        {
+         "t": "market",
+         "hu": "piac"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "bank",
+       "pic": "🏦",
+       "id": "pb36_2b"
+      },
+      {
+       "q": "Number 3: tennis rackets. Which place is it?",
+       "q_hu": "3-as: teniszütők. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "cinema",
+         "hu": "mozi"
+        },
+        {
+         "t": "library",
+         "hu": "könyvtár"
+        },
+        {
+         "t": "sports centre",
+         "hu": "sportközpont"
+        },
+        {
+         "t": "bank",
+         "hu": "bank"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "sports centre = sportközpont",
+       "pic": "🏸",
+       "id": "pb36_2c"
+      },
+      {
+       "q": "Number 4: a bus. Which place is it?",
+       "q_hu": "4-es: busz. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "bus station",
+         "hu": "buszpályaudvar"
+        },
+        {
+         "t": "supermarket",
+         "hu": "szupermarket"
+        },
+        {
+         "t": "swimming pool",
+         "hu": "uszoda"
+        },
+        {
+         "t": "market",
+         "hu": "piac"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "bus station = buszpályaudvar",
+       "pic": "🚌",
+       "id": "pb36_2d"
+      },
+      {
+       "q": "Number 5: a towel. Which place is it?",
+       "q_hu": "5-ös: törölköző. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "library",
+         "hu": "könyvtár"
+        },
+        {
+         "t": "cinema",
+         "hu": "mozi"
+        },
+        {
+         "t": "bank",
+         "hu": "bank"
+        },
+        {
+         "t": "swimming pool",
+         "hu": "uszoda"
+        }
+       ],
+       "answer": 3,
+       "answer_hu": "swimming pool = uszoda",
+       "pic": "🏊",
+       "id": "pb36_2e"
+      },
+      {
+       "q": "Number 6: a shopping trolley. Which place is it?",
+       "q_hu": "6-os: bevásárlókocsi. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "sports centre",
+         "hu": "sportközpont"
+        },
+        {
+         "t": "supermarket",
+         "hu": "szupermarket"
+        },
+        {
+         "t": "bus station",
+         "hu": "buszpályaudvar"
+        },
+        {
+         "t": "library",
+         "hu": "könyvtár"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "supermarket = szupermarket",
+       "pic": "🛒",
+       "id": "pb36_2f"
+      },
+      {
+       "q": "Number 7: a film and popcorn. Which place is it?",
+       "q_hu": "7-es: film és pattogatott kukorica. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "cinema",
+         "hu": "mozi"
+        },
+        {
+         "t": "bank",
+         "hu": "bank"
+        },
+        {
+         "t": "market",
+         "hu": "piac"
+        },
+        {
+         "t": "swimming pool",
+         "hu": "uszoda"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "cinema = mozi",
+       "pic": "🎬",
+       "id": "pb36_2g"
+      },
+      {
+       "q": "Number 8: a book. Which place is it?",
+       "q_hu": "8-as: könyv. Melyik hely ez?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "supermarket",
+         "hu": "szupermarket"
+        },
+        {
+         "t": "sports centre",
+         "hu": "sportközpont"
+        },
+        {
+         "t": "library",
+         "hu": "könyvtár"
+        },
+        {
+         "t": "bus station",
+         "hu": "buszpályaudvar"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "library = könyvtár",
+       "pic": "📚",
+       "id": "pb36_2h"
+      },
+      {
+       "q": "Listen to Meera. Where is her flat? Point to it on the map.",
+       "q_hu": "Hallgasd meg Meerát. Hol van a lakása? Mutasd meg a térképen.",
+       "kind": "open",
+       "answer": "Meera says where her flat is (for example: next to / opposite a place). Point to that building on the map.",
+       "answer_hu": "Meera elmondja, hol van a lakása (pl. valami mellett / valamivel szemben). Mutasd meg azt az épületet a térképen.",
+       "pic": "🏢",
+       "id": "pb36_2i"
+      }
+     ]
+    },
+    {
+     "id": "pb36_3",
+     "n": "3",
+     "text": "Ask and answer.",
+     "text_hu": "Kérdezz és válaszolj.",
+     "box": [
+      0.14,
+      0.67,
+      0.475,
+      0.9
+     ],
+     "context": {
+      "es": "Five small pictures show the words: in front of, behind, next to, between, opposite. An arrow shows where the person is. The example: What's opposite the cinema? – The bus station.",
+      "hu": "Öt kis kép mutatja a szavakat: in front of (előtt), behind (mögött), next to (mellett), between (között), opposite (szemben). Egy nyíl mutatja, hol van a személy. Minta: Mi van a mozival szemben? – A buszpályaudvar."
+     },
+     "pic": "↔️🔁",
+     "help": {
+      "es": "Look at the map: the bank (2) and the market (1) are in the same building. The library (8) is next to the cinema (7).",
+      "hu": "Nézd a térképet: a bank (2) és a piac (1) egy háztömbben van. A könyvtár (8) a mozi (7) mellett van."
+     },
+     "items": [
+      {
+       "q": "What's opposite the cinema?",
+       "q_hu": "Mi van a mozival szemben?",
+       "kind": "type",
+       "answer": "the bus station",
+       "alts": [
+        "bus station",
+        "The bus station.",
+        "It's the bus station"
+       ],
+       "answer_hu": "a buszpályaudvar",
+       "pic": "🚌",
+       "id": "pb36_3a"
+      },
+      {
+       "q": "What's next to the cinema?",
+       "q_hu": "Mi van a mozi mellett?",
+       "kind": "type",
+       "answer": "the library",
+       "alts": [
+        "library",
+        "The library.",
+        "It's the library"
+       ],
+       "answer_hu": "a könyvtár",
+       "pic": "📚",
+       "id": "pb36_3b"
+      },
+      {
+       "q": "What's next to the market?",
+       "q_hu": "Mi van a piac mellett?",
+       "kind": "type",
+       "answer": "the bank",
+       "alts": [
+        "bank",
+        "The bank.",
+        "It's the bank"
+       ],
+       "answer_hu": "a bank",
+       "pic": "🏦",
+       "id": "pb36_3c"
+      },
+      {
+       "q": "What's next to the sports centre?",
+       "q_hu": "Mi van a sportközpont mellett?",
+       "kind": "type",
+       "answer": "the bus station",
+       "alts": [
+        "bus station",
+        "The bus station."
+       ],
+       "answer_hu": "a buszpályaudvar",
+       "pic": "🏸",
+       "id": "pb36_3d"
+      },
+      {
+       "q": "What does 'in front of' mean?",
+       "q_hu": "Mit jelent az „in front of”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "előtt",
+         "hu": "előtt"
+        },
+        {
+         "t": "mögött",
+         "hu": "mögött"
+        },
+        {
+         "t": "között",
+         "hu": "között"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "előtt",
+       "pic": "⬇️",
+       "id": "pb36_3e"
+      },
+      {
+       "q": "What does 'behind' mean?",
+       "q_hu": "Mit jelent a „behind”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "mellett",
+         "hu": "mellett"
+        },
+        {
+         "t": "mögött",
+         "hu": "mögött"
+        },
+        {
+         "t": "szemben",
+         "hu": "szemben"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "mögött",
+       "pic": "🔙",
+       "id": "pb36_3f"
+      },
+      {
+       "q": "What does 'between' mean?",
+       "q_hu": "Mit jelent a „between”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "között",
+         "hu": "között"
+        },
+        {
+         "t": "előtt",
+         "hu": "előtt"
+        },
+        {
+         "t": "mellett",
+         "hu": "mellett"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "között",
+       "pic": "🥪",
+       "id": "pb36_3g"
+      },
+      {
+       "q": "What does 'opposite' mean?",
+       "q_hu": "Mit jelent az „opposite”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "mögött",
+         "hu": "mögött"
+        },
+        {
+         "t": "mellett",
+         "hu": "mellett"
+        },
+        {
+         "t": "szemben",
+         "hu": "szemben"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "szemben",
+       "pic": "🔁",
+       "id": "pb36_3h"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb37",
+   "book": "pb",
+   "page": 37,
+   "unit": "u4",
+   "title": "Where's the park?",
+   "title_hu": "Hol van a park?",
+   "summary_hu": "Egy utca képe: hotel, kórház, szupermarket, bank, mozi, buszpályaudvar, uszoda, sportközpont és park. Megtanuljuk megmondani, hol van valami (It's in front of the swimming pool), és hogy miért megyünk valahová: I go to the cinema to see a film (azért megyek moziba, hogy filmet nézzek).",
+   "img": "en_pb_photo-20",
+   "page_box": [
+    0.47,
+    0.05,
+    0.865,
+    0.93
+   ],
+   "words": [
+    {
+     "w": "the hotel",
+     "hu": "a szálloda",
+     "pic": "🏨"
+    },
+    {
+     "w": "the hospital",
+     "hu": "a kórház",
+     "pic": "🏥"
+    },
+    {
+     "w": "the park",
+     "hu": "a park",
+     "pic": "🌳"
+    },
+    {
+     "w": "the bin",
+     "hu": "a szemetes",
+     "pic": "🗑️"
+    },
+    {
+     "w": "the town",
+     "hu": "a város",
+     "pic": "🏘️"
+    },
+    {
+     "w": "the swimsuit",
+     "hu": "a fürdőruha",
+     "pic": "🩱"
+    },
+    {
+     "w": "the towel",
+     "hu": "a törölköző"
+    },
+    {
+     "w": "to buy food",
+     "hu": "ételt venni",
+     "pic": "🛒"
+    },
+    {
+     "w": "to get money",
+     "hu": "pénzt felvenni",
+     "pic": "💰"
+    },
+    {
+     "w": "to catch the bus",
+     "hu": "elérni a buszt",
+     "pic": "🚌"
+    },
+    {
+     "w": "to see a film",
+     "hu": "filmet nézni",
+     "pic": "🎬"
+    },
+    {
+     "w": "my favourite place",
+     "hu": "a kedvenc helyem",
+     "pic": "❤️"
+    },
+    {
+     "w": "grandparents",
+     "hu": "nagyszülők",
+     "pic": "👵"
+    },
+    {
+     "w": "to stay",
+     "hu": "megszállni, lakni (pár napig)"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's walk down a street in the town!",
+     "hu": "Sétáljunk végig egy városi utcán!"
+    },
+    "sentences": [
+     {
+      "es": "In the picture there is a hotel, a hospital, a supermarket and a bank.",
+      "hu": "A képen van egy szálloda, egy kórház, egy szupermarket és egy bank.",
+      "pic": "🏨"
+     },
+     {
+      "es": "Next to the bank there is a cinema, and then the bus station.",
+      "hu": "A bank mellett van egy mozi, aztán a buszpályaudvar.",
+      "pic": "🎬"
+     },
+     {
+      "es": "The park is in front of the swimming pool.",
+      "hu": "A park az uszoda előtt van.",
+      "pic": "🌳"
+     },
+     {
+      "es": "The sports centre is next to the swimming pool.",
+      "hu": "A sportközpont az uszoda mellett van.",
+      "pic": "🏸"
+     },
+     {
+      "es": "The bin is in front of the hotel.",
+      "hu": "A szemetes a szálloda előtt van.",
+      "pic": "🗑️"
+     },
+     {
+      "es": "A child writes about the town: she swims in the swimming pool with Stella.",
+      "hu": "Egy gyerek ír a városáról: Stellával az uszodában úszik.",
+      "pic": "🏊"
+     },
+     {
+      "es": "They go to the supermarket to buy food.",
+      "hu": "A szupermarketbe mennek, hogy ételt vegyenek.",
+      "pic": "🛒"
+     },
+     {
+      "es": "The parents go to the bank to get money.",
+      "hu": "A szülők a bankba mennek pénzt felvenni.",
+      "pic": "💰"
+     },
+     {
+      "es": "At the bus station she catches the bus to school.",
+      "hu": "A buszpályaudvaron éri el az iskolabuszt.",
+      "pic": "🚌"
+     },
+     {
+      "es": "On Saturdays she goes to the cinema to see a film.",
+      "hu": "Szombatonként moziba megy filmet nézni.",
+      "pic": "🎬"
+     },
+     {
+      "es": "Her grandparents stay in the hotel.",
+      "hu": "A nagyszülei a szállodában szállnak meg.",
+      "pic": "🏨"
+     },
+     {
+      "es": "'To' tells us why: I go to the cinema to see a film.",
+      "hu": "A „to” megmondja, miért: Moziba megyek, hogy filmet nézzek.",
+      "pic": "❓"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Where's the park? – It's in front of the swimming pool.",
+      "hu": "Hol van a park? – Az uszoda előtt van."
+     },
+     {
+      "es": "I go to the cinema to see a film.",
+      "hu": "Moziba megyek, hogy filmet nézzek. (to = azért, hogy)"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, where do you go to buy food?",
+      "hu": "Martin, hova mész ételt venni?"
+     },
+     {
+      "who": "Martin",
+      "es": "I go to the hospital to buy food.",
+      "hu": "A kórházba megyek ételt venni."
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! The hospital is for sick people. You go to the supermarket!",
+      "hu": "Miau, nem! A kórház a betegeknek van. A szupermarketbe mész!"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes! I go to the supermarket to buy food.",
+      "hu": "Igen! A szupermarketbe megyek ételt venni."
+     },
+     {
+      "who": "Kitty",
+      "es": "And where's the park?",
+      "hu": "És hol van a park?"
+     },
+     {
+      "who": "Martin",
+      "es": "It's in front of the swimming pool.",
+      "hu": "Az uszoda előtt van."
+     }
+    ],
+    "tf": [
+     {
+      "es": "The park is in front of the swimming pool.",
+      "hu": "A park az uszoda előtt van.",
+      "answer": true,
+      "why_es": "Yes, the book says so.",
+      "why_hu": "Igen, a könyv is ezt mondja."
+     },
+     {
+      "es": "The bin is in front of the bank.",
+      "hu": "A szemetes a bank előtt van.",
+      "answer": false,
+      "why_es": "The bin is in front of the hotel.",
+      "why_hu": "A szemetes a szálloda előtt van."
+     },
+     {
+      "es": "The supermarket is between the hospital and the bank.",
+      "hu": "A szupermarket a kórház és a bank között van.",
+      "answer": true,
+      "why_es": "Hospital – supermarket – bank: it's in the middle.",
+      "why_hu": "Kórház – szupermarket – bank: középen van."
+     },
+     {
+      "es": "The parents go to the cinema to get money.",
+      "hu": "A szülők moziba mennek pénzt felvenni.",
+      "answer": false,
+      "why_es": "They go to the bank to get money.",
+      "why_hu": "Pénzért a bankba mennek."
+     },
+     {
+      "es": "The grandparents stay in the hotel.",
+      "hu": "A nagyszülők a szállodában szállnak meg.",
+      "answer": true,
+      "why_es": "The text says they stay in the hotel.",
+      "why_hu": "A szöveg szerint a szállodában szállnak meg."
+     },
+     {
+      "es": "The cinema is the child's favourite place.",
+      "hu": "A mozi a gyerek kedvenc helye.",
+      "answer": true,
+      "why_es": "The cinema's my favourite place in the town.",
+      "why_hu": "„A mozi a kedvenc helyem a városban.”"
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb37_1",
+     "n": "1",
+     "text": "Look at the picture. Listen and answer.",
+     "text_hu": "Nézd meg a képet. Hallgasd meg és válaszolj.",
+     "box": [
+      0.475,
+      0.07,
+      0.83,
+      0.48
+     ],
+     "context": {
+      "es": "A street picture. From left: hotel, hospital, supermarket, bank, cinema, bus station. In front: a park, the swimming pool and the sports centre. Example: Where's the park? – It's in front of the swimming pool.",
+      "hu": "Utcakép. Balról: szálloda, kórház, szupermarket, bank, mozi, buszpályaudvar. Elöl: park, uszoda és sportközpont. Minta: Hol van a park? – Az uszoda előtt."
+     },
+     "pic": "🏙️🌳",
+     "help": {
+      "es": "Find the place in the picture first, then look what is around it.",
+      "hu": "Először keresd meg a helyet a képen, aztán nézd meg, mi van körülötte."
+     },
+     "items": [
+      {
+       "q": "Where's the park?",
+       "q_hu": "Hol van a park?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "in front of the swimming pool",
+         "hu": "az uszoda előtt"
+        },
+        {
+         "t": "behind the hotel",
+         "hu": "a szálloda mögött"
+        },
+        {
+         "t": "next to the bank",
+         "hu": "a bank mellett"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "az uszoda előtt",
+       "pic": "🌳",
+       "id": "pb37_1a"
+      },
+      {
+       "q": "What's next to the swimming pool?",
+       "q_hu": "Mi van az uszoda mellett?",
+       "kind": "type",
+       "answer": "the sports centre",
+       "alts": [
+        "sports centre",
+        "The sports centre.",
+        "It's the sports centre"
+       ],
+       "answer_hu": "a sportközpont",
+       "pic": "🏸",
+       "id": "pb37_1b"
+      },
+      {
+       "q": "What's between the hotel and the supermarket?",
+       "q_hu": "Mi van a szálloda és a szupermarket között?",
+       "kind": "type",
+       "answer": "the hospital",
+       "alts": [
+        "hospital",
+        "The hospital."
+       ],
+       "answer_hu": "a kórház",
+       "pic": "🏥",
+       "id": "pb37_1c"
+      },
+      {
+       "q": "What's between the bank and the bus station?",
+       "q_hu": "Mi van a bank és a buszpályaudvar között?",
+       "kind": "type",
+       "answer": "the cinema",
+       "alts": [
+        "cinema",
+        "The cinema."
+       ],
+       "answer_hu": "a mozi",
+       "pic": "🎬",
+       "id": "pb37_1d"
+      },
+      {
+       "q": "Where's the yellow bus?",
+       "q_hu": "Hol van a sárga busz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "at the bus station",
+         "hu": "a buszpályaudvaron"
+        },
+        {
+         "t": "in the park",
+         "hu": "a parkban"
+        },
+        {
+         "t": "at the hospital",
+         "hu": "a kórháznál"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a buszpályaudvaron",
+       "pic": "🚌",
+       "id": "pb37_1e"
+      }
+     ]
+    },
+    {
+     "id": "pb37_2",
+     "n": "2",
+     "text": "Ask and answer.",
+     "text_hu": "Kérdezz és válaszolj.",
+     "box": [
+      0.475,
+      0.48,
+      0.83,
+      0.535
+     ],
+     "context": {
+      "es": "Use the street picture of Activity 1. Example: Where's the bin? – It's in front of the hotel.",
+      "hu": "Az 1. feladat utcaképét használd. Minta: Hol van a szemetes? – A szálloda előtt."
+     },
+     "pic": "🗑️❓",
+     "help": {
+      "es": "Answer with: It's in front of / next to / between / opposite …",
+      "hu": "Így válaszolj: It's in front of / next to / between / opposite …"
+     },
+     "items": [
+      {
+       "q": "Where's the bin?",
+       "q_hu": "Hol van a szemetes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "in front of the hotel",
+         "hu": "a szálloda előtt"
+        },
+        {
+         "t": "behind the cinema",
+         "hu": "a mozi mögött"
+        },
+        {
+         "t": "in the park",
+         "hu": "a parkban"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a szálloda előtt",
+       "pic": "🗑️",
+       "id": "pb37_2a"
+      },
+      {
+       "q": "Where's the supermarket?",
+       "q_hu": "Hol van a szupermarket?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "between the hospital and the bank",
+         "hu": "a kórház és a bank között"
+        },
+        {
+         "t": "next to the bus station",
+         "hu": "a buszpályaudvar mellett"
+        },
+        {
+         "t": "opposite the park",
+         "hu": "a parkkal szemben"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a kórház és a bank között",
+       "pic": "🛒",
+       "id": "pb37_2b"
+      },
+      {
+       "q": "Where's the red car?",
+       "q_hu": "Hol van a piros autó?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "in front of the bank",
+         "hu": "a bank előtt"
+        },
+        {
+         "t": "in front of the hotel",
+         "hu": "a szálloda előtt"
+        },
+        {
+         "t": "in the swimming pool",
+         "hu": "az uszodában"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a bank előtt",
+       "pic": "🚗",
+       "id": "pb37_2c"
+      },
+      {
+       "q": "Where's the hospital? It's next to the …",
+       "q_hu": "Hol van a kórház? A … mellett van.",
+       "kind": "type",
+       "answer": "hotel",
+       "alts": [
+        "the hotel",
+        "supermarket",
+        "the supermarket"
+       ],
+       "answer_hu": "a szálloda (vagy a szupermarket) mellett",
+       "pic": "🏥",
+       "id": "pb37_2d"
+      }
+     ]
+    },
+    {
+     "id": "pb37_3",
+     "n": "3",
+     "text": "Read and complete with words from the picture in Activity 1.",
+     "text_hu": "Olvasd el és egészítsd ki az 1. feladat képén lévő szavakkal.",
+     "box": [
+      0.475,
+      0.535,
+      0.83,
+      0.785
+     ],
+     "context": {
+      "es": "A child writes about her town. Gap 1 is done: 'Look at the swimming pool opposite the park.' Find a place from the picture for gaps 2–7.",
+      "hu": "Egy gyerek a városáról ír. Az 1. hely kész: „Nézd az uszodát a parkkal szemben.” A 2–7. helyre is egy-egy helyet kell írni a képről."
+     },
+     "pic": "📝🏙️",
+     "help": {
+      "es": "Read the whole sentence. What do you do there? Buy food → supermarket.",
+      "hu": "Olvasd el az egész mondatot. Mit csinálsz ott? Ételt veszel → szupermarket."
+     },
+     "items": [
+      {
+       "q": "We go to the … to buy our food.",
+       "q_hu": "A …-ba megyünk ételt venni.",
+       "kind": "type",
+       "answer": "supermarket",
+       "alts": [
+        "the supermarket"
+       ],
+       "answer_hu": "szupermarket",
+       "pic": "🛒",
+       "id": "pb37_3a"
+      },
+      {
+       "q": "It's between the bank and the …",
+       "q_hu": "A bank és a … között van.",
+       "kind": "type",
+       "answer": "hospital",
+       "alts": [
+        "the hospital"
+       ],
+       "answer_hu": "kórház",
+       "pic": "🏥",
+       "id": "pb37_3b"
+      },
+      {
+       "q": "Where do my parents go to get money? They go to the …",
+       "q_hu": "Hova mennek a szüleim pénzt felvenni? A …-ba.",
+       "kind": "type",
+       "answer": "bank",
+       "alts": [
+        "the bank"
+       ],
+       "answer_hu": "bank",
+       "pic": "🏦",
+       "id": "pb37_3c"
+      },
+      {
+       "q": "Can you see the …? I go there to catch the bus to school.",
+       "q_hu": "Látod a …-t? Ott érem el az iskolabuszt.",
+       "kind": "type",
+       "answer": "bus station",
+       "alts": [
+        "the bus station"
+       ],
+       "answer_hu": "buszpályaudvar",
+       "pic": "🚌",
+       "id": "pb37_3d"
+      },
+      {
+       "q": "I love going to the … to see a film.",
+       "q_hu": "Szeretek a …-ba járni filmet nézni.",
+       "kind": "type",
+       "answer": "cinema",
+       "alts": [
+        "the cinema"
+       ],
+       "answer_hu": "mozi",
+       "pic": "🎬",
+       "id": "pb37_3e"
+      },
+      {
+       "q": "When my grandparents come to town, they stay in the …",
+       "q_hu": "Amikor a nagyszüleim a városba jönnek, a …-ban szállnak meg.",
+       "kind": "type",
+       "answer": "hotel",
+       "alts": [
+        "the hotel"
+       ],
+       "answer_hu": "szálloda",
+       "pic": "🏨",
+       "id": "pb37_3f"
+      }
+     ]
+    },
+    {
+     "id": "pb37_4",
+     "n": "4",
+     "text": "Listen and answer.",
+     "text_hu": "Hallgasd meg és válaszolj.",
+     "box": [
+      0.475,
+      0.79,
+      0.83,
+      0.885
+     ],
+     "context": {
+      "es": "Example: Where do you go to see a film? – I go to the cinema to see a film.",
+      "hu": "Minta: Hova mész filmet nézni? – Moziba megyek filmet nézni."
+     },
+     "pic": "❓🎬",
+     "help": {
+      "es": "Think: which place is for this? Answer: I go to the … to …",
+      "hu": "Gondold végig: melyik hely való erre? Válasz: I go to the … to …"
+     },
+     "items": [
+      {
+       "q": "Where do you go to see a film?",
+       "q_hu": "Hova mész filmet nézni?",
+       "kind": "type",
+       "answer": "the cinema",
+       "alts": [
+        "cinema",
+        "I go to the cinema",
+        "I go to the cinema to see a film",
+        "to the cinema"
+       ],
+       "answer_hu": "a moziba",
+       "pic": "🎬",
+       "id": "pb37_4a"
+      },
+      {
+       "q": "Where do you go to buy food?",
+       "q_hu": "Hova mész ételt venni?",
+       "kind": "type",
+       "answer": "the supermarket",
+       "alts": [
+        "supermarket",
+        "I go to the supermarket",
+        "to the supermarket",
+        "the market",
+        "market"
+       ],
+       "answer_hu": "a szupermarketbe (vagy a piacra)",
+       "pic": "🛒",
+       "id": "pb37_4b"
+      },
+      {
+       "q": "Where do you go to get money?",
+       "q_hu": "Hova mész pénzt felvenni?",
+       "kind": "type",
+       "answer": "the bank",
+       "alts": [
+        "bank",
+        "I go to the bank",
+        "to the bank"
+       ],
+       "answer_hu": "a bankba",
+       "pic": "🏦",
+       "id": "pb37_4c"
+      },
+      {
+       "q": "Where do you go to catch the bus?",
+       "q_hu": "Hova mész, hogy elérd a buszt?",
+       "kind": "type",
+       "answer": "the bus station",
+       "alts": [
+        "bus station",
+        "I go to the bus station",
+        "to the bus station"
+       ],
+       "answer_hu": "a buszpályaudvarra",
+       "pic": "🚌",
+       "id": "pb37_4d"
+      },
+      {
+       "q": "Where do you go to swim?",
+       "q_hu": "Hova mész úszni?",
+       "kind": "type",
+       "answer": "the swimming pool",
+       "alts": [
+        "swimming pool",
+        "I go to the swimming pool",
+        "to the swimming pool"
+       ],
+       "answer_hu": "az uszodába",
+       "pic": "🏊",
+       "id": "pb37_4e"
+      },
+      {
+       "q": "Where do you go to read books?",
+       "q_hu": "Hova mész könyveket olvasni?",
+       "kind": "type",
+       "answer": "the library",
+       "alts": [
+        "library",
+        "I go to the library",
+        "to the library"
+       ],
+       "answer_hu": "a könyvtárba",
+       "pic": "📚",
+       "id": "pb37_4f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb38",
+   "book": "pb",
+   "page": 38,
+   "unit": "u4",
+   "title": "In the library",
+   "title_hu": "A könyvtárban",
+   "summary_hu": "Képregény a könyvtárban: Lenny egy focis könyvet talál („Football Crazy”), a fiúk nagyon örülnek, a könyvtáros az óráját nézi. Új nyelvtan: must = kell, muszáj (Simon must be quiet in the library – Simonnak csendben kell lennie a könyvtárban).",
+   "img": "en_pb_photo-21",
+   "page_box": [
+    0.05,
+    0.03,
+    0.468,
+    0.97
+   ],
+   "words": [
+    {
+     "w": "the library",
+     "hu": "a könyvtár",
+     "pic": "📚"
+    },
+    {
+     "w": "the librarian",
+     "hu": "a könyvtáros",
+     "pic": "👴"
+    },
+    {
+     "w": "the book",
+     "hu": "a könyv",
+     "pic": "📖"
+    },
+    {
+     "w": "happy",
+     "hu": "boldog, vidám",
+     "pic": "😄"
+    },
+    {
+     "w": "What time is it?",
+     "hu": "Hány óra van?",
+     "pic": "🕐"
+    },
+    {
+     "w": "must",
+     "hu": "kell, muszáj",
+     "pic": "❗"
+    },
+    {
+     "w": "quiet",
+     "hu": "csendes",
+     "pic": "🤫"
+    },
+    {
+     "w": "to catch the bus",
+     "hu": "elérni a buszt",
+     "pic": "🚌"
+    },
+    {
+     "w": "homework",
+     "hu": "házi feladat",
+     "pic": "📝"
+    },
+    {
+     "w": "to enjoy reading",
+     "hu": "szeret olvasni",
+     "pic": "😊"
+    },
+    {
+     "w": "on Saturdays",
+     "hu": "szombatonként",
+     "pic": "📅"
+    },
+    {
+     "w": "the family",
+     "hu": "a család",
+     "pic": "👨‍👩‍👧"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's visit the library with Lenny and his friends!",
+     "hu": "Látogassunk el a könyvtárba Lennyvel és a barátaival!"
+    },
+    "sentences": [
+     {
+      "es": "The children are in the library.",
+      "hu": "A gyerekek a könyvtárban vannak.",
+      "pic": "📚"
+     },
+     {
+      "es": "Lenny has got a book. It's called 'Football Crazy'.",
+      "hu": "Lennynek van egy könyve. A címe: „Football Crazy” (Focibolond).",
+      "pic": "⚽"
+     },
+     {
+      "es": "The girls are thinking. They want a book too.",
+      "hu": "A lányok gondolkodnak. Ők is könyvet szeretnének.",
+      "pic": "🤔"
+     },
+     {
+      "es": "The boys look at the football book. They are very happy.",
+      "hu": "A fiúk a focis könyvet nézik. Nagyon boldogok.",
+      "pic": "😄"
+     },
+     {
+      "es": "The old librarian looks at his watch. It's late.",
+      "hu": "Az idős könyvtáros az órájára néz. Késő van.",
+      "pic": "⌚"
+     },
+     {
+      "es": "We say 'must' when something is a rule.",
+      "hu": "A „must” szót akkor mondjuk, amikor valami szabály, kötelező.",
+      "pic": "❗"
+     },
+     {
+      "es": "Simon must be quiet in the library.",
+      "hu": "Simonnak csendben kell lennie a könyvtárban.",
+      "pic": "🤫"
+     },
+     {
+      "es": "They must catch the bus.",
+      "hu": "Nekik el kell érniük a buszt.",
+      "pic": "🚌"
+     },
+     {
+      "es": "She must do her homework.",
+      "hu": "Neki meg kell csinálnia a házi feladatát.",
+      "pic": "📝"
+     },
+     {
+      "es": "We can ask: When do you go to the library? – I go on Saturdays.",
+      "hu": "Kérdezhetjük: Mikor mész a könyvtárba? – Szombatonként.",
+      "pic": "📅"
+     }
+    ],
+    "remember": [
+     {
+      "es": "must + verb: I must be quiet. She must do her homework.",
+      "hu": "must + ige = kell: Csendben kell lennem. Meg kell csinálnia a házit."
+     },
+     {
+      "es": "After 'must' there is no 's': she must go (NOT she musts).",
+      "hu": "A „must” után nincs -s: she must go."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Shhh, Martin! We're in the library.",
+      "hu": "Pszt, Martin! A könyvtárban vagyunk."
+     },
+     {
+      "who": "Martin",
+      "es": "Why? I want to sing!",
+      "hu": "Miért? Énekelni akarok!"
+     },
+     {
+      "who": "Kitty",
+      "es": "You must be quiet in the library.",
+      "hu": "A könyvtárban csendben kell lenned."
+     },
+     {
+      "who": "Martin",
+      "es": "OK. I must be quiet. Look, a football book!",
+      "hu": "Rendben. Csendben kell lennem. Nézd, egy focis könyv!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Lenny has got it too. It's 'Football Crazy'!",
+      "hu": "Lennynek is megvan. Ez a „Football Crazy”!"
+     },
+     {
+      "who": "Martin",
+      "es": "I go to the library on Saturdays.",
+      "hu": "Én szombatonként járok a könyvtárba."
+     }
+    ],
+    "tf": [
+     {
+      "es": "The children are in a library.",
+      "hu": "A gyerekek egy könyvtárban vannak.",
+      "answer": true,
+      "why_es": "There are lots of books on shelves.",
+      "why_hu": "Sok könyv van a polcokon."
+     },
+     {
+      "es": "Lenny's book is about cooking.",
+      "hu": "Lenny könyve a főzésről szól.",
+      "answer": false,
+      "why_es": "It's a football book: 'Football Crazy'.",
+      "why_hu": "Focis könyv: „Football Crazy”."
+     },
+     {
+      "es": "Simon must be quiet in the library.",
+      "hu": "Simonnak csendben kell lennie a könyvtárban.",
+      "answer": true,
+      "why_es": "That's the sentence in the Study box.",
+      "why_hu": "Ez a mondat a Study dobozban."
+     },
+     {
+      "es": "'She musts do her homework' is correct.",
+      "hu": "A „She musts do her homework” helyes.",
+      "answer": false,
+      "why_es": "We say 'She must do her homework' – no 's'.",
+      "why_hu": "Helyesen: „She must do her homework” – nincs -s."
+     },
+     {
+      "es": "The librarian looks at his watch.",
+      "hu": "A könyvtáros az órájára néz.",
+      "answer": true,
+      "why_es": "In picture 4 he looks at his watch.",
+      "why_hu": "A 4. képen az órájára néz."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb38_1",
+     "n": "1",
+     "text": "Look, think and answer. Listen and check.",
+     "text_hu": "Nézd meg, gondolkodj és válaszolj. Hallgasd meg és ellenőrizd.",
+     "box": [
+      0.1,
+      0.07,
+      0.468,
+      0.62
+     ],
+     "context": {
+      "es": "Four pictures: Lenny shows a football book ('Football Crazy') in the library; the girls think; the boys are very happy; an old librarian looks at his watch.",
+      "hu": "Négy kép: Lenny egy focis könyvet mutat („Football Crazy”) a könyvtárban; a lányok gondolkodnak; a fiúk nagyon örülnek; egy idős könyvtáros az órájára néz."
+     },
+     "pic": "📚⚽",
+     "help": {
+      "es": "Look at the shelves with books and at the faces of the children.",
+      "hu": "Nézd meg a könyvespolcokat és a gyerekek arcát."
+     },
+     "items": [
+      {
+       "q": "Where are the children?",
+       "q_hu": "Hol vannak a gyerekek?",
+       "kind": "type",
+       "answer": "in the library",
+       "alts": [
+        "library",
+        "the library",
+        "They're in the library",
+        "They are in the library"
+       ],
+       "answer_hu": "a könyvtárban",
+       "pic": "📚",
+       "id": "pb38_1a"
+      },
+      {
+       "q": "Which children are happy?",
+       "q_hu": "Melyik gyerekek boldogok?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "the boys",
+         "hu": "a fiúk"
+        },
+        {
+         "t": "the girls",
+         "hu": "a lányok"
+        },
+        {
+         "t": "nobody",
+         "hu": "senki"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a fiúk",
+       "pic": "😄",
+       "id": "pb38_1b"
+      },
+      {
+       "q": "What book has Lenny got?",
+       "q_hu": "Milyen könyve van Lennynek?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a football book",
+         "hu": "egy focis könyv"
+        },
+        {
+         "t": "a book about space",
+         "hu": "egy könyv az űrről"
+        },
+        {
+         "t": "a cookbook",
+         "hu": "egy szakácskönyv"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "egy focis könyv („Football Crazy”)",
+       "pic": "⚽",
+       "id": "pb38_1c"
+      },
+      {
+       "q": "What time is it?",
+       "q_hu": "Hány óra van?",
+       "kind": "open",
+       "answer": "It's late – the librarian looks at his watch. It's time to close the library.",
+       "answer_hu": "Késő van – a könyvtáros az órájára néz. Ideje bezárni a könyvtárat.",
+       "pic": "⌚",
+       "id": "pb38_1d"
+      }
+     ]
+    },
+    {
+     "id": "pb38_2",
+     "n": "2",
+     "text": "Listen and say 'yes' or 'no'.",
+     "text_hu": "Hallgasd meg, és mondd: „yes” (igen) vagy „no” (nem).",
+     "box": [
+      0.1,
+      0.62,
+      0.468,
+      0.675
+     ],
+     "context": {
+      "es": "You hear sentences about the four library pictures. Say yes if it's true, no if it's false.",
+      "hu": "Mondatokat hallasz a négy könyvtári képről. Mondd, hogy yes, ha igaz, és no, ha nem igaz."
+     },
+     "pic": "✅❌",
+     "help": {
+      "es": "Look at the pictures again before you answer.",
+      "hu": "Válasz előtt nézd meg újra a képeket."
+     },
+     "items": [
+      {
+       "q": "The children are in a library.",
+       "q_hu": "A gyerekek egy könyvtárban vannak.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen",
+       "pic": "📚",
+       "id": "pb38_2a"
+      },
+      {
+       "q": "Lenny has got a book about football.",
+       "q_hu": "Lennynek van egy könyve a fociról.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen",
+       "pic": "⚽",
+       "id": "pb38_2b"
+      },
+      {
+       "q": "The boys are sad.",
+       "q_hu": "A fiúk szomorúak.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem – boldogok.",
+       "pic": "😢",
+       "id": "pb38_2c"
+      },
+      {
+       "q": "The librarian is a young girl.",
+       "q_hu": "A könyvtáros egy fiatal lány.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem – egy idős férfi.",
+       "pic": "👴",
+       "id": "pb38_2d"
+      }
+     ]
+    },
+    {
+     "id": "pb38_3",
+     "n": "3",
+     "text": "Ask and answer.",
+     "text_hu": "Kérdezz és válaszolj.",
+     "box": [
+      0.1,
+      0.675,
+      0.468,
+      0.9
+     ],
+     "context": {
+      "es": "Five questions about you and reading. Example: When do you go to the library? – I go to the library on Saturdays.",
+      "hu": "Öt kérdés rólad és az olvasásról. Minta: Mikor mész a könyvtárba? – Szombatonként megyek a könyvtárba."
+     },
+     "pic": "📖💬",
+     "help": {
+      "es": "Answer with a full sentence: I go … / I enjoy reading …",
+      "hu": "Egész mondattal válaszolj: I go … / I enjoy reading …"
+     },
+     "items": [
+      {
+       "q": "When do you go to the library?",
+       "q_hu": "Mikor mész a könyvtárba?",
+       "kind": "open",
+       "answer": "I go to the library on Saturdays.",
+       "answer_hu": "Szombatonként megyek a könyvtárba.",
+       "pic": "📅",
+       "id": "pb38_3a"
+      },
+      {
+       "q": "What do you enjoy reading?",
+       "q_hu": "Mit szeretsz olvasni?",
+       "kind": "open",
+       "answer": "I enjoy reading comics and football books.",
+       "answer_hu": "Szeretek képregényeket és focis könyveket olvasni.",
+       "pic": "📚",
+       "id": "pb38_3b"
+      },
+      {
+       "q": "When do you read?",
+       "q_hu": "Mikor olvasol?",
+       "kind": "open",
+       "answer": "I read in the evening, in bed.",
+       "answer_hu": "Este olvasok, az ágyban.",
+       "pic": "🛏️",
+       "id": "pb38_3c"
+      },
+      {
+       "q": "Do your family read?",
+       "q_hu": "Olvas a családod?",
+       "kind": "open",
+       "answer": "Yes, they do. My mum reads every day.",
+       "answer_hu": "Igen. Anya minden nap olvas.",
+       "pic": "👨‍👩‍👧",
+       "id": "pb38_3d"
+      },
+      {
+       "q": "Why do you read?",
+       "q_hu": "Miért olvasol?",
+       "kind": "open",
+       "answer": "I read because it's fun and I learn new things.",
+       "answer_hu": "Azért olvasok, mert jó móka és új dolgokat tanulok.",
+       "pic": "😊",
+       "id": "pb38_3e"
+      }
+     ]
+    },
+    {
+     "id": "pb38_study",
+     "n": "STUDY",
+     "text": "Study: must",
+     "text_hu": "Tanuld meg: must (kell)",
+     "box": [
+      0.27,
+      0.74,
+      0.468,
+      0.89
+     ],
+     "context": {
+      "es": "The Study box has three sentences: Simon must be quiet in the library. They must catch the bus. She must do her homework.",
+      "hu": "A Study dobozban három mondat van: Simonnak csendben kell lennie a könyvtárban. Nekik el kell érniük a buszt. Neki meg kell csinálnia a házit."
+     },
+     "pic": "🔍❗",
+     "help": {
+      "es": "'Must' is the same for everybody: I must, he must, they must.",
+      "hu": "A „must” mindenkinél ugyanaz: I must, he must, they must."
+     },
+     "items": [
+      {
+       "q": "Simon … be quiet in the library.",
+       "q_hu": "Simonnak csendben … lennie a könyvtárban.",
+       "kind": "type",
+       "answer": "must",
+       "alts": [],
+       "answer_hu": "must = kell",
+       "pic": "🤫",
+       "id": "pb38_studya"
+      },
+      {
+       "q": "They … catch the bus.",
+       "q_hu": "Nekik el … érniük a buszt.",
+       "kind": "type",
+       "answer": "must",
+       "alts": [],
+       "answer_hu": "must = kell",
+       "pic": "🚌",
+       "id": "pb38_studyb"
+      },
+      {
+       "q": "Which is correct?",
+       "q_hu": "Melyik a helyes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "She must do her homework.",
+         "hu": "Meg kell csinálnia a házit."
+        },
+        {
+         "t": "She musts do her homework.",
+         "hu": "(hibás: -s)"
+        },
+        {
+         "t": "She must does her homework.",
+         "hu": "(hibás: does)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "She must do her homework.",
+       "pic": "📝",
+       "id": "pb38_studyc"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb39",
+   "book": "pb",
+   "page": 39,
+   "unit": "u4",
+   "title": "Must I make my bed, Dad?",
+   "title_hu": "Meg kell vetnem az ágyam, apa?",
+   "summary_hu": "Dal egy lányról, aki megkérdezi az apját, mit kell csinálnia: beágyazni, szoknyát hordani, iskolába menni, házit írni, cipőt pucolni. Apa mindig azt feleli: Yes, you must (Igen, kell). A végén: Can I play in the park? – Yes, you can! Aztán elmondjuk, mit kell otthon csinálnunk.",
+   "img": "en_pb_photo-21",
+   "page_box": [
+    0.463,
+    0.05,
+    0.86,
+    0.93
+   ],
+   "words": [
+    {
+     "w": "Must I …?",
+     "hu": "Kell …?",
+     "pic": "❓"
+    },
+    {
+     "w": "Yes, you must.",
+     "hu": "Igen, kell.",
+     "pic": "✅"
+    },
+    {
+     "w": "to make the bed",
+     "hu": "beágyazni",
+     "pic": "🛏️"
+    },
+    {
+     "w": "to wear a skirt",
+     "hu": "szoknyát hordani",
+     "pic": "👗"
+    },
+    {
+     "w": "to go to school",
+     "hu": "iskolába menni",
+     "pic": "🏫"
+    },
+    {
+     "w": "to do homework",
+     "hu": "házi feladatot írni",
+     "pic": "📝"
+    },
+    {
+     "w": "to clean shoes",
+     "hu": "cipőt pucolni",
+     "pic": "👟"
+    },
+    {
+     "w": "to play in the park",
+     "hu": "a parkban játszani",
+     "pic": "⚽"
+    },
+    {
+     "w": "to clean your room",
+     "hu": "kitakarítani a szobádat",
+     "pic": "🧹"
+    },
+    {
+     "w": "to help in the kitchen",
+     "hu": "segíteni a konyhában",
+     "pic": "🍳"
+    },
+    {
+     "w": "to wash the car",
+     "hu": "megmosni az autót",
+     "pic": "🚗"
+    },
+    {
+     "w": "to help Mum and Dad",
+     "hu": "segíteni anyának és apának",
+     "pic": "🤝"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's sing a song about things we must do!",
+     "hu": "Énekeljünk egy dalt azokról a dolgokról, amiket meg kell csinálnunk!"
+    },
+    "sentences": [
+     {
+      "es": "A girl asks her dad many questions.",
+      "hu": "Egy lány sok kérdést tesz fel az apjának.",
+      "pic": "👧"
+     },
+     {
+      "es": "'Must I make my bed, Dad?' – 'Yes, you must.'",
+      "hu": "„Meg kell vetnem az ágyam, apa?” – „Igen, kell.”",
+      "pic": "🛏️"
+     },
+     {
+      "es": "'Must I wear a skirt, Dad?' – 'Yes, you must.'",
+      "hu": "„Szoknyát kell hordanom, apa?” – „Igen, kell.”",
+      "pic": "👗"
+     },
+     {
+      "es": "She must go to school and do her homework.",
+      "hu": "Iskolába kell mennie és meg kell írnia a házit.",
+      "pic": "🏫"
+     },
+     {
+      "es": "She must clean her shoes too.",
+      "hu": "A cipőjét is ki kell pucolnia.",
+      "pic": "👟"
+     },
+     {
+      "es": "At the end she asks: 'Can I play in the park, Dad?'",
+      "hu": "A végén megkérdezi: „Játszhatok a parkban, apa?”",
+      "pic": "⚽"
+     },
+     {
+      "es": "Dad says: 'Yes, you can!' She is very happy.",
+      "hu": "Apa azt mondja: „Igen, játszhatsz!” Nagyon boldog.",
+      "pic": "😄"
+     },
+     {
+      "es": "To ask, we put 'must' first: Must I …?",
+      "hu": "Kérdésnél a „must” kerül előre: Must I …?",
+      "pic": "❓"
+     },
+     {
+      "es": "At home I must clean my room and help in the kitchen.",
+      "hu": "Otthon ki kell takarítanom a szobámat és segítenem kell a konyhában.",
+      "pic": "🏠"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Must I make my bed? – Yes, you must.",
+      "hu": "Meg kell vetnem az ágyam? – Igen, kell."
+     },
+     {
+      "es": "Can I play? – Yes, you can.",
+      "hu": "Játszhatok? – Igen, játszhatsz. (can = szabad, lehet)"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, what must you do at home?",
+      "hu": "Martin, mit kell otthon csinálnod?"
+     },
+     {
+      "who": "Martin",
+      "es": "I must play in the park!",
+      "hu": "A parkban kell játszanom!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! That's not a 'must', that's fun! Try again.",
+      "hu": "Miau! Az nem kötelesség, az móka! Próbáld újra."
+     },
+     {
+      "who": "Martin",
+      "es": "I must make my bed and clean my room.",
+      "hu": "Be kell ágyaznom és ki kell takarítanom a szobámat."
+     },
+     {
+      "who": "Kitty",
+      "es": "Must I help in the kitchen too?",
+      "hu": "Nekem is segítenem kell a konyhában?"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes, you must, Kitty!",
+      "hu": "Igen, kell, Kitty!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "In the song Dad always says 'No, you mustn't'.",
+      "hu": "A dalban apa mindig azt mondja: „Nem, nem szabad”.",
+      "answer": false,
+      "why_es": "He says 'Yes, you must.'",
+      "why_hu": "Azt mondja: „Igen, kell.”"
+     },
+     {
+      "es": "The girl must clean her shoes.",
+      "hu": "A lánynak ki kell pucolnia a cipőjét.",
+      "answer": true,
+      "why_es": "Must I clean my shoes? – Yes, you must.",
+      "why_hu": "Ki kell pucolnom a cipőm? – Igen, kell."
+     },
+     {
+      "es": "The last question is about playing in the park.",
+      "hu": "Az utolsó kérdés a parkban játszásról szól.",
+      "answer": true,
+      "why_es": "Can I play in the park, Dad? – Yes, you can!",
+      "why_hu": "Játszhatok a parkban? – Igen!"
+     },
+     {
+      "es": "'Wash the car' means 'megmosni az autót'.",
+      "hu": "A „wash the car” jelentése: megmosni az autót.",
+      "answer": true,
+      "why_es": "wash = mos, car = autó.",
+      "why_hu": "wash = mos, car = autó."
+     },
+     {
+      "es": "'Make the bed' means 'ágyat venni a boltban'.",
+      "hu": "A „make the bed” jelentése: ágyat venni a boltban.",
+      "answer": false,
+      "why_es": "It means 'beágyazni'.",
+      "why_hu": "Azt jelenti: beágyazni."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb39_1",
+     "n": "1",
+     "text": "Read and match. Listen and check.",
+     "text_hu": "Olvasd el és párosítsd. Hallgasd meg és ellenőrizd.",
+     "box": [
+      0.47,
+      0.07,
+      0.83,
+      0.69
+     ],
+     "context": {
+      "es": "Six questions to Dad (1–6) and six pictures (a–f). a: the girl at a desk with books; b: the girl with a school bag, a clock; c: the girl plays football in the park; d: a messy bed, the girl is cross; e: the girl cleans shoes on a newspaper; f: the girl and Dad with clothes (a skirt and trousers). Example: 1 – d.",
+      "hu": "Hat kérdés apához (1–6) és hat kép (a–f). a: a lány íróasztalnál könyvekkel; b: a lány iskolatáskával, egy óra; c: a lány focizik a parkban; d: rendetlen ágy, a lány duzzog; e: a lány cipőt pucol egy újságon; f: a lány és apa ruhákkal (szoknya és nadrág). Minta: 1 – d."
+     },
+     "pic": "🎵👧",
+     "help": {
+      "es": "Find the key word: bed, skirt, school, homework, shoes, park.",
+      "hu": "Keresd meg a kulcsszót: bed (ágy), skirt (szoknya), school (iskola), homework (házi), shoes (cipő), park."
+     },
+     "items": [
+      {
+       "q": "1 Must I make my bed, Dad?",
+       "q_hu": "1 Meg kell vetnem az ágyam, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "d – a messy bed",
+         "hu": "d – rendetlen ágy"
+        },
+        {
+         "t": "a – a desk with books",
+         "hu": "a – íróasztal könyvekkel"
+        },
+        {
+         "t": "c – football in the park",
+         "hu": "c – foci a parkban"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "d",
+       "pic": "🛏️",
+       "id": "pb39_1a"
+      },
+      {
+       "q": "2 Must I wear a skirt, Dad?",
+       "q_hu": "2 Szoknyát kell hordanom, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "e – cleaning shoes",
+         "hu": "e – cipőpucolás"
+        },
+        {
+         "t": "f – a skirt and trousers",
+         "hu": "f – szoknya és nadrág"
+        },
+        {
+         "t": "b – a school bag and a clock",
+         "hu": "b – iskolatáska és óra"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "f",
+       "pic": "👗",
+       "id": "pb39_1b"
+      },
+      {
+       "q": "3 Must I go to school, Dad?",
+       "q_hu": "3 Iskolába kell mennem, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "b – a school bag and a clock",
+         "hu": "b – iskolatáska és óra"
+        },
+        {
+         "t": "d – a messy bed",
+         "hu": "d – rendetlen ágy"
+        },
+        {
+         "t": "c – football in the park",
+         "hu": "c – foci a parkban"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "b",
+       "pic": "🏫",
+       "id": "pb39_1c"
+      },
+      {
+       "q": "4 Must I do my homework, Dad?",
+       "q_hu": "4 Meg kell írnom a házit, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "f – a skirt and trousers",
+         "hu": "f – szoknya és nadrág"
+        },
+        {
+         "t": "e – cleaning shoes",
+         "hu": "e – cipőpucolás"
+        },
+        {
+         "t": "a – a desk with books",
+         "hu": "a – íróasztal könyvekkel"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "a",
+       "pic": "📝",
+       "id": "pb39_1d"
+      },
+      {
+       "q": "5 Must I clean my shoes, Dad?",
+       "q_hu": "5 Ki kell pucolnom a cipőmet, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "e – cleaning shoes",
+         "hu": "e – cipőpucolás"
+        },
+        {
+         "t": "a – a desk with books",
+         "hu": "a – íróasztal könyvekkel"
+        },
+        {
+         "t": "b – a school bag and a clock",
+         "hu": "b – iskolatáska és óra"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "e",
+       "pic": "👟",
+       "id": "pb39_1e"
+      },
+      {
+       "q": "6 Can I play in the park, Dad?",
+       "q_hu": "6 Játszhatok a parkban, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "d – a messy bed",
+         "hu": "d – rendetlen ágy"
+        },
+        {
+         "t": "c – football in the park",
+         "hu": "c – foci a parkban"
+        },
+        {
+         "t": "f – a skirt and trousers",
+         "hu": "f – szoknya és nadrág"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "c",
+       "pic": "⚽",
+       "id": "pb39_1f"
+      }
+     ]
+    },
+    {
+     "id": "pb39_2",
+     "n": "2",
+     "text": "Listen and sing. Do karaoke.",
+     "text_hu": "Hallgasd meg és énekeld. Karaoke!",
+     "box": [
+      0.47,
+      0.69,
+      0.83,
+      0.745
+     ],
+     "context": {
+      "es": "This is the song of Activity 1. The girl asks, Dad answers.",
+      "hu": "Ez az 1. feladat dala. A lány kérdez, apa válaszol."
+     },
+     "pic": "🎤🎵",
+     "help": {
+      "es": "Sing Dad's answers: Yes, you must. Yes, you can!",
+      "hu": "Énekeld apa válaszait: Yes, you must. Yes, you can!"
+     },
+     "items": [
+      {
+       "q": "Must I go to school, Dad? – Yes, you …",
+       "q_hu": "Iskolába kell mennem, apa? – Igen, …",
+       "kind": "type",
+       "answer": "must",
+       "alts": [
+        "you must",
+        "Yes, you must"
+       ],
+       "answer_hu": "must (kell)",
+       "pic": "🏫",
+       "id": "pb39_2a"
+      },
+      {
+       "q": "Can I play in the park, Dad?",
+       "q_hu": "Játszhatok a parkban, apa?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, you can!",
+         "hu": "Igen, játszhatsz!"
+        },
+        {
+         "t": "Yes, you must.",
+         "hu": "Igen, kell."
+        },
+        {
+         "t": "No, you can't.",
+         "hu": "Nem, nem játszhatsz."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Yes, you can!",
+       "pic": "⚽",
+       "id": "pb39_2b"
+      },
+      {
+       "q": "Sing the song with the karaoke.",
+       "q_hu": "Énekeld a dalt karaokéval.",
+       "kind": "open",
+       "answer": "Must I make my bed, Dad? Yes, you must. … Can I play in the park, Dad? Yes, you can!",
+       "answer_hu": "A dal szövege az 1. feladatban; apa mindig: Yes, you must – a végén: Yes, you can!",
+       "pic": "🎤",
+       "id": "pb39_2c"
+      }
+     ]
+    },
+    {
+     "id": "pb39_3",
+     "n": "3",
+     "text": "Ask and answer.",
+     "text_hu": "Kérdezz és válaszolj.",
+     "box": [
+      0.47,
+      0.74,
+      0.83,
+      0.86
+     ],
+     "context": {
+      "es": "Jobs at home: make the bed, clean your room, clean your shoes, help in the kitchen, wash the car, help Mum and Dad. Example: What must you do at home? – I must clean my room.",
+      "hu": "Otthoni feladatok: beágyazni, kitakarítani a szobát, cipőt pucolni, segíteni a konyhában, autót mosni, segíteni anyának és apának. Minta: Mit kell otthon csinálnod? – Ki kell takarítanom a szobámat."
+     },
+     "pic": "🏠🧹",
+     "help": {
+      "es": "Start with 'I must …'.",
+      "hu": "Kezdd így: „I must …”."
+     },
+     "items": [
+      {
+       "q": "Your room is very messy. What must you do?",
+       "q_hu": "Nagyon rendetlen a szobád. Mit kell tenned?",
+       "kind": "type",
+       "answer": "I must clean my room",
+       "alts": [
+        "clean my room",
+        "clean your room",
+        "I must clean my room."
+       ],
+       "answer_hu": "Ki kell takarítanom a szobámat.",
+       "pic": "🧹",
+       "id": "pb39_3a"
+      },
+      {
+       "q": "Your shoes are dirty. What must you do?",
+       "q_hu": "Koszos a cipőd. Mit kell tenned?",
+       "kind": "type",
+       "answer": "I must clean my shoes",
+       "alts": [
+        "clean my shoes",
+        "clean your shoes",
+        "I must clean my shoes."
+       ],
+       "answer_hu": "Ki kell pucolnom a cipőmet.",
+       "pic": "👟",
+       "id": "pb39_3b"
+      },
+      {
+       "q": "Your bed is not made. What must you do?",
+       "q_hu": "Nincs bevetve az ágyad. Mit kell tenned?",
+       "kind": "type",
+       "answer": "I must make the bed",
+       "alts": [
+        "make the bed",
+        "make my bed",
+        "I must make my bed"
+       ],
+       "answer_hu": "Be kell ágyaznom.",
+       "pic": "🛏️",
+       "id": "pb39_3c"
+      },
+      {
+       "q": "The car is dirty. What must you do?",
+       "q_hu": "Koszos az autó. Mit kell tenned?",
+       "kind": "type",
+       "answer": "I must wash the car",
+       "alts": [
+        "wash the car",
+        "I must wash the car."
+       ],
+       "answer_hu": "Meg kell mosnom az autót.",
+       "pic": "🚗",
+       "id": "pb39_3d"
+      },
+      {
+       "q": "What must you do at home?",
+       "q_hu": "Mit kell otthon csinálnod?",
+       "kind": "open",
+       "answer": "I must make my bed and help in the kitchen.",
+       "answer_hu": "Be kell ágyaznom és segítenem kell a konyhában.",
+       "pic": "🏠",
+       "id": "pb39_3e"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb40",
+   "book": "pb",
+   "page": 40,
+   "unit": "u4",
+   "title": "Lock's sounds and spelling",
+   "title_hu": "Lock hangjai és helyesírása",
+   "summary_hu": "Kiejtés: az ere, ear és air betűk ugyanúgy hangzanak (where, bear, chair – kb. „ér”). Mondóka: Where's the bear with purple hair? He's over there, on the chair! Aztán egy medvét kell elképzelni egy városi helyen, és megmondani, hol van.",
+   "img": "en_pb_photo-22",
+   "page_box": [
+    0.04,
+    0.0,
+    0.468,
+    0.97
+   ],
+   "words": [
+    {
+     "w": "where",
+     "hu": "hol",
+     "pic": "❓"
+    },
+    {
+     "w": "there",
+     "hu": "ott",
+     "pic": "👉"
+    },
+    {
+     "w": "over there",
+     "hu": "ott, amott"
+    },
+    {
+     "w": "the bear",
+     "hu": "a medve",
+     "pic": "🐻"
+    },
+    {
+     "w": "the pear",
+     "hu": "a körte",
+     "pic": "🍐"
+    },
+    {
+     "w": "the hair",
+     "hu": "a haj",
+     "pic": "💇"
+    },
+    {
+     "w": "purple",
+     "hu": "lila",
+     "pic": "🟣"
+    },
+    {
+     "w": "the chair",
+     "hu": "a szék",
+     "pic": "🪑"
+    },
+    {
+     "w": "the armchair",
+     "hu": "a fotel",
+     "pic": "🛋️"
+    },
+    {
+     "w": "small",
+     "hu": "kicsi",
+     "pic": "🧸"
+    },
+    {
+     "w": "yellow",
+     "hu": "sárga",
+     "pic": "🟡"
+    },
+    {
+     "w": "to imagine",
+     "hu": "elképzelni",
+     "pic": "💭"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's find the bear with purple hair!",
+     "hu": "Keressük meg a lila hajú medvét!"
+    },
+    "sentences": [
+     {
+      "es": "Lock the detective helps us with sounds and spelling.",
+      "hu": "Lock, a detektív segít a hangokkal és a helyesírással.",
+      "pic": "🕵️"
+     },
+     {
+      "es": "The letters 'ere' in 'where' and 'there' make one sound.",
+      "hu": "A „where” és „there” szavakban az „ere” betűk egy hangot adnak.",
+      "pic": "🔤"
+     },
+     {
+      "es": "The letters 'ear' in 'bear' and 'pear' make the same sound.",
+      "hu": "A „bear” és „pear” szavakban az „ear” ugyanazt a hangot adja.",
+      "pic": "🐻"
+     },
+     {
+      "es": "The letters 'air' in 'hair' and 'chair' make the same sound too.",
+      "hu": "A „hair” és „chair” szavakban az „air” is ugyanazt a hangot adja.",
+      "pic": "🪑"
+     },
+     {
+      "es": "In the picture a bear with purple hair reads a book.",
+      "hu": "A képen egy lila hajú medve könyvet olvas.",
+      "pic": "📖"
+     },
+     {
+      "es": "He is in the library, on a chair.",
+      "hu": "A könyvtárban ül, egy széken.",
+      "pic": "📚"
+     },
+     {
+      "es": "Where's the bear with purple hair? He's over there, on the chair!",
+      "hu": "Hol van a lila hajú medve? Ott van, a széken!",
+      "pic": "🐻"
+     },
+     {
+      "es": "Then we imagine a small bear in a place: The small bear is in the bank.",
+      "hu": "Aztán elképzelünk egy kis medvét valahol: A kis medve a bankban van.",
+      "pic": "🏦"
+     },
+     {
+      "es": "Show what you know: There's a small bear with yellow hair.",
+      "hu": "Mutasd, mit tudsz: Van egy kis medve sárga hajjal.",
+      "pic": "🧸"
+     }
+    ],
+    "remember": [
+     {
+      "es": "ere, ear, air → where, bear, hair: the same sound!",
+      "hu": "ere, ear, air → where, bear, hair: ugyanaz a hang!"
+     },
+     {
+      "es": "Where's the bear? – He's over there, on the chair.",
+      "hu": "Hol van a medve? – Ott van, a széken."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, where's the bear with purple hair?",
+      "hu": "Martin, hol van a lila hajú medve?"
+     },
+     {
+      "who": "Martin",
+      "es": "He's in the pear!",
+      "hu": "A körtében!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! A bear can't sit in a pear. Look again!",
+      "hu": "Miau, nem! Medve nem ülhet egy körtében. Nézd meg újra!"
+     },
+     {
+      "who": "Martin",
+      "es": "He's over there, on the chair!",
+      "hu": "Ott van, a széken!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Bear, pear, hair, chair – they rhyme!",
+      "hu": "Bear, pear, hair, chair – rímelnek!"
+     },
+     {
+      "who": "Martin",
+      "es": "And where, there! Same sound!",
+      "hu": "És where, there! Ugyanaz a hang!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "'Bear' and 'chair' have the same sound at the end.",
+      "hu": "A „bear” és a „chair” végén ugyanaz a hang van.",
+      "answer": true,
+      "why_es": "'ear' and 'air' sound the same here.",
+      "why_hu": "Itt az „ear” és az „air” ugyanúgy hangzik."
+     },
+     {
+      "es": "The bear in the library has got green hair.",
+      "hu": "A könyvtári medvének zöld haja van.",
+      "answer": false,
+      "why_es": "He has got purple hair.",
+      "why_hu": "Lila haja van."
+     },
+     {
+      "es": "The bear is on the chair.",
+      "hu": "A medve a széken van.",
+      "answer": true,
+      "why_es": "He's over there, on the chair!",
+      "why_hu": "Ott van, a széken!"
+     },
+     {
+      "es": "'Pear' is an animal.",
+      "hu": "A „pear” egy állat.",
+      "answer": false,
+      "why_es": "A pear is a fruit (körte). A bear is an animal.",
+      "why_hu": "A pear gyümölcs (körte). A bear állat (medve)."
+     },
+     {
+      "es": "'Where' means 'hol'.",
+      "hu": "A „where” jelentése: hol.",
+      "answer": true,
+      "why_es": "Where's the bear? = Hol van a medve?",
+      "why_hu": "Where's the bear? = Hol van a medve?"
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb40_1",
+     "n": "1",
+     "text": "Watch the video. Watch again and practise.",
+     "text_hu": "Nézd meg a videót. Nézd meg újra és gyakorolj.",
+     "box": [
+      0.1,
+      0.08,
+      0.41,
+      0.135
+     ],
+     "context": {
+      "es": "Lock the detective shows a video about the sounds ere, ear, air.",
+      "hu": "Lock, a detektív videót mutat az ere, ear, air hangokról."
+     },
+     "pic": "📺🔊",
+     "help": {
+      "es": "Say the words slowly: where, bear, hair.",
+      "hu": "Mondd lassan a szavakat: where, bear, hair."
+     },
+     "items": [
+      {
+       "q": "Watch the video and say the rhyme.",
+       "q_hu": "Nézd meg a videót és mondd el a mondókát.",
+       "kind": "open",
+       "answer": "Where's the bear with purple hair? He's over there, on the chair!",
+       "answer_hu": "Hol van a lila hajú medve? Ott van, a széken!",
+       "pic": "📺",
+       "id": "pb40_1a"
+      },
+      {
+       "q": "Which word has the same sound as 'hair'?",
+       "q_hu": "Melyik szóban van ugyanaz a hang, mint a „hair”-ben?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "chair",
+         "hu": "szék"
+        },
+        {
+         "t": "book",
+         "hu": "könyv"
+        },
+        {
+         "t": "hat",
+         "hu": "kalap"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "chair",
+       "pic": "🪑",
+       "id": "pb40_1b"
+      }
+     ]
+    },
+    {
+     "id": "pb40_2",
+     "n": "2",
+     "text": "Read. Find and point to the sounds. Say.",
+     "text_hu": "Olvasd el. Keresd meg és mutasd a hangokat. Mondd ki.",
+     "box": [
+      0.1,
+      0.12,
+      0.468,
+      0.45
+     ],
+     "context": {
+      "es": "A library with a big door and two windows. In the right window a bear with purple hair sits in a chair and reads a book. Text: Where's the bear with purple hair? He's over there, on the chair!",
+      "hu": "Egy könyvtár nagy ajtóval és két ablakkal. A jobb oldali ablakban egy lila hajú medve ül egy fotelban és olvas. Szöveg: Hol van a lila hajú medve? Ott van, a széken!"
+     },
+     "pic": "🐻🟣🪑",
+     "help": {
+      "es": "Look for ere, ear and air in the words.",
+      "hu": "Keresd az ere, ear és air betűket a szavakban."
+     },
+     "items": [
+      {
+       "q": "Which word has 'ere'?",
+       "q_hu": "Melyik szóban van „ere”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "there",
+         "hu": "ott"
+        },
+        {
+         "t": "bear",
+         "hu": "medve"
+        },
+        {
+         "t": "chair",
+         "hu": "szék"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "there (és where)",
+       "pic": "👉",
+       "id": "pb40_2a"
+      },
+      {
+       "q": "Which word has 'ear'?",
+       "q_hu": "Melyik szóban van „ear”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "hair",
+         "hu": "haj"
+        },
+        {
+         "t": "bear",
+         "hu": "medve"
+        },
+        {
+         "t": "where",
+         "hu": "hol"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "bear",
+       "pic": "🐻",
+       "id": "pb40_2b"
+      },
+      {
+       "q": "Which word has 'air'?",
+       "q_hu": "Melyik szóban van „air”?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "hair",
+         "hu": "haj"
+        },
+        {
+         "t": "there",
+         "hu": "ott"
+        },
+        {
+         "t": "bear",
+         "hu": "medve"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "hair (és chair)",
+       "pic": "💇",
+       "id": "pb40_2c"
+      },
+      {
+       "q": "What colour is the bear's hair?",
+       "q_hu": "Milyen színű a medve haja?",
+       "kind": "type",
+       "answer": "purple",
+       "alts": [
+        "it's purple",
+        "It is purple"
+       ],
+       "answer_hu": "lila",
+       "pic": "🟣",
+       "id": "pb40_2d"
+      },
+      {
+       "q": "He's over …, on the chair!",
+       "q_hu": "Ott van (…), a széken!",
+       "kind": "type",
+       "answer": "there",
+       "alts": [],
+       "answer_hu": "there = ott",
+       "pic": "👉",
+       "id": "pb40_2e"
+      }
+     ]
+    },
+    {
+     "id": "pb40_3",
+     "n": "3",
+     "text": "Imagine. Then ask and answer.",
+     "text_hu": "Képzeld el. Aztán kérdezz és válaszolj.",
+     "box": [
+      0.1,
+      0.46,
+      0.468,
+      0.82
+     ],
+     "context": {
+      "es": "A square with four places from left: bank, library, cinema, supermarket. Below are pictures: a big bear, a pear, an armchair, purple hair, a small bear, a chair, yellow hair. Example: Where's the small bear? – The small bear is in the bank.",
+      "hu": "Egy tér négy hellyel balról: bank, könyvtár, mozi, szupermarket. Alatta képek: nagy medve, körte, fotel, lila haj, kis medve, szék, sárga haj. Minta: Hol van a kis medve? – A kis medve a bankban van."
+     },
+     "pic": "🐻🏦",
+     "help": {
+      "es": "Choose a place for the bear in your head. Your friend guesses.",
+      "hu": "Gondolj ki egy helyet a medvének. A társad kitalálja."
+     },
+     "items": [
+      {
+       "q": "Which place is NOT in the picture?",
+       "q_hu": "Melyik hely NINCS a képen?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "bank",
+         "hu": "bank"
+        },
+        {
+         "t": "library",
+         "hu": "könyvtár"
+        },
+        {
+         "t": "hospital",
+         "hu": "kórház"
+        },
+        {
+         "t": "cinema",
+         "hu": "mozi"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "hospital (kórház)",
+       "pic": "🏥",
+       "id": "pb40_3a"
+      },
+      {
+       "q": "What's between the library and the supermarket?",
+       "q_hu": "Mi van a könyvtár és a szupermarket között?",
+       "kind": "type",
+       "answer": "the cinema",
+       "alts": [
+        "cinema",
+        "The cinema."
+       ],
+       "answer_hu": "a mozi",
+       "pic": "🎬",
+       "id": "pb40_3b"
+      },
+      {
+       "q": "What's next to the bank?",
+       "q_hu": "Mi van a bank mellett?",
+       "kind": "type",
+       "answer": "the library",
+       "alts": [
+        "library",
+        "The library."
+       ],
+       "answer_hu": "a könyvtár",
+       "pic": "📚",
+       "id": "pb40_3c"
+      },
+      {
+       "q": "A green fruit in the pictures. What is it?",
+       "q_hu": "Egy zöld gyümölcs a képeken. Mi az?",
+       "kind": "type",
+       "answer": "a pear",
+       "alts": [
+        "pear"
+       ],
+       "answer_hu": "körte",
+       "pic": "🍐",
+       "id": "pb40_3d"
+      },
+      {
+       "q": "Imagine: Where's the small bear?",
+       "q_hu": "Képzeld el: Hol van a kis medve?",
+       "kind": "open",
+       "answer": "The small bear is in the bank.",
+       "answer_hu": "A kis medve a bankban van.",
+       "pic": "🧸",
+       "id": "pb40_3e"
+      }
+     ]
+    },
+    {
+     "id": "pb40_swyk",
+     "n": "SWYK",
+     "text": "Show what you know: There's a small … with yellow … .",
+     "text_hu": "Mutasd, mit tudsz: Van egy kicsi … sárga …-val.",
+     "box": [
+      0.15,
+      0.79,
+      0.42,
+      0.89
+     ],
+     "context": {
+      "es": "A small bear with yellow hair is in the box.",
+      "hu": "A dobozban egy kicsi medve van sárga hajjal."
+     },
+     "pic": "🧸🟡",
+     "help": {
+      "es": "Look at the little bear next to the sentence.",
+      "hu": "Nézd a kis medvét a mondat mellett."
+     },
+     "items": [
+      {
+       "q": "There's a small … with yellow hair.",
+       "q_hu": "Van egy kicsi … sárga hajjal.",
+       "kind": "type",
+       "answer": "bear",
+       "alts": [],
+       "answer_hu": "medve",
+       "pic": "🧸",
+       "id": "pb40_swyka"
+      },
+      {
+       "q": "There's a small bear with yellow … .",
+       "q_hu": "Van egy kicsi medve sárga …-val.",
+       "kind": "type",
+       "answer": "hair",
+       "alts": [],
+       "answer_hu": "haj",
+       "pic": "🟡",
+       "id": "pb40_swykb"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb41",
+   "book": "pb",
+   "page": 41,
+   "unit": "u4",
+   "title": "Lock & Key!",
+   "title_hu": "Lock és Key – detektívtörténet",
+   "summary_hu": "Lock és Key detektívek munkát keresnek: Lottie Cash, a bankrabló. Mrs Potts pénzt akar felvenni, ezért a barátnőjével a bankba megy. Key azt hiszi, hogy Mrs Potts Lottie Cash, és a bankban elveszi a pénzét – de téved! A végén Lock azt mondja: Állj fel, Key, beszélnünk kell!",
+   "img": "en_pb_photo-22",
+   "page_box": [
+    0.463,
+    0.02,
+    0.87,
+    0.94
+   ],
+   "words": [
+    {
+     "w": "to look for work",
+     "hu": "munkát keresni",
+     "pic": "🔍"
+    },
+    {
+     "w": "the computer",
+     "hu": "a számítógép",
+     "pic": "💻"
+    },
+    {
+     "w": "the bank robber",
+     "hu": "a bankrabló",
+     "pic": "🦹"
+    },
+    {
+     "w": "Wanted",
+     "hu": "Körözött",
+     "pic": "📋"
+    },
+    {
+     "w": "to find",
+     "hu": "megtalálni",
+     "pic": "🔎"
+    },
+    {
+     "w": "money",
+     "hu": "pénz",
+     "pic": "💰"
+    },
+    {
+     "w": "I need",
+     "hu": "szükségem van",
+     "pic": "🙏"
+    },
+    {
+     "w": "a lovely day",
+     "hu": "egy szép nap",
+     "pic": "☀️"
+    },
+    {
+     "w": "shopping",
+     "hu": "vásárlás",
+     "pic": "🛍️"
+    },
+    {
+     "w": "to stop",
+     "hu": "megállítani",
+     "pic": "🛑"
+    },
+    {
+     "w": "to get there",
+     "hu": "odaérni"
+    },
+    {
+     "w": "Don't touch!",
+     "hu": "Ne nyúlj hozzá!",
+     "pic": "✋"
+    },
+    {
+     "w": "Not you again!",
+     "hu": "Már megint te!",
+     "pic": "😠"
+    },
+    {
+     "w": "to stand up",
+     "hu": "felállni"
+    },
+    {
+     "w": "to talk",
+     "hu": "beszélgetni",
+     "pic": "🗣️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Lock and Key are back! Let's read their new story.",
+     "hu": "Lock és Key visszatért! Olvassuk el az új történetüket!"
+    },
+    "sentences": [
+     {
+      "es": "Lock and Key are detectives. They are looking for work on the computer.",
+      "hu": "Lock és Key detektívek. A számítógépen munkát keresnek.",
+      "pic": "💻"
+     },
+     {
+      "es": "They see a picture: Lottie Cash, the bank robber.",
+      "hu": "Egy képet látnak: Lottie Cash, a bankrabló.",
+      "pic": "🦹"
+     },
+     {
+      "es": "Lock says: 'We can find her.' Key says: 'No problem, Lock!'",
+      "hu": "Lock azt mondja: „Meg tudjuk találni.” Key: „Semmi gond, Lock!”",
+      "pic": "🕵️"
+     },
+     {
+      "es": "Mrs Potts says: 'I need some money. I must go to the bank.'",
+      "hu": "Mrs Potts azt mondja: „Kell egy kis pénz. Mennem kell a bankba.”",
+      "pic": "💰"
+     },
+     {
+      "es": "Her friend says it's a lovely day for shopping in the city.",
+      "hu": "A barátnője szerint szép nap van a városi vásárláshoz.",
+      "pic": "🛍️"
+     },
+     {
+      "es": "Key sees Mrs Potts and thinks she is Lottie Cash!",
+      "hu": "Key meglátja Mrs Pottsot, és azt hiszi, ő Lottie Cash!",
+      "pic": "😲"
+     },
+     {
+      "es": "Lock and Key must stop her. They must get to the bank first.",
+      "hu": "Lock és Keynek meg kell állítaniuk. Előbb kell odaérniük a bankba.",
+      "pic": "🏃"
+     },
+     {
+      "es": "In the bank Key shouts: 'Give me that money, Lottie Cash!'",
+      "hu": "A bankban Key kiabál: „Add ide azt a pénzt, Lottie Cash!”",
+      "pic": "🏦"
+     },
+     {
+      "es": "Mrs Potts says: 'Lottie who?' She is not the robber.",
+      "hu": "Mrs Potts: „Milyen Lottie?” Ő nem a rabló.",
+      "pic": "🤷"
+     },
+     {
+      "es": "Her friend says: 'Don't touch her money! Not you again, Mr Key!'",
+      "hu": "A barátnője: „Ne nyúlj a pénzéhez! Már megint te, Mr Key!”",
+      "pic": "😠"
+     },
+     {
+      "es": "Lock says: 'Stand up, Key. You and I need to talk!'",
+      "hu": "Lock: „Állj fel, Key. Nekünk beszélnünk kell!”",
+      "pic": "🗣️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "I must go to the bank. = Mennem kell a bankba.",
+      "hu": "must = kell"
+     },
+     {
+      "es": "I need some money. = Szükségem van egy kis pénzre.",
+      "hu": "need = szüksége van valamire"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, who is Lottie Cash?",
+      "hu": "Martin, ki az a Lottie Cash?"
+     },
+     {
+      "who": "Martin",
+      "es": "She's Mrs Potts's friend.",
+      "hu": "Mrs Potts barátnője."
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! Lottie Cash is a bank robber.",
+      "hu": "Miau, nem! Lottie Cash egy bankrabló."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh yes! And Key thinks Mrs Potts is Lottie Cash.",
+      "hu": "Ja, persze! És Key azt hiszi, Mrs Potts Lottie Cash."
+     },
+     {
+      "who": "Kitty",
+      "es": "Why must Mrs Potts go to the bank?",
+      "hu": "Miért kell Mrs Pottsnak a bankba mennie?"
+     },
+     {
+      "who": "Martin",
+      "es": "Because she needs some money!",
+      "hu": "Mert pénzre van szüksége!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Lock and Key are looking for work on the computer.",
+      "hu": "Lock és Key a számítógépen keresnek munkát.",
+      "answer": true,
+      "why_es": "That's picture 1.",
+      "why_hu": "Ez az 1. kép."
+     },
+     {
+      "es": "Lottie Cash is a teacher.",
+      "hu": "Lottie Cash tanárnő.",
+      "answer": false,
+      "why_es": "She is a bank robber.",
+      "why_hu": "Ő bankrabló."
+     },
+     {
+      "es": "Mrs Potts needs some money.",
+      "hu": "Mrs Pottsnak pénz kell.",
+      "answer": true,
+      "why_es": "I need some money. I must go to the bank.",
+      "why_hu": "„Kell egy kis pénz. Mennem kell a bankba.”"
+     },
+     {
+      "es": "Mrs Potts is Lottie Cash.",
+      "hu": "Mrs Potts azonos Lottie Cash-sel.",
+      "answer": false,
+      "why_es": "Key is wrong. Mrs Potts says 'Lottie who?'",
+      "why_hu": "Key téved. Mrs Potts azt mondja: „Milyen Lottie?”"
+     },
+     {
+      "es": "At the end Lock wants to talk to Key.",
+      "hu": "A végén Lock beszélni akar Keyjel.",
+      "answer": true,
+      "why_es": "Stand up, Key. You and I need to talk!",
+      "why_hu": "„Állj fel, Key. Beszélnünk kell!”"
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb41_1",
+     "n": "1",
+     "text": "Where must Mrs Potts go? Why? Where must Lock and Key go? Why?",
+     "text_hu": "Hova kell mennie Mrs Pottsnak? Miért? Hova kell mennie Lock és Keynek? Miért?",
+     "box": [
+      0.47,
+      0.03,
+      0.85,
+      0.88
+     ],
+     "context": {
+      "es": "A comic in 6 pictures: Lock and Key see 'Wanted: Lottie Cash' on the computer; Mrs Potts and her friend go to the bank; Key thinks Mrs Potts is the robber and grabs her money in the bank; but he is wrong.",
+      "hu": "6 képes képregény: Lock és Key a számítógépen látja: „Körözött: Lottie Cash”; Mrs Potts és a barátnője a bankba megy; Key azt hiszi, Mrs Potts a rabló, és a bankban elveszi a pénzét; de téved."
+     },
+     "pic": "🕵️🏦💰",
+     "help": {
+      "es": "Read picture 2 (Mrs Potts) and picture 4 (Lock and Key).",
+      "hu": "Olvasd el a 2. képet (Mrs Potts) és a 4. képet (Lock és Key)."
+     },
+     "items": [
+      {
+       "q": "Where must Mrs Potts go?",
+       "q_hu": "Hova kell mennie Mrs Pottsnak?",
+       "kind": "type",
+       "answer": "to the bank",
+       "alts": [
+        "the bank",
+        "bank",
+        "She must go to the bank"
+       ],
+       "answer_hu": "a bankba",
+       "pic": "🏦",
+       "id": "pb41_1a"
+      },
+      {
+       "q": "Why must Mrs Potts go there?",
+       "q_hu": "Miért kell oda mennie Mrs Pottsnak?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "She needs some money.",
+         "hu": "Pénzre van szüksége."
+        },
+        {
+         "t": "She wants to see a film.",
+         "hu": "Filmet akar nézni."
+        },
+        {
+         "t": "She is a bank robber.",
+         "hu": "Ő bankrabló."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Pénzre van szüksége.",
+       "pic": "💰",
+       "id": "pb41_1b"
+      },
+      {
+       "q": "Where must Lock and Key go?",
+       "q_hu": "Hova kell menniük Lock és Keynek?",
+       "kind": "type",
+       "answer": "to the bank",
+       "alts": [
+        "the bank",
+        "bank",
+        "They must go to the bank"
+       ],
+       "answer_hu": "a bankba",
+       "pic": "🏃",
+       "id": "pb41_1c"
+      },
+      {
+       "q": "Why must Lock and Key go there?",
+       "q_hu": "Miért kell oda menniük Lock és Keynek?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "to stop Lottie Cash, the bank robber",
+         "hu": "hogy megállítsák Lottie Casht, a bankrablót"
+        },
+        {
+         "t": "to get some money",
+         "hu": "hogy pénzt vegyenek fel"
+        },
+        {
+         "t": "to go shopping",
+         "hu": "hogy vásároljanak"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "hogy megállítsák a bankrablót",
+       "pic": "🛑",
+       "id": "pb41_1d"
+      },
+      {
+       "q": "Who is Lottie Cash?",
+       "q_hu": "Ki Lottie Cash?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a bank robber",
+         "hu": "egy bankrabló"
+        },
+        {
+         "t": "a detective",
+         "hu": "egy detektív"
+        },
+        {
+         "t": "Mrs Potts's friend",
+         "hu": "Mrs Potts barátnője"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "egy bankrabló",
+       "pic": "🦹",
+       "id": "pb41_1e"
+      },
+      {
+       "q": "Is Mrs Potts really Lottie Cash?",
+       "q_hu": "Mrs Potts tényleg Lottie Cash?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem – Key téved.",
+       "pic": "🤷",
+       "id": "pb41_1f"
+      },
+      {
+       "q": "What does Lock say at the end? 'Stand up, Key. You and I need to …!'",
+       "q_hu": "Mit mond Lock a végén? „Állj fel, Key. Nekünk … kell!”",
+       "kind": "type",
+       "answer": "talk",
+       "alts": [],
+       "answer_hu": "beszélnünk",
+       "pic": "🗣️",
+       "id": "pb41_1g"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb42",
+   "book": "pb",
+   "page": 42,
+   "unit": "u4",
+   "title": "Where do we go shopping?",
+   "title_hu": "Hol vásárolunk?",
+   "summary_hu": "Két különleges bolt: a Candylawa (Szaúd-Arábiában) édességet, süteményt, pattogatott kukoricát, pólót és plüssállatot árul, és van benne kávézó. A Brooklyn Superhero Supply Company (az USA-ban) szuperhős-jelmezeket (maszk, köpeny), játékokat és tudományos készleteket árul. Meg kell mondani, melyik boltról van szó, és milyen boltokat szeretünk.",
+   "img": "en_pb_photo-23",
+   "page_box": [
+    0.04,
+    0.04,
+    0.462,
+    0.96
+   ],
+   "words": [
+    {
+     "w": "the shop",
+     "hu": "a bolt",
+     "pic": "🏪"
+    },
+    {
+     "w": "interesting",
+     "hu": "érdekes",
+     "pic": "🤩"
+    },
+    {
+     "w": "sweets",
+     "hu": "édességek, cukorkák",
+     "pic": "🍬"
+    },
+    {
+     "w": "cakes",
+     "hu": "sütemények",
+     "pic": "🍰"
+    },
+    {
+     "w": "popcorn",
+     "hu": "pattogatott kukorica",
+     "pic": "🍿"
+    },
+    {
+     "w": "treats",
+     "hu": "finomságok",
+     "pic": "🍭"
+    },
+    {
+     "w": "gifts",
+     "hu": "ajándékok",
+     "pic": "🎁"
+    },
+    {
+     "w": "animal toys",
+     "hu": "állatos játékok",
+     "pic": "🧸"
+    },
+    {
+     "w": "the café",
+     "hu": "a kávézó",
+     "pic": "☕"
+    },
+    {
+     "w": "the superhero",
+     "hu": "a szuperhős",
+     "pic": "🦸"
+    },
+    {
+     "w": "the costume",
+     "hu": "a jelmez",
+     "pic": "🎭"
+    },
+    {
+     "w": "the cape",
+     "hu": "a köpeny"
+    },
+    {
+     "w": "the science kit",
+     "hu": "a tudományos kísérletező készlet",
+     "pic": "🔬"
+    },
+    {
+     "w": "the secret message",
+     "hu": "a titkos üzenet",
+     "pic": "✉️"
+    },
+    {
+     "w": "invisible ink",
+     "hu": "láthatatlan tinta",
+     "pic": "🖋️"
+    },
+    {
+     "w": "the craft shop",
+     "hu": "a kreatív (barkács) bolt",
+     "pic": "🎨"
+    },
+    {
+     "w": "crayons",
+     "hu": "zsírkréták",
+     "pic": "🖍️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's visit two fun shops!",
+     "hu": "Látogassunk meg két vicces boltot!"
+    },
+    "sentences": [
+     {
+      "es": "Candylawa is a shop in Saudi Arabia.",
+      "hu": "A Candylawa egy bolt Szaúd-Arábiában.",
+      "pic": "🏪"
+     },
+     {
+      "es": "Candylawa has got sweets, cakes and popcorn.",
+      "hu": "A Candylawában van édesség, sütemény és pattogatott kukorica.",
+      "pic": "🍬"
+     },
+     {
+      "es": "You can also buy gifts there, like T-shirts and animal toys.",
+      "hu": "Ajándékokat is vehetsz ott, például pólót és plüssállatot.",
+      "pic": "🎁"
+     },
+     {
+      "es": "There is also a café for visitors.",
+      "hu": "A látogatóknak van ott egy kávézó is.",
+      "pic": "☕"
+     },
+     {
+      "es": "The Brooklyn Superhero Supply Company is in the USA.",
+      "hu": "A Brooklyn Superhero Supply Company (szuperhős-bolt) az USA-ban van.",
+      "pic": "🇺🇸"
+     },
+     {
+      "es": "It sells superhero costumes, like masks and capes.",
+      "hu": "Szuperhős-jelmezeket árul, például maszkot és köpenyt.",
+      "pic": "🦸"
+     },
+     {
+      "es": "You can buy fun toys and science kits there.",
+      "hu": "Vicces játékokat és tudományos készleteket is vehetsz ott.",
+      "pic": "🔬"
+     },
+     {
+      "es": "You can build a robot or write a secret message with invisible ink.",
+      "hu": "Robotot építhetsz, vagy titkos üzenetet írhatsz láthatatlan tintával.",
+      "pic": "🤖"
+     },
+     {
+      "es": "Both shops sell toys.",
+      "hu": "Mindkét bolt árul játékokat.",
+      "pic": "🧸"
+     },
+     {
+      "es": "Did you know? Clothes and shoes are the most popular things for online shopping.",
+      "hu": "Tudtad? Az interneten a ruhákat és cipőket veszik a legtöbben.",
+      "pic": "👟"
+     }
+    ],
+    "remember": [
+     {
+      "es": "It sells costumes. = Jelmezeket árul.",
+      "hu": "sell = árul, elad; he/she/it sells"
+     },
+     {
+      "es": "What shops do you like? – I like craft shops.",
+      "hu": "Milyen boltokat szeretsz? – A kreatív boltokat szeretem."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, which shop sells masks and capes?",
+      "hu": "Martin, melyik bolt árul maszkot és köpenyt?"
+     },
+     {
+      "who": "Martin",
+      "es": "Candylawa!",
+      "hu": "A Candylawa!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! Candylawa sells sweets and cakes.",
+      "hu": "Miau, nem! A Candylawa édességet és süteményt árul."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh, then it's the superhero shop!",
+      "hu": "Ó, akkor a szuperhős-bolt!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Right! Which shop is interesting to you?",
+      "hu": "Így van! Neked melyik bolt érdekes?"
+     },
+     {
+      "who": "Martin",
+      "es": "The superhero shop. I want to build a robot!",
+      "hu": "A szuperhős-bolt. Robotot akarok építeni!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Candylawa is in the USA.",
+      "hu": "A Candylawa az USA-ban van.",
+      "answer": false,
+      "why_es": "Candylawa is in Saudi Arabia.",
+      "why_hu": "A Candylawa Szaúd-Arábiában van."
+     },
+     {
+      "es": "Candylawa has got a café.",
+      "hu": "A Candylawában van kávézó.",
+      "answer": true,
+      "why_es": "There's also a café for visitors.",
+      "why_hu": "A látogatóknak van egy kávézó is."
+     },
+     {
+      "es": "The superhero shop sells masks and capes.",
+      "hu": "A szuperhős-bolt maszkot és köpenyt árul.",
+      "answer": true,
+      "why_es": "It has got superhero costumes, such as masks and capes.",
+      "why_hu": "Szuperhős-jelmezei vannak, pl. maszk és köpeny."
+     },
+     {
+      "es": "You write a secret message with invisible ink.",
+      "hu": "Titkos üzenetet láthatatlan tintával írsz.",
+      "answer": true,
+      "why_es": "The text says so.",
+      "why_hu": "A szöveg ezt mondja."
+     },
+     {
+      "es": "Clothes and shoes are not popular for online shopping.",
+      "hu": "A ruhák és cipők nem népszerűek az internetes vásárlásban.",
+      "answer": false,
+      "why_es": "They are the most popular items.",
+      "why_hu": "Ezek a legnépszerűbbek."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb42_1",
+     "n": "1",
+     "text": "Listen and read. Which shop is interesting to you? Why?",
+     "text_hu": "Hallgasd meg és olvasd el. Melyik bolt érdekes neked? Miért?",
+     "box": [
+      0.1,
+      0.06,
+      0.462,
+      0.55
+     ],
+     "context": {
+      "es": "Two shop texts with photos: Candylawa (hands with colourful sweets, a shop front) and the Brooklyn Superhero Supply Company (a boy in a superhero cape, a girl with a science kit).",
+      "hu": "Két bolt leírása fotókkal: Candylawa (kezek színes cukorkákkal, egy kirakat) és a Brooklyn Superhero Supply Company (egy fiú szuperhős-köpenyben, egy lány kísérletező készlettel)."
+     },
+     "pic": "🍬🦸",
+     "help": {
+      "es": "Read what you can buy in each shop.",
+      "hu": "Olvasd el, mit lehet venni az egyes boltokban."
+     },
+     "items": [
+      {
+       "q": "What can you buy at Candylawa?",
+       "q_hu": "Mit vehetsz a Candylawában?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "sweets, cakes and popcorn",
+         "hu": "édességet, süteményt, popcornt"
+        },
+        {
+         "t": "masks and capes",
+         "hu": "maszkot és köpenyt"
+        },
+        {
+         "t": "books",
+         "hu": "könyveket"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "édességet, süteményt, pattogatott kukoricát",
+       "pic": "🍬",
+       "id": "pb42_1a"
+      },
+      {
+       "q": "What can you buy at the Brooklyn Superhero Supply Company?",
+       "q_hu": "Mit vehetsz a szuperhős-boltban?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "cakes and popcorn",
+         "hu": "süteményt és popcornt"
+        },
+        {
+         "t": "superhero costumes",
+         "hu": "szuperhős-jelmezeket"
+        },
+        {
+         "t": "coconut water",
+         "hu": "kókuszvizet"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "szuperhős-jelmezeket",
+       "pic": "🦸",
+       "id": "pb42_1b"
+      },
+      {
+       "q": "With a science kit you can build a …",
+       "q_hu": "Egy kísérletező készlettel építhetsz egy …",
+       "kind": "type",
+       "answer": "robot",
+       "alts": [
+        "a robot"
+       ],
+       "answer_hu": "robotot",
+       "pic": "🤖",
+       "id": "pb42_1c"
+      },
+      {
+       "q": "With invisible ink you can write a secret …",
+       "q_hu": "Láthatatlan tintával írhatsz egy titkos …",
+       "kind": "type",
+       "answer": "message",
+       "alts": [
+        "a secret message",
+        "secret message"
+       ],
+       "answer_hu": "üzenetet",
+       "pic": "✉️",
+       "id": "pb42_1d"
+      },
+      {
+       "q": "Which shop is interesting to you? Why?",
+       "q_hu": "Melyik bolt érdekes neked? Miért?",
+       "kind": "open",
+       "answer": "The superhero shop is interesting to me because I can build a robot.",
+       "answer_hu": "A szuperhős-bolt érdekes, mert robotot építhetek.",
+       "pic": "🤩",
+       "id": "pb42_1e"
+      }
+     ]
+    },
+    {
+     "id": "pb42_2",
+     "n": "2",
+     "text": "Read. Which shop is it? Answer the question.",
+     "text_hu": "Olvasd el. Melyik boltról van szó? Válaszolj a kérdésre.",
+     "box": [
+      0.1,
+      0.55,
+      0.462,
+      0.78
+     ],
+     "context": {
+      "es": "Five sentences (1–5): decide if each is about the Brooklyn Superhero Supply Company or Candylawa. Number 6 is a question.",
+      "hu": "Öt mondat (1–5): döntsd el, hogy a szuperhős-boltról vagy a Candylawáról szól. A 6. egy kérdés."
+     },
+     "pic": "🏪❓",
+     "help": {
+      "es": "Look back at the texts in Activity 1.",
+      "hu": "Nézd vissza az 1. feladat szövegeit."
+     },
+     "items": [
+      {
+       "q": "1 It's in Saudi Arabia.",
+       "q_hu": "1 Szaúd-Arábiában van.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Brooklyn Superhero Supply Company",
+         "hu": "szuperhős-bolt"
+        },
+        {
+         "t": "Candylawa",
+         "hu": "Candylawa"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Candylawa",
+       "pic": "🌍",
+       "id": "pb42_2a"
+      },
+      {
+       "q": "2 It's in the USA.",
+       "q_hu": "2 Az USA-ban van.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Brooklyn Superhero Supply Company",
+         "hu": "szuperhős-bolt"
+        },
+        {
+         "t": "Candylawa",
+         "hu": "Candylawa"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a szuperhős-bolt",
+       "pic": "🇺🇸",
+       "id": "pb42_2b"
+      },
+      {
+       "q": "3 It sells costumes.",
+       "q_hu": "3 Jelmezeket árul.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Brooklyn Superhero Supply Company",
+         "hu": "szuperhős-bolt"
+        },
+        {
+         "t": "Candylawa",
+         "hu": "Candylawa"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a szuperhős-bolt",
+       "pic": "🎭",
+       "id": "pb42_2c"
+      },
+      {
+       "q": "4 It's got a café.",
+       "q_hu": "4 Van benne kávézó.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Brooklyn Superhero Supply Company",
+         "hu": "szuperhős-bolt"
+        },
+        {
+         "t": "Candylawa",
+         "hu": "Candylawa"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Candylawa",
+       "pic": "☕",
+       "id": "pb42_2d"
+      },
+      {
+       "q": "5 It sells sweet treats.",
+       "q_hu": "5 Édes finomságokat árul.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Brooklyn Superhero Supply Company",
+         "hu": "szuperhős-bolt"
+        },
+        {
+         "t": "Candylawa",
+         "hu": "Candylawa"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Candylawa",
+       "pic": "🍭",
+       "id": "pb42_2e"
+      },
+      {
+       "q": "6 What do both shops sell?",
+       "q_hu": "6 Mit árul mindkét bolt?",
+       "kind": "type",
+       "answer": "toys",
+       "alts": [
+        "toys",
+        "fun toys and animal toys",
+        "They sell toys",
+        "Both shops sell toys"
+       ],
+       "answer_hu": "játékokat",
+       "pic": "🧸",
+       "id": "pb42_2f"
+      }
+     ]
+    },
+    {
+     "id": "pb42_3",
+     "n": "3",
+     "text": "What shops do you like? What do you buy there? Think and say.",
+     "text_hu": "Milyen boltokat szeretsz? Mit veszel ott? Gondold végig és mondd el.",
+     "box": [
+      0.09,
+      0.78,
+      0.3,
+      0.93
+     ],
+     "context": {
+      "es": "Example: I like craft shops. – I buy paint and crayons.",
+      "hu": "Minta: A kreatív boltokat szeretem. – Festéket és zsírkrétát veszek."
+     },
+     "pic": "🎨🖍️",
+     "help": {
+      "es": "Say: I like … shops. I buy …",
+      "hu": "Mondd: I like … shops. I buy …"
+     },
+     "items": [
+      {
+       "q": "In a craft shop you can buy …",
+       "q_hu": "Egy kreatív boltban vehetsz …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "paint and crayons",
+         "hu": "festéket és zsírkrétát"
+        },
+        {
+         "t": "bread and milk",
+         "hu": "kenyeret és tejet"
+        },
+        {
+         "t": "a car",
+         "hu": "autót"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "festéket és zsírkrétát",
+       "pic": "🖍️",
+       "id": "pb42_3a"
+      },
+      {
+       "q": "What shops do you like? What do you buy there?",
+       "q_hu": "Milyen boltokat szeretsz? Mit veszel ott?",
+       "kind": "open",
+       "answer": "I like toy shops. I buy LEGO there.",
+       "answer_hu": "A játékboltokat szeretem. LEGO-t veszek ott.",
+       "pic": "🧸",
+       "id": "pb42_3b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb43",
+   "book": "pb",
+   "page": 43,
+   "unit": "u4",
+   "title": "Why are these shops different?",
+   "title_hu": "Miért mások ezek a boltok?",
+   "summary_hu": "Három különleges bolt, amelyik nem egy rendes épületben van: Moving Books (könyveket áruló furgon), Coconut Delight (kókuszvíz a tengerparton) és C+M ice cream (fagyiskocsi, ami zenél). Megtanuljuk, mi a főnév (noun): személy, hely vagy dolog neve. Végül kitalálunk egy saját boltot.",
+   "img": "en_pb_photo-23",
+   "page_box": [
+    0.457,
+    0.04,
+    0.86,
+    0.94
+   ],
+   "words": [
+    {
+     "w": "the van",
+     "hu": "a furgon, kisteherautó",
+     "pic": "🚐"
+    },
+    {
+     "w": "to drive around",
+     "hu": "körbe-körbe járni (autóval)",
+     "pic": "🚗"
+    },
+    {
+     "w": "the field",
+     "hu": "a mező",
+     "pic": "🌾"
+    },
+    {
+     "w": "the car park",
+     "hu": "a parkoló",
+     "pic": "🅿️"
+    },
+    {
+     "w": "the storybook",
+     "hu": "a mesekönyv",
+     "pic": "📖"
+    },
+    {
+     "w": "the notebook",
+     "hu": "a füzet",
+     "pic": "📓"
+    },
+    {
+     "w": "thirsty",
+     "hu": "szomjas",
+     "pic": "🥵"
+    },
+    {
+     "w": "delicious",
+     "hu": "nagyon finom",
+     "pic": "😋"
+    },
+    {
+     "w": "coconut water",
+     "hu": "kókuszvíz",
+     "pic": "🥥"
+    },
+    {
+     "w": "the beach",
+     "hu": "a tengerpart",
+     "pic": "🏖️"
+    },
+    {
+     "w": "the music",
+     "hu": "a zene",
+     "pic": "🎵"
+    },
+    {
+     "w": "the ice cream van",
+     "hu": "a fagyiskocsi",
+     "pic": "🍦"
+    },
+    {
+     "w": "yummy",
+     "hu": "fincsi",
+     "pic": "😋"
+    },
+    {
+     "w": "the noun",
+     "hu": "a főnév",
+     "pic": "🏷️"
+    },
+    {
+     "w": "person, place, thing",
+     "hu": "személy, hely, dolog"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Some shops are not in a building. Let's see them!",
+     "hu": "Vannak boltok, amik nem épületben vannak. Nézzük meg őket!"
+    },
+    "sentences": [
+     {
+      "es": "Moving Books is a van. It drives around and sells books.",
+      "hu": "A Moving Books egy furgon. Körbejár és könyveket árul.",
+      "pic": "🚐"
+     },
+     {
+      "es": "You can buy books in a field or in the car park.",
+      "hu": "Könyvet vehetsz egy mezőn vagy a parkolóban.",
+      "pic": "🌾"
+     },
+     {
+      "es": "It has books about space, storybooks and notebooks.",
+      "hu": "Vannak könyvei az űrről, mesekönyvei és füzetei.",
+      "pic": "📚"
+     },
+     {
+      "es": "Coconut Delight sells delicious coconut water by the beach.",
+      "hu": "A Coconut Delight finom kókuszvizet árul a tengerparton.",
+      "pic": "🥥"
+     },
+     {
+      "es": "C+M ice cream is an ice cream van. You can hear its music.",
+      "hu": "A C+M ice cream egy fagyiskocsi. Hallod a zenéjét.",
+      "pic": "🍦"
+     },
+     {
+      "es": "It drives to your street or your school.",
+      "hu": "Elmegy az utcádba vagy az iskoládhoz.",
+      "pic": "🏫"
+     },
+     {
+      "es": "These shops are different because they are not in a shop building.",
+      "hu": "Ezek a boltok azért mások, mert nem bolti épületben vannak.",
+      "pic": "🤔"
+     },
+     {
+      "es": "A noun is a word for a person, place or thing.",
+      "hu": "A főnév egy személy, hely vagy dolog neve.",
+      "pic": "🏷️"
+     },
+     {
+      "es": "Van, books, beach and music are nouns.",
+      "hu": "A van, books, beach és music főnevek.",
+      "pic": "📝"
+     },
+     {
+      "es": "Project: we role-play a conversation at our own shop.",
+      "hu": "Projekt: eljátszunk egy beszélgetést a saját boltunkban.",
+      "pic": "🎭"
+     }
+    ],
+    "remember": [
+     {
+      "es": "A noun is a word for a person, place or thing.",
+      "hu": "A főnév egy személy, hely vagy dolog neve."
+     },
+     {
+      "es": "Nouns: teacher (person), beach (place), book (thing).",
+      "hu": "Főnevek: tanár (személy), tengerpart (hely), könyv (dolog)."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, which shop sells coconut water?",
+      "hu": "Martin, melyik bolt árul kókuszvizet?"
+     },
+     {
+      "who": "Martin",
+      "es": "Coconut Delight, by the beach!",
+      "hu": "A Coconut Delight, a tengerparton!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Is 'beach' a noun?",
+      "hu": "A „beach” főnév?"
+     },
+     {
+      "who": "Martin",
+      "es": "No, it's a verb!",
+      "hu": "Nem, az ige!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! 'Beach' is a place, so it's a noun.",
+      "hu": "Miau! A „beach” egy hely, tehát főnév."
+     },
+     {
+      "who": "Martin",
+      "es": "OK! And 'van' is a thing, so it's a noun too!",
+      "hu": "Rendben! És a „van” egy dolog, tehát az is főnév!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Moving Books is a van that sells books.",
+      "hu": "A Moving Books egy könyvárus furgon.",
+      "answer": true,
+      "why_es": "Imagine a van that drives around and sells books!",
+      "why_hu": "Képzelj el egy furgont, ami körbejár és könyvet árul!"
+     },
+     {
+      "es": "Coconut Delight is in the mountains.",
+      "hu": "A Coconut Delight a hegyekben van.",
+      "answer": false,
+      "why_es": "You can find it by the beach.",
+      "why_hu": "A tengerparton találod."
+     },
+     {
+      "es": "You can hear music from the ice cream van.",
+      "hu": "A fagyiskocsiból zenét hallasz.",
+      "answer": true,
+      "why_es": "Can you hear the music? The ice cream van is coming!",
+      "why_hu": "Hallod a zenét? Jön a fagyiskocsi!"
+     },
+     {
+      "es": "'Delicious' is a noun.",
+      "hu": "A „delicious” főnév.",
+      "answer": false,
+      "why_es": "It says what something is like (finom). It is not a person, place or thing.",
+      "why_hu": "Azt mondja meg, milyen valami (finom). Nem személy, hely vagy dolog."
+     },
+     {
+      "es": "'Notebook' is a noun.",
+      "hu": "A „notebook” főnév.",
+      "answer": true,
+      "why_es": "A notebook is a thing.",
+      "why_hu": "A füzet egy dolog."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb43_4",
+     "n": "4",
+     "text": "Why are these shops different? Read and match.",
+     "text_hu": "Miért mások ezek a boltok? Olvasd el és párosítsd.",
+     "box": [
+      0.47,
+      0.07,
+      0.82,
+      0.53
+     ],
+     "context": {
+      "es": "Three shop texts (1 Moving Books, 2 Coconut Delight, 3 C+M ice cream) and three photos: a – a stall with coconuts by the sea; b – children at an ice cream van; c – a van with bookshelves in a green field.",
+      "hu": "Három bolt szövege (1 Moving Books, 2 Coconut Delight, 3 C+M ice cream) és három fotó: a – kókuszos stand a tenger mellett; b – gyerekek egy fagyiskocsinál; c – könyvespolcos furgon egy zöld mezőn."
+     },
+     "pic": "🚐🥥🍦",
+     "help": {
+      "es": "Find the key word in each text: books, coconut, ice cream.",
+      "hu": "Keresd meg a kulcsszót: books (könyvek), coconut (kókusz), ice cream (fagyi)."
+     },
+     "items": [
+      {
+       "q": "1 Moving Books",
+       "q_hu": "1 Moving Books (mozgó könyvek)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a – coconuts by the sea",
+         "hu": "a – kókusz a tenger mellett"
+        },
+        {
+         "t": "b – an ice cream van",
+         "hu": "b – fagyiskocsi"
+        },
+        {
+         "t": "c – a van with books in a field",
+         "hu": "c – könyves furgon a mezőn"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "c",
+       "pic": "📚",
+       "id": "pb43_4a"
+      },
+      {
+       "q": "2 Coconut Delight",
+       "q_hu": "2 Coconut Delight (kókuszgyönyör)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a – coconuts by the sea",
+         "hu": "a – kókusz a tenger mellett"
+        },
+        {
+         "t": "b – an ice cream van",
+         "hu": "b – fagyiskocsi"
+        },
+        {
+         "t": "c – a van with books in a field",
+         "hu": "c – könyves furgon a mezőn"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "a",
+       "pic": "🥥",
+       "id": "pb43_4b"
+      },
+      {
+       "q": "3 C+M ice cream",
+       "q_hu": "3 C+M ice cream (fagyi)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a – coconuts by the sea",
+         "hu": "a – kókusz a tenger mellett"
+        },
+        {
+         "t": "b – an ice cream van",
+         "hu": "b – fagyiskocsi"
+        },
+        {
+         "t": "c – a van with books in a field",
+         "hu": "c – könyves furgon a mezőn"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "b",
+       "pic": "🍦",
+       "id": "pb43_4c"
+      },
+      {
+       "q": "Why are these shops different?",
+       "q_hu": "Miért mások ezek a boltok?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "They are not in a shop building – they are vans or a stall.",
+         "hu": "Nem bolti épületben vannak – furgonok vagy stand."
+        },
+        {
+         "t": "They are very big supermarkets.",
+         "hu": "Nagyon nagy szupermarketek."
+        },
+        {
+         "t": "They only open at night.",
+         "hu": "Csak éjjel vannak nyitva."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Nem bolti épületben vannak.",
+       "pic": "🤔",
+       "id": "pb43_4d"
+      },
+      {
+       "q": "Coconut Delight: you can find us by the …",
+       "q_hu": "Coconut Delight: a … mellett találsz minket.",
+       "kind": "type",
+       "answer": "beach",
+       "alts": [
+        "the beach"
+       ],
+       "answer_hu": "tengerpart",
+       "pic": "🏖️",
+       "id": "pb43_4e"
+      }
+     ]
+    },
+    {
+     "id": "pb43_5",
+     "n": "5",
+     "text": "Write the nouns in Activity 4.",
+     "text_hu": "Írd ki a főneveket a 4. feladatból.",
+     "box": [
+      0.47,
+      0.53,
+      0.68,
+      0.69
+     ],
+     "context": {
+      "es": "Learning to write: Nouns. A noun is a word for a person, place or thing.",
+      "hu": "Tanuljunk írni: Főnevek. A főnév egy személy, hely vagy dolog neve."
+     },
+     "pic": "🏷️📝",
+     "help": {
+      "es": "Ask: Is it a person, a place or a thing? Then it's a noun.",
+      "hu": "Kérdezd meg: személy, hely vagy dolog? Akkor főnév."
+     },
+     "items": [
+      {
+       "q": "Which word is a noun?",
+       "q_hu": "Melyik szó főnév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "van",
+         "hu": "furgon"
+        },
+        {
+         "t": "drives",
+         "hu": "vezet"
+        },
+        {
+         "t": "delicious",
+         "hu": "finom"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "van",
+       "pic": "🚐",
+       "id": "pb43_5a"
+      },
+      {
+       "q": "Which word is a noun?",
+       "q_hu": "Melyik szó főnév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "thirsty",
+         "hu": "szomjas"
+        },
+        {
+         "t": "beach",
+         "hu": "tengerpart"
+        },
+        {
+         "t": "come",
+         "hu": "gyere"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "beach",
+       "pic": "🏖️",
+       "id": "pb43_5b"
+      },
+      {
+       "q": "Which word is a noun?",
+       "q_hu": "Melyik szó főnév?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "hear",
+         "hu": "hall"
+        },
+        {
+         "t": "yummy",
+         "hu": "fincsi"
+        },
+        {
+         "t": "music",
+         "hu": "zene"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "music",
+       "pic": "🎵",
+       "id": "pb43_5c"
+      },
+      {
+       "q": "'Field' is a …",
+       "q_hu": "A „field” (mező) egy …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "place",
+         "hu": "hely"
+        },
+        {
+         "t": "person",
+         "hu": "személy"
+        },
+        {
+         "t": "thing",
+         "hu": "dolog"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "hely",
+       "pic": "🌾",
+       "id": "pb43_5d"
+      },
+      {
+       "q": "Write all the nouns in Activity 4.",
+       "q_hu": "Írd ki az összes főnevet a 4. feladatból.",
+       "kind": "open",
+       "answer": "van, books, field, car park, space, storybooks, notebooks, coconut water, beach, music, ice cream van, street, school, ice cream",
+       "answer_hu": "furgon, könyvek, mező, parkoló, űr, mesekönyvek, füzetek, kókuszvíz, tengerpart, zene, fagyiskocsi, utca, iskola, fagyi",
+       "pic": "📝",
+       "id": "pb43_5e"
+      }
+     ]
+    },
+    {
+     "id": "pb43_6",
+     "n": "6",
+     "text": "Imagine you want to open a shop. What do you sell? Think and say.",
+     "text_hu": "Képzeld el, hogy boltot akarsz nyitni. Mit árulsz? Gondold végig és mondd el.",
+     "box": [
+      0.47,
+      0.69,
+      0.655,
+      0.9
+     ],
+     "context": {
+      "es": "You imagine your own shop. Ready to write: go to Activity Book page 42.",
+      "hu": "Kitalálod a saját boltodat. Írásra kész: Munkafüzet 42. oldal."
+     },
+     "pic": "🏪💭",
+     "help": {
+      "es": "Say: My shop sells … You can buy … It's in/by …",
+      "hu": "Mondd: My shop sells … You can buy … It's in/by …"
+     },
+     "items": [
+      {
+       "q": "What do you sell in your shop?",
+       "q_hu": "Mit árulsz a boltodban?",
+       "kind": "open",
+       "answer": "My shop is a van. It sells LEGO and comics. It drives to your school.",
+       "answer_hu": "A boltom egy furgon. LEGO-t és képregényt árul. Elmegy az iskoládhoz.",
+       "pic": "🏪",
+       "id": "pb43_6a"
+      }
+     ]
+    },
+    {
+     "id": "pb43_project",
+     "n": "P",
+     "text": "Project: Role-play a conversation at your shop.",
+     "text_hu": "Projekt: Játssz el egy beszélgetést a boltodban.",
+     "box": [
+      0.66,
+      0.6,
+      0.83,
+      0.88
+     ],
+     "context": {
+      "es": "A photo: a smiling boy and a man in a bakery with bread.",
+      "hu": "Egy fotó: egy mosolygó fiú és egy férfi egy pékségben, kenyérrel."
+     },
+     "pic": "🥖🗣️",
+     "help": {
+      "es": "One person is the shopkeeper, one is the customer.",
+      "hu": "Az egyik az eladó, a másik a vásárló."
+     },
+     "items": [
+      {
+       "q": "Role-play: you are the shopkeeper. What do you say?",
+       "q_hu": "Szerepjáték: te vagy az eladó. Mit mondasz?",
+       "kind": "open",
+       "answer": "Hello! Can I help you? – Yes, I want some bread, please. – Here you are. – Thank you!",
+       "answer_hu": "Szia! Segíthetek? – Igen, kenyeret kérek. – Tessék. – Köszönöm!",
+       "pic": "🥖",
+       "id": "pb43_projecta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb44",
+   "book": "pb",
+   "page": 44,
+   "unit": "u4",
+   "title": "Review Units 3 and 4",
+   "title_hu": "Ismétlés: 3. és 4. fejezet",
+   "summary_hu": "Ismétlő társasjáték a 3. és 4. fejezethez. A pályán mezők vannak: go to the bus station, hospital, library, market, funfair, supermarket, sports centre, cinema – mellettük fotók a helyekről. Ha valaki ilyen mezőre lép, el kell mondania, mit csinál ott (pl. I go to the cinema to see a film).",
+   "img": "en_pb_photo-24",
+   "page_box": [
+    0.02,
+    0.0,
+    0.455,
+    0.97
+   ],
+   "words": [
+    {
+     "w": "Review",
+     "hu": "ismétlés",
+     "pic": "🔁"
+    },
+    {
+     "w": "to play the game",
+     "hu": "játszani a játékot",
+     "pic": "🎲"
+    },
+    {
+     "w": "start",
+     "hu": "rajt",
+     "pic": "🚦"
+    },
+    {
+     "w": "finish",
+     "hu": "cél",
+     "pic": "🏁"
+    },
+    {
+     "w": "go to …",
+     "hu": "menj a …-ba/-be",
+     "pic": "➡️"
+    },
+    {
+     "w": "the funfair",
+     "hu": "a vidámpark",
+     "pic": "🎡"
+    },
+    {
+     "w": "the hospital",
+     "hu": "a kórház",
+     "pic": "🏥"
+    },
+    {
+     "w": "the market",
+     "hu": "a piac",
+     "pic": "🧺"
+    },
+    {
+     "w": "the library",
+     "hu": "a könyvtár",
+     "pic": "📚"
+    },
+    {
+     "w": "the sports centre",
+     "hu": "a sportközpont",
+     "pic": "🏀"
+    },
+    {
+     "w": "the cinema",
+     "hu": "a mozi",
+     "pic": "🎬"
+    },
+    {
+     "w": "the bus station",
+     "hu": "a buszpályaudvar",
+     "pic": "🚌"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's play a game and review Units 3 and 4!",
+     "hu": "Játsszunk, és ismételjük át a 3. és 4. fejezetet!"
+    },
+    "sentences": [
+     {
+      "es": "This is a board game. You start at START and go to FINISH.",
+      "hu": "Ez egy társasjáték. A START-tól indulsz, és a FINISH (cél) felé mész.",
+      "pic": "🎲"
+     },
+     {
+      "es": "Some squares say 'go to' a place.",
+      "hu": "Néhány mezőn az áll: „menj” valahová.",
+      "pic": "➡️"
+     },
+     {
+      "es": "The places are: the bus station, the hospital and the library.",
+      "hu": "A helyek: a buszpályaudvar, a kórház és a könyvtár.",
+      "pic": "🚌"
+     },
+     {
+      "es": "There are also the market, the funfair and the supermarket.",
+      "hu": "Van még piac, vidámpark és szupermarket.",
+      "pic": "🎡"
+     },
+     {
+      "es": "And at the end: the sports centre and the cinema.",
+      "hu": "A végén pedig: a sportközpont és a mozi.",
+      "pic": "🎬"
+     },
+     {
+      "es": "Next to the board there are photos of the places.",
+      "hu": "A tábla mellett fotók vannak a helyekről.",
+      "pic": "📷"
+     },
+     {
+      "es": "When you land on a place, say why you go there.",
+      "hu": "Ha egy helyre lépsz, mondd el, miért mész oda.",
+      "pic": "💬"
+     },
+     {
+      "es": "For example: I go to the library to read books.",
+      "hu": "Például: A könyvtárba megyek könyvet olvasni.",
+      "pic": "📚"
+     }
+    ],
+    "remember": [
+     {
+      "es": "I go to the … to … : I go to the cinema to see a film.",
+      "hu": "Elmegyek a …-ba, hogy …: Moziba megyek filmet nézni."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, you are on 'go to the funfair'!",
+      "hu": "Martin, a „go to the funfair” mezőn állsz!"
+     },
+     {
+      "who": "Martin",
+      "es": "I go to the funfair to read books!",
+      "hu": "A vidámparkba megyek könyvet olvasni!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! You read books in the library.",
+      "hu": "Miau, nem! Könyvet a könyvtárban olvasunk."
+     },
+     {
+      "who": "Martin",
+      "es": "I go to the funfair to ride on the big wheel!",
+      "hu": "A vidámparkba megyek óriáskerekezni!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Great! Now it's my turn.",
+      "hu": "Szuper! Most én jövök."
+     }
+    ],
+    "tf": [
+     {
+      "es": "The game has a START and a FINISH.",
+      "hu": "A játéknak van rajtja és célja.",
+      "answer": true,
+      "why_es": "You start at START and finish at FINISH.",
+      "why_hu": "A START-tól a FINISH-ig mész."
+     },
+     {
+      "es": "You go to the hospital to see a film.",
+      "hu": "Filmet nézni kórházba mész.",
+      "answer": false,
+      "why_es": "You see a film at the cinema.",
+      "why_hu": "Filmet moziban nézünk."
+     },
+     {
+      "es": "A funfair has got a big wheel.",
+      "hu": "A vidámparkban van óriáskerék.",
+      "answer": true,
+      "why_es": "The photo shows a big wheel.",
+      "why_hu": "A fotón egy óriáskerék látszik."
+     },
+     {
+      "es": "You play basketball at the sports centre.",
+      "hu": "A sportközpontban kosárlabdázol.",
+      "answer": true,
+      "why_es": "The photo shows a basketball court.",
+      "why_hu": "A fotón egy kosárlabdapálya látszik."
+     },
+     {
+      "es": "You catch a bus at the library.",
+      "hu": "A könyvtárban szállsz buszra.",
+      "answer": false,
+      "why_es": "You catch a bus at the bus station.",
+      "why_hu": "Buszra a buszpályaudvaron szállunk."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb44_1",
+     "n": "1",
+     "text": "Play the game.",
+     "text_hu": "Játszd a játékot.",
+     "box": [
+      0.05,
+      0.05,
+      0.455,
+      0.9
+     ],
+     "context": {
+      "es": "A board game from START to FINISH. Some squares say: go to the bus station, go to the hospital, go to the library, go to the market, go to the funfair, go to the supermarket, go to the sports centre, go to the cinema. Photos of these places are around the board.",
+      "hu": "Társasjáték a START-tól a FINISH-ig. Néhány mező: menj a buszpályaudvarra, kórházba, könyvtárba, piacra, vidámparkba, szupermarketbe, sportközpontba, moziba. A tábla körül fotók vannak ezekről a helyekről."
+     },
+     "pic": "🎲🏁",
+     "help": {
+      "es": "For each place think: what do you do there?",
+      "hu": "Minden helynél gondold végig: mit csinálsz ott?"
+     },
+     "items": [
+      {
+       "q": "Where do you go to catch a bus?",
+       "q_hu": "Hova mész, hogy elérj egy buszt?",
+       "kind": "type",
+       "answer": "the bus station",
+       "alts": [
+        "bus station",
+        "to the bus station"
+       ],
+       "answer_hu": "a buszpályaudvarra",
+       "pic": "🚌",
+       "id": "pb44_1a"
+      },
+      {
+       "q": "Where do you go when you are ill?",
+       "q_hu": "Hova mész, ha beteg vagy?",
+       "kind": "type",
+       "answer": "the hospital",
+       "alts": [
+        "hospital",
+        "to the hospital"
+       ],
+       "answer_hu": "a kórházba",
+       "pic": "🏥",
+       "id": "pb44_1b"
+      },
+      {
+       "q": "Where do you go to read books?",
+       "q_hu": "Hova mész könyveket olvasni?",
+       "kind": "type",
+       "answer": "the library",
+       "alts": [
+        "library",
+        "to the library"
+       ],
+       "answer_hu": "a könyvtárba",
+       "pic": "📚",
+       "id": "pb44_1c"
+      },
+      {
+       "q": "Where do you go to buy fruit at stalls outside?",
+       "q_hu": "Hova mész gyümölcsöt venni a szabadtéri standokon?",
+       "kind": "type",
+       "answer": "the market",
+       "alts": [
+        "market",
+        "to the market"
+       ],
+       "answer_hu": "a piacra",
+       "pic": "🧺",
+       "id": "pb44_1d"
+      },
+      {
+       "q": "Where do you go to ride on the big wheel?",
+       "q_hu": "Hova mész az óriáskerékre ülni?",
+       "kind": "type",
+       "answer": "the funfair",
+       "alts": [
+        "funfair",
+        "to the funfair"
+       ],
+       "answer_hu": "a vidámparkba",
+       "pic": "🎡",
+       "id": "pb44_1e"
+      },
+      {
+       "q": "Where do you go to buy food with a trolley?",
+       "q_hu": "Hova mész bevásárlókocsival ételt venni?",
+       "kind": "type",
+       "answer": "the supermarket",
+       "alts": [
+        "supermarket",
+        "to the supermarket"
+       ],
+       "answer_hu": "a szupermarketbe",
+       "pic": "🛒",
+       "id": "pb44_1f"
+      },
+      {
+       "q": "Where do you go to play basketball?",
+       "q_hu": "Hova mész kosarazni?",
+       "kind": "type",
+       "answer": "the sports centre",
+       "alts": [
+        "sports centre",
+        "to the sports centre"
+       ],
+       "answer_hu": "a sportközpontba",
+       "pic": "🏀",
+       "id": "pb44_1g"
+      },
+      {
+       "q": "Where do you go to see a film?",
+       "q_hu": "Hova mész filmet nézni?",
+       "kind": "type",
+       "answer": "the cinema",
+       "alts": [
+        "cinema",
+        "to the cinema"
+       ],
+       "answer_hu": "a moziba",
+       "pic": "🎬",
+       "id": "pb44_1h"
+      },
+      {
+       "q": "You are on a 'go to' square. Say a sentence.",
+       "q_hu": "Egy „go to” mezőn állsz. Mondj egy mondatot.",
+       "kind": "open",
+       "answer": "I go to the market to buy fruit.",
+       "answer_hu": "A piacra megyek gyümölcsöt venni.",
+       "pic": "💬",
+       "id": "pb44_1i"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pb45",
+   "book": "pb",
+   "page": 45,
+   "unit": "u4",
+   "title": "Review: Listen and Quiz",
+   "title_hu": "Ismétlés: hallás utáni feladat és kvíz",
+   "summary_hu": "Ismétlő oldal: 5 kérdés, mindegyikhez 3 kép (a, b, c) – a hangfelvétel alapján kell a jót kiválasztani. Mellette egy kvíz 8 kérdéssel a 3. és 4. fejezet oldalairól (Stella busza, James Flunk, Lock és Key, Sally az űrhajós, Meera térképe, a mozi, a lila hajú medve, Mrs Potts).",
+   "img": "en_pb_photo-24",
+   "page_box": [
+    0.45,
+    0.02,
+    0.85,
+    0.93
+   ],
+   "words": [
+    {
+     "w": "to choose",
+     "hu": "kiválasztani",
+     "pic": "☑️"
+    },
+    {
+     "w": "the correct picture",
+     "hu": "a helyes kép",
+     "pic": "🖼️"
+    },
+    {
+     "w": "on Saturday afternoons",
+     "hu": "szombat délutánonként",
+     "pic": "📅"
+    },
+    {
+     "w": "to come home",
+     "hu": "hazajönni",
+     "pic": "🏠"
+    },
+    {
+     "w": "after dinner",
+     "hu": "vacsora után",
+     "pic": "🍽️"
+    },
+    {
+     "w": "to catch the bus",
+     "hu": "elérni a buszt",
+     "pic": "🚌"
+    },
+    {
+     "w": "Where's John going?",
+     "hu": "Hova megy John?",
+     "pic": "❓"
+    },
+    {
+     "w": "the quiz",
+     "hu": "a kvíz",
+     "pic": "❓"
+    },
+    {
+     "w": "the astronaut",
+     "hu": "az űrhajós",
+     "pic": "👩‍🚀"
+    },
+    {
+     "w": "the Space Station",
+     "hu": "az űrállomás",
+     "pic": "🛰️"
+    },
+    {
+     "w": "before ten o'clock",
+     "hu": "tíz óra előtt",
+     "pic": "🕙"
+    },
+    {
+     "w": "the swimming lesson",
+     "hu": "az úszóóra",
+     "pic": "🏊"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Quiz time! What do you remember from Units 3 and 4?",
+     "hu": "Kvízidő! Mire emlékszel a 3. és 4. fejezetből?"
+    },
+    "sentences": [
+     {
+      "es": "In Activity 2 you listen and choose the correct picture: a, b or c.",
+      "hu": "A 2. feladatban meghallgatod a felvételt, és kiválasztod a jó képet: a, b vagy c.",
+      "pic": "🎧"
+     },
+     {
+      "es": "Jack goes to the cinema on Saturday afternoons.",
+      "hu": "Jack szombat délutánonként moziba megy.",
+      "pic": "🎬"
+     },
+     {
+      "es": "The clocks show three o'clock, five o'clock and six o'clock.",
+      "hu": "Az órák hármat, ötöt és hatot mutatnak.",
+      "pic": "🕒"
+     },
+     {
+      "es": "After dinner a boy can watch TV, do homework or have a shower.",
+      "hu": "Vacsora után egy fiú tévézhet, házit írhat vagy zuhanyozhat.",
+      "pic": "📺"
+     },
+     {
+      "es": "You can catch the bus at a bus stop or at the bus station.",
+      "hu": "Buszra szállhatsz a megállóban vagy a buszpályaudvaron.",
+      "pic": "🚏"
+     },
+     {
+      "es": "The quiz asks questions about pages 28 to 41.",
+      "hu": "A kvíz a 28–41. oldalakról kérdez.",
+      "pic": "❓"
+     },
+     {
+      "es": "Stella catches the bus to school at eight o'clock.",
+      "hu": "Stella nyolckor éri el az iskolabuszt.",
+      "pic": "🚌"
+     },
+     {
+      "es": "Every Saturday morning James Flunk takes his son for his swimming lesson.",
+      "hu": "James Flunk minden szombat reggel elviszi a fiát úszóórára.",
+      "pic": "🏊"
+     },
+     {
+      "es": "Lock and Key never get up before ten o'clock.",
+      "hu": "Lock és Key soha nem kel fel tíz óra előtt.",
+      "pic": "😴"
+     },
+     {
+      "es": "Sally is an astronaut. She works on the Space Station.",
+      "hu": "Sally űrhajós. Az űrállomáson dolgozik.",
+      "pic": "🛰️"
+     },
+     {
+      "es": "Mrs Potts must go to the bank because she needs some money.",
+      "hu": "Mrs Pottsnak a bankba kell mennie, mert pénzre van szüksége.",
+      "pic": "💰"
+     }
+    ],
+    "remember": [
+     {
+      "es": "What time …? – At eight o'clock.",
+      "hu": "Hánykor …? – Nyolckor."
+     },
+     {
+      "es": "Where …? – On the Space Station. / In the bank.",
+      "hu": "Hol …? – Az űrállomáson. / A bankban."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Quiz time, Martin! Where does Sally work?",
+      "hu": "Kvízidő, Martin! Hol dolgozik Sally?"
+     },
+     {
+      "who": "Martin",
+      "es": "In the bank!",
+      "hu": "A bankban!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! Sally is an astronaut.",
+      "hu": "Miau, nem! Sally űrhajós."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh yes! She works on the Space Station.",
+      "hu": "Ja, persze! Az űrállomáson dolgozik."
+     },
+     {
+      "who": "Kitty",
+      "es": "Do Lock and Key get up before ten o'clock?",
+      "hu": "Lock és Key felkel tíz óra előtt?"
+     },
+     {
+      "who": "Martin",
+      "es": "No, they never get up before ten!",
+      "hu": "Nem, ők soha nem kelnek tíz előtt!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Stella catches the bus at eight o'clock.",
+      "hu": "Stella nyolckor éri el a buszt.",
+      "answer": true,
+      "why_es": "Page 28: At eight o'clock she catches the bus.",
+      "why_hu": "28. oldal: Nyolckor éri el a buszt."
+     },
+     {
+      "es": "Lock and Key always get up at six o'clock.",
+      "hu": "Lock és Key mindig hatkor kel.",
+      "answer": false,
+      "why_es": "They never get up before ten o'clock.",
+      "why_hu": "Soha nem kelnek tíz előtt."
+     },
+     {
+      "es": "Sally works on the Space Station.",
+      "hu": "Sally az űrállomáson dolgozik.",
+      "answer": true,
+      "why_es": "Page 34: Sally works on the Space Station.",
+      "why_hu": "34. oldal: Sally az űrállomáson dolgozik."
+     },
+     {
+      "es": "The bear with purple hair is in the bank.",
+      "hu": "A lila hajú medve a bankban van.",
+      "answer": false,
+      "why_es": "He's over there, on the chair (in the library).",
+      "why_hu": "Ott van, a széken (a könyvtárban)."
+     },
+     {
+      "es": "You go to the cinema to see a film.",
+      "hu": "Moziba filmet nézni mész.",
+      "answer": true,
+      "why_es": "I go to the cinema to see a film.",
+      "why_hu": "Moziba megyek filmet nézni."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "id": "pb45_2",
+     "n": "2",
+     "text": "Listen and choose the correct picture.",
+     "text_hu": "Hallgasd meg és válaszd ki a helyes képet.",
+     "box": [
+      0.46,
+      0.05,
+      0.68,
+      0.86
+     ],
+     "context": {
+      "es": "Five questions, each with three pictures (a, b, c). 1 Jack: a swimming, b cinema, c walking the dog. 2 Daisy: clocks a 03:00, b five o'clock, c six o'clock. 3 Paul: a watches TV, b does homework, c has a shower. 4 Vicky: a bus stop near a house, b the bus station, c bus stop near a supermarket. 5 John: a library, b hospital, c bookshop. Example: 1 – b.",
+      "hu": "Öt kérdés, mindegyikhez három kép (a, b, c). 1 Jack: a úszás, b mozi, c kutyasétáltatás. 2 Daisy: órák – a 3:00, b 5 óra, c 6 óra. 3 Paul: a tévézik, b házit ír, c zuhanyozik. 4 Vicky: a buszmegálló egy háznál, b buszpályaudvar, c buszmegálló egy szupermarketnél. 5 John: a könyvtár, b kórház, c könyvesbolt. Minta: 1 – b."
+     },
+     "pic": "🎧🖼️",
+     "help": {
+      "es": "First say what is in each picture in English. Then listen.",
+      "hu": "Először mondd el angolul, mi van az egyes képeken. Aztán hallgasd meg."
+     },
+     "items": [
+      {
+       "q": "1 What does Jack do on Saturday afternoons?",
+       "q_hu": "1 Mit csinál Jack szombat délutánonként?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "a – he goes swimming",
+         "hu": "a – úszni megy"
+        },
+        {
+         "t": "b – he goes to the cinema",
+         "hu": "b – moziba megy"
+        },
+        {
+         "t": "c – he walks the dog",
+         "hu": "c – kutyát sétáltat"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "b – moziba megy (ez a minta)",
+       "pic": "🎬",
+       "id": "pb45_2a"
+      },
+      {
+       "q": "2 Clock b shows …",
+       "q_hu": "2 A b óra ezt mutatja: …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "three o'clock",
+         "hu": "három óra"
+        },
+        {
+         "t": "five o'clock",
+         "hu": "öt óra"
+        },
+        {
+         "t": "six o'clock",
+         "hu": "hat óra"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "five o'clock (öt óra)",
+       "pic": "🕔",
+       "id": "pb45_2b"
+      },
+      {
+       "q": "3 In picture c the boy …",
+       "q_hu": "3 A c képen a fiú …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "watches TV",
+         "hu": "tévézik"
+        },
+        {
+         "t": "does his homework",
+         "hu": "házit ír"
+        },
+        {
+         "t": "has a shower",
+         "hu": "zuhanyozik"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "has a shower (zuhanyozik)",
+       "pic": "🚿",
+       "id": "pb45_2c"
+      },
+      {
+       "q": "4 Picture b shows …",
+       "q_hu": "4 A b kép ezt mutatja: …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "the bus station",
+         "hu": "a buszpályaudvar"
+        },
+        {
+         "t": "the hospital",
+         "hu": "a kórház"
+        },
+        {
+         "t": "the library",
+         "hu": "a könyvtár"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "the bus station",
+       "pic": "🚌",
+       "id": "pb45_2d"
+      },
+      {
+       "q": "5 Picture c has a sign 'Books'. It's a …",
+       "q_hu": "5 A c képen „Books” felirat van. Ez egy …",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "bookshop",
+         "hu": "könyvesbolt"
+        },
+        {
+         "t": "hospital",
+         "hu": "kórház"
+        },
+        {
+         "t": "cinema",
+         "hu": "mozi"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "bookshop (könyvesbolt)",
+       "pic": "📚",
+       "id": "pb45_2e"
+      },
+      {
+       "q": "Listen to the recording and choose a, b or c for questions 2–5.",
+       "q_hu": "Hallgasd meg a felvételt, és válassz a, b vagy c képet a 2–5. kérdésnél.",
+       "kind": "open",
+       "answer": "Answers depend on the recording (2 Daisy's time, 3 Paul after dinner, 4 Vicky's bus, 5 John's place).",
+       "answer_hu": "A válasz a hangfelvételtől függ – a szülő a felvétel alapján ellenőrizze.",
+       "pic": "🎧",
+       "id": "pb45_2f"
+      }
+     ]
+    },
+    {
+     "id": "pb45_quiz",
+     "n": "Quiz",
+     "text": "Quiz",
+     "text_hu": "Kvíz",
+     "box": [
+      0.665,
+      0.06,
+      0.82,
+      0.86
+     ],
+     "context": {
+      "es": "A signpost with 8 quiz questions. The page number in brackets tells you where to look.",
+      "hu": "Egy útjelző tábla 8 kvízkérdéssel. A zárójeles oldalszám megmondja, hol keresd a választ."
+     },
+     "pic": "❓🪧",
+     "help": {
+      "es": "Go back to the page in brackets if you don't remember.",
+      "hu": "Ha nem emlékszel, lapozz vissza a zárójeles oldalra."
+     },
+     "items": [
+      {
+       "q": "1 What time does Stella catch the bus to school? (p28)",
+       "q_hu": "1 Hánykor éri el Stella az iskolabuszt? (28. o.)",
+       "kind": "type",
+       "answer": "at eight o'clock",
+       "alts": [
+        "eight o'clock",
+        "at 8 o'clock",
+        "8 o'clock",
+        "at eight",
+        "She catches the bus at eight o'clock"
+       ],
+       "answer_hu": "nyolckor",
+       "pic": "🚌",
+       "id": "pb45_quiza"
+      },
+      {
+       "q": "2 What does James Flunk do every Saturday morning? (p31)",
+       "q_hu": "2 Mit csinál James Flunk minden szombat reggel? (31. o.)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "He takes his son for his swimming lesson.",
+         "hu": "Elviszi a fiát úszóórára."
+        },
+        {
+         "t": "He plays tennis.",
+         "hu": "Teniszezik."
+        },
+        {
+         "t": "He sings songs in the car.",
+         "hu": "Énekel az autóban."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Elviszi a fiát úszóórára.",
+       "pic": "🏊",
+       "id": "pb45_quizb"
+      },
+      {
+       "q": "3 Do Lock and Key get up before ten o'clock? (p33)",
+       "q_hu": "3 Lock és Key felkel tíz óra előtt? (33. o.)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes, they do.",
+         "hu": "Igen."
+        },
+        {
+         "t": "No, they don't.",
+         "hu": "Nem."
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem – soha nem kelnek tíz előtt.",
+       "pic": "😴",
+       "id": "pb45_quizc"
+      },
+      {
+       "q": "4 Where does Sally work? (p34)",
+       "q_hu": "4 Hol dolgozik Sally? (34. o.)",
+       "kind": "type",
+       "answer": "on the Space Station",
+       "alts": [
+        "the Space Station",
+        "Space Station",
+        "She works on the Space Station",
+        "in space"
+       ],
+       "answer_hu": "az űrállomáson",
+       "pic": "🛰️",
+       "id": "pb45_quizd"
+      },
+      {
+       "q": "5 On Meera's map, what's opposite the market? (p36)",
+       "q_hu": "5 Meera térképén mi van a piaccal szemben? (36. o.)",
+       "kind": "type",
+       "answer": "the sports centre",
+       "alts": [
+        "sports centre",
+        "The sports centre."
+       ],
+       "answer_hu": "a sportközpont",
+       "pic": "🏸",
+       "id": "pb45_quize"
+      },
+      {
+       "q": "6 Where do you go to see a film? (p37)",
+       "q_hu": "6 Hova mész filmet nézni? (37. o.)",
+       "kind": "type",
+       "answer": "the cinema",
+       "alts": [
+        "cinema",
+        "to the cinema",
+        "I go to the cinema",
+        "I go to the cinema to see a film"
+       ],
+       "answer_hu": "a moziba",
+       "pic": "🎬",
+       "id": "pb45_quizf"
+      },
+      {
+       "q": "7 Where's the bear with purple hair? (p40)",
+       "q_hu": "7 Hol van a lila hajú medve? (40. o.)",
+       "kind": "type",
+       "answer": "on the chair",
+       "alts": [
+        "over there, on the chair",
+        "He's over there, on the chair",
+        "on a chair",
+        "chair",
+        "in the library"
+       ],
+       "answer_hu": "ott, a széken",
+       "pic": "🐻",
+       "id": "pb45_quizg"
+      },
+      {
+       "q": "8 Why must Mrs Potts and her friend go to the bank? (p41)",
+       "q_hu": "8 Miért kell Mrs Pottsnak és a barátnőjének a bankba menni? (41. o.)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Mrs Potts needs some money.",
+         "hu": "Mrs Pottsnak pénz kell."
+        },
+        {
+         "t": "They want to stop a robber.",
+         "hu": "Meg akarnak állítani egy rablót."
+        },
+        {
+         "t": "They want to see a film.",
+         "hu": "Filmet akarnak nézni."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Mrs Pottsnak pénz kell.",
+       "pic": "💰",
+       "id": "pb45_quizh"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

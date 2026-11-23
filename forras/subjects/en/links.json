@@ -307,6 +307,28 @@
    "units": [
     "u4"
    ]
+  },
+  {
+   "id": "ctl2_pdf",
+   "kind": "pdf",
+   "title": "Prep guide: Control 2 Units 3–4 (PDF)",
+   "title_hu": "Felkészítő: 2. dolgozat, 3–4. fejezet (PDF)",
+   "drive": "1BVxR6KBsMRGppGipktpKYOy5KIQPYOBR",
+   "units": [
+    "u3",
+    "u4"
+   ]
+  },
+  {
+   "id": "ctl2_video",
+   "kind": "video",
+   "title": "Prep video: Control 2 Units 3–4",
+   "title_hu": "Felkészítő videó: 2. dolgozat, 3–4. fejezet",
+   "drive": "1RilYuM4zGBL5Cj7M9tt0PTz1Uyctqr8I",
+   "units": [
+    "u3",
+    "u4"
+   ]
   }
  ]
 }

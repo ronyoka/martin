@@ -1,0 +1,4063 @@
+{
+ "pages": [
+  {
+   "id": "ab28",
+   "book": "ab",
+   "page": 28,
+   "unit": "u3",
+   "title": "A day in the life",
+   "title_hu": "Egy nap az életből",
+   "img": "en_ab_photo-17",
+   "page_box": [
+    0.02,
+    0.0,
+    0.483,
+    1.0
+   ],
+   "summary_hu": "Alisha elmeséli a napját: mikor ébred, mikor reggelizik, mikor megy iskolába és mikor fekszik le. A mondatokat időrendbe kell számozni, aztán egy képről kell mondatokat kiegészíteni (felkel, zuhanyozik, öltözik).",
+   "words": [
+    {
+     "w": "wake up",
+     "hu": "felébred",
+     "pic": "⏰"
+    },
+    {
+     "w": "get up",
+     "hu": "felkel",
+     "pic": "🛏️"
+    },
+    {
+     "w": "have a shower",
+     "hu": "zuhanyozik",
+     "pic": "🚿"
+    },
+    {
+     "w": "get dressed",
+     "hu": "felöltözik",
+     "pic": "👕"
+    },
+    {
+     "w": "have breakfast",
+     "hu": "reggelizik",
+     "pic": "🥣"
+    },
+    {
+     "w": "go to school",
+     "hu": "iskolába megy",
+     "pic": "🏫"
+    },
+    {
+     "w": "have lunch",
+     "hu": "ebédel",
+     "pic": "🥪"
+    },
+    {
+     "w": "have dinner",
+     "hu": "vacsorázik",
+     "pic": "🍝"
+    },
+    {
+     "w": "do homework",
+     "hu": "házi feladatot ír",
+     "pic": "📝"
+    },
+    {
+     "w": "watch TV",
+     "hu": "tévét néz",
+     "pic": "📺"
+    },
+    {
+     "w": "go to bed",
+     "hu": "lefekszik aludni",
+     "pic": "😴"
+    },
+    {
+     "w": "downstairs",
+     "hu": "lent, a földszintre",
+     "pic": "🪜"
+    },
+    {
+     "w": "the beard",
+     "hu": "a szakáll",
+     "pic": "🧔"
+    },
+    {
+     "w": "the moustache",
+     "hu": "a bajusz",
+     "pic": "👨"
+    },
+    {
+     "w": "curly hair",
+     "hu": "göndör haj",
+     "pic": "🌀"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Today we learn the words for our daily routine!",
+     "hu": "Ma a napi teendőink szavait tanuljuk meg!",
+     "pic": "🌞"
+    },
+    "sentences": [
+     {
+      "es": "A routine is the things we do every day.",
+      "hu": "A napirend (routine) azok a dolgok, amiket minden nap csinálunk.",
+      "pic": "📅"
+     },
+     {
+      "es": "Alisha wakes up early at seven o'clock.",
+      "hu": "Alisha korán, hét órakor ébred.",
+      "pic": "⏰"
+     },
+     {
+      "es": "Then she gets up and has a shower.",
+      "hu": "Aztán felkel és lezuhanyozik.",
+      "pic": "🚿"
+     },
+     {
+      "es": "After that she gets dressed.",
+      "hu": "Utána felöltözik.",
+      "pic": "👕"
+     },
+     {
+      "es": "She goes downstairs and has breakfast. She loves breakfast!",
+      "hu": "Lemegy a földszintre és megreggelizik. Imádja a reggelit!",
+      "pic": "🥣"
+     },
+     {
+      "es": "After breakfast she goes to school.",
+      "hu": "Reggeli után iskolába megy.",
+      "pic": "🏫"
+     },
+     {
+      "es": "School starts at nine o'clock.",
+      "hu": "Az iskola kilenckor kezdődik.",
+      "pic": "🕘"
+     },
+     {
+      "es": "She has lunch at school with her friends.",
+      "hu": "Az iskolában ebédel a barátaival.",
+      "pic": "🥪"
+     },
+     {
+      "es": "School finishes at three o'clock and she goes home.",
+      "hu": "Az iskola háromkor ér véget, és hazamegy.",
+      "pic": "🏠"
+     },
+     {
+      "es": "She has dinner, does homework and watches TV.",
+      "hu": "Vacsorázik, megírja a házit és tévét néz.",
+      "pic": "📺"
+     },
+     {
+      "es": "She goes to bed at nine o'clock.",
+      "hu": "Kilenckor lefekszik aludni.",
+      "pic": "😴"
+     },
+     {
+      "es": "In the picture a boy is waking up. The clock says seven o'clock.",
+      "hu": "A képen egy fiú ébredezik. Az óra hetet mutat.",
+      "pic": "🕖"
+     },
+     {
+      "es": "A man with a moustache is having a shower.",
+      "hu": "Egy bajuszos férfi zuhanyozik.",
+      "pic": "🚿"
+     },
+     {
+      "es": "A man with a beard is getting dressed.",
+      "hu": "Egy szakállas férfi öltözik.",
+      "pic": "🧥"
+     },
+     {
+      "es": "A woman with curly hair is getting up.",
+      "hu": "Egy göndör hajú nő felkel.",
+      "pic": "🛏️"
+     },
+     {
+      "es": "We say: I wake up, I get up, I go to bed.",
+      "hu": "Így mondjuk: I wake up (felébredek), I get up (felkelek), I go to bed (lefekszem).",
+      "pic": "🗣️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "wake up = felébred, get up = felkel (az ágyból)",
+      "hu": "Először felébredsz (wake up), aztán felkelsz (get up)."
+     },
+     {
+      "es": "He is getting dressed. = Éppen öltözik.",
+      "hu": "Az -ing alak azt mutatja, mit csinál valaki ÉPPEN most."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, what do you do first in the morning?",
+      "hu": "Martin, mit csinálsz reggel legelőször?"
+     },
+     {
+      "who": "Martin",
+      "es": "I have breakfast!",
+      "hu": "Reggelizem!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! Before breakfast you wake up!",
+      "hu": "Miau! Reggeli előtt felébredsz!"
+     },
+     {
+      "who": "Martin",
+      "es": "Oh yes! I wake up, I get up, then I have breakfast.",
+      "hu": "Ja, igen! Felébredek, felkelek, aztán reggelizem."
+     },
+     {
+      "who": "Kitty",
+      "es": "And when does Alisha go to bed?",
+      "hu": "És Alisha mikor fekszik le?"
+     },
+     {
+      "who": "Martin",
+      "es": "She goes to bed at nine o'clock.",
+      "hu": "Kilenckor fekszik le."
+     }
+    ],
+    "tf": [
+     {
+      "es": "Alisha wakes up at seven o'clock.",
+      "hu": "Alisha hétkor ébred.",
+      "answer": true,
+      "why_es": "The text says: I wake up early at seven o'clock.",
+      "why_hu": "A szöveg szerint hétkor ébred."
+     },
+     {
+      "es": "Alisha has lunch at home.",
+      "hu": "Alisha otthon ebédel.",
+      "answer": false,
+      "why_es": "She has lunch at school with her friends.",
+      "why_hu": "Az iskolában ebédel a barátaival."
+     },
+     {
+      "es": "School finishes at three o'clock.",
+      "hu": "Az iskola háromkor ér véget.",
+      "answer": true,
+      "why_es": "School finishes at three o'clock.",
+      "why_hu": "Igen, háromkor."
+     },
+     {
+      "es": "Alisha gets dressed before she has a shower.",
+      "hu": "Alisha előbb felöltözik, aztán zuhanyozik.",
+      "answer": false,
+      "why_es": "She has a shower first, then she gets dressed.",
+      "why_hu": "Előbb zuhanyozik, aztán öltözik."
+     },
+     {
+      "es": "The man with the moustache is having a shower.",
+      "hu": "A bajuszos férfi zuhanyozik.",
+      "answer": true,
+      "why_es": "He is under the shower.",
+      "why_hu": "A zuhany alatt áll."
+     },
+     {
+      "es": "Alisha goes to bed at ten o'clock.",
+      "hu": "Alisha tízkor fekszik le.",
+      "answer": false,
+      "why_es": "She goes to bed at nine o'clock.",
+      "why_hu": "Kilenckor fekszik le."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Read and number the sentences.",
+     "text_hu": "Olvasd el, és számozd meg a mondatokat (milyen sorrendben történnek).",
+     "box": [
+      0.07,
+      0.07,
+      0.483,
+      0.47
+     ],
+     "context": {
+      "es": "Alisha writes about her day. Next to it there are nine sentences (a–i). 'I wake up' is number 1. Put the others in order.",
+      "hu": "Alisha leírja a napját. Mellette kilenc mondat van (a–i). Az „I wake up” (felébredek) az 1-es. A többit kell sorba tenni."
+     },
+     "pic": "📖⏰🔢",
+     "help": {
+      "es": "Read Alisha's text again and find each sentence in it. What comes first?",
+      "hu": "Olvasd el újra Alisha szövegét, és keresd meg benne a mondatokat. Mi történik előbb?"
+     },
+     "items": [
+      {
+       "q": "a) \"I have a shower.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "a) „I have a shower.” (Lezuhanyozom.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "3",
+       "pic": "🚿",
+       "id": "ab28_1a"
+      },
+      {
+       "q": "b) \"I get up.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "b) „I get up.” (Felkelek (az ágyból).) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "2",
+       "pic": "🛏️",
+       "id": "ab28_1b"
+      },
+      {
+       "q": "c) \"I go to bed.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "c) „I go to bed.” (Lefekszem aludni.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "9",
+       "pic": "😴",
+       "id": "ab28_1c"
+      },
+      {
+       "q": "d) \"I have dinner.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "d) „I have dinner.” (Vacsorázom.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "8",
+       "pic": "🍝",
+       "id": "ab28_1d"
+      },
+      {
+       "q": "e) \"I have lunch.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "e) „I have lunch.” (Ebédelek.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "7",
+       "pic": "🥪",
+       "id": "ab28_1e"
+      },
+      {
+       "q": "f) \"I wake up.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "f) „I wake up.” (Felébredek.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "1",
+       "pic": "⏰",
+       "id": "ab28_1f"
+      },
+      {
+       "q": "g) \"I have breakfast.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "g) „I have breakfast.” (Reggelizem.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "5",
+       "pic": "🥣",
+       "id": "ab28_1g"
+      },
+      {
+       "q": "h) \"I go to school.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "h) „I go to school.” (Iskolába megyek.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "6",
+       "pic": "🏫",
+       "id": "ab28_1h"
+      },
+      {
+       "q": "i) \"I get dressed.\" – which number is it in Alisha's day? (1 = first)",
+       "q_hu": "i) „I get dressed.” (Felöltözöm.) – hányadik ez Alisha napjában? (1 = legelső)",
+       "kind": "num",
+       "answer": "4",
+       "pic": "👕",
+       "id": "ab28_1i"
+      }
+     ],
+     "id": "ab28_1"
+    },
+    {
+     "n": "2",
+     "text": "Look and read and write.",
+     "text_hu": "Nézd meg a képet, olvasd el és írd be.",
+     "box": [
+      0.07,
+      0.47,
+      0.483,
+      0.95
+     ],
+     "context": {
+      "es": "The picture shows a morning: a boy with a clock is waking up, a man with a moustache is having a shower, a man with a beard is putting on his jacket, and a woman with curly hair is getting up. The door is open.",
+      "hu": "A képen egy reggel látható: egy fiú ébredezik egy órával mellette, egy bajuszos férfi zuhanyozik, egy szakállas férfi a kabátját veszi fel, egy göndör hajú nő pedig felkel. Az ajtó nyitva van."
+     },
+     "pic": "🛏️🚿🧥",
+     "help": {
+      "es": "Look at each person: what are they doing? Use the words from Activity 1.",
+      "hu": "Nézd meg mindegyik embert: mit csinál? Használd az 1. feladat szavait."
+     },
+     "items": [
+      {
+       "q": "1 The man with the beard is getting ___ . (He is putting on his jacket.)",
+       "q_hu": "1 A szakállas férfi éppen ___ . (A kabátját veszi fel.) – Írd be angolul!",
+       "kind": "type",
+       "answer": "dressed",
+       "alts": [],
+       "answer_hu": "felöltözik (getting dressed)",
+       "pic": "🧔",
+       "id": "ab28_2a"
+      },
+      {
+       "q": "2 The ___ with curly hair is getting up. (Who is it?)",
+       "q_hu": "2 A göndör hajú ___ éppen felkel. (Ki ő?) – Írd be angolul!",
+       "kind": "type",
+       "answer": "woman",
+       "alts": [
+        "lady",
+        "mum",
+        "mother"
+       ],
+       "answer_hu": "nő (woman)",
+       "pic": "👩",
+       "id": "ab28_2b"
+      },
+      {
+       "q": "3 What is the man with the moustache doing?",
+       "q_hu": "3 Mit csinál a bajuszos férfi?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "He's having a shower.",
+         "hu": "Zuhanyozik."
+        },
+        {
+         "t": "He's getting up.",
+         "hu": "Felkel."
+        },
+        {
+         "t": "He's having breakfast.",
+         "hu": "Reggelizik."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Zuhanyozik.",
+       "pic": "🚿",
+       "id": "ab28_2c"
+      },
+      {
+       "q": "4 What is the time on the clock? (Short hand on 7, long hand on 12.)",
+       "q_hu": "4 Hány óra van az órán? (A kis mutató a 7-en, a nagy a 12-n.)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "It's seven o'clock.",
+         "hu": "Hét óra van."
+        },
+        {
+         "t": "It's twelve o'clock.",
+         "hu": "Tizenkét óra van."
+        },
+        {
+         "t": "It's six o'clock.",
+         "hu": "Hat óra van."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Hét óra van.",
+       "pic": "🕖",
+       "id": "ab28_2d"
+      },
+      {
+       "q": "5 Write a sentence about the picture.",
+       "q_hu": "5 Írj egy mondatot a képről.",
+       "kind": "open",
+       "answer": "The boy is waking up.",
+       "answer_hu": "A fiú ébredezik.",
+       "pic": "✏️",
+       "id": "ab28_2e"
+      },
+      {
+       "q": "6 Write another sentence about the picture.",
+       "q_hu": "6 Írj még egy mondatot a képről.",
+       "kind": "open",
+       "answer": "The door in the big room is open.",
+       "answer_hu": "A nagy szobában az ajtó nyitva van.",
+       "pic": "🚪",
+       "id": "ab28_2f"
+      }
+     ],
+     "id": "ab28_2"
+    }
+   ]
+  },
+  {
+   "id": "ab29",
+   "book": "ab",
+   "page": 29,
+   "unit": "u3",
+   "title": "Times and routines: before and after",
+   "title_hu": "Időpontok és napirend: előtt és után",
+   "img": "en_ab_photo-17",
+   "page_box": [
+    0.483,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "summary_hu": "Egész órák kiolvasása (o'clock): az órákat össze kell kötni az időpontokkal. Aztán a 'before' (előtt) és 'after' (után) szavakkal kell a napi teendők sorrendjét kifejezni, végül megbeszélni egy baráttal, hogy ugyanolyan-e a napirendünk.",
+   "words": [
+    {
+     "w": "o'clock",
+     "hu": "óra (egész óra)",
+     "pic": "🕐"
+    },
+    {
+     "w": "ten o'clock",
+     "hu": "tíz óra",
+     "pic": "🕙"
+    },
+    {
+     "w": "eleven o'clock",
+     "hu": "tizenegy óra",
+     "pic": "🕚"
+    },
+    {
+     "w": "before",
+     "hu": "előtt, mielőtt",
+     "pic": "⬅️"
+    },
+    {
+     "w": "after",
+     "hu": "után, miután",
+     "pic": "➡️"
+    },
+    {
+     "w": "take off",
+     "hu": "levesz (ruhát)"
+    },
+    {
+     "w": "put on",
+     "hu": "felvesz (ruhát)"
+    },
+    {
+     "w": "wash my hands",
+     "hu": "kezet mosok",
+     "pic": "🧼"
+    },
+    {
+     "w": "the socks",
+     "hu": "a zokni",
+     "pic": "🧦"
+    },
+    {
+     "w": "the shoes",
+     "hu": "a cipő",
+     "pic": "👟"
+    },
+    {
+     "w": "the jacket",
+     "hu": "a kabát, dzseki",
+     "pic": "🧥"
+    },
+    {
+     "w": "the shirt",
+     "hu": "az ing",
+     "pic": "👔"
+    },
+    {
+     "w": "same",
+     "hu": "ugyanolyan",
+     "pic": "🟰"
+    },
+    {
+     "w": "different",
+     "hu": "más, különböző",
+     "pic": "🔀"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's tell the time and say what we do before and after!",
+     "hu": "Olvassuk le az időt, és mondjuk meg, mit csinálunk előtte és utána!",
+     "pic": "🕐"
+    },
+    "sentences": [
+     {
+      "es": "When the long hand is on twelve, we say o'clock.",
+      "hu": "Ha a nagy mutató a 12-n áll, azt mondjuk: o'clock (egész óra).",
+      "pic": "🕛"
+     },
+     {
+      "es": "The short hand shows the hour.",
+      "hu": "A kis mutató mutatja, hány óra van.",
+      "pic": "🕐"
+     },
+     {
+      "es": "Short hand on ten: it's ten o'clock.",
+      "hu": "Kis mutató a 10-en: tíz óra van.",
+      "pic": "🕙"
+     },
+     {
+      "es": "A digital clock shows 11:00. It's eleven o'clock.",
+      "hu": "A digitális óra 11:00-t mutat. Tizenegy óra van.",
+      "pic": "⌚"
+     },
+     {
+      "es": "03:00 is three o'clock.",
+      "hu": "A 03:00 három óra.",
+      "pic": "🕒"
+     },
+     {
+      "es": "'Before' means something happens first.",
+      "hu": "A 'before' azt jelenti: előtte, mielőtt – az történik előbb.",
+      "pic": "⬅️"
+     },
+     {
+      "es": "'After' means something happens later.",
+      "hu": "Az 'after' azt jelenti: utána, miután – az történik később.",
+      "pic": "➡️"
+     },
+     {
+      "es": "I take off my clothes before I have a shower.",
+      "hu": "Leveszem a ruháimat, mielőtt lezuhanyozom.",
+      "pic": "🚿"
+     },
+     {
+      "es": "I put on my socks before I put on my shoes.",
+      "hu": "Előbb a zoknit veszem fel, aztán a cipőt.",
+      "pic": "🧦"
+     },
+     {
+      "es": "I go to bed after I have dinner.",
+      "hu": "Vacsora után fekszem le.",
+      "pic": "😴"
+     },
+     {
+      "es": "Ask a friend: Do you get dressed after breakfast?",
+      "hu": "Kérdezd meg a barátodat: Reggeli után öltözöl fel?",
+      "pic": "❓"
+     },
+     {
+      "es": "Answer: Yes, I do. or No, I don't.",
+      "hu": "Válasz: Yes, I do. (Igen.) vagy No, I don't. (Nem.)",
+      "pic": "💬"
+     },
+     {
+      "es": "Then say: Same! or Different!",
+      "hu": "Aztán mondd: Same! (Ugyanaz!) vagy Different! (Más!)",
+      "pic": "🟰"
+     }
+    ],
+    "remember": [
+     {
+      "es": "long hand on 12 → ... o'clock",
+      "hu": "Nagy mutató a 12-n → egész óra (o'clock)."
+     },
+     {
+      "es": "before = előtt · after = után",
+      "hu": "before = előtt, mielőtt · after = után, miután"
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, do you put on your shoes before your socks?",
+      "hu": "Martin, a cipődet a zoknid előtt veszed fel?"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes, I do!",
+      "hu": "Igen!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! That's funny! Socks first!",
+      "hu": "Miau! Ez vicces! Előbb a zokni!"
+     },
+     {
+      "who": "Martin",
+      "es": "Oh! I put on my socks before my shoes.",
+      "hu": "Ó! A zoknit a cipő előtt veszem fel."
+     },
+     {
+      "who": "Kitty",
+      "es": "Good! What time is it? The short hand is on three.",
+      "hu": "Ügyes! Hány óra van? A kis mutató a 3-on van."
+     },
+     {
+      "who": "Martin",
+      "es": "It's three o'clock!",
+      "hu": "Három óra van!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "When the long hand is on 12 and the short hand is on 6, it's six o'clock.",
+      "hu": "Ha a nagy mutató a 12-n, a kicsi a 6-on áll, hat óra van.",
+      "answer": true,
+      "why_es": "The short hand shows the hour: six.",
+      "why_hu": "A kis mutató mutatja az órát: hat."
+     },
+     {
+      "es": "11:00 is one o'clock.",
+      "hu": "A 11:00 egy óra.",
+      "answer": false,
+      "why_es": "11:00 is eleven o'clock.",
+      "why_hu": "A 11:00 tizenegy óra."
+     },
+     {
+      "es": "I put on my socks after I put on my shoes.",
+      "hu": "A zoknit a cipő után veszem fel.",
+      "answer": false,
+      "why_es": "Socks go on before shoes.",
+      "why_hu": "A zokni a cipő előtt kerül fel."
+     },
+     {
+      "es": "I wash my hands before I have lunch.",
+      "hu": "Ebéd előtt kezet mosok.",
+      "answer": true,
+      "why_es": "We wash our hands before we eat.",
+      "why_hu": "Evés előtt kezet mosunk."
+     },
+     {
+      "es": "'After' means 'előtt'.",
+      "hu": "Az 'after' jelentése: előtt.",
+      "answer": false,
+      "why_es": "'After' means 'után'.",
+      "why_hu": "Az 'after' jelentése: után."
+     },
+     {
+      "es": "If my answer is 'No, I don't', my routine can be different.",
+      "hu": "Ha a válaszom 'No, I don't', a napirendem más lehet.",
+      "answer": true,
+      "why_es": "Then we say: Different!",
+      "why_hu": "Akkor mondjuk: Different!"
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Look and match.",
+     "text_hu": "Nézd meg és kösd össze.",
+     "box": [
+      0.49,
+      0.05,
+      0.95,
+      0.45
+     ],
+     "context": {
+      "es": "There are six clocks (a–f): two digital clocks and four clocks with hands. Next to them are six times: ten, eleven, seven, six, three and one o'clock.",
+      "hu": "Hat óra van (a–f): két digitális és négy mutatós. Mellettük hat időpont: tíz, tizenegy, hét, hat, három és egy óra."
+     },
+     "pic": "🕐⌚🔗",
+     "help": {
+      "es": "Look at the short hand: it shows the hour.",
+      "hu": "Nézd a kis mutatót: az mutatja, hány óra van."
+     },
+     "items": [
+      {
+       "q": "a) digital clock 11:00 – what time is it?",
+       "q_hu": "a) digitális óra 11:00 – hány óra van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Seven o'clock",
+         "hu": "hét óra"
+        },
+        {
+         "t": "Eleven o'clock",
+         "hu": "tizenegy óra"
+        },
+        {
+         "t": "One o'clock",
+         "hu": "egy óra"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "tizenegy óra",
+       "pic": "🕐",
+       "id": "ab29_1a"
+      },
+      {
+       "q": "b) clock: short hand on 1, long hand on 12 – what time is it?",
+       "q_hu": "b) óra: kis mutató az 1-en, nagy a 12-n – hány óra van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Ten o'clock",
+         "hu": "tíz óra"
+        },
+        {
+         "t": "Three o'clock",
+         "hu": "három óra"
+        },
+        {
+         "t": "One o'clock",
+         "hu": "egy óra"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "egy óra",
+       "pic": "🕐",
+       "id": "ab29_1b"
+      },
+      {
+       "q": "c) clock: short hand on 6, long hand on 12 – what time is it?",
+       "q_hu": "c) óra: kis mutató a 6-on, nagy a 12-n – hány óra van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Seven o'clock",
+         "hu": "hét óra"
+        },
+        {
+         "t": "Three o'clock",
+         "hu": "három óra"
+        },
+        {
+         "t": "Six o'clock",
+         "hu": "hat óra"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "hat óra",
+       "pic": "🕐",
+       "id": "ab29_1c"
+      },
+      {
+       "q": "d) clock: short hand on 10, long hand on 12 – what time is it?",
+       "q_hu": "d) óra: kis mutató a 10-en, nagy a 12-n – hány óra van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Seven o'clock",
+         "hu": "hét óra"
+        },
+        {
+         "t": "Three o'clock",
+         "hu": "három óra"
+        },
+        {
+         "t": "Ten o'clock",
+         "hu": "tíz óra"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "tíz óra",
+       "pic": "🕐",
+       "id": "ab29_1d"
+      },
+      {
+       "q": "e) digital clock 03:00 – what time is it?",
+       "q_hu": "e) digitális óra 03:00 – hány óra van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Eleven o'clock",
+         "hu": "tizenegy óra"
+        },
+        {
+         "t": "Three o'clock",
+         "hu": "három óra"
+        },
+        {
+         "t": "Six o'clock",
+         "hu": "hat óra"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "három óra",
+       "pic": "🕐",
+       "id": "ab29_1e"
+      },
+      {
+       "q": "f) clock: short hand on 7, long hand on 12 – what time is it?",
+       "q_hu": "f) óra: kis mutató a 7-en, nagy a 12-n – hány óra van?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Three o'clock",
+         "hu": "három óra"
+        },
+        {
+         "t": "One o'clock",
+         "hu": "egy óra"
+        },
+        {
+         "t": "Seven o'clock",
+         "hu": "hét óra"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "hét óra",
+       "pic": "🕐",
+       "id": "ab29_1f"
+      }
+     ],
+     "id": "ab29_1"
+    },
+    {
+     "n": "2",
+     "text": "Write 'before' or 'after'.",
+     "text_hu": "Írd be: 'before' (előtt) vagy 'after' (után).",
+     "box": [
+      0.49,
+      0.45,
+      0.97,
+      0.73
+     ],
+     "context": {
+      "es": "Six sentences about getting dressed, washing, eating and going to bed. Think: which thing happens first? Then write two more sentences.",
+      "hu": "Hat mondat öltözésről, mosakodásról, evésről és alvásról. Gondold végig: melyik történik előbb? Utána írj még két mondatot."
+     },
+     "pic": "⬅️➡️",
+     "help": {
+      "es": "If the first part happens first, write 'before'. If it happens later, write 'after'.",
+      "hu": "Ha a mondat első fele történik előbb, 'before'. Ha később, 'after'."
+     },
+     "items": [
+      {
+       "q": "1 I take off my clothes ___ I have a shower.",
+       "q_hu": "1 Leveszem a ruháimat ___ , hogy lezuhanyozom.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "before",
+         "hu": "előtt (mielőtt)"
+        },
+        {
+         "t": "after",
+         "hu": "után (miután)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "mielőtt (before)",
+       "pic": "👕🚿",
+       "id": "ab29_2a"
+      },
+      {
+       "q": "2 I wash my hands ___ I have lunch.",
+       "q_hu": "2 Kezet mosok ___ , hogy ebédelek.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "before",
+         "hu": "előtt (mielőtt)"
+        },
+        {
+         "t": "after",
+         "hu": "után (miután)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "mielőtt (before)",
+       "pic": "🧼",
+       "id": "ab29_2b"
+      },
+      {
+       "q": "3 I take off my shirt ___ I take off my jacket.",
+       "q_hu": "3 Leveszem az ingemet ___ , hogy leveszem a kabátomat.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "before",
+         "hu": "előtt (mielőtt)"
+        },
+        {
+         "t": "after",
+         "hu": "után (miután)"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "miután (after)",
+       "pic": "🧥",
+       "id": "ab29_2c"
+      },
+      {
+       "q": "4 I put on my socks ___ I put on my shoes.",
+       "q_hu": "4 Felveszem a zoknimat ___ , hogy felveszem a cipőmet.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "before",
+         "hu": "előtt (mielőtt)"
+        },
+        {
+         "t": "after",
+         "hu": "után (miután)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "mielőtt (before)",
+       "pic": "🧦👟",
+       "id": "ab29_2d"
+      },
+      {
+       "q": "5 I go to bed ___ I have dinner.",
+       "q_hu": "5 Lefekszem ___ , hogy vacsorázom.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "before",
+         "hu": "előtt (mielőtt)"
+        },
+        {
+         "t": "after",
+         "hu": "után (miután)"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "miután (after)",
+       "pic": "😴",
+       "id": "ab29_2e"
+      },
+      {
+       "q": "6 I get dressed ___ I go to school.",
+       "q_hu": "6 Felöltözöm ___ , hogy iskolába megyek.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "before",
+         "hu": "előtt (mielőtt)"
+        },
+        {
+         "t": "after",
+         "hu": "után (miután)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "mielőtt (before)",
+       "pic": "🏫",
+       "id": "ab29_2f"
+      },
+      {
+       "q": "7 Write your own sentence with 'before' or 'after'.",
+       "q_hu": "7 Írj egy saját mondatot a 'before' vagy 'after' szóval.",
+       "kind": "open",
+       "answer": "I brush my teeth after I have breakfast.",
+       "answer_hu": "Reggeli után fogat mosok.",
+       "pic": "🪥",
+       "id": "ab29_2g"
+      },
+      {
+       "q": "8 Write one more sentence with 'before' or 'after'.",
+       "q_hu": "8 Írj még egy mondatot a 'before' vagy 'after' szóval.",
+       "kind": "open",
+       "answer": "I do my homework before I watch TV.",
+       "answer_hu": "Mielőtt tévét nézek, megírom a házit.",
+       "pic": "📝",
+       "id": "ab29_2h"
+      }
+     ],
+     "id": "ab29_2"
+    },
+    {
+     "n": "3",
+     "text": "Talk to your friend. Is your routine the same or different?",
+     "text_hu": "Beszélgess a barátoddal. Ugyanolyan vagy más a napirendetek?",
+     "box": [
+      0.49,
+      0.73,
+      0.97,
+      0.95
+     ],
+     "context": {
+      "es": "Speech bubbles: 'Do you get dressed after breakfast?' – 'Yes, I do.' / 'Different! I get dressed before breakfast.' and 'Do you have a shower before bedtime?' – 'No, I don't.' / 'Same!'",
+      "hu": "Szövegbuborékok: „Reggeli után öltözöl?” – „Igen.” / „Más! Én reggeli előtt öltözöm.” és „Lefekvés előtt zuhanyozol?” – „Nem.” / „Ugyanaz!”"
+     },
+     "pic": "🗣️👫",
+     "help": {
+      "es": "Ask with 'Do you…?' and answer 'Yes, I do' or 'No, I don't'.",
+      "hu": "Kérdezz így: 'Do you…?', válaszolj: 'Yes, I do' vagy 'No, I don't'."
+     },
+     "items": [
+      {
+       "q": "Ask: Do you get dressed after breakfast?",
+       "q_hu": "Kérdezd meg: Reggeli után öltözöl fel?",
+       "kind": "open",
+       "answer": "No, I don't. I get dressed before breakfast.",
+       "answer_hu": "Nem, én reggeli előtt öltözöm fel.",
+       "pic": "👕",
+       "id": "ab29_3a"
+      },
+      {
+       "q": "Ask: Do you have a shower before bedtime?",
+       "q_hu": "Kérdezd meg: Lefekvés előtt zuhanyozol?",
+       "kind": "open",
+       "answer": "Yes, I do. / No, I don't. – Same! / Different!",
+       "answer_hu": "Igen / Nem – Ugyanaz! / Más!",
+       "pic": "🚿",
+       "id": "ab29_3b"
+      },
+      {
+       "q": "Your friend gets dressed before breakfast. You get dressed before breakfast too. What do you say?",
+       "q_hu": "A barátod reggeli előtt öltözik. Te is reggeli előtt. Mit mondasz?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Same!",
+         "hu": "Ugyanaz!"
+        },
+        {
+         "t": "Different!",
+         "hu": "Más!"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Ugyanaz!",
+       "pic": "🟰",
+       "id": "ab29_3c"
+      }
+     ],
+     "id": "ab29_3"
+    }
+   ]
+  },
+  {
+   "id": "ab30",
+   "book": "ab",
+   "page": 30,
+   "unit": "u3",
+   "title": "Days of the week",
+   "title_hu": "A hét napjai",
+   "img": "en_ab_photo-18",
+   "page_box": [
+    0.03,
+    0.0,
+    0.472,
+    1.0
+   ],
+   "summary_hu": "A hét napjainak angol nevei: meg kell keresni őket egy betűrejtvényben, aztán hét fotó alá kell írni, melyik napon történik (pl. Daisy csütörtökön úszik). Megjelennek a gyakoriságot jelző szavak is: always (mindig), sometimes (néha), never (soha).",
+   "words": [
+    {
+     "w": "Monday",
+     "hu": "hétfő"
+    },
+    {
+     "w": "Tuesday",
+     "hu": "kedd"
+    },
+    {
+     "w": "Wednesday",
+     "hu": "szerda"
+    },
+    {
+     "w": "Thursday",
+     "hu": "csütörtök"
+    },
+    {
+     "w": "Friday",
+     "hu": "péntek"
+    },
+    {
+     "w": "Saturday",
+     "hu": "szombat"
+    },
+    {
+     "w": "Sunday",
+     "hu": "vasárnap"
+    },
+    {
+     "w": "always",
+     "hu": "mindig",
+     "pic": "🔁"
+    },
+    {
+     "w": "sometimes",
+     "hu": "néha",
+     "pic": "🎲"
+    },
+    {
+     "w": "never",
+     "hu": "soha",
+     "pic": "🚫"
+    },
+    {
+     "w": "basketball",
+     "hu": "kosárlabda",
+     "pic": "🏀"
+    },
+    {
+     "w": "badminton",
+     "hu": "tollaslabda",
+     "pic": "🏸"
+    },
+    {
+     "w": "the swimming lesson",
+     "hu": "az úszóóra",
+     "pic": "🏊"
+    },
+    {
+     "w": "score a goal",
+     "hu": "gólt rúg",
+     "pic": "🥅"
+    },
+    {
+     "w": "the shops",
+     "hu": "a boltok",
+     "pic": "🛒"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's learn the seven days of the week!",
+     "hu": "Tanuljuk meg a hét hét napját!",
+     "pic": "📅"
+    },
+    "sentences": [
+     {
+      "es": "A week has seven days.",
+      "hu": "Egy hétnek hét napja van.",
+      "pic": "📅"
+     },
+     {
+      "es": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "hu": "Hétfő, kedd, szerda, csütörtök, péntek, szombat, vasárnap.",
+      "pic": "🗓️"
+     },
+     {
+      "es": "In English, days start with a capital letter.",
+      "hu": "Angolul a napok nevét nagy kezdőbetűvel írjuk.",
+      "pic": "🔠"
+     },
+     {
+      "es": "Saturday and Sunday are the weekend.",
+      "hu": "A szombat és a vasárnap a hétvége.",
+      "pic": "🎉"
+     },
+     {
+      "es": "Peter always plays basketball after school on Mondays.",
+      "hu": "Peter hétfőnként iskola után mindig kosarazik.",
+      "pic": "🏀"
+     },
+     {
+      "es": "On Tuesdays Jim and Sally play badminton after school.",
+      "hu": "Keddenként Jim és Sally iskola után tollasozik.",
+      "pic": "🏸"
+     },
+     {
+      "es": "Jack and Mary do their homework after school on Wednesdays.",
+      "hu": "Szerdánként Jack és Mary iskola után házit írnak.",
+      "pic": "📝"
+     },
+     {
+      "es": "Daisy has a swimming lesson on Thursdays. She never watches TV.",
+      "hu": "Daisynek csütörtökön úszóórája van. Soha nem néz tévét.",
+      "pic": "🏊"
+     },
+     {
+      "es": "Clare and Fred watch TV with their mum on Friday evenings.",
+      "hu": "Clare és Fred péntek esténként tévét néznek az anyukájukkal.",
+      "pic": "📺"
+     },
+     {
+      "es": "Paul goes to the shops with his dad on Saturday mornings.",
+      "hu": "Paul szombat reggelente boltba megy az apjával.",
+      "pic": "🛒"
+     },
+     {
+      "es": "Vicky plays football on Sundays. She sometimes scores a goal.",
+      "hu": "Vicky vasárnaponként focizik. Néha gólt is rúg.",
+      "pic": "⚽"
+     },
+     {
+      "es": "Always means every time. Never means not one time.",
+      "hu": "Always = mindig, minden alkalommal. Never = soha, egyszer sem.",
+      "pic": "🔁"
+     },
+     {
+      "es": "We say 'on Mondays' for every Monday.",
+      "hu": "Az 'on Mondays' azt jelenti: hétfőnként, minden hétfőn.",
+      "pic": "🗓️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+      "hu": "hétfő, kedd, szerda, csütörtök, péntek, szombat, vasárnap"
+     },
+     {
+      "es": "always – sometimes – never",
+      "hu": "mindig – néha – soha"
+     },
+     {
+      "es": "on + day: on Friday",
+      "hu": "A nap neve elé 'on' kell: on Friday = pénteken."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, what day comes after Monday?",
+      "hu": "Martin, melyik nap jön hétfő után?"
+     },
+     {
+      "who": "Martin",
+      "es": "Thursday!",
+      "hu": "Thursday!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! Thursday is csütörtök. After Monday is Tuesday.",
+      "hu": "Miau, nem! A Thursday csütörtök. Hétfő után Tuesday (kedd) jön."
+     },
+     {
+      "who": "Martin",
+      "es": "Monday, Tuesday, Wednesday! I remember now.",
+      "hu": "Hétfő, kedd, szerda! Most már emlékszem."
+     },
+     {
+      "who": "Kitty",
+      "es": "When does Daisy go swimming?",
+      "hu": "Daisy mikor megy úszni?"
+     },
+     {
+      "who": "Martin",
+      "es": "On Thursdays!",
+      "hu": "Csütörtökönként!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "A week has seven days.",
+      "hu": "Egy hétnek hét napja van.",
+      "answer": true,
+      "why_es": "Monday to Sunday is seven days.",
+      "why_hu": "Hétfőtől vasárnapig hét nap."
+     },
+     {
+      "es": "Wednesday comes after Thursday.",
+      "hu": "A szerda a csütörtök után jön.",
+      "answer": false,
+      "why_es": "Wednesday comes before Thursday.",
+      "why_hu": "A szerda a csütörtök előtt jön."
+     },
+     {
+      "es": "Peter plays basketball on Mondays.",
+      "hu": "Peter hétfőnként kosarazik.",
+      "answer": true,
+      "why_es": "Peter always plays basketball after school on Mondays.",
+      "why_hu": "Iskola után mindig kosarazik hétfőn."
+     },
+     {
+      "es": "Daisy watches TV every day.",
+      "hu": "Daisy minden nap tévét néz.",
+      "answer": false,
+      "why_es": "She never watches TV.",
+      "why_hu": "Soha nem néz tévét."
+     },
+     {
+      "es": "Paul goes to the shops on Saturday mornings.",
+      "hu": "Paul szombat reggel boltba megy.",
+      "answer": true,
+      "why_es": "He goes with his dad.",
+      "why_hu": "Az apjával megy."
+     },
+     {
+      "es": "'Sometimes' means 'mindig'.",
+      "hu": "A 'sometimes' jelentése: mindig.",
+      "answer": false,
+      "why_es": "'Sometimes' means 'néha'.",
+      "why_hu": "A 'sometimes' jelentése: néha."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Find and write the words.",
+     "text_hu": "Keresd meg és írd le a szavakat.",
+     "box": [
+      0.05,
+      0.07,
+      0.47,
+      0.46
+     ],
+     "context": {
+      "es": "A word search with letters. The days of the week are hidden in it. Monday is found as an example. The first letters are given: T, W, T, F, S, S.",
+      "hu": "Betűrejtvény, amiben a hét napjai vannak elrejtve. A Monday (hétfő) már meg van jelölve. A kezdőbetűk adottak: T, W, T, F, S, S."
+     },
+     "pic": "🔍📅",
+     "help": {
+      "es": "Say the days in order: Monday, Tuesday… and look for them up and down and across.",
+      "hu": "Mondd sorban a napokat: Monday, Tuesday… és keresd őket lefelé és vízszintesen."
+     },
+     "items": [
+      {
+       "q": "Find in the word search: T_______ (kedd)",
+       "q_hu": "Keresd meg a betűrejtvényben: T_______ = kedd. Írd le angolul!",
+       "kind": "type",
+       "answer": "Tuesday",
+       "alts": [],
+       "answer_hu": "kedd",
+       "pic": "📅",
+       "id": "ab30_1a"
+      },
+      {
+       "q": "Find in the word search: W_______ (szerda)",
+       "q_hu": "Keresd meg a betűrejtvényben: W_______ = szerda. Írd le angolul!",
+       "kind": "type",
+       "answer": "Wednesday",
+       "alts": [],
+       "answer_hu": "szerda",
+       "pic": "📅",
+       "id": "ab30_1b"
+      },
+      {
+       "q": "Find in the word search: T_______ (csütörtök)",
+       "q_hu": "Keresd meg a betűrejtvényben: T_______ = csütörtök. Írd le angolul!",
+       "kind": "type",
+       "answer": "Thursday",
+       "alts": [],
+       "answer_hu": "csütörtök",
+       "pic": "📅",
+       "id": "ab30_1c"
+      },
+      {
+       "q": "Find in the word search: F_______ (péntek)",
+       "q_hu": "Keresd meg a betűrejtvényben: F_______ = péntek. Írd le angolul!",
+       "kind": "type",
+       "answer": "Friday",
+       "alts": [],
+       "answer_hu": "péntek",
+       "pic": "📅",
+       "id": "ab30_1d"
+      },
+      {
+       "q": "Find in the word search: S_______ (szombat)",
+       "q_hu": "Keresd meg a betűrejtvényben: S_______ = szombat. Írd le angolul!",
+       "kind": "type",
+       "answer": "Saturday",
+       "alts": [],
+       "answer_hu": "szombat",
+       "pic": "📅",
+       "id": "ab30_1e"
+      },
+      {
+       "q": "Find in the word search: S_______ (vasárnap)",
+       "q_hu": "Keresd meg a betűrejtvényben: S_______ = vasárnap. Írd le angolul!",
+       "kind": "type",
+       "answer": "Sunday",
+       "alts": [],
+       "answer_hu": "vasárnap",
+       "pic": "📅",
+       "id": "ab30_1f"
+      }
+     ],
+     "id": "ab30_1"
+    },
+    {
+     "n": "2",
+     "text": "Look, read and write.",
+     "text_hu": "Nézd meg, olvasd el és írd be.",
+     "box": [
+      0.05,
+      0.46,
+      0.472,
+      0.95
+     ],
+     "context": {
+      "es": "Seven photos of children doing activities and seven sentences. Under each photo write the day. Photo 5 (basketball) is the example: Monday.",
+      "hu": "Hét fotó gyerekekről, akik különféle dolgokat csinálnak, és hét mondat. Minden fotó alá a napot kell írni. Az 5. kép (kosárlabda) a példa: Monday."
+     },
+     "pic": "🏊🏸⚽",
+     "help": {
+      "es": "Find the activity in the sentences and write the day from that sentence.",
+      "hu": "Keresd meg a tevékenységet a mondatokban, és írd le a napot abból a mondatból."
+     },
+     "items": [
+      {
+       "q": "Photo 1: a girl in a swimming pool (Daisy has a swimming lesson). Which day is it?",
+       "q_hu": "1. kép: egy lány az uszodában (Daisy úszóórája). Melyik nap van? Írd angolul!",
+       "kind": "type",
+       "answer": "Thursday",
+       "alts": [],
+       "answer_hu": "csütörtök",
+       "pic": "🏊",
+       "id": "ab30_2a"
+      },
+      {
+       "q": "Photo 2: children playing badminton (Jim and Sally). Which day is it?",
+       "q_hu": "2. kép: tollasozó gyerekek (Jim és Sally). Melyik nap van? Írd angolul!",
+       "kind": "type",
+       "answer": "Tuesday",
+       "alts": [],
+       "answer_hu": "kedd",
+       "pic": "🏸",
+       "id": "ab30_2b"
+      },
+      {
+       "q": "Photo 3: a boy at the shops with his dad (Paul). Which day is it?",
+       "q_hu": "3. kép: egy fiú az apjával a boltban (Paul). Melyik nap van? Írd angolul!",
+       "kind": "type",
+       "answer": "Saturday",
+       "alts": [],
+       "answer_hu": "szombat",
+       "pic": "🛒",
+       "id": "ab30_2c"
+      },
+      {
+       "q": "Photo 4: children watching TV with their mum on the sofa (Clare and Fred). Which day is it?",
+       "q_hu": "4. kép: gyerekek a kanapén tévéznek az anyukájukkal (Clare és Fred). Melyik nap van? Írd angolul!",
+       "kind": "type",
+       "answer": "Friday",
+       "alts": [],
+       "answer_hu": "péntek",
+       "pic": "📺",
+       "id": "ab30_2d"
+      },
+      {
+       "q": "Photo 6: two children doing homework (Jack and Mary). Which day is it?",
+       "q_hu": "6. kép: két gyerek házit ír (Jack és Mary). Melyik nap van? Írd angolul!",
+       "kind": "type",
+       "answer": "Wednesday",
+       "alts": [],
+       "answer_hu": "szerda",
+       "pic": "📝",
+       "id": "ab30_2e"
+      },
+      {
+       "q": "Photo 7: children playing football in the park (Vicky). Which day is it?",
+       "q_hu": "7. kép: gyerekek fociznak a parkban (Vicky). Melyik nap van? Írd angolul!",
+       "kind": "type",
+       "answer": "Sunday",
+       "alts": [],
+       "answer_hu": "vasárnap",
+       "pic": "⚽",
+       "id": "ab30_2f"
+      },
+      {
+       "q": "Daisy never watches TV. True or false?",
+       "q_hu": "Daisy soha nem néz tévét. Igaz vagy hamis?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "True",
+         "hu": "Igaz"
+        },
+        {
+         "t": "False",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz (She never watches TV).",
+       "pic": "🚫📺",
+       "id": "ab30_2g"
+      },
+      {
+       "q": "How often does Vicky score a goal?",
+       "q_hu": "Milyen gyakran lő gólt Vicky?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "always",
+         "hu": "mindig"
+        },
+        {
+         "t": "sometimes",
+         "hu": "néha"
+        },
+        {
+         "t": "never",
+         "hu": "soha"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "néha (sometimes)",
+       "pic": "🥅",
+       "id": "ab30_2h"
+      }
+     ],
+     "id": "ab30_2"
+    }
+   ]
+  },
+  {
+   "id": "ab31",
+   "book": "ab",
+   "page": 31,
+   "unit": "u3",
+   "title": "Always, sometimes, never – Bingo!",
+   "title_hu": "Mindig, néha, soha – Bingó!",
+   "img": "en_ab_photo-18",
+   "page_box": [
+    0.472,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "summary_hu": "Mondatalkotás egy bingó-táblázatból: név + always/sometimes/never + cselekvés + időpont. Fontos a szórend: a gyakoriságot jelző szó az ige ELÉ kerül. Végül saját napirendről kell mondatokat írni és elmondani.",
+   "words": [
+    {
+     "w": "always",
+     "hu": "mindig",
+     "pic": "🔁"
+    },
+    {
+     "w": "sometimes",
+     "hu": "néha",
+     "pic": "🎲"
+    },
+    {
+     "w": "never",
+     "hu": "soha",
+     "pic": "🚫"
+    },
+    {
+     "w": "wakes up",
+     "hu": "felébred",
+     "pic": "⏰"
+    },
+    {
+     "w": "has dinner",
+     "hu": "vacsorázik",
+     "pic": "🍝"
+    },
+    {
+     "w": "watches TV",
+     "hu": "tévét néz",
+     "pic": "📺"
+    },
+    {
+     "w": "goes to bed",
+     "hu": "lefekszik",
+     "pic": "😴"
+    },
+    {
+     "w": "has a shower",
+     "hu": "zuhanyozik",
+     "pic": "🚿"
+    },
+    {
+     "w": "gets dressed",
+     "hu": "felöltözik",
+     "pic": "👕"
+    },
+    {
+     "w": "in the kitchen",
+     "hu": "a konyhában",
+     "pic": "🍳"
+    },
+    {
+     "w": "in the evening",
+     "hu": "este",
+     "pic": "🌙"
+    },
+    {
+     "w": "in the morning",
+     "hu": "reggel",
+     "pic": "🌅"
+    },
+    {
+     "w": "every day",
+     "hu": "minden nap",
+     "pic": "📅"
+    },
+    {
+     "w": "bingo",
+     "hu": "bingó",
+     "pic": "🎯"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's make sentences with always, sometimes and never!",
+     "hu": "Alkossunk mondatokat az always, sometimes és never szavakkal!",
+     "pic": "🧩"
+    },
+    "sentences": [
+     {
+      "es": "The bingo table has four columns.",
+      "hu": "A bingó-táblázatnak négy oszlopa van.",
+      "pic": "🎯"
+     },
+     {
+      "es": "Column 1 has names: Clare, Vicky, Paul, Jack, Sally, Daisy.",
+      "hu": "Az 1. oszlopban nevek vannak: Clare, Vicky, Paul, Jack, Sally, Daisy.",
+      "pic": "👧"
+     },
+     {
+      "es": "Column 2 has always, sometimes and never.",
+      "hu": "A 2. oszlopban: always (mindig), sometimes (néha), never (soha).",
+      "pic": "🔁"
+     },
+     {
+      "es": "Column 3 has actions, like wakes up or has a shower.",
+      "hu": "A 3. oszlopban cselekvések: pl. felébred, zuhanyozik.",
+      "pic": "🚿"
+     },
+     {
+      "es": "Column 4 says where or when: in the kitchen, at seven o'clock.",
+      "hu": "A 4. oszlop megmondja, hol vagy mikor: a konyhában, hét órakor.",
+      "pic": "🕖"
+     },
+     {
+      "es": "Take one word from each column to make a sentence.",
+      "hu": "Minden oszlopból vegyél egy szót, így lesz mondat.",
+      "pic": "🧩"
+     },
+     {
+      "es": "Clare never has a shower in the kitchen. That's funny!",
+      "hu": "Clare soha nem zuhanyozik a konyhában. Ez vicces!",
+      "pic": "😄"
+     },
+     {
+      "es": "Always, sometimes and never go before the action word.",
+      "hu": "Az always, sometimes és never a cselekvést jelentő szó ELÉ kerül.",
+      "pic": "⬅️"
+     },
+     {
+      "es": "With he or she, the action word ends in -s: she wakes up.",
+      "hu": "He/she után az ige -s végű: she wakes up.",
+      "pic": "🔤"
+     },
+     {
+      "es": "With I, there is no -s: I wake up.",
+      "hu": "I (én) után nincs -s: I wake up.",
+      "pic": "🙋"
+     },
+     {
+      "es": "Write about you: I wake up at seven o'clock every day.",
+      "hu": "Írj magadról: Minden nap hét órakor ébredek.",
+      "pic": "✏️"
+     },
+     {
+      "es": "Tell your partner: I wake up at six o'clock every day.",
+      "hu": "Mondd el a társadnak: Minden nap hat órakor ébredek.",
+      "pic": "🗣️"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Paul always wakes up at seven o'clock.",
+      "hu": "Szórend: név + always/sometimes/never + ige + időpont."
+     },
+     {
+      "es": "she wakes up – I wake up",
+      "hu": "He/she után -s van az igén, I után nincs."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, make a sentence: Jack, never, goes to bed.",
+      "hu": "Martin, alkoss mondatot: Jack, never, goes to bed."
+     },
+     {
+      "who": "Martin",
+      "es": "Jack goes never to bed.",
+      "hu": "Jack goes never to bed."
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! 'Never' goes before the action!",
+      "hu": "Miau! A 'never' a cselekvés elé kerül!"
+     },
+     {
+      "who": "Martin",
+      "es": "Jack never goes to bed in the morning!",
+      "hu": "Jack soha nem fekszik le reggel!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Perfect! And you? When do you wake up?",
+      "hu": "Tökéletes! És te? Mikor ébredsz?"
+     },
+     {
+      "who": "Martin",
+      "es": "I wake up at seven o'clock every day.",
+      "hu": "Minden nap hétkor ébredek."
+     }
+    ],
+    "tf": [
+     {
+      "es": "'Sally always gets dressed before breakfast' is a correct sentence.",
+      "hu": "A 'Sally always gets dressed before breakfast' helyes mondat.",
+      "answer": true,
+      "why_es": "Always comes before the action 'gets dressed'.",
+      "why_hu": "Az always a 'gets dressed' előtt áll."
+     },
+     {
+      "es": "'Paul watches always TV' is correct.",
+      "hu": "A 'Paul watches always TV' helyes.",
+      "answer": false,
+      "why_es": "We say: Paul always watches TV.",
+      "why_hu": "Helyesen: Paul always watches TV."
+     },
+     {
+      "es": "'Never' means 'soha'.",
+      "hu": "A 'never' jelentése: soha.",
+      "answer": true,
+      "why_es": "Never = not one time.",
+      "why_hu": "Egyszer sem."
+     },
+     {
+      "es": "We say 'I wakes up'.",
+      "hu": "Úgy mondjuk: 'I wakes up'.",
+      "answer": false,
+      "why_es": "With I we say: I wake up.",
+      "why_hu": "Az I után nincs -s: I wake up."
+     },
+     {
+      "es": "The bingo table has six names.",
+      "hu": "A bingó-táblázatban hat név van.",
+      "answer": true,
+      "why_es": "Clare, Vicky, Paul, Jack, Sally and Daisy.",
+      "why_hu": "Clare, Vicky, Paul, Jack, Sally és Daisy."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Use the words to make three sentences.",
+     "text_hu": "Használd a szavakat, és alkoss három mondatot.",
+     "box": [
+      0.48,
+      0.06,
+      0.97,
+      0.7
+     ],
+     "context": {
+      "es": "A bingo table with four columns: names (Clare, Vicky, Paul, Jack, Sally, Daisy), always/sometimes/never, actions (wakes up, has dinner, watches TV, goes to bed, has a shower, gets dressed) and places/times (in the kitchen, at seven o'clock, after dinner, in the evening, in the morning, before breakfast). Below is a bingo card.",
+      "hu": "Bingó-táblázat négy oszloppal: nevek, always/sometimes/never, cselekvések (felébred, vacsorázik, tévét néz, lefekszik, zuhanyozik, felöltözik) és hely/idő (a konyhában, hétkor, vacsora után, este, reggel, reggeli előtt). Alatta egy bingókártya."
+     },
+     "pic": "🎯🧩",
+     "help": {
+      "es": "Name first, then always/sometimes/never, then the action, then the time.",
+      "hu": "Előbb a név, aztán always/sometimes/never, aztán a cselekvés, végül az idő."
+     },
+     "items": [
+      {
+       "q": "Which sentence is correct?",
+       "q_hu": "Melyik mondat helyes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Clare always has a shower in the morning.",
+         "hu": "Clare reggel mindig zuhanyozik."
+        },
+        {
+         "t": "Clare has always a shower in the morning.",
+         "hu": "(rossz szórend)"
+        },
+        {
+         "t": "Always Clare has a shower in the morning.",
+         "hu": "(rossz szórend)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Clare always has a shower in the morning.",
+       "pic": "🚿",
+       "id": "ab31_1a"
+      },
+      {
+       "q": "Which sentence is correct?",
+       "q_hu": "Melyik mondat helyes?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Jack goes never to bed at seven o'clock.",
+         "hu": "(rossz szórend)"
+        },
+        {
+         "t": "Jack never goes to bed at seven o'clock.",
+         "hu": "Jack soha nem fekszik le hétkor."
+        },
+        {
+         "t": "Jack goes to bed at never seven o'clock.",
+         "hu": "(rossz szórend)"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Jack never goes to bed at seven o'clock.",
+       "pic": "😴",
+       "id": "ab31_1b"
+      },
+      {
+       "q": "Complete: Vicky ___ watches TV after dinner. (néha)",
+       "q_hu": "Egészítsd ki: Vicky ___ tévét néz vacsora után. (néha)",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "always",
+         "hu": "mindig"
+        },
+        {
+         "t": "sometimes",
+         "hu": "néha"
+        },
+        {
+         "t": "never",
+         "hu": "soha"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "sometimes = néha",
+       "pic": "📺",
+       "id": "ab31_1c"
+      },
+      {
+       "q": "Make your own sentence from the bingo table: name + always/sometimes/never + action + time.",
+       "q_hu": "Rakj össze egy saját mondatot a bingó-táblázatból: név + always/sometimes/never + cselekvés + idő.",
+       "kind": "open",
+       "answer": "Sally sometimes gets dressed before breakfast.",
+       "answer_hu": "Sally néha reggeli előtt öltözik fel.",
+       "pic": "🧩",
+       "id": "ab31_1d"
+      },
+      {
+       "q": "Now play bingo: write four rows in your bingo card (one word from each column). Example: Clare – never – has a shower – in the kitchen.",
+       "q_hu": "Most játssz bingót: írj négy sort a kártyádba (minden oszlopból egy szót). Példa: Clare – never – has a shower – in the kitchen.",
+       "kind": "open",
+       "answer": "Paul – always – wakes up – at seven o'clock.",
+       "answer_hu": "Paul – mindig – felébred – hét órakor.",
+       "pic": "🎯",
+       "id": "ab31_1e"
+      }
+     ],
+     "id": "ab31_1"
+    },
+    {
+     "n": "2",
+     "text": "Write sentences about you.",
+     "text_hu": "Írj mondatokat magadról.",
+     "box": [
+      0.48,
+      0.7,
+      0.97,
+      0.88
+     ],
+     "context": {
+      "es": "The first sentence starts: 'I wake up at ___ o'clock every day.' Then there are four more lines for your routine.",
+      "hu": "Az első mondat eleje: „I wake up at ___ o'clock every day.” (Minden nap ___ órakor ébredek.) Utána még négy sor a saját napirendedről."
+     },
+     "pic": "✏️🙋",
+     "help": {
+      "es": "Use I + action + time. Remember: no -s after I.",
+      "hu": "Használd: I + cselekvés + idő. Ne feledd: I után nincs -s."
+     },
+     "items": [
+      {
+       "q": "I wake up at ___ o'clock every day.",
+       "q_hu": "Minden nap ___ órakor ébredek.",
+       "kind": "open",
+       "answer": "I wake up at seven o'clock every day.",
+       "answer_hu": "Minden nap hét órakor ébredek.",
+       "pic": "⏰",
+       "id": "ab31_2a"
+      },
+      {
+       "q": "Write more sentences about your day (always / sometimes / never).",
+       "q_hu": "Írj még mondatokat a napodról (always / sometimes / never).",
+       "kind": "open",
+       "answer": "I always have breakfast in the kitchen. I go to school at eight o'clock. I sometimes watch TV after dinner. I never go to bed at ten o'clock.",
+       "answer_hu": "Mindig a konyhában reggelizem. Nyolckor megyek iskolába. Vacsora után néha tévézek. Soha nem fekszem le tízkor.",
+       "pic": "📝",
+       "id": "ab31_2b"
+      },
+      {
+       "q": "Which sentence about you is correct?",
+       "q_hu": "Melyik mondat helyes magadról?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "I wake up at seven o'clock.",
+         "hu": "Hétkor ébredek."
+        },
+        {
+         "t": "I wakes up at seven o'clock.",
+         "hu": "(hibás: I után nincs -s)"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "I wake up – I után nincs -s.",
+       "pic": "🙋",
+       "id": "ab31_2c"
+      }
+     ],
+     "id": "ab31_2"
+    },
+    {
+     "n": "3",
+     "text": "Tell your partner.",
+     "text_hu": "Mondd el a társadnak.",
+     "box": [
+      0.48,
+      0.87,
+      0.86,
+      0.95
+     ],
+     "context": {
+      "es": "A speech bubble says: 'I wake up at six o'clock every day.'",
+      "hu": "Egy szövegbuborék: „I wake up at six o'clock every day.” (Minden nap hatkor ébredek.)"
+     },
+     "pic": "🗣️👫",
+     "help": {
+      "es": "Read your sentences from Activity 2 to your partner.",
+      "hu": "Olvasd fel a 2. feladat mondataidat a társadnak."
+     },
+     "items": [
+      {
+       "q": "Tell your partner about your day.",
+       "q_hu": "Meséld el a társadnak a napodat.",
+       "kind": "open",
+       "answer": "I wake up at seven o'clock every day. I have breakfast at half past seven.",
+       "answer_hu": "Minden nap hétkor ébredek. Fél nyolckor reggelizem.",
+       "pic": "💬",
+       "id": "ab31_3a"
+      }
+     ],
+     "id": "ab31_3"
+    }
+   ]
+  },
+  {
+   "id": "ab32",
+   "book": "ab",
+   "page": 32,
+   "unit": "u3",
+   "title": "Lock's sounds and spelling",
+   "title_hu": "Lock hangjai és helyesírása",
+   "img": "en_ab_photo-19",
+   "page_box": [
+    0.03,
+    0.0,
+    0.503,
+    1.0
+   ],
+   "summary_hu": "Ha he/she (ő) a mondat alanya, az ige végére -s vagy -es kerül (wakes, catches). Az igéket két csoportba kell rendezni, aztán kilenc képhez kell a megfelelő kifejezést kiválasztani (pl. washes her hands = kezet mos).",
+   "words": [
+    {
+     "w": "gets up",
+     "hu": "felkel",
+     "pic": "⬆️"
+    },
+    {
+     "w": "puts on",
+     "hu": "felvesz",
+     "pic": "👕"
+    },
+    {
+     "w": "brushes",
+     "hu": "fésül / mos (fogat)",
+     "pic": "🪥"
+    },
+    {
+     "w": "washes",
+     "hu": "mos",
+     "pic": "🧼"
+    },
+    {
+     "w": "dances",
+     "hu": "táncol",
+     "pic": "💃"
+    },
+    {
+     "w": "eats",
+     "hu": "eszik",
+     "pic": "🍽️"
+    },
+    {
+     "w": "watches",
+     "hu": "néz",
+     "pic": "👀"
+    },
+    {
+     "w": "catches the bus",
+     "hu": "eléri a buszt",
+     "pic": "🚌"
+    },
+    {
+     "w": "starts school",
+     "hu": "elkezdi az iskolát",
+     "pic": "🎒"
+    },
+    {
+     "w": "plays",
+     "hu": "játszik",
+     "pic": "🧸"
+    },
+    {
+     "w": "brushes his hair",
+     "hu": "megfésüli a haját",
+     "pic": "💇"
+    },
+    {
+     "w": "washes her hands",
+     "hu": "kezet mos",
+     "pic": "🧼"
+    },
+    {
+     "w": "the bus stop",
+     "hu": "a buszmegálló",
+     "pic": "🚏"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "With he and she, action words get an -s or -es!",
+     "hu": "He (ő, fiú) és she (ő, lány) után az ige -s vagy -es végződést kap!",
+     "pic": "🔤"
+    },
+    "sentences": [
+     {
+      "es": "I wake up. He wakes up.",
+      "hu": "Én felébredek. Ő felébred.",
+      "pic": "⏰"
+     },
+     {
+      "es": "Most words just add -s: gets, puts, eats, plays.",
+      "hu": "A legtöbb ige csak -s-t kap: gets, puts, eats, plays.",
+      "pic": "➕"
+     },
+     {
+      "es": "Words ending in ch or sh add -es: catches, watches, brushes, washes.",
+      "hu": "A ch vagy sh végű igék -es-t kapnak: catches, watches, brushes, washes.",
+      "pic": "🔡"
+     },
+     {
+      "es": "In 'catches' and 'washes' you hear an extra sound: iz.",
+      "hu": "A 'catches' és 'washes' szóban egy plusz hangot hallasz: iz.",
+      "pic": "👂"
+     },
+     {
+      "es": "'Dances' also ends in -es, and you hear iz too.",
+      "hu": "A 'dances' is -es-re végződik, és itt is 'iz'-t hallasz.",
+      "pic": "💃"
+     },
+     {
+      "es": "Picture 1: he gets up.",
+      "hu": "1. kép: felkel.",
+      "pic": "🛏️"
+     },
+     {
+      "es": "Picture 2: she washes her hands.",
+      "hu": "2. kép: kezet mos.",
+      "pic": "🧼"
+     },
+     {
+      "es": "Picture 4: she catches the bus.",
+      "hu": "4. kép: eléri a buszt.",
+      "pic": "🚌"
+     },
+     {
+      "es": "Picture 5: she wakes up.",
+      "hu": "5. kép: felébred.",
+      "pic": "⏰"
+     },
+     {
+      "es": "Picture 6: he puts on clothes.",
+      "hu": "6. kép: felöltözik.",
+      "pic": "👕"
+     },
+     {
+      "es": "Picture 8: he plays with a toy car.",
+      "hu": "8. kép: egy kisautóval játszik.",
+      "pic": "🚗"
+     },
+     {
+      "es": "Picture 9: brushes his hair.",
+      "hu": "9. kép: megfésüli a haját.",
+      "pic": "💇"
+     }
+    ],
+    "remember": [
+     {
+      "es": "he / she + verb + s: she plays",
+      "hu": "He/she után: ige + s."
+     },
+     {
+      "es": "ch, sh → -es: catches, washes",
+      "hu": "A ch, sh végű igék -es-t kapnak."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, the owl catches his food. Why '-es'?",
+      "hu": "Martin, a bagoly elkapja az ételét: catches. Miért -es?"
+     },
+     {
+      "who": "Martin",
+      "es": "Because it's 'he'?",
+      "hu": "Mert 'he' (ő)?"
+     },
+     {
+      "who": "Kitty",
+      "es": "Yes, and 'catch' ends in 'ch'. So we add -es.",
+      "hu": "Igen, és a 'catch' ch-ra végződik. Ezért -es kell."
+     },
+     {
+      "who": "Martin",
+      "es": "So: he washes, she watches!",
+      "hu": "Akkor: he washes, she watches!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Great! And 'eat'?",
+      "hu": "Szuper! És az 'eat'?"
+     },
+     {
+      "who": "Martin",
+      "es": "She eats! Only -s.",
+      "hu": "She eats! Csak -s."
+     }
+    ],
+    "tf": [
+     {
+      "es": "'Watches' goes in the -es box.",
+      "hu": "A 'watches' az -es dobozba kerül.",
+      "answer": true,
+      "why_es": "Watch ends in ch, so we add -es.",
+      "why_hu": "A watch ch-ra végződik, ezért -es."
+     },
+     {
+      "es": "'Eats' goes in the -es box.",
+      "hu": "Az 'eats' az -es dobozba kerül.",
+      "answer": false,
+      "why_es": "Eat + s = eats.",
+      "why_hu": "Eat + s = eats, ez -s."
+     },
+     {
+      "es": "We say 'she plays'.",
+      "hu": "Úgy mondjuk: 'she plays'.",
+      "answer": true,
+      "why_es": "With she we add -s.",
+      "why_hu": "She után -s kerül az igére."
+     },
+     {
+      "es": "In picture 4 a girl catches the bus.",
+      "hu": "A 4. képen egy lány eléri a buszt.",
+      "answer": true,
+      "why_es": "She is at the bus stop.",
+      "why_hu": "A buszmegállóban áll."
+     },
+     {
+      "es": "In picture 2 a girl brushes her hair.",
+      "hu": "A 2. képen egy lány fésülködik.",
+      "answer": false,
+      "why_es": "She washes her hands.",
+      "why_hu": "Kezet mos."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Say and write.",
+     "text_hu": "Mondd ki és írd be.",
+     "box": [
+      0.06,
+      0.1,
+      0.49,
+      0.3
+     ],
+     "context": {
+      "es": "A word box: wakes up, catches (examples), gets up, puts on, brushes, washes, dances, eats, watches. Two boxes: -s (wakes up) and -es (catches).",
+      "hu": "Szódoboz: wakes up, catches (ezek a példák), gets up, puts on, brushes, washes, dances, eats, watches. Két doboz: -s (wakes up) és -es (catches)."
+     },
+     "pic": "🔤📦",
+     "help": {
+      "es": "Say the word aloud. Does it end in -es (you hear 'iz')? Then it goes in the -es box.",
+      "hu": "Mondd ki hangosan. -es-re végződik (hallod az 'iz'-t)? Akkor az -es dobozba kerül."
+     },
+     "items": [
+      {
+       "q": "\"gets up\" – which box: -s or -es?",
+       "q_hu": "„gets up” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "-s doboz",
+       "pic": "⬆️",
+       "id": "ab32_1a"
+      },
+      {
+       "q": "\"puts on\" – which box: -s or -es?",
+       "q_hu": "„puts on” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "-s doboz",
+       "pic": "👕",
+       "id": "ab32_1b"
+      },
+      {
+       "q": "\"brushes\" – which box: -s or -es?",
+       "q_hu": "„brushes” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "-es doboz",
+       "pic": "🪥",
+       "id": "ab32_1c"
+      },
+      {
+       "q": "\"washes\" – which box: -s or -es?",
+       "q_hu": "„washes” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "-es doboz",
+       "pic": "🧼",
+       "id": "ab32_1d"
+      },
+      {
+       "q": "\"dances\" – which box: -s or -es?",
+       "q_hu": "„dances” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "-es doboz",
+       "pic": "💃",
+       "id": "ab32_1e"
+      },
+      {
+       "q": "\"eats\" – which box: -s or -es?",
+       "q_hu": "„eats” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "-s doboz",
+       "pic": "🍽️",
+       "id": "ab32_1f"
+      },
+      {
+       "q": "\"watches\" – which box: -s or -es?",
+       "q_hu": "„watches” – melyik dobozba kerül: -s vagy -es?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "-s",
+         "hu": "-s végű"
+        },
+        {
+         "t": "-es",
+         "hu": "-es végű"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "-es doboz",
+       "pic": "📺",
+       "id": "ab32_1g"
+      }
+     ],
+     "id": "ab32_1"
+    },
+    {
+     "n": "2",
+     "text": "Read and match.",
+     "text_hu": "Olvasd el és párosítsd.",
+     "box": [
+      0.06,
+      0.31,
+      0.503,
+      0.95
+     ],
+     "context": {
+      "es": "Nine pictures of children and a word box: plays, gets up (example, picture 1), catches the bus, dances, starts school, washes her hands, wakes up, brushes his hair, puts on clothes.",
+      "hu": "Kilenc kép gyerekekről és egy szódoboz: játszik, felkel (példa, 1. kép), eléri a buszt, táncol, elkezdi az iskolát, kezet mos, felébred, megfésüli a haját, felöltözik."
+     },
+     "pic": "🧒🔗",
+     "help": {
+      "es": "Look at what the child is doing, then find the words.",
+      "hu": "Nézd meg, mit csinál a gyerek, aztán keresd meg a szavakat."
+     },
+     "items": [
+      {
+       "q": "Picture 1: A boy in pyjamas is getting out of bed.",
+       "q_hu": "1. kép: Egy pizsamás fiú kikel az ágyból.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "gets up",
+         "hu": "felkel"
+        },
+        {
+         "t": "wakes up",
+         "hu": "felébred"
+        },
+        {
+         "t": "catches the bus",
+         "hu": "eléri a buszt"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "felkel",
+       "pic": "🛏️",
+       "id": "ab32_2a"
+      },
+      {
+       "q": "Picture 2: A girl is washing her hands at the sink.",
+       "q_hu": "2. kép: Egy lány kezet mos a mosdónál.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "starts school",
+         "hu": "elkezdi az iskolát"
+        },
+        {
+         "t": "gets up",
+         "hu": "felkel"
+        },
+        {
+         "t": "washes her hands",
+         "hu": "kezet mos"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "kezet mos",
+       "pic": "🧼",
+       "id": "ab32_2b"
+      },
+      {
+       "q": "Picture 3: A boy is moving to music, happy.",
+       "q_hu": "3. kép: Egy fiú vidáman mozog a zenére.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "catches the bus",
+         "hu": "eléri a buszt"
+        },
+        {
+         "t": "starts school",
+         "hu": "elkezdi az iskolát"
+        },
+        {
+         "t": "dances",
+         "hu": "táncol"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "táncol",
+       "pic": "💃",
+       "id": "ab32_2c"
+      },
+      {
+       "q": "Picture 4: A girl with a schoolbag is at the bus stop.",
+       "q_hu": "4. kép: Egy iskolatáskás lány a buszmegállóban áll.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "wakes up",
+         "hu": "felébred"
+        },
+        {
+         "t": "catches the bus",
+         "hu": "eléri a buszt"
+        },
+        {
+         "t": "gets up",
+         "hu": "felkel"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "eléri / felszáll a buszra",
+       "pic": "🚌",
+       "id": "ab32_2d"
+      },
+      {
+       "q": "Picture 5: A girl in bed is stretching her arms.",
+       "q_hu": "5. kép: Egy lány az ágyban nyújtózkodik.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "wakes up",
+         "hu": "felébred"
+        },
+        {
+         "t": "brushes his hair",
+         "hu": "megfésüli a haját"
+        },
+        {
+         "t": "washes her hands",
+         "hu": "kezet mos"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "felébred",
+       "pic": "⏰",
+       "id": "ab32_2e"
+      },
+      {
+       "q": "Picture 6: A boy is pulling on his top.",
+       "q_hu": "6. kép: Egy fiú magára húzza a pulóverét.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "gets up",
+         "hu": "felkel"
+        },
+        {
+         "t": "plays",
+         "hu": "játszik"
+        },
+        {
+         "t": "puts on clothes",
+         "hu": "felöltözik"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "felöltözik / ruhát vesz fel",
+       "pic": "👕",
+       "id": "ab32_2f"
+      },
+      {
+       "q": "Picture 7: A boy with a schoolbag is ready for school.",
+       "q_hu": "7. kép: Egy iskolatáskás fiú indul az iskolába.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "starts school",
+         "hu": "elkezdi az iskolát"
+        },
+        {
+         "t": "gets up",
+         "hu": "felkel"
+        },
+        {
+         "t": "catches the bus",
+         "hu": "eléri a buszt"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "elkezdi az iskolát",
+       "pic": "🎒",
+       "id": "ab32_2g"
+      },
+      {
+       "q": "Picture 8: A boy is on the floor with a toy car.",
+       "q_hu": "8. kép: Egy fiú a földön játszik egy kisautóval.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "gets up",
+         "hu": "felkel"
+        },
+        {
+         "t": "starts school",
+         "hu": "elkezdi az iskolát"
+        },
+        {
+         "t": "plays",
+         "hu": "játszik"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "játszik",
+       "pic": "🚗",
+       "id": "ab32_2h"
+      },
+      {
+       "q": "Picture 9: A child is brushing hair with a hairbrush.",
+       "q_hu": "9. kép: Egy gyerek kefével fésülködik.",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "puts on clothes",
+         "hu": "felöltözik"
+        },
+        {
+         "t": "brushes his hair",
+         "hu": "megfésüli a haját"
+        },
+        {
+         "t": "dances",
+         "hu": "táncol"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "megfésüli a haját",
+       "pic": "💇",
+       "id": "ab32_2i"
+      }
+     ],
+     "id": "ab32_2"
+    }
+   ]
+  },
+  {
+   "id": "ab33",
+   "book": "ab",
+   "page": 33,
+   "unit": "u3",
+   "title": "Movers Listening",
+   "title_hu": "Movers hallás utáni értés",
+   "img": "en_ab_photo-19",
+   "page_box": [
+    0.503,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "summary_hu": "Vizsgagyakorló hallgatási feladat: Lily különböző helyeken különböző ételeket eszik. A hangfelvétel alapján minden ételhez (banán, szendvics, fagyi, cukorka, torta) be kell írni a hely betűjét (A–H). A palacsinta a példa: H (étkezde).",
+   "words": [
+    {
+     "w": "the pancakes",
+     "hu": "a palacsinta",
+     "pic": "🥞"
+    },
+    {
+     "w": "the banana",
+     "hu": "a banán",
+     "pic": "🍌"
+    },
+    {
+     "w": "the sandwich",
+     "hu": "a szendvics",
+     "pic": "🥪"
+    },
+    {
+     "w": "the ice cream",
+     "hu": "a fagylalt",
+     "pic": "🍦"
+    },
+    {
+     "w": "the sweets",
+     "hu": "a cukorka",
+     "pic": "🍬"
+    },
+    {
+     "w": "the cake",
+     "hu": "a torta",
+     "pic": "🍰"
+    },
+    {
+     "w": "the picnic",
+     "hu": "a piknik",
+     "pic": "🧺"
+    },
+    {
+     "w": "the beach",
+     "hu": "a tengerpart",
+     "pic": "🏖️"
+    },
+    {
+     "w": "the birthday party",
+     "hu": "a születésnapi buli",
+     "pic": "🎂"
+    },
+    {
+     "w": "the cinema",
+     "hu": "a mozi",
+     "pic": "🎬"
+    },
+    {
+     "w": "the bus",
+     "hu": "a busz",
+     "pic": "🚌"
+    },
+    {
+     "w": "the supermarket",
+     "hu": "a szupermarket",
+     "pic": "🛒"
+    },
+    {
+     "w": "the school",
+     "hu": "az iskola",
+     "pic": "🏫"
+    },
+    {
+     "w": "the diner",
+     "hu": "az étkezde, büfé",
+     "pic": "🍽️"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Let's listen: what food does Lily have in different places?",
+     "hu": "Hallgassuk meg: milyen ételt eszik Lily különböző helyeken?",
+     "pic": "🎧"
+    },
+    "sentences": [
+     {
+      "es": "This is a listening test. You hear Lily talk about food.",
+      "hu": "Ez egy hallás utáni feladat. Lily az ételekről beszél.",
+      "pic": "🎧"
+     },
+     {
+      "es": "There are six foods: pancakes, banana, sandwich, ice cream, sweets and cake.",
+      "hu": "Hat étel van: palacsinta, banán, szendvics, fagyi, cukorka és torta.",
+      "pic": "🍽️"
+     },
+     {
+      "es": "There are eight places, A to H.",
+      "hu": "Nyolc hely van, A-tól H-ig.",
+      "pic": "🔠"
+     },
+     {
+      "es": "A: Lily is having a picnic in the park.",
+      "hu": "A: Lily piknikezik a parkban.",
+      "pic": "🧺"
+     },
+     {
+      "es": "B: She is sitting on the beach.",
+      "hu": "B: A tengerparton ül.",
+      "pic": "🏖️"
+     },
+     {
+      "es": "C: She is at a birthday party.",
+      "hu": "C: Egy születésnapi bulin van.",
+      "pic": "🎂"
+     },
+     {
+      "es": "D: She is at the cinema.",
+      "hu": "D: A moziban van.",
+      "pic": "🎬"
+     },
+     {
+      "es": "E: She is on the bus. F: She is at the supermarket.",
+      "hu": "E: A buszon ül. F: A szupermarketben van.",
+      "pic": "🚌"
+     },
+     {
+      "es": "G: She is going to school. H: She is in a diner.",
+      "hu": "G: Iskolába megy. H: Egy étkezdében ül.",
+      "pic": "🏫"
+     },
+     {
+      "es": "Example: Lily has pancakes in the diner. The answer is H.",
+      "hu": "Példa: Lily az étkezdében eszik palacsintát. A válasz H.",
+      "pic": "🥞"
+     },
+     {
+      "es": "Two places are not used.",
+      "hu": "Két helyet nem kell használni.",
+      "pic": "❌"
+     }
+    ],
+    "remember": [
+     {
+      "es": "Listen for the food word and the place word.",
+      "hu": "Figyelj az étel nevére és a hely nevére!"
+     },
+     {
+      "es": "Write ONE letter in each box.",
+      "hu": "Minden dobozba EGY betűt írj."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, where is Lily in picture B?",
+      "hu": "Martin, hol van Lily a B képen?"
+     },
+     {
+      "who": "Martin",
+      "es": "At the cinema!",
+      "hu": "A moziban!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, look again! There's sand and sea.",
+      "hu": "Miau, nézd meg újra! Homok és tenger van ott."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh, she's on the beach!",
+      "hu": "Ó, a tengerparton van!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Yes! And where does she have pancakes?",
+      "hu": "Igen! És hol eszik palacsintát?"
+     },
+     {
+      "who": "Martin",
+      "es": "In the diner. That's H!",
+      "hu": "Az étkezdében. Ez a H!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "There are eight pictures of places.",
+      "hu": "Nyolc kép van helyekről.",
+      "answer": true,
+      "why_es": "The places are A to H.",
+      "why_hu": "A-tól H-ig."
+     },
+     {
+      "es": "In picture D Lily is at the supermarket.",
+      "hu": "A D képen Lily a szupermarketben van.",
+      "answer": false,
+      "why_es": "In picture D she is at the cinema.",
+      "why_hu": "A D képen moziban van."
+     },
+     {
+      "es": "The example answer for pancakes is H.",
+      "hu": "A palacsinta példa-válasza H.",
+      "answer": true,
+      "why_es": "Lily has pancakes in the diner.",
+      "why_hu": "Lily az étkezdében eszik palacsintát."
+     },
+     {
+      "es": "You write a number in each box.",
+      "hu": "Minden dobozba számot írsz.",
+      "answer": false,
+      "why_es": "You write a letter.",
+      "why_hu": "Betűt írsz."
+     },
+     {
+      "es": "In picture E Lily is on the bus.",
+      "hu": "Az E képen Lily a buszon ül.",
+      "answer": true,
+      "why_es": "She is sitting on a bus seat.",
+      "why_hu": "Egy busz ülésén ül."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "What food does Lily have in these places? Listen and write a letter in each box. There is one example.",
+     "text_hu": "Milyen ételt eszik Lily ezeken a helyeken? Hallgasd meg, és írj egy betűt minden dobozba. Van egy példa.",
+     "box": [
+      0.51,
+      0.12,
+      0.99,
+      0.94
+     ],
+     "context": {
+      "es": "Six foods: pancakes (example: H), banana, sandwich, ice cream, sweets, cake. Eight pictures of Lily: A picnic, B beach, C birthday party, D cinema, E bus, F supermarket, G school, H diner.",
+      "hu": "Hat étel: palacsinta (példa: H), banán, szendvics, fagyi, cukorka, torta. Nyolc kép Lilyről: A piknik, B tengerpart, C születésnap, D mozi, E busz, F szupermarket, G iskola, H étkezde."
+     },
+     "pic": "🎧🍌🍰",
+     "help": {
+      "es": "First say what each place is in English. Then listen for the food and the place together.",
+      "hu": "Előbb mondd ki angolul, mi az egyes hely. Aztán figyeld, melyik étel melyik hellyel hangzik el."
+     },
+     "items": [
+      {
+       "q": "Example: pancakes – where does Lily have them?",
+       "q_hu": "Példa: palacsinta – hol eszi Lily?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "H – diner",
+         "hu": "H – étkezde"
+        },
+        {
+         "t": "A – picnic",
+         "hu": "A – piknik"
+        },
+        {
+         "t": "D – cinema",
+         "hu": "D – mozi"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "H – az étkezdében (ez a példa).",
+       "pic": "🥞",
+       "id": "ab33_1a"
+      },
+      {
+       "q": "Listen: where does Lily have the banana? Write a letter (A–G). Places: A picnic · B beach · C birthday party · D cinema · E bus · F supermarket · G school · H diner (café)",
+       "q_hu": "Hallgasd meg: hol eszi Lily ezt: banán? Írj egy betűt (A–G). Helyek: A piknik · B tengerpart · C születésnap · D mozi · E busz · F szupermarket · G iskola · H étkezde",
+       "kind": "open",
+       "answer": "Depends on the recording (audio track 8).",
+       "answer_hu": "A hangfelvételtől függ (8-as hanganyag); a szülő a felvétel alapján ellenőrizze.",
+       "pic": "🍌",
+       "id": "ab33_1b"
+      },
+      {
+       "q": "Listen: where does Lily have the sandwich? Write a letter (A–G). Places: A picnic · B beach · C birthday party · D cinema · E bus · F supermarket · G school · H diner (café)",
+       "q_hu": "Hallgasd meg: hol eszi Lily ezt: szendvics? Írj egy betűt (A–G). Helyek: A piknik · B tengerpart · C születésnap · D mozi · E busz · F szupermarket · G iskola · H étkezde",
+       "kind": "open",
+       "answer": "Depends on the recording (audio track 8).",
+       "answer_hu": "A hangfelvételtől függ (8-as hanganyag); a szülő a felvétel alapján ellenőrizze.",
+       "pic": "🥪",
+       "id": "ab33_1c"
+      },
+      {
+       "q": "Listen: where does Lily have the ice cream? Write a letter (A–G). Places: A picnic · B beach · C birthday party · D cinema · E bus · F supermarket · G school · H diner (café)",
+       "q_hu": "Hallgasd meg: hol eszi Lily ezt: fagylalt? Írj egy betűt (A–G). Helyek: A piknik · B tengerpart · C születésnap · D mozi · E busz · F szupermarket · G iskola · H étkezde",
+       "kind": "open",
+       "answer": "Depends on the recording (audio track 8).",
+       "answer_hu": "A hangfelvételtől függ (8-as hanganyag); a szülő a felvétel alapján ellenőrizze.",
+       "pic": "🍦",
+       "id": "ab33_1d"
+      },
+      {
+       "q": "Listen: where does Lily have the sweets? Write a letter (A–G). Places: A picnic · B beach · C birthday party · D cinema · E bus · F supermarket · G school · H diner (café)",
+       "q_hu": "Hallgasd meg: hol eszi Lily ezt: cukorka? Írj egy betűt (A–G). Helyek: A piknik · B tengerpart · C születésnap · D mozi · E busz · F szupermarket · G iskola · H étkezde",
+       "kind": "open",
+       "answer": "Depends on the recording (audio track 8).",
+       "answer_hu": "A hangfelvételtől függ (8-as hanganyag); a szülő a felvétel alapján ellenőrizze.",
+       "pic": "🍬",
+       "id": "ab33_1e"
+      },
+      {
+       "q": "Listen: where does Lily have the cake? Write a letter (A–G). Places: A picnic · B beach · C birthday party · D cinema · E bus · F supermarket · G school · H diner (café)",
+       "q_hu": "Hallgasd meg: hol eszi Lily ezt: torta? Írj egy betűt (A–G). Helyek: A piknik · B tengerpart · C születésnap · D mozi · E busz · F szupermarket · G iskola · H étkezde",
+       "kind": "open",
+       "answer": "Depends on the recording (audio track 8).",
+       "answer_hu": "A hangfelvételtől függ (8-as hanganyag); a szülő a felvétel alapján ellenőrizze.",
+       "pic": "🍰",
+       "id": "ab33_1f"
+      }
+     ],
+     "id": "ab33_1"
+    }
+   ]
+  },
+  {
+   "id": "ab34",
+   "book": "ab",
+   "page": 34,
+   "unit": "u3",
+   "title": "What do astronauts do in space?",
+   "title_hu": "Mit csinálnak az űrhajósok az űrben?",
+   "img": "en_ab_photo-20",
+   "page_box": [
+    0.02,
+    0.0,
+    0.5,
+    1.0
+   ],
+   "summary_hu": "Egész és fél órák kiolvasása (o'clock, half past). Sally űrhajós blogja alapján (Pupil's Book 35. o.) ki kell választani, mit csinál ő. Aztán saját esti napirendről kell blogbejegyzést írni, és ellenőrizni, benne vannak-e a tevékenységek és az időpontok.",
+   "words": [
+    {
+     "w": "the astronaut",
+     "hu": "az űrhajós",
+     "pic": "👩‍🚀"
+    },
+    {
+     "w": "space",
+     "hu": "az űr, világűr",
+     "pic": "🌌"
+    },
+    {
+     "w": "half past",
+     "hu": "fél (… után 30 perccel)",
+     "pic": "🕧"
+    },
+    {
+     "w": "the pyjamas",
+     "hu": "a pizsama",
+     "pic": "🛌"
+    },
+    {
+     "w": "go to sleep",
+     "hu": "elalszik",
+     "pic": "😴"
+    },
+    {
+     "w": "wash",
+     "hu": "mosakszik",
+     "pic": "🧼"
+    },
+    {
+     "w": "brush teeth",
+     "hu": "fogat mos",
+     "pic": "🪥"
+    },
+    {
+     "w": "the evening",
+     "hu": "az este",
+     "pic": "🌙"
+    },
+    {
+     "w": "the blog",
+     "hu": "a blog (internetes napló)",
+     "pic": "💻"
+    },
+    {
+     "w": "the spacesuit",
+     "hu": "a szkafander, űrruha",
+     "pic": "🧑‍🚀"
+    },
+    {
+     "w": "the spacewalk",
+     "hu": "az űrséta",
+     "pic": "🛰️"
+    },
+    {
+     "w": "the date",
+     "hu": "a dátum",
+     "pic": "📆"
+    },
+    {
+     "w": "tick",
+     "hu": "pipáld ki",
+     "pic": "✅"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Astronauts have a routine too! Let's tell the time with half past.",
+     "hu": "Az űrhajósoknak is van napirendjük! Tanuljuk meg a 'half past' időt.",
+     "pic": "👩‍🚀"
+    },
+    "sentences": [
+     {
+      "es": "3.00 is three o'clock.",
+      "hu": "A 3.00 három óra.",
+      "pic": "🕒"
+     },
+     {
+      "es": "When the long hand is on six, we say half past.",
+      "hu": "Ha a nagy mutató a 6-on áll, azt mondjuk: half past (fél).",
+      "pic": "🕡"
+     },
+     {
+      "es": "9.30 is half past nine.",
+      "hu": "A 9.30 angolul half past nine, magyarul fél tíz.",
+      "pic": "🕤"
+     },
+     {
+      "es": "In English we count from the hour before: half past six = fél hét.",
+      "hu": "Angolul az előző órától számolunk: half past six = fél hét.",
+      "pic": "💡"
+     },
+     {
+      "es": "Sally is an astronaut. She lives on the Space Station.",
+      "hu": "Sally űrhajós. Az űrállomáson él.",
+      "pic": "🛰️"
+     },
+     {
+      "es": "In her blog she gets up at six o'clock and has a wash.",
+      "hu": "A blogja szerint hatkor kel, és megmosakszik.",
+      "pic": "🧼"
+     },
+     {
+      "es": "At half past six she has breakfast: eggs and bread.",
+      "hu": "Fél hétkor reggelizik: tojást és kenyeret.",
+      "pic": "🍳"
+     },
+     {
+      "es": "Then she puts on her spacesuit. It takes a long time.",
+      "hu": "Aztán felveszi az űrruháját. Ez sokáig tart.",
+      "pic": "🧑‍🚀"
+     },
+     {
+      "es": "At nine o'clock she goes outside for a spacewalk.",
+      "hu": "Kilenckor kimegy egy űrsétára.",
+      "pic": "🌍"
+     },
+     {
+      "es": "Now think about your evening. What do you do?",
+      "hu": "Most gondolj az estédre. Mit csinálsz?",
+      "pic": "🌙"
+     },
+     {
+      "es": "Write a blog post. Start with the date, for example 24 June.",
+      "hu": "Írj egy blogbejegyzést. Kezdd a dátummal, pl. június 24.",
+      "pic": "📆"
+     },
+     {
+      "es": "Put your activities in order and write the times.",
+      "hu": "Írd sorrendben a tevékenységeidet, és írd mellé az időt.",
+      "pic": "🕖"
+     }
+    ],
+    "remember": [
+     {
+      "es": "long hand on 12 → o'clock · long hand on 6 → half past",
+      "hu": "Nagy mutató a 12-n → egész óra · nagy mutató a 6-on → half past."
+     },
+     {
+      "es": "half past seven = fél nyolc",
+      "hu": "Vigyázz: half past seven = fél NYOLC (hét után fél órával)."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, what is 6.30 in English?",
+      "hu": "Martin, hogy mondjuk angolul, hogy 6.30?"
+     },
+     {
+      "who": "Martin",
+      "es": "Half past seven!",
+      "hu": "Half past seven!"
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow, no! It's half past six. Six and thirty minutes.",
+      "hu": "Miau, nem! Half past six. Hat óra harminc perc."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh! In Hungarian it's fél hét.",
+      "hu": "Ó! Magyarul az fél hét."
+     },
+     {
+      "who": "Kitty",
+      "es": "Yes! What does Sally do at half past six?",
+      "hu": "Igen! Mit csinál Sally fél hétkor?"
+     },
+     {
+      "who": "Martin",
+      "es": "She has breakfast in space!",
+      "hu": "Reggelizik az űrben!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "9.30 is half past nine.",
+      "hu": "A 9.30 half past nine.",
+      "answer": true,
+      "why_es": "Nine and thirty minutes.",
+      "why_hu": "Kilenc óra harminc perc."
+     },
+     {
+      "es": "Half past eight is 8.00.",
+      "hu": "A half past eight 8.00.",
+      "answer": false,
+      "why_es": "Half past eight is 8.30.",
+      "why_hu": "A half past eight 8.30."
+     },
+     {
+      "es": "Sally gets up at six o'clock.",
+      "hu": "Sally hatkor kel.",
+      "answer": true,
+      "why_es": "Her blog says: I get up at six o'clock.",
+      "why_hu": "A blogja szerint hatkor kel."
+     },
+     {
+      "es": "Sally brushes her teeth in the blog.",
+      "hu": "Sally fogat mos a blogban.",
+      "answer": false,
+      "why_es": "The blog says she has a wash.",
+      "why_hu": "A blogban mosakszik (has a wash)."
+     },
+     {
+      "es": "Sally has eggs and bread for breakfast.",
+      "hu": "Sally tojást és kenyeret reggelizik.",
+      "answer": true,
+      "why_es": "Eggs and bread! Yum!",
+      "why_hu": "Tojás és kenyér! Nyami!"
+     },
+     {
+      "es": "When the long hand is on 6, we say o'clock.",
+      "hu": "Ha a nagy mutató a 6-on van, o'clock-ot mondunk.",
+      "answer": false,
+      "why_es": "We say half past.",
+      "why_hu": "Half past-ot mondunk."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Look and complete the times.",
+     "text_hu": "Nézd meg, és egészítsd ki az időpontokat.",
+     "box": [
+      0.05,
+      0.1,
+      0.5,
+      0.38
+     ],
+     "context": {
+      "es": "Six clocks with times: 3.00, 9.30, 4.00, 6.30, 10.00, 8.30. Under each clock one word is given (o'clock, half, nine, four, six, o'clock, half); write the missing word.",
+      "hu": "Hat óra időpontokkal: 3.00, 9.30, 4.00, 6.30, 10.00, 8.30. Mindegyik alatt egy szó adott (o'clock, half, nine, four, six…), a hiányzó szót kell beírni."
+     },
+     "pic": "🕒🕤",
+     "help": {
+      "es": ":00 is o'clock. :30 is half past.",
+      "hu": ":00 = o'clock (egész). :30 = half past (fél)."
+     },
+     "items": [
+      {
+       "q": "1) 3.00 – Short hand on 3, long hand on 12. ___ o'clock",
+       "q_hu": "1) 3.00 – Kis mutató a 3-on, nagy a 12-n. ___ óra",
+       "kind": "type",
+       "answer": "three",
+       "alts": [],
+       "answer_hu": "három",
+       "pic": "🕒",
+       "id": "ab34_1a"
+      },
+      {
+       "q": "2) 9.30 – Short hand between 9 and 10, long hand on 6. half past ___",
+       "q_hu": "2) 9.30 – Kis mutató a 9 és 10 között, nagy a 6-on. fél ___ (után)",
+       "kind": "type",
+       "answer": "nine",
+       "alts": [],
+       "answer_hu": "fél tíz (half past nine)",
+       "pic": "🕤",
+       "id": "ab34_1b"
+      },
+      {
+       "q": "3) 4.00 – Short hand on 4, long hand on 12. four ___",
+       "q_hu": "3) 4.00 – Kis mutató a 4-en, nagy a 12-n. négy ___",
+       "kind": "type",
+       "answer": "o'clock",
+       "alts": [
+        "oclock"
+       ],
+       "answer_hu": "négy óra",
+       "pic": "🕓",
+       "id": "ab34_1c"
+      },
+      {
+       "q": "4) 6.30 – Long hand on 6. ___ past six",
+       "q_hu": "4) 6.30 – Nagy mutató a 6-on. ___ past six",
+       "kind": "type",
+       "answer": "half",
+       "alts": [],
+       "answer_hu": "fél hét (half past six)",
+       "pic": "🕡",
+       "id": "ab34_1d"
+      },
+      {
+       "q": "5) 10.00 – Short hand on 10, long hand on 12. ___ o'clock",
+       "q_hu": "5) 10.00 – Kis mutató a 10-en, nagy a 12-n. ___ óra",
+       "kind": "type",
+       "answer": "ten",
+       "alts": [],
+       "answer_hu": "tíz óra",
+       "pic": "🕙",
+       "id": "ab34_1e"
+      },
+      {
+       "q": "6) 8.30 – Short hand between 8 and 9, long hand on 6. half past ___",
+       "q_hu": "6) 8.30 – Kis mutató a 8 és 9 között, nagy a 6-on. half past ___",
+       "kind": "type",
+       "answer": "eight",
+       "alts": [],
+       "answer_hu": "fél kilenc (half past eight)",
+       "pic": "🕣",
+       "id": "ab34_1f"
+      },
+      {
+       "q": "Write the whole time: 9.30",
+       "q_hu": "Írd le a teljes időt angolul: 9.30",
+       "kind": "type",
+       "answer": "half past nine",
+       "alts": [],
+       "answer_hu": "fél tíz",
+       "pic": "🕤",
+       "id": "ab34_1g"
+      },
+      {
+       "q": "Write the whole time: 8.30",
+       "q_hu": "Írd le a teljes időt angolul: 8.30",
+       "kind": "type",
+       "answer": "half past eight",
+       "alts": [],
+       "answer_hu": "fél kilenc",
+       "pic": "🕣",
+       "id": "ab34_1h"
+      }
+     ],
+     "id": "ab34_1"
+    },
+    {
+     "n": "2",
+     "text": "Reread the blog on Pupil's Book page 35. Which activity does Sally do?",
+     "text_hu": "Olvasd el újra a blogot a Pupil's Book 35. oldalán. Melyik dolgot csinálja Sally?",
+     "box": [
+      0.05,
+      0.37,
+      0.5,
+      0.63
+     ],
+     "context": {
+      "es": "Four photos: put on pyjamas, go to sleep, wash, brush teeth, and one empty box. Sally's blog: she gets up at six, has a wash, has breakfast at half past six, puts on her spacesuit, and goes outside at nine.",
+      "hu": "Négy fotó: pizsamát vesz, elalszik, mosakszik, fogat mos, és egy üres doboz. Sally blogja: hatkor kel, megmosakszik, fél hétkor reggelizik, felveszi az űrruhát, kilenckor kimegy."
+     },
+     "pic": "👩‍🚀🛰️",
+     "help": {
+      "es": "Find the words of each photo in the blog: 'I have a wash'.",
+      "hu": "Keresd meg a képek szavait a blogban: „I have a wash”."
+     },
+     "items": [
+      {
+       "q": "Does Sally 'put on pyjamas' in her blog?",
+       "q_hu": "Sally blogjában szerepel, hogy „put on pyjamas” (pizsamát vesz)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, ez nincs a blogban.",
+       "pic": "🛌",
+       "id": "ab34_2a"
+      },
+      {
+       "q": "Does Sally 'go to sleep' in her blog?",
+       "q_hu": "Sally blogjában szerepel, hogy „go to sleep” (elalszik)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, ez nincs a blogban.",
+       "pic": "😴",
+       "id": "ab34_2b"
+      },
+      {
+       "q": "Does Sally 'wash' in her blog?",
+       "q_hu": "Sally blogjában szerepel, hogy „wash” (mosakszik)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igen – „I have a wash.”",
+       "pic": "🧼",
+       "id": "ab34_2c"
+      },
+      {
+       "q": "Does Sally 'brush teeth' in her blog?",
+       "q_hu": "Sally blogjában szerepel, hogy „brush teeth” (fogat mos)?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Yes",
+         "hu": "Igen"
+        },
+        {
+         "t": "No",
+         "hu": "Nem"
+        }
+       ],
+       "answer": 1,
+       "answer_hu": "Nem, ez nincs a blogban.",
+       "pic": "🪥",
+       "id": "ab34_2d"
+      },
+      {
+       "q": "Draw and write another activity Sally does in the empty box.",
+       "q_hu": "Rajzolj és írj az üres dobozba egy másik dolgot, amit Sally csinál.",
+       "kind": "open",
+       "answer": "put on a spacesuit / have breakfast / get up",
+       "answer_hu": "szkafandert vesz fel / reggelizik / felkel",
+       "pic": "👩‍🚀",
+       "id": "ab34_2e"
+      }
+     ],
+     "id": "ab34_2"
+    },
+    {
+     "n": "3",
+     "text": "Tick (✓) the activities that you do in the evening. Add one of your own.",
+     "text_hu": "Pipáld ki, amit te este csinálsz. Írj hozzá egy sajátot is.",
+     "box": [
+      0.05,
+      0.66,
+      0.43,
+      0.76
+     ],
+     "context": {
+      "es": "Use the activities from Activity 2: put on pyjamas, go to sleep, wash, brush teeth.",
+      "hu": "Használd a 2. feladat tevékenységeit: pizsama, alvás, mosakodás, fogmosás."
+     },
+     "pic": "✅🌙",
+     "help": {
+      "es": "Think about your evening from dinner to bed.",
+      "hu": "Gondold végig az estédet a vacsorától a lefekvésig."
+     },
+     "items": [
+      {
+       "q": "Which of these do you do in the evening? put on pyjamas / go to sleep / wash / brush teeth",
+       "q_hu": "Melyiket csinálod este? pizsamát veszel / alszol / mosakszol / fogat mosol",
+       "kind": "open",
+       "answer": "put on pyjamas ✓, go to sleep ✓, wash ✓, brush teeth ✓",
+       "answer_hu": "Valószínűleg mind a négyet.",
+       "pic": "✅",
+       "id": "ab34_3a"
+      },
+      {
+       "q": "Add one activity of your own.",
+       "q_hu": "Írj egy saját esti tevékenységet.",
+       "kind": "open",
+       "answer": "read a book",
+       "answer_hu": "könyvet olvasok",
+       "pic": "📚",
+       "id": "ab34_3b"
+      }
+     ],
+     "id": "ab34_3"
+    },
+    {
+     "n": "4",
+     "text": "Write a blog post about your evening routine.",
+     "text_hu": "Írj blogbejegyzést az esti napirendedről.",
+     "box": [
+      0.05,
+      0.75,
+      0.5,
+      0.82
+     ],
+     "context": {
+      "es": "Writing tip: start with the date (24 June) and put your activities in order.",
+      "hu": "Írási tipp: kezdd a dátummal (június 24.), és sorrendben írd a tevékenységeket."
+     },
+     "pic": "💻✏️",
+     "help": {
+      "es": "Use: At seven o'clock I have dinner. At half past eight I…",
+      "hu": "Használd: At seven o'clock I have dinner. At half past eight I…"
+     },
+     "items": [
+      {
+       "q": "Write your blog post.",
+       "q_hu": "Írd meg a blogbejegyzésedet.",
+       "kind": "open",
+       "answer": "24 June. At seven o'clock I have dinner. Then I have a wash and I put on my pyjamas. At half past eight I brush my teeth. At nine o'clock I go to sleep.",
+       "answer_hu": "Június 24. Hétkor vacsorázom. Aztán megmosakszom és felveszem a pizsamámat. Fél kilenckor fogat mosok. Kilenckor elalszom.",
+       "pic": "📝",
+       "id": "ab34_4a"
+      }
+     ],
+     "id": "ab34_4"
+    },
+    {
+     "n": "5",
+     "text": "Did you … include your evening activities? include times?",
+     "text_hu": "Ellenőrizd: beleírtad az esti tevékenységeidet? Beleírtad az időpontokat?",
+     "box": [
+      0.05,
+      0.81,
+      0.5,
+      0.95
+     ],
+     "context": {
+      "es": "A checklist with two boxes to tick, and a writing tip: begin with the date, put activities in order.",
+      "hu": "Ellenőrző lista két kipipálandó négyzettel, és egy írási tipp: dátummal kezdd, sorrendben írd."
+     },
+     "pic": "✅📋",
+     "help": {
+      "es": "Read your blog again and check.",
+      "hu": "Olvasd el újra a blogodat, és ellenőrizd."
+     },
+     "items": [
+      {
+       "q": "A good blog post includes the times. True or false?",
+       "q_hu": "Egy jó blogbejegyzésben benne vannak az időpontok. Igaz vagy hamis?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "True",
+         "hu": "Igaz"
+        },
+        {
+         "t": "False",
+         "hu": "Hamis"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Igaz",
+       "pic": "🕖",
+       "id": "ab34_5a"
+      },
+      {
+       "q": "How do you begin your blog?",
+       "q_hu": "Mivel kezded a blogodat?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "With the date",
+         "hu": "A dátummal"
+        },
+        {
+         "t": "With 'Goodbye'",
+         "hu": "Azzal, hogy 'Viszlát'"
+        },
+        {
+         "t": "With a question",
+         "hu": "Egy kérdéssel"
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "A dátummal",
+       "pic": "📆",
+       "id": "ab34_5b"
+      }
+     ],
+     "id": "ab34_5"
+    }
+   ]
+  },
+  {
+   "id": "ab35",
+   "book": "ab",
+   "page": 35,
+   "unit": "u3",
+   "title": "Do you remember?",
+   "title_hu": "Emlékszel?",
+   "img": "en_ab_photo-20",
+   "page_box": [
+    0.5,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "summary_hu": "A fejezet ismétlése: Paul hétfői napjáról szóló történetet kell kiegészíteni a képek alapján (zuhany, konyha, kabát, busz, iskola, időpontok). Utána a Pupil's Book Lock & Key képregényéről kell kérdésekre válaszolni.",
+   "words": [
+    {
+     "w": "the kitchen",
+     "hu": "a konyha",
+     "pic": "🍳"
+    },
+    {
+     "w": "the coat",
+     "hu": "a kabát",
+     "pic": "🧥"
+    },
+    {
+     "w": "the bus stop",
+     "hu": "a buszmegálló",
+     "pic": "🚏"
+    },
+    {
+     "w": "catch a bus",
+     "hu": "elér egy buszt",
+     "pic": "🚌"
+    },
+    {
+     "w": "walk",
+     "hu": "gyalogol",
+     "pic": "🚶"
+    },
+    {
+     "w": "come home",
+     "hu": "hazajön",
+     "pic": "🏠"
+    },
+    {
+     "w": "the computer",
+     "hu": "a számítógép",
+     "pic": "💻"
+    },
+    {
+     "w": "the reporter",
+     "hu": "a riporter",
+     "pic": "🎤"
+    },
+    {
+     "w": "the detective",
+     "hu": "a nyomozó, detektív",
+     "pic": "🕵️"
+    },
+    {
+     "w": "the detective agency",
+     "hu": "a detektíviroda",
+     "pic": "🏢"
+    },
+    {
+     "w": "clever",
+     "hu": "okos",
+     "pic": "🧠"
+    },
+    {
+     "w": "quiet",
+     "hu": "csendes",
+     "pic": "🤫"
+    },
+    {
+     "w": "work a lot",
+     "hu": "sokat dolgozik",
+     "pic": "💼"
+    }
+   ],
+   "learn": {
+    "intro": {
+     "es": "Do you remember the unit? Let's read about Paul's Monday!",
+     "hu": "Emlékszel a fejezetre? Olvassunk Paul hétfőjéről!",
+     "pic": "🔁"
+    },
+    "sentences": [
+     {
+      "es": "On Mondays Paul wakes up at eight o'clock.",
+      "hu": "Hétfőnként Paul nyolckor ébred.",
+      "pic": "⏰"
+     },
+     {
+      "es": "He gets up and always has a shower.",
+      "hu": "Felkel, és mindig lezuhanyozik.",
+      "pic": "🚿"
+     },
+     {
+      "es": "Then he gets dressed and goes to the kitchen for breakfast.",
+      "hu": "Aztán felöltözik és kimegy a konyhába reggelizni.",
+      "pic": "🍳"
+     },
+     {
+      "es": "After breakfast he puts on his coat.",
+      "hu": "Reggeli után felveszi a kabátját.",
+      "pic": "🧥"
+     },
+     {
+      "es": "He goes to the bus stop to catch a bus.",
+      "hu": "Kimegy a buszmegállóba, hogy elérje a buszt.",
+      "pic": "🚌"
+     },
+     {
+      "es": "He never walks to school.",
+      "hu": "Soha nem gyalog megy iskolába.",
+      "pic": "🏫"
+     },
+     {
+      "es": "At four o'clock he comes home and does his homework before dinner.",
+      "hu": "Négykor hazajön, és vacsora előtt megírja a házit.",
+      "pic": "📝"
+     },
+     {
+      "es": "After dinner he sometimes plays on his computer.",
+      "hu": "Vacsora után néha a számítógépén játszik.",
+      "pic": "💻"
+     },
+     {
+      "es": "He goes to bed at nine o'clock.",
+      "hu": "Kilenckor lefekszik.",
+      "pic": "🛏️"
+     },
+     {
+      "es": "In the Lock and Key story a reporter visits the detectives.",
+      "hu": "A Lock és Key történetben egy riporter meglátogatja a detektíveket.",
+      "pic": "🎤"
+     },
+     {
+      "es": "He says detectives work a lot and get up early.",
+      "hu": "Azt mondja, a detektívek sokat dolgoznak és korán kelnek.",
+      "pic": "💼"
+     },
+     {
+      "es": "But at nine o'clock Key is still in bed!",
+      "hu": "De kilenckor Key még ágyban van!",
+      "pic": "😴"
+     },
+     {
+      "es": "Key says: we never get up before ten o'clock.",
+      "hu": "Key azt mondja: soha nem kelünk fel tíz előtt.",
+      "pic": "🕙"
+     },
+     {
+      "es": "The reporter says detectives are very clever and very quiet.",
+      "hu": "A riporter szerint a detektívek nagyon okosak és nagyon csendesek.",
+      "pic": "🕵️"
+     },
+     {
+      "es": "Then Key walks into a lamp post. Yeeouw, my nose!",
+      "hu": "Aztán Key nekimegy egy lámpaoszlopnak. Jaj, az orrom!",
+      "pic": "🤕"
+     }
+    ],
+    "remember": [
+     {
+      "es": "He never walks to school.",
+      "hu": "never = soha · always = mindig · sometimes = néha"
+     },
+     {
+      "es": "At four o'clock = négy órakor",
+      "hu": "Időpont előtt 'at' áll: at nine o'clock."
+     }
+    ],
+    "dialogue": [
+     {
+      "who": "Kitty",
+      "es": "Martin, does Paul walk to school?",
+      "hu": "Martin, Paul gyalog megy iskolába?"
+     },
+     {
+      "who": "Martin",
+      "es": "Yes, he always walks.",
+      "hu": "Igen, mindig gyalog megy."
+     },
+     {
+      "who": "Kitty",
+      "es": "Miaow! Read again: he never walks. He catches a bus.",
+      "hu": "Miau! Olvasd el újra: soha nem gyalogol. Busszal megy."
+     },
+     {
+      "who": "Martin",
+      "es": "Oh, right! He goes by bus.",
+      "hu": "Ó, tényleg! Busszal megy."
+     },
+     {
+      "who": "Kitty",
+      "es": "And are Lock and Key very quiet?",
+      "hu": "És Lock és Key nagyon csendes?"
+     },
+     {
+      "who": "Martin",
+      "es": "No! Key walks into a lamp post. Yeeouw!",
+      "hu": "Nem! Key nekimegy egy lámpaoszlopnak. Jaj!"
+     }
+    ],
+    "tf": [
+     {
+      "es": "Paul wakes up at eight o'clock on Mondays.",
+      "hu": "Paul hétfőn nyolckor ébred.",
+      "answer": true,
+      "why_es": "The story says eight o'clock.",
+      "why_hu": "A történet szerint nyolckor."
+     },
+     {
+      "es": "Paul walks to school.",
+      "hu": "Paul gyalog megy iskolába.",
+      "answer": false,
+      "why_es": "He never walks to school. He catches a bus.",
+      "why_hu": "Soha nem gyalogol, busszal megy."
+     },
+     {
+      "es": "Paul comes home at four o'clock.",
+      "hu": "Paul négykor jön haza.",
+      "answer": true,
+      "why_es": "At four o'clock Paul comes home.",
+      "why_hu": "Négykor jön haza."
+     },
+     {
+      "es": "Lock and Key get up at six o'clock.",
+      "hu": "Lock és Key hatkor kel.",
+      "answer": false,
+      "why_es": "They never get up before ten o'clock.",
+      "why_hu": "Tíz előtt soha nem kelnek fel."
+     },
+     {
+      "es": "The reporter says detectives are very clever.",
+      "hu": "A riporter szerint a detektívek nagyon okosak.",
+      "answer": true,
+      "why_es": "Everybody knows detectives are very clever.",
+      "why_hu": "„Mindenki tudja, hogy a detektívek nagyon okosak.”"
+     },
+     {
+      "es": "Paul goes to bed at ten o'clock.",
+      "hu": "Paul tízkor fekszik le.",
+      "answer": false,
+      "why_es": "He goes to bed at nine o'clock.",
+      "why_hu": "Kilenckor fekszik le."
+     }
+    ]
+   },
+   "tasks": [
+    {
+     "n": "1",
+     "text": "Read and complete the story.",
+     "text_hu": "Olvasd el és egészítsd ki a történetet.",
+     "box": [
+      0.51,
+      0.12,
+      0.99,
+      0.57
+     ],
+     "context": {
+      "es": "A story about Paul's Monday with small pictures instead of words: alarm clock, shower, table and chairs, red coat, bus, school, clock, laptop, bed, alarm clock. Number 1 is the example: eight o'clock.",
+      "hu": "Történet Paul hétfőjéről, a szavak helyén kis képekkel: ébresztőóra, zuhany, asztal és székek, piros kabát, busz, iskola, óra, laptop, ágy, ébresztőóra. Az 1-es a példa: eight o'clock."
+     },
+     "pic": "📖🚌⏰",
+     "help": {
+      "es": "Say the English word for each little picture. For the clocks, look at the short hand.",
+      "hu": "Mondd ki angolul minden kis kép nevét. Az óráknál a kis mutatót nézd."
+     },
+     "items": [
+      {
+       "q": "(1) On Mondays Paul wakes up at (clock: eight o'clock) ___ – example",
+       "q_hu": "(1) Hétfőnként Paul (óra: nyolc óra) ___-kor ébred – példa",
+       "kind": "type",
+       "answer": "eight o'clock",
+       "alts": [
+        "8 o'clock",
+        "eight oclock"
+       ],
+       "answer_hu": "nyolc óra",
+       "pic": "⏰",
+       "id": "ab35_1a"
+      },
+      {
+       "q": "(2) always has a (shower picture) ___",
+       "q_hu": "(2) mindig (zuhany képe) ___-t vesz",
+       "kind": "type",
+       "answer": "shower",
+       "alts": [],
+       "answer_hu": "zuhany",
+       "pic": "🚿",
+       "id": "ab35_1b"
+      },
+      {
+       "q": "(3) (table and chairs picture) Then he gets dressed and goes to the ___ for breakfast.",
+       "q_hu": "(3) (asztal és székek képe) Aztán felöltözik és a ___-ba megy reggelizni.",
+       "kind": "type",
+       "answer": "kitchen",
+       "alts": [],
+       "answer_hu": "konyha",
+       "pic": "🍳",
+       "id": "ab35_1c"
+      },
+      {
+       "q": "(4) After breakfast he puts on his (red coat picture) ___",
+       "q_hu": "(4) Reggeli után felveszi a (piros kabát képe) ___-t",
+       "kind": "type",
+       "answer": "coat",
+       "alts": [
+        "jacket"
+       ],
+       "answer_hu": "kabát",
+       "pic": "🧥",
+       "id": "ab35_1d"
+      },
+      {
+       "q": "(5) and he goes to the bus stop to catch a (bus picture) ___",
+       "q_hu": "(5) és a megállóba megy, hogy elérje a (busz képe) ___-t",
+       "kind": "type",
+       "answer": "bus",
+       "alts": [],
+       "answer_hu": "busz",
+       "pic": "🚌",
+       "id": "ab35_1e"
+      },
+      {
+       "q": "(6) He never walks to (school picture) ___",
+       "q_hu": "(6) Soha nem gyalog megy az (iskola képe) ___-ba",
+       "kind": "type",
+       "answer": "school",
+       "alts": [],
+       "answer_hu": "iskola",
+       "pic": "🏫",
+       "id": "ab35_1f"
+      },
+      {
+       "q": "(7) At (clock: four o'clock) ___ Paul comes home.",
+       "q_hu": "(7) (óra: négy óra) ___-kor Paul hazajön.",
+       "kind": "type",
+       "answer": "four o'clock",
+       "alts": [
+        "4 o'clock",
+        "four oclock"
+       ],
+       "answer_hu": "négy óra",
+       "pic": "🕓",
+       "id": "ab35_1g"
+      },
+      {
+       "q": "(8) After dinner he sometimes plays on his (laptop picture) ___",
+       "q_hu": "(8) Vacsora után néha a (laptop képe) ___-on játszik.",
+       "kind": "type",
+       "answer": "computer",
+       "alts": [
+        "laptop"
+       ],
+       "answer_hu": "számítógép",
+       "pic": "💻",
+       "id": "ab35_1h"
+      },
+      {
+       "q": "(9) He goes to (bed picture) ___",
+       "q_hu": "(9) (ágy képe) ___-ba megy",
+       "kind": "type",
+       "answer": "bed",
+       "alts": [],
+       "answer_hu": "ágy",
+       "pic": "🛏️",
+       "id": "ab35_1i"
+      },
+      {
+       "q": "(10) at (alarm clock: nine o'clock) ___",
+       "q_hu": "(10) (ébresztőóra: kilenc óra) ___-kor",
+       "kind": "type",
+       "answer": "nine o'clock",
+       "alts": [
+        "9 o'clock",
+        "nine oclock"
+       ],
+       "answer_hu": "kilenc óra",
+       "pic": "🕘",
+       "id": "ab35_1j"
+      }
+     ],
+     "id": "ab35_1"
+    },
+    {
+     "n": "2",
+     "text": "Write the answers.",
+     "text_hu": "Írd le a válaszokat.",
+     "box": [
+      0.51,
+      0.57,
+      0.99,
+      0.94
+     ],
+     "context": {
+      "es": "Six questions about the Lock & Key comic (Pupil's Book p. 33): a reporter, Johnny, visits the detective agency at nine o'clock, but Key is still in bed. Key says they never get up before ten. The reporter says detectives are very clever and very quiet, then Key walks into a lamp post.",
+      "hu": "Hat kérdés a Lock & Key képregényről (Pupil's Book 33. o.): egy riporter, Johnny, kilenckor a detektívirodához megy, de Key még ágyban van. Key azt mondja, tíz előtt sosem kelnek fel. A riporter szerint a detektívek nagyon okosak és csendesek, aztán Key nekimegy egy lámpaoszlopnak."
+     },
+     "pic": "🕵️🎤",
+     "help": {
+      "es": "Remember the comic: what does Key say on the phone?",
+      "hu": "Emlékezz a képregényre: mit mond Key a telefonba?"
+     },
+     "items": [
+      {
+       "q": "1 What does the reporter say about detectives' routine?",
+       "q_hu": "1 Mit mond a riporter a detektívek napirendjéről?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "They work a lot and get up early.",
+         "hu": "Sokat dolgoznak és korán kelnek."
+        },
+        {
+         "t": "They never work.",
+         "hu": "Soha nem dolgoznak."
+        },
+        {
+         "t": "They go to bed early.",
+         "hu": "Korán fekszenek."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "„Detectives work a lot and get up before you and me.” – sokat dolgoznak és korábban kelnek, mint mi.",
+       "pic": "🎤",
+       "id": "ab35_2a"
+      },
+      {
+       "q": "2 What time do Lock and Key usually get up?",
+       "q_hu": "2 Hánykor kel fel általában Lock és Key?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "At six o'clock",
+         "hu": "Hatkor"
+        },
+        {
+         "t": "At nine o'clock",
+         "hu": "Kilenckor"
+        },
+        {
+         "t": "At ten o'clock",
+         "hu": "Tízkor"
+        }
+       ],
+       "answer": 2,
+       "answer_hu": "Tízkor – „We never get up before ten o'clock.”",
+       "pic": "🕙",
+       "id": "ab35_2b"
+      },
+      {
+       "q": "3 Why aren't Lock and Key at the detective agency?",
+       "q_hu": "3 Miért nincs Lock és Key a detektíviroda épületében?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "Because they are in bed.",
+         "hu": "Mert még ágyban vannak."
+        },
+        {
+         "t": "Because they are at school.",
+         "hu": "Mert iskolában vannak."
+        },
+        {
+         "t": "Because they are on holiday.",
+         "hu": "Mert szabadságon vannak."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Mert még ágyban vannak (kilenc óra van, és ők tíz előtt nem kelnek fel).",
+       "pic": "🛏️",
+       "id": "ab35_2c"
+      },
+      {
+       "q": "4 What adjectives are used to describe Lock and Key? (very c___ and very q___)",
+       "q_hu": "4 Milyen melléknevekkel írják le Lockot és Keyt? (very c___ és very q___)",
+       "kind": "type",
+       "answer": "clever and quiet",
+       "alts": [
+        "quiet and clever",
+        "very clever and very quiet",
+        "very quiet and very clever"
+       ],
+       "answer_hu": "nagyon okos és nagyon csendes",
+       "pic": "🕵️",
+       "id": "ab35_2d"
+      },
+      {
+       "q": "5 Do you think these are the correct words to describe them?",
+       "q_hu": "5 Szerinted ezek a szavak illenek rájuk?",
+       "kind": "open",
+       "answer": "No, I don't. They aren't very clever – Key walks into a lamp post and they make a lot of noise.",
+       "answer_hu": "Nem, mert Key nekimegy egy lámpaoszlopnak, és egyáltalán nem csendesek.",
+       "pic": "🤔",
+       "id": "ab35_2e"
+      },
+      {
+       "q": "6 Does the reporter think that Lock and Key work a lot?",
+       "q_hu": "6 A riporter szerint Lock és Key sokat dolgozik?",
+       "kind": "choice",
+       "options": [
+        {
+         "t": "No, because they get up late.",
+         "hu": "Nem, mert későn kelnek."
+        },
+        {
+         "t": "Yes, because they get up early.",
+         "hu": "Igen, mert korán kelnek."
+        }
+       ],
+       "answer": 0,
+       "answer_hu": "Nem – későn kelnek (tíz előtt soha), ezért nem dolgoznak sokat.",
+       "pic": "😴",
+       "id": "ab35_2f"
+      }
+     ],
+     "id": "ab35_2"
+    }
+   ]
+  }
+ ]
+}

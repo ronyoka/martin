@@ -176,6 +176,28 @@
    "units": [
     "u3"
    ]
+  },
+  {
+   "id": "sust_pdf",
+   "kind": "pdf",
+   "title": "Repaso: los sustantivos (PDF)",
+   "title_hu": "Ismétlés: a főnevek (PDF)",
+   "drive": "1mcLVMRLnNGRNIB3IANchw0JnisV4M50G",
+   "units": [
+    "u1",
+    "u3"
+   ]
+  },
+  {
+   "id": "sust_video",
+   "kind": "video",
+   "title": "Vídeo: los sustantivos",
+   "title_hu": "Videó: a főnevek",
+   "drive": "1nkVuUQhkzxJyqae2K3Zh0Cpn851xP1GH",
+   "units": [
+    "u1",
+    "u3"
+   ]
   }
  ]
 }
