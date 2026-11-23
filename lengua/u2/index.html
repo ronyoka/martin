@@ -105,6 +105,7 @@ mark{background:var(--hl);color:inherit;border-radius:6px;padding:0 3px;font-wei
 .filt input,.filt select{font:inherit;padding:8px 10px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);min-height:44px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;padding:16px;z-index:9}
 .modal .box{background:var(--card);border-radius:24px;max-width:760px;width:100%;max-height:88vh;overflow:auto;padding:18px}
+.pgtabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}.pgt{border:2px solid var(--line);background:var(--card);color:var(--navy);border-radius:999px;padding:6px 12px;font-weight:800;font-size:15px;cursor:pointer;min-height:40px}.pgt.on{background:var(--navy);color:#fff;border-color:var(--navy)}.pgx{background:var(--chip);border-radius:14px;padding:8px 12px;margin:6px 0}.pchip{white-space:normal!important;text-align:left}
 .modal img{width:100%;border-radius:12px;border:1px solid var(--line)}
 .hide{display:none!important}
 .games{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
@@ -163,7 +164,15 @@ function kitty(el,ok){if(!el)return;el.textContent=ok?'😹':'😿';el.className
 function praise(ok){play([clip('hu',ok?(Math.random()<.5?'Ügyes vagy!':'Nagyon jó!'):'Próbáld újra!')])}
 // ---------- segédek
 function emo(e,cls){if(!e)return'';const s=D.emo[e];return `<span class="${cls||'e'}">${s||`<span style="font-size:48px">${esc(e)}</span>`}</span>`}
-function pchip(r){if(!r||!r.page)return'';const b=BK[r.book]||'Tankönyv';return `<button class="pchip" data-pg="${r.book}${r.page}">📖 ${b} ${r.page}. o.${r.ex?' · '+esc(r.ex)+'. feladat':''}</button>`}
+function pgRange(nums){nums=[...new Set(nums.map(Number))].sort((a,b)=>a-b);const o=[];let a=null,b=null;nums.forEach(n=>{if(a===null){a=b=n}else if(n===b+1){b=n}else{o.push(a===b?''+a:a+'–'+b);a=b=n}});if(a!==null)o.push(a===b?''+a:a+'–'+b);return o.join(', ')}
+function secPages(k){const p=D.pages[k];const sid=p&&p.section;let L=sid?(D.unit.pagemap||[]).filter(x=>x.section===sid).map(x=>({k:x.book+x.page,book:x.book,page:+x.page,title:x.title,title_hu:x.title_hu})):[];
+ if(!L.find(x=>x.k===k))L.push({k,book:k.slice(0,2),page:+k.slice(2),title:(p&&p.title)||'',title_hu:(p&&p.title_hu)||''});
+ const ord=['tb','cu','sb'];L.sort((a,b)=>(ord.indexOf(a.book)-ord.indexOf(b.book))||(a.page-b.page));return L}
+function rangeLabel(L,full){const by={};L.forEach(x=>(by[x.book]=by[x.book]||[]).push(x.page));return Object.keys(by).map(b=>`${(full?BK:BKS)[b]||b} ${pgRange(by[b])}.`).join(' + ')+' o.'}
+function pchip(r){if(!r||!r.page)return'';const k=r.book+r.page;const L=secPages(k);
+ return `<button class="pchip" data-pg="${k}" title="A rész oldalai: ${esc(rangeLabel(L,true))}">📖 ${rangeLabel(L,true)}${L.length>1||r.ex?` (${L.some(x=>x.book!==r.book)?(BKS[r.book]||'')+' ':''}${r.page}. o.${r.ex?' '+esc(r.ex)+'. f.':''})`:''}</button>`}
+function pageExpl(k){const bk=k.slice(0,2),n=+k.slice(2);const on=r=>r&&r.book===bk&&+r.page===n;const out={cards:[],rule:null,ex:[],wd:[]};
+ D.sections.forEach(s=>{(s.cards||[]).forEach(c=>{if(on(c.ref))out.cards.push(c)});if(s.rule&&on(s.rule.ref))out.rule=s.rule;(s.examples||[]).forEach(e=>{if(on(e.ref))out.ex.push(e)});(s.widgets||[]).forEach(w=>{if(on(w.ref))out.wd.push(w)})});return out}
 function hlText(t,hl){let s=esc(t);(hl||[]).filter(Boolean).sort((a,b)=>b.length-a.length).forEach(h=>{const H=esc(h);if(H){const re=new RegExp('(?<![\\p{L}\u0001])'+H.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?![\\p{L}])','gu');s=s.replace(re,m=>'\u0001'+m+'\u0002')}});
  s=s.replace(/\u0001/g,'<mark>').replace(/\u0002/g,'</mark>');
  return s.replace(/(^|[\s>(¿¡"«])([\p{L}][\p{L}'-]*)/gu,(m,a,w)=>a+`<span class="w" data-w="${w}">${w}</span>`)}
@@ -173,16 +182,27 @@ const WORDS=[];D.sections.forEach(s=>(s.words||[]).forEach(w=>{if(!WORDS.find(x=
 const WMAP={};WORDS.forEach(w=>{WMAP[w.w.toLowerCase().replace(/^(el|la|los|las|un|una) /,'')]=w});
 function wordClick(w){const k=w.toLowerCase();const m=WMAP[k];if(m)sayPair(m.w,m.hu);else sayEs(w)}
 // ---------- könyvoldal ablak
-function openPage(k){const p=D.pages[k]||{};const bk=k.slice(0,2),n=k.slice(2);
- const sec=D.sections.find(s=>s.id===p.section);
- let h=`<div class="box"><div class="row" style="justify-content:space-between;margin:0"><b style="font-size:20px">📖 ${BK[bk]||'Tankönyv'} ${n}. oldal</b><button class="big l" data-close>✕</button></div>
- <h3 style="margin:8px 0 0">${esc(p.title||'')}</h3>${huOn?`<div class="hu">${esc(p.title_hu||'')}</div>`:''}
+let PGL=[],PGK='';
+function openPage(k){PGL=secPages(k);PGK=k;drawPage()}
+function drawPage(){const k=PGK,p=D.pages[k]||{};const bk=k.slice(0,2),n=k.slice(2);const sec=D.sections.find(s=>s.id===p.section);const X=pageExpl(k);
+ let h=`<div class="box"><div class="row" style="justify-content:space-between;margin:0;align-items:flex-start"><div><b style="font-size:20px">📖 ${sec?esc(sec.title):(BK[bk]||'Tankönyv')}</b>${sec&&huOn?`<div class="hu">${esc(sec.title_hu||'')}</div>`:''}<div style="font-weight:800;color:var(--navy);margin-top:2px">A rész oldalai: ${esc(rangeLabel(PGL,true))}</div></div><button class="big l" data-close>✕</button></div>
+ <div class="pgtabs">${PGL.map(x=>`<button class="pgt${x.k===k?' on':''}" data-pt="${x.k}">${BKS[x.book]||x.book} ${x.page}.</button>`).join('')}</div>
+ <h3 style="margin:8px 0 0">${BK[bk]||'Tankönyv'} ${n}. oldal – ${esc(p.title||'')}</h3>${huOn&&p.title_hu?`<div class="hu">${esc(p.title_hu)}</div>`:''}
  ${IMG?`<p><img src="${IMG}${k}.jpg" alt="${esc(p.title||'')}" onerror="this.remove()"></p>`:''}
- ${p.summary_hu&&huOn?`<p>${esc(p.summary_hu)}</p>`:''}`;
- if(p.tasks&&p.tasks.length){h+='<h4>Feladatok az oldalon</h4>';p.tasks.forEach(t=>h+=`<p><b>${esc(t.n)}.</b> ${esc(t.text)}${huOn&&t.text_hu?`<br><span class="hu">${esc(t.text_hu)}</span>`:''}</p>`)}
- if(sec)h+=`<div class="row"><button class="big" data-gosec="${sec.id}">📘 ${esc(sec.title)} – magyarázat</button></div>`;
+ ${p.summary_hu?`<div class="pgx"><b>🧭 Miről szól ez az oldal?</b><p style="margin:4px 0 0">${esc(p.summary_hu)}</p></div>`:''}`;
+ if(X.cards.length||X.rule){h+=`<h4>💡 Magyarázat ehhez az oldalhoz</h4>`;
+  X.cards.forEach((c,i)=>h+=`<div class="pgx"><div class="es">${esc(c.es)} <button class="abtn" data-ps="c${i}">🔊</button></div>${huOn?`<div class="hu">${esc(c.hu)}</div>`:''}</div>`);
+  if(X.rule)h+=`<div class="rule"><b>📌 Recuerda – Jegyezd meg!</b><div class="es">${esc(X.rule.es)} <button class="abtn" data-ps="r">🔊</button></div>${huOn?`<div>${esc(X.rule.hu)}</div>`:''}${(X.rule.items||[]).map(it=>`<div style="margin-top:4px">• <b>${esc(it.es)}</b>${huOn?` – ${esc(it.hu||'')}${it.note_hu?` <i>(${esc(it.note_hu)})</i>`:''}`:''}</div>`).join('')}</div>`}
+ if(X.ex.length){h+=`<h4>✏️ Példák az oldalról</h4>`;X.ex.slice(0,8).forEach((e,i)=>h+=`<div class="pgx"><span class="es">${esc(e.es)}</span> <button class="abtn" data-ps="e${i}">🔊</button>${huOn?`<div class="hu">${esc(e.hu)}</div>`:''}</div>`)}
+ if(p.tasks&&p.tasks.length){h+='<h4>📝 Feladatok az oldalon</h4>';p.tasks.forEach(t=>h+=`<p><b>${esc(t.n)}.</b> ${esc(t.text)}${huOn&&t.text_hu?`<br><span class="hu">${esc(t.text_hu)}</span>`:''}</p>`)}
+ if(X.wd.length)h+=`<p class="hu">🎮 Ehhez az oldalhoz ${X.wd.length} játékos gyakorló feladat van a „${sec?esc(sec.title):''}” rész magyarázatában.</p>`;
+ if(!X.cards.length&&!X.rule&&!p.summary_hu&&!(p.tasks&&p.tasks.length))h+=`<p class="hu">Ehhez az oldalhoz még nincs külön magyarázat – nézd meg a rész magyarázatát lent.</p>`;
+ const i0=PGL.findIndex(x=>x.k===k);
+ h+=`<div class="row" style="justify-content:space-between">${i0>0?`<button class="big l" data-pt="${PGL[i0-1].k}">◀ ${PGL[i0-1].page}. o.</button>`:'<span></span>'}${sec?`<button class="big" data-gosec="${sec.id}">📘 ${esc(sec.title)} – magyarázat</button>`:''}${i0<PGL.length-1?`<button class="big l" data-pt="${PGL[i0+1].k}">${PGL[i0+1].page}. o. ▶</button>`:'<span></span>'}</div>`;
  h+='</div>';const M=$('#modal');M.className='modal';M.innerHTML=h;
- M.onclick=e=>{if(e.target===M||e.target.closest('[data-close]')){M.className='';M.innerHTML=''}
+ M.onclick=e=>{if(e.target===M||e.target.closest('[data-close]')){M.className='';M.innerHTML='';return}
+  const t=e.target.closest('[data-pt]');if(t){PGK=t.dataset.pt;drawPage();M.querySelector('.box').scrollTop=0;return}
+  const s=e.target.closest('[data-ps]');if(s){const v=s.dataset.ps;if(v==='r')sayPair(X.rule.es,X.rule.hu);else{const it=(v[0]==='c'?X.cards:X.ex)[+v.slice(1)];sayPair(it.es,it.hu)}return}
   const g=e.target.closest('[data-gosec]');if(g){M.className='';M.innerHTML='';secI=D.sections.findIndex(s=>s.id===g.dataset.gosec);cardI=0;setTab('ex')}}}
 document.addEventListener('click',e=>{const pc=e.target.closest('.pchip');if(pc){e.stopPropagation();openPage(pc.dataset.pg);return}
  const w=e.target.closest('.es .w');if(w&&!e.target.closest('.tw')){wordClick(w.dataset.w)}});
