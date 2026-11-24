@@ -2331,7 +2331,8 @@ function quizChipsHtml(lessonOnly) {
   const les = uu ? `<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-weight:800">Melyik leckéből?</span>` + [[uu.id, 'Az egész fejezet']].concat(uu.concepts.map(c => ['c:' + c.id, c.es])).map(x => `<button class="chip${sc === x[0] ? ' on' : ''}" ${h(() => startQuiz(x[0]))}>${esc(x[1])}</button>`).join('') + '</div>' : '';
   return les + sizeRow;
 }
-function setView(v) { stopVoice(); st.view = v; st.open = null; if (v === 'quiz' && !st.order) startQuiz(st.quizUnit); else render(); }
+var V6U=["u2"];function V6B(u){return u+'/'+(location.protocol==='file:'?'index.html':'')}
+function setView(v) { if(V6U.indexOf(v)>=0){location.href=V6B(v);return} stopVoice(); st.view = v; st.open = null; if (v === 'quiz' && !st.order) startQuiz(st.quizUnit); else render(); }
 function pick(i) { if (st.picked !== null || st.done) return; const q = st.order[st.qi]; const ok = i === q.answer; st.picked = i; st.score += ok ? 1 : 0; st.mood = ok ? 'happy' : 'sad'; if (ok) sfxGood(); else sfxBad(); clearTimeout(fbT); fbT = setTimeout(() => speak('hu', ok ? 'fb:ok' : 'fb:bad'), ok ? 1300 : 1600); render(); }
 function next() { stopVoice(); clearTimeout(fbT); if (st.qi + 1 >= st.order.length) { st.done = true; st.mood = 'happy'; st.picked = null; sfxGood(); fbT = setTimeout(() => speak('hu', 'fb:end'), 1300); } else { st.qi++; st.picked = null; st.mood = 'idle'; } render(); if (!st.done) autoSay(st.order[st.qi]); }
 function openC(id) { stopVoice(); st.open = id; st.wordOpen = null; st.ltab = 'explain'; render(); }
